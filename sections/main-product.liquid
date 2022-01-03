@@ -10,7 +10,7 @@
 {{ 'metafields-info.css' | asset_url | stylesheet_tag }}
 
 {% comment %}Hide Options - Yurith{% endcomment %}
-{% render 'hide-options' %}
+{{ 'hide-options.js' | asset_url | script_tag }}
 
 {%- capture section_settings -%}
 {
