@@ -16,7 +16,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Section-bg-HP-Desktop_f8d63c26-f52f-4092-9fcb-3bf9df693a6c.jpg",
+            "image": "shopify:\/\/shop_images\/Wizka_3_1000x1013_9ea6aeca-5b6d-4ee5-97dd-97d481cf9eaa.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -30,6 +30,7 @@
           "type": "collection",
           "settings": {
             "collection": "therapiedecken-zauberei-kollektion",
+            "image": "shopify:\/\/shop_images\/zauberei_kollektion_16a3d37a-b354-415c-b029-7efca9284c32.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
