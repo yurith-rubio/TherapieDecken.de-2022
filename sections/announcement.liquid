@@ -1,0 +1,100 @@
+<!-- announcement.liquid -->
+
+{% style %}
+  #section-{{ section.id }} {
+    background: {{ section.settings.background }};
+    color: {{ section.settings.text_color }};
+  }
+  .countdown_announcement{
+	  font-weight: bold;
+  }
+  .countdown_text{
+    color: {{ settings.text_color_countdown }};
+    background-color: {{ settings.background_countdown }};
+    padding: 2px 5px;
+    margin: 0 3px;
+    border-radius: {{ settings.border_radius_countdown }}px;
+  }
+
+  {% if settings.enable_days_view %}
+    .countdown_days{
+      display:none;
+    }
+  {% endif %}
+{% endstyle %}
+
+{%- if section.settings.enable_bar -%}
+  {%- unless section.settings.home_page_only and template != 'index' -%}
+    <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="announcement-bar">
+      <div class="AnnouncementBar">
+        <div class="AnnouncementBar__Wrapper">
+          <p class="AnnouncementBar__Content Heading">
+            {%- if section.settings.link -%}
+              <a href="{{ section.settings.link }}">{{ section.settings.content }}
+              {% if settings.announcement_countdown_enable %}
+                <span id="countdown_announcement"></span>
+        	  {% endif %}
+              </a>
+            {%- else -%}         
+              {{ section.settings.content }}
+              {% if settings.announcement_countdown_enable %}
+                <span id="countdown_announcement"></span>
+        	  {% endif %}
+            {%- endif -%}
+          </p>
+        </div>
+      </div>
+    </section>
+  {%- endunless -%}
+{%- endif -%}
+
+<script>
+  document.documentElement.style.setProperty('--announcement-bar-height', document.getElementById('shopify-section-announcement').offsetHeight + 'px');
+</script>
+
+{% schema %}
+{
+  "name": "Announcement bar",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Bar"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_bar",
+      "label": "Enable bar",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "home_page_only",
+      "label": "Home page only",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "html",
+      "id": "content",
+      "label": "HMTL Text",
+	  "default": "<p>Announce something here</p>"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    }
+  ]
+}
+{% endschema %}

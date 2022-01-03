@@ -1,0 +1,48 @@
+<!-- page.retourencenter.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'pages.css' | asset_url | stylesheet_tag}}
+
+<div class="grid retouren-grid">
+  <div class="grid__item large--five-sixths push--large--one-twelfth">
+    <header class="PageHeader">
+      <div class="SectionHeader SectionHeader--center">
+        <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+      </div>
+    </header>
+    <div class="grid__item large--four-fifths push--large--one-tenth">
+        <div class="rte rte--nomargin rte--indented-images">
+          
+          <!-- HC - Newsletter page changes - 20 Apr '18 -->
+          {% if page.handle == 'newsletter-abonnieren'%}
+          {% section 'newsletter-abonnieren' %}
+          {% else %}
+          {{ page.content }}
+          
+          <p>Falls Sie ein Produkt zurückgeben möchten, können Sie Ihre Retoure hier anmelden. Dazu benötigen Sie Ihre Bestellnummer (z.B. #00001) sowie Ihre bei der Bestellung verwendete E-Mail-Adresse.</p>
+          <p>Bitte beachten Sie:</p>
+          <ol style="list-style-position:inherit;padding-left:15px;">
+            <li>Bei einem Umtausch oder Garantiefall schreiben Sie uns bitte eine E-Mail an <b>kundenservice@therapiedecken.de.</b></li>
+             <li>Rückgaben können nur innerhalb von 28 Tagen nach Erhalt der Ware veranlasst werden.</li>
+             <li>Bei einer Retoure muss das Produkt in der Kondition sein, in der Sie es erhalten haben (z.B. keine Defekte etc.).</li>
+             <li>Wählen Sie alle Produkte aus, die Sie retournieren möchten. Nicht angemeldete Ware kann nur gegen Nachweis erstattet werden.</li>
+             <li>Sie erhalten genaue Anweisungen via E-Mail nachdem Sie das Formular auf der nächsten Seite ausgefüllt haben.</li>
+             <li>Sie erhalten auch eine E-Mail, sobald wir Ihr Produkt erhalten und geprüft haben. Bitte beachten Sie, dass die Rücküberweisung nach der Prüfung einige weitere Tage in Anspruch nimmt.</li>
+          </ol>
+          <br />
+          <center>
+            <div class="return-center-button"><a href="https://therapiedecken.de/pages/retouren-umtausch-center-details" class="Button Button--primary"><span>Zum Retouren Center</span></a></div>
+          </center>
+          
+          {% endif %}
+          
+          {% comment %}{% include 'judgeme_all_reviews' %}{% endcomment %}
+          
+{% if page.handle == 'therapiedecken-helfen-bei-alzheimer-parkinson-und-demenz-1'  %} 
+
+{% include 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: true %}  {% endif %}
+        </div>
+      </div>
+  </div>
+</div>
+

@@ -1,0 +1,206 @@
+<!-- section: testimonials-overview-sec.liquid -->
+
+{% style %}
+
+.tm21_wr_lp{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 990px;
+  justify-content: space-around;
+}
+.tm21_wr_lp > div {
+  width: 300px;
+}
+.tm21_wr_hp{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 990px;
+  justify-content: space-around;
+}
+.tm21_wr_hp > div {
+  width: 300px;
+}
+@media only screen and (max-width: 450px){
+  .tm21_wr_hidden {
+    display: none !important;
+  }
+}
+.tm21_wr_quote {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.tm21_pic_wr {
+    position: absolute;
+    margin-left: 75px;
+    width: 150px!important;
+    height: 150px!important;
+    display: flex!important;
+	z-index: 1;
+}
+
+.tm21_wr_lp img, .tm21_pic_wr img {
+	max-width: 100%!important;
+}
+
+.tm21_wr_quote a:before {
+    height: 0px!important;
+}
+
+
+.tm21_text_wr {
+  background-color: #f4f4f4;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  margin-top: 75px;
+  padding-top: 100px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  text-align: left;
+  min-height: 385px;
+}
+.tm21_text_wr:hover{
+  background-color: #fac636;
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+}
+.tm21_text_wr:hover .gral_icon21_yellow{
+  color: white;
+}
+
+.tm21_wr_lp > div a {
+    text-decoration: none!important;
+}
+
+.tm21_left_quote{
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+.tm21_citation > p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+.tm21_citation > p {
+  margin: 0px;
+  overflow: hidden;
+}
+.tm21_img{
+  height: inherit;
+}
+
+{% endstyle %}
+
+
+<div class="Container">
+  <header class="PageHeader">
+    <div class="SectionHeader SectionHeader--center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </div>
+  </header>
+
+  <div class="PageContent {% unless section.settings.show_large %}PageContent--narrow{% endunless %} Rte">
+    {{ page.content }}
+    
+    
+<center>
+<div class="tm21_wr_lp">
+
+	{% for block in section.blocks %}
+      <div class="tm21_wr_quote">
+        <div class="tm21_pic_wr">
+          <img loading="lazy"
+            style="border-radius: 50%"
+            src="{{ block.settings.tm21_picture | img_url:'master' }}"
+            alt=""
+          />
+        </div>
+
+        <a href="{{ block.settings.link }}">
+          <div class="tm21_text_wr">
+            <div
+              style="font-weight: bold; margin-bottom: 0px"
+              class="gral_font_20px tm21_name"
+            >
+              {{ block.settings.tm21_name }}
+            </div>
+            <div
+              style="font-weight: normal; height: 50px"
+              class="gral_font_16px tm21_name"
+            >
+              {{ block.settings.tm21_role }}
+            </div>
+            <div class="tm21_left_quote">
+              <span class="gral_icon21_yellow gral_font_20px icon-left-quote"></span>
+            </div>
+            <div class="tm21_citation">{{ block.settings.tm21_paragraph1 }}</div>
+            <div>
+              <span
+                style="position: relative; left: 220px"
+                class="gral_icon21_yellow gral_font_20px icon-right-quote"
+              ></span>
+            </div>
+          </div>
+        </a>
+      </div>
+	{% endfor %}
+    
+  </div>
+</center>
+    
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Testimonials Overview",
+    "settings": [],
+	"blocks": [
+                {
+					"type":"testimonial",
+					"name": "Testimonial",
+					"settings":[
+                      {
+                          "id": "link",
+      					  "type": "url",
+      					  "label": "Testimonial link"					
+                      },
+                      {
+                          "type": "image_picker",
+                          "label": "Picture",
+                          "id": "tm21_picture"						
+                      },
+                      {
+                          "id": "tm21_name",
+                          "type": "text",
+                          "label": "Name",
+						  "default": "Joe Doe"
+                      },
+                      {
+                          "id": "tm21_role",
+                          "type": "text",
+                          "label": "Role",
+						  "default": "Psychologin"
+                      },
+					  {
+                          "id": "tm21_paragraph1",
+                          "type": "richtext",
+                          "label": "Citation",
+						  "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>"
+                      }
+								]
+                }
+
+				]
+  }
+{% endschema %}

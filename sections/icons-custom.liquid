@@ -1,0 +1,407 @@
+<!-- section: icons-custom -->
+
+{{ 'product-custom.css' | asset_url | stylesheet_tag}}
+{{ 'glider.min.css' | asset_url | stylesheet_tag}}
+
+{% style %}
+.full-bg-color-icons{
+  background-color: {{ section.settings.bg-color }};
+}
+.bg-color-icons{
+  background-color: {{ section.settings.bg-color-icons }};
+  margin: auto;
+  padding: 30px;
+  position: relative;
+}
+.icons-del-wr{
+  color: {{ section.settings.text-color }} !important;
+}
+.icons-del-wr > span {
+  padding-bottom: 0 !important;
+}
+.IconsCustom__Button{
+  padding-top:30px;
+}
+.IconsCustom__IconsWrapper{
+  display:flex;
+}
+@media only screen and (min-width: 641px){
+	.icons-container-mobile{
+	  display:none !important;
+	}
+    .bg-color-icons{
+      max-width: 840px;
+    }
+	{% if section.settings.margin-top != blank %}
+    .IconCustom__Wrapper-{{ section.id }}{
+      margin-top: {{ section.settings.margin-top }}
+	}
+    {% endif %}
+}
+@media only screen and (max-width: 641px){
+	.icons-container-desktop{
+	  display:none !important;
+	}
+    .bg-color-icons{
+      max-width: 200px;
+    }
+    .icons-del-wr{
+      flex: 0 0 25% !important;
+	  padding: 20px 0 !important;
+    }
+	{% if section.settings.margin-top-mobile != blank %}
+    .IconCustom__Wrapper-{{ section.id }}{
+      margin-top: {{ section.settings.margin-top-mobile }}
+	}
+    {% endif %}
+}
+
+{% endstyle %}
+
+{%- assign icons-custom_block = section.blocks | where: 'type', 'icons-custom' | first -%}
+
+<div class="full-bg-color-icons section-space-medium IconCustom__Wrapper-{{ section.id }}">
+  <div class="bg-color-icons">
+    <div class="Container--standard--medium icons-container icons-container-desktop">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'icons-custom' -%}
+            <div class="icons-del-wr">
+              <span class="IconsCustom__IconsWrapper" style="font-size:{{ section.settings.icons-size }}; color: {{ section.settings.icons-color }};">{% render 'icons_monotone' | block:block, settings: settings %}</span>
+              {% if block.settings.title_icon != blank %}<p style="font-weight: bold; margin-bottom: 0;">{{ block.settings.title_icon }}</p>{% endif %}
+              {% if block.settings.content_icon != blank %}{{ block.settings.content_icon }}{% endif %}
+            </div>
+          {%- when 'icons-duotone' -%}
+            <div class="icons-del-wr">
+              <span class="IconsCustom__IconsWrapper" style="font-size:{{ section.settings.icons-size }}; color: {{ section.settings.icons-color }};">{% render 'icons_duotone' | block:block, settings: settings %}</span>
+              {% if block.settings.title_icon != blank %}<p style="font-weight: bold; margin-bottom: 0;">{{ block.settings.title_icon }}</p>{% endif %}
+              {% if block.settings.content_icon != blank %}{{ block.settings.content_icon }}{% endif %}
+            </div>
+		{% endcase %}
+      {% endfor %}
+    </div>
+
+    {% if section.settings.mobile-style-glider %}
+      <div class="Container--standard--medium icons-container-mobile glider-delivery">
+        {% for block in section.blocks %}
+        <div class="icons-del-wr">
+          <span class="IconsCustom__IconsWrapper" style="font-size:{{ section.settings.icons-size }}; color: {{ section.settings.icons-color }};">{% render 'icons_monotone' | block:block, settings: settings %}</span>
+          {% if block.settings.title_icon != blank %}<p style="font-weight: bold; margin-bottom: 0;">{{ block.settings.title_icon }}</p>{% endif %}
+          {% if block.settings.content_icon != blank %}{{ block.settings.content_icon }}{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="Container--standard--medium icons-container-mobile">
+        {% for block in section.blocks %}
+        <div class="icons-del-wr">
+          <span class="IconsCustom__IconsWrapper" style="font-size:{{ section.settings.icons-size }}; color: {{ section.settings.icons-color }};">{% render 'icons_monotone' | block:block, settings: settings %}</span>
+          {% if block.settings.title_icon != blank %}<p style="font-weight: bold; margin-bottom: 0;">{{ block.settings.title_icon }}</p>{% endif %}
+          {% if block.settings.content_icon != blank %}{{ block.settings.content_icon }}{% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    
+  </div>
+  {% if section.settings.button_label != blank %}
+	<div class="IconsCustom__Button" style="text-align: center"><a class="Button Button--primary" href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a></div>
+  {% endif %}
+</div>
+
+<script>
+window.addEventListener('load', function(){
+  new Glider(document.querySelector('.glider-delivery'), {
+  	slidesToShow: 2,
+  	dots: '.dots-delivery',
+  	draggable: true
+  });
+});
+</script>
+
+{% schema %}
+{
+    "name": "Icons Custom",
+  	"max_blocks": 4,
+    "settings": [
+		{
+          "type": "color",
+          "id": "bg-color",
+          "label": "Background Color"
+		},
+		{
+          "type": "text",
+          "id": "margin-top",
+          "label": "Margin Top",
+		  "default": "auto",
+		  "info": "Use this function when wanting to overlap the block with other blocks with a minus value. e.g. -130px"
+		},
+		{
+          "type": "text",
+          "id": "margin-top-mobile",
+          "label": "Mobile - Margin Top",
+		  "default": "inehrit",
+		  "info": "Use this function when wanting to overlap the block with other blocks with a minus value. e.g. -130px"
+		},
+		{
+          "type": "color",
+          "id": "bg-color-icons",
+          "label": "Background Color Icons"
+		},
+		{
+          "type": "text",
+          "id": "icons-size",
+          "label": "Icons Size",
+		  "default": "40px"
+		},
+		{
+          "type": "color",
+          "id": "icons-color",
+          "label": "Icons Color",
+		  "default": "#fac636"
+		},
+		{
+          "type": "color",
+          "id": "text-color",
+          "label": "Text Color"
+		},
+		{
+          "type": "checkbox",
+          "id": "mobile-style-glider",
+          "label": "Icons shown in a slider for mobile",
+		  "default": true
+		},
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button"
+        }
+	],
+	"blocks": [
+          {
+            "type": "icons-custom",
+            "name": "Icons Monotone",
+            "settings": [
+              {
+                "type": "select",
+                "id": "simple_icons",
+                "label": "Icons Monotone",
+                "options": [
+                    {
+                      "value": "none",
+                      "label": "Select Icon"
+                    },
+                    {
+                      "value": "euro",
+                      "label": "Euro"
+                    },
+                    {
+                      "value": "check",
+                      "label": "Check"
+                    },
+                    {
+                      "value": "object-group",
+                      "label": "Object Group"
+                    },
+                    {
+                      "value": "equalizer2",
+                      "label": "Equalizer2"
+                    },
+                    {
+                      "value": "100",
+                      "label": "100"
+                    },
+                    {
+                      "value": "28",
+                      "label": "28"
+                    },
+                    {
+                      "value": "21-45",
+                      "label": "21-45"
+                    },
+                    {
+                      "value": "10",
+                      "label": "10"
+                    },
+                    {
+                      "value": "better-sleep-study",
+                      "label": "Better Sleep Study"
+                    },
+                    {
+                      "value": "less-stress-study",
+                      "label": "Less Stress Study"
+                    },
+                    {
+                      "value": "falling-asleep-faster-study",
+                      "label": "Falling Asleep Faster Study"
+                    },
+                    {
+                      "value": "fifty-one-percent",
+                      "label": "51%"
+                    },
+                    {
+                      "value": "ninety-one-percent",
+                      "label": "91%"
+                    },
+                    {
+                      "value": "seventy-seven-percent",
+                      "label": "77%"
+                    },
+                    {
+                      "value": "sixty-three-percent",
+                      "label": "63%"
+                    }
+              	],
+	            "default": "none"
+              },
+              {
+                "type": "text",
+                "id": "title_icon",
+                "label": "Title Icon",
+                "default": "Icon Title"
+              },
+              {
+                "type": "richtext",
+                "id": "content_icon",
+                "label": "Content Icon",
+				"default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>"
+              }                  
+            ]
+        },
+        {
+          "type": "icons-duotone",
+          "name": "Icon Duotone",
+          "settings": [
+            {
+              "type": "select",
+              "id": "icons_duotone",
+              "label": "Icon Duotone",
+              "options": [
+				{
+            	  "value": "none",
+				  "label": "Select Icon"
+                },
+                {
+                  "value": "anxiety",
+                  "label": "Anxiety"
+                },
+                {
+                  "value": "autism",
+                  "label": "Autism"
+                },
+                {
+                  "value": "add",
+                  "label": "Add"
+                },
+                {
+                  "value": "allergy",
+                  "label": "Allergy"
+                },
+                {
+                  "value": "alzheimer",
+                  "label": "Alzheimer"
+                },
+                {
+                  "value": "concentration",
+                  "label": "Concentration"
+                },
+                {
+                  "value": "cooling",
+                  "label": "Cooling"
+                },
+                {
+                  "value": "cotton",
+                  "label": "Cotton"
+                },
+                {
+                  "value": "different-weights",
+                  "label": "Different Weights"
+                },
+				{
+                  "value": "energy",
+                  "label": "Energy"
+                },
+                {
+                  "value": "europe",
+                  "label": "Europe"
+                },
+                {
+                  "value": "free-exchange",
+                  "label": "Free Exchange"
+                },
+                {
+                  "value": "handcrafted",
+                  "label": "Handcrafted"
+                },
+                {
+                  "value": "long_lasting",
+                  "label": "Long_lasting"
+                },
+                {
+                  "value": "our-engagement",
+                  "label": "Our Engagement"
+                },
+                {
+                  "value": "our-team",
+                  "label": "Our Team"
+                },
+                {
+                  "value": "quality",
+                  "label": "Quality"
+                },
+                {
+                  "value": "sleep",
+                  "label": "Sleep"
+                },
+                {
+                  "value": "stress",
+                  "label": "Stress"
+                },
+                {
+                  "value": "sustainable",
+                  "label": "Sustainable"
+                },
+                {
+                  "value": "sustainability",
+                  "label": "Sustainability"
+                },
+                {
+                  "value": "vegan",
+                  "label": "Vegan"
+                },
+                {
+                  "value": "wellbeing",
+                  "label": "Wellbeing"
+                }
+              	],
+	            "default": "none"
+              },
+              {
+                "type": "text",
+                "id": "title_icon",
+                "label": "Title Icon",
+                "default": "Icon Title"
+              },
+              {
+                "type": "richtext",
+                "id": "content_icon",
+                "label": "Content Icon",
+				"default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>"
+              }                  
+            ]
+        }
+	],
+    "presets": [
+    {
+      "category": "Pages",
+      "name": "Icons Custom",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

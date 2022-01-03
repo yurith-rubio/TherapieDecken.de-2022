@@ -1,0 +1,35 @@
+<!-- section: rabatt.liquid -->
+
+<div class="Container Container--standard--medium">
+  <div class="PageContent {% unless section.settings.show_large %}PageContent--narrow{% endunless %} Rte">
+    {{ page.content }}
+    <div class="grey-rabat">
+      <div class="tresc">
+        <h2 class="Heading u-h2">5€ Rabatt für Ihre Therapiedecke!</h2>
+        <p>Ihr Rabattcode:</p>
+        <div class="white-rabat"><b>TD5PSST</b></div>
+        <a href="https://therapiedecken.de/discount/TD5PSST?redirect=/pages/therapiedecken">
+          <div class="Button Button--primary">JETZT EINLÖSEN</div>
+        </a>
+        <p style="margin-top: 10px;">Verfällt am <b>{% assign days = 3 | times: 86400 %}
+          {{ "now" | date: "%s" | plus: days | date: "%-d.%m.%Y" }}</b>
+        </p>
+        <p>Durch das Klicken auf die Schaltfläche "JETZT EINLÖSEN" wird der Rabattcode automatisch zu Ihrem Warenkorb hinzugefügt und ist im Bestellprozess sichtbar.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Page",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_large",
+      "label": "Large width",
+      "default": false
+    }
+  ]
+}
+{% endschema %}

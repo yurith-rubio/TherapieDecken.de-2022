@@ -1,0 +1,388 @@
+<!-- snippet: sidebar-filter.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'filters.css' | asset_url | stylesheet_tag}}
+
+<div class="mobile-filteredby-container">
+
+  {% if collection.title contains "Therapiekissen" and current_tags.size > 0 %}
+    <div class="clear-all-wr"><a href="https://therapiedecken.de/collections/therapiekissen" class="Heading u-h5 tag_clear_all">Alle Filter entfernen</a></div>
+    <div class="Heading u-h5">Filtern nach</div>
+  {% elsif collection.title contains "Ersatzbezüge" and current_tags.size > 0 %}
+    <div class="clear-all-wr"><a href="https://therapiedecken.de/collections/ersatzbezuge-fur-therapiedecken" class="Heading u-h5 tag_clear_all">Alle Filter entfernen</a></div>
+    <div class="Heading u-h5">Filtern nach</div>
+  {% elsif collection.title contains "Bettwäschen" and current_tags.size > 0 %}
+    <div class="clear-all-wr"><a href="https://therapiedecken.de/collections/bettwaschen-set-fur-therapiedecken" class="Heading u-h5 tag_clear_all">Alle Filter entfernen</a></div>
+    <div class="Heading u-h5">Filtern nach</div>
+  {% endif %}
+
+
+  <div class="tag_top_wr">
+    {% for tag in current_tags %}
+      {% assign tag_value = tag | split: "-" | slice: 1 %}
+        <div class="tag_top">{{ tag_value[0] | link_to_remove_tag: tag }}</div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="Collapsible Collapsible--padded {% if section.settings.expand_filters %}Collapsible--autoExpand{% endif %}" data-filter-index="{% increment filter_index %}">
+  <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
+    Farbe <span class="Collapsible__Plus"></span>
+  </button>
+
+  <div class="Collapsible__Inner">
+      <div class="Collapsible__Content">
+        <ul class="Linklist Linklist-filters-mobile">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+            {% assign selected = "" %}
+
+            {% if tag_key[0] == "farbe" %}
+            <li>
+              {% if current_tags contains tag %}
+                  {% assign selected = "filter_color_selected" %}	
+              {% endif %}       
+              {% if tag_key[0] == "farbe" %}
+                  <div class="filter_color_wr {{ selected }}" data-color="{{ tag }}">
+                    <div class="filter_color {{ selected }} filter_color_{{ tag_value[0] }}" data-color="{{ tag }}"></div>
+                  </div>
+              {% endif %}
+            {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+  </div>
+</div>
+
+<div class="Collapsible Collapsible--padded {% if section.settings.expand_filters %}Collapsible--autoExpand{% endif %}" data-filter-index="{% increment filter_index %}">
+  <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
+    Thema <span class="Collapsible__Plus"></span>
+  </button>
+
+  <div class="Collapsible__Inner">
+      <div class="Collapsible__Content">
+        <ul class="Linklist">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+
+            <li>
+              {% if tag_key[0] == "thema" %}
+                {% assign selected = "" %}
+
+                {% if current_tags contains tag %}
+                  {% assign selected = "filter_selected"  %}	
+                {% endif %}        
+                <div>
+                  
+                  <div class="filter_theme filter_styling" data-theme="{{ tag }}">
+                    <div class="circle-radio {{ selected }}" data-theme="{{ tag }}"></div>
+                    <div class="text-radio-tag" data-theme="{{ tag }}">{{ tag_value[0] }}</div>
+                  </div>
+                  
+                </div>                           
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+  </div>
+</div>
+
+<div class="Collapsible Collapsible--padded {% if section.settings.expand_filters %}Collapsible--autoExpand{% endif %}" data-filter-index="{% increment filter_index %}">
+  <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
+    Größe <span class="Collapsible__Plus"></span>
+  </button>
+
+  <div class="Collapsible__Inner">
+      <div class="Collapsible__Content">
+        <ul class="Linklist">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+
+            <li>
+              {% if tag_key[0] == "size" %}
+                {% assign selected = "" %}
+
+                {% if current_tags contains tag %}
+                  {% assign selected = "filter_selected"  %}	
+                {% endif %}        
+                <div>
+                  <div class="filter_size filter_styling" data-size="{{ tag }}">
+                    <div class="circle-radio {{ selected }}" data-size="{{ tag }}"></div>
+                    <div class="text-radio-tag" data-size="{{ tag }}">{{ tag_value[0] }}</div>
+                  </div>
+                </div>                           
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+  </div>
+</div>
+
+<div class="Collapsible Collapsible--padded {% if section.settings.expand_filters %}Collapsible--autoExpand{% endif %}" data-filter-index="{% increment filter_index %}">
+  <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
+    Alter <span class="Collapsible__Plus"></span>
+  </button>
+
+  <div class="Collapsible__Inner">
+      <div class="Collapsible__Content">
+        <ul class="Linklist">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+
+            <li>
+              {% if tag_key[0] == "alter" %}
+                {% assign selected = "" %}
+
+                {% if current_tags contains tag %}
+                  {% assign selected = "filter_selected"  %}	
+                {% endif %}        
+                <div>
+                  <div class="filter_size filter_styling" data-size="{{ tag }}">
+                    <div class="circle-radio {{ selected }}" data-size="{{ tag }}"></div>
+                    <div class="text-radio-tag" data-size="{{ tag }}">{{ tag_value[0] }}</div>
+                  </div>
+                </div>                           
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+  </div>
+</div>
+
+<div class="Collapsible Collapsible--padded {% if section.settings.expand_filters %}Collapsible--autoExpand{% endif %}" data-filter-index="{% increment filter_index %}">
+  <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
+    Material <span class="Collapsible__Plus"></span>
+  </button>
+
+  <div class="Collapsible__Inner">
+      <div class="Collapsible__Content">
+        <ul class="Linklist">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+
+            <li>
+              {% if tag_key[0] == "material" %}
+                {% assign selected = "" %}
+
+                {% if current_tags contains tag %}
+                  {% assign selected = "filter_selected"  %}	
+                {% endif %}        
+                <div>
+                  <div class="filter_material filter_styling" data-material="{{ tag }}">
+                    <div class="circle-radio {{ selected }}" data-material="{{ tag }}"></div>
+                    <div class="text-radio-tag" data-material="{{ tag }}">{{ tag_value[0] }}</div>
+                  </div>
+                </div>                           
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+  </div>
+</div>
+
+<div class="Collapsible Collapsible--padded {% if section.settings.expand_filters %}Collapsible--autoExpand{% endif %}" data-filter-index="{% increment filter_index %}">
+  <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
+    Muster <span class="Collapsible__Plus"></span>
+  </button>
+
+  <div class="Collapsible__Inner">
+      <div class="Collapsible__Content">
+        <ul class="Linklist">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+
+            <li>
+              {% if tag_key[0] == "muster" %}
+                {% assign selected = "" %}
+
+                {% if current_tags contains tag %}
+                  {% assign selected = "filter_selected"  %}	
+                {% endif %}        
+                <div>
+                  <div class="filter_pattern filter_styling" data-pattern="{{ tag }}">
+                    <div class="circle-radio {{ selected }}" data-pattern="{{ tag }}"></div>
+                    <div class="text-radio-tag" data-pattern="{{ tag }}">{{ tag_value[0] }}</div>
+                  </div>
+                </div>                           
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+  </div>
+</div>
+
+<div class="Collapsible Collapsible--padded {% if section.settings.expand_filters %}Collapsible--autoExpand{% endif %}" data-filter-index="{% increment filter_index %}">
+  <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
+    Stil <span class="Collapsible__Plus"></span>
+  </button>
+
+  <div class="Collapsible__Inner">
+      <div class="Collapsible__Content">
+        <ul class="Linklist">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+
+            <li>
+              {% if tag_key[0] == "stil" %}
+                {% assign selected = "" %}
+
+                {% if current_tags contains tag %}
+                  {% assign selected = "filter_selected"  %}	
+                {% endif %}        
+                <div>
+                  <div class="filter_style filter_styling" data-style="{{ tag }}">
+                    <div class="circle-radio {{ selected }}" data-style="{{ tag }}"></div>
+                    <div class="text-radio-tag" data-style="{{ tag }}">{{ tag_value[0] }}</div>
+                  </div>
+                </div>                           
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+  
+  $(".filter_color").click(function (e) {
+  	const selectedColor = $(e.target).attr("data-color");
+    doFilter(selectedColor);
+  });
+  
+  $(".filter_theme").click(function (e) {
+  	const selectedTheme = $(e.target).attr("data-theme");
+    doFilter(selectedTheme);
+  });
+  
+  $(".filter_size").click(function (e) {
+  	const selectedSize = $(e.target).attr("data-size");
+    doFilter(selectedSize);
+  });
+  
+  $(".filter_age").click(function (e) {
+  	const selectedAge = $(e.target).attr("data-age");
+    doFilter(selectedAge);
+  });
+  
+  $(".filter_material").click(function (e) {
+  	const selectedMaterial = $(e.target).attr("data-material");
+    doFilter(selectedMaterial);
+  });
+  
+  $(".filter_pattern").click(function (e) {
+  	const selectedPattern = $(e.target).attr("data-pattern");
+    doFilter(selectedPattern);
+  });
+  
+  $(".filter_style").click(function (e) {
+  	const selectedStyle = $(e.target).attr("data-style");
+    doFilter(selectedStyle);
+  });
+
+
+  function getCurrentFilters() {
+    const collection = "{{ collection.handle }}";
+    const parts = location.pathname.split("/");
+    const tags = parts[parts.length - 1];
+    
+    if (tags == "") {
+    	return [];
+    }
+    
+    if (tags == collecti
+        
+        on) {
+    	return [];
+    }
+    
+    const filters = tags.split("+");
+    return filters.map(parseFilter);
+  }
+  
+  function parseFilter(filter) {
+    const parts = filter.split("-");
+    return {
+      key: parts[0],
+      value: parts[1],
+      active: true
+    };
+  }
+  
+  function insertFilter(activeFilters, newFilter) {
+    let filterUpdated = false;
+    let updatedFilters = [];
+    
+    for (const filter of activeFilters) {
+      // If the exact same filter is already active, deactivate it
+      if (filter.key == newFilter.key && filter.value == newFilter.value) {
+        filter.active = false;
+        return activeFilters;
+      }
+      
+      // There was already a filter of the same type: update value.
+      if (filter.key == newFilter.key) {
+        filter.value = newFilter.value;
+        return activeFilters;
+      }
+    }
+    
+    activeFilters.push(newFilter);
+    return activeFilters;
+  }
+  
+  function getTagline(filters) {
+    if (!filters || filters.length == 0) {
+    	return "";
+    }
+    
+    filters = filters.filter(f => f.active);
+    
+    return filters.map(f => { 
+      return f.key + "-" + f.value; 
+    }).join("+");
+  }
+  
+  function doFilter(filter) {
+    const newFilter = parseFilter(filter);
+    
+    // Get current filters from URL params
+    const activeFilters = getCurrentFilters();
+    
+    // Apply the new filter
+    const updatedFilters = insertFilter(activeFilters, newFilter);
+    
+    const tags = getTagline(updatedFilters);
+    
+    const newUrl = window.location.protocol + '//' + window.location.host + "/collections/{{ collection.handle }}" + "/" + tags;
+	
+    window.history.pushState({ path: newUrl }, '', newUrl);
+            
+    document.dispatchEvent(new CustomEvent('theme:loading:start'));
+    location.href = newUrl;	    
+  }
+  
+   /* $(document).ready(function() {
+    const image = $("div.PageHeader__ImageWrapper");
+    const scrollPosition = image.scrollTop() + image.height();
+    $("html, body").animate({scrollTop: scrollPosition}, 500)
+  });*/
+</script>
+

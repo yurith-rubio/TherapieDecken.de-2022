@@ -1,0 +1,107 @@
+<!-- section : index_left_content_right_template --> 
+
+
+<!-- NOTE : Template created for pages with Index Left and Content Right
+			Because Shopify still has not implemented dynamic blocks on pages, DO NOT USE THIS TEMPLATE DIRECTLY
+			otherwise other pages that use this same section will be affected by the made changes.
+
+			1. Create a new section with the name of your page (usually same as the page template json name you will need)
+			2. Copy / Paste this code
+			3. Use it freely on your page
+
+	END NOTE ! --> 
+
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'pages.css' | asset_url | stylesheet_tag}}
+
+<div class="Container">
+  <div class="PageContent {% unless section.settings.show_large %}{% endunless %} Rte">
+    {{ page.content }}
+    <div class="ultimative_ubersicht">
+      <div class="ultimative_ubersicht_header_content">
+          <h2 class="Heading u-h2">Übersicht</h2>
+        <ol>
+        {% for block in section.blocks %}
+            {% if block.settings.content_index != blank %}
+              <li><a href="#ultimative-contents-{{ forloop.index }}">{{ block.settings.content_index }}</a></li>
+            {% endif %}
+        {% endfor %}
+        </ol>
+      </div>
+      
+      <div class="ultimative_wrapper">
+        {% for block in section.blocks %}
+            <div class="ultimative_ubersicht_content_link">
+              <div id="ultimative-contents-{{ forloop.index }}" class="anchor_content_index"></div>
+              <h2 class="Heading u-h2">
+                <ol start="{{ forloop.index }}">
+                  {% if block.settings.content_index != blank %}
+                  <li>{{ block.settings.content_index }}</li>
+                  {% endif %}
+                </ol>
+              </h2>
+              {% if block.settings.content != blank %}
+                {{ block.settings.content }}	       
+	          {% endif %}
+              {% if block.settings.image != blank %}
+                <img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt | escape }}">      
+	          {% endif %}
+        	</div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="scroll_up">
+      <a href="javascript:void(0);">
+        <span class="icon-keyboard_arrow_up"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+$('.scroll_up a').click(function() {      
+    $('body,html').animate({
+        scrollTop : 0                       
+    }, 500);
+});
+</script>
+        
+{% schema %}
+  {
+    "name": "Template",
+    "settings": [],
+	"blocks": [
+	  {
+        "type": "content_index",
+        "name": "Content Index",
+        "settings": [
+          {
+            "type": "text",
+            "id": "content_index",
+            "label": "Title for Content",
+            "default": "Title Example for Cotent"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content",
+			"default": "<p>Title Example for Cotent with an <a>link</a></p>"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image",
+            "info": "1200 x 1200px .png recommended"
+          }
+        ]
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

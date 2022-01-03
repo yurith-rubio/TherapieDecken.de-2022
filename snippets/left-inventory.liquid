@@ -1,0 +1,27 @@
+{% style %}
+.left_inventory{
+  color: #ba2e2e;
+  letter-spacing: .1em;
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));
+  text-align: center;}
+{% endstyle %}
+
+{% if settings.left_product_inventory %}
+  {% if selected_variant.available %}
+      {% assign total=0 %}
+      {% for variant in product.variants %}
+          {% capture i %}
+			{{ total | plus:variant.inventory_quantity }}
+		  {% endcapture %}
+          {% assign total = i %}
+      {% endfor %}
+	  {% assign t = total | plus: 0 %}
+	  {% if t > 0 and t <= 15 %}
+        <p class="left_inventory">Nur noch {{ total }} Stück übrig!</p><br>	
+        <input id="product-total-inventory-quantity" style="display:none" name="properties[total_inventory_quantity]" value="{{total}}" />
+	  {% endif %}
+  {% endif %}
+{% endif %}

@@ -1,0 +1,31 @@
+<div class="Container Container--standard--medium">
+  <div class="PageContent {% unless section.settings.show_large %}PageContent--narrow{% endunless %} Rte" style="margin-bottom:0;">
+    {{ page.content }}
+    <div class="lp">
+       <div class="lp-header">
+          <div class="lp-header__banner">
+             <img load="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Image-header-breast-cancer-1200x.jpg?v=1632509181" />
+             <div class="lp-header__banner__meta">
+                <h1>{{ page.title }}</h1>
+
+             </div>
+          </div>
+          <br />
+
+       </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Page",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

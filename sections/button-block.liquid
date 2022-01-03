@@ -1,0 +1,120 @@
+<!-- text-simple.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'product-custom.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+.Button__Block{
+  text-align:center;
+}
+{% endstyle %}
+
+<section class="Section" style="background-color: {{ section.settings.bg-color }};">        
+    <div class="Button__Block" style="padding-top: {{ section.settings.spacer_top }}; padding-bottom: {{ section.settings.spacer_bottom }};">
+      <a href="{{ section.settings.button_url }}" class="Button Button--primary">{{ section.settings.button_text }}</a>
+    </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Button",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg-color",
+      "label": "Background Color",
+	  "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+	  "default": "Mehr Erfharen"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "select",
+      "id": "spacer_top",
+      "label": "Top Space",
+      "options": [
+        {
+          "value": "0px",
+          "label": "none"
+        },
+        {
+          "value": "10px",
+          "label": "10px"
+        },
+        {
+          "value": "20px",
+          "label": "20px"
+        },
+        {
+          "value": "30px",
+          "label": "30px"
+        },
+        {
+          "value": "50px",
+          "label": "50px"
+        },
+        {
+          "value": "100px",
+          "label": "100px"
+        }
+        ],
+        "default": "0px"
+     },
+     {
+      "type": "select",
+      "id": "spacer_bottom",
+      "label": "Bottom Space",
+      "options": [
+        {
+          "value": "0px",
+          "label": "none"
+        },
+        {
+          "value": "10px",
+          "label": "10px"
+        },
+        {
+          "value": "20px",
+          "label": "20px"
+        },
+        {
+          "value": "30px",
+          "label": "30px"
+        },
+        {
+          "value": "50px",
+          "label": "50px"
+        },
+        {
+          "value": "100px",
+          "label": "100px"
+        }
+        ],
+        "default": "0px"
+     }
+  ],
+  "presets": [
+    {
+      "category": "Simple Block",
+      "name": "Button",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

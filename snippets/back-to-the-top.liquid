@@ -1,0 +1,92 @@
+{% comment %} 
+  Reduce below value if you need the back to the top button to appear higher up on the page. 
+  That value is in pixels.
+{% endcomment %}
+{% assign vertical_offset_for_trigger = 3400 %}
+{% comment %} 
+  Vertical offset from bottom of browser for the position of the button.
+{% endcomment %}
+{% assign position_from_bottom = '5.8em' %}
+<a href="#" title="Back to the top" class="back-to-top">
+  <span>ZUR AUSWAHL <span class="icon-keyboard_arrow_up"></span></span>
+</a>
+{{ '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' | stylesheet_tag }}
+<style>
+.back-to-top {
+	position: fixed;
+    /* bottom: 5.8em; */
+    /* right: 10px; */
+    text-decoration: none;
+    /* color: #000; */
+    /* background-color: #c5c5c5;*/
+    font-size: 18px;
+    /* padding: 0.3em; */
+    display: none;
+    /* -webkit-border-top-left-radius: 3px; */
+    /* -webkit-border-bottom-left-radius: 3px; */
+    /* -moz-border-radius-topleft: 3px; */
+    /* -moz-border-radius-bottomleft: 3px; */
+    /* border-top-left-radius: 3px; */
+    /* border-bottom-left-radius: 3px; */
+    z-index: 60000;
+    /* border-radius: 5px; */
+    transition: border 0.3s;
+    /* opacity: 0.6; */
+    /* width: 35px; */
+    text-align: center;
+    width: 100%;
+  	background-color: #fac636;
+  	bottom: 0px;
+    right: 0px;
+  	left: 0px;
+  	font-size: 14px;
+    font-weight: 600;
+    color: black;
+    min-height: 45px;
+    height: 45px;
+  	padding: 1em;
+}
+  
+@media screen and (min-width: 800px){
+  .back-to-top {
+    display:none!important;
+}
+}  
+    
+.back-to-top i {
+  vertical-align: middle;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.back-to-top span {
+  padding-left: 0em;
+}
+.back-to-top i + span {
+  padding-left: 0;
+}
+.back-to-top:hover {
+  text-decoration: none;
+  color: #555;
+}
+</style>
+<script>
+window.onload = function() {
+ jQuery(function($) {
+   var offset = {{ vertical_offset_for_trigger }};
+   var duration = 500;
+   $(window).scroll(function() {
+     if ($(this).scrollTop() > offset) {
+       $('.back-to-top').fadeIn(duration);
+     } 
+     else {
+       $('.back-to-top').fadeOut(duration);
+     }
+   });
+   $('.back-to-top').unbind('click.smoothscroll').bind('click', function(e) {
+     e.preventDefault();
+     $('html, body').animate( { scrollTop: 0 }, duration);
+     return false;
+   })
+ });
+}
+</script>

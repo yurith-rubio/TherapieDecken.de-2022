@@ -1,0 +1,117 @@
+<!-- icons-prestige.liquid -->
+
+{{ 'product-custom.css' | asset_url | stylesheet_tag}}
+{{ 'glider.min.css' | asset_url | stylesheet_tag}}
+
+{% style %}
+.full-bg-color-prestige{
+  background-color: {{ section.settings.bg-color }};
+}
+@media only screen and (min-width: 641px){
+	.prestige-main-container-mobile{
+	  display:none;
+	}
+}
+@media only screen and (max-width: 641px){
+	.prestige-main-container-desktop{
+	  display:none;
+	}
+}
+{% endstyle %}
+
+
+<div class="full-bg-color-prestige section-space-medium">
+  <div class="Container--standard--medium prestige-main-container-desktop">
+    <div class="icons-prestige-wr">
+          <div class= icons-prestige-single>
+            <div class="prestige-img-wr"><img class="prestige-img" loading="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Brigitte.svg?v=1629890447" alt=""></div>
+            <p>„Zum Schlafen brauchen Sie nur eins: Eine schwere Decke.“</p>
+          </div>
+          <div class= icons-prestige-single>
+            <div class="prestige-img-wr"><img class="prestige-img" loading="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Galileo_Logo_2013.png?v=1629891001" alt=""></div>
+            <p>„Es ist tatsächlich ein bisschen ähnlich, wie umarmt zu werden.“</p>
+          </div>
+          <div class= icons-prestige-single>
+            <div class="prestige-img-wr"><img class="prestige-img" loading="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Freundin.svg?v=1629890447" alt=""></div>
+            <p>„Mit der Gewichtsdecke hat sich die Länge der Tiefschlafphasen fast verdoppelt.“</p>
+          </div>
+          <div class= icons-prestige-single>
+            <div class="prestige-img-wr"><img class="prestige-img" loading="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/welt.svg?v=1629890447" alt=""></div>
+            <p>„Schwer genug für einen sanften Druck ohne sich erdrückt zu fühlen.“</p>
+          </div>
+          <div class= icons-prestige-single>
+            <div class="prestige-img-wr"><img class="prestige-img" loading="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Westwing.svg?v=1629890447" alt=""></div>
+            <p>„Die Decke, die Ihren Schlaf revolutionieren wird.“</p>
+          </div>
+    </div>
+  </div>
+  
+  
+  <div class="prestige-main-container-mobile">
+    <div class="Container--standard--medium glider-prestige">
+          <div class= icons-prestige-single>
+            <div class="prestige-img-wr"><img class="prestige-img" loading="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Brigitte.svg?v=1629890447" alt=""></div>
+            <p>„Zum Schlafen brauchen Sie nur eins: Eine schwere Decke.“</p>
+          </div>
+          <div class= icons-prestige-single>
+            <div class="prestige-img-wr"><img class="prestige-img" loading="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Galileo_Logo_2013.png?v=1629891001" alt=""></div>
+            <p>„Es ist tatsächlich ein bisschen ähnlich, wie umarmt zu werden.“</p>
+          </div>
+          <div class= icons-prestige-single>
+            <div class="prestige-img-wr"><img class="prestige-img" loading="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Freundin.svg?v=1629890447" alt=""></div>
+            <p>„Mit der Gewichtsdecke hat sich die Länge der Tiefschlafphasen fast verdoppelt.“</p>
+          </div>
+          <div class= icons-prestige-single>
+            <div class="prestige-img-wr"><img class="prestige-img" loading="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/welt.svg?v=1629890447" alt=""></div>
+            <p>„Schwer genug für einen sanften Druck ohne sich erdrückt zu fühlen.“</p>
+          </div>
+          <div class= icons-prestige-single>
+            <div class="prestige-img-wr"><img class="prestige-img" loading="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Westwing.svg?v=1629890447" alt=""></div>
+            <p>„Die Decke, die Ihren Schlaf revolutionieren wird.“</p>
+          </div>
+    </div>
+
+    <div role="tablist" class="dots-prestige"></div>
+  </div>
+  
+</div>
+
+
+<script>
+
+window.addEventListener('load', function(){
+  
+  new Glider(document.querySelector('.glider-prestige'), {
+  	slidesToShow: 2,
+  	dots: '.dots-prestige',
+  	draggable: true
+ 
+  });
+  
+});
+    
+</script>
+
+
+
+
+
+{% schema %}
+{
+    "name": "Icons Prestige",
+    "settings": [
+		{
+		"type": "color",
+		"id": "bg-color",
+		"label": "Background Color"
+	}
+	],
+    "presets": [
+    {
+      "category": "Product Sections",
+      "name": "Icons Prestige",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

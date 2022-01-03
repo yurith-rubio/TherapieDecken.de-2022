@@ -1,0 +1,111 @@
+/* Home Cover Pages */
+.home-Promotion__HeroContent{
+  position: relative;
+  left: 25px;
+  background: rgb(61,61,61);
+  background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(27,28,30,1) 70%);
+  margin-top: 60px;
+}
+.home-Promotion__HeroContent_Wrapper{
+	margin:auto;
+}
+
+@media screen and (min-width: 1501px) {
+  .home-Promotion__HeroContent_Wrapper{
+	max-width:80%;
+  }
+  .home-PRE-BFsvg-horizontal{
+	display:none;
+  }
+  .home-PRE-BFsvg-vertical{
+	padding-bottom: 30px;
+  }
+  .home-Promotion__HeroContent{
+    padding: 45px 40px;
+	max-width:33%;
+  }
+}
+
+@media screen  and (min-width: 641px) and (max-width: 1500px) {
+  .home-PRE-BFsvg-vertical{
+	display:none;
+  }
+  .home-Promotion__HeroContent{
+    padding: 0 0 3% 0;
+	max-width: 40%;
+  }
+  .home-PRE-BFsvg-horizontal{
+	padding: 7%;
+  }
+}
+@media screen  and (max-width: 640px) and (orientation: portrait) {
+  .home-PRE-BFsvg-horizontal{
+	display:none;
+  }
+  .home-Promotion__HeroContent{
+    max-width: 80%;
+	padding: 25px;
+	left: 0;
+  }
+  .home-PRE-BFsvg-vertical{
+	padding-bottom: 10px;
+  }
+}
+@media screen  and (max-width: 640px) and (orientation: landscape) {
+  .home-Promotion__HeroContent{
+    max-width: 80%;
+	padding: 10px 25px 25px 25px;
+	left: 0;
+  }
+  .home-PRE-BFsvg-vertical{
+	display:none;
+  }
+  .home-PRE-BFsvg-horizontal{
+	padding-bottom: 10px;
+  }
+}
+
+/* Collection Cover Pages */
+
+.BlackFri__HeroContent_Wrapper{
+  background: radial-gradient(circle, rgba(61,61,61,1) 0%, rgba(27,28,30,1) 70%);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.vergleich-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: #E6E6E6;
+  color: #3A3C3C;
+  width: 100%;
+  font-weight: bold;
+}
+
+@media screen  and (min-width: 641px) {
+  .PRE-BFsvg-horizontal{
+	padding: 0 40px;
+  }
+  .PRE-BFsvg-vertical{
+	display:none;
+  }
+}
+
+@media screen  and (max-width: 640px) and (orientation: portrait) {
+  .PRE-BFsvg-horizontal{
+	display:none;
+  }
+  .PRE-BFsvg-vertical{
+	padding: 0 40px;
+  }
+}
+@media screen  and (max-width: 640px) and (orientation: landscape) {
+  .PRE-BFsvg-horizontal{
+	padding: 0 40px;
+  }
+  .PRE-BFsvg-vertical{
+	display:none;
+  }
+}

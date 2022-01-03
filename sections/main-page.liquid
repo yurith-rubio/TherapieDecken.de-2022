@@ -1,0 +1,61 @@
+<!-- page: main-page.liquid -->
+{% style %}
+.back-link-pages{
+	margin-top: -30px;
+    margin-bottom: 30px;
+}
+.back-link-pages-bottom{
+	margin-top: 30px;
+    margin-bottom: 30px;
+}
+{% endstyle %}
+
+
+<div class="Container Container--standard--medium">
+  <header class="PageHeader">
+    <div class="SectionHeader SectionHeader--center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </div>
+  </header>
+
+  <div class="PageContent {% unless section.settings.show_large %}PageContent--narrow{% endunless %} Rte">
+    {% if section.settings.back_link_checkbox %} 
+ 	   <div class="back-link-pages"><a href="{{ section.settings.back_link_text }}">{{ section.settings.back_link_text }} </a></div>
+    {% endif %}
+    {{ page.content }}
+    {% if section.settings.back_link_checkbox %} 
+ 	   <div class="back-link-pages-bottom"><a href="{{ section.settings.back_link_text }}">{{ section.settings.back_link_text }} </a></div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Page",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_large",
+      "label": "Large width",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "back_link_checkbox",
+      "label": "Go back Link",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "back_link_text",
+      "label": "Link Text",
+      "default": "Zurück zur..."
+    },
+    {
+      "type": "text",
+      "id": "back_link_url",
+      "label": "Link Url"
+    }
+  ]
+}
+{% endschema %}

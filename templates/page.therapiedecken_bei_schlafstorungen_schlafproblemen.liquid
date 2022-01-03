@@ -1,0 +1,67 @@
+<!-- page.therapiedecken_bei_schlafstorungen_schlafproblemen.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'pages.css' | asset_url | stylesheet_tag}}
+
+<div class="grid">
+  <div class="grid__item large--five-sixths push--large--one-twelfth">
+    <header class="section-header text-center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </header>
+    <div class="rte rte--nomargin rte--indented-images">
+          
+          <!-- HC - Newsletter page changes - 20 Apr '18 -->
+          {% if page.handle == 'newsletter-abonnieren'%}
+          {% section 'newsletter-abonnieren' %}
+          {% else %}
+          {{ page.content }}
+          
+          <meta charset="utf-8" />
+          <p><a href="https://therapiedecken.de/pages/wirkung"><span>← </span>Zurück zur Übersicht weiterer Vorteile von Gewichtsdecken </a></p>
+          <p>Lesedauer: 2 Minuten</p>
+          <h2 class="Heading u-h2">Welche Auswirkungen haben Schlafstörungen?</h2>
+          <p>Schlaflosigkeit kann durch die unterschiedlichsten Faktoren ausgelöst werden und sich auf viele Bereiche im Alltag auswirken. Die Konzentrationsfähigkeit und Produktivität werden maßgeblich beeinflusst, ebenfalls steigt das Risiko für Herzprobleme oder Erkrankungen wie Diabetes und Fettleibigkeit.</p>
+          <meta charset="utf-8" />
+          <h2 class="Heading u-h2"><span>Wie kann eine Gewichtsdecke bei Schlafproblemen helfen?</span></h2>
+          <div class="video-wrapper">
+          	<iframe src="https://player.vimeo.com/video/394566599" width="320" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+          </div>
+          <p>Um dem entgegenzuwirken kann eine Gewichtsdecke die Qualität und die Länge des Schlafes erheblich verbessern. Dies hat wiederum positive Auswirkungen auf die Arbeit und das alltägliche Leben – ein ausgeruhter Körper reagiert weniger gereizt gegenüber seinen Mitmenschen. Nachweislich kann die Gewichtsdecke durch den ausgeübten Tiefendruck den Cortisolspiegel (sog. Stresshormon) senken, wodurch ein Gefühl des Entspannens und Wohlbefindens entsteht.</p>
+          <p>Das Gewicht der Decke wirkt auf die Muskeln, Sehnen und Gelenke, sodass der Körper intensiver wahrgenommen wird und besser kontrolliert werden kann. Dafür verantwortlich sind das Glückshormon Serotonin und das Schlafhormon Melatonin, deren Ausschüttung beim Auflegen der Gewichtsdecke gefördert wird. Die Muskeln und das Nervensystem entspannen sich, Ängste werden gemindert und der Körper kann sich insgesamt leichter von angestautem Stress und Anspannungen erholen.</p>
+          <p>Dabei kann die Decke nicht nur nachts, sondern auch tagsüber eingesetzt werden. Bei der heutigen Schnelllebigkeit kann eine kurze Pause Wunder wirken und dem Körper auch im Laufe des Tages die Chance geben, sich zu erholen und Energie aufzuladen.</p>
+          <p><strong>Zusammenfassung:</strong></p>
+          <ul>
+             <li>Gewichtsdecke hat entspannende Wirkung auf den Körper und fördert schnelleres einschlafen</li>
+             <li>Besserer Schlaf wirkt sich positiv auf Alltag und Arbeit aus</li>
+          </ul>
+          <div class="wirkung-container">
+             <h3 class="wirkung-container-title Heading u-h3">Jetzt 28 Tage Probeschlafen!</h3>
+             <div class="wirkung-container-subcontent">
+                <p>Testen Sie jetzt für 28 Tage eine Gewichtsdecke Ihrer Wahl!</p>
+             </div>
+             <div class="wirkung-container-thumb"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/Gewichtsdecke_Therapiedecke_28_Tage_Probeschlafen_Kinder_Erwachsene_Schlafprobleme.png?v=1581519163" class="responsive-wirkung" /></div>
+             <div class="wirkung-container-content">
+                <ul class="wirkung-bullets">
+                   <li>Kostenloser Versand</li>
+                   <li>Gratis Umtausch</li>
+                   <li>28 Tage Probeschlafen</li>
+                   <li>100% Geld-Zurück-Garantie</li>
+                </ul>
+             </div>
+            <a style="margin-top:25px;" href="https://therapiedecken.de/pages/fur-wenn-benotigen-sie-eine-therapiedecke" class="Button Button--primary button-wirkung"><span>Jetzt 28 Tage Probeschlafen!</span></a>
+            <!--<a href="https://therapiedecken.de/pages/fur-wenn-benotigen-sie-eine-therapiedecke"><button class="button-wirkung">Jetzt 28 Tage Probeschlafen!</button></a>-->
+          </div>
+          <meta charset="utf-8" />
+          <p><a href="https://therapiedecken.de/pages/wirkung"><span>← </span>Zurück zur Übersicht weiterer Vorteile von Gewichtsdecken </a></p>
+          
+          {% endif %}
+          
+          {% comment %}{% include 'judgeme_all_reviews' %}{% endcomment %}
+          
+{% if page.handle == 'therapiedecken-helfen-bei-alzheimer-parkinson-und-demenz-1'  %} 
+
+{% include 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: true %}  {% endif %}
+        </div>
+  </div>
+</div>
+

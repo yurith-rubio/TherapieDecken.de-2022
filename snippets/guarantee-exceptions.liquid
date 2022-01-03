@@ -1,0 +1,18 @@
+{% if settings.show_product_guarantee_exceptions %}
+
+  {% style %}
+  .guarantee_except{
+    text-align:center;
+    font-weight: bold;
+    color: #bb1d33;
+    padding-top:30px;
+  }
+  {% endstyle %}
+
+  {%- if product.title == 'X' -%}
+
+  {% else %}
+      <div class="guarantee_except"><span style="font-size: 20px; padding-right:7px; vertical-align: middle;" class="icon-notice"></span>Für diese Produktauswahl können wir keine Zustellung vor Weihnachten garantieren.</div>
+  {% endif %}
+
+{% endif %}

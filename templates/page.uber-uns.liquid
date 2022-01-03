@@ -1,0 +1,347 @@
+<!-- page.uber-uns.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'pages.css' | asset_url | stylesheet_tag}}
+
+<div class="grid">
+  <div class="grid__item large--five-sixths push--large--one-twelfth">
+
+    <header class="section-header text-center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </header>
+
+    <div class="grid">
+      <div class="grid__item large--four-fifths push--large--one-tenth">
+        <div class="rte rte--nomargin rte--indented-images">
+          
+          <!-- HC - Newsletter page changes - 20 Apr '18 -->
+          {% if page.handle == 'newsletter-abonnieren'%}
+          {% section 'newsletter-abonnieren' %}
+          {% else %}
+          {{ page.content }}
+          
+          <ul class="tabs-uberuns">
+             <li class="about-us-menu-sub"><a href="#tab-1" onclick="openTab('tab1')" class="active">Unsere Geschichte</a></li>
+             <li class="about-us-menu-sub"><a href="#tab-2" onclick="openTab('tab2')">Unsere Mission</a></li>
+             <li class="about-us-menu-sub"><a href="#tab-3" onclick="openTab('tab3')">Unsere soziale Verantwortung</a></li>
+             <li class="about-us-menu-sub"><a href="#tab-4" onclick="openTab('tab4')">Presse</a></li>
+          </ul>
+          <div id="tab1" class="tabName">
+             <h2 class="Heading u-h2">Unsere Geschichte</h2>
+             <p>Senso-Rex, das Unternehmen hinter TherapieDecken.de, wurde 2013 aus der Not heraus gegründet. Ein kleiner Junge mit Autismus benötigte schnell eine Gewichtsdecke, aber die meisten auf dem Markt erhältlichen Decken waren nicht bezahlbar. Deswegen entschieden sich die Gründer von Senso-Rex die Decke selbst herzustellen. Aus einer Decke wurden schließlich schnell viele...<br /> <br /> Die Decken wurden anfangs in einer kleinen Wohnung genäht und hauptsächlich in Polen verkauft. Jetzt sind wir in einem großen, modernen Gebäude mit über 100 Mitarbeitern. Unsere Gewichtsdecken werden von Kunden aus der ganzen Welt gekauft und geschätzt. Da jede Decke in Handarbeit und mit viel Sorgfalt hergestellt wird, sind es unsere Mitarbeiter, die im Herzen des Unternehmens stehen. Ein guter und fairer Umgang untereinander bietet unserem Team eine gute Arbeitsatmosphäre, in der sich jeder wohlfühlt. Unsere Mitarbeiter setzen sich aus allen Altersgruppen zusammen und bringen ihre einzigartigen Charaktereigenschaften mit ein. Wir legen Wert darauf, auch geistig und körperlich beeinträchtigte Menschen in einen Teil des Herstellungsprozesses miteinzubeziehen. Wir sind stolz auf unsere qualitativ hochwertigen Therapiedecken und den nachhaltigen und umweltfreundlichen Herstellungsprozess, der komplett innerhalb der EU stattfindet.<br /><br /> Wir nehmen die Verantwortung gegenüber unseren Kunden, ob Kinder oder Erwachsene, das beste Produkt bieten zu können, sehr ernst. Unsere Therapiedecken sollen Ihnen einen ruhigen und gesunden Schlaf schenken und unseren Mitarbeitern, einen Arbeitsplatz zu dem sie gerne jeden Morgen zurückkommen.</p>
+          </div>
+          <div id="tab2" class="tabName" style="display: none;">
+             <h2 class="Heading u-h2">Unsere Mission</h2>
+             <p>Es ist unser Wunsch und unser Ziel möglichst viele Menschen zu erreichen, die von einer Gewichtsdecke profitieren können. Es besteht großes Interesse seitens der Krankenhäuser, Pflegestätten und Kindergärten. Wir werden unsere hohen Ansprüche an die Qualität unserer Produkte beibehalten und unser Unternehmen immer weiter ausbauen, um möglichst vielen Menschen, die unter Stress, Schlafproblemen oder Entwicklungsstörungen, wie ADHS, Autismus, Asperger- oder Down-Syndrom leiden, zu helfen und unsere Position als Marktführer in Deutschland zu untermauern.</p>
+          </div>
+          <meta charset="utf-8" />
+          <div id="tab3" class="tabName" style="display: none;">
+             <h2 class="Heading u-h2">Unsere soziale Verantwortung</h2>
+             <p>Als Unternehmen ist es für uns wichtig, hochwertige Gewichtsdecken anzubieten und unsere Kunden zufriedenzustellen. Ebenfalls in unserem Interesse ist es, Verantwortung in allen Arbeitsschritten zu übernehmen, als auch Bewusstsein im Umgang mit Menschen und Ressourcen zu entwickeln.</p>
+             <p>Wie gelingt es uns, diese Ziele umzusetzen?</p>
+             <div>
+                <div class="social image-right">
+                   <img class="socialimg" src="https://cdn.shopify.com/s/files/1/2451/6611/files/therapiedecken_gewichtsdecken_kinder_unterstutzung.jpg?1582941035833491891" />
+                   <div>
+                      <p><strong><em>1. Unterstützung von Kinder- und Altersheimen</em></strong></p>
+                      <p>Fragen Sie sich was mit den zurückgeschickten Decken geschieht? Die Decken werden an Kinder- und Altersheime gegeben, die sich diese Anschaffung oft nicht leisten könnten. Wir möchten damit Kinder und Senioren unterstützen, die von den Vorteilen einer Gewichtsdecke sehr profitieren können.</p>
+                   </div>
+                </div>
+                <div class="social">
+                   <img class="socialimg" src="https://cdn.shopify.com/s/files/1/2451/6611/files/therapiedecken_gewichtsdecken_kooperation.jpg?1582941035833491891" />
+                   <div>
+                      <p><strong><em>2. Kooperation mit Organisationen</em></strong></p>
+                      <p>Therapiedecken können Menschen mit Autismus helfen, daher unterstützen wir einige Organisationen, die sich mit Therapiemöglichkeiten für Autisten auseinandersetzen. Wir möchten einen Beitrag dazu leisten, Menschen mit Herausforderungen und Defiziten zu einem besseren Wohlbefinden zu verhelfen – auch außerhalb unseres gängigen Verkaufs.</p>
+                   </div>
+                </div>
+                <div class="social image-right">
+                   <img class="socialimg" src="https://cdn.shopify.com/s/files/1/2451/6611/files/therapiedecken_gewichtsdecken_behinderungen_unterstutzung.jpg?1582941035833491891" />
+                   <div>
+                      <p><strong><em>3. Beschäftigung von Menschen mit Behinderungen</em></strong></p>
+                      <p>Wir betrachten jeden Menschen als gleichwertig, weshalb wir auch Menschen mit geistigen und körperlichen Beeinträchtigungen beschäftigen. Das Arbeitsumfeld ist, falls notwendig, entsprechend der Behinderung angepasst und jede Person hat die Möglichkeit seine Fähigkeiten und Stärken zu entfalten.</p>
+                   </div>
+                </div>
+                <div class="social">
+                   <img class="socialimg" src="https://cdn.shopify.com/s/files/1/2451/6611/files/therapiedecken_gewichtsdecken_umwelt_unterstutzung.jpg?1582941035833491891" />
+                   <div>
+                      <p><strong><em>4. Umweltfreundliche Produktion</em></strong></p>
+                      <p>Wir fördern eine nachhaltige Produktion mit der Vorstellung, dass wirtschaftliche Leistungsfähigkeit, soziale Verantwortung und der Schutz der Umwelt untrennbar zusammengehören. Der gesamte Produktionsprozess findet in Europa statt – von ökologisch angebauter Baumwolle in Spanien bis hin zur Verwendung von grüner Energie und strenger Abfalltrennung bei der Produktion in Polen. Zusätzlich legen wir viel Wert auf faire Arbeitsbedingungen für unsere Mitarbeiter, die fest in die Umsetzung unserer Umweltziele eingebunden werden.</p>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div id="tab4" class="tabName" style="display: none;">
+            <h2 class="Heading u-h2">Unsere Presse</h2>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   Juni 2021
+                   <div class="hc-title-mobile"><strong>Blog Magazin</strong></div>
+                </div>
+                <div class="hc-image"><a href="https://blog-magazin.info/gewichtsdecke-erfahrungen/#1"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/blog-magazin.png?v=1624266553" /></a></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Blog Magazin</strong></p>
+                   <div class="hc-press-body">Der Autor hat unser Gravity Modell ausgiebig getestet und anderen Modellen gegenübergestellt. Als Single hält er die Decke für eine angenehme Umarmung beim Schlafen und verwendet sie gerne weiterhin.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   April 2021
+                   <div class="hc-title-mobile"><strong>Familie.de</strong></div>
+                </div>
+                <div class="hc-image"><a href="https://www.familie.de/testberichte/gewichtsdecken-alle-infos-und-die-besten-modelle-im-ueberblick/"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/familie.png?v=1624266553" /></a></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Familie.de</strong></p>
+                   <div class="hc-press-body">Die Autorin gibt einen Überblick über die Wirkung von Gewichtsdecken und bezieht auch eine aktuelle Studie mit ein. Außerdem stellt sie 3 unterschiedlcihe Modelle vor.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   April 2021
+                   <div class="hc-title-mobile"><strong>Gesundheit.de</strong></div>
+                </div>
+                <div class="hc-image"><a href="https://www.gesundheit.de/news/therapiedecke"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/gesundheit.png?v=1617860912" /></a></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Gesundheit.de</strong></p>
+                   <div class="hc-press-body">Die Corona-Krise löst bei vielen Menschen Depressionen und Schlafstörungen aus. Der ultimative Schlaftipp der Autorin von Gesundheit.de lautet: Therapiedecke gegen innere Unruhe und für die Unterstützung beim Einschlafen.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   April 2021
+                   <div class="hc-title-mobile"><strong>Life Line</strong></div>
+                </div>
+                <div class="hc-image"><a href="https://www.lifeline.de/beauty-und-wellness/gesunder-schlaf/gewichtsdecke-id180197.html#quality"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/lifeline.png?v=1617860912" /></a></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Life Line</strong></p>
+                   <div class="hc-press-body">Die Physiotherapeutin und Medizinredakteurin Miriam Funke hat ihrer Leserschaft erklärt, wem Therapiedecken helfen können, wer besser keine verwendet und welche Studien es zur Wirksamkeit der gewichteten Decken gibt.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   März 2021
+                   <div class="hc-title-mobile"><strong>GESUNDER KÖRPER</strong></div>
+                </div>
+                <div class="hc-image"><a href="https://www.gesunder-koerper.info/aesthetik/entspannung/gewichtsdecken-helfen-bei-angst-und-schlafstoerungen/"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/gesunder.png?v=1617103214" /></a></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>GESUNDER KÖRPER</strong></p>
+                   <div class="hc-press-body">Ein Gastbeitrag bei Gesunder Körper erklärt kurz und bündig, wie unsere Gewichtsdecken bei Angst- und Schlafstörungen helfen können.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   Februar 2021
+                   <div class="hc-title-mobile"><strong>Taff</strong></div>
+                </div>
+                <div class="hc-image"><a href="https://www.prosieben.de/tv/taff/video/2021-taff-testet-folge-5-entspannungsgadgets-clip/"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/taff.png?v=1613987157" /></a></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Taff</strong></p>
+                   <div class="hc-press-body">Taff testet-Reporterin Raquel hat neben anderen Entspannungsprodukten unsere Therapiedecke getestet und ist begeistert! Sie vergibt die volle Punktzahl für das friedliche, wohlige Gefühl und maximale Entspannung.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   Februar 2021
+                   <div class="hc-title-mobile"><strong>BILD</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/bild.png?v=1612274937" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>BILD</strong></p>
+                   <div class="hc-press-body">Kritisch testet die BILD-Reporterin unsere Therapiedecke. Glück gehabt - immerhin reicht ihr unsere Gewichtsdecke nach einem stressigen Tag für einen ruhigen Abend auf der Couch.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   März 2020
+                   <div class="hc-title-mobile"><strong>Aargauer Zeitung</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/aargant.png?v=1588579272" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Aargauer Zeitung</strong></p>
+                   <div class="hc-press-body">In Zeiten der Unsicherheit und Panik verweist eine Redakteurin der Aargauer Zeitung auf unsere Therapiedecken als Hilfsmittel gegen all das, worauf wir momentan keinen Einfluss haben.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   März 2020
+                   <div class="hc-title-mobile"><strong>Experten testen</strong></div>
+                </div>
+                <div class="hc-image"><a href="https://www.expertentesten.de/news/therapiedecken-de-onlineshop-therapiedecken-fuer-kinder-und-erwachsene-online-kaufen/"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/rxperten.png?v=1588579272" /></a></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Experten testen</strong></p>
+                   <div class="hc-press-body">Das Team von Expertentesten wollten unser Unternehmen besser kennenlernen, daher haben wir ihnen einige Interviewfragen beantwortet.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   Juli 2019
+                   <div class="hc-title-mobile"><strong>WELT</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/welt_logo_gewichtsdecke_therapiedecke_copy.png?6711" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>WELT</strong></p>
+                   <div class="hc-press-body">Welche verschiedenen Hilfsmittel für Schlaf gibt es? Unsere Gewichtsdecke hat definitiv erdrückende Argumente.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   April 2019
+                   <div class="hc-title-mobile"><strong>Chip</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/chip_logo_gewichtsdecke_therapiedecke_copy.png?6711" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Chip</strong></p>
+                   <div class="hc-press-body">Die Chip-Redaktion wollte es selbst ausprobieren und hat Gewichtsdecken aus drei verschiedene Preisklassen getestet. Wer wohl gewinnt?</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   März 2019
+                   <div class="hc-title-mobile"><strong>EatSmarter</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/eatsmarter_logo_gewichtsdecke_therapiedecke.png?6711" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>EatSmarter</strong></p>
+                   <div class="hc-press-body">Die Redakteurin von EatSmarter hat ihre dünne Daunendecke gegen unsere Gewichtsdecke ausgetauscht - beides darf bleiben.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   März 2019
+                   <div class="hc-title-mobile"><strong>Galileo</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/galileo_logo_gewichtsdecke_therapiedecke.png?4220654246311038601" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Galileo</strong></p>
+                   <div class="hc-press-body">Der Galileo-Reporter war neugierig, ob sich sein Schlaf durch unsere Therapiedecke verbessern kann. Er wurde nicht enttäuscht.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   März 2019
+                   <div class="hc-title-mobile"><strong>Woche Heute</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/woche_heute_logo_gewichtsdecke_therapiedecke.png?9769423894079344038" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Woche Heute</strong></p>
+                   <div class="hc-press-body">Woche Heute klärt auf und erzählt, was man überhaupt unter dem Begriff der Gewichtsdecke versteht und welchen Nutzen sie hat.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   Februar 2019
+                   <div class="hc-title-mobile"><strong>Süddeutsche Zeitung</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/suddeutsche_logo_gewichtsdecke_therapiedecke.png?9769423894079344038" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Süddeutsche Zeitung</strong></p>
+                   <div class="hc-press-body">Die Sueddeutsche blickt zurück und recherchiert über die Herkunft, den Erfolg und die Wirkung von Gewichtsdecken.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   Februar 2019
+                   <div class="hc-title-mobile"><strong>Woman.at</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/woman.at_logo_gewichtsdecke_therapiedecke.png?9769423894079344038" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Woman.at</strong></p>
+                   <div class="hc-press-body">Die Woman Redakteurin hat die Therapiedecke ausprobiert. Nun hilft es ihr beim Abschalten nach einem stressigen Arbeitstag.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   Februar 2019
+                   <div class="hc-title-mobile"><strong>WirtschaftsWoche</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/wirtschaftswoche_brigitte_logo_gewichtsdecke_therapiedecke.png?9769423894079344038" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>WirtschaftsWoche</strong></p>
+                   <div class="hc-press-body">Neun moderne Technologien für einen besseren Schlaf - unsere Therapiedecken sind dabei und kommen sogar ganz ohne Batterien aus.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   Januar 2019
+                   <div class="hc-title-mobile"><strong>Barbara/Brigitte</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/barabara_brigitte_logo_gewichtsdecke_therapiedecke.png?9769423894079344038" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Barbara/Brigitte</strong></p>
+                   <div class="hc-press-body">Zwei Familien haben den Test gemacht, dabei durften unsere Decken vom kleinsten bis zum größten Familienmitglied bewertet werden.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   Januar 2019
+                   <div class="hc-title-mobile"><strong>Freundin</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/freundin_logo_gewichtsdecke_therapiedecke.png?9769423894079344038" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Freundin</strong></p>
+                   <div class="hc-press-body">Geborgenheit und die perfekte Temperatur beim Schlafen erfährt die Testerin Marisa durch unsere Therapiedecke.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   Januar 2019
+                   <div class="hc-title-mobile"><strong>FFH</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/ffh_logo_gewichtsdecke_therapiedecke.png?9769423894079344038" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>FFH</strong></p>
+                   <div class="hc-press-body">Die FFH-Höhrerin Melanie hat Durchschlafprobleme und hat daher unsere Therapiedecke getestet - mit Erfolg.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   Oktober 2018
+                   <div class="hc-title-mobile"><strong>Handelsblatt</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/handelsblatt_logo_gewichtsdecke_therapiedecke.png?9769423894079344038" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Handelsblatt</strong></p>
+                   <div class="hc-press-body">Eine Journalistin hat sich auf Experimente mit Schlafhelfern eingelassen - die Therapiedecke war dabei ihr Highlight.</div>
+                </div>
+             </div>
+             <div class="hc-press-wrapper">
+                <div class="hc-date">
+                   August 2018
+                   <div class="hc-title-mobile"><strong>Aerzte.de</strong></div>
+                </div>
+                <div class="hc-image"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/aerzte.de_logo_gewichtsdecke_therapiedecke.png?9769423894079344038" /></div>
+                <div class="hc-info">
+                   <p class="hc-press-title hc-title-desktop"><strong>Aerzte.de</strong></p>
+                   <div class="hc-press-body">Eine unserer Mitarbeiterin von TherapieDecken.de verrät in dem Interview einige interessante Eigenschaften zur Therapiedecke.</div>
+                </div>
+             </div>
+          </div>
+          
+          {% endif %}
+          
+          {% comment %}{% include 'judgeme_all_reviews' %}{% endcomment %}
+          
+{% if page.handle == 'therapiedecken-helfen-bei-alzheimer-parkinson-und-demenz-1'  %} 
+
+{% include 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: true %}  {% endif %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function openTab(tabfunction) {
+  var i;
+  var x = document.getElementsByClassName("tabName");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(tabfunction).style.display = "block";  
+}
+$(".about-us-menu-sub > a").click(function(){
+  $(".active").removeClass("active");
+  $(this).addClass("active");
+});
+</script>
+

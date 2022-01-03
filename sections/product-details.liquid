@@ -1,0 +1,242 @@
+{% style %}
+.full-bg-color-product-details{
+  background-color: {{ section.settings.bg-color }};
+}
+{% endstyle %}
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'product-custom.css' | asset_url | stylesheet_tag}}
+
+<div class="full-bg-color-product-details">
+  <div class="medium-grid">
+    <p class="SectionHeader__SubHeading Heading u-h6 center-text">{{ section.settings.subheading_tag1 | escape }}</p>
+    <h2 class="SectionHeader__Heading Heading u-h1 center-text">{{ section.settings.title_tag1 | escape }}</h2>
+    <div class="product-details-infomation">
+      <div class="product-page-title-line"></div>
+
+      <div class="product-details-infomation-section">
+
+      {% for block in section.blocks %}
+        <details>
+          <summary>{{ block.settings.title_block }}</summary>
+          {% if block.settings.html_content != blank %}
+          	<div>{{ block.settings.html_content }}</div>
+          {% endif %}
+          
+		  {% if block.settings.extra_block %}
+              <details class="detailsfaq">
+                <summary class="summaryfaq">{{ block.settings.subtitle_block }}</summary>
+                <div class="content-extra-faq">
+                  {{ block.settings.html_content_extra }}
+                </div>
+              </details>
+           {% endif %}
+          {% if block.settings.extra_block2 %}
+              <details class="detailsfaq">
+                <summary class="summaryfaq">{{ block.settings.subtitle_block2 }}</summary>
+                <div class="content-extra-faq">
+                  {{ block.settings.html_content_extra2 }}
+                </div>
+              </details>
+           {% endif %}
+          {% if block.settings.extra_block3 %}
+              <details class="detailsfaq detailsfaq-last">
+                <summary class="summaryfaq">{{ block.settings.subtitle_block3 }}</summary>
+                <div class="content-extra-faq">
+                  {{ block.settings.html_content_extra3 }}
+                </div>
+              </details>
+           {% endif %}
+          
+        {% if block.settings.richtext_content2 != blank %}
+          	<div class="last-content-block-faq">{{ block.settings.richtext_content2 }}</div>
+        {% endif %}
+        </details>
+        
+          
+       {% endfor %}
+
+      </div>
+    </div>
+  </div>
+</div>        
+
+
+
+<center>
+  <div id="icons21_wrapper_products">
+    <div class="icons21_wrapper_block">
+      <div class="icons21_small_wrapper_products">
+        <span class="icon-Icons_Cotton01 icons21_font_size"><span class="path1"></span><span class="path2"></span><span
+            class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span
+            class="path7"></span></span>
+        <p>Organische Baumwolle</p>
+      </div>
+
+      <div class="icons21_small_wrapper_products">
+        <span class="icon-Icons_Europe01 icons21_font_size"><span class="path1"></span><span class="path2"></span><span
+            class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span
+            class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span
+            class="path11"></span><span class="path12"></span><span class="path13"></span><span
+            class="path14"></span></span>
+        <p>Handgefertigt in Europa</p>
+      </div>
+
+      <div class="icons21_small_wrapper_products">
+        <span class="icon-Icons_Sustainable01 icons21_font_size"
+          style="font-size: {{ section.settings.icons_size }};"><span class="path1"></span><span
+            class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span
+            class="path6"></span><span class="path7"></span><span class="path8"></span></span>
+        <p>Nachhaltige Herstellung</p>
+      </div>
+    </div>
+
+    <div class="icons21_wrapper_block">
+      <div class="icons21_small_wrapper_products">
+        <span class="icon-Icons_Vegan01 icons21_font_size" style="font-size: {{ section.settings.icons_size }};"><span
+            class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span
+            class="path5"></span></span>
+        <p>100% Vegan</p>
+      </div>
+
+      <div class="icons21_small_wrapper_products">
+        <span class="icon-Icons_Allergy01 icons21_font_size" style="font-size: {{ section.settings.icons_size }};"><span
+            class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span
+            class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span
+            class="path9"></span><span class="path10"></span><span class="path11"></span><span
+            class="path12"></span><span class="path13"></span><span class="path14"></span><span
+            class="path15"></span><span class="path16"></span></span>
+        <p>Antiallergisch</p>
+      </div>
+
+      <div class="icons21_small_wrapper_products">
+        <span class="icon-Icons_Quality01 icons21_font_size" style="font-size: {{ section.settings.icons_size }};"><span
+            class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span
+            class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span
+            class="path9"></span><span class="path10"></span><span class="path11"></span><span
+            class="path12"></span><span class="path13"></span></span>
+        <p>Hochwertige Verarbeitung</p>
+      </div>
+    </div>
+  </div>
+</center>
+
+    
+
+
+{% schema %}
+{
+  "name": "Product Details",
+  "settings": [
+      {
+        "type": "color",
+        "id": "bg-color",
+        "label": "Background Color"
+      },
+      {
+        "type": "text",
+        "id": "subheading_tag1",
+        "label": "Title Section for Baumwolle",
+        "default": "Subheading Example"
+      },
+      {
+        "type": "text",
+        "id": "title_tag1",
+        "label": "Title Section for Baumwolle",
+        "default": "Title Section Example"
+      }
+	],
+ "blocks": [
+        {
+            "type": "info-product-details",
+            "name": "Info Product Details",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title_block",
+                    "label": "Title Block",
+                    "default": "Place your title"
+                },
+                {
+                    "type": "html",
+                    "id": "html_content",
+                    "label": "Content at the beginning of the block",
+                    "default": "Place here your content"
+                },
+				{
+                    "type": "checkbox",
+                    "id": "extra_block",
+                    "label": "Add an extra block",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "subtitle_block",
+                    "label": "Title Block",
+                    "default": "Place your title"
+                },
+                {
+                    "type": "html",
+                    "id": "html_content_extra",
+                    "label": "Extra content 1",
+                    "default": "ONLY IF Extra content 1 - Place here your content"
+                },
+				{
+                    "type": "checkbox",
+                    "id": "extra_block2",
+                    "label": "Add an extra block",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "subtitle_block2",
+                    "label": "Title Block",
+                    "default": "Place your title"
+                },
+                {
+                    "type": "html",
+                    "id": "html_content_extra2",
+                    "label": "Extra content 2",
+                    "default": "ONLY IF Extra content 2 - Place here your content"
+                },
+				{
+                    "type": "checkbox",
+                    "id": "extra_block3",
+                    "label": "Add an extra block",
+                    "default": false
+                },
+                {
+                    "type": "text",
+                    "id": "subtitle_block3",
+                    "label": "Title Block",
+                    "default": "Place your title"
+                },
+                {
+                    "type": "html",
+                    "id": "html_content_extra3",
+                    "label": "Extra content 3",
+                    "default": "ONLY IF Extra content 3 - Place here your content"
+                },
+                {
+                    "type": "richtext",
+                    "id": "richtext_content2",
+                    "label": "Content at the end of the block"
+                }
+            ]
+        }
+    ],
+  "presets": [
+    {
+      "category": "Product Sections",
+      "name": "Product Details",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

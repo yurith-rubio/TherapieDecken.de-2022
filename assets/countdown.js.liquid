@@ -1,0 +1,62 @@
+// countdown.js.liquid
+
+{% if settings.announcement_countdown_enable or settings.product_countdown_enable %}
+    var countDownDate = new Date("{{ settings.countdown_date }}").getTime();
+    var loopTime = {{ settings.loop_time }};
+    var resetingTime = new Date("{{ settings.reseting_time }}");
+
+  // If do not want a loop, we select '0' and get the normal countdown
+  if (loopTime <= 0) {
+    var currentCountdown = countDownDate;
+  } else {
+    var currentCountdown = resetingTime;
+  }
+
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date and time
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    // If the count down is over
+    if (distance <= 0) {
+      clearInterval(x);
+	  {% if settings.announcement_countdown_enable %}
+        document.getElementById("countdown_announcement").innerHTML = "";
+      {% endif %}
+
+      {% if settings.product_countdown_enable %}
+        document.getElementById("countdown_product").innerHTML = "";
+        document.getElementById("countdown_product_wrapper").className = " no-js";
+      {% endif %}
+      return;
+    }
+
+    var distanceNow = currentCountdown - now;
+
+    var days = Math.floor(distanceNow / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distanceNow % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distanceNow % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distanceNow % (1000 * 60)) / 1000);
+
+    // If we want a loop  
+    if (distanceNow <= 0) {
+      let i = 0;
+      i = i + {{ settings.loop_time }};
+      currentCountdown = new Date(resetingTime.getTime() + loopTime*60000*60);
+      loopTime = loopTime + i;
+      return;
+    }
+    
+	{% if settings.announcement_countdown_enable %}
+      document.getElementById("countdown_announcement").innerHTML = `<span class="countdown_days"><span class="countdown_text">${days}</span>` + "T " + `</span>` + `<span class="countdown_text">${hours}</span>` + "STD "
+      + `<span class="countdown_text">${minutes}</span>` + "MIN " + `<span class="countdown_text">${seconds}</span>` + "S ";
+    {% endif %}
+    {% if settings.product_countdown_enable %}
+      document.getElementById("countdown_product").innerHTML = `<span>{{ settings.countdown_product_text }} </span><span class="countdown_product_text">${days}</span>` + "T " + `<span class="countdown_product_text">${hours}</span>` + "STD "
+      + `<span class="countdown_product_text">${minutes}</span>` + "MIN " + `<span class="countdown_product_text">${seconds}</span>` + "S ";
+    {% endif %}
+
+  }, 1000);
+{% endif %}

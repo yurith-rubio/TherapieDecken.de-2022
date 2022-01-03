@@ -1,0 +1,21 @@
+<style>
+  .logo-nachhaltige-herstellung{
+    display: flex;
+    align-items: center;
+    color: #298214;
+    padding-top: 4px;
+  }
+  .logo-nachhaltige-herstellung > .text-nachhaltige-herstellung{
+    padding-left:4px;
+  }
+  @media only screen and (max-width: 1007px){
+    .logo-nachhaltige-herstellung{
+      justify-content: center;
+    }
+  }
+</style>
+{% if product.title != 'Geschenkgutschein' %}
+  <a href="https://therapiedecken.de/pages/die-nachhaltigsten-gewichtsdecken">
+    <p class="logo-nachhaltige-herstellung"><span class="icon-sustainable-production"></span> <span class="text-nachhaltige-herstellung"><strong>Nachhaltige Herstellung</strong></span></p>
+  </a>
+{% endif %}

@@ -1,0 +1,102 @@
+<!-- section: page-standard-header.liquid -->
+{{ 'pages.css' | asset_url | stylesheet_tag}}
+
+<header class="PageHeader PageHeader--withBackground PageHeader--small">
+  <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if section.settings.apply_overlay %}Image--contrast{% endif %} {% if section.settings.mobile_custom %}hidden-phone{% endif %}"
+     data-optimumx="1.2"
+     data-bgset="{{ section.settings.image | img_url: 'x600' }} 600w, {{ section.settings.image | img_url: '800x' }} 800w, {{ section.settings.image | img_url: '1200x' }} 1200w, {{ section.settings.image | img_url: '1400x' }} 1400w, {{ section.settings.image | img_url: '1600x' }} 1600w">
+  </div>
+  {% if section.settings.mobile_custom %}
+  <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if section.settings.apply_overlay %}Image--contrast{% endif %} hidden-tablet-and-up"
+     data-optimumx="1.2"
+     data-bgset="{{ section.settings.image_mobile | img_url: 'x600' }} 600w, {{ section.settings.image_mobile | img_url: '800x' }} 800w">
+  </div>
+  {% endif %}
+  <noscript>
+     <div class="PageHeader__ImageWrapper {% if section.settings.apply_overlay %}Image--contrast{% endif %}" style="background-image: url({{ collection.image | img_url: '800x' }})"></div>
+  </noscript>
+  <div class="SectionHeader SectionHeader--center" style="margin-bottom: 0; padding: 0 25px;">
+    <h1 class=" Heading u-h1">
+      {% if section.settings.custom_title %}
+      	{{ section.settings.custom_title_text }}
+      {% else %}
+      	{{ page.title }}
+      {% endif %}
+    </h1>
+    
+    {%- if section.settings.review_starts -%}
+      <div class="review_starts">
+        <img load="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/5-stars_900x.png?v=1604350117">
+      </div>
+    {% endif %}
+    {%- if section.settings.content != blank -%}
+      <div class="SectionHeader__Description Rte">
+        {{ section.settings.content }}
+      </div>
+    {% endif %}
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Page Standard Header",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "custom_title",
+      "label": "Custom Title",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "custom_title_text",
+      "label": "Custom Title",
+      "default": "Customize Title if needed"
+    },
+    {
+       "type": "image_picker",
+       "id": "image",
+       "label": "Image",
+       "info": "1800 x 600px recommended"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_custom",
+      "label": "Mobile Picture",
+      "default": false
+    },
+    {
+       "type": "image_picker",
+       "id": "image_mobile",
+       "label": "Image Mobile",
+       "info": "750 x 1100px recommended"
+    },
+    {
+      "type": "checkbox",
+      "id": "apply_overlay",
+      "label": "Apply overlay on image",
+      "info": "This can improve text visibility.",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "review_starts",
+      "label": "Review Stars",
+      "default": false
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Extra Content",
+      "info": "Write extra needed content"
+    }
+  ],
+  "presets": [
+	{
+      "category": "Pages",
+      "name": "Page Standard Header",
+      "settings": {}
+	}
+  ]
+}
+{% endschema %}

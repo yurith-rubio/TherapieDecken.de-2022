@@ -1,0 +1,57 @@
+<!-- countdown-product.liquid -->
+
+{% style %}
+  .countdown_product_text{
+    color:{{ settings.countdown_product_numbers_color }};
+    background-color:{{ settings.countdown_product_bg_color }};
+    padding: 2px 5px;
+    margin: 0 3px 0 0;
+    border-radius: {{ settings.border_radius_countdown }}px;
+  }
+  .countdown_product{
+    display: flex;
+    justify-content: center;
+    background-color: {{ settings.countdown_container_bg_color }};
+    color: white;
+    padding: 10px 23px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    min-width: 200px;
+    min-height: 40px;
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));
+    line-height: 1.8;
+    width: 80%;
+    margin: -10px auto 20px;
+  }
+  .product_price_timer_triangle {
+    position: absolute;
+    margin-left: 150px;
+    margin-top: -10px;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid {{ settings.countdown_container_bg_color }};
+  }
+  #icon-counter > span:before{
+    font-size: 16px;
+    line-height: 1.4;
+    padding-right: 5px;
+    color: white !important;
+  }
+{% endstyle %}
+
+{% if settings.product_countdown_enable %}
+  {% if settings.countdown_date != blank %}
+	<div id="countdown_product_wrapper" >
+      <div class="product_price_timer_triangle"></div>
+      <div class="countdown_product">
+        <span id="icon-counter">{{ settings.icon_countdown_product }}</span><span id="countdown_product"></span>
+      </div>
+	</div>
+  {% endif %}
+{% endif %}

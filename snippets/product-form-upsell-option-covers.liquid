@@ -1,0 +1,592 @@
+<!-- snippet: product-form-upsell-option-covers.liquid -->
+
+{{ 'upsell-product.js' | asset_url | script_tag }}
+
+{%- comment -%}
+Those are the option names for which we automatically detect swatch. For the color, we use them to display a swatch,
+while for size, we use it to display a size chart (if applicable)
+{%- endcomment -%}
+
+{% comment %} Added 'bezugsart' to the current color_label, in order to have a swatch option for 'Bezugsart' - Yurith {% endcomment %}
+{%- assign color_label = 'color,colour,farbe,bezugsart,design,bezugssystem' | split: ',' -%}
+{%- assign size_label = 'size,größe' | split: ',' -%}
+{%- assign gewicht_label = 'gewicht' | split: ',' -%}
+
+{%- assign size_chart_page = '' -%}
+{%- assign product_popovers = '' -%}
+{%- assign show_option_label = false -%}
+
+{%- assign selected_variant = product.selected_or_first_available_variant -%}
+
+<!-- STEP 1. ASSIGN EXTRA PRODUCTS -->
+{% assign gravity_inlett_product = all_products['inlett'] %}
+{% assign balance_inlett_product = all_products['balance-gewichtsdecken-inlett'] %}
+<!-- ENDSTEP 1 -->
+
+<style>
+  .hide_option, .blank_option{
+    display:none;
+  }
+</style>
+
+<div class="ProductForm__Variants">
+  {%- unless product.has_only_default_variant -%}
+  	{%- for option in product.options_with_values -%}
+  
+  		{%- assign downcase_option = option.name | downcase -%}
+
+  		{%- if block.settings.selector_mode == 'block' or color_label contains downcase_option and block.settings.show_color_swatch -%}
+  			{%- assign show_option_label = true -%}
+  		{%- endif -%}
+  	{%- endfor -%}
+
+	{%- for option in product.options_with_values -%}
+  		{%- assign downcase_option = option.name | downcase -%}
+  		{%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-{{ option.name | handle }}{%- endcapture -%}
+
+        <div class="ProductForm__Option {% if show_option_label %}ProductForm__Option--labelled{% endif %}">
+          {%- if show_option_label -%}
+          {%- assign size_chart_page = block.settings.size_chart -%}
+
+          <span class="ProductForm__Label">
+            {{ option.name }}:
+
+            <!-- COMMENT WITH FELIX. I am hiding the swatch value -->
+            {% comment %}
+            {% if color_label contains downcase_option and block.settings.show_color_swatch %}
+            <span class="ProductForm__SelectedValue">{{ option.selected_value }}</span>
+            {% endif %}
+            {% endcomment %}
+            <!-- ENDCOMMENT -->
+
+            {%- if size_label contains downcase_option and size_chart_page != blank -%}
+            <button type="button" class="ProductForm__LabelLink Link Text--subdued" data-action="open-modal"
+              aria-controls="modal-{{ size_chart_page.handle }}">
+              {{- 'product.form.size_chart' | t -}}
+            </button>
+            {%- endif -%}
+          </span>
+          {%- endif -%}
+		  
+          <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+          {% render 'information-products', option: option %}
+          <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+
+          {%- if color_label contains downcase_option and block.settings.show_color_swatch -%}
+            <ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
+            {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
+
+            {%- for value in option.values -%}
+              {% if option.name == "Bezugsart" or option.name == "Design" or option.name == "Farbe" or option.name == "Bezugssystem" %}
+              {%- assign downcase_value = value | downcase -%}
+
+               <li class="HorizontalList__Item MainVariant_container">
+
+                <input id="option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
+                  class="ColorSwatch__Radio" type="radio" name="option-{{ parent_index }}"
+                  value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
+                  data-option-position="{{ option.position }}">
+                <label for="option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
+                  class="ColorSwatch {% if option.name == "Bezugssystem" %}ColorSwatch--simple{% endif %} ColorSwatch--large {% if downcase_value == 'white' %}ColorSwatch--white{% endif %}"
+                  data-tooltip="{{ value | escape }}"
+                  style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: value %}">
+                  <span class="u-visually-hidden">{{ value }}</span>
+                </label>
+                {% if option.name == "Bezugssystem" %}
+                <p class="VariantValue--style">
+                  {% assign simple_value = value %}
+                  {% assign name_variant = simple_value %}            
+                  {{ name_variant | escape }}    
+                 </p>           
+              {% else %}
+                <p class="VariantValue--style">
+                  {% assign simple_value = value | split: '(' | last %}
+                  {% assign name_variant = simple_value | split: ')' | first %}
+                  {{ name_variant | escape }}    
+                </p>
+              {% endif %}
+
+			  <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+              {% render 'information-badges', product: product %}
+              <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+
+              {% endif %}  
+            </li>
+            {%- endfor -%}
+          </ul>
+		  
+          <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+          {% render 'information-bgd-cover-type', product: product %}
+          <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+          
+          <style>
+            .Inlett__Input:checked > .SizeSwatch {
+                border: #fac637 solid 3px!important;
+                background: #fac6371c;
+                background-position: center;
+                background-size: cover;
+            }
+            .YesNoButtons__Label{
+            	margin-top: 27px;
+            }
+          </style>
+          
+          <!-- STEP 2.A Duplicate Main Product Form for Additional Product: Balance Inlett -->
+          <!-- Yes / No uption Buttons for Balance --> 
+          <div class="BalanceInlett__MainContainer AdditionalInlett__MainContainer" style="display: none">
+              <span class="ProductForm__Label YesNoButtons__Label">
+                  Wollen Sie auch ein Balance Gewichtsdecken Inlett hinzufügen?
+              </span>
+
+              <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
+                <li class="HorizontalList__Item">
+                  <input id="noBalanceInlett__Selector" checked="checked" 
+                         class="SizeSwatch__Radio yesnoBalanceInlett_Selector" type="radio" value="No" name="yesno_balance_inlett">
+                  <label for="noBalanceInlett__Selector" class="SizeSwatch">Nein</label>
+                </li>
+                <li class="HorizontalList__Item">
+                  <input id="yesBalanceInlett__Selector"
+                         class="SizeSwatch__Radio yesnoBalanceInlett_Selector" type="radio" value="Yes" name="yesno_balance_inlett">
+                  <label for="yesBalanceInlett__Selector" class="SizeSwatch">Ja</label>
+                </li>
+              </ul>
+			<!-- End Yes/No -->
+
+            {%- for option in balance_inlett_product.options_with_values -%}
+              {% if option.name == 'Größe' %}
+                  {% continue %}
+              {% endif %}
+              <div class="AdditionalProductContainer BalanceInlettContainer" style="display: none">
+                  <span class="ProductForm__Label AdditionalProductProductForm__Label">
+                      {{ option.name }}:
+                  </span>
+
+                  <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+                  {% render 'information-products', option: option %}
+                  <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+                
+                  {%- if block.settings.selector_mode == 'block' -%}
+                    <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
+                      {%- for value in option.values -%}
+                      <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
+                        <input id="BalanceInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
+                          class="SizeSwatch__Radio Inlett__Input BalanceInlett__Input" type="radio" name="BalanceInlett-option-{{ forloop.parentloop.index0 }}"
+                          value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked" {% endif %}
+                          data-inlett-option-position="{{ option.position }}"
+                          data-inlett-product="BalanceInlett" >
+                        <label for="BalanceInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>                    
+                        {% for variant in balance_inlett_product.variants %}
+                          {% if value == variant.option2 %}
+                          <div class="BalanceInlett__Variant" data-option-1="{{ variant.option1}}" data-option-2="{{ variant.option2}}" data-variant-id="{{ variant.id }}"></div>
+                          {% endif %}
+                        {% endfor %}                      
+                      </li>                                       
+                      {%- endfor -%}                                        
+                    </ul>
+                  {% endif %}
+                  <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+                  {% render 'information-bgd-weight', balance_inlett_product: balance_inlett_product, option: option %}
+                  <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+              </div>
+            {% endfor %}
+          		
+            </div>
+          <!-- ENDSTEP 2.A -->
+          
+          <!-- STEP 2.B Duplicate Main Product Form for Additional Product: Gravity Inlett -->
+          <!-- Yes / No uption Buttons for Gravity -->
+          <div class="GravityInlett__MainContainer AdditionalInlett__MainContainer" style="display: none">
+              <span class="ProductForm__Label YesNoButtons__Label">
+                  Wollen Sie auch ein Gravity Gewichtsdecken Inlett hinzufügen?
+              </span>
+
+              <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
+                <li class="HorizontalList__Item">
+                  <input id="noGravityInlett__Selector" checked="checked" 
+                         class="SizeSwatch__Radio yesnoGravityInlett_Selector" type="radio" value="No" name="yesno_gravity_inlett">
+                  <label for="noGravityInlett__Selector" class="SizeSwatch">Nein</label>
+                </li>
+                <li class="HorizontalList__Item">
+                  <input id="yesGravityInlett__Selector"
+                         class="SizeSwatch__Radio yesnoGravityInlett_Selector" type="radio" value="Yes" name="yesno_gravity_inlett">
+                  <label for="yesGravityInlett__Selector" class="SizeSwatch">Ja</label>
+                </li>
+              </ul>
+		  <!-- End Yes/No -->
+
+            {%- for option in gravity_inlett_product.options_with_values -%}
+              {% if option.name == 'Größe' %}
+                  {% continue %}
+              {% endif %}
+                <div class="AdditionalProductContainer GravityInlettContainer" style="display: none">
+                    <span class="ProductForm__Label AdditionalProductProductForm__Label">
+                        {{ option.name }}:
+                    </span>
+
+                    <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+                    {% render 'information-products', option: option %}
+                    <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+
+                    {%- if block.settings.selector_mode == 'block' -%}
+                      <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
+                        {%- for value in option.values -%}
+
+                        <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
+                          <input id="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
+                            class="SizeSwatch__Radio Inlett__Input GravityInlett__Input" type="radio" name="GravityInlett-option-{{ forloop.parentloop.index0 }}"
+                            value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked" {% endif %}
+                            data-inlett-option-position="{{ option.position }}">
+                          <label for="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>
+                          {% for variant in gravity_inlett_product.variants %}
+                            {% if value == variant.option2 %}
+                              <div class="GravityInlett__Variant" data-option-1="{{ variant.option1}}" data-option-2="{{ variant.option2}}" data-variant-id="{{ variant.id }}"></div>
+                            {% endif %}
+                          {% endfor %} 
+                        </li>
+                        {%- endfor -%}
+                      </ul>
+                    {% endif %}
+                    <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+                    {% render 'information-bgd-weight', gravity_inlett_product: gravity_inlett_product, option: option %}
+                    <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+                </div>
+            {% endfor %}
+          </div>
+          <!-- ENDSTEP 2.B -->
+                    
+		  <!-- STEP 3. MOVE MAIN PRODUCT FORM UNDER TO AVOID DOUBLE VARIANTS -->
+          {%- elsif block.settings.selector_mode == 'block' -%}
+          <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
+            {%- for value in option.values -%}
+            <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
+              <input id="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
+                class="SizeSwatch__Radio" type="radio" name="option-{{ forloop.parentloop.index0 }}"
+                value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked" {% endif %}
+                data-option-position="{{ option.position }}">
+              <label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>
+            </li>
+            {%- endfor -%}
+          </ul>
+          <!-- ENDSTEP 3 -->
+          
+          <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+          {% render 'information-bgd-weight', product: product, option: option %}
+          <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+
+          {%- else -%}
+          <button type="button" class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">
+            <span class="ProductForm__OptionName">{% unless show_option_label %}{{ option.name }}: {% endunless %}<span
+                class="ProductForm__SelectedValue">{{ option.selected_value }}</span></span>
+            {%- render 'icon' with 'select-arrow' -%}
+          </button>
+
+          {%- capture popover_html -%}
+          
+          {%- if color_label contains downcase_option and block.settings.show_color_carousel -%}
+          	{%- for value in option.values -%}
+          		{%- if value == option.selected_value -%}
+          			{%- assign initial_image_index = forloop.index0 -%}
+          			{%- break -%}
+          		{%- endif -%}
+          	{%- endfor -%}
+
+          {%- capture flickity_options -%}
+            {
+            "prevNextButtons": true,
+            "pageDots": true,
+            "initialIndex": {{ initial_image_index }},
+            "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25}
+            }
+          {%- endcapture -%}
+
+          <div id="{{ popover_id }}" class="VariantSelector" aria-hidden="true">
+            {%- capture option_index -%}option{{ option.position }}{%- endcapture -%}
+
+            {%- assign option_indexes_excluded_color = '' -%}
+            {%- assign selected_variant_title_excluded_color = '' -%}
+
+            {%- for option_nested in product.options_with_values -%}
+            	{%- if option_nested.position != option.position -%}
+                  {%- assign option_indexes_excluded_color = option_indexes_excluded_color | append: option_nested.position | append: ',' -%}
+                  {%- for option_nested_value in option_nested.values -%}
+                      {%- if option_nested_value == option_nested.selected_value -%}
+                          {%- assign selected_variant_title_excluded_color = selected_variant_title_excluded_color | append: option_nested_value -%}
+                      {%- endif -%}
+                  {%- endfor -%}
+            	{%- endif -%}
+            {%- endfor -%}
+
+            {%- assign option_indexes_excluded_color = option_indexes_excluded_color | split: ',' | compact -%}
+
+            <div class="VariantSelector__Carousel Carousel" data-flickity-config='{{ flickity_options }}'>
+              {%- for value in option.values -%}
+                <div class="VariantSelector__Item Carousel__Cell {% if value == option.selected_value %}is-selected{% endif %}"
+                  data-background-color="{{ value | split: ' ' | last | handle }}"
+                  data-background-image="{{ value | handle | append: '.png' | asset_url }}"
+                  data-option-position="{{ option.position }}" data-option-value="{{ value | escape }}">
+                  {%- for variant in product.variants -%}
+                    {%- if variant[option_index] == value -%}
+                      {%- assign variant_image = variant.image | default: product.featured_image -%}
+
+                      {%- assign variant_title_excluded_color = '' -%}
+                      {%- for option_index_excluded_color in option_indexes_excluded_color -%}
+                          {%- capture sub_option_index -%}option{{ option_index_excluded_color }}{%- endcapture -%}
+                          {%- assign variant_title_excluded_color = variant_title_excluded_color | append: variant[sub_option_index] -%}
+                      {%- endfor -%}
+
+                      <div data-variant-title="{{ variant_title_excluded_color | escape }}"
+                        class="VariantSelector__ImageWrapper AspectRatio AspectRatio--withFallback"
+                        aria-hidden="{% if selected_variant_title_excluded_color == variant_title_excluded_color %}false{% else %}true{% endif %}"
+                        style="max-width: {{ variant_image.width }}px; padding-bottom: {{ 100.0 | divided_by: variant_image.aspect_ratio }}%; --aspect-ratio: {{ variant_image.aspect_ratio }}">
+                        {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,400,600,800', image: variant_image -%}{%- endcapture -%}
+                        {%- assign image_url = variant_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+                        <img class="VariantSelector__Image Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}"
+                          data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ variant_image.alt | escape }}">
+                        <span class="Image__Loader"></span>
+                      </div>
+                    {%- endif -%}
+                  {%- endfor -%}
+                </div>
+              {%- endfor -%}
+            </div>
+
+            <div class="VariantSelector__Info">
+              <div class="VariantSelector__ChoiceList">
+                {%- for value in option.values -%}
+                {%- assign min_price_for_variant = product.price_max -%}
+
+                {%- for variant in product.variants -%}
+                	{%- if variant[option_index] == value -%}
+                		{%- assign min_price_for_variant = min_price_for_variant | at_most: variant.price -%}
+                	{%- endif -%}
+                {%- endfor -%}
+
+                <div class="VariantSelector__Choice {% if value == option.selected_value %}is-selected{% endif %}">
+                  <div class="VariantSelector__ChoiceColor">
+                    {%- assign downcase_value = value | downcase -%}
+
+                    {%- assign color_swatch_name = value | handle | append: '.png' -%}
+                    {%- assign color_swatch_image = images[color_swatch_name] -%}
+
+                    <span
+                      class="VariantSelector__ColorSwatch {% if downcase_value == 'white' %}VariantSelector__ColorSwatch--white{% endif %}"
+                      style="background-color: {{ value | replace: ' ', '' | downcase }}; {% if color_swatch_image != blank %}background-image: url({{ color_swatch_image | img_url: '64x64' }}){% endif %}"></span>
+                    <span class="VariantSelector__ChoiceValue">{{ value }}</span>
+                  </div>
+
+                  <div class="VariantSelector__ChoicePrice" data-color-position="{{ option.position }}">
+                    {%- if available_prices_for_option_value.size > 1 -%}
+                      {%- capture formatted_min_price -%}
+                    	<span>{{ min_price_for_variant | money_without_trailing_zeros }}</span>
+                      {%- endcapture -%}
+                      <span class="Heading Text--subdued">{{ 'product.form.from_price_html' | t: min_price: formatted_min_price }}</span>
+                    {%- else -%}
+                    	<span class="Heading Text--subdued">{{ min_price_for_variant | money_without_trailing_zeros }}</span>
+                    {%- endif -%}
+                  </div>
+                </div>
+                {%- endfor -%}
+              </div>
+
+              <button type="button" class="VariantSelector__Button Button Button--primary Button--full"
+                data-action="select-variant">{{- 'product.form.select_model' | t -}}</button>
+            </div>
+          </div>
+          {%- else -%}
+          <div id="{{ popover_id }}" class="OptionSelector Popover Popover--withMinWidth" aria-hidden="true">
+            <header class="Popover__Header">
+              <button type="button" class="Popover__Close Icon-Wrapper--clickable" data-action="close-popover">{% render 'icon' with 'close' %}</button>
+              <span class="Popover__Title Heading u-h4">{{ option.name | escape }}</span>
+            </header>
+
+            <div class="Popover__Content">
+              <div class="Popover__ValueList" data-scrollable>
+                {%- for value in option.values -%}
+                <button type="button"
+                  class="Popover__Value {% if value == option.selected_value %}is-selected{% endif %} Heading Link Link--primary u-h6"
+                  data-value="{{ value | escape }}" data-option-position="{{ option.position }}" data-action="select-value">
+                  {{- value | escape -}}
+                </button>
+                {%- endfor -%}
+              </div>
+
+              {%- assign size_chart_page = block.settings.size_chart -%}
+
+              {%- if show_option_label == false and size_label contains downcase_option and size_chart_page != blank -%}
+              <button type="button" class="Popover__FooterHelp Heading Link Link--primary Text--subdued u-h6"
+                data-action="open-modal" aria-controls="modal-{{ size_chart_page.handle }}">
+                {{- 'product.form.size_chart' | t -}}
+              </button>
+              {%- endif -%}
+            </div>
+          </div>
+          {%- endif -%}
+          {%- endcapture -%}
+
+          {%- assign product_popovers = product_popovers | append: popover_html -%}
+          {%- endif -%}
+        </div>
+  {%- endfor -%}
+  
+  <div class="no-js ProductForm__Option">
+    <div class="Select Select--primary">
+      {%- render 'icon' with 'select-arrow' -%}
+      <select id="product-select-{{ product.id }}" name="id[]" title="Variant">
+        {%- for variant in product.variants -%}
+        <option {% if variant==selected_variant %}
+                selected="selected" {% endif %} 
+                	{% unless variant.available %}
+                disabled="disabled" {% endunless %} 
+                value="{{ variant.id }}" 
+                data-sku="{{ variant.sku }}">{{ variant.title }} - {{ variant.price | money_without_trailing_zeros }}
+        </option>
+        {%- endfor -%}
+      </select>
+    </div>
+  </div>
+  
+  <!-- STEP 4. Duplicate Main Selector for the Additional Product: Gravity Inlett (Change product object and add '[]' to the name id) -->
+  <select id="GravityInlettSelector" class="AdditionalProductSelector GravitySelector no-js" name="id[]" title="GravityInlettVariant">
+    {%- for variant in gravity_inlett_product.variants -%}
+    <option {% if variant==selected_variant %}
+            selected="selected" {% endif %} 
+            {% unless variant.available %}
+            disabled="disabled" {% endunless %} 
+            value="{{ variant.id }}" 
+            data-sku="{{ variant.sku }}">{{ variant.title }} - {{ variant.price | money_without_trailing_zeros }}
+    </option>
+    {%- endfor -%}
+  </select> 
+  <!-- ENDSTEP 4 -->
+   
+  <!-- STEP 4.A Duplicate Main Selector for the Additional Product: Balance Inlett (Change product object and add '[]' to the name id) -->
+      <select id="BalanceInlettSelector" class="AdditionalProductSelector BalanceSelector no-js" name="id[]" title="BalanceInlettVariant">
+        {%- for variant in balance_inlett_product.variants -%}
+        <option {% if variant == selected_variant %}
+                selected="selected" {% endif %} 
+                	{% unless variant.available %}
+                disabled="disabled" {% endunless %} 
+                value="{{ variant.id }}" 
+                data-sku="{{ variant.sku }}">{{ variant.title }} - {{ variant.price | money_without_trailing_zeros }}
+        </option>
+        {%- endfor -%}
+      </select>
+  <!-- ENDSTEP 4.A -->
+  
+  {%- else -%}
+  	<input type="hidden" name="id[]" data-sku="{{ selected_variant.sku }}" value="{{ selected_variant.id }}">
+  {%- endunless -%}
+
+</div>
+
+  {%- if product.template_suffix != 'coming-soon' -%}
+
+	<!-- STEP 5. Update Price (Add new product prices to the ProductMetta_PriceList div) -->
+    <div class="ProductMeta__PriceList Heading">
+      {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+        <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+        <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">{{ product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
+      {%- else -%}
+        <span class="ProductMeta__Price Price Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+      {%- endif -%}
+    </div>
+	<!-- ENDSTEP 5  -->
+
+    <div class="ProductMeta__UnitPriceMeasurement" style="display: {%- if product.selected_or_first_available_variant.unit_price_measurement -%}block{% else %}none{% endif %}">
+      <div class="UnitPriceMeasurement Heading u-h6 Text--subdued">
+        <span class="UnitPriceMeasurement__Price">{{ product.selected_or_first_available_variant.unit_price | money_without_trailing_zeros }}</span>
+        <span class="UnitPriceMeasurement__Separator">/ </span>
+        <span class="UnitPriceMeasurement__ReferenceValue" style="display: {% if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 %}inline{% else %}none{% endif %}">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_value }}</span>
+        <span class="UnitPriceMeasurement__ReferenceUnit">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}</span>
+      </div>
+    </div>
+  {%- endif -%}
+
+  {% render 'countdown-product' %}
+
+  {% render 'left-inventory', selected_variant:selected_variant %}
+
+{%- if size_chart_page != empty -%}
+{%- comment -%}If we have a size chart we capture the modal content (it must be displayed outside the form for proper positioning){%- endcomment -%}
+
+{%- capture product_modals -%}
+<div id="modal-{{ size_chart_page.handle }}" class="Modal Modal--dark Modal--fullScreen Modal--pageContent"
+  aria-hidden="true" role="dialog" data-scrollable>
+  <header class="Modal__Header">
+    <h2 class="Modal__Title Heading u-h1">{{ size_chart_page.title }}</h2>
+  </header>
+
+  <div class="Modal__Content Rte">
+    <div class="Container Container--extraNarrow">
+      {{- size_chart_page.content -}}
+    </div>
+  </div>
+
+  <button class="Modal__Close RoundButton RoundButton--large" data-animate-bottom data-action="close-modal">{% render
+    'icon' with 'close' %}</button>
+</div>
+{%- endcapture -%}
+{%- endif -%}
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+OFF SCREEN ELEMENTS
+
+Implementation note: in the past (with "include") we could accumulate the data and output it outside the snippet
+itself. However with the new "render" tag, everything that is captured inside cannot be used outside the snippet
+itself. As a consequence we are moving them in JavaScript. This allows to make sure that those elements are upper
+in the DOM tree, and do not show below the content
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<div class="Product__OffScreen">
+  {{- product_popovers -}}
+  {{- product_modals -}}
+</div>
+
+{% comment %}
+------------------------------------------------------------------------------
+Product Data. This must be outputted for all products (including home page).
+
+IMPORTANT: THIS CODE IS VITAL. DO NOT EDIT IT NOT REMOVE IT. MAKE SURE TO KEEP
+THE EXACT SAME ATTRIBUTES.
+------------------------------------------------------------------------------
+{% endcomment %}
+
+{%- assign inventory_block = section.blocks | where: 'type', 'inventory' | first -%}
+
+<script type="application/json" data-product-json>
+  {
+    "product": {{ product | json }},
+    "selected_variant_id": {{ selected_variant.id }}
+    {%- if inventory_block != blank -%}
+      ,"inventories": {
+        {%- for variant in product.variants -%}
+          {%- assign inventory_message = '' -%}
+
+          {%- if inventory_block.settings.inventory_quantity_threshold == 0 -%}
+            {%- capture inventory_message -%}{{- 'product.form.inventory_quantity_count' | t: count: variant.inventory_quantity -}}{%- endcapture -%}
+          {%- else -%}
+            {%- capture inventory_message -%}{{- 'product.form.low_inventory_quantity_count' | t: count: variant.inventory_quantity -}}{%- endcapture -%}
+          {%- endif -%}
+
+          "{{ variant.id }}": {
+            "inventory_management": {{ variant.inventory_management | json }},
+            "inventory_policy": {{ variant.inventory_policy | json }},
+            "inventory_quantity": {{ variant.inventory_quantity | json }},
+            "inventory_message": {{ inventory_message | json }}
+          }{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      }
+    {%- endif -%}
+  }
+</script>
+
+<script type="text/javascript">
+  window.moneyFormat = "{{ shop.money_with_currency_format }}";
+  window.mainProductJson = {{ product | json }};
+  window.firstProductPrice = {{ selected_variant.price }};
+  window.gravityInlettProductJson = {{ gravity_inlett_product | json }};
+  window.balanceInlettProductJson = {{ balance_inlett_product | json }};
+</script>

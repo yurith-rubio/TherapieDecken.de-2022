@@ -1,0 +1,110 @@
+/* Product Info Metafields - bgd.weight & bdg.cover-type Metafields */
+
+.info-wr, .balance-info-wr, .gravity-info-wr, .additional-info-wr{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    margin: 10px 0;
+    align-items: baseline;
+    padding-left: 30px;
+    width: fit-content;
+    inline-size: fit-content;
+    background: #f1f1f1;
+    font-size: 11px;
+}
+.info-wr-hidden, .additional-info-wr-hidden {
+  display: none;
+}
+.info-wr > span, .additinal-info-wr > span{
+  color: #6c6c6c;
+  padding-right: 5px;
+  position: relative;
+  top: 2px;
+  margin-left: -22px;
+}
+
+.balance-info-wr > span, .additinal-info-wr > span{
+  color: #6c6c6c;
+  padding-right: 5px;
+  position: relative;
+  top: 2px;
+  margin-left: -22px;
+}
+
+.gravity-info-wr > span, .additinal-info-wr > span{
+  color: #6c6c6c;
+  padding-right: 5px;
+  position: relative;
+  top: 2px;
+  margin-left: -22px;
+}
+
+/* Limited Badge - bgd.is_limited Metafield - Yurith */
+
+.is-limited-badge-hidden {
+  display: none;
+}
+.is-limited-badge {
+  color: #fff;
+  background: #BA2E2E; 
+  position: absolute;
+  top: 11px;
+  right: -16px;
+  transform: rotate(45deg);
+  padding: 1px 2px;
+  font-size: 9px;
+  width: 70px;
+  font-weight: 600;
+}
+
+.additional-is-limited-badge-hidden {
+  display: none;
+}
+.additional-is-limited-badge {
+  color: #fff;
+  background: #BA2E2E; 
+  position: absolute;
+  top: 11px;
+  right: -16px;
+  transform: rotate(45deg);
+  padding: 1px 2px;
+  font-size: 9px;
+  width: 70px;
+  font-weight: 600;
+}
+/* Limited Badge - bgd.is_limited Metafield - Yurith */
+
+.on-sale-badge-hidden {
+  display: none;
+}
+.on-sale-badge {
+    color: white;
+    background: #BA2E2E;
+    position: absolute;
+    top: 0px;
+    padding: 3px 5px 3px 5px;
+    font-size: 12px;
+    width: 44px;
+    font-weight: 900;
+    left: 0px !important;
+    z-index: 2;
+}
+
+/* Availability - bgd.availability Metafield - Yurith */
+
+.twtd-shipping-time-hidden{
+  display: none;
+}
+.twtd-shipping-time {
+	margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+  .green {
+      color: #418732;
+  }
+  .red {
+    color: red;
+  }
+}

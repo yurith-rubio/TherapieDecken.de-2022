@@ -1,0 +1,55 @@
+<!-- information-bgd-weight.liquid -->
+
+{% comment %} Product Info for all Main Variants from Metafield - bgd.weight - Yurith {% endcomment %}
+{% if option.name == 'Gewicht' %}
+  {% for variant in product.variants %}
+    {% if variant.metafields.bgd.weight %}
+      {% assign weight_class = "info-wr info-wr-hidden" %}
+      {% if variant.id == product.selected_or_first_available_variant.id %}
+      	{% assign weight_class = "info-wr" %}
+      {% endif %}
+      <div data-variant-id="{{variant.id}}" class="{{ weight_class }}">
+        {{ variant.metafields.bgd.weight }}
+      </div>
+    {% endif%}
+  {% endfor %}
+{% endif%}
+
+	{% comment %}
+		Information for Balance Inlett from Metafield in Variants: bgd-weight - Yurith
+	{% endcomment %}
+{%- for option in balance_inlett_product.options_with_values -%}
+  {% if option.name == 'Gewicht' %}
+    {% for variant in balance_inlett_product.variants %}
+      {% if variant.metafields.bgd.weight %}
+        {% assign weight_class = "balance-info-wr info-wr-hidden" %}
+        {% if variant.id == balance_inlett_product.selected_or_first_available_variant.id %}
+          {% assign weight_class = "balance-info-wr" %}
+        {% endif %}
+        <div data-variant-id="{{variant.id}}" class="{{ weight_class }}">
+          {{ variant.metafields.bgd.weight }}
+        </div>
+      {% endif%}
+    {% endfor %}
+  {% endif%}
+{% endfor %}
+
+	{% comment %}
+		Information for Gravity Inlett from Metafield in Variants: bgd-weight - Yurith
+	{% endcomment %}
+
+{%- for option in gravity_inlett_product.options_with_values -%}
+  {% if option.name == 'Gewicht' %}
+    {% for variant in gravity_inlett_product.variants %}
+      {% if variant.metafields.bgd.weight %}
+        {% assign weight_class = "gravity-info-wr info-wr-hidden" %}
+        {% if variant.id == gravity_inlett_product.selected_or_first_available_variant.id %}
+          {% assign weight_class = "gravity-info-wr" %}
+        {% endif %}
+        <div data-variant-id="{{variant.id}}" class="{{ weight_class }}">
+          {{ variant.metafields.bgd.weight }}
+        </div>
+      {% endif%}
+    {% endfor %}
+  {% endif%}
+{% endfor %}

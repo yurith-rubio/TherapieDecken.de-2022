@@ -1,0 +1,60 @@
+<!-- page.therapiedecken_helfen_bei_asperger_syndrom_und_autismus.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'pages.css' | asset_url | stylesheet_tag}}
+
+<div class="grid">
+  <div class="grid__item large--five-sixths push--large--one-twelfth">
+    <header class="section-header text-center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </header>
+    <div class="rte rte--nomargin rte--indented-images">
+          
+          <!-- HC - Newsletter page changes - 20 Apr '18 -->
+          {% if page.handle == 'newsletter-abonnieren'%}
+          {% section 'newsletter-abonnieren' %}
+          {% else %}
+          {{ page.content }}
+          
+          <meta charset="utf-8" />
+          <p><a href="https://therapiedecken.de/pages/wirkung"><span>← </span>Zurück zur Übersicht weiterer Vorteile von Gewichtsdecken </a></p>
+          <p>Lesedauer: 2 Minuten</p>
+          <p>Autismus ist eine Entwicklungsstörung, die sich schon im frühkindlichen Alter bemerkbar machen kann. Das Asperger-Syndrom bezeichnet eine Art des Autismus und ist ab dem 4. Lebensjahr diagnostizierbar. Diese Kinder haben Schwierigkeiten mit anderen Menschen zu kommunizieren, es fällt ihnen meist schwer die Mimik und die Intention des Anderen zu erkennen und zu verstehen. Oft wird der Fokus auf einige wenige Interessen gelegt, das sich durchaus zu einer Hochbegabung auszeichnen kann. Auch wenn das Verhalten eines autistischen Kindes für die Außenwelt merkwürdig erscheinen könnte, ist es wichtig, diese Ausprägung nicht als Krankheit zu bezeichnen, sondern dem Kind eine angemessene Umgebung zu bieten. Da bei diagnostiziertem Autismus oft Symptome, wie Schlafstörungen, Hyperaktivität, Unruhe und Aggressionen auftreten, kann auch hier eine Gewichtsdecke helfen.</p>
+          <p>Das Gewicht der Decke wirkt auf die Muskeln, Sehnen und Gelenke, sodass der Körper intensiver wahrgenommen wird und besser kontrolliert werden kann. Dies kann gerade bei Autismus hilfreich sein, die vielen Herausforderungen im Alltag ausgesetzt sind, die für Nicht-Autisten problemlos erscheinen. Diese angestaute Überforderung und der dadurch ausgelöste Stress kann sich durch das intensivere Wahrnehmen des Körpers senken und einen Einklang zwischen Körper und Geist herstellen.</p>
+          <p>Verantwortlich für das Eintreten der Entspannung ist das Glückshormon Serotonin und das Schlafhormon Melatonin, deren Ausschüttung beim Auflegen der Gewichtsdecke gefördert wird. Die Muskeln und das Nervensystem entspannen sich, Ängste werden gemindert und der Körper kann sich durch Senkung des Cortisolspiegels (Cortisol als sog. Stresshormon) insgesamt leichter von angestauten Aggressionen und Anspannungen erholen. Das Einschlafen gelingt leichter und der Schlaf wird ruhiger.</p>
+          <p><strong>Zusammenfassung:</strong></p>
+          <ul>
+             <li>Symptome, wie Unruhe und Aggressivität können durch Gewichtsdecke verringert werden</li>
+             <li>Gewicht befreit den Körper von angestautem Stress und Überforderung im Alltag</li>
+          </ul>
+          <div class="wirkung-container">
+             <h3 class="wirkung-container-title Heading u-h3">Jetzt 28 Tage Probeschlafen!</h3>
+             <div class="wirkung-container-subcontent">
+                <p>Testen Sie jetzt für 28 Tage eine Gewichtsdecke Ihrer Wahl!</p>
+             </div>
+             <div class="wirkung-container-thumb"><img src="https://cdn.shopify.com/s/files/1/2451/6611/files/Gewichtsdecke_Therapiedecke_28_Tage_Probeschlafen_Kinder_Erwachsene_Schlafprobleme.png?v=1581519163" class="responsive-wirkung" /></div>
+             <div class="wirkung-container-content">
+                <ul class="wirkung-bullets">
+                   <li>Kostenloser Versand</li>
+                   <li>Gratis Umtausch</li>
+                   <li>28 Tage Probeschlafen</li>
+                   <li>100% Geld-Zurück-Garantie</li>
+                </ul>
+             </div>
+            <a style="margin-top:25px;" href="https://therapiedecken.de/pages/fur-wenn-benotigen-sie-eine-therapiedecke" class="Button Button--primary button-wirkung"><span>Jetzt 28 Tage Probeschlafen!</span></a>
+            <!--<a href="https://therapiedecken.de/pages/fur-wenn-benotigen-sie-eine-therapiedecke"><button class="button-wirkung">Jetzt 28 Tage Probeschlafen!</button></a>-->
+          </div>
+          <meta charset="utf-8" />
+          <p><a href="https://therapiedecken.de/pages/wirkung"><span>← </span>Zurück zur Übersicht weiterer Vorteile von Gewichtsdecken </a></p>
+          
+          {% endif %}
+          
+          {% comment %}{% include 'judgeme_all_reviews' %}{% endcomment %}
+          
+{% if page.handle == 'therapiedecken-helfen-bei-alzheimer-parkinson-und-demenz-1'  %} 
+
+{% include 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: true %}  {% endif %}
+        </div>
+  </div>
+</div>
+

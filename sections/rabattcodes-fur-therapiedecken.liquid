@@ -1,0 +1,223 @@
+<style>
+  .FeatureText__ImageWrapper.rabatt-code-page img {
+    height: 25em;
+    width: 38em;
+  }
+  
+  .FeatureText__ContentWrapper.rabatt-code-page {
+    background: #5b5b5b;
+    color: white!important;
+    padding: 10% 5%!important;
+	}
+  
+  .FeatureText__ContentWrapper.rabatt-code-page h2 {
+    color: white!important;
+	}
+  
+  .grey-rabat.rabatt-code-page {
+    width: 60%;
+    margin: -10% auto 5%;
+	}
+  
+  .overview-rabatt-code-page {
+	display: flex;
+    max-width: 1024px;
+    margin: auto;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+	}
+  
+  .listing-rabatt-code-page {
+    display: inline-block;
+    background: #f1f1f1;
+    margin: auto 5px;
+    padding: 5%;
+    width: 30%;
+    margin-top: 5%;
+    text-align: center;
+	}
+  
+.listing-rabatt-code-page .Button--primary {
+  	font-size: 10px!important;
+    padding: 10px 15px;
+  }
+  
+@media only screen and (max-width: 700px){  
+  .grey-rabat.rabatt-code-page {
+    width: 100%;
+    margin: -40% auto 5%;
+		}
+  
+    .listing-rabatt-code-page {
+    width: 45%;
+    min-height: 460px;
+		}
+  
+  .FeatureText__ImageWrapper.rabatt-code-page img {
+        height: 100%;
+  		}
+	}
+  
+</style>
+
+<div class="Container">
+  <div class="PageContent {% unless section.settings.show_large %}{% endunless %} Rte">
+    {{ page.content }}
+    
+      <div class="FeaturedHtmlImage-container">
+		<div class="FeatureText FeatureText--withImage FeatureText--imageRight"><div class="FeatureText__ContentWrapper rabatt-code-page">
+
+            <div class="FeatureText__Content"><h2>Jetzt mit Rabattcodes bei Therapiedecken sparen</h2><div class="SectionHeader__Description Rte">
+                    <p>Hier finden Sie aktuelle Rabattcodes für unsere Gewichtsdecken. Die Rabatte sind nur für limitierte Zeit verfügbar.</p>
+                  </div>
+                </div>
+          </div><div class="FeatureText__ImageWrapper rabatt-code-page"><img load="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Rabatt-LP-coupon-image-500x330.jpg?v=1633372461">
+            
+          </div></div>
+        </div>
+
+    
+    <div class="grey-rabat rabatt-code-page">
+      <div class="tresc">
+        <h2 class="Heading u-h2">Therapiedecken Angebot nicht verpassen!</h2>
+        <p>Ihr 5€ Rabattcode:</p>
+        <div class="white-rabat"><b>5-TD</b></div>
+        <a href="https://therapiedecken.de/discount/5-TD?redirect=/pages/therapiedecken">
+          <div class="Button Button--primary">JETZT EINLÖSEN</div>
+        </a>
+        <p style="margin-top: 10px;">Verfällt am <b>{% assign days = 3 | times: 86400 %}{{ "now" | date: "%s" | plus: days | date: "%-d.%m.%Y" }}</b></p>
+
+        <p>Durch das Klicken auf die Schaltfläche "JETZT EINLÖSEN" wird der Rabattcode automatisch zu Ihrem Warenkorb hinzugefügt und ist im Bestellprozess sichtbar.</p>
+      </div>
+    </div>
+        
+    <div style="padding: 50px 0px;"><center>
+      <h2>Aktuelle Therapiedecken Kombinationsangebote im {{ "now" | date: "%B %Y" }}</h2>
+      
+      <p>Hier finden Sie eine Übersicht an Rabattaktionen, die Sie <b>automatisch</b> erhalten, wenn Sie folgende <b>Kombinationen in den Warenkorb legen</b>:</p>
+      <div class="overview-rabatt-code-page">
+
+          <div class="listing-rabatt-code-page">
+              <img load="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/pillow-plus-blanket.png?v=1633613345">
+              <br>
+              <br>
+              <p>1 x Therapiedecke + 1 x Therapiekissen</p>
+              <b>
+              <font color="#ba2e2e">5% Rabatt</font></b>
+              <br>
+              <br>
+              <a href="https://therapiedecken.de/collections" class="Button Button--primary">Zum Angebot</a>
+            <p style="margin: 15px 0px -5px 0px; font-size: 12px">Verfällt am <b>{% assign days = 3 | times: 86400 %}{{ "now" | date: "%s" | plus: days | date: "%-d.%m.%Y" }}</b></p>
+          </div>
+
+
+          <div class="listing-rabatt-code-page">
+              <img load="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Blanket-plus-bedding.png?v=1633613346">
+              <br>
+              <br>
+              <p>1 x Therapiedecke + 1 x Bettwäschen Set</p>
+              <b>
+              <font color="#ba2e2e">10% Rabatt</font></b>
+              <br>
+              <br>
+              <a href="https://therapiedecken.de/collections" class="Button Button--primary">Zum Angebot</a>
+            <p style="margin: 15px 0px -5px 0px; font-size: 12px">Verfällt am <b>{% assign days = 5 | times: 86400 %}{{ "now" | date: "%s" | plus: days | date: "%-d.%m.%Y" }}</b></p>            
+          </div>
+        
+          <div class="listing-rabatt-code-page">
+              <img load="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/anti-wrinkle-plus-yoga-blanket.png?v=1633613345">
+              <br>
+              <br>
+              <p>1 x Anti-Falten-Kissen + 1 x Yoga Decke</p>
+              <b>
+              <font color="#ba2e2e">15% Rabatt</font></b>
+              <br>
+              <br>
+              <a href="https://therapiedecken.de/collections" class="Button Button--primary">Zum Angebot</a>
+            <p style="margin: 15px 0px -5px 0px; font-size: 12px">Verfällt am <b>{% assign days = 3 | times: 86400 %}{{ "now" | date: "%s" | plus: days | date: "%-d.%m.%Y" }}</b></p>            
+          </div>
+
+          <div class="listing-rabatt-code-page">
+              <img load="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/3pillows.png?v=1633613346">
+              <br>
+              <br>
+              <p>3 x Therapiekissen</p>
+              <b>
+              <font color="#ba2e2e">15% Rabatt</font></b>
+              <br>
+              <br>
+              <a href="https://therapiedecken.de/collections" class="Button Button--primary">Zum Angebot</a>
+            <p style="margin: 15px 0px -5px 0px; font-size: 12px">Verfällt am <b>{% assign days = 4 | times: 86400 %}{{ "now" | date: "%s" | plus: days | date: "%-d.%m.%Y" }}</b></p>            
+          </div>
+        
+        
+          <div class="listing-rabatt-code-page">
+              <img load="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/3-blankets.png?v=1633613345">
+              <br>
+              <br>
+              <p>3 x Therapiedecken</p>
+              <b>
+              <font color="#ba2e2e">15% Rabatt</font></b>
+              <br>
+              <br>
+              <a href="https://therapiedecken.de/collections" class="Button Button--primary">Zum Angebot</a>
+            <p style="margin: 15px 0px -5px 0px; font-size: 12px">Verfällt am <b>{% assign days = 10 | times: 86400 %}{{ "now" | date: "%s" | plus: days | date: "%-d.%m.%Y" }}</b></p>            
+          </div>
+        
+          <div class="listing-rabatt-code-page">
+              <img load="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/2-covers.png?v=1633613346">
+              <br>
+              <br>
+              <p>2 x Therapiedecken Bezüge</p>
+              <b>
+              <font color="#ba2e2e">10% Rabatt</font></b>
+              <br>
+              <br>
+              <a href="https://therapiedecken.de/collections" class="Button Button--primary">Zum Angebot</a>
+            <p style="margin: 15px 0px -5px 0px; font-size: 12px">Verfällt am <b>{% assign days = 3 | times: 86400 %}{{ "now" | date: "%s" | plus: days | date: "%-d.%m.%Y" }}</b></p>            
+          </div>        
+        
+          <div class="listing-rabatt-code-page">
+              <img load="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Mask-plus-blanket-plus-pillow.png?v=1633613345">
+              <br>
+              <br>
+              <p>1 x Gewichtsmaske + 1 x Therapiedecke + 1 x Therapiekissen</p>
+              <b>
+              <font color="#ba2e2e">15% Rabatt</font></b>
+              <br>
+              <br>
+              <a href="https://therapiedecken.de/collections" class="Button Button--primary">Zum Angebot</a>
+            <p style="margin: 15px 0px -5px 0px; font-size: 12px">Verfällt am <b>{% assign days = 5 | times: 86400 %}{{ "now" | date: "%s" | plus: days | date: "%-d.%m.%Y" }}</b></p>            
+          </div> 
+        
+          <div class="listing-rabatt-code-page">
+              <img load="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Adult-plus-kids-bedding.png?v=1633613345">
+              <br>
+              <br>
+              <p>2 x Bettwäschen Sets (Kinder und/oder Erwachsene) </p>
+              <b>
+              <font color="#ba2e2e">5% Rabatt</font></b>
+              <br>
+              <br>
+              <a href="https://therapiedecken.de/collections" class="Button Button--primary">Zum Angebot</a>
+            <p style="margin: 15px 0px -5px 0px; font-size: 12px">Verfällt am <b>{% assign days = 6 | times: 86400 %}{{ "now" | date: "%s" | plus: days | date: "%-d.%m.%Y" }}</b></p>            
+          </div>        
+        
+		</div>
+      </center></div>
+    
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,70 @@
+<!-- section: advantages-overview -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'product-custom.css' | asset_url | stylesheet_tag }}
+
+<section class="adtg-main-sec">
+  <div class="adtg-main-wr">
+    <p class="adtg-title-sub SectionHeader__SubHeading Heading u-h6">{{ section.settings.title-sub }}</p>
+    <h2 class="adtg-title-main SectionHeader__Heading Heading u-h1">
+      {{ section.settings.title}}
+    </h2>
+
+    <div class="adtg-inner-wr">
+      
+      {% for block in section.blocks %}
+	  <div class="adtg-main">
+        <div class="adtg-title">
+          {{ block.settings.span-icon}}
+        </div>
+        <div class="adtg-sub-title">{{ block.settings.title-icon}}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Advantages Overview",
+  "settings": [
+                {
+                    "type": "text",
+                    "id": "title-sub",
+                    "label": "Sub Title",
+                    "default": "Der Therapiedecken Alleskönner"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Vorteile der Premium Balance Therapiedecke im Überblick"
+                }
+	],
+  "blocks": [
+	{
+            "type": "Advantages-Info",
+            "name": "Advantages-Info",
+            "settings": [
+                {
+                    "type": "html",
+                    "id": "span-icon",
+                    "label": "Span Icon"
+                },
+                {
+                    "type": "text",
+                    "id": "title-icon",
+                    "label": "Title Icon",
+                    "default": "Title Icon"
+                }
+            ]
+    }
+	],
+  "presets": [ {
+    "category": "Product Sections",
+    "name": "Advantages Overview",
+    "settings": {} } 
+	] 
+}
+{% endschema %}

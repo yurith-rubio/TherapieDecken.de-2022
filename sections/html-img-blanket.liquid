@@ -1,0 +1,363 @@
+<!-- section: html-img-blanket.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'product-custom.css' | asset_url | stylesheet_tag}}
+
+<section class="Section {% unless section.settings.image %}Section--spacingNormal{% endunless %}">
+  {% if section.settings.bg-color != blank or section.settings.spacer != blank %}
+  	<div class="FeaturedHtmlImage-container" style="background-color: {{ section.settings.bg-color }}; padding: {{ section.settings.spacer }}; ">
+  {% endif %}
+    {%- capture section_content -%}
+    
+    <div class="FeatureText__ContentWrapper"
+        {% if section.settings.bg-color-text-html != blank %} style="background-color:{{ section.settings.bg-color-text-html }}; {% endif %}">
+         
+      <div class="FeatureText__Content">
+        
+        <header class="SectionHeader html-text-wr">
+          {% if product.tags contains "cover-summer-Cotton-Organic" %}
+          	<p class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading_tag1 | escape }}</p>
+          {%- endif -%}
+
+          {% if product.tags contains "cover-summer-Cotton-Organic" %}
+          	<h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title_tag1 | escape }}</h2>
+          {%- endif -%}
+
+          {% if product.tags contains "cover-summer-Cotton-Organic" %}
+          	{{ section.settings.content_html_tag1 }}
+          {% endif %}
+
+          {% if product.tags contains "cover-summer-Cotton-Normal" %}
+          	<p class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading_tag2 | escape }}</p>
+          {%- endif -%}
+
+          {% if product.tags contains "cover-summer-Cotton-Normal" %}
+          	<h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title_tag2 | escape }}</h2>
+          {%- endif -%}
+          
+          {% if product.tags contains "cover-summer-Cotton-Normal" %}
+          	{{ section.settings.content_html_tag2 }}
+          {% endif %}
+          
+          {% if product.tags contains "cover-4-season—Minky-Plush" %}
+          	<p class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading_tag3 | escape }}</p>
+          {%- endif -%}
+
+          {% if product.tags contains "cover-4-season—Minky-Plush" %}
+          	<h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title_tag3 | escape }}</h2>
+          {%- endif -%}
+          
+          {% if product.tags contains "cover-4-season—Minky-Plush" %}
+          	{{ section.settings.content_html_tag3 }}
+          {% endif %}
+          
+          {% if product.tags contains "cover-summer-plus-Cotton-Plush" %}
+          	<p class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading_tag4 | escape }}</p>
+          {%- endif -%}
+
+          {% if product.tags contains "cover-summer-plus-Cotton-Plush" %}
+          	<h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title_tag4 | escape }}</h2>
+          {%- endif -%}
+          
+          {% if product.tags contains "cover-summer-plus-Cotton-Plush" %}
+          	{{ section.settings.content_html_tag4 }}
+          {% endif %}
+          
+          {% if product.tags contains "cover-basic-Cotton-Polyester" %}
+          	<p class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading_tag5 | escape }}</p>
+          {%- endif -%}
+
+          {% if product.tags contains "cover-basic-Cotton-Polyester" %}
+          	<h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title_tag5 | escape }}</h2>
+          {%- endif -%}
+          
+          {% if product.tags contains "cover-basic-Cotton-Polyester" %}
+          	{{ section.settings.content_html_tag5 }}
+          {% endif %}
+          
+        </header>
+      
+      </div>
+    </div>
+    {%- endcapture -%}
+
+   
+	{%- capture section_image -%}
+      {% if product.tags contains "cover-summer-Cotton-Organic" %}
+        {% if section.settings.image_tag1 != blank %}
+        <div class="FeatureText__ImageWrapper">
+          {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image:
+          section.settings.image_tag1 -%}{%- endcapture -%}
+
+          <div class="AspectRatio"
+            style="max-width: {{ section.settings.image_tag1.width }}px; --aspect-ratio: {{ section.settings.image_tag1.aspect_ratio }}">
+            {%- assign image_url = section.settings.image_tag1 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <img class="Image--lazyLoad Image--slide{{ section.settings.image_position | capitalize }}"
+              data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto"
+              alt="{{ section.settings.image_tag1.alt | escape }}">
+
+            <noscript>
+              <img src="{{ section.settings.image_tag1 | img_url: '800x' }}" alt="{{ section.settings.image_tag1.alt | escape }}">
+            </noscript>
+          </div>
+        </div>
+        {% endif %}
+      {%- endif -%}
+      
+      {% if product.tags contains "cover-summer-Cotton-Normal" %}
+        {% if section.settings.image_tag2 != blank %}
+        <div class="FeatureText__ImageWrapper">
+          {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image:
+          section.settings.image_tag2 -%}{%- endcapture -%}
+
+          <div class="AspectRatio"
+            style="max-width: {{ section.settings.image_tag2.width }}px; --aspect-ratio: {{ section.settings.image_tag2.aspect_ratio }}">
+            {%- assign image_url = section.settings.image_tag2 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <img class="Image--lazyLoad Image--slide{{ section.settings.image_position | capitalize }}"
+              data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto"
+              alt="{{ section.settings.image_tag2.alt | escape }}">
+
+            <noscript>
+              <img src="{{ section.settings.image_tag2 | img_url: '800x' }}" alt="{{ section.settings.image_tag2.alt | escape }}">
+            </noscript>
+          </div>
+        </div>
+        {% endif %}
+      {%- endif -%}
+      
+      {% if product.tags contains "cover-4-season—Minky-Plush" %}
+        {% if section.settings.image_tag3 != blank %}
+        <div class="FeatureText__ImageWrapper">
+          {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image:
+          section.settings.image_tag3 -%}{%- endcapture -%}
+
+          <div class="AspectRatio"
+            style="max-width: {{ section.settings.image_tag3.width }}px; --aspect-ratio: {{ section.settings.image_tag3.aspect_ratio }}">
+            {%- assign image_url = section.settings.image_tag3 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <img class="Image--lazyLoad Image--slide{{ section.settings.image_position | capitalize }}"
+              data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto"
+              alt="{{ section.settings.image_tag3.alt | escape }}">
+
+            <noscript>
+              <img src="{{ section.settings.image_tag3 | img_url: '800x' }}" alt="{{ section.settings.image_tag3.alt | escape }}">
+            </noscript>
+          </div>
+        </div>
+        {% endif %}
+      {%- endif -%}
+
+      {% if product.tags contains "cover-summer-plus-Cotton-Plush" %}
+        {% if section.settings.image_tag4 != blank %}
+        <div class="FeatureText__ImageWrapper">
+          {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image:
+          section.settings.image_tag4 -%}{%- endcapture -%}
+
+          <div class="AspectRatio"
+            style="max-width: {{ section.settings.image_tag4.width }}px; --aspect-ratio: {{ section.settings.image_tag4.aspect_ratio }}">
+            {%- assign image_url = section.settings.image_tag4 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <img class="Image--lazyLoad Image--slide{{ section.settings.image_position | capitalize }}"
+              data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto"
+              alt="{{ section.settings.image_tag4.alt | escape }}">
+
+            <noscript>
+              <img src="{{ section.settings.image_tag4 | img_url: '800x' }}" alt="{{ section.settings.image_tag4.alt | escape }}">
+            </noscript>
+          </div>
+        </div>
+        {% endif %}
+      {%- endif -%}
+      
+      {% if product.tags contains "cover-basic-Cotton-Polyester" %}
+        {% if section.settings.image_tag5 != blank %}
+        <div class="FeatureText__ImageWrapper">
+          {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image:
+          section.settings.image_tag5 -%}{%- endcapture -%}
+
+          <div class="AspectRatio"
+            style="max-width: {{ section.settings.image_tag5.width }}px; --aspect-ratio: {{ section.settings.image_tag5.aspect_ratio }}">
+            {%- assign image_url = section.settings.image_tag5 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <img class="Image--lazyLoad Image--slide{{ section.settings.image_position | capitalize }}"
+              data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto"
+              alt="{{ section.settings.image_tag5.alt | escape }}">
+
+            <noscript>
+              <img src="{{ section.settings.image_tag5 | img_url: '800x' }}" alt="{{ section.settings.image_tag5.alt | escape }}">
+            </noscript>
+          </div>
+        </div>
+        {% endif %}
+      {%- endif -%}
+      
+    {%- endcapture -%}
+
+    <div
+      class="FeatureText {% if product.tags contains "cover-summer-Cotton-Organic" or product.tags contains "cover-summer-Cotton-Normal" or product.tags contains "cover-4-season—Minky-Plush" or product.tags contains "cover-summer-plus-Cotton-Plush" or product.tags contains "cover-basic-Cotton-Polyester" %}FeatureText--withImage FeatureText--image{{ section.settings.image_position | capitalize }}{% endif %}">
+      {%- if section.settings.image_position == 'left' -%}
+      {{- section_image -}}
+      {{- section_content -}}
+      {%- else -%}
+      {{- section_content -}}
+      {{- section_image -}}
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "HTML Cover Bullet Points",
+  "class": "HtmlImage",
+  "tag": "section",
+  "settings": [
+        {
+          "type": "text",
+          "id": "spacer",
+          "label": "Space Top and Bottom",
+          "default": "50px"
+        },
+        {
+          "type": "color",
+          "id": "bg-color",
+          "label": "Background Color Container"
+        },
+        {
+          "type": "color",
+          "id": "bg-color-text-html",
+          "label": "Background Color Text"
+        },
+        {
+          "type": "text",
+          "id": "subheading_tag1",
+          "label": "Sub-heading Cotton Organic",
+          "default": "Sub-heading for Cotton Organic"
+        },
+        {
+          "type": "text",
+          "id": "title_tag1",
+          "label": "Heading Cotton Organic",
+          "default": "Title for Cotton Organic"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_tag1",
+          "label": "Image for Cotton Organic",
+          "info": "1200 x 1200px .png recommended"
+        },
+        {
+          "type": "html",
+          "id": "content_html_tag1",
+          "label": "Content for Cotton Organic",
+		  "default": "<p><b>ONLY</b> for products with tag <b>Cotton Organic</b></p>",
+		  "info": "Info for products with tag Cotton Organic"
+        },
+        {
+          "type": "text",
+          "id": "subheading_tag2",
+          "label": "Sub-heading for Cotton Normal",
+          "default": "Sub-heading Cotton Normal"
+        },
+        {
+          "type": "text",
+          "id": "title_tag2",
+          "label": "Heading for Cotton Normal",
+          "default": "Title Cotton Normal"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_tag2",
+          "label": "Image for Cotton Normal",
+          "info": "1200 x 1200px .png recommended"
+        },
+        {
+          "type": "html",
+          "id": "content_html_tag2",
+          "label": "Content for for Cotton Normal",
+          "default": "<p><b>ONLY</b> for products with tag <b>Cotton Normal</b></p>",
+		  "info": "Info for products with tag Cotton Normal"
+        },
+        {
+          "type": "text",
+          "id": "subheading_tag3",
+          "label": "Sub-heading for Minky Plush",
+          "default": "Sub-heading Minky Plush"
+        },
+        {
+          "type": "text",
+          "id": "title_tag3",
+          "label": "Heading for Minky Plush",
+          "default": "Title Minky Plush"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_tag3",
+          "label": "Image Minky Plush",
+          "info": "1200 x 1200px .png recommended"
+        },
+        {
+          "type": "html",
+          "id": "content_html_tag3",
+          "label": "Content for Minky Plush",
+          "default": "<p><b>ONLY</b> for products with tag <b>Minky Plush</b></p>",
+		  "info": "Info for products with tag Minky Plush"
+        },
+        {
+          "type": "text",
+          "id": "subheading_tag4",
+          "label": "Sub-heading for Cotton Plush",
+          "default": "Sub-heading Cotton Plush"
+        },
+        {
+          "type": "text",
+          "id": "title_tag4",
+          "label": "Heading for Cotton Plush",
+          "default": "Title Cotton Plush"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_tag4",
+          "label": "Image for Cotton Plush",
+          "info": "1200 x 1200px .png recommended"
+        },
+        {
+          "type": "html",
+          "id": "content_html_tag4",
+          "label": "Content for Cotton Plush",
+          "default": "<p><b>ONLY</b> for products with tag <b>Cotton Plush</b></p>",
+		  "info": "Info for products with tag Cotton Plush"
+        },
+        {
+          "type": "text",
+          "id": "subheading_tag5",
+          "label": "Sub-heading for Cotton Polyester",
+          "default": "Sub-heading Cotton Polyester"
+        },
+        {
+          "type": "text",
+          "id": "title_tag5",
+          "label": "Heading for Cotton Polyester",
+          "default": "Title Cotton Polyester"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_tag5",
+          "label": "Image for Cotton Polyester",
+          "info": "1200 x 1200px .png recommended"
+        },
+        {
+          "type": "html",
+          "id": "content_html_tag5",
+          "label": "Content for Cotton Polyester",
+          "default": "<p><b>ONLY</b> for products with tag <b>Cotton Polyester</b></p>",
+		  "info": "Info for products with tag Cotton Polyester"
+        }
+      ],
+      "presets": [
+        {
+          "category": "Therapiedecken Cover Template",
+          "name": "HTML Cover Bullet Points",
+          "settings": {}
+        }
+      ]
+}
+
+{% endschema %}

@@ -1,0 +1,106 @@
+{% comment %} 
+  Reduce below value if you need the back to the top button to appear higher up on the page. 
+  That value is in pixels.
+{% endcomment %}
+
+{% assign vertical_offset_for_trigger = 3400 %}
+
+{% comment %} Vertical offset from bottom of browser for the position of the button. {% endcomment %}
+
+{% assign position_from_bottom = '5.8em' %}
+<a href="#" title="Back to the top" class="back-to-top">
+  <span>ZUR AUSWAHL <span class="icon-keyboard_arrow_up"></span></span>
+</a>
+
+
+{% style %}
+.back-to-top {
+  position: fixed;
+  text-decoration: none;
+  display: none;
+  z-index: 60000;
+  transition: border 0.3s;
+  text-align: center;
+  width: 100%;
+  background-color: #fac636;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 15px 28px;
+  text-transform: uppercase;
+  font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));  
+  letter-spacing: 0.2em;
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  color: #222323;
+}
+
+@media screen and (min-width: 800px){
+    .back-to-top {
+      display:none!important;
+  }
+}
+.back-to-top i {
+  vertical-align: middle;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.back-to-top span {
+  padding-left: 0em;
+}
+.back-to-top i + span {
+  padding-left: 0;
+}
+.back-to-top:hover {
+  text-decoration: none;
+  color: #555;
+}
+.icon-keyboard_arrow_up{
+  font-size: 18px;
+  top: 2px;
+  position: relative;
+}
+
+{% endstyle %}
+
+<script>
+window.onload = function() {
+ jQuery(function($) {
+   var offset = {{ vertical_offset_for_trigger }};
+   var duration = 500;
+   $(window).scroll(function() {
+     if ($(this).scrollTop() > offset) {
+       $('.back-to-top').fadeIn(duration);
+     } 
+     else {
+       $('.back-to-top').fadeOut(duration);
+     }
+   });
+   $('.back-to-top').unbind('click.smoothscroll').bind('click', function(e) {
+     e.preventDefault();
+     $('html, body').animate( { scrollTop: 0 }, duration);
+     return false;
+   })
+ });
+}
+</script>
+
+{% schema %}
+  {
+    "name": "Back top product",
+    "settings": [],
+	"presets": [
+      {
+        "category": "Product",
+        "name": "Back top product"
+      }
+  	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

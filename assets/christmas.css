@@ -1,0 +1,92 @@
+/* Home Cover Pages */
+
+.Centered_Promotional{
+  height: 100%;
+  padding: 100px 0 30px 0;
+  margin: auto;
+}
+.home_promotional_content_wrapper{
+  width: 40%;
+  margin: auto;
+}
+.home_Christmas_svg_mask{
+  position: relative;
+  right: -70px;
+  top: -40px;
+}
+.home_Christmas_svg_deco{
+  position: absolute;
+  margin-left: -415px;
+}
+.mask_text{
+  padding-left: 10px;
+  padding-right: 30px;
+  line-height: 1.1;
+}
+.button-cover{
+  margin-top: 30px;
+}
+.content_text_wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 380px;
+  margin: auto;
+  height: 80px;
+  color: white;
+  margin-top: 20px;
+  text-align: left;
+}
+.promotional_text{
+  background: rgba(0, 0, 0, 0.35);
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promotional_text_mask{
+  background: rgba(187, 29, 51, 0.35);
+  margin-left: 10px;
+  flex: 3;
+  padding-top: 6px;
+}
+.endet-heute{
+  font-weight: bold;
+  font-size: 1.7em;
+  text-align: center;
+  line-height: 1.2;
+}
+@media screen  and (max-width: 768px) {
+  .content_text_wrapper{
+	font-size: 12px;
+  }
+  .home_Christmas_svg_deco{
+    margin-left: -310px;
+    width: 45%;
+  }
+  .home_Christmas_svg_mask{
+    right: -50px;
+  }
+}
+@media screen  and (max-width: 640px) and (orientation: portrait) {
+  .home_promotional_content_wrapper{
+    width: 86%;
+    margin: auto;
+  }
+  .content_text_wrapper{
+    margin-top: 10px;
+    height: 90px;
+  }
+  .button-cover{
+    margin-top: 10px;
+  }
+  .badge-certificate{
+    width: 80px !important;
+    margin: -40px 20px 0 20px !important;
+  }
+  .home_Christmas_svg_deco{
+    margin-left: -90%;
+    width: 95%;
+    top: 80px;
+  }
+}

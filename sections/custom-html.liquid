@@ -1,0 +1,41 @@
+
+<section class="Section" id="section-{{ section.id }}" style="background-color: {% if section.settings.bg-color != blank %} {{ section.settings.bg-color }}; {% endif %} {% if section.settings.bg-color != blank %}padding: {{ section.settings.spacer }};{% endif %}">
+    <div class="Container">
+      <div class="Rte" style="text-align: center">
+        {{ section.settings.html }}
+      </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom HTML",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type": "html",
+      "id": "html",
+      "label": "HTML content",
+      "default": "<p>Write your own custom HTML content.</p>"
+    },
+    {
+      "type": "text",
+      "id": "spacer",
+      "label": "Space Top and Bottom",
+      "default": "50px"
+    },
+  	{
+      "type": "color",
+      "id": "bg-color",
+      "label": "Background Color Container"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced",
+      "name": "Custom HTML",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

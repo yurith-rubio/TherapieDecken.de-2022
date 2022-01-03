@@ -1,0 +1,264 @@
+{% style %}
+.slides21 {
+  display: flex;
+  background-size: cover;
+}
+@media only screen and (min-width: 799px) {
+  #slider21-cont {
+    overflow: hidden;
+    height: 410px;
+    align-items: center;
+  } 
+  #slider21-1 {
+    background-size: 50%;
+    background-position: right;
+  }  
+  #slider21-2 {
+    background-size: 50%;
+    background-position: right;
+  }
+  #slider21-3 {
+    background-size: 50%;
+    background-position: right;
+  }
+  #slider21-4 {
+    background-size: 50%;
+    background-position: right;
+  }
+  #slider21-5 {
+    background-size: 50%;
+    background-position: right;
+  }
+  .btn-left-cont {
+  left: 50%;
+}
+  .btn-right-cont {
+  right: 7px;
+}
+}
+@media only screen and (max-width: 799px) {
+  .slides21 {
+    justify-content: center;
+    background-position-x: center;
+    background-size: inherit;
+  }
+  .slider21-text {
+    margin-top: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+  }
+  #slider21-cont {
+    margin: 0 -20px;
+}
+  .btn-left-cont {
+    top: 250px;
+    left: 15px;
+}  
+  .btn-right-cont {
+    top: 250px;
+    right: 15px;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .slider21-text {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .slider21-text {
+    width: 49%;
+  }
+}
+#slider21-cont {
+  display: flex;
+  position: relative;
+}
+.slider21-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.text21-inside {
+  padding: 0px 40px 0px 40px;
+}
+#slider21-1 {
+  width: 100%;
+  background-image: url("https://cdn.shopify.com/s/files/1/0053/3243/4990/files/therapiedecke-2-balance-premium-slide-desktop2.jpg?v=1617824960");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100%;
+}
+#slider21-2 {
+  width: 100%;
+  background-image: url("https://cdn.shopify.com/s/files/1/0053/3243/4990/files/therapiedecke-balance-premium-slide-desktop-fliped.jpg?v=1617914114");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100%;
+}
+#slider21-3 {
+  width: 100%;
+  background-image: url("https://cdn.shopify.com/s/files/1/0053/3243/4990/files/therapiedecke-3-basic-slide.jpg?v=1617983322");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100%;
+}
+
+#slider21-4 {
+  width: 100%;
+  background-image: url("https://cdn.shopify.com/s/files/1/0053/3243/4990/files/Gravity-Balance-Kinder-Therapiedecke.jpg?v=1617995086");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100%;
+}
+
+#slider21-5 {
+  width: 100%;
+  background-image: url("https://cdn.shopify.com/s/files/1/0053/3243/4990/files/Kinder-Therapiedecke.jpg?v=1617996758");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 100%;
+}
+.slider21-icons {
+  display: flex;
+  margin-bottom: 20px;
+}
+.btn-left-cont {
+  position: absolute;
+}
+.slider21-btn-left {
+  cursor: pointer;
+  width: auto;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px;
+  user-select: none;
+  border: hidden;
+  color: white;
+  background-color: #fac636;
+  padding: 0 8px;
+}
+.btn-right-cont {
+  position: absolute;
+}
+.slider21-btn-right {
+  cursor: pointer;
+  width: auto;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px;
+  user-select: none;
+  border: hidden;
+  color: white;
+  background-color: #fac636;
+  padding: 0 8px;
+}
+.slider21-btn-left:hover,
+.slider21-btn-right:hover {
+  background-color: black;
+  color: #e8bf34;
+}
+hr.slide21-line {
+  margin: 15px auto;
+  border-width: 3px 0 0 0;
+  width: 50px;
+}
+span.icon-winner.product-page {
+  font-size: 25px;
+  padding: 5px;
+  background: #fac636;
+  border-radius: 5px;
+}
+.icon-icon-leaf:before {
+  content: "\e938";
+  padding: 10px;
+  background: #e19594;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  margin: 0px 5px;
+}
+.icon-sun:before {
+  content: "\e9d4";
+  background: #e59300;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  margin: 0px 5px;
+}
+.icon-snowflake-o:before {
+  content: "\e913";
+  padding: 10px;
+  background: #00b3ff;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  margin: 0px 5px;
+}
+.icon-leaf:before {
+  content: "\e937";
+  background: #b9dfaa;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  margin: 0px 5px;
+}
+@media only screen and (max-width: 600px) {   
+   .icon-leaf:before, .icon-sun:before, .icon-snowflake-o:before, .icon-icon-leaf:before, .icon-color_lens:before {
+      font-size: 15px!important;
+  }
+    }
+
+{% endstyle %}
+
+{% if product.title contains 'Premium Balance Gewichtsdecke für Erwachsene' %}
+  {% render 'slider-premium-balance' %}
+{% elsif product.title contains '' %}
+  {% render 'slider-premium-balance' %}
+{% endif%}
+
+
+{% comment %} script for the buttons {% endcomment %}
+<script>
+
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("slides21");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "flex";
+  }
+
+</script>
+
+</div>
+
+{% schema %}
+{
+  "name": "Slider Product Page",
+  "settings": [],
+  "presets": [
+    {
+      "category": "TD Product Page",
+      "name": "Slider Product Page",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

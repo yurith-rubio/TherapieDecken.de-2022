@@ -1,0 +1,292 @@
+<!-- section : gewichtsdecken-gewicht.liquid -->
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'pages.css' | asset_url | stylesheet_tag}}
+
+<style>
+  ul.custom-li > li {
+    list-style: none;
+  }
+  .icon-checkmark4 {
+    padding-right: 5px;
+    color: #FAC636;
+    position: relative;
+    top:4px;
+    font-size: 18px;
+    margin-left: -20px;
+  }
+  ul.custom-li > li::before {
+    color: #FAC636;
+  }
+  .icon-circle-orange{
+    padding-right: 8px;
+    margin-left: -17px;
+    color: #FAC636;
+    font-size: 10px;
+  }      
+  .background-outside{
+   background-color: #f8f8f8;
+   margin-bottom:-50px;
+  }
+  .inner-text-white-box{
+    margin: 30px 80px 0 80px;
+    padding: 30px;
+    background-color:white;
+    position:relative;
+    top:70px;
+  }
+  .block-in-gray{
+	padding:50px;
+	background-color: #f8f8f8;
+    margin-bottom: 20px;
+  }
+  .gewichtsdecken-gewicht-content > img{
+      padding-bottom: 20px;
+  }
+  .gewichtsdecken-gewicht-content{
+	margin-bottom:25px;
+  }
+  .gewichtsdecken-gewicht-content h2{
+      margin-bottom: 12px;
+  }
+  .gewichtsdecken-gewicht-content ol{
+      margin-left:20px;
+  }
+  .gewichtsdecken-gewicht-wrapper{
+    margin-bottom: -60px;
+  }
+
+  @media only screen and (max-width:641px){
+  	.inner-text-white-box{
+      margin: 20px;
+      padding: 20px;
+      background-color:white;
+      position:relative;
+      top: 30px;
+  	}
+	.background-outside{
+      background-color: #f8f8f8;
+      margin-bottom:-30px;
+    }
+    .block-in-gray{
+ 	  padding:20px;
+ 	  background-color: #f8f8f8;
+ 	}
+    .ultimative_ubersicht_header_content{
+      margin-bottom: 0;
+    }
+    .gewichtsdecken-gewicht-wrapper{
+      margin-bottom: 0;
+    }
+  }
+
+</style>
+
+<div class="Container">
+  <div class="PageContent {% unless section.settings.show_large %}{% endunless %} Rte">
+    {{ page.content }}
+    
+    {% comment %} block 1 : desktop  --> {% endcomment %}
+	<div class="ultimative_ubersicht gewichtsdecken-gewicht-wrapper">
+      <div class="ultimative_ubersicht_header_content">
+        <div class="gewichtsdecken-gewicht-content">
+        {% for block in section.blocks %}
+              <div id="ultimative-contents-{{ forloop.index }}"></div>
+              {% if block.settings.content_title_left != blank %}
+              	<h2 class="Heading u-h2">{{ block.settings.content_title_left }}</h2>
+              {% endif %}
+              {% if block.settings.content_left != blank %}
+                {{ block.settings.content_left }}	       
+	          {% endif %}
+              {% if block.settings.html_content_left != blank %}
+                {{ block.settings.html_content_left }}	           
+	          {% endif %}
+        {% endfor %}
+          </div>
+      </div>
+    
+      <div class="ultimative_wrapper">
+        <div class="gewichtsdecken-gewicht-content">
+        {% for block in section.blocks %}
+              {% if block.settings.content_title_right != blank %}
+                <h2 class="Heading u-h2">{{ block.settings.content_title_right }}</h2>
+              {% endif %}
+              {% if block.settings.content_subheading_right != blank %}
+                <p class="SectionHeader__SubHeading Heading u-h6">{{ block.settings.content_subheading_right }}</p>
+              {% endif %}
+              {% if block.settings.content_right != blank %}
+                {{ block.settings.content_right }}	       
+	          {% endif %}
+              {% if block.settings.image_desk_right != blank %}
+                <img class="Image--lazyLoad {% if block.settings.mobile_image %}hidden-phone{% endif %}" data-src="{{ block.settings.image_desk_right | img_url: '800x' }}" alt="{{ block.settings.image.alt | escape }}">
+	          {% endif %}
+              {% if block.settings.mobile_image and block.settings.image_phone_right != blank %}
+                	<img class="Image--lazyLoad hidden-tablet-and-up" data-src="{{ block.settings.image_phone_right | img_url: '800x' }}" alt="{{ block.settings.image.alt | escape }}">
+	          	{% endif %}
+              {% if block.settings.html_content_right != blank %}
+                {{ block.settings.html_content_right }}	           
+	          {% endif %}
+              {% if block.settings.button_right_link != blank and block.settings.button_right_text %}
+          	  <div style="margin: 10px 0;">
+                <a href="{{ block.settings.button_right_link }}" class="Button Button--primary">{{ block.settings.button_right_text | escape }}</a>
+              </div>
+	          {% endif %}
+        {% endfor %}
+          </div>
+      </div>
+    </div>
+   
+    <div class="scroll_up">
+      <a href="javascript:void(0);">
+        <span class="icon-keyboard_arrow_up"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+$('.scroll_up a').click(function() {      
+    $('body,html').animate({
+        scrollTop : 0                       
+    }, 500);
+});
+</script>
+        
+{% schema %}
+  {
+    "name": "Sticky Left Content Page",
+    "settings": [],
+	"blocks": [
+	  {
+        "type": "title_left",
+        "name": "Title Left",
+        "settings": [
+          {
+            "type": "text",
+            "id": "content_title_left",
+            "label": "Title for Left Content",
+            "default": "Title Example for Cotent"
+          }
+        ]
+      },
+	  {
+        "type": "content_left",
+        "name": "Content Left",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "content_left",
+            "label": "Left Content",
+			"default": "<p>Title Example for Cotent with an <a>link</a></p>"
+          }
+        ]
+      },
+	  {
+        "type": "html_left",
+        "name": "HTML Left",
+        "settings": [
+          {
+            "type": "html",
+            "id": "html_content_left",
+            "label": "HTML for Left Content",
+			"default": "<p>Title Example of an HTML block, you can add more complex design with this block</p>"
+          }
+        ]
+      },
+	  {
+        "type": "title_right",
+        "name": "Title Right",
+        "settings": [
+          {
+            "type": "text",
+            "id": "content_title_right",
+            "label": "Title for Right Content",
+            "default": "Title Example for Cotent"
+          }
+        ]
+      },
+	  {
+        "type": "subheading_right",
+        "name": "Subheading Right",
+        "settings": [
+          {
+            "type": "text",
+            "id": "content_subheading_right",
+            "label": "Subheading for Right Content",
+            "default": "Title Example for Cotent"
+          }
+        ]
+      },
+	  {
+        "type": "content_right",
+        "name": "Content Right",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "content_right",
+            "label": "Right Content",
+			"default": "<p>Title Example for Cotent with an <a>link</a></p>"
+          }
+        ]
+      },
+	  {
+        "type": "image_right",
+        "name": "Image Right",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_desk_right",
+            "label": "Right Image",
+            "info": "1200 x 1200px .png recommended"
+          },
+          {
+            "type": "checkbox",
+            "id": "mobile_image",
+            "label": "Mobile Picture",
+            "default": false
+          },
+          {
+            "type": "image_picker",
+            "id": "image_phone_right",
+            "label": "Right Image",
+            "info": "1200 x 1200px .png recommended"
+          }
+        ]
+      },
+	  {
+        "type": "html_right",
+        "name": "HTML Right",
+        "settings": [
+          {
+            "type": "html",
+            "id": "html_content_right",
+            "label": "HTML for Right Content",
+			"default": "<p>Title Example of an HTML block, you can add more complex design with this block</p>"
+          }
+        ]
+      },
+	  {
+        "type": "button_right",
+        "name": "Button Right",
+        "settings": [
+          {
+            "type": "url",
+            "id": "button_right_link",
+            "label": "Button Link"
+          },
+          {
+            "type": "text",
+            "id": "button_right_text",
+            "label": "Button Text",
+			"default": "Mehr Erfahren"
+          }
+        ]
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

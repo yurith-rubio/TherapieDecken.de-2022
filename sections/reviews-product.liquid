@@ -1,0 +1,78 @@
+<div class="Container medium-grid">
+  
+<center><h2 class="SectionHeader__Heading Heading u-h1">Bewertungen über {{product.title}}</h2>
+  
+  {% if product.title contains "Gewichtsdecke" %}
+    40 Tage nach Erhalt der Gewichtsdecke erhalten Kunden eine E-Mail mit der
+        Möglichkeit
+        Ihre Erfahrungen zu teilen. Lesen Sie sich jetzt die Erfahrungsberichte unserer Therapiedecken Kunden durch.
+        Haben Sie selbst eine Therapiedecke, bitte teilen Sie Ihre Erfahrungen mit anderen und helfen Sie uns,
+        unseren
+        Service und unsere Produkte zu verbessern.
+  {% endif %}
+  </center>
+  
+  
+{% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
+</div>
+
+<style>
+  
+.jdgm-rev-widg__summary {
+    float: inherit!important;
+    text-align: center!important;
+}
+   
+.jdgm-rev-widg__summary-stars {
+    margin-bottom: -50px!important;
+}
+  
+.jdgm-rev-widg__summary {
+    float: inherit!important;
+    text-align: center!important;
+}  
+  
+.jdgm-rev-widg__title {
+    visibility: hidden!important;
+}
+  
+.jdgm-rev-widg__sort-wrapper {
+    display: none!important;
+}
+  
+</style>
+
+
+<script>
+$(document).ready(function () {
+  setTimeout(function () {
+    const $summary = $('.jdgm-rev-widg__summary-text');
+    const summaryHtml = $summary.html();
+    if (summaryHtml) {
+		const splitSummary = summaryHtml.split('|');
+    	$summary.html(`<b style="font-size:25px">${splitSummary[0]}</b><br><br> |${splitSummary[1]}`);
+    }
+  }, 1000);
+});
+
+</script>
+
+{% schema %}
+{
+  "name": "Reviews Product Page",
+  "settings": [],
+  "presets": [
+    {
+      "category": "Product Page",
+      "name": "Reviews Product Page",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

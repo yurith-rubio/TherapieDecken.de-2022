@@ -1,0 +1,34 @@
+<style>
+  .small-grid{
+    max-width: 680px;
+  }
+</style>
+<div class="Container small-grid">
+  <header class="PageHeader">
+    <div class="SectionHeader SectionHeader--center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </div>
+  </header>
+
+  <div class="PageContent {% unless section.settings.show_large %}PageContent--narrow{% endunless %} Rte">
+    {{ page.content }}
+  </div>
+
+  {% include 'judgeme_all_reviews' %}
+      
+</div>
+
+
+{% schema %}
+{
+  "name": "Page",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_small",
+      "label": "Small width",
+      "default": false
+    }
+  ]
+}
+{% endschema %}

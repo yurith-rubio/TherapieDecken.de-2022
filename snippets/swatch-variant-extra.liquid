@@ -1,0 +1,85 @@
+<!-- snnipet: extra-variant-liquid -->
+{% comment %} Extra Variant for Set Products - Yurith {% endcomment %}
+
+<span class="ProductForm__Label">
+      Weitere Bezugsart:
+</span>
+      
+{% assign additional_current_variant = additional_product.selected_or_first_available_variant %}
+{% assign additional_featured_image = additional_current_variant.featured_image | default: additional_product.featured_image %}
+
+{%- if option.name == "Bezugsart" -%}
+    <ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
+      {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
+  
+      {%- for value in option.values -%}
+        {%- assign downcase_value = value | downcase -%}
+
+         <li class="HorizontalList__Item AdditionalVariant_container">
+          <input id="AdditionalProductSelect-option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
+            class="ColorSwatch__Radio" type="radio" name="additional_Bezugsart"
+            value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}>
+          <label for="AdditionalProductSelect-option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
+            class="ColorSwatch ColorSwatch--large {% if downcase_value == 'white' %}ColorSwatch--white{% endif %}"
+            data-tooltip="{{ value | escape }}"
+            style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: value %}">
+            <span class="u-visually-hidden">{{ value }}</span>
+          </label>
+          <p class="VariantValue--style">
+            {% assign additional_simple_value = value | split: '(' | last %}
+            {% assign additional_name_variant = additional_simple_value | split: ')' | first %}
+            {{ additional_name_variant | escape }}    
+           </p>
+    
+          {% comment %}Extra - Is Limited Badge - bgd.is_limited Metafield {% endcomment %}  
+          {% for v in additional_product.variants %}
+              {% if v.option1 == value %}
+           		  <div class="additional-variant-id" data-variant-id="{{ v.id }}"></div>
+                  {% assign additional_isLimited = v.metafields.bgd.is_limited %}
+                  {% if additional_isLimited == "true" %}
+                       <div
+                       class="additional-is-limited-badge"
+                       data-variant-id="{{ v.id }}"
+                       data-variant-bezugsart="{{ v.option1 }}"                            
+                       >
+                       Limitiert
+                       </div>
+                 {% endif %}
+              {% endif%}
+          {% endfor %}
+           
+          {% comment %}On Sale Badge - bgd.on_sale Metafield {% endcomment %}
+          {% for v in product.variants %}
+              {% if v.option3 == value %}
+                  {% assign onSale = v.metafields.bgd.on_sale %}
+                  {% if onSale %}
+                     <div
+                       class="on-sale-badge"
+                       data-variant-id="{{ v.id }}"
+                       data-variant-option1="{{ v.option1 }}"
+                       data-variant-option2="{{ v.option2 }}"
+                       data-variant-bezugsart="{{ v.option3 }}"
+                       >
+                       {{ onSale }}
+                     </div>
+                 {% endif %}
+              {% endif%}
+          {% endfor %}
+        
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    {%- comment -%} Product Info for Variants - bgd.cover-type Metafield - Yurith{%- endcomment -%}
+    {% for variant in additional_product.variants %}
+      {% if variant.metafields.bgd.cover-type %}
+        {% assign design_class = "additional-info-wr additional-info-wr-hidden" %}
+        {% if variant.id == additional_product.selected_or_first_available_variant.id %}
+        	{% assign design_class = "additional-info-wr" %}
+        {% endif %}
+        <div data-variant-id="{{variant.id}}" class="{{ design_class }}">
+          {{ variant.metafields.bgd.cover-type }}
+        </div>
+      {% endif%}
+    {% endfor %}
+{% endif %}

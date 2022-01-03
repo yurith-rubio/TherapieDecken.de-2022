@@ -1,0 +1,122 @@
+<!-- section: main-faq.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'product-custom.css' | asset_url | stylesheet_tag}}
+
+
+<style>
+  .faq-child:nth-child(1){
+    margin-top: 100px;
+  }
+  .Faq__Section__General{
+    cursor: pointer;
+  }
+  .details_faq{
+    border-bottom: none;
+  }
+</style>
+{%- assign has_section_separator = false -%}
+
+
+<div data-section-type="faq" data-section-id="{{ section.id }}">
+  <div class="Container">
+    <div class="{% unless has_section_separator %}PageContent--narrow{% endunless %}">
+      
+      {%- for block in section.blocks -%}
+  {%- if block.type == 'separator' -%}
+    {%- assign has_section_separator = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+      
+       <details class="details_faq">  
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'separator' -%}
+            <summary class="Faq__Section Faq__Section__General Heading u-h3" {{ block.shopify_attributes }}>
+              <span class="Anchor" id="block-{{ block.id }}"></span>
+              <h2>{{- block.settings.title | escape -}}</h2>
+            </summary>
+        {%- endcase -%}   
+      {%- endfor -%}
+
+    <div class="Faq">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'question' -%}
+            <div class="Faq__Item {% if section.blocks[forloop.index].type == 'separator' or forloop.last %}Faq__Item--lastOfSection{% endif %}" aria-expanded="false" {{ block.shopify_attributes }}>
+              <span class="Faq__Icon">{% render 'icon' with 'select-arrow-right' %}</span>
+
+              <div class="Faq__ItemWrapper">
+                <button class="Faq__Question">{{ block.settings.title | escape }}</button>
+
+                <div class="Faq__AnswerWrapper" aria-hidden="true">
+                  <div class="Faq__Answer Rte">
+                    {% if block.settings.answer != blank %}
+                      {{ block.settings.answer }}
+                    {% else block.settings.answer_html %}
+                      {{ block.settings.answer_html }}
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+        {%- endcase -%}
+
+      {%- endfor -%}
+    </div>
+  </details>
+    </div>
+  </div>
+</div>
+  
+
+{% schema %}
+{
+  "name": "FAQ Extra",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "separator",
+      "name": "Section separator",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Default"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        },
+        {
+          "type": "html",
+          "id": "answer_html",
+		  "label": "If ABOVE IS EMPTY, use this for answers with more style - HTML"
+        }
+      ]
+    }
+  ],
+"presets": [
+    {
+      "category": "FAQ Extra",
+      "name": "FAQ Extra",
+      "settings": {}
+    }
+  ]
+  
+}
+{% endschema %}

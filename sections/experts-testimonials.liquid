@@ -1,0 +1,294 @@
+<!-- section: testimonials_hp2021 -->
+{% comment %} Yurith 05-05-2021 {% endcomment%}
+
+
+{% style %}
+
+.tm21_wr_lp{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 990px;
+  justify-content: space-around;
+}
+.tm21_wr_lp > div {
+  width: 300px;
+}
+.tm21_wr_hp{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 990px;
+  justify-content: space-around;
+}
+.tm21_wr_hp > div {
+  width: 300px;
+}
+@media only screen and (max-width: 450px){
+  .tm21_wr_hidden {
+    display: none !important;
+  }
+}
+.tm21_wr_quote {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.tm21_wr_quote a:before {
+    height: 0px!important;
+}
+
+.tm21_pic_wr {
+    position: absolute;
+    margin-left: 75px;
+    width: 150px!important;
+    height: 150px!important;
+    display: flex!important;
+	z-index: 1;
+}
+
+.tm21_text_wr {
+  background-color: #f4f4f4;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  margin-top: 75px;
+  padding-top: 100px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  text-align: left;
+  min-height: 385px;
+}
+.tm21_text_wr:hover{
+  background-color: #fac636;
+  border: 1px solid #dcdcdc;
+  cursor: pointer;
+}
+.tm21_text_wr:hover .gral_icon21_yellow{
+  color: white;
+}
+
+.tm21_wr_lp > div a {
+    text-decoration: none!important;
+}
+
+.tm21_wr_lp img, .tm21_pic_wr img {
+	max-width: 100%!important;
+}
+
+.tm21_left_quote{
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+.tm21_citation > p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+.tm21_citation > p {
+  margin: 0px;
+  overflow: hidden;
+}
+.tm21_img{
+  height: inherit;
+}
+
+{% endstyle %}
+
+
+
+<div class="Container--standard--medium centered section-space-medium">
+  
+  	<h2 style="margin-bottom: 40px;" class="Heading u-h2">{{ section.settings.header }}</h2>
+      <div class="tm21_wr_hp">
+        <div class="tm21_wr_quote">
+          <div class="tm21_pic_wr">
+            <img
+              style="border-radius: 50%"
+              class="tm21_img Image--lazyLoad"
+              data-src="{{ section.settings.tm21_picture1 | img_url:'master' }}"
+              alt=""
+            />
+          </div>
+
+          <a href="{{ section.settings.link1 }}">
+            <div class="tm21_text_wr">
+              <div style="font-weight: bold; margin-bottom: 0px" class="gral_font_16px tm21_name">
+                {{ section.settings.tm21_name1 }}
+              </div>
+              <div style="font-weight: normal; height: 50px" class="gral_font_16px tm21_name">
+                {{ section.settings.tm21_role1 }}
+              </div>
+              <div class="tm21_left_quote">
+                <span class="gral_icon21_yellow gral_font_20px icon-left-quote"></span>
+              </div>
+              <div class="tm21_citation">
+                {{ section.settings.tm21_paragraph1 }}
+              </div>
+              <div>
+                <span style="position: relative; left: 220px" class="gral_icon21_yellow gral_font_20px icon-right-quote"></span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="tm21_wr_quote">
+          <div class="tm21_pic_wr">
+            <img style="border-radius: 50%" class="tm21_img Image--lazyLoad" data-src="{{ section.settings.tm21_picture2 | img_url:'master' }}" alt=""/>
+          </div>
+
+          <a href="{{ section.settings.link2 }}">
+            <div class="tm21_text_wr">
+              <div style="font-weight: bold; margin-bottom: 0px" class="gral_font_16px  tm21_name">
+                {{ section.settings.tm21_name2 }}
+              </div>
+              <div style="font-weight: normal; height: 50px" class="gral_font_16px tm21_name">
+                {{ section.settings.tm21_role2 }}
+              </div>
+              <div class="tm21_left_quote">
+                <span class="gral_icon21_yellow gral_font_20px icon-left-quote" ></span>
+              </div>
+              <div class="tm21_citation">
+                {{ section.settings.tm21_paragraph2 }}
+              </div>
+              <div>
+                <span style="position: relative; left: 220px" class="gral_icon21_yellow gral_font_20px icon-right-quote"></span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="tm21_wr_quote tm21_wr_hidden">
+          <div class="tm21_pic_wr">
+            <img style="border-radius: 50%" class="tm21_img Image--lazyLoad" data-src="{{ section.settings.tm21_picture3 | img_url:'master' }}" alt=""/>
+          </div>
+
+          <a href="{{ section.settings.link3 }}">
+            <div class="tm21_text_wr">
+              <div style="font-weight: bold; margin-bottom: 0px" class="gral_font_16px tm21_name">
+                {{ section.settings.tm21_name3 }}
+              </div>
+              <div style="font-weight: normal; height: 50px" class="gral_font_16px tm21_name">
+                {{ section.settings.tm21_role3 }}
+              </div>
+              <div class="tm21_left_quote">
+                <span class="gral_icon21_yellow gral_font_20px icon-left-quote"></span>
+              </div>
+              <div class="tm21_citation">
+                {{ section.settings.tm21_paragraph3 }}
+              </div>
+              <div>
+                <span style="position: relative; left: 220px" class="gral_icon21_yellow gral_font_20px icon-right-quote"></span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+  
+      <a href="/pages/testimonials2021" class="Button Button--primary">Mehr erfahren</a>
+    </div>
+
+
+{% schema %}
+  {
+    "name": "Experts Testimonials",
+    "settings": [
+					  {
+                          "id": "header",
+      					  "type": "text",
+      					  "label": "Header Title"					
+                      },
+                      {
+                          "id": "link1",
+      					  "type": "url",
+      					  "label": "Link 1"					
+                      },
+					  {
+                          "type": "image_picker",
+                          "label": "Picture 1",
+                          "id": "tm21_picture1"						
+                      },
+                      {
+                          "id": "tm21_name1",
+                          "type": "text",
+                          "label": "Name 1",
+						  "default": "Joe Doe"
+                      },
+                      {
+                          "id": "tm21_role1",
+                          "type": "text",
+                          "label": "Role 1",
+						  "default": "Psychologin"
+                      },
+					  {
+                          "id": "tm21_paragraph1",
+                          "type": "richtext",
+                          "label": "Citation 1",
+						  "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>"
+                      },
+                      {
+                          "id": "link2",
+      					  "type": "url",
+      					  "label": "Link 2"					
+                      },
+					  {
+                          "type": "image_picker",
+                          "label": "Picture 2",
+                          "id": "tm21_picture2"						
+                      },
+                      {
+                          "id": "tm21_name2",
+                          "type": "text",
+                          "label": "Name 2",
+						  "default": "Joe Doe"
+                      },
+                      {
+                          "id": "tm21_role2",
+                          "type": "text",
+                          "label": "Role 2",
+						  "default": "Psychologin"
+                      },
+					  {
+                          "id": "tm21_paragraph2",
+                          "type": "richtext",
+                          "label": "Citation 2",
+						  "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>"
+                      },
+                      {
+                          "id": "link3",
+      					  "type": "url",
+      					  "label": "Link 3"					
+                      },
+					  {
+                          "type": "image_picker",
+                          "label": "Picture 3",
+                          "id": "tm21_picture3"						
+                      },
+                      {
+                          "id": "tm21_name3",
+                          "type": "text",
+                          "label": "Name 3",
+						  "default": "Joe Doe"
+                      },
+                      {
+                          "id": "tm21_role3",
+                          "type": "text",
+                          "label": "Role 3",
+						  "default": "Psychologin"
+                      },
+					  {
+                          "id": "tm21_paragraph3",
+                          "type": "richtext",
+                          "label": "Citation 3",
+						  "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>"
+                      }
+				],
+	"presets": [
+				{
+                  "category": "Homepage Section",
+                  "name": "Experts Testimonials"
+                  }
+				]
+  }
+{% endschema %}

@@ -1,0 +1,20 @@
+<!-- page.testimonial_single.liquid -->
+<style>
+  .image-profile-testimonials{
+    border-radius: 50%;
+  }
+</style>
+
+<div class="Container Container--standard--medium">
+  <header class="PageHeader">
+    <div class="SectionHeader SectionHeader--center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </div>
+  </header>
+
+  <div class="PageContent {% unless section.settings.show_large %}PageContent--narrow{% endunless %} Rte">
+    <a href="/pages/testimonials2021" style="margin-left: 15px" title="Therapiedecken Testimonials"><span style="font-weight: 400">← Zurück zur Übersicht</span></a>
+    {{ page.content }}
+  </div>
+</div>
+<br>

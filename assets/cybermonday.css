@@ -1,0 +1,113 @@
+/* Home Cover Pages */
+
+.home-Promotion__HeroContent{
+  position: relative;
+  left: 25px;
+  background-color: #343A40;
+  margin-top: 60px;
+}
+.home-Promotion__HeroContent_Wrapper{
+	margin: auto;
+}
+
+@media screen and (min-width: 1501px) {
+  .home-Promotion__HeroContent_Wrapper{
+	max-width: 80%;
+  }
+  .home_CM_horizontal{
+	display: none;
+  }
+  .home_CM_vertical{
+	padding-bottom: 30px;
+  }
+  .home-Promotion__HeroContent{
+    padding: 45px 40px;
+	max-width: 33%;
+  }
+}
+
+@media screen  and (min-width: 641px) and (max-width: 1500px) {
+  .home_CM_vertical{
+	display: none;
+  }
+  .home-Promotion__HeroContent{
+    padding: 0 0 3% 0;
+	max-width: 40%;
+  }
+  .home_CM_horizontal{
+	padding: 7%;
+  }
+}
+@media screen  and (max-width: 640px) and (orientation: portrait) {
+  .home_CM_horizontal{
+	display: none;
+  }
+  .home-Promotion__HeroContent{
+    max-width: 80%;
+	padding: 25px;
+	left: 0;
+  }
+  .home_CM_vertical{
+	padding-bottom: 10px;
+  }
+}
+@media screen  and (max-width: 640px) and (orientation: landscape) {
+  .home-Promotion__HeroContent{
+    max-width: 80%;
+	padding: 10px 25px 25px 25px;
+	left: 0;
+  }
+  .home_CM_vertical{
+	display: none;
+  }
+  .home_CM_horizontal{
+	padding-bottom: 10px;
+  }
+}
+
+/* Collection Cover Pages */
+
+
+.vergleich-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: #E6E6E6;
+  color: #3A3C3C;
+  width: 100%;
+  font-weight: bold;
+}
+
+.collection_CM_horizontal{
+  width: 900px;
+}
+.collection_CM_vertical{
+  width: 400px;
+  margin-bottom: 50px;
+}
+@media screen  and (min-width: 641px) {
+  .collection_CM_horizontal{
+	padding: 0 40px;
+  }
+  .collection_CM_vertical{
+	display: none;
+  }
+}
+
+@media screen  and (max-width: 640px) and (orientation: portrait) {
+  .collection_CM_horizontal{
+	display: none;
+  }
+  .collection_CM_vertical{
+	padding: 0 40px;
+  }
+}
+@media screen  and (max-width: 640px) and (orientation: landscape) {
+  .collection_CM_horizontal{
+	padding: 0 40px;
+  }
+  .collection_CM_vertical{
+	display: none;
+  }
+}

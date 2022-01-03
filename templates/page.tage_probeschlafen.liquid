@@ -1,0 +1,68 @@
+<!-- page.tage_probeschlafen.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'pages.css' | asset_url | stylesheet_tag}}
+
+<div class="grid">
+  <div class="grid__item large--five-sixths push--large--one-twelfth">
+
+    <header class="section-header text-center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </header>
+
+    <div class="grid">
+      <div class="grid__item large--four-fifths push--large--one-tenth">
+        <div class="rte rte--nomargin rte--indented-images">
+          
+          <!-- HC - Newsletter page changes - 20 Apr '18 -->
+          {% if page.handle == 'newsletter-abonnieren'%}
+          {% section 'newsletter-abonnieren' %}
+          {% else %}
+          {{ page.content }}
+          
+          <p>Wir garantieren Ihnen, dass sich Ihre Stimmung und die Qualität Ihres Schlafes verbessern werden. Wenn nicht bekommen Sie Ihr Geld zurück! Testen Sie unsere Decken für die nächsten 28 Nächte, nachdem Sie die Decke erhalten haben.</p>
+          <div class="trial-section__widget">
+             <div class="progress-bar">
+                <div class="progress-bar__point">
+                   <p class="point-text point-start__text">Heute</p>
+                </div>
+                <div class="progress-bar__point-start">
+                   <div class="start-section">
+                      <div class="widget-label widget-start-label"><span class="widget-text">28 Tage Testzeitraum beginnt nach Erhalt</span></div>
+                   </div>
+                   <p class="point-text">3-5 Tage Versand</p>
+                </div>
+                <div class="progress-bar__point"></div>
+                <div class="progress-bar__point"></div>
+                <div class="progress-bar__point"></div>
+                <div class="progress-bar__point"></div>
+                <div class="progress-bar__point"></div>
+                <div class="progress-bar__point-reminder">
+                   <div class="remind-section">
+                      <div class="widget-label widget-reminder-label"><span class="widget-text">Bei Nichtgefallen zurückschicken</span></div>
+                   </div>
+                   <div class="point-reminder-fill"></div>
+                   <span class="point-text point-reminder-text mobile">Nach 28 Tagen, 7 weitere Tage zum Rückversand</span><span class="point-text point-reminder-text">Nach 28 Tagen</span>
+                </div>
+                <div class="progress-bar__point"><span class="point-text point-end-text"></span></div>
+             </div>
+          </div>
+          <br /> <br /> <br /> <br /> <br />
+          <p>Für Informationen zum Versand &amp; Retouren klicken Sie bitte <a href="https://therapiedecken.de/pages/versand-retouren" class="Link--underline">hier</a>.</p>
+          <meta charset="utf-8" />
+          <p><span>Bei weiteren Fragen besuchen Sie bitte unsere </span><a href="https://therapiedecken.de/apps/help-center" class="Link--underline">FAQ</a><span> Seite oder schreiben Sie uns eine E-Mail an <b>kundenservice@therapiedecken.de.</b></span></p>
+          
+          {% endif %}
+          
+          {% comment %}{% include 'judgeme_all_reviews' %}{% endcomment %}
+          
+{% if page.handle == 'therapiedecken-helfen-bei-alzheimer-parkinson-und-demenz-1'  %} 
+
+{% include 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: true %}  {% endif %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

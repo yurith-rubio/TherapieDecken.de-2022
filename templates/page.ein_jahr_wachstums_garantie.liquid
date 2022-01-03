@@ -1,0 +1,52 @@
+<!-- page.ein_jahr_wachstums_garantie.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'pages.css' | asset_url | stylesheet_tag }}
+
+<div class="grid">
+  <div class="grid__item large--five-sixths push--large--one-twelfth">
+
+    <header class="section-header text-center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </header>
+
+    <div class="grid">
+      <div class="grid__item large--four-fifths push--large--one-tenth">
+        <div class="rte rte--nomargin rte--indented-images">
+          
+          <!-- HC - Newsletter page changes - 20 Apr '18 -->
+          {% if page.handle == 'newsletter-abonnieren'%}
+          {% section 'newsletter-abonnieren' %}
+          {% else %}
+          {{ page.content }}
+          
+          <center><img loading="lazy" class="kinder-wachstumsgarantie-img" src="https://cdn.shopify.com/s/files/1/2451/6611/files/kinderdecke-therapiedecke-1-jahr-wachstumsgarantie.jpg?v=1604089952" style="margin-bottom:15px;"/></center>
+          <p>Unsere Kinder Gewichtsdecken können in der Regel von den meisten Kindern für 2-3 Jahre verwendet werden. Haben Sie dennoch Sorge, dass Ihr Kind zu schnell wächst und die maßgefertigte Therapiedecke nach einiger Zeit nicht mehr passt?</p>
+          <p>TherapieDecken.de bietet allen Kunden*, die eine Kinderdecke von uns gekauft haben die Möglichkeit nach 12 Monaten ab dem Kaufdatum ihre alte, zu klein gewordene Decke kostenlos zurückzuschicken und 50% Nachlass auf eine neue Decke zu erhalten.</p>
+          <p><strong style="padding-top:10px;display:block;">Bedingungen: </strong></p>
+          <ol class="kinder-wachstumsgarantie-ol" style="list-style-position:inherit;">
+             <li>Die Umtauschaktion gilt nur für Kinder Therapiedecken gekauft auf TherapieDecken.de.</li>
+             <li>Das Angebot gilt nur einmal pro Decke pro Kunde nach 12 Monaten ab dem Kaufdatum Ihrer alten Decke. </li>
+             <li>Die Decke darf in die nächstgrößere Decke oder in die gleiche Deckengröße aber mit mehr Gewicht umgetauscht werden.</li>
+             <li>Sie erhalten nach Anfrage einen kostenlosen Retourenlabel. Nach Erhalt Ihrer alten Decke und Bezahlung der neuen Decke, schicken wir Ihnen Ihre neue Wunschdecke zu!</li>
+          </ol>
+          <a style="margin:15px 0;" href="https://therapiedecken.de/collections/kinder" class="Button Button--primary btn hp-vergleich text-link "><span>ZU DEN KINDERDECKEN</span></a>
+          <!--<a href="https://therapiedecken.de/collections/kinder" style="color: #2c2c2c; background-color: #fac636;margin:15px 0;" class="btn hp-vergleich text-link Button Button--primary"> ZU DEN KINDERDECKEN </a>--> <br /> 
+          <meta charset="utf-8" />
+          <p><span>Bei weiteren Fragen besuchen Sie bitte unsere </span><a href="https://therapiedecken.de/apps/help-center" class="Link--underline">FAQ</a><span> Seite oder schreiben Sie uns eine E-Mail an <b>kundenservice@therapiedecken.de.</b></span></p>
+          <p><span size="1" style="font-size: xx-small;">*Das Angebot gilt nur für Bestellungen aus Deutschland oder Österreich.</span></p>
+          
+          {% endif %}
+          
+          {% comment %}{% include 'judgeme_all_reviews' %}{% endcomment %}
+          
+{% if page.handle == 'therapiedecken-helfen-bei-alzheimer-parkinson-und-demenz-1'  %} 
+
+{% include 'judgeme_widgets', widget_type: 'judgeme_featured_carousel', concierge_install: true %}  {% endif %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

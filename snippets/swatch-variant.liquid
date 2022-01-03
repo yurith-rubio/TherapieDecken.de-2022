@@ -1,0 +1,79 @@
+<!-- snnipet: swatch-variant.liquid -->
+
+	<ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
+      {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
+  
+      {%- for value in option.values -%}
+        {% if option.name == "Bezugsart"%}
+
+        {%- assign downcase_value = value | downcase -%}
+
+         <li class="HorizontalList__Item MainVariant_container">
+          <input id="option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
+            class="ColorSwatch__Radio" type="radio" name="Bezugsart"
+            value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
+            data-option-position="{{ option.position }}">
+          <label for="option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
+            class="ColorSwatch ColorSwatch--large {% if downcase_value == 'white' %}ColorSwatch--white{% endif %}"
+            data-tooltip="{{ value | escape }}"
+            style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: value %}">
+            <span class="u-visually-hidden">{{ value }}</span>
+          </label>
+          <p class="VariantValue--style">
+            {% assign simple_value = value | split: '(' | last %}
+            {% assign name_variant = simple_value | split: ')' | first %}
+            {{ name_variant | escape }}    
+           </p>
+
+          {% comment %} Is Limited Badge - bgd.is_limited Metafield {% endcomment %}  
+          {% for v in product.variants %}
+              {% if v.option3 == value %}
+                  {% assign isLimited = v.metafields.bgd.is_limited %}
+                  {% if isLimited == "true" %}
+                       <div
+                       class="is-limited-badge"
+                       data-variant-id="{{ v.id }}"
+                       data-variant-option1="{{ v.option1 }}"
+                       data-variant-option2="{{ v.option2 }}"
+                       data-variant-bezugsart="{{ v.option3 }}"
+                       >
+                       Limitiert
+                       </div>
+                 {% endif %}
+              {% endif%}
+          {% endfor %}
+           
+          {% comment %} On Sale Badge - bgd.on_sale Metafield {% endcomment %}
+          {% for v in product.variants %}
+              {% if v.option3 == value %}
+                  {% assign onSale = v.metafields.bgd.on_sale %}
+                  {% if onSale %}
+                     <div
+                       class="on-sale-badge"
+                       data-variant-id="{{ v.id }}"
+                       data-variant-option1="{{ v.option1 }}"
+                       data-variant-option2="{{ v.option2 }}"
+                       data-variant-bezugsart="{{ v.option3 }}"
+                       >
+                       {{ onSale }}
+                     </div>
+                 {% endif %}
+              {% endif%}
+          {% endfor %}
+        {% endif %}  
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    {%- comment -%} Product Info for Variants - bgd.cover-type Metafield - Yurith {%- endcomment -%}
+    {% for variant in product.variants %}
+      {% if variant.metafields.bgd.cover-type %}
+        {% assign design_class = "info-wr info-wr-hidden" %}
+        {% if variant.id == product.selected_or_first_available_variant.id %}
+        	{% assign design_class = "info-wr" %}
+        {% endif %}
+        <div data-variant-id="{{variant.id}}" class="{{ design_class }}">
+          {{ variant.metafields.bgd.cover-type }}
+        </div>
+      {% endif%}
+    {% endfor %}
