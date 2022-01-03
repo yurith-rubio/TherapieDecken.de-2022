@@ -147,7 +147,7 @@ $(document).ready(function () {
     const selectedSize = $("li.HorizontalList__Item > input[checked='checked']").first();
     if (selectedSize && selectedSize.attr("value") === "150 x 220 cm") {
       $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");    
-  }
+  	}
   
   	// Update the price when the page is loaded (take into account that a different variant is selected)
   	updatePrice();
