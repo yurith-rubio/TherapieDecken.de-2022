@@ -133,21 +133,7 @@ $(document).ready(function () {
         	}
       	}, 0);
     });
-  
-    $("li.HorizontalList__Item > input").click(function (clickedButton) {
-      if(clickedButton.target.value === "150 x 220 cm") {
-        $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
-        $(".gewicht_option > input[value = '6 kg']").click();
-      } else if (clickedButton.target.value === "135 x 200 cm") {
-      $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
-        $(".gewicht_option > input").first().click();
-      }
-    });
-    
-    const selectedSize = $("li.HorizontalList__Item > input[checked='checked']").first();
-    if (selectedSize && selectedSize.attr("value") === "150 x 220 cm") {
-      $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");    
-  	}
+
   
   	// Update the price when the page is loaded (take into account that a different variant is selected)
   	updatePrice();
