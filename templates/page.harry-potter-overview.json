@@ -3,7 +3,10 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "show_large": false
+        "show_large": false,
+        "back_link_checkbox": false,
+        "back_link_text": "Zurück zur...",
+        "back_link_url": ""
       }
     },
     "1631193615fcc39e24": {
@@ -12,7 +15,8 @@
         "1631193615fcc39e24-0": {
           "type": "collection",
           "settings": {
-            "collection": "erwachsene",
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Section-bg-HP-Desktop_f8d63c26-f52f-4092-9fcb-3bf9df693a6c.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Für weniger Stress, mehr Erholung und Schlaf",
@@ -25,7 +29,7 @@
         "1631193615fcc39e24-1": {
           "type": "collection",
           "settings": {
-            "collection": "kinder-therapiedecken-fur-ein-besseres-wohlbefinden-und-besseren-schlaf",
+            "collection": "therapiedecken-zauberei-kollektion",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Für Ruhepausen, mehr Konzentration und Entspannung",
