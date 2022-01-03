@@ -19,8 +19,8 @@
             "image": "shopify:\/\/shop_images\/Section-bg-HP-Desktop_f8d63c26-f52f-4092-9fcb-3bf9df693a6c.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
-            "subheading": "Für weniger Stress, mehr Erholung und Schlaf",
-            "title": "Erwachsene",
+            "subheading": "",
+            "title": "Zauberei Gravity Therapiedecke",
             "button_text": "Mehr Erfahren",
             "button_link": "shopify:\/\/products\/gravity-zauberei-gewichtsdecke",
             "apply_overlay": true
@@ -32,8 +32,8 @@
             "collection": "therapiedecken-zauberei-kollektion",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
-            "subheading": "Für Ruhepausen, mehr Konzentration und Entspannung",
-            "title": "Kinder",
+            "subheading": "",
+            "title": "Zauberei Bezüge",
             "button_text": "Mehr Erfahren",
             "button_link": "",
             "apply_overlay": true
