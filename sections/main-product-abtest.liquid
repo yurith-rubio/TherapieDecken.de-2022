@@ -9,6 +9,9 @@
 {% comment %}Product Info for Variants - CSS added for metafields styling and JS actions - Yurith{% endcomment %}
 {{ 'metafields-info.css' | asset_url | stylesheet_tag }}
 
+{% comment %}Hide Options - Yurith{% endcomment %}
+{{ 'hide-options.js' | asset_url | script_tag }}
+
 {%- capture section_settings -%}
 {
   "enableHistoryState": true,
