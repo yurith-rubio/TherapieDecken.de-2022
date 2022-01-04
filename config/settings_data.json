@@ -1,1 +1,574 @@
-{"current":{"heading_color":"#3a3c3c","text_color":"#3a3c3c","text_light_color":"#5b5b5b","link_color":"#5b5b5b","background":"#ffffff","light_background":"#f8f8f8","product_on_sale_color":"#f94c43","button_background":"#fac636","button_text_color":"#222323","button_background_secondary":"#3a3c3c","header_background":"#ffffff","header_heading_color":"#222323","header_light_color":"#5b5b5b","footer_background":"#5b5b5b","footer_heading_color":"#ffffff","footer_text_color":"#ffffff","navigation_background":"#ffffff","navigation_text_color":"#222323","newsletter_popup_background":"#5b5b5b","newsletter_popup_text_color":"#ffffff","secondary_elements_background":"#f8f8f8","secondary_elements_text_color":"#ffffff","heading_font":"montserrat_n6","heading_size":"small","uppercase_heading":true,"text_font":"maven_pro_n4","base_text_font_size":14,"color_swatch_config":"Altrosa (4-Jahreszeiten): altrosa-4-jahreszeiten.png\nAstronaut (Baumwolle): astronaut-sommer.png\nAstronaut (Sommer): astronaut-sommer.png\nAstronaut: astronaut.png\nBalance (Reißverschluss): zipper-72x72.jpg\nBallerina (Baumwolle): ballerina-sommer.png\nBallerina (Sommer): ballerina-sommer.png\nBallerina: ballerina.png\nBlau (4-Jahreszeiten): blau-4-jahreszeiten.png\nBlau (Baumwolle): blau-sommer.png\nBlau (Sommer): blau-sommer.png\nBlau Grau Kariert (Baumwolle): blau-grau-kariert-sommer.png\nBlau Grau Kariert (Sommer): blau-grau-kariert-sommer.png\nBlau mit Störchen (Baumwolle): blau-mit-storchen-sommer.png\nBlau mit Störchen (Sommer): blau-mit-storchen-sommer.png\nBlau Weiß (Baumwolle): blau-weiss-baumwolle.png\nBlau Weiß (Sommer): blau-weiss-sommer.png\nBlau:#d3d3d3\nBlaue Vögel (Baumwolle): blaue-vogel-baumwolle.png\nBlaue Vögel (Sommer): blaue-vogel-sommer.png\nBlumen (Baumwolle): blumen-sommer.png\nBlumen (Sommer): blumen-sommer.png\nBlumen: blumen.png\nBunt (Baumwolle): bunt-baumwolle.png\nBunt (Sommer): bunt-sommer.png\nBunte Fische (Baumwolle): bunte-fische-baumwolle.png\nBunte Fische (Sommer): bunte-fische-sommer.png\nDino (Baumwolle): dino-sommer.png\nDino (Sommer): dino-sommer.png\nDunkelblau: Dunkelblau.png\nDunkelgrau (4-Jahreszeiten): dunkelgrau-4-jahreszeiten.png\nDunkelgrau: dunkelgrau.png\nErdbeeren (Baumwolle): erdbeeren-sommer.png\nErdbeeren (Sommer): erdbeeren-sommer.png\nErdbeeren: erdbeeren.png\nFarbe_Gray: #f8f8f8\nFußball (Baumwolle): fussball-sommer.png\nFußball (Sommer): fussball-sommer.png\nFußball: fussball.png\nGänseblümchen (Baumwolle): ganseblumchen-sommer.png\nGänseblümchen (Sommer): ganseblumchen-sommer.png\nGänseblümchen: ganseblumchen.png\nGelb: gelb.png\nGoldener Schnatz (Baumwolle): goldener-schnatz-baumwolle.png\nGrau (4-Jahreszeiten): grau-4-jahreszeiten.png\nGrau (Baumwolle): grau-sommer.png\nGrau (Sommer): grau-sommer.png\nGrau Gelb (Baumwolle): grau-gelb-sommer.png\nGrau Gelb (Sommer): grau-gelb-sommer.png\nGrau: grau.png\nGravity (Schlaufen): loop-72x72.jpg\nGravity Inlett (Ohne Bezug): gravity-inlett-ohne-bezug.png\nGryffindor (Baumwolle): gryffindor-baumwolle.png\nHäuser (Baumwolle): hauser-baumwolle.png\nHedwig (Baumwolle): hedwig-baumwolle.png\nHellgrau (Basic): hellgrau-basic.png\nHellgrau:#c7c7c7\nInsekten (Baumwolle): insekten-sommer.png\nInsekten (Sommer): insekten-sommer.png\nInsekten: insekten.png\nKatzen (Baumwolle): katzen-sommer.png\nKatzen (Sommer): katzen-sommer.png\nKatzen: katzen.png\nKuhflecken (Baumwolle): kuhflecken-sommer.png\nKuhflecken (Sommer): kuhflecken-sommer.png\nKuhflecken: kuhflecken.png\nMagische Dinge (Baumwolle): magische-dinge-baumwolle.png\nMint: Mint.png\nMintgrün (4-Jahreszeiten): mintgrun-4-jahreszeiten.png\nMintgrün: mintgrun.png\nOhne (Standard): regular-cover-72x72.jpg\nOlivgrün (4-Jahreszeiten): olivgrun-4-jahreszeiten.png\nOutlast (Dauerkomfort): outlast-dauerkomfort.png\nPferde (Baumwolle): pferde-sommer.png\nPferde (Sommer): pferde-sommer.png\nPferde: pferde.png\nPflanzen (Baumwolle): pflanzen-sommer.png\nPflanzen (Sommer): pflanzen-sommer.png\nPflanzen: Pflanzen.png\nPink (4-Jahreszeiten): pink-4-jahreszeiten.png\nPink (Baumwolle): pink-sommer.png\nPink (Sommer): pink-sommer.png\nPink: pink-4-jahreszeiten.png\nPony (Baumwolle): pony-sommer.png\nPony (Sommer): pony-sommer.png\nPony: pony.png\nPoseidon: poseidon.png\nRosa Gesprenkelt (Baumwolle): rosa-gesprenkelt-baumwolle.png\nRosa Kariert (Baumwolle): rosa-kariert-baumwolle.png\nRosa: rosa.png\nRot (4-jahreszeiten): rot-4-jahreszeiten.png\nRot Gelb (Baumwolle): rot-gelb-sommer.png\nRot Gelb (Sommer): rot-gelb-sommer.png\nRot Grün Gestreift (Baumwolle): rot-grun-gestreift-baumwolle.png\nSchwäne: schwane.png\nSchwarz Blau (Baumwolle): schwarz-blau-baumwolle.png\nSenfgelb (4-Jahreszeiten): senfgelb-4-jahreszeiten.png\nSprechender Hut (Baumwolle): sprechender-hut-baumwolle.png\nSterne (Baumwolle): sterne-sommer.png\nSterne (Sommer): sterne-sommer.png\nSterne: sterne-sommer.png\nTannengrün: tannengrun.png\nTannengrün (4-Jahreszeiten): tannengrun-4-jahreszeiten.png\nTaubenblau (4-Jahreszeiten): taubenblau-4-jahreszeiten.png\nWeiß (Basic):#FFFFFF\nWeiß mit Zweigen (Baumwolle): weiss-mit-zweigen-baumwolle.png\nWeiß Rot mit Zweigen (Baumwolle): weiss-rot-mit-zweigen-baumwolle.png\nWeltall (Baumwolle): weltall-sommer.png\nWeltall (Sommer): weltall-sommer.png\nWeltall: weltall.png\nZauberei Schule (Baumwolle): zauberei-schule-baumwolle.png\nZickzack: Zickzack.png\nZitronengelb (Baumwolle): zitronengelb-sommer.png\nZitronengelb (Sommer): zitronengelb-sommer.png","show_page_transition":false,"search_mode":"product,article,page","product_show_price_on_hover":false,"product_show_secondary_image":false,"product_info_alignment":"center","product_image_size":"square","product_list_horizontal_spacing":"medium","product_list_vertical_spacing":"small","cart_type":"page","cart_enable_notes":false,"cart_show_free_shipping_threshold":true,"cart_free_shipping_threshold":"50","social_facebook":"https:\/\/www.facebook.com\/therapiedecken\/","social_pinterest":"https:\/\/www.pinterest.de\/therapiedecken\/","social_instagram":"https:\/\/www.instagram.com\/therapiedecken\/","social_youtube":"https:\/\/www.youtube.com\/channel\/UCzoQFn6SP0y-YTgCNnrLIfA?view_as=subscriber","social_fancy":"https:\/\/therapiedecken.de\/blogs\/news?nopreview","favicon":"shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png","countdown_date":"","enable_days_view":false,"reseting_time":"","loop_time":0,"announcement_countdown_enable":false,"text_color_countdown":"#bb1d33","product_countdown_enable":false,"icon_countdown_product":"<span class=\"icon-price-tags\"><\/span>","countdown_product_text":"Garantierte Weihnachtszustellung endet in","countdown_container_bg_color":"#bb1d33","countdown_product_numbers_color":"#3a3c3c","checkout_countdown_enable":false,"checkout_countdown_text":"⚠️ Auf Grund unserer Pre Black Friday Angebote ist Ihr Warenkorb für nur","left_product_inventory":true,"promotional_hero_hp_cover":false,"promotional_collection_cover":false,"enable_product_badge":false,"checkout_logo_image":"shopify:\/\/shop_images\/Checkout-banner-2.jpg","checkout_logo_position":"center","checkout_logo_size":"large","checkout_body_background_color":"#ffffff","checkout_input_background_color_mode":"white","checkout_sidebar_background_color":"#f8f8f8","checkout_accent_color":"#1c1b1b","checkout_button_color":"#fac636","exclusive_product_badge":false,"blackfriday_hero_hp_cover":true,"blackfriday_collection_cover":true,"resetingTime":"November 26, 2021 00:00 GMT+0100","sections":{"sidebar-menu":{"type":"sidebar-menu","settings":{"primary_menu":"side-bar-menu-mobile-2021","secondary_menu":"right-footer-menu","show_social_media":true}},"announcement":{"type":"announcement","settings":{"enable_bar":false,"home_page_only":false,"background":"#bb1d33","text_color":"#ffffff","content":"Announcement Bar Text","link":""}},"header":{"type":"header","blocks":{"cd9728ec-b79c-47cc-8528-15695fd78394":{"type":"mega_menu","settings":{"navigation_mega_menu":"SHOP","push_1_image":"shopify:\/\/shop_images\/Outlast_navigation-tiny.jpg","push_1_heading":"NEU!","push_1_subheading":"Special Edition: Balance Outlast® Gewichtsdecke","push_1_url":"shopify:\/\/products\/premium-balance-outlast-gewichtsdecke-fur-erwachsene","push_2_heading":"Example heading","push_2_subheading":"Example sub-heading","push_2_url":""}},"489abd50-4188-4da5-b5f9-de227dec5766":{"type":"mega_menu","settings":{"navigation_mega_menu":"Wissenswertes","push_1_heading":"Example","push_1_subheading":"Example sub-heading","push_1_url":"","push_2_image":"shopify:\/\/shop_images\/diana_zur_lowen.jpg","push_2_heading":"Expertenmeinung von Diana zur Löwen","push_2_subheading":"Ihre Erfahrung mit unserer Therapiedecke","push_2_url":"shopify:\/\/pages\/diana-zur-lowens-erfahrung-mit-therapiedecken"}}},"block_order":["cd9728ec-b79c-47cc-8528-15695fd78394","489abd50-4188-4da5-b5f9-de227dec5766"],"settings":{"use_sticky_header":true,"logo":"shopify:\/\/shop_images\/FinalLogoMainBlackWithoutSubText.png","logo_max_width":200,"mobile_logo_max_width":180,"show_currency_selector":false,"show_locale_selector":false,"navigation_menu":"main-top-bar-menu-1","navigation_style":"inline","show_icons":true,"enable_transparent_header":true,"enable_transparent_header_collection":true,"show_transparent_header_border":false,"transparent_text_color":"#ffffff","transparent_logo":"shopify:\/\/shop_images\/FinalLogoMainWhiteWithoutSubText.png"}},"footer":{"type":"footer","blocks":{"7ef9419b-7b6a-4ee6-a6e1-12eff1c13178":{"type":"links","settings":{"menu":"footer"}},"3cf60a83-1afb-4c04-98ee-4e291c958743":{"type":"links","settings":{"menu":"right-footer-menu"}},"7a8ea8a1-ba2a-460d-a217-d4bc6299d443":{"type":"text","settings":{"title":"Zertifizierte Gewichtsdecken","content":"","html_content":"<style>\n.icons-certificate-wp{\n  display: flex;\n}\n.icons-certificate-wp > img{\n  padding-right: 20px;\n  width: auto;\n  height:50px;\n}\n<\/style>\n<div class=\"icons-certificate-wp\">\n<img class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TrustedShop_Therapiedecken_4eee273a-5e44-41a1-bc30-e3bb8ea79c85.png?v=1632215967\">\n\n<img class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/EC_Medizinprodukt_cd487c46-52a9-4833-901e-cbc40f0c9aa9.png?v=1632215966\">\n<\/div>\n<br>\n<br>\n<p class=\"Footer__Title Heading u-h6\">Versandpartner<\/p>\n<img width=\"200px\" class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/delivery_logos-adjusted-200x29.png?v=1632238073\">\n<br>\n<br>\n<p class=\"Footer__Title Heading u-h6\">Social Media<\/p>","show_social_media":true}},"ae16cb4f-75d1-4e85-bb22-6bb00ab1676f":{"type":"text","disabled":true,"settings":{"title":"Social Media","content":"","html_content":"","show_social_media":true}},"b79ef7a9-d985-4143-bf1c-da4bec8f75db":{"type":"text","disabled":true,"settings":{"title":"Versandpartner","content":"","html_content":"<img width=\"200px\" class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/delivery_logos.png?v=1630314209\">","show_social_media":false}},"footer-0":{"type":"text","settings":{"title":"Unser Versprechen","content":"<p>Hochwertige und handgefertigte Gewichtsdecken für einen besseren Schlaf, mehr Wohlbefinden und weniger Stress.<\/p>","html_content":"","show_social_media":false}},"footer-2":{"type":"newsletter","disabled":true,"settings":{"title":"10€ Rabatt auf die 1. Bestellung","content":"<p>Newsletter abonnieren und 10€ auf die 1. Bestellung erhalten. Ab 100€ Einkaufswert.<\/p>"}}},"block_order":["7ef9419b-7b6a-4ee6-a6e1-12eff1c13178","3cf60a83-1afb-4c04-98ee-4e291c958743","7a8ea8a1-ba2a-460d-a217-d4bc6299d443","ae16cb4f-75d1-4e85-bb22-6bb00ab1676f","b79ef7a9-d985-4143-bf1c-da4bec8f75db","footer-0","footer-2"],"settings":{"show_payment_methods":true,"show_currency_selector":true,"show_locale_selector":true}},"popup":{"type":"popup","settings":{"show_popup":true,"show_only_on_index":false,"show_only_for_visitors":false,"show_only_once":true,"title":"10€* Rabatt auf die 1. Bestellung","content":"<p>Newsletter abonnieren und 10€ auf die 1. Bestellung erhalten. <br\/>*Ab 100€ Einkaufswert.<\/p>","show_newsletter":true,"apparition_delay":10}}},"content_for_index":[]},"presets":{"Allure":{"heading_color":"#1c1b1b","text_color":"#1c1b1b","text_light_color":"#6a6a6a","link_color":"#6a6a6a","background":"#efefef","light_background":"#ffffff","product_on_sale_color":"#f94c43","button_background":"#1c1b1b","button_text_color":"#ffffff","header_background":"#ffffff","header_heading_color":"#1c1b1b","header_light_color":"#6a6a6a","footer_background":"#ffffff","footer_heading_color":"#1c1b1b","footer_text_color":"#6a6a6a","newsletter_popup_background":"#1c1b1b","newsletter_popup_text_color":"#ffffff","secondary_elements_background":"#1c1b1b","secondary_elements_text_color":"#ffffff","navigation_background":"#1c1b1b","navigation_text_color":"#ffffff","heading_font":"montserrat_n5","heading_size":"small","uppercase_heading":true,"text_font":"nunito_sans_n4","base_text_font_size":14,"show_page_transition":false,"search_mode":"product,article","product_show_price_on_hover":false,"product_show_secondary_image":false,"product_info_alignment":"center","product_image_size":"natural","product_list_horizontal_spacing":"medium","product_list_vertical_spacing":"small","cart_type":"drawer","cart_enable_notes":true,"cart_show_free_shipping_threshold":false,"cart_free_shipping_threshold":"50","checkout_logo_position":"center","checkout_logo_size":"small","checkout_body_background_color":"#ffffff","checkout_input_background_color_mode":"white","checkout_sidebar_background_color":"#efefef","checkout_accent_color":"#1c1b1b","checkout_button_color":"#1c1b1b","sections":{"sidebar-menu":{"type":"sidebar-menu","settings":{"primary_menu":"main-menu","show_social_media":true}},"announcement":{"type":"announcement","settings":{"background":"#000000","text_color":"#ffffff","content":"Announce something here"}},"header":{"type":"header","settings":{"use_sticky_header":true,"logo_max_width":140,"navigation_menu":"main-menu","navigation_style":"inline","enable_transparent_header":true,"transparent_text_color":"#ffffff"}},"footer":{"type":"footer","blocks":{"footer-0":{"type":"text","settings":{"title":"About the shop","content":"<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>","show_social_media":true}},"footer-1":{"type":"links","settings":{"menu":"footer"}},"footer-2":{"type":"newsletter","settings":{"title":"Newsletter","content":"<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"}}},"block_order":["footer-0","footer-1","footer-2"],"settings":{"show_payment_methods":true}}}},"Couture":{"heading_color":"#5c5c5c","text_color":"#5c5c5c","text_light_color":"#939393","link_color":"#323232","background":"#ffffff","light_background":"#ffffff","product_on_sale_color":"#f94c43","button_background":"#5c5c5c","button_text_color":"#ffffff","header_background":"#ffffff","header_heading_color":"#5c5c5c","header_light_color":"#939393","footer_background":"#ffffff","footer_heading_color":"#5c5c5c","footer_text_color":"#939393","newsletter_popup_background":"#ffffff","newsletter_popup_text_color":"#1c1b1b","secondary_elements_background":"#5c5c5c","secondary_elements_text_color":"#ffffff","navigation_background":"#ffffff","navigation_text_color":"#5c5c5c","heading_font":"futura_n4","heading_size":"large","uppercase_heading":false,"text_font":"century_gothic_n4","base_text_font_size":15,"show_page_transition":false,"search_mode":"product,article","product_show_price_on_hover":true,"product_show_secondary_image":false,"product_info_alignment":"left","product_image_size":"natural","product_list_horizontal_spacing":"small","product_list_vertical_spacing":"small","cart_type":"drawer","cart_enable_notes":true,"cart_show_free_shipping_threshold":false,"cart_free_shipping_threshold":"50","checkout_logo_position":"center","checkout_logo_size":"small","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_color":"#fafafa","checkout_accent_color":"#323232","checkout_button_color":"#5c5c5c","sections":{"sidebar-menu":{"type":"sidebar-menu","settings":{"primary_menu":"main-menu","show_social_media":true}},"announcement":{"type":"announcement","settings":{"background":"#f3f3f3","text_color":"#5c5c5c","content":"Announce something here"}},"header":{"type":"header","settings":{"use_sticky_header":true,"logo_max_width":140,"navigation_menu":"main-menu","navigation_style":"center","enable_transparent_header":true,"transparent_text_color":"#ffffff"}},"footer":{"type":"footer","blocks":{"footer-0":{"type":"text","settings":{"title":"About the shop","content":"<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>","show_social_media":true}},"footer-1":{"type":"links","settings":{"menu":"footer"}},"footer-2":{"type":"newsletter","settings":{"title":"Newsletter","content":"<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"}}},"block_order":["footer-0","footer-1","footer-2"],"settings":{"show_payment_methods":true}}}},"Vogue":{"heading_color":"#303030","text_color":"#303030","text_light_color":"#595959","link_color":"#000000","background":"#ffffff","light_background":"#ffffff","product_on_sale_color":"#f94c43","button_background":"#f5db8b","button_text_color":"#303030","header_background":"#ffffff","header_heading_color":"#303030","header_light_color":"#595959","footer_background":"#ffffff","footer_heading_color":"#303030","footer_text_color":"#595959","navigation_background":"#ffffff","navigation_text_color":"#303030","newsletter_popup_background":"#ffffff","newsletter_popup_text_color":"#303030","secondary_elements_background":"#fce7a8","secondary_elements_text_color":"#303030","heading_font":"din_neuzeit_grotesk_n3","heading_size":"small","uppercase_heading":true,"text_font":"futura_n4","base_text_font_size":14,"show_page_transition":false,"show_element_staggering":false,"search_mode":"product,article","product_show_price_on_hover":true,"product_show_secondary_image":false,"product_info_alignment":"center","product_image_size":"natural","product_list_horizontal_spacing":"medium","product_list_vertical_spacing":"small","cart_type":"drawer","cart_enable_notes":true,"cart_show_free_shipping_threshold":false,"cart_free_shipping_threshold":"50","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_color":"#fafafa","checkout_accent_color":"#a17c5e","checkout_button_color":"#454545","sections":{"sidebar-menu":{"type":"sidebar-menu","settings":{"primary_menu":"main-menu","show_social_media":true}},"announcement":{"type":"announcement","settings":{"background":"#f1e4d8","text_color":"#343434","content":"Announce something here"}},"header":{"type":"header","settings":{"use_sticky_header":true,"logo_max_width":140,"navigation_menu":"main-menu","navigation_style":"inline","enable_transparent_header":true,"transparent_text_color":"#ffffff"}},"footer":{"type":"footer","blocks":{"footer-0":{"type":"text","settings":{"title":"About the shop","content":"<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>","show_social_media":true}},"footer-1":{"type":"links","settings":{"menu":"footer"}},"footer-2":{"type":"newsletter","settings":{"title":"Newsletter","content":"<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"}}},"block_order":["footer-0","footer-1","footer-2"],"settings":{"show_payment_methods":true}}}}}}
+{
+  "current": {
+    "heading_color": "#3a3c3c",
+    "text_color": "#3a3c3c",
+    "text_light_color": "#5b5b5b",
+    "link_color": "#5b5b5b",
+    "background": "#ffffff",
+    "light_background": "#f8f8f8",
+    "product_on_sale_color": "#f94c43",
+    "button_background": "#fac636",
+    "button_text_color": "#222323",
+    "button_background_secondary": "#3a3c3c",
+    "header_background": "#ffffff",
+    "header_heading_color": "#222323",
+    "header_light_color": "#5b5b5b",
+    "footer_background": "#5b5b5b",
+    "footer_heading_color": "#ffffff",
+    "footer_text_color": "#ffffff",
+    "navigation_background": "#ffffff",
+    "navigation_text_color": "#222323",
+    "newsletter_popup_background": "#5b5b5b",
+    "newsletter_popup_text_color": "#ffffff",
+    "secondary_elements_background": "#f8f8f8",
+    "secondary_elements_text_color": "#ffffff",
+    "heading_font": "montserrat_n6",
+    "heading_size": "small",
+    "uppercase_heading": true,
+    "text_font": "maven_pro_n4",
+    "base_text_font_size": 14,
+    "color_swatch_config": "Altrosa (4-Jahreszeiten): altrosa-4-jahreszeiten.png\nAstronaut (Baumwolle): astronaut-sommer.png\nAstronaut (Sommer): astronaut-sommer.png\nAstronaut: astronaut.png\nBalance (Reißverschluss): zipper-72x72.jpg\nBallerina (Baumwolle): ballerina-sommer.png\nBallerina (Sommer): ballerina-sommer.png\nBallerina: ballerina.png\nBlau (4-Jahreszeiten): blau-4-jahreszeiten.png\nBlau (Baumwolle): blau-sommer.png\nBlau (Sommer): blau-sommer.png\nBlau Grau Kariert (Baumwolle): blau-grau-kariert-sommer.png\nBlau Grau Kariert (Sommer): blau-grau-kariert-sommer.png\nBlau mit Störchen (Baumwolle): blau-mit-storchen-sommer.png\nBlau mit Störchen (Sommer): blau-mit-storchen-sommer.png\nBlau Weiß (Baumwolle): blau-weiss-baumwolle.png\nBlau Weiß (Sommer): blau-weiss-sommer.png\nBlau:#d3d3d3\nBlaue Vögel (Baumwolle): blaue-vogel-baumwolle.png\nBlaue Vögel (Sommer): blaue-vogel-sommer.png\nBlumen (Baumwolle): blumen-sommer.png\nBlumen (Sommer): blumen-sommer.png\nBlumen: blumen.png\nBunt (Baumwolle): bunt-baumwolle.png\nBunt (Sommer): bunt-sommer.png\nBunte Fische (Baumwolle): bunte-fische-baumwolle.png\nBunte Fische (Sommer): bunte-fische-sommer.png\nDino (Baumwolle): dino-sommer.png\nDino (Sommer): dino-sommer.png\nDunkelblau: Dunkelblau.png\nDunkelgrau (4-Jahreszeiten): dunkelgrau-4-jahreszeiten.png\nDunkelgrau: dunkelgrau.png\nErdbeeren (Baumwolle): erdbeeren-sommer.png\nErdbeeren (Sommer): erdbeeren-sommer.png\nErdbeeren: erdbeeren.png\nFarbe_Gray: #f8f8f8\nFußball (Baumwolle): fussball-sommer.png\nFußball (Sommer): fussball-sommer.png\nFußball: fussball.png\nGänseblümchen (Baumwolle): ganseblumchen-sommer.png\nGänseblümchen (Sommer): ganseblumchen-sommer.png\nGänseblümchen: ganseblumchen.png\nGelb: gelb.png\nGoldener Schnatz (Baumwolle): goldener-schnatz-baumwolle.png\nGrau (4-Jahreszeiten): grau-4-jahreszeiten.png\nGrau (Baumwolle): grau-sommer.png\nGrau (Sommer): grau-sommer.png\nGrau Gelb (Baumwolle): grau-gelb-sommer.png\nGrau Gelb (Sommer): grau-gelb-sommer.png\nGrau mit goldenen Pflanzen (Baumwolle): grau-mit-goldenen-pflanzen-baumwolle.png\nGrau: grau.png\nGravity (Schlaufen): loop-72x72.jpg\nGravity Inlett (Ohne Bezug): gravity-inlett-ohne-bezug.png\nGryffindor (Baumwolle): gryffindor-baumwolle.png\nHäuser (Baumwolle): hauser-baumwolle.png\nHedwig (Baumwolle): hedwig-baumwolle.png\nHellgrau (Basic): hellgrau-basic.png\nHellgrau:#c7c7c7\nInsekten (Baumwolle): insekten-sommer.png\nInsekten (Sommer): insekten-sommer.png\nInsekten: insekten.png\nKatzen (Baumwolle): katzen-sommer.png\nKatzen (Sommer): katzen-sommer.png\nKatzen: katzen.png\nKuhflecken (Baumwolle): kuhflecken-sommer.png\nKuhflecken (Sommer): kuhflecken-sommer.png\nKuhflecken: kuhflecken.png\nMagische Dinge (Baumwolle): magische-dinge-baumwolle.png\nMint: Mint.png\nMintgrün (4-Jahreszeiten): mintgrun-4-jahreszeiten.png\nMintgrün: mintgrun.png\nOhne (Standard): regular-cover-72x72.jpg\nOlivgrün (4-Jahreszeiten): olivgrun-4-jahreszeiten.png\nOutlast (Dauerkomfort): outlast-dauerkomfort.png\nPferde (Baumwolle): pferde-sommer.png\nPferde (Sommer): pferde-sommer.png\nPferde: pferde.png\nPflanzen (Baumwolle): pflanzen-sommer.png\nPflanzen (Sommer): pflanzen-sommer.png\nPflanzen: Pflanzen.png\nPink (4-Jahreszeiten): pink-4-jahreszeiten.png\nPink (Baumwolle): pink-sommer.png\nPink (Sommer): pink-sommer.png\nPink: pink-4-jahreszeiten.png\nPony (Baumwolle): pony-sommer.png\nPony (Sommer): pony-sommer.png\nPony: pony.png\nPoseidon: poseidon.png\nRosa Gesprenkelt (Baumwolle): rosa-gesprenkelt-baumwolle.png\nRosa Kariert (Baumwolle): rosa-kariert-baumwolle.png\nRosa: rosa.png\nRot (4-jahreszeiten): rot-4-jahreszeiten.png\nRot Gelb (Baumwolle): rot-gelb-sommer.png\nRot Gelb (Sommer): rot-gelb-sommer.png\nRot Grün Gestreift (Baumwolle): rot-grun-gestreift-baumwolle.png\nSchwäne: schwane.png\nSchwarz Blau (Baumwolle): schwarz-blau-baumwolle.png\nSenfgelb (4-Jahreszeiten): senfgelb-4-jahreszeiten.png\nSprechender Hut (Baumwolle): sprechender-hut-baumwolle.png\nSterne (Baumwolle): sterne-sommer.png\nSterne (Sommer): sterne-sommer.png\nSterne: sterne-sommer.png\nTannengrün: tannengrun.png\nTannengrün (4-Jahreszeiten): tannengrun-4-jahreszeiten.png\nTaubenblau (4-Jahreszeiten): taubenblau-4-jahreszeiten.png\nWeiß (Basic):#FFFFFF\nWeiß mit Zweigen (Baumwolle): weiss-mit-zweigen-baumwolle.png\nWeiß Rot mit Zweigen (Baumwolle): weiss-rot-mit-zweigen-baumwolle.png\nWeltall (Baumwolle): weltall-sommer.png\nWeltall (Sommer): weltall-sommer.png\nWeltall: weltall.png\nZauberei Schule (Baumwolle): zauberei-schule-baumwolle.png\nZickzack: Zickzack.png\nZitronengelb (Baumwolle): zitronengelb-sommer.png\nZitronengelb (Sommer): zitronengelb-sommer.png",
+    "show_page_transition": false,
+    "search_mode": "product,article,page",
+    "product_show_price_on_hover": false,
+    "product_show_secondary_image": false,
+    "product_info_alignment": "center",
+    "product_image_size": "square",
+    "product_list_horizontal_spacing": "medium",
+    "product_list_vertical_spacing": "small",
+    "cart_type": "page",
+    "cart_enable_notes": false,
+    "cart_show_free_shipping_threshold": true,
+    "cart_free_shipping_threshold": "50",
+    "social_facebook": "https:\/\/www.facebook.com\/therapiedecken\/",
+    "social_pinterest": "https:\/\/www.pinterest.de\/therapiedecken\/",
+    "social_instagram": "https:\/\/www.instagram.com\/therapiedecken\/",
+    "social_youtube": "https:\/\/www.youtube.com\/channel\/UCzoQFn6SP0y-YTgCNnrLIfA?view_as=subscriber",
+    "social_fancy": "https:\/\/therapiedecken.de\/blogs\/news?nopreview",
+    "favicon": "shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png",
+    "countdown_date": "",
+    "enable_days_view": false,
+    "reseting_time": "",
+    "loop_time": 0,
+    "announcement_countdown_enable": false,
+    "text_color_countdown": "#bb1d33",
+    "product_countdown_enable": false,
+    "icon_countdown_product": "<span class=\"icon-price-tags\"><\/span>",
+    "countdown_product_text": "Garantierte Weihnachtszustellung endet in",
+    "countdown_container_bg_color": "#bb1d33",
+    "countdown_product_numbers_color": "#3a3c3c",
+    "checkout_countdown_enable": false,
+    "checkout_countdown_text": "⚠️ Auf Grund unserer Pre Black Friday Angebote ist Ihr Warenkorb für nur",
+    "left_product_inventory": true,
+    "promotional_hero_hp_cover": false,
+    "promotional_collection_cover": false,
+    "enable_product_badge": false,
+    "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-banner-2.jpg",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#f8f8f8",
+    "checkout_accent_color": "#1c1b1b",
+    "checkout_button_color": "#fac636",
+    "exclusive_product_badge": false,
+    "blackfriday_hero_hp_cover": true,
+    "blackfriday_collection_cover": true,
+    "resetingTime": "November 26, 2021 00:00 GMT+0100",
+    "sections": {
+      "sidebar-menu": {
+        "type": "sidebar-menu",
+        "settings": {
+          "primary_menu": "side-bar-menu-mobile-2021",
+          "secondary_menu": "right-footer-menu",
+          "show_social_media": true
+        }
+      },
+      "announcement": {
+        "type": "announcement",
+        "settings": {
+          "enable_bar": false,
+          "home_page_only": false,
+          "background": "#bb1d33",
+          "text_color": "#ffffff",
+          "content": "Announcement Bar Text",
+          "link": ""
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "cd9728ec-b79c-47cc-8528-15695fd78394": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "SHOP",
+              "push_1_image": "shopify:\/\/shop_images\/Outlast_navigation-tiny.jpg",
+              "push_1_heading": "NEU!",
+              "push_1_subheading": "Special Edition: Balance Outlast® Gewichtsdecke",
+              "push_1_url": "shopify:\/\/products\/premium-balance-outlast-gewichtsdecke-fur-erwachsene",
+              "push_2_heading": "Example heading",
+              "push_2_subheading": "Example sub-heading",
+              "push_2_url": ""
+            }
+          },
+          "489abd50-4188-4da5-b5f9-de227dec5766": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "Wissenswertes",
+              "push_1_heading": "Example",
+              "push_1_subheading": "Example sub-heading",
+              "push_1_url": "",
+              "push_2_image": "shopify:\/\/shop_images\/diana_zur_lowen.jpg",
+              "push_2_heading": "Expertenmeinung von Diana zur Löwen",
+              "push_2_subheading": "Ihre Erfahrung mit unserer Therapiedecke",
+              "push_2_url": "shopify:\/\/pages\/diana-zur-lowens-erfahrung-mit-therapiedecken"
+            }
+          }
+        },
+        "block_order": [
+          "cd9728ec-b79c-47cc-8528-15695fd78394",
+          "489abd50-4188-4da5-b5f9-de227dec5766"
+        ],
+        "settings": {
+          "use_sticky_header": true,
+          "logo": "shopify:\/\/shop_images\/FinalLogoMainBlackWithoutSubText.png",
+          "logo_max_width": 200,
+          "mobile_logo_max_width": 180,
+          "show_currency_selector": false,
+          "show_locale_selector": false,
+          "navigation_menu": "main-top-bar-menu-1",
+          "navigation_style": "inline",
+          "show_icons": true,
+          "enable_transparent_header": true,
+          "enable_transparent_header_collection": true,
+          "show_transparent_header_border": false,
+          "transparent_text_color": "#ffffff",
+          "transparent_logo": "shopify:\/\/shop_images\/FinalLogoMainWhiteWithoutSubText.png"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "7ef9419b-7b6a-4ee6-a6e1-12eff1c13178": {
+            "type": "links",
+            "settings": {
+              "menu": "footer"
+            }
+          },
+          "3cf60a83-1afb-4c04-98ee-4e291c958743": {
+            "type": "links",
+            "settings": {
+              "menu": "right-footer-menu"
+            }
+          },
+          "7a8ea8a1-ba2a-460d-a217-d4bc6299d443": {
+            "type": "text",
+            "settings": {
+              "title": "Zertifizierte Gewichtsdecken",
+              "content": "",
+              "html_content": "<style>\n.icons-certificate-wp{\n  display: flex;\n}\n.icons-certificate-wp > img{\n  padding-right: 20px;\n  width: auto;\n  height:50px;\n}\n<\/style>\n<div class=\"icons-certificate-wp\">\n<img class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TrustedShop_Therapiedecken_4eee273a-5e44-41a1-bc30-e3bb8ea79c85.png?v=1632215967\">\n\n<img class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/EC_Medizinprodukt_cd487c46-52a9-4833-901e-cbc40f0c9aa9.png?v=1632215966\">\n<\/div>\n<br>\n<br>\n<p class=\"Footer__Title Heading u-h6\">Versandpartner<\/p>\n<img width=\"200px\" class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/delivery_logos-adjusted-200x29.png?v=1632238073\">\n<br>\n<br>\n<p class=\"Footer__Title Heading u-h6\">Social Media<\/p>",
+              "show_social_media": true
+            }
+          },
+          "ae16cb4f-75d1-4e85-bb22-6bb00ab1676f": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "title": "Social Media",
+              "content": "",
+              "html_content": "",
+              "show_social_media": true
+            }
+          },
+          "b79ef7a9-d985-4143-bf1c-da4bec8f75db": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "title": "Versandpartner",
+              "content": "",
+              "html_content": "<img width=\"200px\" class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/delivery_logos.png?v=1630314209\">",
+              "show_social_media": false
+            }
+          },
+          "footer-0": {
+            "type": "text",
+            "settings": {
+              "title": "Unser Versprechen",
+              "content": "<p>Hochwertige und handgefertigte Gewichtsdecken für einen besseren Schlaf, mehr Wohlbefinden und weniger Stress.<\/p>",
+              "html_content": "",
+              "show_social_media": false
+            }
+          },
+          "footer-2": {
+            "type": "newsletter",
+            "disabled": true,
+            "settings": {
+              "title": "10€ Rabatt auf die 1. Bestellung",
+              "content": "<p>Newsletter abonnieren und 10€ auf die 1. Bestellung erhalten. Ab 100€ Einkaufswert.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "7ef9419b-7b6a-4ee6-a6e1-12eff1c13178",
+          "3cf60a83-1afb-4c04-98ee-4e291c958743",
+          "7a8ea8a1-ba2a-460d-a217-d4bc6299d443",
+          "ae16cb4f-75d1-4e85-bb22-6bb00ab1676f",
+          "b79ef7a9-d985-4143-bf1c-da4bec8f75db",
+          "footer-0",
+          "footer-2"
+        ],
+        "settings": {
+          "show_payment_methods": true,
+          "show_currency_selector": true,
+          "show_locale_selector": true
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": true,
+          "show_only_on_index": false,
+          "show_only_for_visitors": false,
+          "show_only_once": true,
+          "title": "10€* Rabatt auf die 1. Bestellung",
+          "content": "<p>Newsletter abonnieren und 10€ auf die 1. Bestellung erhalten. <br\/>*Ab 100€ Einkaufswert.<\/p>",
+          "show_newsletter": true,
+          "apparition_delay": 10
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
+  "presets": {
+    "Allure": {
+      "heading_color": "#1c1b1b",
+      "text_color": "#1c1b1b",
+      "text_light_color": "#6a6a6a",
+      "link_color": "#6a6a6a",
+      "background": "#efefef",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#1c1b1b",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#1c1b1b",
+      "header_light_color": "#6a6a6a",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#1c1b1b",
+      "footer_text_color": "#6a6a6a",
+      "newsletter_popup_background": "#1c1b1b",
+      "newsletter_popup_text_color": "#ffffff",
+      "secondary_elements_background": "#1c1b1b",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#1c1b1b",
+      "navigation_text_color": "#ffffff",
+      "heading_font": "montserrat_n5",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "nunito_sans_n4",
+      "base_text_font_size": 14,
+      "show_page_transition": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": false,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#efefef",
+      "checkout_accent_color": "#1c1b1b",
+      "checkout_button_color": "#1c1b1b",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#000000",
+            "text_color": "#ffffff",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        }
+      }
+    },
+    "Couture": {
+      "heading_color": "#5c5c5c",
+      "text_color": "#5c5c5c",
+      "text_light_color": "#939393",
+      "link_color": "#323232",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#5c5c5c",
+      "button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_heading_color": "#5c5c5c",
+      "header_light_color": "#939393",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#5c5c5c",
+      "footer_text_color": "#939393",
+      "newsletter_popup_background": "#ffffff",
+      "newsletter_popup_text_color": "#1c1b1b",
+      "secondary_elements_background": "#5c5c5c",
+      "secondary_elements_text_color": "#ffffff",
+      "navigation_background": "#ffffff",
+      "navigation_text_color": "#5c5c5c",
+      "heading_font": "futura_n4",
+      "heading_size": "large",
+      "uppercase_heading": false,
+      "text_font": "century_gothic_n4",
+      "base_text_font_size": 15,
+      "show_page_transition": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "left",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "small",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "small",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#323232",
+      "checkout_button_color": "#5c5c5c",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f3f3f3",
+            "text_color": "#5c5c5c",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "center",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        }
+      }
+    },
+    "Vogue": {
+      "heading_color": "#303030",
+      "text_color": "#303030",
+      "text_light_color": "#595959",
+      "link_color": "#000000",
+      "background": "#ffffff",
+      "light_background": "#ffffff",
+      "product_on_sale_color": "#f94c43",
+      "button_background": "#f5db8b",
+      "button_text_color": "#303030",
+      "header_background": "#ffffff",
+      "header_heading_color": "#303030",
+      "header_light_color": "#595959",
+      "footer_background": "#ffffff",
+      "footer_heading_color": "#303030",
+      "footer_text_color": "#595959",
+      "navigation_background": "#ffffff",
+      "navigation_text_color": "#303030",
+      "newsletter_popup_background": "#ffffff",
+      "newsletter_popup_text_color": "#303030",
+      "secondary_elements_background": "#fce7a8",
+      "secondary_elements_text_color": "#303030",
+      "heading_font": "din_neuzeit_grotesk_n3",
+      "heading_size": "small",
+      "uppercase_heading": true,
+      "text_font": "futura_n4",
+      "base_text_font_size": 14,
+      "show_page_transition": false,
+      "show_element_staggering": false,
+      "search_mode": "product,article",
+      "product_show_price_on_hover": true,
+      "product_show_secondary_image": false,
+      "product_info_alignment": "center",
+      "product_image_size": "natural",
+      "product_list_horizontal_spacing": "medium",
+      "product_list_vertical_spacing": "small",
+      "cart_type": "drawer",
+      "cart_enable_notes": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_accent_color": "#a17c5e",
+      "checkout_button_color": "#454545",
+      "sections": {
+        "sidebar-menu": {
+          "type": "sidebar-menu",
+          "settings": {
+            "primary_menu": "main-menu",
+            "show_social_media": true
+          }
+        },
+        "announcement": {
+          "type": "announcement",
+          "settings": {
+            "background": "#f1e4d8",
+            "text_color": "#343434",
+            "content": "Announce something here"
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "use_sticky_header": true,
+            "logo_max_width": 140,
+            "navigation_menu": "main-menu",
+            "navigation_style": "inline",
+            "enable_transparent_header": true,
+            "transparent_text_color": "#ffffff"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "text",
+              "settings": {
+                "title": "About the shop",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "show_social_media": true
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter",
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1",
+            "footer-2"
+          ],
+          "settings": {
+            "show_payment_methods": true
+          }
+        }
+      }
+    }
+  }
+}
