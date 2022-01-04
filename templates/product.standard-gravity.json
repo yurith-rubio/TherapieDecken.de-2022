@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product-abtest",
+      "type": "main-product",
       "blocks": {
         "product_meta": {
           "type": "product_meta",
