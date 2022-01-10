@@ -45,6 +45,27 @@
 </div>
 
 <div>
+  <p class="Heading u-h5 FilterTag__name">Bestseller</p>
+  {% for tag in collection.all_tags %}
+    {% assign tag_value = tag | split: "-" | slice: 1 %}
+    {% assign tag_key = tag | split: "-" | slice: 0 %}
+	
+	{% if tag_key[0] == "bestseller" %}
+		{% assign selected = "" %}
+    	{% if current_tags contains tag %}
+        	{% assign selected = "filter_selected"  %}	
+    	{% endif %}
+		<div>
+          <div class="filter_theme filter_styling" data-theme="{{ tag }}">
+             <div class="circle-radio {{ selected }}" data-theme="{{ tag }}"></div>
+             <div class="text-radio-tag" data-theme="{{ tag }}">{{ tag_value[0] }}</div>
+		  </div>
+		</div>
+	{% endif %}
+  {% endfor %}
+</div>
+
+<div>
   <p class="Heading u-h5 FilterTag__name">Thema</p>
   {% for tag in collection.all_tags %}
     {% assign tag_value = tag | split: "-" | slice: 1 %}
