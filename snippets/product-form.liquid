@@ -386,26 +386,26 @@
   {% render 'left-inventory', selected_variant:selected_variant %}
 
 {%- if size_chart_page != empty -%}
-{%- comment -%}If we have a size chart we capture the modal content (it must be displayed outside the form for proper
-positioning){%- endcomment -%}
+  {%- comment -%}If we have a size chart we capture the modal content (it must be displayed outside the form for proper
+  positioning){%- endcomment -%}
 
-{%- capture product_modals -%}
-<div id="modal-{{ size_chart_page.handle }}" class="Modal Modal--dark Modal--fullScreen Modal--pageContent"
-  aria-hidden="true" role="dialog" data-scrollable>
-  <header class="Modal__Header">
-    <h2 class="Modal__Title Heading u-h1">{{ size_chart_page.title }}</h2>
-  </header>
+  {%- capture product_modals -%}
+  <div id="modal-{{ size_chart_page.handle }}" class="Modal Modal--dark Modal--fullScreen Modal--pageContent"
+    aria-hidden="true" role="dialog" data-scrollable>
+    <header class="Modal__Header">
+      <h2 class="Modal__Title Heading u-h1">{{ size_chart_page.title }}</h2>
+    </header>
 
-  <div class="Modal__Content Rte">
-    <div class="Container Container--extraNarrow">
-      {{- size_chart_page.content -}}
+    <div class="Modal__Content Rte">
+      <div class="Container Container--extraNarrow">
+        {{- size_chart_page.content -}}
+      </div>
     </div>
-  </div>
 
-  <button class="Modal__Close RoundButton RoundButton--large" data-animate-bottom data-action="close-modal">{% render
-    'icon' with 'close' %}</button>
-</div>
-{%- endcapture -%}
+    <button class="Modal__Close RoundButton RoundButton--large" data-animate-bottom data-action="close-modal">{% render
+      'icon' with 'close' %}</button>
+  </div>
+  {%- endcapture -%}
 {%- endif -%}
 
 {%- comment -%}
