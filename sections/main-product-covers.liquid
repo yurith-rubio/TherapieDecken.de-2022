@@ -332,9 +332,6 @@
 	                  {%- render 'product-form', block: block, product: product -%}
           			{% endif %}
           
-                {%- when 'suggested_upsell_selector' -%}
-					{%- render 'suggested-upsell-product-form', block: block, product: product -%}
-          
                 {%- when 'quantity_selector' -%}
                   <div class="ProductForm__QuantitySelector" {{ block.shopify_attributes }}>
                     {%- if block.settings.show_label -%}
@@ -428,6 +425,9 @@
           
             {% render 'guarantee-exceptions' %}
           {%- endform -%}
+          
+
+		  {%- render 'suggested-upsell-product-form', block: block, product: product -%}
 
           {%- if section.settings.stack_images and product_aside != blank and media_count > 0 -%}
             <div class="Product__QuickNav hidden-pocket">
