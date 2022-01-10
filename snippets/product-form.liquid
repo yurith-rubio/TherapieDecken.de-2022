@@ -279,7 +279,6 @@
           <div class="VariantSelector__Choice {% if value == option.selected_value %}is-selected{% endif %}">
             <div class="VariantSelector__ChoiceColor">
               {%- assign downcase_value = value | downcase -%}
-
               {%- assign color_swatch_name = value | handle | append: '.png' -%}
               {%- assign color_swatch_image = images[color_swatch_name] -%}
 
