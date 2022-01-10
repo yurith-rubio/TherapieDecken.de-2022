@@ -6,6 +6,17 @@
     Info of Product here
   </div>
   <div>
-    Button here
+    <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary Button--full" data-action="add-to-cart">
+      {%- if product.selected_or_first_available_variant.available -%}
+      <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
+
+      {%- if block.settings.show_price_in_button -%}
+      <span class="Button__SeparatorDot"></span>
+      <span>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+      {%- endif -%}
+      {%- else -%}
+      {{- 'product.form.sold_out' | t -}}
+      {%- endif -%}
+    </button>
   </div>
 </div>
