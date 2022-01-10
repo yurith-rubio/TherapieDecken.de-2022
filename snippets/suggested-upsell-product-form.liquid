@@ -1,15 +1,7 @@
-<div>
-  <div>
-    Product here
-  </div>
-  <div>
-    Info of Product here
-  </div>
-  <div>
-    <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary Button--full" data-action="add-to-cart">
-      <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
-
-      
-    </button>
-  </div>
-</div>
+<form method="post" action="/cart/add">
+  <select name="id">
+    <option value="39684136599691">suggested product</option>
+  </select>
+  <button type="submit">
+  </button>
+</form>
