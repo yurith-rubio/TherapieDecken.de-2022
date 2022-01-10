@@ -6,9 +6,8 @@
 </form>
 
 {% for product in product.options %}
-	{% if product.title contains 'Weiß Magische Dinge' %}
+	{% if product contains 'Weiß Magische Dinge' %}
 		{{ product.title }}
     {% endif %}
 {% endfor %}
 
-{{ product.title }}
