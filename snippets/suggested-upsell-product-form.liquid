@@ -5,10 +5,11 @@
   <button type="submit">add to cart</button>
 </form>
 
-{% for product in all_products %}
+{% for product in collection %}
 	{% if product.title contains 'Weiß Magische Dinge' %}
 		{{ product.title }}
     {% endif %}
 {% endfor %}
 
 {{ product.title }}
+{{ collection.title }}
