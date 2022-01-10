@@ -332,6 +332,9 @@
 	                  {%- render 'product-form', block: block, product: product -%}
           			{% endif %}
           
+                {%- when 'variant_selector' -%}
+					{%- render 'product-form-extra-suggested', block: block, product: product -%}
+          
                 {%- when 'quantity_selector' -%}
                   <div class="ProductForm__QuantitySelector" {{ block.shopify_attributes }}>
                     {%- if block.settings.show_label -%}
