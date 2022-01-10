@@ -18,5 +18,7 @@
 <div>
   Testing:
   <b>{{ collection | json }}</b>
-  
+{% for product in collections['therapiekissen'] %}
+  {{ product.title | json }}
+{% endfor %}
 </div>
