@@ -5,9 +5,9 @@
   <button type="submit">add to cart</button>
 </form>
 
-{% for option in product.options %}
-	{% if option.title contains 'Weiß Magische Dinge' %}
-		{{ option.title }}
+{% for product in products %}
+	{% if product.title contains 'Weiß Magische Dinge' %}
+		{{ product.title }}
     {% endif %}
 {% endfor %}
 
