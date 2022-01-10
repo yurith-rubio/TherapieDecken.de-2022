@@ -200,6 +200,11 @@
     doFilter(selectedColor);
   });
   
+  $(".filter_bestseller").click(function (e) {
+  	const selectedBestseller = $(e.target).attr("data-bestseller");
+    doFilter(selectedBestseller);
+  });
+  
   $(".filter_theme").click(function (e) {
   	const selectedTheme = $(e.target).attr("data-theme");
     doFilter(selectedTheme);
