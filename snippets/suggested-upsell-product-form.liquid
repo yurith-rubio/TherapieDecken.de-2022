@@ -30,7 +30,7 @@
 {% endfor %}
 
 {% for collection in product.collections %}
-{% assign collectionCovers = collection %}
+{% assign mainCollectionCovers = collection %}
     <br>
   	<br>
 {% endfor %}
@@ -39,4 +39,5 @@
 
 <script type="text/javascript">
   window.mainProductCovers = {{ product | json }};
+  window.mainCollectionCovers = {{ collection | json }};
 </script>
