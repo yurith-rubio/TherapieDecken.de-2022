@@ -1,6 +1,9 @@
 {{ 'suggested_upsell_product.css' | asset_url | stylesheet_tag }}
 
-{% assign cover_title_base = product.title | remove: "Therapiedecken Baumwollbezug"  %}
+{% if product.title contains 'Therapiedecken Baumwollbezug' %}
+	{% assign cover_title_base = product.title | remove: 'Therapiedecken Baumwollbezug'  %}
+{% endif %}
+
 {% assign suggested_product = all_products['gesundheitskissen-sternenzauber'] %}
 
 <br>
