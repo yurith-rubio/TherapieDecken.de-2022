@@ -5,10 +5,6 @@
   <button type="submit">add to cart</button>
 </form>
 
-{% for product in all_products %}
-		{{ product.title | json }}
-{% endfor %}
-
 
 {% assign suggested_product = all_products['gesundheitskissen-sternenzauber'] %}
 
