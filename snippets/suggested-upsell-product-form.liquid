@@ -21,6 +21,9 @@
   	<br>
 {% for collection in product.collections %}
 	{% assign collection = {{ collection.title }} %}
+  	{% for product in collection.products %}
+  		{{ product | json }}
+  	{% endfor %}
     <br>
   	<br>
 {% endfor %}
