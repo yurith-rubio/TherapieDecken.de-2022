@@ -7,9 +7,12 @@
 <br>
 
 
+
 {% for collection in collections %}
   {% if collection.title == 'Therapiedecken Zauberei Kollektion' %}
-	{% assign zaubereiCollection = collection%}
+	{% assign zaubereiCollectionProducts = collection.products %}
+	{% assign basedTitle = product.handle | split: "-" | slice: 3 %}
+	{{ basedTitle }}
   {% endif %}
 
   {% if collection.title == 'Therapiekissen' %}
