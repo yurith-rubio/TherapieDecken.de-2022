@@ -28,4 +28,15 @@
     <br>
   	<br>
 {% endfor %}
+
+{% for collection in product.collections %}
+	{% for product in collection.products %}
+		{% if product.title contains 'Weiß Magische Dinge' %}
+  			{{ product.title }}
+        {% endif %}
+  	{% endfor %}
+    <br>
+  	<br>
+{% endfor %}
+
 </div>
