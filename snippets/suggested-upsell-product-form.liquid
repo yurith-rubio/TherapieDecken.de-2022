@@ -7,7 +7,7 @@
 {{ cover_title_base }}
 
 {% for collection in collections %}
-  {% if collection.title == 'Therapiekissen' %}
+  {% if collection.handle == 'therapiekissen' %}
     {% for product in collection.products %}
 
 		{{ product.title | json }}
