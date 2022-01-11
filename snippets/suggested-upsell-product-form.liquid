@@ -40,6 +40,7 @@
 
 {% for collection in collections %}
   {% if collection.title == 'Therapiekissen' %}
+  	{% assign mainCollectionKissenProducts = collection.products %}
 	{{ collection.products | json }}
   {% endif %}
 {% endfor %}
