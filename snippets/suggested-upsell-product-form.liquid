@@ -24,7 +24,7 @@
 			{%- assign image_url = product.featured_image | image_url: width: 300 -%}
 			<div>
               <div><img class="Image--lazyLoad" data-src="{{ image_url }}"></div>
-              <div></div>
+              <div>{{ product.title }}</div>
               <div></div>
 			</div>
 		{% endif %}
