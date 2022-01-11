@@ -1,6 +1,6 @@
 {{ 'suggested_upsell_product.css' | asset_url | stylesheet_tag }}
 
-{% assign cover_title_base = product.title | split: " " | slice: 2, 5  %}
+{% assign cover_title_base = product.title | remove: "Therapiedecken Baumwollbezug"  %}
 {% assign suggested_product = all_products['gesundheitskissen-sternenzauber'] %}
 
 <br>
@@ -11,7 +11,7 @@
 {% for collection in collections %}
   {% if collection.title == 'Therapiekissen' %}
     {% for product in collection.products %}
-      {% if product.title contains 'Weiß Magische Dinge' %}
+      {% if product.title contains cover_title_base %}
         {%- assign image_url = product.images[1] | image_url: width: 300 -%}
         <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
           <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
