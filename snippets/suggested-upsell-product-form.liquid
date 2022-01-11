@@ -9,15 +9,6 @@
 {{ cover_title_base }}
 
 {% for collection in collections %}
-  {% if collection.title == 'Ersatzbezüge für Therapiedecken' %}
-	{% for coverProduct in collection.products %}
-		{% assign cover_product = product.title %}
-		{% if coverProduct.title == cover_product %}
-      		{{ coverProduct.title }}
-		{% endif %}
-	{% endfor %}
-  {% endif %}
-
   {% if collection.title == 'Therapiekissen' %}
     {% for product in collection.products %}
       {% if product.title contains 'Weiß Magische Dinge' %}
