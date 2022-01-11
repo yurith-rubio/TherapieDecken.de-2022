@@ -21,7 +21,7 @@
   {% if collection.title == 'Therapiekissen' %}
   	{% for product in collection.products %}
 		{% if product.title contains 'Weiß Magische Dinge' %}
-			{%- assign image_url = product.featured_image | img_url: '1x1' -%}
+			{%- assign image_url = product.featured_image -%}
 			<img src="{{ image_url }}">
 		{% endif %}
 	{% endfor %}
