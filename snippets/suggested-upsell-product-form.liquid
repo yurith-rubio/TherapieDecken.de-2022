@@ -8,10 +8,7 @@
 
 {% for collection in collections %}
   {% if collection.title == 'Therapiekissen' %}
-	{% assign collection_product_list = collection.products | json %}
     {% for product in collection.products %}
-
-		{{ collection.products_count }}
       {% if product.title contains cover_title_base %}
         {%- assign image_url = product.images[1] | image_url: width: 300 -%}
         <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
