@@ -1,3 +1,6 @@
+.SuggestedUpProd_ContentWr{
+  display: flex;
+}
 .SuggestedUpProd_imageWr{
   max-width: 135px;
 }
