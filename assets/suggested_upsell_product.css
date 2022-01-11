@@ -1,5 +1,6 @@
 .SuggestedUpProd_ContentWr{
   display: flex;
+  border: #ccc 1px solid;
 }
 .SuggestedUpProd_imageWr{
   max-width: 135px;
