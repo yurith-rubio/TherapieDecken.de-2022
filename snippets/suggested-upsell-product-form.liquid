@@ -8,8 +8,8 @@
 
 {% for collection in collections %}
   {% if collection.title == 'Therapiekissen' %}
-    {% for kissen_product in collection.products %}
-      {% if kissen_product.title contains cover_title_base %}
+    {% for product in collection.products %}
+      {% if product.title contains cover_title_base %}
         {%- assign image_url = product.images[1] | image_url: width: 300 -%}
         <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
           <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
