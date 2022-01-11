@@ -20,10 +20,7 @@
     <br>
   	<br>
 
-{% for collection in product.collections %}  
-  {% assign mainCollectionCovers = collection.products %}
-      <br>
-      <br>
+{% for collection in product.collections %}
     <script type="text/javascript">
       window.mainCollectionCoversProducts = {{ collection.products | json }};
     </script>
