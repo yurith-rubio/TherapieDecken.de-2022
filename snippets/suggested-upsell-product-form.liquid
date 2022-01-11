@@ -40,7 +40,7 @@
 
 {% for collection in collections %}
   {% if collection.title == 'Therapiekissen' %}
-	{{ collection.title }}
+	{{ collection.products.title | json }}
   {% endif %}
 {% endfor %}
   
