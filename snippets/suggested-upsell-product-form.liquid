@@ -9,7 +9,7 @@
 
 
 {% for collection in collections %}
-  {% if collection.title == 'Therapiedecken Zauberei Kollektion' %}
+  {% if collection.title == 'Ersatzbezüge für Therapiedecken' %}
 	{% assign zaubereiCollectionProducts = collection.products %}
 	{% assign basedTitle = product.title | split: " " | slice: 2, 10 %}
 	{{ basedTitle }}
