@@ -18,9 +18,10 @@
 		{% if product.title contains 'Weiß Magische Dinge' %}
 			{%- assign image_url = product.featured_image | image_url: width: 300 -%}
 			<form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
-              <input type="hidden" name="id" value="39684136599691"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}">
+              <input type="hidden" name="id" value="39684136599691">
+              <a><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
               <div class="SuggestedUpProd_infoWr">
-                <h2>{{ product.title }}</h2>
+                <a><h2>{{ product.title }}</h2></a>
                 <p></p>
               	<button class="SuggestedUpProd_buttonWr" type="submit">Add to cart</button>
               </div>
