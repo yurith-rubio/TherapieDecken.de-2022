@@ -4,9 +4,7 @@
 	{% assign cover_title_base = product.title | remove: 'Therapiedecken Baumwollbezug' | strip %}
 {% endif %}
 
-{{ cover_title_base }}
-<br>
-<br>
+{{cover_title_base}}
 
 {% for collection in collections %}
   {% if collection.title == 'Therapiekissen' %}
