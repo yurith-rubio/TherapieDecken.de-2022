@@ -11,7 +11,7 @@
 {% for collection in collections %}
   {% if collection.title == 'Therapiedecken Zauberei Kollektion' %}
 	{% assign zaubereiCollectionProducts = collection.products %}
-	{% assign basedTitle = product.handle | split: "-" | slice: 3 %}
+	{% assign basedTitle = product.handle | split: "-" | slice: 2 %}
 	{{ basedTitle }}
   {% endif %}
 
