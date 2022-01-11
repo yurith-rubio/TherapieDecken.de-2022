@@ -21,7 +21,9 @@
   	<br>
 {% for collection in product.collections %}
 	{% for product in collection.products %}
-  		{{ product | json }}
+  		{% if product contains 'Weiß Magische Dinge' %}
+  			{{ product.title }}
+  		{% endif %}
   	{% endfor %}
     <br>
   	<br>
