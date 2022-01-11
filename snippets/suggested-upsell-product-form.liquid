@@ -17,6 +17,8 @@
     </script>
 {% endfor %}
 
+<img src="{{ product.featured_media }}">
+
 {% for collection in collections %}
   {% if collection.title == 'Therapiekissen' %}
   	{% for product in collection.products %}
