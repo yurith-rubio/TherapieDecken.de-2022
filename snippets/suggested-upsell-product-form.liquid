@@ -33,11 +33,15 @@
 {% assign mainCollectionCovers = collection %}
     <br>
   	<br>
-{% endfor %}
 
-</div>
+
+
 
 <script type="text/javascript">
   window.mainProductCovers = {{ product | json }};
   window.mainCollectionCovers = {{ collection | json }};
 </script>
+
+{% endfor %}
+  
+  </div>
