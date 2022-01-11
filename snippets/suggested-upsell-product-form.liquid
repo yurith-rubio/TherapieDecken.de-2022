@@ -1,4 +1,5 @@
-{{ 'suggested_upsell_product.css' }}
+{{ 'suggested_upsell_product.css' | asset_url | stylesheet_tag }}
+
 <form method="post" action="/cart/add">
   <select name="id">
     <option value="39684136599691">suggested product</option>
