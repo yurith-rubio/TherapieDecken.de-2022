@@ -12,7 +12,7 @@
   {% if collection.title == 'Ersatzbezüge für Therapiedecken' %}
 	{% for coverProduct in collection.products %}
       {% assign basedTitle = collection.product.title | split: " " | slice: 2, 10 %}
-      {{ basedTitle | json }}
+      {{ coverProduct.title | json }}
 	{% endfor %}
   {% endif %}
 
