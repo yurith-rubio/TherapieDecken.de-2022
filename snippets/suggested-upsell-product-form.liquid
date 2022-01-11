@@ -21,7 +21,7 @@
   {% if collection.title == 'Therapiekissen' %}
   	{% for product in collection.products %}
 		{% if product.title contains 'Weiß Magische Dinge' %}
-			<img class="Image--lazyLoad" data-src="{{ product.featured_image}}">
+			<img class="Image--lazyLoad" data-src="{{ product.featured_media }}">
 		{% endif %}
 	{% endfor %}
   {% endif %}
