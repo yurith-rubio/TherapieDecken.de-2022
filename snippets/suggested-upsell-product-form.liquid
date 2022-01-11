@@ -26,8 +26,11 @@
 			{%- assign image_url = product.featured_image | image_url: width: 300 -%}
 			<div>
               <div class="SuggestedUpProd_imageWr"><img class="Image--lazyLoad" data-src="{{ image_url }}"></div>
-              <div class="SuggestedUpProd_infoWr"><h2>{{ product.title }}</h2></div>
-              <div class="SuggestedUpProd_buttonWr"></div>
+              <div class="SuggestedUpProd_infoWr">
+                <h2>{{ product.title }}</h2>
+                <p></p>
+              	<div class="SuggestedUpProd_buttonWr"></div>
+              </div>
 			</div>
 		{% endif %}
 	{% endfor %}
