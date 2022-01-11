@@ -8,6 +8,7 @@
 
 {% for collection in collections %}
   {% if collection.title == 'Therapiekissen' %}
+	{{ collection.product | json }}
     {% for product in collection.products %}
 
 		{{ collection.products_count }}
