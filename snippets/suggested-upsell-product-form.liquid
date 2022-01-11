@@ -37,6 +37,15 @@
       window.mainCollectionCoversProducts = {{ collection.products | json }};
     </script>
 {% endfor %}
+
+{% for collection in product.collections %}  
+  {% assign mainCollectionCovers = collection.products %}
+      <br>
+      <br>
+    <script type="text/javascript">
+      window.mainCollectionCoversProducts = {{ collection.products | json }};
+    </script>
+{% endfor %}
   
   </div>
 
