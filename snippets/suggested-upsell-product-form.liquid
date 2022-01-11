@@ -21,7 +21,7 @@
   	<br>
 {% for collection in product.collections %}
 	{% for product in collection.products %}
-		{{ product | json }}
+		{{ product.title | json }}
   	{% endfor %}
     <br>
   	<br>
