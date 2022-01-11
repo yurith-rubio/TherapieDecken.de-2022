@@ -8,6 +8,7 @@
 
 
 {% for collection in collections %}
+  {{ product.collections }}
   {% if collection.title == 'Therapiekissen' %}
     {% for product in collection.products %}
       {% if product.title contains 'Weiß Magische Dinge' %}
