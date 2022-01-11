@@ -1,7 +1,7 @@
 {{ 'suggested_upsell_product.css' | asset_url | stylesheet_tag }}
 
 {% if product.title contains 'Therapiedecken Baumwollbezug' %}
-	{% assign cover_title_base = product.title | remove: 'Therapiedecken Baumwollbezug' | strip %}
+	{% assign cover_title_base = product.title | strip %}
 {% endif %}
 
 {{ cover_title_base  }}
