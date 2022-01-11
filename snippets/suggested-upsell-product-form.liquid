@@ -20,10 +20,7 @@
     <br>
   	<br>
 {% for collection in product.collections %}
-	{% assign collection = {{ collection.title }} %}
-  	{% for product in collection.products %}
-  		{{ product | json }}
-  	{% endfor %}
+	{{ collection.title }}
     <br>
   	<br>
 {% endfor %}
