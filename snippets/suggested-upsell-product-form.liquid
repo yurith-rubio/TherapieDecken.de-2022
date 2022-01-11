@@ -9,7 +9,7 @@
 
 {% for collection in collections %}
   {% if collection.title == 'Therapiedecken Zauberei Kollektion' %}
-	Hello
+	{% assign zaubereiCollection = collection%}
   {% endif %}
 
   {% if collection.title == 'Therapiekissen' %}
