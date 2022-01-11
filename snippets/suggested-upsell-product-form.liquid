@@ -19,9 +19,11 @@
 
 {% for collection in collections %}
   {% if collection.title == 'Therapiekissen' %}
-  	{% assign mainCollectionKissenProducts = collection.products %}
-    <script type="text/javascript">
-      window.mainCollectionKissenProducts = {{ collection.products | json }};
-    </script>
+  	{% for product in collection.products %}
+		{% if product.title contains 'Weiß Magische Dinge' %}
+			{{ product.featured_image}}
+		{% endif %}
+	{% endfor %}
   {% endif %}
+
 {% endfor %}
