@@ -15,11 +15,6 @@
 <br>
 <br>
 
-<div>
-  Testing:
-    <br>
-  	<br>
-
 {% for collection in product.collections %}
     <script type="text/javascript">
       window.mainCollectionCoversProducts = {{ collection.products | json }};
@@ -34,5 +29,3 @@
     </script>
   {% endif %}
 {% endfor %}
-  
-</div>
