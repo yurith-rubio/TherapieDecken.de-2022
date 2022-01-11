@@ -17,7 +17,7 @@
     </script>
 {% endfor %}
 
-<img src="{{ product.featured_image }}">
+<img class="Image--lazyLoad" data-src="{{ product.featured_image }}">
 
 {% for collection in collections %}
   {% if collection.title == 'Therapiekissen' %}
