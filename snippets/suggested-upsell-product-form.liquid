@@ -1,6 +1,6 @@
 {{ 'suggested_upsell_product.css' | asset_url | stylesheet_tag }}
 
-
+{% assign cover_product = product.title %}
 {% assign suggested_product = all_products['gesundheitskissen-sternenzauber'] %}
 
 <br>
@@ -11,7 +11,7 @@
 {% for collection in collections %}
   {% if collection.title == 'Ersatzbezüge für Therapiedecken' %}
 	{% for coverProduct in collection.products %}
-		{% if coverProduct.title == product.title %}
+		{% if coverProduct.title == cover_product %}
       		{% assign basedTitle = collection.product.title | split: " " | slice: 2, 10 %}
       		{{ coverProduct.title }}
 		{% endif %}
