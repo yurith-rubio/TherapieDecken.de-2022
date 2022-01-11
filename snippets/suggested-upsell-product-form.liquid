@@ -6,7 +6,7 @@
 <br>
 <br>
 
-{% for collection in product.collections %}
+
   {% for collection in collections %}
     {% if collection.title == 'Therapiekissen' %}
       {% for product in collection.products %}
@@ -28,8 +28,6 @@
       {% endfor %}
     {% endif %}
   {% endfor %}
-
-{% endfor %}
 
 
 {% assign suggestedCollection = collection %}
