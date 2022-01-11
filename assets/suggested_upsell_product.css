@@ -10,6 +10,6 @@
 .SuggestedUpProd_infoWr{
   max-width: 220px;
 }
-.SuggestedUpProd_infoWr > h2{
+.SuggestedUpProd_infoWr > a > h2{
   font-weight: bold;
 }
