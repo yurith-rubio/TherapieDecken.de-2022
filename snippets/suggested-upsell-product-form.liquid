@@ -1,3 +1,4 @@
+{{ 'suggested_upsell_product.css' }}
 <form method="post" action="/cart/add">
   <select name="id">
     <option value="39684136599691">suggested product</option>
@@ -23,9 +24,9 @@
 		{% if product.title contains 'Weiß Magische Dinge' %}
 			{%- assign image_url = product.featured_image | image_url: width: 300 -%}
 			<div>
-              <div class="SuggestedProd_imageWr"><img class="Image--lazyLoad" data-src="{{ image_url }}"></div>
-              <div class="SuggestedProd_infoWr"><b>{{ product.title }}</b></div>
-              <div class="SuggestedProd_buttonWr"></div>
+              <div class="SuggestedUpProd_imageWr"><img class="Image--lazyLoad" data-src="{{ image_url }}"></div>
+              <div class="SuggestedUpProd_infoWr"><b>{{ product.title }}</b></div>
+              <div class="SuggestedUpProd_buttonWr"></div>
 			</div>
 		{% endif %}
 	{% endfor %}
