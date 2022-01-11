@@ -29,13 +29,13 @@
   	<br>
 {% endfor %}
 
-{% for collection in product.collections %}
-{% assign mainCollectionCovers = collection %}
-    <br>
-  	<br>
-  <script type="text/javascript">
-    window.mainCollectionCovers = {{ collection | json }};
-  </script>
+{% for collection in product.collections %}  
+  {% assign mainCollectionCovers = collection.products %}
+      <br>
+      <br>
+    <script type="text/javascript">
+      window.mainCollectionCoversProducts = {{ collection.products | json }};
+    </script>
 {% endfor %}
   
   </div>
