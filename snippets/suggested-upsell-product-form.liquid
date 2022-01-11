@@ -42,6 +42,9 @@
   {% if collection.title == 'Therapiekissen' %}
   	{% assign mainCollectionKissenProducts = collection.products %}
 	{{ collection.products | json }}
+    <script type="text/javascript">
+      window.mainCollectionKissenProducts = {{ collection.products | json }};
+    </script>
   {% endif %}
 {% endfor %}
   
