@@ -23,7 +23,9 @@
   {% if collection.title == 'Therapiekissen' %}
   	{% for product in collection.products %}
 		{% if product.title contains 'Weiß Magische Dinge' %}
-			<img src="https://cdn.shopify.com/s/files/1/2451/6611/products/40x40_293df2dd-4440-4b44-800e-43eb0d8bf7d0_800x.jpg?v=1639505086">
+			{%- assign variant_image = product.featured_image -%}
+			{%- assign image_url = variant_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+			<img src="{{ image_url }}">
 		{% endif %}
 	{% endfor %}
   {% endif %}
