@@ -8,7 +8,10 @@
 
 
 {% for collection in collections %}
-  {{ product.collections }}
+  {% if collection.title == 'Therapiedecken Zauberei Kollektion' %}
+	Hello
+  {% endif %}
+
   {% if collection.title == 'Therapiekissen' %}
     {% for product in collection.products %}
       {% if product.title contains 'Weiß Magische Dinge' %}
