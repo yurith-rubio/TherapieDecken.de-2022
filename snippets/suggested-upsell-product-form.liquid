@@ -39,7 +39,9 @@
 {% endfor %}
 
 {% for collection in collections %}
-	{{ collection.products | json }}
+  {% if collection.title == 'Therapiekissen' %}
+	{{ collection.title }}
+  {% endif %}
 {% endfor %}
   
   </div>
