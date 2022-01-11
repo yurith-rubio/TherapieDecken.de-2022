@@ -1,11 +1,11 @@
 {{ 'suggested_upsell_product.css' | asset_url | stylesheet_tag }}
 
-<form method="post" action="/cart/add">
+
   <select name="id">
     <option value="39684136599691">suggested product</option>
   </select>
   <button type="submit">add to cart</button>
-</form>
+
 
 
 {% assign suggested_product = all_products['gesundheitskissen-sternenzauber'] %}
@@ -24,14 +24,14 @@
   	{% for product in collection.products %}
 		{% if product.title contains 'Weiß Magische Dinge' %}
 			{%- assign image_url = product.featured_image | image_url: width: 300 -%}
-			<div class="SuggestedUpProd_ContentWr">
+			<form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
               <div class="SuggestedUpProd_imageWr"><img class="Image--lazyLoad" data-src="{{ image_url }}"></div>
               <div class="SuggestedUpProd_infoWr">
                 <h2>{{ product.title }}</h2>
                 <p></p>
-              	<div class="SuggestedUpProd_buttonWr"></div>
+              	<button class="SuggestedUpProd_buttonWr" type="submit">Add to cart</button>
               </div>
-			</div>
+			</form>
 		{% endif %}
 	{% endfor %}
   {% endif %}
