@@ -10,6 +10,7 @@
 
 {% layout none %}
 {% paginate collections['Therapiekissen'].products by 1000 %}
+	{{ collection.all_products_count }}
   {% for product in collections['Therapiekissen'].products %}
 	{{ product.title | json }}
 	<br>
