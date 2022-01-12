@@ -11,6 +11,7 @@
 {% layout none %}
 {% paginate collections['Therapiekissen'].products by 1000 %}
   {% for product in collections['Therapiekissen'].products %}
+	{{ product | json }}
     {% if product.title contains cover_title_base %}
       {%- assign image_url = product.images[1] | image_url: width: 300 -%}
       <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
