@@ -4,6 +4,8 @@
   border-radius: 3px;
   padding: 9px 11px;
   margin-top: 20px;
+  justify-content: center;
+  align-content: center;
 }
 .SuggestedUpProd_imageWr{
   max-width: 110px;
