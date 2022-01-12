@@ -13,6 +13,9 @@
 }
 .SuggestedUpProd_infoWr{
   max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .SuggestedUpProd_infoWr > a > h2{
   font-weight: bold;
