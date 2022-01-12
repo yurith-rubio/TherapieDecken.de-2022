@@ -15,7 +15,7 @@
   font-weight: bold;
 }
 
-@media only screen (min-width: 769px){
+@media only screen (min-width: 401px){
   .SuggestedUpProd_imageWr{
     max-width: 135px;
   }
