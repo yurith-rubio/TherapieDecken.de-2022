@@ -1,17 +1,18 @@
 {% style %}
-.Suggested_Price--highlight{
- color:#ba2e2e
-}
-.Suggested_Price--compareAt::before{
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: -.4em;
-    width: calc(100% + .8em);
-    height: 1px;
-    background: currentColor;
-}
+  .Suggested_Price--highlight{
+   color:#ba2e2e
+  }
+  .Suggested_Price--compareAt::before{
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: -.4em;
+      width: calc(100% + .8em);
+      height: 1px;
+      background: currentColor;
+  }
 {% endstyle %}
+
 {{ 'suggested_upsell_product.css' | asset_url | stylesheet_tag }}
 
 {% if product.title contains 'Therapiedecken Baumwollbezug' %}
