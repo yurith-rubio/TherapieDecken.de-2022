@@ -8,7 +8,6 @@
 
 {% layout none %}
 {% paginate collections['Therapiekissen'].products by 1000 %}
-	
   {% for product in collections['Therapiekissen'].products %}
     {% if product.title contains cover_title_base %}
       {%- assign image_url = product.images[1] | image_url: width: 300 -%}
