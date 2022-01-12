@@ -5,6 +5,9 @@
 {% if product.title contains 'Therapiedecken Baumwollbezug' %}
 	{% assign cover_title_base = product.title | remove: 'Therapiedecken Baumwollbezug' | strip %}
 {% endif %}
+{% if product.title contains 'Therapiedecken Basic Bezug' %}
+	{% assign cover_title_base = product.title | remove: 'Therapiedecken Basic Bezug' | strip %}
+{% endif %}
 
 {% layout none %}
 {% paginate collections['Therapiekissen'].products by 1000 %}
