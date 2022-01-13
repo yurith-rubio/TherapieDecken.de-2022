@@ -12041,3 +12041,8 @@ a.entspannung-topseller-link:hover {
     width: 60px;
     padding: 13px 5px;
 }
+
+/* Live Preview App CSS */
+.cl-po--input .cl-po--upload-button{
+  text-transform: uppercase;
+}
