@@ -133,6 +133,17 @@ $(document).ready(function () {
       	}, 0);
     });
 
+    // Cover Template - Gewicht options hidden 
+  $("li.HorizontalList__Item.MainVariant_container > input").click(function (clickedButton) {
+    // When click on Ohne Standard
+    if (clickedButton.target.value === "Balance (Reißverschluss)") {
+      console.log("Reißeverschluss selected");
+      updateProductBadges(variantId, opt);
+      // When click on Gravity Schlaufen      
+    }       
+  });
+  
+  
   
   	// Update the price when the page is loaded (take into account that a different variant is selected)
   	updatePrice();
