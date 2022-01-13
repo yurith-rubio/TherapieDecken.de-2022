@@ -68,7 +68,7 @@ $(document).ready(function () {
     
     $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("is-limited-badge-hidden");
 	//Extra rule for the upsell products limitiert badge Adding code to keep limited badge - works! Yurith - Need to be checked
-    //$("div.is-limited-badge[data-variant-id=" + variantId + "]").removeClass("is-limited-badge-hidden")
+    $("div.is-limited-badge[data-variant-id=" + variantId + "]").removeClass("is-limited-badge-hidden")
     $("div.on-sale-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("on-sale-badge-hidden");
   }
   
