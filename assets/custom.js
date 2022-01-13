@@ -133,19 +133,6 @@ $(document).ready(function () {
       	}, 0);
     });
 
-    // Cover Template - Gewicht options hidden 
-  $("li.HorizontalList__Item.MainVariant_container > input").click(function (clickedButton) {
-    // When click on Ohne Standard
-    if (clickedButton.target.value === "Balance (Reißverschluss)") {
-      const variantId = getSelectedAdditionalVariantId();
-      const opt = getSelectedOptions();
-      console.log("Reißeverschluss selected");
-      $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("is-limited-badge-hidden");
-      // When click on Gravity Schlaufen      
-    }       
-  });
-  
-  
   
   	// Update the price when the page is loaded (take into account that a different variant is selected)
   	updatePrice();
