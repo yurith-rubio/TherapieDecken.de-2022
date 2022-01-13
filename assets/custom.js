@@ -68,7 +68,6 @@ $(document).ready(function () {
     
     $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("is-limited-badge-hidden");
     $("div.on-sale-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("on-sale-badge-hidden");
-    
   }
   
   function updateAdditionalProductBadges() {
