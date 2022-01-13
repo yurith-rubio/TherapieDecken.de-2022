@@ -26,7 +26,7 @@ $(document).ready(function () {
   // Testing Updating Badges - Yurith
   function updateProductBadges(variantId, opt) {
    	$("div.is-limited-badge").addClass("is-limited-badge-hidden");
-    
+
     $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("is-limited-badge-hidden");    
   }
   
