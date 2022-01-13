@@ -56,17 +56,7 @@
     </span>
     {%- endif -%}
     
-    {% if option.name=="Gewicht" %}
-      	<div class="info-title-div"><p><span class="icon-information-outline"></span> Das Deckengewicht sollte ungefähr 10% des Körpergewichtes ausmachen.</p></div>
-	{% elsif option.name=="Bezugsart" and product.title contains "Basic Gravity" %}
-       	<div class="info-title-div"><p><span class="icon-information-outline"></span> Die Gravity Therapiedecke mit Schlaufen zur Befestigung.</p></div>
-    {% elsif option.name=="Bezugsart" and product.title contains "Standard Gravity" %}
-       	<div class="info-title-div"><p><span class="icon-information-outline"></span> Die Standard Gravity Therapiedecke mit Schlaufen zur Befestigung.</p></div>
-    {% elsif option.name=="Bezugsart" and product.title contains "Balance" %}
-       	<div class="info-title-div"><p><span class="icon-information-outline"></span> Die Premium Balance Therapiedecke mit Reißverschlüssen als Befestigung.</p></div>
-    {% elsif option.name=="Bezugssystem" %}
-       	<div class="info-title-div"><p><span class="icon-information-outline"></span> Bitte wählen Sie das Therapiedecken Modell, das Sie besitzen. Handelsübliche Bezüge eignen sich nicht für Therapiedecken.</p></div>
-	{% endif %}
+    {% render 'variants-static-notes' %}
     
     {%- if color_label contains downcase_option and block.settings.show_color_swatch -%}
 	  <ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
