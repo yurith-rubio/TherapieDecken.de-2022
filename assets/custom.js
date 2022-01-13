@@ -138,6 +138,7 @@ $(document).ready(function () {
     // When click on Ohne Standard
     if (clickedButton.target.value === "Balance (Reißverschluss)") {
       const variantId = getSelectedAdditionalVariantId();
+      const opt = getSelectedOptions();
       console.log("Reißeverschluss selected");
       updateProductBadges(variantId, opt);
       // When click on Gravity Schlaufen      
