@@ -205,6 +205,7 @@ $(document).ready(function () {
       $("#AdditionalInlett__MainContainer").click();
       $("#noGravityInlett__Selector").click();
       $("#noBalanceInlett__Selector").click();
+      $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("is-limited-badge-hidden");
 
       // When click on Balance Schlaufen
     } else if (clickedButton.target.value === "Balance (Reißverschluss)") {
@@ -212,6 +213,7 @@ $(document).ready(function () {
       $(".GravityInlett__MainContainer").css("display", "none");
       $(".BalanceInlett__MainContainer").removeAttr("style");
       $("#noBalanceInlett__Selector").click();
+      $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("is-limited-badge-hidden");
       
       // When click on Gravity Schlaufen      
     } else if (clickedButton.target.value === "Gravity (Schlaufen)") {
@@ -219,6 +221,7 @@ $(document).ready(function () {
       $(".BalanceInlett__MainContainer").css("display", "none");
       $(".GravityInlett__MainContainer").removeAttr("style");
       $("#noGravityInlett__Selector").click();
+      $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("is-limited-badge-hidden");
     }      
   });
 
