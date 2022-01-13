@@ -206,7 +206,6 @@ $(document).ready(function () {
       $(".GravityInlett__MainContainer").css("display", "none");
       $(".BalanceInlett__MainContainer").removeAttr("style");
       $("#noBalanceInlett__Selector").click();
-      console.log("Reißeverschluss selected");
       
       // When click on Gravity Schlaufen      
     } else if (clickedButton.target.value === "Gravity (Schlaufen)") {
