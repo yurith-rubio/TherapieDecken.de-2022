@@ -140,7 +140,7 @@ $(document).ready(function () {
       const variantId = getSelectedAdditionalVariantId();
       const opt = getSelectedOptions();
       console.log("Reißeverschluss selected");
-      updateProductBadges(variantId, opt);
+      $("div.is-limited-badge").removeClass("is-limited-badge-hidden");
       // When click on Gravity Schlaufen      
     }       
   });
