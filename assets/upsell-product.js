@@ -39,12 +39,6 @@ $(document).ready(function () {
     return mainProductCompare.compare_at_price;
   }
   
-  function updateUpsellProductBadges(variantId, opt) {
-   	$("div.is-limited-badge").addClass("is-limited-badge-hidden");
-
-    $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("is-limited-badge-hidden");
-  }
-  
 // START --> Bedding Template with added yes/no buttons for two different extra optional products
   function getSelectedBalanceInlettProduct(variantId) {
     for (variant of window.balanceInlettProductJson.variants) {
