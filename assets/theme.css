@@ -12046,3 +12046,8 @@ a.entspannung-topseller-link:hover {
 .cl-po--upload .cl-po--upload-button{
   text-transform: uppercase;
 }
+.cl-po--label{
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
