@@ -12058,3 +12058,8 @@ a.entspannung-topseller-link:hover {
   box-shadow: unset !important;
   border-radius: 3px !important;
 }
+#clqvo9oc2ayh input[type="radio"]:checked + .cl-po--swatch{
+  border: #fac637 solid 3px !important;
+  background: #fac6371c;
+  font-weight: 600;
+}
