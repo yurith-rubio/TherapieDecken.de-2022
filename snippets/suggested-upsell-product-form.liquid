@@ -39,6 +39,9 @@
             {% for size_option in product.options_by_name['Größe'].values[0] %}
       			<option>{{ size_option }}</option>
     		{% endfor %}
+            {% for size_option in product.options_by_name['Füllung'].values[0] %}
+      			<option>{{ size_option }}</option>
+    		{% endfor %}
           </p>
           <button class="SuggestedUpProd_buttonWr Button Button--primary" type="submit">Hinzufügen</button>
         </div>
