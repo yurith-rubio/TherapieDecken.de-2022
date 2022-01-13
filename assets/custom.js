@@ -74,6 +74,7 @@ $(document).ready(function () {
     const variantId = getSelectedAdditionalVariantId();
     $("div.additional-info-wr").addClass("additional-info-wr-hidden");
     $("[data-variant-id=" + variantId + "]").removeClass("additional-info-wr-hidden");
+    $("div.is-limited-badge[data-variant-id=" + variantId + "]").removeClass("is-limited-badge-hidden");
   }
    
   function updateBadges(variantId, isAdditional) {
