@@ -13,13 +13,6 @@
   {%- endif -%}
 
 {% render 'special-edition-badges' %}
-  
-{% if product.title contains 'Premium Balance Outlast' %}
-  {% render 'outlast-badge' %}
-{% endif %}
-{% if product.handle contains 'gravity-zauberei-gewichtsdecke' %}
-  {% render 'zauberei-badge' %}
-{% endif %}
 
 {%- if product.tags contains 'sale' -%}    
   {%- assign titleArray = product.title | split: " " -%}<h1 class="ProductMeta__Title Heading u-h2"><span style="color: #ba2e2e">{{ titleArray[0] }}</span>{{ product.title | remove_first: titleArray[0] }}</h1>
