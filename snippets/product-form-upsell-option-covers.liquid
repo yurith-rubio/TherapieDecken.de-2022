@@ -92,12 +92,13 @@ while for size, we use it to display a size chart (if applicable)
                   style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: value %}">
                   <span class="u-visually-hidden">{{ value }}</span>
                 </label>
+                 
                 {% if option.name == "Bezugssystem" %}
                 <p class="VariantValue--style">
                   {% assign simple_value = value %}
                   {% assign name_variant = simple_value %}            
                   {{ name_variant | escape }}    
-                 </p>           
+                </p>           
               {% else %}
                 <p class="VariantValue--style">
                   {% assign simple_value = value | split: '(' | last %}
