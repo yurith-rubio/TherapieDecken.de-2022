@@ -12054,5 +12054,6 @@ a.entspannung-topseller-link:hover {
   font-style: var(--text-font-style);
 }
 #clqvo9oc2ayh .cl-po--input{
-  box-shadow: unset;
+  box-shadow: unset !important;
+  border-radius: 3px !important;
 }
