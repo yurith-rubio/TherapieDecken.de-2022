@@ -12050,4 +12050,6 @@ a.entspannung-topseller-link:hover {
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
+  font-family: var(--text-font-family);
+  font-style: var(--text-font-style);
 }
