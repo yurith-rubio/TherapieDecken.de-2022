@@ -46,9 +46,8 @@
     "social_youtube": "https:\/\/www.youtube.com\/channel\/UCzoQFn6SP0y-YTgCNnrLIfA?view_as=subscriber",
     "social_fancy": "https:\/\/therapiedecken.de\/blogs\/news?nopreview",
     "favicon": "shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png",
-    "countdown_date": "",
+    "countdown_date": "January 31, 2022 00:00 GMT+0100",
     "enable_days_view": false,
-    "reseting_time": "",
     "loop_time": 0,
     "announcement_countdown_enable": false,
     "text_color_countdown": "#bb1d33",
@@ -71,6 +70,7 @@
     "checkout_sidebar_background_color": "#f8f8f8",
     "checkout_accent_color": "#1c1b1b",
     "checkout_button_color": "#fac636",
+    "reseting_time": "",
     "exclusive_product_badge": false,
     "blackfriday_hero_hp_cover": true,
     "blackfriday_collection_cover": true,
@@ -91,7 +91,7 @@
           "home_page_only": false,
           "background": "#bb1d33",
           "text_color": "#ffffff",
-          "content": "Announcement Bar Text",
+          "content": "Announcement bar text",
           "link": ""
         }
       },
