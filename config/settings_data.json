@@ -48,8 +48,8 @@
     "favicon": "shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png",
     "countdown_date": "January 31, 2022 00:00 GMT+0100",
     "enable_days_view": false,
-    "loop_time": 1,
-    "announcement_countdown_enable": true,
+    "loop_time": 0,
+    "announcement_countdown_enable": false,
     "text_color_countdown": "#bb1d33",
     "product_countdown_enable": false,
     "icon_countdown_product": "<span class=\"icon-price-tags\"><\/span>",
@@ -87,11 +87,11 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": true,
+          "enable_bar": false,
           "home_page_only": false,
           "background": "#bb1d33",
           "text_color": "#ffffff",
-          "content": "Announcement Bar Text",
+          "content": "",
           "link": ""
         }
       },
