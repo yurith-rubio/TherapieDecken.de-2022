@@ -202,7 +202,7 @@
     doFilter(selectedColor);
   });
 
-  {% if collection.handle == 'ersatzbezuge-fur-therapiedecken' or collection.handle == 'therapiedecken-ersatzbezuge' %}
+  {% if collection.handle == 'ersatzbezuge-fur-therapiedecken' %}
   $(".filter_bestseller").click(function (e) {
   	const selectedBestseller = $(e.target).attr("data-bestseller");
     doFilter(selectedBestseller);
