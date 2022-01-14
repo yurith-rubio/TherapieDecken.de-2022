@@ -352,7 +352,10 @@
   {%- endunless -%}
 </div>
 
-  {%- if product.template_suffix != 'coming-soon' -%}
+
+<div class="live_preview_app"></div>
+
+{%- if product.template_suffix != 'coming-soon' -%}
     <div class="ProductMeta__PriceList Heading">
       {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
         <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
