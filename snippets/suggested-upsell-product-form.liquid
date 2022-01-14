@@ -15,7 +15,7 @@
   {% for product in collections['Therapiekissen'].products %}
     {% if product.title contains cover_title_base %}
       {%- assign image_url = product.images[1] | image_url: width: 300 -%}
-	  <p class="h4">Haben Kunden zu diesem Produkt auch gekauft</p>
+	  <p class="SuggestedUpPro_title">Haben Kunden zu diesem Produkt auch gekauft</p>
       <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
         <a href="{{ product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
