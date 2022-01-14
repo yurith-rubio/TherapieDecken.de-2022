@@ -11,7 +11,7 @@
 .SuggestedUpProd_imageWr{
   max-width: 110px;
 }
-.SuggestedUpProd_infoWr{
+.SuggestedUpProd_infoWr:not(.SuggestedUpProd_buttonWr){
   max-width: 220px;
   display: flex;
   flex-direction: column;
