@@ -44,7 +44,7 @@
   </div>
 </div>
 
-{% if collection.handle == 'ersatzbezuge-fur-therapiedecken' %}
+{% if collection.handle == 'ersatzbezuge-fur-therapiedecken' or collection.handle == 'therapiedecken-ersatzbezuge' %}
 <div>
   <p class="Heading u-h5 FilterTag__name">Bestseller</p>
   {% for tag in collection.all_tags %}
@@ -202,7 +202,7 @@
     doFilter(selectedColor);
   });
 
-  {% if collection.handle == 'ersatzbezuge-fur-therapiedecken' %}
+  {% if collection.handle == 'ersatzbezuge-fur-therapiedecken' or collection.handle == 'therapiedecken-ersatzbezuge' %}
   $(".filter_bestseller").click(function (e) {
   	const selectedBestseller = $(e.target).attr("data-bestseller");
     doFilter(selectedBestseller);
