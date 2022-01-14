@@ -66,7 +66,9 @@
        	<div class="info-title-div"><p><span class="icon-information-outline"></span> Die Premium Balance Therapiedecke mit Reißverschlüssen als Befestigung.</p></div>
     {% elsif option.name=="Bezugssystem" %}
        	<div class="info-title-div"><p><span class="icon-information-outline"></span> Bitte wählen Sie das Therapiedecken Modell, das Sie besitzen. Handelsübliche Bezüge eignen sich nicht für Therapiedecken.</p></div>
-	{% endif %}
+    {% elsif option.name=="Druck" %}
+       	<div class="info-title-div"><p><span class="icon-information-outline"></span> Bitte wählen Sie das Therapiedecken Modell, das Sie besitzen. Handelsübliche Bezüge eignen sich nicht für Therapiedecken.</p></div>
+    {% endif %}
     
     {%- if color_label contains downcase_option and block.settings.show_color_swatch -%}
 	  <ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
