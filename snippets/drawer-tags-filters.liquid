@@ -58,6 +58,41 @@
 
 <div class="Collapsible Collapsible--padded {% if section.settings.expand_filters %}Collapsible--autoExpand{% endif %}" data-filter-index="{% increment filter_index %}">
   <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
+    Bestseller <span class="Collapsible__Plus"></span>
+  </button>
+
+  <div class="Collapsible__Inner">
+      <div class="Collapsible__Content">
+        <ul class="Linklist">
+          {% for tag in collection.all_tags %}
+            {% assign tag_value = tag | split: "-" | slice: 1 %}
+            {% assign tag_key = tag | split: "-" | slice: 0 %}
+
+            <li>
+              {% if tag_key[0] == "bestseller" %}
+                {% assign selected = "" %}
+
+                {% if current_tags contains tag %}
+                  {% assign selected = "filter_selected"  %}	
+                {% endif %}        
+                <div>
+                  
+                  <div class="filter_bestseller filter_styling" data-bestseller="{{ tag }}">
+                    <div class="circle-radio {{ selected }}" data-bestseller="{{ tag }}"></div>
+                    <div class="text-radio-tag" data-bestseller="{{ tag }}">{{ tag_value[0] }}</div>
+                  </div>
+                  
+                </div>                           
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+  </div>
+</div>
+
+<div class="Collapsible Collapsible--padded {% if section.settings.expand_filters %}Collapsible--autoExpand{% endif %}" data-filter-index="{% increment filter_index %}">
+  <button type="button" class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" aria-expanded="false">
     Thema <span class="Collapsible__Plus"></span>
   </button>
 

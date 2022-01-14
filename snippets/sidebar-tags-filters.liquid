@@ -3,7 +3,6 @@
 {%- comment -%} CSS Added {%- endcomment -%}
 {{ 'filters.css' | asset_url | stylesheet_tag}}
 
-
   {% if collection.title contains "Therapiekissen" and current_tags.size > 0 %}
     <div class="clear-all-wr"><a href="https://therapiedecken.de/collections/therapiekissen" class="Heading u-h5 tag_clear_all">Alle Filter entfernen</a></div>
     <div class="Heading u-h5">Filtern nach</div>
@@ -43,6 +42,29 @@
   {% endfor %}
   </div>
 </div>
+
+{% if collection.handle == 'ersatzbezuge-fur-therapiedecken' %}
+<div>
+  <p class="Heading u-h5 FilterTag__name">Bestseller</p>
+  {% for tag in collection.all_tags %}
+    {% assign tag_value = tag | split: "-" | slice: 1 %}
+    {% assign tag_key = tag | split: "-" | slice: 0 %}
+	
+	{% if tag_key[0] == "bestseller" %}
+		{% assign selected = "" %}
+    	{% if current_tags contains tag %}
+        	{% assign selected = "filter_selected"  %}	
+    	{% endif %}
+		<div>
+          <div class="filter_bestseller filter_styling" data-bestseller="{{ tag }}">
+             <div class="circle-radio {{ selected }}" data-bestseller="{{ tag }}"></div>
+             <div class="text-radio-tag" data-bestseller="{{ tag }}">{{ tag_value[0] }}</div>
+		  </div>
+		</div>
+	{% endif %}
+  {% endfor %}
+</div>
+{% endif %}
 
 <div>
   <p class="Heading u-h5 FilterTag__name">Thema</p>
@@ -178,6 +200,13 @@
   	const selectedColor = $(e.target).attr("data-color");
     doFilter(selectedColor);
   });
+
+  {% if collection.handle == 'ersatzbezuge-fur-therapiedecken' %}
+  $(".filter_bestseller").click(function (e) {
+  	const selectedBestseller = $(e.target).attr("data-bestseller");
+    doFilter(selectedBestseller);
+  });
+  {% endif %}
   
   $(".filter_theme").click(function (e) {
   	const selectedTheme = $(e.target).attr("data-theme");
