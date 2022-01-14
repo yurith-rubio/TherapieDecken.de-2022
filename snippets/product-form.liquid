@@ -352,8 +352,9 @@
   {%- endunless -%}
 </div>
 
-
-<div class="live_preview_app"></div>
+{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene' %}
+	<div class="live_preview_app"></div>
+{% endif %}
 
 {%- if product.template_suffix != 'coming-soon' -%}
     <div class="ProductMeta__PriceList Heading">
