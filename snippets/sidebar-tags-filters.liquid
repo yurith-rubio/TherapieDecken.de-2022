@@ -44,6 +44,7 @@
   </div>
 </div>
 
+{% if collection.handle == 'ersatzbezuge-fur-therapiedecken' %}
 <div>
   <p class="Heading u-h5 FilterTag__name">Bestseller</p>
   {% for tag in collection.all_tags %}
@@ -64,6 +65,7 @@
 	{% endif %}
   {% endfor %}
 </div>
+{% endif %}
 
 <div>
   <p class="Heading u-h5 FilterTag__name">Thema</p>
