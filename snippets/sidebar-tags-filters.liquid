@@ -201,11 +201,13 @@
   	const selectedColor = $(e.target).attr("data-color");
     doFilter(selectedColor);
   });
-  
+
+  {% if collection.handle == 'ersatzbezuge-fur-therapiedecken' %}
   $(".filter_bestseller").click(function (e) {
   	const selectedBestseller = $(e.target).attr("data-bestseller");
     doFilter(selectedBestseller);
   });
+  {% endif %}
   
   $(".filter_theme").click(function (e) {
   	const selectedTheme = $(e.target).attr("data-theme");
