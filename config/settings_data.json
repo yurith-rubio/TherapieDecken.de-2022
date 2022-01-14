@@ -91,7 +91,7 @@
           "home_page_only": false,
           "background": "#bb1d33",
           "text_color": "#ffffff",
-          "content": "",
+          "content": "Announcement bar text",
           "link": ""
         }
       },
