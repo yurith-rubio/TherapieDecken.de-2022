@@ -203,6 +203,26 @@
         "title": "Vorteile der Standard Gravity Therapiedecke im Überblick"
       }
     },
+    "16424146761243b5bf": {
+      "type": "advanced-content",
+      "blocks": {
+        "16424146765cd28f35-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "{% render 'pet-printed-blanket-steps' %}",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16424146765cd28f35-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
     "1629462422c7c337fa": {
       "type": "html-with-image",
       "settings": {
@@ -433,26 +453,6 @@
       "type": "back-to-top-product",
       "settings": {
       }
-    },
-    "16424146761243b5bf": {
-      "type": "advanced-content",
-      "blocks": {
-        "16424146765cd28f35-1": {
-          "type": "liquid",
-          "settings": {
-            "code": "{% render 'pet-printed-blanket-steps' %}",
-            "width": "100%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "16424146765cd28f35-1"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
     }
   },
   "order": [
@@ -463,6 +463,7 @@
     "16291457001a7d71ef",
     "1629451775c72cd56a",
     "16294611499d6cacbd",
+    "16424146761243b5bf",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
     "1629709567bc66549f",
@@ -472,7 +473,6 @@
     "1629467370a1305632",
     "16294440249ce6f304",
     "1630334324a50af4b4",
-    "1634681963f7b71bb2",
-    "16424146761243b5bf"
+    "1634681963f7b71bb2"
   ]
 }
