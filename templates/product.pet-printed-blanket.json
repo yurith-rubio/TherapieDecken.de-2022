@@ -20,6 +20,7 @@
             "size_chart": ""
           }
         },
+
         "ecf9d664-e055-4a4b-92f5-3c8e7e54ce0d": {
           "type": "shopify:\/\/apps\/live-product-options\/blocks\/app-block\/88bfdf40-5e27-4962-a966-70c8d1e87757",
           "settings": {
@@ -38,7 +39,7 @@
         "product_meta",
         "variant_selector",
         "ecf9d664-e055-4a4b-92f5-3c8e7e54ce0d",
-        "buy_buttons"
+
       ],
       "settings": {
         "image_size": "large",
