@@ -3,11 +3,6 @@
   text-align: center;
   margin: 50px auto;
 }
-#PetPrint_ColumnsContainer{
-  max-width: 1200px;
-  text-align: center;
-  margin: 50px auto;
-}
 
 .PetPrint_steps_wr{
   display: flex;
