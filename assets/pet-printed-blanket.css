@@ -1,8 +1,7 @@
 #PetPrint_MainContainer{
-  display: flex;
   max-width: 1200px;
-  margin: auto;
   text-align: center;
+  margin: 30px auto;
 }
 
 .PetPrint_steps_wr{
@@ -13,6 +12,7 @@
 
 @media only screen and (min-width: 768px){
   #PetPrint_MainContainer{
+    display: flex;
     margin: 30px auto;
   }
 }
