@@ -56,17 +56,7 @@
     </span>
     {%- endif -%}
     
-    {% if option.name=="Gewicht" %}
-      	<div class="info-title-div"><p><span class="icon-information-outline"></span> Das Deckengewicht sollte ungefähr 10% des Körpergewichtes ausmachen.</p></div>
-	{% elsif option.name=="Bezugsart" and product.title contains "Basic Gravity" %}
-       	<div class="info-title-div"><p><span class="icon-information-outline"></span> Die Gravity Therapiedecke mit Schlaufen zur Befestigung.</p></div>
-    {% elsif option.name=="Bezugsart" and product.title contains "Standard Gravity" %}
-       	<div class="info-title-div"><p><span class="icon-information-outline"></span> Die Standard Gravity Therapiedecke mit Schlaufen zur Befestigung.</p></div>
-    {% elsif option.name=="Bezugsart" and product.title contains "Balance" %}
-       	<div class="info-title-div"><p><span class="icon-information-outline"></span> Die Premium Balance Therapiedecke mit Reißverschlüssen als Befestigung.</p></div>
-    {% elsif option.name=="Bezugssystem" %}
-       	<div class="info-title-div"><p><span class="icon-information-outline"></span> Bitte wählen Sie das Therapiedecken Modell, das Sie besitzen. Handelsübliche Bezüge eignen sich nicht für Therapiedecken.</p></div>
-	{% endif %}
+    {% render 'options-static-notes', option: option %}
     
     {%- if color_label contains downcase_option and block.settings.show_color_swatch -%}
 	  <ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
@@ -361,7 +351,11 @@
   {%- endunless -%}
 </div>
 
-  {%- if product.template_suffix != 'coming-soon' -%}
+{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene' %}
+	<div class="live_preview_app"></div>
+{% endif %}
+
+{%- if product.template_suffix != 'coming-soon' -%}
     <div class="ProductMeta__PriceList Heading">
       {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
         <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>

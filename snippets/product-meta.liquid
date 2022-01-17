@@ -12,44 +12,39 @@
     </h2>
   {%- endif -%}
 
-{% if product.title contains 'Premium Balance Outlast' %}
-  {% render 'outlast-badge' %}
-{% endif %}
-{% if product.handle contains 'gravity-zauberei-gewichtsdecke' %}
-  {% render 'zauberei-badge' %}
-{% endif %}
-
-{%- if product.tags contains 'sale' -%}    
-  {%- assign titleArray = product.title | split: " " -%}<h1 class="ProductMeta__Title Heading u-h2"><span style="color: #ba2e2e">{{ titleArray[0] }}</span>{{ product.title | remove_first: titleArray[0] }}</h1>
-{%- else -%}
-  <h1 class="ProductMeta__Title Heading u-h2">
-    {%- if template.name == 'product' -%}
-      {{- product.title -}}
-    {%- else -%}
-      <a href="{{ product.url }}">{{ product.title }}</a>
-    {%- endif -%}
-  </h1>
-{%- endif -%}
+  {% render 'special-edition-badges' %}
   
-  {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false %}
-  {% render 'sustainability-badge' %}
-  
-  {%- if block.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
-    <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
+  {%- if product.tags contains 'sale' -%}    
+    {%- assign titleArray = product.title | split: " " -%}<h1 class="ProductMeta__Title Heading u-h2"><span style="color: #ba2e2e">{{ titleArray[0] }}</span>{{ product.title | remove_first: titleArray[0] }}</h1>
+  {%- else -%}
+    <h1 class="ProductMeta__Title Heading u-h2">
+      {%- if template.name == 'product' -%}
+        {{- product.title -}}
+      {%- else -%}
+        <a href="{{ product.url }}">{{ product.title }}</a>
+      {%- endif -%}
+    </h1>
   {%- endif -%}
 
-  {%- if block.settings.show_taxes_included -%}
-    {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-      <p class="ProductMeta__TaxNotice Rte">
-        {%- if shop.taxes_included -%}
-          {{ 'product.general.include_taxes' | t }}
-        {%- endif -%}
+    {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false %}
+    {% render 'sustainability-badge' %}
 
-        {%- if shop.shipping_policy.body != blank -%}
-          {{ 'product.general.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-        {%- endif -%}
-      </p>
+    {%- if block.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
+      <p class="ProductMeta__Sku Heading Text--subdued u-h6">{{ 'product.form.sku' | t }}: <span class="ProductMeta__SkuNumber">{{ product.selected_or_first_available_variant.sku }}</span></p>
     {%- endif -%}
+
+    {%- if block.settings.show_taxes_included -%}
+      {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+        <p class="ProductMeta__TaxNotice Rte">
+          {%- if shop.taxes_included -%}
+            {{ 'product.general.include_taxes' | t }}
+          {%- endif -%}
+
+          {%- if shop.shipping_policy.body != blank -%}
+            {{ 'product.general.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+          {%- endif -%}
+        </p>
+      {%- endif -%}
   {%- endif -%}
 
   {{- form | payment_terms -}}

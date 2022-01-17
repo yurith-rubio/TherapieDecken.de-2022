@@ -11930,7 +11930,7 @@ h3.wirkung-section-sub-title {
 .row2 .image-rabat{
   display:none;
 }
-  .row1{
+.row1{
   padding-bottom:0px;
 }
 .row2{
@@ -12040,4 +12040,29 @@ a.entspannung-topseller-link:hover {
     height: 60px;
     width: 60px;
     padding: 13px 5px;
+}
+
+/* Live Preview App CSS */
+.cl-po--upload .cl-po--upload-button{
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.cl-po--label{
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: var(--text-font-family);
+  font-style: var(--text-font-style);
+}
+#clqvo9oc2ayh .cl-po--input{
+  box-shadow: unset !important;
+  border-radius: 3px !important;
+}
+#clqvo9oc2ayh input[type="radio"]:checked + .cl-po--swatch{
+  box-shadow: unset !important;
+}
+#clqvo9oc2ayh input[type="radio"]:checked + .cl-po--swatch{
+  border: #fac637 solid 3px !important;
+  background: #fac6371c;
+  font-weight: 600;
 }
