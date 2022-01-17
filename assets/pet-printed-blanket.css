@@ -14,6 +14,9 @@
   max-width: 200px;
   margin: auto;
 }
+.PetPrint_iconText_wr{
+  display: inline-flex;
+}
 
 @media only screen and (min-width: 768px){
   #PetPrint_MainContainer{
