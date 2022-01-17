@@ -12,6 +12,7 @@
 }
 .PetPrint_text_wr{
   max-width: 200px;
+  margin: auto;
 }
 
 @media only screen and (min-width: 768px){
