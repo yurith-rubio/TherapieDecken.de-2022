@@ -13,6 +13,7 @@
 .PetPrint_text_wr{
   max-width: 200px;
   margin: auto;
+  text-align: left;
 }
 .PetPrint_iconText_wr{
   display: inline-flex;
