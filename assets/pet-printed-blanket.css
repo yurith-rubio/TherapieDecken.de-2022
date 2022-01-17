@@ -1,3 +1,5 @@
 #PetPrint_MainContainer{
-  max-width: 900px;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
 }
