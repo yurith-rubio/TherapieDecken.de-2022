@@ -67,6 +67,26 @@
         "bg-color": "#5b5b5b"
       }
     },
+    "16427795418af1a0d8": {
+      "type": "advanced-content",
+      "blocks": {
+        "1642779541548d7176-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "{% render 'pet-printed-blanket-steps' %}",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1642779541548d7176-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
     "1630502279241963c8": {
       "type": "html-img-blanket",
       "settings": {
@@ -106,7 +126,7 @@
         "icons_duotone": "none",
         "subheading": "Nachhaltige Herstellung",
         "title": "Beste Qualität aus Europa",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/TherapieDecken.de_Gravity_Img9_1_1_-min.jpg",
         "image_position": "left",
         "content_html": "<p>Alle unsere Produkte werden ausschließlich in Europa hergestellt, die verwendete Baumwolle ist zertifiziert.\n<\/p>\nEs ist für uns wichtig, dass bei dem gesamten Herstellungsprozess nachhaltige Materialien verwendet werden und faire Arbeitsbedingungen herrschen. Mit der europäischen Herstellung halten wir Lieferketten kurz und verringern so Umweltbelastungen.",
@@ -206,6 +226,7 @@
   "order": [
     "main",
     "163044858332a671dd",
+    "16427795418af1a0d8",
     "1630502279241963c8",
     "1630604392d268efb9",
     "16305044894f9cd936",
