@@ -30,7 +30,7 @@
 
         <div class="Grid Grid--xl">
           {%- for result in search.results -%}
-              {% if result.handle == 'therapiedecken-gravity-inlett' or result.handle == 'inlett' or result.handle == 'balance-gewichtsdecken-inlett' or result.handle == 'gravity-gewichtsdecken-inlett-fur-kinder' or result.handle == 'balance-gewichtsdecken-inlett-fur-kinder' or result.handle == 'testing-printing' or result.handle == 'therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv' %}
+              {% if result.handle == 'therapiedecken-gravity-inlett' or result.handle == 'inlett' or result.handle == 'balance-gewichtsdecken-inlett' or result.handle == 'gravity-gewichtsdecken-inlett-fur-kinder' or result.handle == 'balance-gewichtsdecken-inlett-fur-kinder' or result.handle == 'testing-printing' %}
           		{% continue %}
           	{% endif %}
               {%- comment -%}The inline onclick is a bit hacky, but it's easier on mobile to have the full line clickable{%- endcomment -%}
