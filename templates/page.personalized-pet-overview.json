@@ -30,13 +30,13 @@
           "type": "collection",
           "settings": {
             "collection": "therapiedecken-zauberei-kollektion",
-            "image": "shopify:\/\/shop_images\/zauberei_kollektion_16a3d37a-b354-415c-b029-7efca9284c32.jpg",
+            "image": "shopify:\/\/shop_images\/DOUBLE-DUVET_infographic_1200x_e2f4a541-d55d-40ef-bd7d-5a3f0943feef.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
-            "title": "Zauberei Bezüge",
+            "title": "Personalisierte Hund & Katze Bezüge",
             "button_text": "Mehr Erfahren",
-            "button_link": "",
+            "button_link": "shopify:\/\/products\/therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv",
             "apply_overlay": true
           }
         }
