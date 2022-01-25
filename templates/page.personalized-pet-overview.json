@@ -1,0 +1,68 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_large": false,
+        "back_link_checkbox": false,
+        "back_link_text": "Zurück zur...",
+        "back_link_url": ""
+      }
+    },
+    "1631193615fcc39e24": {
+      "type": "collection-list-pages",
+      "blocks": {
+        "1631193615fcc39e24-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Wizka_3_1000x1013_9ea6aeca-5b6d-4ee5-97dd-97d481cf9eaa.jpg",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Zauberei Gravity Therapiedecke",
+            "button_text": "Mehr Erfahren",
+            "button_link": "shopify:\/\/products\/gravity-zauberei-gewichtsdecke",
+            "apply_overlay": true
+          }
+        },
+        "1631193615fcc39e24-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "therapiedecken-zauberei-kollektion",
+            "image": "shopify:\/\/shop_images\/zauberei_kollektion_16a3d37a-b354-415c-b029-7efca9284c32.jpg",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Zauberei Bezüge",
+            "button_text": "Mehr Erfahren",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        }
+      },
+      "block_order": [
+        "1631193615fcc39e24-0",
+        "1631193615fcc39e24-1"
+      ],
+      "settings": {
+        "image_size": "small",
+        "set_width": "1000",
+        "stack_on_mobile": true,
+        "text_color": "#ffffff",
+        "button_color": "#363636"
+      }
+    },
+    "16310249852258c377": {
+      "type": "reviews-homepage",
+      "settings": {
+        "maxwidth": 1080
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1631193615fcc39e24",
+    "16310249852258c377"
+  ]
+}
