@@ -12054,14 +12054,15 @@ a.entspannung-topseller-link:hover {
   font-family: var(--text-font-family);
   font-style: var(--text-font-style);
 }
-#clqvo9oc2ayh .cl-po--input{
+/*#clqvo9oc2ayh */.cl-po--input{
   box-shadow: unset !important;
   border-radius: 3px !important;
 }
-#clqvo9oc2ayh input[type="radio"]:checked + .cl-po--swatch{
+/*#clqvo9oc2ayh input[type="radio"]:checked + */.cl-po--swatch{
   box-shadow: unset !important;
 }
-#clqvo9oc2ayh input[type="radio"]:checked + .cl-po--swatch{
+
+/*#clqvo9oc2ayh input[type="radio"]:checked + */.cl-po--swatch{
   border: #fac637 solid 3px !important;
   background: #fac6371c;
   font-weight: 600;
