@@ -54,7 +54,7 @@
     {%- assign size_chart_page = block.settings.size_chart -%}
 
     <span class="ProductForm__Label">
-      {{ option.name }}:
+      {{ option.position }}. {{ option.name }}:
 
       {% if color_label contains downcase_option and block.settings.show_color_swatch %}
       <span class="ProductForm__SelectedValue">{{ option.selected_value }}</span>
