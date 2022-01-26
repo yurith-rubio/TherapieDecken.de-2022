@@ -1,5 +1,3 @@
-console.log("hola afuera");
-
 $(document).ready(function () {
 
   console.log("hola");
