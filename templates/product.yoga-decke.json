@@ -1,1 +1,201 @@
-{"sections":{"163105306931ab54dc":{"type":"custom-html","settings":{"html":"<p class=\"Heading u-h1\" style=\"text-align: center; margin-top: 100px\">Yoga Therapiedecke<\/p>","spacer":"","bg-color":""}},"163102922884f792bd":{"type":"html-with-image","settings":{"spacer_top":true,"spacer_bottom":true,"bg-color":"","bg-color-text-html":"","icon_title":false,"icons_duotone":"none","subheading":"Pure Entspannung","title":"Eigenschaften der Yoga Therapiedecke","image":"shopify:\/\/shop_images\/1-64_1_1.jpg","image_position":"right","content_html":"<ul style=\"text-align:left\">\n<li>Hochwertige Decke aus Baumwolle ohne abnehmbarem Bezug\n<\/li>\n<li>Sanfter Druck sorgt für Entspannung und Wohlbefinden <\/li>\n<li>Vielseitig während der Meditiation und beim Yoga einsetzbar\n<\/li>\n<li> Bei 30 Grad waschbar <\/li>\n<\/ul>","content_rich":"<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>","button_style":false,"link_text":"","link_url":"","button_extra":false,"link_text_extra":"Mehr Erfahren","link_url_extra":""}},"16310292202f5f61f3":{"type":"html-with-image","settings":{"spacer_top":true,"spacer_bottom":true,"bg-color":"","bg-color-text-html":"","icon_title":false,"icons_duotone":"none","subheading":"Original Yoga Therapiedecke","title":"Perfekter Begleiter für Entspannung","image":"shopify:\/\/shop_images\/1-89_1_2.jpg","image_position":"left","content_html":"<p>Die Yoga Therapiedecke ist vielseitig einsetzbar. Beim Zudecken während der Tiefenentspannung hilft sie den Körper und das Nervensystem zu entspannen. Sie kann einfach gefaltet werden, um Übungen im Sitzen durchzuführen oder als Unterlage für Schulter- und Kopfstand verwendet werden.<\/p>","content_rich":"<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>","button_style":false,"link_text":"","link_url":"","button_extra":false,"link_text_extra":"Mehr Erfahren","link_url_extra":""}},"16310290797836b6b2":{"type":"featured-product","disabled":true,"blocks":{"16310290790db37a4a-0":{"type":"product_meta","settings":{"show_vendor":false,"show_sku":false,"show_taxes_included":false}},"16310290790db37a4a-2":{"type":"variant_selector","settings":{"selector_mode":"block","show_color_swatch":true,"show_color_carousel":false,"size_chart":""}},"16310290790db37a4a-3":{"type":"buy_buttons","settings":{"show_price_in_button":false,"show_payment_button":false}}},"block_order":["16310290790db37a4a-0","16310290790db37a4a-2","16310290790db37a4a-3"],"settings":{"subheading":"","title":"","show_headings_on_mobile":true,"product":"yoga-therapiedecke"}},"main":{"type":"main-product","blocks":{"product_meta":{"type":"product_meta","settings":{"show_vendor":true,"show_sku":false,"show_taxes_included":false}},"variant_selector":{"type":"variant_selector","settings":{"selector_mode":"block","show_color_swatch":true,"show_color_carousel":false,"size_chart":""}},"buy_buttons":{"type":"buy_buttons","settings":{"show_price_in_button":false,"show_payment_button":false}},"description":{"type":"description","disabled":true,"settings":{}}},"block_order":["product_meta","variant_selector","buy_buttons","description"],"settings":{"image_size":"large","stack_images":false,"show_thumbnails":true,"enable_image_zoom":true,"enable_video_looping":false}},"163240865487f4f61d":{"type":"custom-html","settings":{"html":"<p style=\"margin: -50px 0 50px 0; color: #008000\"><b>Geeignet für jedes Körpergewicht. Nicht für Kinder empfohlen.<\/b><\/p>","spacer":"100px","bg-color":""}},"1631052977fa3dec70":{"type":"icons-delivery-info","settings":{"bg-color":"#5b5b5b"}},"1631061690cdeac1fb":{"type":"reviews-product","settings":{}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"heading":"Das könnte Ihnen auch gefallen","show_product_info":true,"show_vendor":false,"show_color_swatch":false}},"163468165882ef4545":{"type":"back-to-top-product","settings":{}}},"order":["163105306931ab54dc","163102922884f792bd","16310292202f5f61f3","16310290797836b6b2","main","163240865487f4f61d","1631052977fa3dec70","1631061690cdeac1fb","product-recommendations","163468165882ef4545"]}
+{
+  "sections": {
+    "163105306931ab54dc": {
+      "type": "custom-html",
+      "settings": {
+        "html": "<p class=\"Heading u-h1\" style=\"text-align: center; margin-top: 100px\">Yoga Therapiedecke<\/p>",
+        "spacer": "",
+        "bg-color": ""
+      }
+    },
+    "163102922884f792bd": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "Pure Entspannung",
+        "title": "Eigenschaften der Yoga Therapiedecke",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/1-64_1_1.jpg",
+        "image_position": "right",
+        "content_html": "<ul style=\"text-align:left\">\n<li>Hochwertige Decke aus Baumwolle ohne abnehmbarem Bezug\n<\/li>\n<li>Sanfter Druck sorgt für Entspannung und Wohlbefinden <\/li>\n<li>Vielseitig während der Meditiation und beim Yoga einsetzbar\n<\/li>\n<li> Bei 30 Grad waschbar <\/li>\n<\/ul>",
+        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "16310292202f5f61f3": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "Original Yoga Therapiedecke",
+        "title": "Perfekter Begleiter für Entspannung",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/1-89_1_2.jpg",
+        "image_position": "left",
+        "content_html": "<p>Die Yoga Therapiedecke ist vielseitig einsetzbar. Beim Zudecken während der Tiefenentspannung hilft sie den Körper und das Nervensystem zu entspannen. Sie kann einfach gefaltet werden, um Übungen im Sitzen durchzuführen oder als Unterlage für Schulter- und Kopfstand verwendet werden.<\/p>",
+        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "16310290797836b6b2": {
+      "type": "featured-product",
+      "disabled": true,
+      "blocks": {
+        "16310290790db37a4a-0": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_taxes_included": false
+          }
+        },
+        "16310290790db37a4a-2": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "block",
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "16310290790db37a4a-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        }
+      },
+      "block_order": [
+        "16310290790db37a4a-0",
+        "16310290790db37a4a-2",
+        "16310290790db37a4a-3"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "show_headings_on_mobile": true,
+        "product": "yoga-therapiedecke"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_taxes_included": false
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "block",
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "c5d417a8-ba8a-42df-a525-72addfef913d": {
+          "type": "payment_methods",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "variant_selector",
+        "buy_buttons",
+        "description",
+        "c5d417a8-ba8a-42df-a525-72addfef913d"
+      ],
+      "settings": {
+        "image_size": "large",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "163240865487f4f61d": {
+      "type": "custom-html",
+      "settings": {
+        "html": "<p style=\"margin: -50px 0 50px 0; color: #008000\"><b>Geeignet für jedes Körpergewicht. Nicht für Kinder empfohlen.<\/b><\/p>",
+        "spacer": "100px",
+        "bg-color": ""
+      }
+    },
+    "1631052977fa3dec70": {
+      "type": "icons-delivery-info",
+      "settings": {
+        "bg-color": "#5b5b5b"
+      }
+    },
+    "1631061690cdeac1fb": {
+      "type": "reviews-product",
+      "settings": {
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "heading": "Das könnte Ihnen auch gefallen",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
+    "163468165882ef4545": {
+      "type": "back-to-top-product",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "163105306931ab54dc",
+    "163102922884f792bd",
+    "16310292202f5f61f3",
+    "16310290797836b6b2",
+    "main",
+    "163240865487f4f61d",
+    "1631052977fa3dec70",
+    "1631061690cdeac1fb",
+    "product-recommendations",
+    "163468165882ef4545"
+  ]
+}
