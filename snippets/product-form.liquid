@@ -252,7 +252,9 @@
             class="VariantSelector__ImageWrapper AspectRatio AspectRatio--withFallback"
             aria-hidden="{% if selected_variant_title_excluded_color == variant_title_excluded_color %}false{% else %}true{% endif %}"
             style="max-width: {{ variant_image.width }}px; padding-bottom: {{ 100.0 | divided_by: variant_image.aspect_ratio }}%; --aspect-ratio: {{ variant_image.aspect_ratio }}">
-            {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,400,600,800', image: variant_image -%}{%- endcapture -%}
+            {%- capture supported_sizes -%}
+            	{%- render 'image-size', sizes: '200,400,600,800', image: variant_image -%}
+            {%- endcapture -%}
             {%- assign image_url = variant_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
             <img class="VariantSelector__Image Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}"
