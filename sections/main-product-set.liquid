@@ -413,7 +413,10 @@
                 {%- when 'store_pickup' -%}
                   {%- comment -%}The availability container will be added automatically if there is store pickup available{%- endcomment -%}
                   <div class="ProductMeta__StoreAvailabilityContainer" {{ block.shopify_attributes }}></div>
-
+          
+				{% when 'payment_methods' %}
+                  {% render 'product_payment_methods' %}
+          
               {%- endcase -%}
             {%- endfor -%}
           
