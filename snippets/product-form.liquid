@@ -224,8 +224,7 @@
 
       {%- for option_nested_value in option_nested.values -%}
       {%- if option_nested_value == option_nested.selected_value -%}
-      {%- assign selected_variant_title_excluded_color = selected_variant_title_excluded_color | append:
-      option_nested_value -%}
+      {%- assign selected_variant_title_excluded_color = selected_variant_title_excluded_color | append: option_nested_value -%}
       {%- endif -%}
       {%- endfor -%}
       {%- endif -%}
