@@ -16,7 +16,7 @@
 
 {%- assign selected_variant = product.selected_or_first_available_variant -%}
 
-<style>
+{% style %}
   .hide_option, .blank_option{
     display:none;
   }
@@ -32,7 +32,8 @@
   .Product__PaymentList {
     text-align: center;
   }
-</style>
+{% endstyle %}
+
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
   {%- for option in product.options_with_values -%}
