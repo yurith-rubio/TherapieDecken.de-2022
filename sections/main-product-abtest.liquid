@@ -439,6 +439,9 @@
           			  
               {%- endcase -%}
             {%- endfor -%}
+          
+          	{% render 'guarantee-exceptions' %}
+          
           {%- endform -%}
 
           {%- if section.settings.stack_images and product_aside != blank and media_count > 0 -%}
