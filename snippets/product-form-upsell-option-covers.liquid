@@ -51,7 +51,7 @@ while for size, we use it to display a size chart (if applicable)
           {%- assign size_chart_page = block.settings.size_chart -%}
 
           <span class="ProductForm__Label">
-            {{ option.name }}:
+            {{ option.position }}. {{ option.name }}:
 
             <!-- COMMENT WITH FELIX. I am hiding the swatch value -->
             {% comment %}
@@ -221,7 +221,7 @@ while for size, we use it to display a size chart (if applicable)
               {% endif %}
                 <div class="AdditionalProductContainer GravityInlettContainer" style="display: none">
                     <span class="ProductForm__Label AdditionalProductProductForm__Label">
-                        {{ option.position }}. {{ option.name }}:
+                        {{ option.name }}:
                     </span>
 
                     <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
