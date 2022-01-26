@@ -56,47 +56,6 @@
         "link_url_extra": ""
       }
     },
-    "16310290797836b6b2": {
-      "type": "featured-product",
-      "disabled": true,
-      "blocks": {
-        "16310290790db37a4a-0": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_taxes_included": false
-          }
-        },
-        "16310290790db37a4a-2": {
-          "type": "variant_selector",
-          "settings": {
-            "selector_mode": "block",
-            "show_color_swatch": true,
-            "show_color_carousel": false,
-            "size_chart": ""
-          }
-        },
-        "16310290790db37a4a-3": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_price_in_button": false,
-            "show_payment_button": false
-          }
-        }
-      },
-      "block_order": [
-        "16310290790db37a4a-0",
-        "16310290790db37a4a-2",
-        "16310290790db37a4a-3"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "show_headings_on_mobile": true,
-        "product": "yoga-therapiedecke"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -124,12 +83,6 @@
             "show_payment_button": false
           }
         },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "c5d417a8-ba8a-42df-a525-72addfef913d": {
           "type": "payment_methods",
           "settings": {
@@ -140,7 +93,6 @@
         "product_meta",
         "variant_selector",
         "buy_buttons",
-        "description",
         "c5d417a8-ba8a-42df-a525-72addfef913d"
       ],
       "settings": {
@@ -190,7 +142,6 @@
     "163105306931ab54dc",
     "163102922884f792bd",
     "16310292202f5f61f3",
-    "16310290797836b6b2",
     "main",
     "163240865487f4f61d",
     "1631052977fa3dec70",
