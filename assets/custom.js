@@ -139,6 +139,12 @@ $(document).ready(function () {
   	updatePrice();
   
     // New style for light-yellow background on Color Swatches when selected
+    $("input.ColorSwatch__Radio"){
+      $("li.HorizontalList__Item").removeClass("yellow_style");
+      $("li.HorizontalList__Item > input.ColorSwatch__Radio:checked+.ColorSwatch").parents("li").addClass("yellow_style");
+  	});
+  
+  	// New style for light-yellow background on Color Swatches when selected
     $("input.ColorSwatch__Radio").click(function(){
       $("li.HorizontalList__Item").removeClass("yellow_style");
       $("li.HorizontalList__Item > input.ColorSwatch__Radio:checked+.ColorSwatch").parents("li").addClass("yellow_style");
