@@ -106,9 +106,9 @@
            {% endif %}
 
           {% comment %} Is Limited Badge - bgd.is_limited Metafield {% endcomment %}  
-          {% for v in product.variants %}
-              {% if v.option3 == value %}
-                  {% assign isLimited = v.metafields.bgd.is_limited %}
+          {% for variant in product.variants %}
+              {% if variant.option3 == value %}
+                  {% assign isLimited = variant.metafields.bgd.is_limited %}
                   {% if isLimited == "true" %}
                        <div
                        class="is-limited-badge"
