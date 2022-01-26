@@ -16,6 +16,8 @@
 
 {%- assign selected_variant = product.selected_or_first_available_variant -%}
 
+{{ 'product-form.css' | asset_url | stylesheet_tag }}
+
 {% style %}
   .hide_option, .blank_option{
     display:none;
