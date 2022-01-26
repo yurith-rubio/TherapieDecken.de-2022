@@ -220,8 +220,7 @@
 
       {%- for option_nested in product.options_with_values -%}
       {%- if option_nested.position != option.position -%}
-      {%- assign option_indexes_excluded_color = option_indexes_excluded_color | append: option_nested.position |
-      append: ',' -%}
+      {%- assign option_indexes_excluded_color = option_indexes_excluded_color | append: option_nested.position | append: ',' -%}
 
       {%- for option_nested_value in option_nested.values -%}
       {%- if option_nested_value == option_nested.selected_value -%}
