@@ -20,6 +20,18 @@
   .hide_option, .blank_option{
     display:none;
   }
+  
+  .yellow_style {
+    border: #fac637 solid 3px!important;
+    background: #fac6371c;
+  }
+  .ColorSwatch.is-active::after, .ColorSwatch__Radio:checked+.ColorSwatch::after {
+    border: none !important;
+    border-radius: 30px;
+  }
+  .Product__PaymentList {
+    text-align: center;
+  }
 </style>
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
