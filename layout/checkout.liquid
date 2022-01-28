@@ -206,13 +206,15 @@
             {{ content_for_footer }}
           </footer>
         </div>
+        
+        
         <aside class="sidebar" role="complementary">
 		  {% render 'checkout-countdown' %}
           <div class="sidebar__header">
             {{ content_for_logo }}
           </div>
           <div class="sidebar__content">
-            {{ content_for_order_summary }}
+            <div class="Summary_Container">{{ content_for_order_summary }}</div>
             <div class="checkout-cert-con">
               <div class="title_area">
                 <div class="line_title"></div>
