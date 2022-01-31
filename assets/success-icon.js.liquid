@@ -15,7 +15,7 @@ $(document).ready(function (){
     	$('.cl-po--upload-files').addClass('success-icon');
   	});
   }, 500);
-});*/
+});
 
 
 $(document).ready(function (){
@@ -25,6 +25,26 @@ $(document).ready(function (){
     selectElement.addEventListener('change', (event) => {
       console.log("This works!");
     });
+  }, 500);
+});
+*/
+
+
+$(document).ready(function (){
+  setTimeout(function () {
+
+    
+    const input = document.querySelector('.cl-po--input input[type=file]');
+    const log = document.getElementById('log');
+
+    input.addEventListener('change', updateValue);
+
+    function updateValue(e) {
+      log.textContent = e.target.value;
+    }
+
+    
+    
   }, 500);
 });
 
