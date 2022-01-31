@@ -28,8 +28,8 @@
   z-index: 2;
 }
 .m21-img-size-small-badge{
-    max-width: 190px;
-    max-height: 140px;
+    max-width: 90px;
+    height: auto;
 }
 
 @media only screen and (max-width: 640px){
