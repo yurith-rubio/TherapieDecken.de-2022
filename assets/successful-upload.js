@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
-$(.cl-po--upload-files).addClass()
+  console.log('I am here');
+$('.cl-po--upload-files').addClass('testing');
 
 });
