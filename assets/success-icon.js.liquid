@@ -1,0 +1,13 @@
+$(document).ready(function (){
+  $('.ProductForm input[type=file]').change(function(){
+    $('.cl-po--upload-files').addClass('success-icon');
+  });
+});
+
+{% style %}
+.success-icon:before{
+  content: "\e911";
+  color: green;
+font-size:16px,
+}
+{% endstyle %}
