@@ -224,7 +224,7 @@
         "1643623843c412b659-1": {
           "type": "liquid",
           "settings": {
-            "code": "{{ 'success-icon.js' | asset_url | script_tag }}\n\n{% style %}\n@keyframes fadeIn {\n  from {opacity: 0;}\n  to {opacity: 1;}\n}\n.success-icon:before{\n  content: \"\\eb37\";\n  color: green;\n  font-size:16px;\n  animation-name: fadeIn ;\n  animation-duration: 3s;\n}\n.cl-po--upload-files div{\n  display: inline;\n}\n{% endstyle %}",
+            "code": "{{ 'success-icon.js' | asset_url | script_tag }}\n\n{% style %}\n@keyframes fadeIn {\n  from {opacity: 0;}\n  to {opacity: 1;}\n}\n.success-icon:before{\n  content: \"\\eb37\";\n  top: 3px;\n  position: relative;\n  color: green;\n  font-size:16px;\n  animation-name: fadeIn ;\n  animation-duration: 3s;\n}\n.cl-po--upload-files div{\n  display: inline;\n}\n{% endstyle %}",
             "width": "50%",
             "alignment": "center"
           }
