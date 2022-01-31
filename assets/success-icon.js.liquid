@@ -5,7 +5,7 @@
     $('.cl-po--upload-files').addClass('success-icon');
   });
 });
-*/
+
 
 $(document).ready(function (){
   setTimeout(function () {
@@ -15,5 +15,19 @@ $(document).ready(function (){
     	$('.cl-po--upload-files').addClass('success-icon');
   	});
   }, 500);
+});*/
+
+
+$(document).ready(function (){
+  
+const selectElement = document.querySelector('.cl-po--input input[type=file]');
+
+selectElement.addEventListener('change', (event) => {
+  const result = document.querySelector('.result');
+  result.textContent = `You like ${event.target.value}`;
 });
+  
+  
+});
+
 
