@@ -46,10 +46,10 @@
     "social_youtube": "https:\/\/www.youtube.com\/channel\/UCzoQFn6SP0y-YTgCNnrLIfA?view_as=subscriber",
     "social_fancy": "https:\/\/therapiedecken.de\/blogs\/news?nopreview",
     "favicon": "shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png",
-    "countdown_date": "January 31, 2022 00:00 GMT+0100",
+    "countdown_date": "February 15, 2022 00:00 GMT+0100",
     "enable_days_view": false,
     "loop_time": 0,
-    "announcement_countdown_enable": false,
+    "announcement_countdown_enable": true,
     "text_color_countdown": "#bb1d33",
     "product_countdown_enable": false,
     "icon_countdown_product": "<span class=\"icon-price-tags\"><\/span>",
@@ -88,12 +88,12 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
-          "background": "#bb1d33",
+          "background": "#dc0810",
           "text_color": "#ffffff",
-          "content": "Announcement bar text",
-          "link": ""
+          "content": "Valentinstag SALE ❤️ 10% Rabatt + Gratis Kissen mit Cove: <span style=\"font-weight: 12px\">LOVE<\/span> | Endet in",
+          "link": "shopify:\/\/collections\/erwachsene"
         }
       },
       "header": {
