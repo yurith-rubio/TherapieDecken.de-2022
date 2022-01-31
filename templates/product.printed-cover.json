@@ -224,7 +224,7 @@
         "1643623843c412b659-1": {
           "type": "liquid",
           "settings": {
-            "code": "{{ 'success-icon.js' | asset_url | script_tag }}\n\n{% style %}\n@keyframes fadeIn {\n  from {opacity: 0;}\n  to {opacity: 1;}\n}\n.icon-checkmark:before {\n  content: \"\\eada\";\n}\n.success-icon:before{\n  content:\"\";\ndisplay: inline-block;\n   height: 100px;\n   width: 35px;\n   border-bottom: 10px solid chartreuse;\n   border-right: 10px   solid chartreuse;\n   transform: rotate(45deg);\n  top: 3px;\n  position: relative;\n  color: green;\n  animation-name: fadeIn ;\n  animation-duration: 3s;\n}\n.cl-po--upload-files div{\n  display: inline;\n}\n{% endstyle %}",
+            "code": "{{ 'success-icon.js' | asset_url | script_tag }}\n\n{% style %}\n@keyframes fadeIn {\n  from {opacity: 0;}\n  to {opacity: 1;}\n}\n.icon-checkmark:before {\n  content: \"\\eada\";\n}\n.success-icon:before{\n  content: \"\";\ndisplay: inline-block;\nheight: 15px;\nwidth: 8px;\nborder-bottom: 3px solid green;\nborder-right: 3px solid green;\ntransform: rotate(45deg);\ntop: 3px;\nposition: relative;\ncolor: green;\nanimation-name: fadeIn;\nanimation-duration: 3s;\n}\n.cl-po--upload-files div{\n  display: inline;\n}\n{% endstyle %}",
             "width": "50%",
             "alignment": "center"
           }
