@@ -217,26 +217,6 @@
       "type": "back-to-top-product",
       "settings": {
       }
-    },
-    "16436238430a485620": {
-      "type": "advanced-content",
-      "blocks": {
-        "1643623843c412b659-1": {
-          "type": "liquid",
-          "settings": {
-            "code": "{{ 'success-icon.js' | asset_url | script_tag }}\n\n{% style %}\n@keyframes fadeIn {\n  from {opacity: 0;}\n  to {opacity: 1;}\n}\n.icon-checkmark:before {\n  content: \"\\eada\";\n}\n.success-icon:before{\n  content: \"\";\ndisplay: inline-block;\nheight: 13px;\nwidth: 7px;\nborder-bottom: 3px solid green;\nborder-right: 3px solid green;\ntransform: rotate(45deg);\nanimation-name: fadeIn;\nanimation-duration: 5s;\n}\n.cl-po--upload-files div{\n  display: inline;\n  padding-left:5px !important;\n}\n{% endstyle %}",
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "1643623843c412b659-1"
-      ],
-      "settings": {
-        "full_width": false,
-        "space_around": true
-      }
     }
   },
   "order": [
@@ -248,7 +228,6 @@
     "16305044894f9cd936",
     "1631652355e16d57e5",
     "product-recommendations",
-    "16346816958726f66c",
-    "16436238430a485620"
+    "16346816958726f66c"
   ]
 }
