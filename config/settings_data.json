@@ -227,7 +227,7 @@
       "popup": {
         "type": "popup",
         "settings": {
-          "show_popup": true,
+          "show_popup": false,
           "show_only_on_index": false,
           "show_only_for_visitors": false,
           "show_only_once": true,
