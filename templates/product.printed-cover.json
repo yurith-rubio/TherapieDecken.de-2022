@@ -224,7 +224,7 @@
         "1643623843c412b659-1": {
           "type": "liquid",
           "settings": {
-            "code": "{{ 'successful-upload.js' | assset_url | script_tag }}",
+            "code": "<script src=\"{{ 'successful-upload.js' | asset_url }}\" defer><\/script>",
             "width": "50%",
             "alignment": "center"
           }
