@@ -19,14 +19,13 @@ $(document).ready(function (){
 
 
 $(document).ready(function (){
-  
-  const selectElement = document.querySelector('.cl-po--input input[type=file]');
+  setTimeout(function () {
+    const selectElement = document.querySelector('.cl-po--input input[type=file]');
 
-  selectElement.addEventListener('change', (event) => {
-    console.log("This works!");
-  });
-  
-  
+    selectElement.addEventListener('change', (event) => {
+      console.log("This works!");
+    });
+  }, 500);
 });
 
 
