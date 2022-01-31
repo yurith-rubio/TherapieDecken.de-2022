@@ -224,7 +224,7 @@
         "1643623843c412b659-1": {
           "type": "liquid",
           "settings": {
-            "code": "{% style %}\n.cl-po--upload-files:before{\n  content: \"\";\n\n}\n{% endstyle %}",
+            "code": "{% style %}\n.cl-po--upload-files:before{\n  content: \"\\e911\";\n  color: green;\n}\n{% endstyle %}",
             "width": "50%",
             "alignment": "center"
           }
