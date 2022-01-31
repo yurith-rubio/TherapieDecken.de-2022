@@ -25,35 +25,7 @@
 }
 {%- endcapture -%}
 
-
-{% if product.handle == 'therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv' %}
-  {{ 'success-icon.js' | asset_url | script_tag }}
-
-  {% style %}
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-  .icon-checkmark:before {
-    content: "\eada";
-  }
-  .success-icon:before{
-    content: "";
-    display: inline-block;
-    height: 13px;
-    width: 7px;
-    border-bottom: 3px solid green;
-    border-right: 3px solid green;
-    transform: rotate(45deg);
-    animation-name: fadeIn;
-    animation-duration: 5s;
-  }
-  .cl-po--upload-files div{
-    display: inline;
-    padding-left:5px !important;
-  }
-  {% endstyle %}
-{% endif %}
+{% render 'success-icon' %}
 
 <script>
 
