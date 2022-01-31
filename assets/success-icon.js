@@ -1,5 +1,6 @@
 $(document).ready(function (){
-  $('.cl-po--upload-files').addClass('retesting');
-
+  if ($('cl-po--upload-files > div').length > 0){
+  	$('.cl-po--upload-files').addClass('retesting');
+  }
 });
 
