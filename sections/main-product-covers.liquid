@@ -30,7 +30,7 @@
   {{ 'success-icon.js' | asset_url | script_tag }}
 
 <script>
-  
+  console.log('here the code');
   $(document).ready(function (){
   console.log('here the code');
   const addSuccessIcon = $('.ProductForm input[type=file]');
@@ -40,6 +40,7 @@
 });
   
 </script>
+
   {% style %}
   @keyframes fadeIn {
     from {opacity: 0;}
