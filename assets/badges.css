@@ -48,17 +48,6 @@
 }
 
 /* FreeMask badge on Product Pages */
-.ProductBadge_Mask__Wrapper{
-  position: relative;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  z-index: 1;
-  height: 150px;
-  margin-bottom: -150px;
-  top: 0;
-  right: 30px;
-}
 .Prod_SmallBadge {
   position: relative;
   display: flex;
@@ -89,21 +78,7 @@
   }
 }
 @media only screen and (max-width: 640px) and (orientation: portrait){
-  .ProductBadge_Mask__Wrapper{
-    top: 200px;
-    right: 10px;
-  }
   .Prod_SmallBadge {
     padding: 0 30px 0 10px;
-  }
-}
-@media only screen and (min-width: 641px) and (max-width: 768px) and (orientation: portrait){
-  .ProductBadge_Mask__Wrapper{
-    top: 500px;
-  }
-}
-@media only screen and (min-width: 769px) and (orientation: portrait){
-  .ProductBadge_Mask__Wrapper{
-    top: 280px;
   }
 }
