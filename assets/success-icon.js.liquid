@@ -8,12 +8,12 @@
 */
 
 $(document).ready(function (){
-  const fi = $('.cl-po--input input[type=file]');
-  fi.val("");
-  
-  fi.change(function(){
-    console.log('clicked');
-    $('.cl-po--upload-files').addClass('success-icon');
-  });
+  setTimeout(function () {
+  	const fi = $('.cl-po--input input[type=file]');
+  	fi.change(function(){
+    	console.log('clicked');
+    	$('.cl-po--upload-files').addClass('success-icon');
+  	});
+  }, 500);
 });
 
