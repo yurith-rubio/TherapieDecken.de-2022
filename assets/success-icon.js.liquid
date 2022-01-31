@@ -1,7 +1,7 @@
 $(document).ready(function (){
   const addSuccessIcon = $('.ProductForm input[type=file]');
   addSuccessIcon.change(function(){
-    $('.cl-po--upload-files').addClass('success-icon');
+    $('.cl-po--upload-files').html('<span class="icon-checkmark"></span>');
   });
     
 });
