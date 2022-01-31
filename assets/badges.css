@@ -9,7 +9,7 @@
   margin-bottom: -80px;
   bottom: -190px;
 }
-.m21-small-badge {
+.Collection_SmallBadge {
   position: relative;
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@
   .CollectionBadge_Mask__Wrapper{
     bottom: -100px;
   }
-  .m21-small-badge {
+  .Collection_SmallBadge {
     left: 10px;
     padding: 0 10px 0 5px;
     font-size: 8px;
