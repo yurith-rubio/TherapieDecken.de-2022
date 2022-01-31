@@ -16,42 +16,6 @@
 }
 {%- endcapture -%}
 
-{% style %}
-.certificate-hp {
-  background: #5b5b5b;
-  height: 70px;
-  text-align: center;
-  position:relative;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.badge-certificate{
-  width: 100px;
-  position: relative;
-  margin: -60px 20px 0 20px;
-}
-.badge-certificate-text{
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 0;
-  line-height: normal;
-  padding-left: 20px;
-}
-@media screen  and (max-width: 640px) and (orientation: portrait) {
-  .badge-certificate-text{
-      font-size: 14px;
-  }
-}
-@media screen  and (max-width: 640px) and (orientation: landscape) {
-  .badge-certificate-text{
-      font-size: 14px;
-  }
-}
-
-{% endstyle %}
-
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="slideshow">
   <div class="Slideshow {% if section.settings.show_fullscreen %}Slideshow--fullscreen{% endif %}">
     <div class="Slideshow__Carousel {% if section.settings.show_arrow %}Slideshow__Carousel--withScrollButton{% endif %} Carousel Carousel--fadeIn {% if section.settings.show_fullscreen %}Carousel--fixed{% endif %} Carousel--insideDots"
