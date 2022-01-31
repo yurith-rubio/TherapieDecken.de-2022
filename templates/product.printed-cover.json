@@ -224,7 +224,7 @@
         "1643623843c412b659-1": {
           "type": "liquid",
           "settings": {
-            "code": "<script src=\"{{ 'successful-upload.js' | asset_url }}\" defer><\/script>",
+            "code": "{% style %}\n.cl-po--upload-files:before{\n  content: \"\";\n\n}\n{% endstyle %}",
             "width": "50%",
             "alignment": "center"
           }
