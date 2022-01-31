@@ -217,6 +217,26 @@
       "type": "back-to-top-product",
       "settings": {
       }
+    },
+    "16436238430a485620": {
+      "type": "advanced-content",
+      "blocks": {
+        "1643623843c412b659-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "{{ 'successful-upload.js' | assset_url | script_tag }}",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1643623843c412b659-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
@@ -228,6 +248,7 @@
     "16305044894f9cd936",
     "1631652355e16d57e5",
     "product-recommendations",
-    "16346816958726f66c"
+    "16346816958726f66c",
+    "16436238430a485620"
   ]
 }
