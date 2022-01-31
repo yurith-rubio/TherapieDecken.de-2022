@@ -45,6 +45,10 @@
   .Collection_ImgSmallBadge {
     width: 40%;
   }
+  .Collection_ImgSize_SmallBadge{
+    max-width: 70px;
+    height: auto;
+  }
 }
 
 /* FreeMask badge on Product Pages */
