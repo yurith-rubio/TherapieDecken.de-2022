@@ -9,15 +9,6 @@
   width: 40%;
   margin: auto;
 }
-.home_Christmas_svg_mask{
-  position: relative;
-  right: -70px;
-  top: -40px;
-}
-.home_Christmas_svg_deco{
-  position: absolute;
-  margin-left: -415px;
-}
 .mask_text{
   padding-left: 10px;
   padding-right: 30px;
