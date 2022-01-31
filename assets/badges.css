@@ -24,7 +24,7 @@
   height: 20px;
   color: white;
 }
-.m21-img-small-badge {
+.Collection_ImgSmallBadge {
   z-index: 2;
 }
 .m21-img-size-small-badge{
@@ -42,7 +42,7 @@
     font-size: 8px;
     height: 20px;
   }
-  .m21-img-small-badge {
+  .Collection_ImgSmallBadge {
     width: 40%;
   }
 }
