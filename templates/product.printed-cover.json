@@ -224,7 +224,7 @@
         "1643623843c412b659-1": {
           "type": "liquid",
           "settings": {
-            "code": "{% style %}\n.success-icon:before{\n  content: \"\\e911\";\n  color: green;\nfont-size:16px,\n}\n{% endstyle %}\n\n{{ 'success-icon.js' | asset_url | script_tag }}",
+            "code": "{% style %}\n.cl-po--upload-files:before{\n  content: \"\\e911\";\n  color: green;\nfont-size:16px,\n}\n{% endstyle %}\n\n{{ 'success-icon.js' | asset_url | script_tag }}",
             "width": "50%",
             "alignment": "center"
           }
