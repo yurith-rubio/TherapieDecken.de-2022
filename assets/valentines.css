@@ -9,11 +9,6 @@
   width: 40%;
   margin: auto;
 }
-.mask_text{
-  padding-left: 10px;
-  padding-right: 30px;
-  line-height: 1.1;
-}
 .button-cover{
   margin-top: 30px;
 }
@@ -22,9 +17,5 @@
   .home_promotional_content_wrapper{
     width: 86%;
     margin: auto;
-  }
-  .badge-certificate{
-    width: 80px !important;
-    margin: -40px 20px 0 20px !important;
   }
 }
