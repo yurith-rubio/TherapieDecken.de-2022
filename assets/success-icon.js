@@ -1,5 +1,6 @@
 $(document).ready(function (){
-  const i = $(".ProductForm input[type=file]");
-  console.log("yes: " + i);
+  $(".ProductForm input[type=file]").change(function(){
+  	console.log("a file was uploaded");
+  });
 });
 
