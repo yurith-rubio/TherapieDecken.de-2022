@@ -1,2 +1,5 @@
-$('.cl-po--upload-files').addClass('retesting');
+$(document).ready(function (){
+  $('.cl-po--upload-files').addClass('retesting');
+
+});
 
