@@ -62,7 +62,7 @@
     "promotional_hero_hp_cover": true,
     "promotional_collection_cover": false,
     "enable_collection_badge": true,
-    "enable_product_badge": false,
+    "enable_product_badge": true,
     "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-banner-2.jpg",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
