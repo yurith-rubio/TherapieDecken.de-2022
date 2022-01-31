@@ -8,8 +8,10 @@
 */
 
 $(document).ready(function (){
-  console.log('here the code');
-  $('.cl-po--input input[type=file]').change(function(){
+  const fi = $('.cl-po--input input[type=file]');
+  fi.value = "";
+  
+  fi.change(function(){
     console.log('clicked');
     $('.cl-po--upload-files').addClass('success-icon');
   });
