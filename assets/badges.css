@@ -48,6 +48,17 @@
 }
 
 /* FreeMask badge on Product Pages */
+.ProductBadge_Mask__Wrapper{
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  z-index: 1;
+  height: 150px;
+  margin-bottom: -150px;
+  top: 0;
+  right: 30px;
+}
 .Prod_SmallBadge {
   position: relative;
   display: flex;
