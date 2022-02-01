@@ -60,6 +60,7 @@
     right: 5%;
     display: inline-flex;
     justify-content: flex-end;
+    align-items: center;
 }
 .Prod_SmallBadge {
   position: relative;
