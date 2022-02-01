@@ -423,7 +423,7 @@
         "complete_purchase_button_label": "Kaufen",
         "cart": "Einkaufswagen",
         "back_to_cart": "Zurück zum Einkaufswagen",
-        "all_rights_reserved": "Alle Rechte vorbehalten Therapiedecken.de™ {{ year }}"
+        "all_rights_reserved": "Alle Rechte vorbehalten Therapiedecken.de™ {{ 'now' | date: \"%Y\" }}"
       },
       "contact": {
         "phone_tooltip": "Falls wir Sie zu Ihrer Bestellung kontaktieren müssen",
