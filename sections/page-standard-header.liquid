@@ -1,7 +1,7 @@
 <!-- section: page-standard-header.liquid -->
 {{ 'pages.css' | asset_url | stylesheet_tag}}
 
-<header class="PageHeader PageHeader--withBackground PageHeader--small">
+<header class="PageHeader PageHeader--withBackground PageHeader--small PageStandHeader">
   <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if section.settings.apply_overlay %}Image--contrast{% endif %} {% if section.settings.mobile_custom %}hidden-phone{% endif %}"
      data-optimumx="1.2"
      data-bgset="{{ section.settings.image | img_url: 'x600' }} 600w, {{ section.settings.image | img_url: '800x' }} 800w, {{ section.settings.image | img_url: '1200x' }} 1200w, {{ section.settings.image | img_url: '1400x' }} 1400w, {{ section.settings.image | img_url: '1600x' }} 1600w">
