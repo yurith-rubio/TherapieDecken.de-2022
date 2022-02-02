@@ -31,6 +31,15 @@ CURRENCY AND LANGUAGE SELECTORS
 --------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
 
+{% comment %} Added style for the space above that moved up when the Show/Hide Header was modified - Yurith {% endcomment %}
+{% style %}
+  {%- if template.name == 'product' -%}
+    .PageContainer{
+      padding-top: 100px;
+    }
+  {% endif %}
+{%- endstyle -%}
+
 {%- if section.settings.show_currency_selector and shop.enabled_currencies.size > 1 -%}
   {%- assign currency_selector = true -%}
 {%- endif -%}
