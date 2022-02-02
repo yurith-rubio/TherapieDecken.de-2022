@@ -33,7 +33,7 @@ CURRENCY AND LANGUAGE SELECTORS
 
 {% comment %} Added style for the space above that moved up when the Show/Hide Header was modified - Yurith {% endcomment %}
 {% style %}
-  {%- if template.name == 'product' -%}
+  {%- if template.name == 'page' or template.name == 'product' -%}
     .PageContainer{
       padding-top: 100px;
     }
