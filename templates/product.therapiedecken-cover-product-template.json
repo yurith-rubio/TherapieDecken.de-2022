@@ -27,20 +27,13 @@
             "show_payment_button": false
           }
         },
-        "share_buttons": {
-          "type": "share_buttons",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "9ca33747-4002-440e-9273-b17bca7f3f14": {
           "type": "suggested_upsell_selector",
+          "settings": {
+          }
+        },
+        "ba792966-7c49-41c6-b477-43289b7d064e": {
+          "type": "payment_methods",
           "settings": {
           }
         }
@@ -49,9 +42,8 @@
         "product_meta",
         "variant_selector",
         "buy_buttons",
-        "share_buttons",
-        "description",
-        "9ca33747-4002-440e-9273-b17bca7f3f14"
+        "9ca33747-4002-440e-9273-b17bca7f3f14",
+        "ba792966-7c49-41c6-b477-43289b7d064e"
       ],
       "settings": {
         "image_size": "large",
@@ -106,7 +98,7 @@
         "icons_duotone": "none",
         "subheading": "Nachhaltige Herstellung",
         "title": "Beste Qualität aus Europa",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/TherapieDecken.de_Gravity_Img9_1_1_-min.jpg",
         "image_position": "left",
         "content_html": "<p>Alle unsere Produkte werden ausschließlich in Europa hergestellt, die verwendete Baumwolle ist zertifiziert.\n<\/p>\nEs ist für uns wichtig, dass bei dem gesamten Herstellungsprozess nachhaltige Materialien verwendet werden und faire Arbeitsbedingungen herrschen. Mit der europäischen Herstellung halten wir Lieferketten kurz und verringern so Umweltbelastungen.",
