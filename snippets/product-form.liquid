@@ -17,7 +17,7 @@
 {%- assign selected_variant = product.selected_or_first_available_variant -%}
 
 {{ 'product-form.css' | asset_url | stylesheet_tag }}
-{{ 'druck-option-button-img.css' | asset_url | stylesheet_tag }}
+{{ 'druck-option-button-img.css', product:product | asset_url | stylesheet_tag }}
 
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
