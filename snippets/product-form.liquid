@@ -18,6 +18,14 @@
 
 {{ 'product-form.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .MoreOpt_Link{
+    width: 90px;
+	min-height: 100px;
+	background-color: lightblue;
+	display: inline-block;
+  }
+</style>
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
   {%- for option in product.options_with_values -%}
@@ -127,7 +135,7 @@
         {% endif %}  
       </li>
       {%- endfor -%}
-        <a class=">
+        <a class="MoreOpt_Link">
           <span class="MoreOpt_plusIcon icon-1"><span class="path1"></span><span class="path2"></span></span>
           <span>More Options</span>
     	</a>
