@@ -20,24 +20,25 @@
             "size_chart": ""
           }
         },
+        "f3054357-ef0a-4114-bec2-2633804121ef": {
+          "type": "shopify:\/\/apps\/live-product-options\/blocks\/app-block\/88bfdf40-5e27-4962-a966-70c8d1e87757",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_price_in_button": false,
             "show_payment_button": false
           }
-        },
-        "34eba6cf-66fd-4861-8bdd-2c99f98e8ac7": {
-          "type": "payment_methods",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "product_meta",
         "variant_selector",
-        "buy_buttons",
-        "34eba6cf-66fd-4861-8bdd-2c99f98e8ac7"
+        "f3054357-ef0a-4114-bec2-2633804121ef",
+        "buy_buttons"
       ],
       "settings": {
         "image_size": "large",
