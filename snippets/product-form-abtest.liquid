@@ -176,11 +176,12 @@
           class="SizeSwatch__Radio" type="radio" name="option-{{ forloop.parentloop.index0 }}"
           value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
           data-option-position="{{ option.position }}">
-        <label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">
-          {% if value == 'Komplettdruck' or value == 'Kopfdruck' %}
-          {% else %}
-          	{{ value }}
-          {% endif %}
+        <label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" 
+               class="SizeSwatch{% if value == 'Komplettdruck' or value == 'Kopfdruck' %} Druck_SizeSwatch{% endif %}">
+              {% if value == 'Komplettdruck' or value == 'Kopfdruck' %}
+              {% else %}
+                {{ value }}
+              {% endif %}
         </label>
         {% if value == 'Komplettdruck' or value == 'Kopfdruck' %}
         <div>{{ value }}</div>
