@@ -19,9 +19,7 @@
 {{ 'product-form.css' | asset_url | stylesheet_tag }}
 
 {% comment %}Style for 'Druck' button on the pet-printed template {% endcomment %}
-{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene' %}
-	{{ 'druck-option-button-img.css' | asset_url | stylesheet_tag }}
-{% endif%}
+{{ 'druck-option-button-img.css' | asset_url | stylesheet_tag }}
 
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
