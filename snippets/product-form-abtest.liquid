@@ -182,6 +182,9 @@
           	{{ value }}
           {% endif %}
         </label>
+        {% if value == 'Komplettdruck' or value == 'Kopfdruck' %}
+          	{{ value }}
+          {% endif %}
       </li>
       {%- endfor -%}
     </ul>
