@@ -176,8 +176,12 @@
           class="SizeSwatch__Radio" type="radio" name="option-{{ forloop.parentloop.index0 }}"
           value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
           data-option-position="{{ option.position }}">
-        <label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{
-          value }}</label>
+        <label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">
+          {% if value == 'Komplettdruck'%}
+          {% else %}
+          {{ value }}
+          {% endif %}
+        </label>
       </li>
       {%- endfor -%}
     </ul>
