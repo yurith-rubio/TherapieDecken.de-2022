@@ -183,7 +183,8 @@
     {% endfor %}
     
     {%- elsif block.settings.selector_mode == 'block' -%}
-    <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
+    <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight
+               {% if value == 'Komplettdruck' or value == 'Kopfdruck' %} Druck_SizeSwatchList{% endif%}">
       {%- for value in option.values -%}
       <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}
                  {% if value == 'Komplettdruck' or value == 'Kopfdruck' %} Druck_HorizontalList__Item{% endif%}">
