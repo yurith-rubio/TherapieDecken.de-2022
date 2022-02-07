@@ -58,20 +58,12 @@
 
 {% comment %}Style for 'Druck' button on the pet-printed template {% endcomment %}
 {% if product.handle == 'testing-printing' %}
-	{% for option in product.options %}
-        <style>
-          .SizeSwatchList .HorizontalList__Item .SizeSwatch{
-				background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/KOMPLETTDRUCK-newdog.jpg?v=1644230594");
-			}
-        </style>
-		{% if option.name == 'Druck'%}
-          {% style %}
-			.SizeSwatchList .HorizontalList__Item .SizeSwatch{
-				background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/KOMPLETTDRUCK-newdog.jpg?v=1644230594");
-			}
-          {% endstyle %}
-		{% endif %}
-	{% endfor %}
+	{% style %}
+		.SizeSwatchList input[value= Komplettdruck] + .HorizontalList__Item .SizeSwatch{
+			background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/KOMPLETTDRUCK-newdog.jpg?v=1644230594");
+		}
+    {% endstyle %}
+	
 {% endif%}
 
 <section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
