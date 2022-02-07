@@ -35,36 +35,7 @@
 
 </style>
 
-{{ 'druck-option-button-img.css' | asset_url | stylesheet_tag }}
-{% comment %}Style for 'Druck' button on the pet-printed template {% endcomment %}
-{% if product.handle == 'testing-printing' %}
-	{% style %}
-		.SizeSwatchList input[value="Komplettdruck"] + .SizeSwatch{
-			background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/KOMPLETTDRUCK-newdog.jpg?v=1644230594");
-			background-size: contain;
-		}
-		.SizeSwatchList input[value="Kopfdruck"] + .SizeSwatch{
-			background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/KOPFDRUCK-newdog.jpg?v=1644230581");
-			background-size: contain;
-		}
-		.Druck_SizeSwatch{
-		  min-width: 100px !important;
-          padding: 0 !important;
-          height: 100px;
 
-		}
-		.Druck_Value{
-		  text-transform: uppercase;
-		}
-		.Druck_SizeSwatchList{
-		  display: flex;
-		}
-		.Druck_HorizontalList__Item{
-		  display: block;
-		  text-align: center;
-		}
-    {% endstyle %}
-{% endif%}
 
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
