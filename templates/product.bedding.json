@@ -27,8 +27,15 @@
             "show_payment_button": false
           }
         },
-        "4e5b9df6-0c21-497d-95cc-be1d10177a8f": {
-          "type": "payment_methods",
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "share_buttons": {
+          "type": "share_buttons",
+          "disabled": true,
           "settings": {
           }
         }
@@ -37,7 +44,8 @@
         "product_meta",
         "variant_selector",
         "buy_buttons",
-        "4e5b9df6-0c21-497d-95cc-be1d10177a8f"
+        "description",
+        "share_buttons"
       ],
       "settings": {
         "image_size": "large",
@@ -61,7 +69,7 @@
         "text_color": "#3A3C3C",
         "image": "shopify:\/\/shop_images\/image2.jpg",
         "image_position": "right",
-        "content_html": "<ul>\n<li>Option 1: Set aus 1 x Sommerbezug 135 x 200 cm + 1 x Kissenbezug 80 x 80 cm<\/li>\n<li>Option 2: Set aus 1 x Sommerbezug 150 x 220 cm + 2 x Kissenbezug 80 x 80 cm<\/li>\n<li>Atmungsaktiver Sommerbezug für warme Nächte oder Menschen, die schnell schwitzen<\/li>\n<li>Auswahl zwischen Bettbezug im Standard, mit Schlaufen (Gravity) oder Reißverschlüssen (Balance)<\/li>\n<li>Decken- und Kissenbezug aus 100% Baumwolle<\/li>\n<li>Bei 40° in der Waschmaschine waschbar<\/li>\n<li>Deckenbezüge mit dem Gravity oder Balance Inlett kompatibel. Die Gravity oder Balance Decke erhalten Sie hier: <a href=\"https:\/\/therapiedecken.de\/pages\/therapiedecken\">Therapiedecken<\/a>.<\/li>\n<\/ul>",
+        "content_html": "<ul>\n<li>Option 1: Set aus 1 x Baumwollbezug 135 x 200 cm + 1 x Kissenbezug 80 x 80 cm<\/li>\n<li>Option 2: Set aus 1 x Baumwollbezug 150 x 220 cm + 2 x Kissenbezug 80 x 80 cm<\/li>\n<li>Atmungsaktiver Baumwollbezug für warme Nächte oder Menschen, die schnell schwitzen<\/li>\n<li>Auswahl zwischen Bettbezug im Standard, mit Schlaufen (Gravity) oder Reißverschlüssen (Balance)<\/li>\n<li>Decken- und Kissenbezug aus 100% Baumwolle<\/li>\n<li>Bei 40° in der Waschmaschine waschbar<\/li>\n<li>Deckenbezüge mit dem Gravity oder Balance Inlett kompatibel. Die Gravity oder Balance Decke erhalten Sie hier: <a href=\"https:\/\/therapiedecken.de\/pages\/therapiedecken\">Therapiedecken<\/a>.<\/li>\n<\/ul>",
         "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
         "button_style": false,
         "link_text": "",
