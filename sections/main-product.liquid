@@ -60,9 +60,9 @@
 {% if product.handle == 'testing-printing' %}
 	{% for option in product.options %}
         <style>
-          .SizeSwatch{
-            background-color:red;
-          }
+          .SizeSwatchList .HorizontalList__Item .SizeSwatch{
+				background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/KOMPLETTDRUCK-newdog.jpg?v=1644230594");
+			}
         </style>
 		{% if option.name == 'Druck'%}
           {% style %}
