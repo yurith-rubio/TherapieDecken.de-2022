@@ -346,7 +346,7 @@
                   </div>
 
                 {%- when 'variant_selector' -%}
-                  {%- render 'product-form-abtest', block: block, product: product -%}
+                  {%- render 'product-form', block: block, product: product -%}
           
                 {%- when 'quantity_selector' -%}
                   <div class="ProductForm__QuantitySelector" {{ block.shopify_attributes }}>
