@@ -58,6 +58,11 @@
 
 {% comment %}Style for 'Druck' button on the pet-printed template {% endcomment %}
 {% if product.handle == 'testing-printing' %}
+<style>
+  body{
+    background-color:red;
+  }
+</style>
 	{% for option in product.options %}
 		{% if option.name == 'Druck'%}
           {% style %}
