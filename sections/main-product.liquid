@@ -58,9 +58,13 @@
 
 {% comment %}Style for 'Druck' button on the pet-printed template {% endcomment %}
 {% if product.handle == 'testing-printing' %}
-  {% style %}
-	
-  {% endstyle %}
+	{% for option in product.options %}
+		{% if option.name == 'Druck'%}
+          {% style %}
+			
+          {% endstyle %}
+		{% endif %}
+	{% endfor %}
 {% endif%}
 
 <section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
