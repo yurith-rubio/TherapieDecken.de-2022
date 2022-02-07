@@ -31,13 +31,19 @@
           "type": "suggested_upsell_selector",
           "settings": {
           }
+        },
+        "a628faab-345a-4826-bfcb-92db79b28cbb": {
+          "type": "payment_methods",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "product_meta",
         "variant_selector",
         "buy_buttons",
-        "9ca33747-4002-440e-9273-b17bca7f3f14"
+        "9ca33747-4002-440e-9273-b17bca7f3f14",
+        "a628faab-345a-4826-bfcb-92db79b28cbb"
       ],
       "settings": {
         "image_size": "large",

@@ -18,6 +18,8 @@ while for size, we use it to display a size chart (if applicable)
 
 {%- assign selected_variant = product.selected_or_first_available_variant -%}
 
+{{ 'product-form.css' | asset_url | stylesheet_tag }}
+
 <!-- STEP 1. ASSIGN EXTRA PRODUCTS -->
 {% assign gravity_inlett_product = all_products['inlett'] %}
 {% assign balance_inlett_product = all_products['balance-gewichtsdecken-inlett'] %}
@@ -49,7 +51,7 @@ while for size, we use it to display a size chart (if applicable)
           {%- assign size_chart_page = block.settings.size_chart -%}
 
           <span class="ProductForm__Label">
-            {{ option.name }}:
+            {{ option.position }}. {{ option.name }}:
 
             <!-- COMMENT WITH FELIX. I am hiding the swatch value -->
             {% comment %}
@@ -80,8 +82,7 @@ while for size, we use it to display a size chart (if applicable)
               {% if option.name == "Bezugsart" or option.name == "Design" or option.name == "Farbe" or option.name == "Bezugssystem" %}
               {%- assign downcase_value = value | downcase -%}
 
-               <li class="HorizontalList__Item MainVariant_container">
-
+               <li class="HorizontalList__Item MainVariant_container {% if value==option.selected_value %}yellow_style{% endif %}">
                 <input id="option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
                   class="ColorSwatch__Radio" type="radio" name="option-{{ parent_index }}"
                   value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}

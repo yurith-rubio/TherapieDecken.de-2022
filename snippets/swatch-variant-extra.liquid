@@ -2,7 +2,7 @@
 {% comment %} Extra Variant for Set Products - Yurith {% endcomment %}
 
 <span class="ProductForm__Label">
-      Weitere Bezugsart:
+      4. Weitere Bezugsart:
 </span>
       
 {% assign additional_current_variant = additional_product.selected_or_first_available_variant %}
@@ -15,7 +15,7 @@
       {%- for value in option.values -%}
         {%- assign downcase_value = value | downcase -%}
 
-         <li class="HorizontalList__Item AdditionalVariant_container">
+         <li class="HorizontalList__Item AdditionalVariant_container {% if value == option.selected_value %}yellow_style{% endif %}">
           <input id="AdditionalProductSelect-option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
             class="ColorSwatch__Radio" type="radio" name="additional_Bezugsart"
             value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}>

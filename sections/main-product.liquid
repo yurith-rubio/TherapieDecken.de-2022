@@ -116,7 +116,7 @@
                 {% assign percentage = saving | at_least: percentage %}
                 {% endfor %} 
               {% if product.title != 'Geschenkgutschein' %}
-              	<div class="bf-badge">-{{ percentage }}%</div>
+              <div class="bf-badge">-{{ percentage }}%</div>
               {% endif %}
               <div class="AspectRatio AspectRatio--withFallback" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }};">
                 {% assign image_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
@@ -346,7 +346,7 @@
                   </div>
 
                 {%- when 'variant_selector' -%}
-                  {%- render 'product-form', block: block, product: product -%}
+                  {%- render 'product-form-abtest', block: block, product: product -%}
           
                 {%- when 'quantity_selector' -%}
                   <div class="ProductForm__QuantitySelector" {{ block.shopify_attributes }}>
@@ -435,11 +435,14 @@
                 {%- when 'store_pickup' -%}
                   {%- comment -%}The availability container will be added automatically if there is store pickup available{%- endcomment -%}
                   <div class="ProductMeta__StoreAvailabilityContainer" {{ block.shopify_attributes }}></div>
-
+          
+          		{% when 'payment_methods' %}
+                  {% render 'product_payment_methods' %}
+          			  
               {%- endcase -%}
             {%- endfor -%}
           
-            {% render 'guarantee-exceptions' %}
+          	{% render 'guarantee-exceptions' %}
           
           {%- endform -%}
 
@@ -651,6 +654,17 @@ This is the root container for the zoom functionality. Must not be removed, as o
     {
       "type": "store_pickup",
       "name": "Local pickup availability",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Show customers where they can pick up the product. [Learn more](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/local-methods/local-pickup#show-pickup-availability-to-your-customers)"
+        }
+      ]
+    },
+    {
+      "type": "payment_methods",
+      "name": "Payment Methods",
       "limit": 1,
       "settings": [
         {
