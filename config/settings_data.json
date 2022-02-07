@@ -46,10 +46,10 @@
     "social_youtube": "https:\/\/www.youtube.com\/channel\/UCzoQFn6SP0y-YTgCNnrLIfA?view_as=subscriber",
     "social_fancy": "https:\/\/therapiedecken.de\/blogs\/news?nopreview",
     "favicon": "shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png",
-    "countdown_date": "January 31, 2022 00:00 GMT+0100",
+    "countdown_date": "February 15, 2022 00:00 GMT+0100",
     "enable_days_view": false,
     "loop_time": 0,
-    "announcement_countdown_enable": false,
+    "announcement_countdown_enable": true,
     "text_color_countdown": "#bb1d33",
     "product_countdown_enable": false,
     "icon_countdown_product": "<span class=\"icon-price-tags\"><\/span>",
@@ -59,9 +59,10 @@
     "checkout_countdown_enable": false,
     "checkout_countdown_text": "⚠️ Auf Grund unserer Pre Black Friday Angebote ist Ihr Warenkorb für nur",
     "left_product_inventory": true,
-    "promotional_hero_hp_cover": false,
+    "promotional_hero_hp_cover": true,
     "promotional_collection_cover": false,
-    "enable_product_badge": false,
+    "enable_collection_badge": true,
+    "enable_product_badge": true,
     "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-banner-2.jpg",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
@@ -89,10 +90,10 @@
         "settings": {
           "enable_bar": true,
           "home_page_only": false,
-          "background": "#bb1d33",
+          "background": "#dc0810",
           "text_color": "#ffffff",
-          "content": "Announcement bar text",
-          "link": ""
+          "content": "Valentinstag <b>SALE<\/b> ❤️ 10% Rabatt + Gratis Kissen mit Code: <span style=\"background-color:white; color:#DC0810; padding: 2px 5px; border-radius:3px; font-weight:bold\">LOVE<\/span> | Endet in",
+          "link": "https:\/\/therapiedecken.de\/collections\/valentinstag-therapiedecken-kollektion"
         }
       },
       "header": {
@@ -226,7 +227,7 @@
       "popup": {
         "type": "popup",
         "settings": {
-          "show_popup": true,
+          "show_popup": false,
           "show_only_on_index": false,
           "show_only_for_visitors": false,
           "show_only_once": true,
