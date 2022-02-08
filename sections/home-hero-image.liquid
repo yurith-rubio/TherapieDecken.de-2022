@@ -62,7 +62,7 @@
                     {%- assign has_two_buttons = false -%}
                   {%- endif -%}
                   {%- if block.settings.button_1_text != blank or block.settings.button_2_text != blank -%}
-                    <div class="Slideshow__Content SectionHeader__ButtonWrapper">
+                    <div class="SectionHeader__ButtonWrapper">
                       <div class="ButtonGroup ButtonGroup--spacingSmall {% if has_two_buttons %}ButtonGroup--sameSize{% endif %}">
                         {%- if block.settings.button_1_text != blank -%}
                           <a href="{{ block.settings.button_1_link }}" class="Button Button--primary">{{ block.settings.button_1_text | escape }}</a>
