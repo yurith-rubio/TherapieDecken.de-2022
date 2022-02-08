@@ -39,8 +39,8 @@
   }
 }
 @media screen  and (max-width: 768px) {
-  .badge-certificate-text{
-      font-size: 14px;
+  .badge-certificate{
+    width: 90px;
   }
   .u_h1_main{
     font-size:30px;
@@ -48,6 +48,6 @@
     margin-bottom:0
   }
   .u-h1-submain{
-    font-size:15px;
+    font-size:20px;
   }
 }
