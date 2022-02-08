@@ -21,7 +21,6 @@
     <div class="Slideshow__Carousel {% if section.settings.show_arrow %}Slideshow__Carousel--withScrollButton{% endif %} Carousel Carousel--fadeIn {% if section.settings.show_fullscreen %}Carousel--fixed{% endif %} Carousel--insideDots"
          data-flickity-config='{{ flickity_options }}'>
       {%- for block in section.blocks -%}
-        {%- capture slide_content -%}
           {%- assign mobile_image = block.settings.mobile_image | default: block.settings.image -%}
           {%- if mobile_image -%}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio{% endunless %} hidden-tablet-and-up"
@@ -42,8 +41,6 @@
               {{ placeholder | placeholder_svg_tag: 'Slideshow__Image PlaceholderBackground__Svg' }}
             </div>
           {%- endif -%}
-
-          {%- capture slideshow_content -%}
 			
             {% if settings.promotional_hero_hp_cover %}
                 <div class="Centered_Promotional">
@@ -82,17 +79,6 @@
                 {%- endif -%}
             {% endif %}
    
-          {%- endcapture -%}
-
-          {%- if slideshow_content != blank -%}
-            <div class="Slideshow__Content Slideshow__Content--{{ block.settings.content_position }}">
-              <header class="SectionHeader">
-                {{ slideshow_content }}
-              </header>
-            </div>
-          {%- endif -%}
-        {%- endcapture -%}
-
         {%- comment -%}This code allows to cover a common use case where merchant would like to have a clickable image{%- endcomment -%}
 
         {%- if block.settings.button_1_text == blank and block.settings.button_1_link != blank -%}
