@@ -728,7 +728,7 @@
         "type": "checkbox",
         "id": "enable_collection_badge",
         "label": "Enable Promotional Badge on Collection Pages",
-        "info": "For exception rules: https:\/\/therapiedecken.myshopify.com\/admin\/themes\/120441634955?key=snippets\/collection-promotional-badge.liquid",
+        "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/120441634955?key=snippets\/collection-promotional-badge.liquid)",
         "default": false
       },
       {
