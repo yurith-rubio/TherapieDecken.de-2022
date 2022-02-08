@@ -99,11 +99,6 @@
         {%- endif -%}
       {%- endfor -%}
     </div>
-    {%- if section.settings.show_arrow -%}
-      <button data-href="#section-{{ section.id }}-end" class="Slideshow__ScrollButton RoundButton RoundButton--medium" aria-label="{{ 'general.accessibility.scroll_to_content' | t }}" data-animate-bottom>
-        {%- render 'icon' with 'arrow-bottom' -%}
-      </button>
-    {%- endif -%}
   </div>
   <div class="certificate-hp">
     <p class="badge-certificate-text">#1 Test- & Preis-Leistungs-Sieger aller Gewichtsdecken</p>
