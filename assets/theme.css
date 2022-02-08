@@ -5658,7 +5658,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .SectionHeader__ButtonWrapper {
   margin-top: 20px;
-  padding: 0 24px;
+  padding: 0 10px;
 }
 
 .SectionHeader__IconHolder {
@@ -5711,7 +5711,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
   .SectionHeader__ButtonWrapper {
     margin-top: 30px;
-    padding: 0 24px;
+    padding: 0 10px;
   }
 
   .SectionFooter {
