@@ -5710,6 +5710,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
   .SectionHeader__ButtonWrapper {
     margin-top: 30px;
+    padding: 0 24px;
   }
 
   .SectionFooter {
