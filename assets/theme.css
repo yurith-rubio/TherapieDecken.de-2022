@@ -10912,11 +10912,6 @@ a.Link-Button-General:hover {
     height: calc(var(--window-height) - (var(--header-height) * var(--header-is-not-transparent, 0)) - var(--announcement-bar-height, 0px));
     max-height: 80vh;
   }
-  @media screen and (max-width: 768px) {
-    .js .Slideshow--fullscreen {
-    	max-height: 80vh;
-  	}
-  }
 }
 /* Slideshow transition are handled in JavaScript, so while we use Flickity, we need to disable any transition */
 .js .Slideshow__Carousel .Slideshow__Slide {
