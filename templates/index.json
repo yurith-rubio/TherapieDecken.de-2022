@@ -1,5 +1,35 @@
 {
   "sections": {
+    "1644318577266b4344": {
+      "type": "home-hero-image",
+      "blocks": {
+        "1644318577f270a600-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/new-collection-autumn-2021-desktop.jpg",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1644318577f270a600-0"
+      ],
+      "settings": {
+        "show_fullscreen": true,
+        "show_arrow": false,
+        "autoplay": false,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "title": "Tell your story"
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "disabled": true,
@@ -27,36 +57,6 @@
         "show_fullscreen": true,
         "show_arrow": false,
         "autoplay": false,
-        "cycle_speed": 5,
-        "text_color": "#ffffff",
-        "title": "Tell your story"
-      }
-    },
-    "1644318577266b4344": {
-      "type": "home-hero-image",
-      "blocks": {
-        "1644318577f270a600-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/new-collection-autumn-2021-desktop.jpg",
-            "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "Tell your story",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1644318577f270a600-0"
-      ],
-      "settings": {
-        "show_fullscreen": false,
-        "show_arrow": false,
-        "autoplay": true,
         "cycle_speed": 5,
         "text_color": "#ffffff",
         "title": "Tell your story"
@@ -343,8 +343,8 @@
     }
   },
   "order": [
-    "slideshow",
     "1644318577266b4344",
+    "slideshow",
     "1629889121f13d5b1a",
     "16298891291acfefaf",
     "1630318003d3f950bd",
