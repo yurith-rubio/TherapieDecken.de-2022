@@ -58,6 +58,11 @@
                 {%- endif -%}
 
                   {%- if block.settings.title != blank -%}
+                    <style>
+                        .u-h1-main{
+                          font-size: 50px;
+                        }
+                      </style>
                       <span class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1-main">{{ block.settings.title | escape }}</span></h1>
                   {%- endif -%}
 
@@ -127,10 +132,6 @@
    #section-{{ section.id }} .flickity-page-dots {
     color: {{ section.settings.text_color }};
   }
-  .u-h1-main{
-    font-size: 50px;
-  }
-
 </style>
 
 {% schema %}
