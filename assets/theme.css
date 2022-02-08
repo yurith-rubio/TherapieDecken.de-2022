@@ -10945,6 +10945,7 @@ a.Link-Button-General:hover {
   }
 }
 .Slideshow__Content {
+  max-width: 1400px;
   position: absolute;
   padding: 0 24px;
   width: 100%;
