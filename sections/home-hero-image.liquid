@@ -55,12 +55,12 @@
                     
                 {%- if block.settings.title != blank -%}
                     {% style %}
-                      .u-h1-main{
+                      .u_h1_main{
       					font-size:50px
                       	line-height: 1.2;
                       }
                     {% endstyle %}
-                   <h1 class="SectionHeader__Heading Heading u-h1-main">{{ block.settings.title }}</h1>
+                   <h1 class="SectionHeader__Heading Heading u_h1_main">{{ block.settings.title }}</h1>
                 {%- endif -%}
                   {%- if block.settings.button_1_text != blank and block.settings.button_2_text != blank -%}
                     {%- assign has_two_buttons = true -%}
