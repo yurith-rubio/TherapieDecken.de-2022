@@ -54,13 +54,6 @@
                 {%- endif -%}
                     
                 {%- if block.settings.title != blank -%}
-                    {% style %}
-                      .u_h1_main{
-      					font-size:3.5rem;
-                      	line-height: 1.2;
-      					margin-top: 10px;
-                      }
-                    {% endstyle %}
                    <h1 class="Heading u_h1_main">{{ block.settings.title }}</h1>
                 {%- endif -%}
                   {%- if block.settings.button_1_text != blank and block.settings.button_2_text != blank -%}
