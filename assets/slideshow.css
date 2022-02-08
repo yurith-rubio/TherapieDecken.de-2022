@@ -29,13 +29,18 @@
   .badge-certificate-text{
       font-size: 14px;
   }
-  .u_h1_main{
-    font-size:30px;
-    margin-top: 10px;
-  }
 }
 @media screen  and (max-width: 640px) and (orientation: landscape) {
   .badge-certificate-text{
       font-size: 14px;
+  }
+}
+@media screen  and (max-width: 640px) {
+  .badge-certificate-text{
+      font-size: 14px;
+  }
+  .u_h1_main{
+    font-size:30px;
+    margin-top: 10px;
   }
 }
