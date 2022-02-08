@@ -54,7 +54,7 @@
       			</div>
             {% else %}
                 {%- if block.settings.subheading != blank -%}
-                  <h1><span class="SectionHeader__SubHeading Heading u-h6">{{ block.settings.subheading | escape }}&nbsp;</span><br>
+                  <span class="SectionHeader__SubHeading Heading u-h6">{{ block.settings.subheading | escape }}&nbsp;</span><br>
                 {%- endif -%}
 
                   {%- if block.settings.title != blank -%}
@@ -62,8 +62,8 @@
                         .u-h1-main{
                           font-size: 50px;
                         }
-                      </style>
-                      <div class="SectionHeader__Heading Heading u-h1-main">{{ block.settings.title | escape }}</div></h1>
+                    </style>
+                    <h1><div class="SectionHeader__Heading Heading u-h1-main">{{ block.settings.title | escape }}</div></h1>
                   {%- endif -%}
 
                   {%- if block.settings.button_1_text != blank and block.settings.button_2_text != blank -%}
