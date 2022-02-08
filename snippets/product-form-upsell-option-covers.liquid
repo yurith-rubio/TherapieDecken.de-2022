@@ -19,6 +19,7 @@ while for size, we use it to display a size chart (if applicable)
 {%- assign selected_variant = product.selected_or_first_available_variant -%}
 
 {{ 'product-form.css' | asset_url | stylesheet_tag }}
+{% render 'druck-option-button-img' %}
 
 <!-- STEP 1. ASSIGN EXTRA PRODUCTS -->
 {% assign gravity_inlett_product = all_products['inlett'] %}
