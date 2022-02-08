@@ -29,6 +29,11 @@
   .badge-certificate-text{
       font-size: 14px;
   }
+  .u_h1_main{
+    font-size:3.5rem;
+    line-height: 1.2;
+    margin-top: 10px;
+  }
 }
 @media screen  and (max-width: 640px) and (orientation: landscape) {
   .badge-certificate-text{
