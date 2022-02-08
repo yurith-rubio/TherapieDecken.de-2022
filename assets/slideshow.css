@@ -25,6 +25,9 @@
   line-height: 1.2;
   margin-top: 10px;
 }
+.u-h1-submain{
+  font-size:20px;
+}
 @media screen  and (max-width: 640px) and (orientation: portrait) {
   .badge-certificate-text{
       font-size: 14px;
@@ -43,5 +46,8 @@
     font-size:30px;
     margin-top: 0;
     margin-bottom:0
+  }
+  .u-h1-submain{
+    font-size:15px;
   }
 }
