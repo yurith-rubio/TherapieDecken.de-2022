@@ -8,11 +8,11 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/new-collection-autumn-2021-desktop.jpg",
             "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "Tell your story",
-            "button_1_text": "",
-            "button_1_link": "",
+            "content_position": "middleLeft",
+            "subheading": "Dank Gewichtsdecke",
+            "title": "Schlaf verbessern, Stress abbauen & Wohlbefinden steigern",
+            "button_1_text": "Mehr erfahren",
+            "button_1_link": "https:\/\/therapiedecken.de\/collections\/valentinstag-therapiedecken-kollektion",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -23,11 +23,7 @@
       ],
       "settings": {
         "show_fullscreen": true,
-        "show_arrow": false,
-        "autoplay": false,
-        "cycle_speed": 5,
-        "text_color": "#ffffff",
-        "title": "Tell your story"
+        "text_color": "#ffffff"
       }
     },
     "slideshow": {
@@ -58,8 +54,7 @@
         "show_arrow": false,
         "autoplay": false,
         "cycle_speed": 5,
-        "text_color": "#ffffff",
-        "title": "Tell your story"
+        "text_color": "#ffffff"
       }
     },
     "1629889121f13d5b1a": {
