@@ -1,5 +1,6 @@
 {{ 'suggested_upsell_product.css' | asset_url | stylesheet_tag }}
 
+{% comment %}Find comparable product by title - Suggested Pillow Upsell on Cover Product Pages {% endcomment %}
 {% if product.title contains 'Therapiedecken Baumwollbezug' %}
 	{% assign cover_title_base = product.title | remove: 'Therapiedecken Baumwollbezug' | strip %}
 {% endif %}
@@ -9,6 +10,18 @@
 {% if product.title contains 'Therapiedecken Basic Bezug' %}
 	{% assign cover_title_base = product.title | remove: 'Therapiedecken 4-Jahreszeiten Bezug' | strip %}
 {% endif %}
+
+{% comment %}Find comparable product by title - Suggested Pillow Upsell on Cover Product Pages {% endcomment %}
+{% if product.title contains 'Gesundheitskissen für Erwachsene' %}
+	{% assign pillow_title_base = product.title | remove: 'Blaues Gesundheitskissen für Erwachsene' | strip %}
+{% endif %}
+{% if product.title contains 'Therapiedecken Basic Bezug' %}
+	{% assign cover_title_base = product.title | remove: 'Therapiedecken Basic Bezug' | strip %}
+{% endif %}
+{% if product.title contains 'Therapiedecken Basic Bezug' %}
+	{% assign cover_title_base = product.title | remove: 'Therapiedecken 4-Jahreszeiten Bezug' | strip %}
+{% endif %}
+
 
 {% layout none %}
 {% paginate collections['Therapiekissen'].products by 1000 %}
