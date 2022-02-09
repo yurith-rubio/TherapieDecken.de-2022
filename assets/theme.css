@@ -3150,9 +3150,6 @@ select::-ms-expand {
   margin-right: 0;
 }
 
-.HorizontalList__Item[aria-haspopup="true"] > a:after{
-  content: "test"
-}
 @media screen and (min-width: 1140px) {
   .HorizontalList--spacingExtraLoose {
     margin-left: -21px;
