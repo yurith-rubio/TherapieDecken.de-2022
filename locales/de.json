@@ -602,7 +602,8 @@
         "order_status_confirmed_order_with_email_and_phone_payment": "Sie haben eine Zahlung für Ihre Bestellung {{ date }} vorgenommen.",
         "order_status_updates_with_email": "Sie erhalten Updates zu Versand und Lieferung per E-Mail.",
         "order_status_updates_with_phone": "Sie erhalten Updates zu Versand und Lieferung per SMS.",
-        "order_status_updates_with_email_and_phone": "Sie erhalten Updates zu Versand und Lieferung per E-Mail und SMS."
+        "order_status_updates_with_email_and_phone": "Sie erhalten Updates zu Versand und Lieferung per E-Mail und SMS.",
+        "contact_us_html": "Benötigen Sie Hilfe? {{ contact_us }}"
       },
       "order_payment_collection": {
         "checkout_review_and_pay": "Ihre Bestellung {{ order_name }} wurde aktualisiert. Überprüfen Sie diese Änderungen und bezahlen Sie anschließend, um Ihre Bestellung zu bestätigen.",
