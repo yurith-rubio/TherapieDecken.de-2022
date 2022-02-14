@@ -1,0 +1,155 @@
+{
+  "sections": {
+    "main": {
+      "type": "therapiedecken-stress",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1634848927f18760e6": {
+      "type": "page-standard-header",
+      "settings": {
+        "custom_title": false,
+        "custom_title_text": "Customize Title if needed",
+        "image": "shopify:\/\/shop_images\/cover-image-1200x600px-desktop.jpg",
+        "mobile_custom": true,
+        "image_mobile": "shopify:\/\/shop_images\/cover-image-750x887px-mobile.jpg",
+        "apply_overlay": true,
+        "review_starts": true,
+        "content": "<p>99% Kundenzufriedenheit<\/p>"
+      }
+    },
+    "163654850371310cac": {
+      "type": "content-single-column",
+      "settings": {
+        "block_style": false,
+        "margin_top": "80px",
+        "bg-color": "",
+        "bg-color-text": "#ffffff",
+        "text_align": "center",
+        "subheading": "",
+        "title": "Gewichtsdecke testen und bei Nichtgefallen zurücksenden",
+        "content": "<p>In den 28 Tage Probeschlafen können Sie sich ganz entspannt und in Ruhe an Ihre neue Decke gewöhnen.<br\/><\/p>",
+        "content_html": "<p>ERASE the content of the block ABOVE is you want to use this block<\/p>",
+        "add_image": false,
+        "info_after_image": false,
+        "content2": "<p>Use when wanting text under image<\/p>",
+        "content_html2": "<p>ERASE the content of the block ABOVE is you want to use this block<\/p>",
+        "button_style": true,
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "1636561317d4cfaf6e": {
+      "type": "icons-custom",
+      "blocks": {
+        "c1686db4-2142-4f6d-94a9-e26d5b7b00df": {
+          "type": "icons-duotone",
+          "settings": {
+            "icons_duotone": "different-weights",
+            "title_icon": "Verschiedene Gewichtsklassen",
+            "content_icon": "<p>Unsere Therapiedecken werden in verschiedenen Größen und Gewichten gefertigt, sodass jeder die richtige Gewichtsdecke für sich findet.<\/p>"
+          }
+        },
+        "b01f9c72-e60b-46ee-ac09-f544bd14da4e": {
+          "type": "icons-duotone",
+          "settings": {
+            "icons_duotone": "handcrafted",
+            "title_icon": "Liebevolle Handarbeit",
+            "content_icon": "<p>Unsere Gewichtsdecken werden in sorgfältiger Handarbeit individuell für Sie angefertigt.<\/p>"
+          }
+        },
+        "ab047b41-2051-4190-b8ec-3d3a98be2285": {
+          "type": "icons-duotone",
+          "settings": {
+            "icons_duotone": "free-exchange",
+            "title_icon": "Kostenloser Umtausch",
+            "content_icon": "<p>Sollte Ihre Gewichtsdecke zu leicht oder zu schwer sein, tauschen wir diese kostenlos gegen ein anderes Gewicht oder Modell um!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c1686db4-2142-4f6d-94a9-e26d5b7b00df",
+        "b01f9c72-e60b-46ee-ac09-f544bd14da4e",
+        "ab047b41-2051-4190-b8ec-3d3a98be2285"
+      ],
+      "settings": {
+        "bg-color": "",
+        "margin-top": "-50px",
+        "margin-top-mobile": "inehrit",
+        "bg-color-icons": "",
+        "icons-size": "40px",
+        "icons-color": "#fac636",
+        "text-color": "#3a3c3c",
+        "mobile-style-glider": true,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "1631197109b2759aaf": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "",
+        "title": "28 Tage Probeschlafen",
+        "image": "shopify:\/\/shop_images\/28-days-trial-450x300px.jpg",
+        "image_position": "right",
+        "content_html": "",
+        "content_rich": "<p>Wir garantieren Ihnen, dass sich die Qualität Ihres Schlafes verbessern wird! Das 28 Tage Probeschlafen beginnt erst ab Erhalt Ihrer Decke - bei Nichtgefallen können Sie die Decke ganz einfach zurücksenden oder kostenlos auf eine andere Decke tauschen.<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "1631197250ed5d793f": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "",
+        "title": "Unser Versprechen",
+        "image": "shopify:\/\/shop_images\/relax-450x300px.jpg",
+        "image_position": "left",
+        "content_html": "",
+        "content_rich": "<p>Dank hochwertiger und handgefertigter Gewichtsdecken innerhalb kürzester Zeit Ihren Schlaf revolutionieren. Durch das Auflegen der gewichteten Therapiedecke wird die Ausschüttung des Glückshormons Serotonin und des Schlafhormons Melatonin gefördert und die Produktion der Stresshormone gesenkt. Das Ein- und Durchschlafen wird erleichtert, sowie innere Unruhe und Stress abgebaut.<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "1636562629a5c0533d": {
+      "type": "button-block",
+      "settings": {
+        "bg-color": "#ffffff",
+        "button_text": "Jetzt 28 Tage Probeschlafen",
+        "button_url": "shopify:\/\/pages\/fur-wen-benotigen-sie-eine-therapiedecke",
+        "spacer_top": "0px",
+        "spacer_bottom": "50px"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1634848927f18760e6",
+    "163654850371310cac",
+    "1636561317d4cfaf6e",
+    "1631197109b2759aaf",
+    "1631197250ed5d793f",
+    "1636562629a5c0533d"
+  ]
+}
