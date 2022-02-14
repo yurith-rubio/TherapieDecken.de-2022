@@ -46,7 +46,7 @@
         "c1686db4-2142-4f6d-94a9-e26d5b7b00df": {
           "type": "icons-duotone",
           "settings": {
-            "icons_duotone": "different-weights",
+            "icons_duotone": "vergleichen-sie",
             "title_icon": "Vergleichen Sie sich nicht mit anderen Menschen",
             "content_icon": "<p>Akzeptieren Sie sich so wie Sie sind, auch wenn Sie mal einen schlechten Tag haben und sich erschöpft und ausgelaugt fühlen<\/p>"
           }
@@ -54,7 +54,7 @@
         "b01f9c72-e60b-46ee-ac09-f544bd14da4e": {
           "type": "icons-duotone",
           "settings": {
-            "icons_duotone": "handcrafted",
+            "icons_duotone": "erfreuen-sie",
             "title_icon": "Erfreuen Sie sich an den kleinen Dingen",
             "content_icon": "<p>Versuchen Sie auch kleine Erfolge und glückliche Momente wertzuschätzen, sich an diesen zu erfreuen und an ihnen festzuhalten<\/p>"
           }
@@ -62,7 +62,7 @@
         "ab047b41-2051-4190-b8ec-3d3a98be2285": {
           "type": "icons-duotone",
           "settings": {
-            "icons_duotone": "free-exchange",
+            "icons_duotone": "tuen-sie",
             "title_icon": "Tuen Sie sich selbst etwas Gutes",
             "content_icon": "<p>Seien Sie nicht so streng zu sich selbst, gönnen Sie sich zwischendurch eine Auszeit, essen Sie Ihre Lieblingsspeise oder nehmen Sie sich Zeit für Ihr Lieblingsbuch<\/p>"
           }
@@ -97,7 +97,7 @@
         "icons_duotone": "none",
         "subheading": "",
         "title": "Was ist Selbstliebe?",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/Was_ist_Selbstliebe-100.jpg",
         "image_position": "right",
         "content_html": "",
@@ -121,7 +121,7 @@
         "icons_duotone": "none",
         "subheading": "",
         "title": "Ist Selbstliebe erlernbar?",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/Ist_Selbstliebe_erlernbar-100.jpg",
         "image_position": "left",
         "content_html": "",
@@ -145,7 +145,7 @@
         "icons_duotone": "none",
         "subheading": "",
         "title": "Therapiedecken fördern Selbstliebe",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/Therapiedecken_fordern_Selbstliebe-100.jpg",
         "image_position": "right",
         "content_html": "",
@@ -163,7 +163,7 @@
       "settings": {
         "bg-color": "#ffffff",
         "button_text": "Finden Sie Ihre Therapiedecke für mehr Selbstliebe",
-        "button_url": "shopify:\/\/pages\/fur-wen-benotigen-sie-eine-therapiedecke",
+        "button_url": "shopify:\/\/collections",
         "spacer_top": "0px",
         "spacer_bottom": "50px"
       }
