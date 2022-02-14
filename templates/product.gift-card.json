@@ -32,7 +32,13 @@
           "settings": {
           }
         },
-        "2e409ca3-a0d3-451d-9d6c-52e431eb1dc2": {
+        "share_buttons": {
+          "type": "share_buttons",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "f81ce10a-01f6-4a8c-bbf4-15877189bc3d": {
           "type": "payment_methods",
           "settings": {
           }
@@ -43,7 +49,8 @@
         "variant_selector",
         "buy_buttons",
         "description",
-        "2e409ca3-a0d3-451d-9d6c-52e431eb1dc2"
+        "share_buttons",
+        "f81ce10a-01f6-4a8c-bbf4-15877189bc3d"
       ],
       "settings": {
         "image_size": "large",
