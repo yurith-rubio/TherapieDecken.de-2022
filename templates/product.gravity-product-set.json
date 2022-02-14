@@ -27,7 +27,7 @@
             "show_payment_button": false
           }
         },
-        "ebd2c076-2401-4b52-be9d-aa41dddea61f": {
+        "84ef3a5f-6293-46e0-80e8-b33765c6b14c": {
           "type": "payment_methods",
           "settings": {
           }
@@ -37,7 +37,7 @@
         "product_meta",
         "variant_selector",
         "buy_buttons",
-        "ebd2c076-2401-4b52-be9d-aa41dddea61f"
+        "84ef3a5f-6293-46e0-80e8-b33765c6b14c"
       ],
       "settings": {
         "image_size": "large",
@@ -57,12 +57,6 @@
       "type": "icons-prestige",
       "settings": {
         "bg-color": "#f8f8f8"
-      }
-    },
-    "16291457001a7d71ef": {
-      "type": "banner-promotion",
-      "disabled": true,
-      "settings": {
       }
     },
     "1629451775c72cd56a": {
@@ -433,7 +427,6 @@
     "main",
     "16291424324bdf770a",
     "1629459987d4cac0a9",
-    "16291457001a7d71ef",
     "1629451775c72cd56a",
     "16294611499d6cacbd",
     "1629462422c7c337fa",
