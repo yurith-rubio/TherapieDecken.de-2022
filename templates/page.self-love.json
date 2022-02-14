@@ -134,6 +134,29 @@
         "link_url_extra": ""
       }
     },
+    "16448558403ea5b481": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "",
+        "title": "Therapiedecken fördern Selbstliebe",
+        "text_color": "#3A3C3C",
+        "image_position": "right",
+        "content_html": "",
+        "content_rich": "<p>Therapiedecken sind für viele ein Rückzugsort, der Ihnen Geborgenheit, innere Ruhe und Entspannung bringt. Um Selbstliebe zu praktizieren, ‘müssen’ Sie erst einmal gar nichts tun. Nehmen Sie sich bewusst Zeit für sich selbst, kuscheln Sie sich mit Ihrer Therapiedecke auf Ihr Sofa, kochen Sie sich eine leckere Tasse Tee und lesen Sie ein Buch oder schauen Sie Ihren Lieblingsfilm. Konzentrieren Sie sich auf Ihre Wünsche und Ziele und genießen Sie Ihre Ruhe mit Ihrer Therapiedecke. Das Gewicht der Therapiedecke wird Ihnen dabei helfen, diese Momente des Mit-sich-seins besser wahrzunehmen und mehr und mehr zu genießen.<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
     "1636562629a5c0533d": {
       "type": "button-block",
       "settings": {
@@ -152,6 +175,7 @@
     "1636561317d4cfaf6e",
     "1631197109b2759aaf",
     "1631197250ed5d793f",
+    "16448558403ea5b481",
     "1636562629a5c0533d"
   ]
 }
