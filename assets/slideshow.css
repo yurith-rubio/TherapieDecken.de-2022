@@ -20,6 +20,14 @@
   line-height: normal;
   padding-left: 20px;
 }
+.u_h1_main{
+  font-size:3.5rem;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+.u-h1-submain{
+  font-size:20px;
+}
 @media screen  and (max-width: 640px) and (orientation: portrait) {
   .badge-certificate-text{
       font-size: 14px;
@@ -28,5 +36,18 @@
 @media screen  and (max-width: 640px) and (orientation: landscape) {
   .badge-certificate-text{
       font-size: 14px;
+  }
+}
+@media screen  and (max-width: 768px) {
+  .badge-certificate{
+    width: 90px;
+  }
+  .u_h1_main{
+    font-size:30px;
+    margin-top: 0;
+    margin-bottom:0
+  }
+  .u-h1-submain{
+    font-size:15px;
   }
 }

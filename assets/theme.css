@@ -5658,6 +5658,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .SectionHeader__ButtonWrapper {
   margin-top: 20px;
+  padding: 0 10px;
 }
 
 .SectionHeader__IconHolder {
@@ -5710,6 +5711,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
   .SectionHeader__ButtonWrapper {
     margin-top: 30px;
+    padding: 0 10px;
   }
 
   .SectionFooter {
@@ -10908,7 +10910,7 @@ a.Link-Button-General:hover {
   .js .Slideshow--fullscreen {
     height: calc(var(--window-height) - (var(--header-height) * 0) - 0px);
     height: calc(var(--window-height) - (var(--header-height) * var(--header-is-not-transparent, 0)) - var(--announcement-bar-height, 0px));
-    max-height: 100vh;
+    max-height: 80vh;
   }
 }
 /* Slideshow transition are handled in JavaScript, so while we use Flickity, we need to disable any transition */
@@ -10945,6 +10947,7 @@ a.Link-Button-General:hover {
   }
 }
 .Slideshow__Content {
+  max-width: 1400px;
   position: absolute;
   padding: 0 24px;
   width: 100%;

@@ -1,7 +1,35 @@
 {
   "sections": {
+    "1644318577266b4344": {
+      "type": "home-hero-image",
+      "blocks": {
+        "1644318577f270a600-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Header-image-sleep-study-1200x800px.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/2-Well-being-450x430px.jpg",
+            "apply_overlay": true,
+            "content_position": "middleLeft",
+            "subheading": "Dank Gewichtsdecke",
+            "title": "Schlaf <span style=\"color:#fc0\">verbessern<\/span>, \n<br>\nStress <span style=\"color:#fc0\">abbauen<\/span> & <br>\nWohlbefinden <span style=\"color:#fc0\">steigern<\/span>",
+            "button_1_text": "Mehr erfahren",
+            "button_1_link": "https:\/\/therapiedecken.de\/collections\/valentinstag-therapiedecken-kollektion",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1644318577f270a600-0"
+      ],
+      "settings": {
+        "show_fullscreen": true,
+        "text_color": "#ffffff"
+      }
+    },
     "slideshow": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "slide-0": {
           "type": "image",
@@ -9,9 +37,9 @@
             "image": "shopify:\/\/shop_images\/Header-image-sleep-study-1200x800px.jpg",
             "mobile_image": "shopify:\/\/shop_images\/2-Well-being-450x430px.jpg",
             "apply_overlay": true,
-            "content_position": "middleCenter",
+            "content_position": "middleLeft",
             "subheading": "Dank Gewichtsdecke",
-            "title": "Schlaf verbessern, Stress abbauen & Wohlbefinden steigern",
+            "title": "Schlaf verbessern,\n<br>\nStress abbauen & \n<br>\nWohlbefinden steigern",
             "button_1_text": "Mehr erfahren",
             "button_1_link": "shopify:\/\/pages\/fur-wen-benotigen-sie-eine-therapiedecke",
             "button_2_text": "",
@@ -311,6 +339,7 @@
     }
   },
   "order": [
+    "1644318577266b4344",
     "slideshow",
     "1629889121f13d5b1a",
     "16298891291acfefaf",
