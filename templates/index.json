@@ -27,37 +27,6 @@
         "text_color": "#ffffff"
       }
     },
-    "slideshow": {
-      "type": "slideshow",
-      "disabled": true,
-      "blocks": {
-        "slide-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Header-image-sleep-study-1200x800px.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/2-Well-being-450x430px.jpg",
-            "apply_overlay": true,
-            "content_position": "middleLeft",
-            "subheading": "Dank Gewichtsdecke",
-            "title": "Schlaf verbessern,\n<br>\nStress abbauen & \n<br>\nWohlbefinden steigern",
-            "button_1_text": "Mehr erfahren",
-            "button_1_link": "shopify:\/\/pages\/fur-wen-benotigen-sie-eine-therapiedecke",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide-0"
-      ],
-      "settings": {
-        "show_fullscreen": true,
-        "show_arrow": false,
-        "autoplay": false,
-        "cycle_speed": 5,
-        "text_color": "#ffffff"
-      }
-    },
     "1629889121f13d5b1a": {
       "type": "icons-prestige",
       "settings": {
@@ -340,7 +309,6 @@
   },
   "order": [
     "1644318577266b4344",
-    "slideshow",
     "1629889121f13d5b1a",
     "16298891291acfefaf",
     "1630318003d3f950bd",
