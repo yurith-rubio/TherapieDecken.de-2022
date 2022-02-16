@@ -32,13 +32,19 @@
             "show_price_in_button": false,
             "show_payment_button": false
           }
+        },
+        "59b30732-5563-4e49-9a61-4277d78f8b9a": {
+          "type": "payment_methods",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "product_meta",
         "variant_selector",
         "f3054357-ef0a-4114-bec2-2633804121ef",
-        "buy_buttons"
+        "buy_buttons",
+        "59b30732-5563-4e49-9a61-4277d78f8b9a"
       ],
       "settings": {
         "image_size": "large",

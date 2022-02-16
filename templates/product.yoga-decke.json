@@ -83,7 +83,7 @@
             "show_payment_button": false
           }
         },
-        "c5d417a8-ba8a-42df-a525-72addfef913d": {
+        "3aaf6f6d-ecef-4722-9a5d-babbe1d3cc12": {
           "type": "payment_methods",
           "settings": {
           }
@@ -93,7 +93,7 @@
         "product_meta",
         "variant_selector",
         "buy_buttons",
-        "c5d417a8-ba8a-42df-a525-72addfef913d"
+        "3aaf6f6d-ecef-4722-9a5d-babbe1d3cc12"
       ],
       "settings": {
         "image_size": "large",

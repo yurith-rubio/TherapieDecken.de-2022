@@ -423,14 +423,18 @@
         "complete_purchase_button_label": "Kaufen",
         "cart": "Einkaufswagen",
         "back_to_cart": "Zurück zum Einkaufswagen",
-        "all_rights_reserved": "Alle Rechte vorbehalten Therapiedecken.de™"
+        "all_rights_reserved": "Alle Rechte vorbehalten Therapiedecken.de™",
+        "choose_shipping_method": "Wählen Sie eine Versandart aus",
+        "choose_payment_method": "Wählen Sie eine Zahlungsmethode aus",
+        "choose_billing_address": "Wählen Sie eine Rechnungsadresse aus",
+        "contact_us_html": "Kontaktieren Sie uns für weitere Informationen"
       },
       "contact": {
         "phone_tooltip": "Falls wir Sie zu Ihrer Bestellung kontaktieren müssen",
         "address1_label": "Straße",
         "address2_label": "Hausnummer (oder Packstationnummer)",
         "optional_address2_label": "Hausnummer (oder Packstationnummer)",
-        "email_placeholder": "E-Mail Adresse",
+        "email_placeholder": "E-Mail-Adresse",
         "company_label": "Firma (optional)",
         "optional_phone_label": "Telefonnummer (optional)",
         "phone_placeholder": "Telefonnummer",
@@ -444,7 +448,7 @@
         "cart_does_not_meet_discount_requirements_notice": "Der Rabattcode <strong style=\"text-transform:uppercase\">{{ code }}<\/strong> ist für die Artikel in Ihrem Warenkorb nicht gültig",
         "discount_requires_customer_notice": "Geben Sie Ihre Versandinformationen ein, um den Rabattcode <strong style=\"text-transform:uppercase\">{{ code }}<\/strong> zu übernehmen",
         "shipping_information_does_not_meet_discount_requirements_notice": "Der Rabattcode <strong style=\"text-transform:uppercase\">{{ code }}<\/strong> ist für Ihre Lieferadresse nicht verfügbar",
-        "no_pickup_location": "Ihre Bestellung ist nicht zur Abholung verfügbar. Geben Sie eine Lieferadresse ein",
+        "no_pickup_location": "Ihre Bestellung ist nicht zur Abholung verfügbar. Geben Sie eine Lieferadresse ein.",
         "gift_card_subscriptions_notice": "Geschenkgutscheine werden nur für Ihre erste Zahlung gültig sein"
       },
       "shipping": {
@@ -454,16 +458,16 @@
         "shipping_line_delivery_phone": "Wir werden diese Nummer eventuell verwenden, um Sie telefonisch oder per SMS bezüglich Ihrer Zustellung zu kontaktieren."
       },
       "payment": {
-        "amazon_payments_failed_mfa_challenge": "Die ausgewählte Zahlungsmethode konnte nicht verwendet werden. Wähle Sie eine andere Methode aus oder wenden Sie sich an Ihre Bank oder Ihren Kartenaussteller.",
+        "amazon_payments_failed_mfa_challenge": "Die ausgewählte Zahlungsmethode konnte nicht verwendet werden. Wählen Sie eine andere Methode aus oder wenden Sie sich an Ihre Bank oder Ihren Kartenaussteller.",
         "amazon_payments_abandoned_mfa_challenge": "Ihre Zahlung konnte nicht abgeschlossen werden. Versuchen Sie es mit einer anderen Zahlungsmethode oder wenden Sie sich an Ihre Bank oder Ihren Kartenaussteller.",
         "amazon_payments_could_not_enqueue_authorize": "Bei der Verarbeitung Ihrer Zahlung ist ein Problem aufgetreten. Versuchen Sie es erneut oder mit einer anderen Zahlungsmethode.",
         "card_verification_value_explanation": "Ein dreistelliger Sicherheitscode, der sich in der Regel auf der Rückseite Ihrer Karte befindet. American Express-Karten haben einen vierstelligen Code auf der Vorderseite.",
-        "card_verification_value_explanation_amex": "4-stelliger Sicherheitscode auf der Vorderseite deiner Karte",
-        "card_verification_value_explanation_other": "3-stelliger Sicherheitscode auf der Rückseite deiner Karte",
+        "card_verification_value_explanation_amex": "4-stelliger Sicherheitscode auf der Vorderseite Ihrer Karte",
+        "card_verification_value_explanation_other": "3-stelliger Sicherheitscode auf der Rückseite Ihrer Karte",
         "free_order_notice_html": "Ihre Bestellung ist <strong>kostenlos<\/strong>. Keine Zahlung notwendig.\n",
         "order_covered_by_gift_cards_notice": {
           "one": "Ihre Bestellung wird von Ihrem Gutschein abgedeckt.",
-          "other": "Ihre Bestellung wird von Ihrem Gutscheinen abgedeckt."
+          "other": "Ihre Bestellung wird von Ihrem Gutschein abgedeckt."
         },
         "offsite_gateway_redirect_hint": "Nachdem Sie “{{ button_label }}” geklickt haben, werden Sie zu {{ gateway_label }} weitergeleitet, um Ihren Einkauf sicher abzuschließen.",
         "billing_address_description": "Wählen Sie die mit Ihrer Karte oder Zahlungsmethode verknüpfte Adresse aus.",
@@ -517,12 +521,12 @@
         }
       },
       "processing": {
-        "complete_your_purchase_title": "Schließe Sie Ihren Einkauf ab",
+        "complete_your_purchase_title": "Schließen Sie Ihren Einkauf ab",
         "continue_to_payment_gateway_notice": "Fahren Sie mit der Zahlung fort, um Ihre Zahlungsinformationen hinzuzufügen.",
         "complete_your_purchase_title_error": "Korrigieren Sie bitte Ihre Zahlungsinformationen",
         "continue_to_payment_gateway_notice_error": "Ihre Zahlungsinformationen konnten nicht verifiziert werden.",
         "your_order_has_been_received_title": "Vielen Dank für Ihre Bestellung",
-        "you_will_receive_confirmation": "Wir bekommen gerade sehr viele Bestellungen herein. Sie sollten Ihre Bestätigung in Kürze per E-Mail oder per SMS erhalten. Wenn Sie diese nicht in der nächsten Stunde erhalten, dann geben Sie uns Bescheid.",
+        "you_will_receive_confirmation": "Wir erhalten gerade sehr viele Bestellungen. Sie sollten Ihre Bestätigung in Kürze per E-Mail oder per SMS erhalten. Wenn Sie diese nicht in der nächsten Stunde erhalten, dann geben Sie uns Bescheid.",
         "wait": {
           "short": "Ihre Bestellung wird bearbeitet.",
           "medium": {
@@ -542,7 +546,7 @@
         "thank_you_confirmed_order_with_email": "Sie erhalten zur Bestätigung in Kürze eine E-Mail mit Ihrer Bestellnummer.",
         "thank_you_confirmed_order_with_phone": "Sie erhalten zur Bestätigung in Kürze eine SMS mit Ihrer Bestellnummer.",
         "thank_you_confirmed_order_with_email_and_phone": "Sie erhalten zur Bestätigung in Kürze eine E-Mail und SMS mit Ihrer Bestellnummer.",
-        "order_status_confirmed_order_with_email": "Sie erhalten eine E-Mail, sobald deine Bestellung bereit ist.",
+        "order_status_confirmed_order_with_email": "Sie erhalten eine E-Mail, sobald Ihre Bestellung bereit ist.",
         "order_status_confirmed_order_with_phone": "Sie erhalten eine SMS, sobald Ihre Bestellung bereit ist.",
         "order_status_confirmed_order_with_email_and_phone": "Sie erhalten eine E-Mail und eine SMS, sobald Ihre Bestellung bereit ist.",
         "confirmed_title": "Ihre Bestellung wurde bestätigt",
@@ -595,7 +599,11 @@
         "thank_you_confirmed_order_with_email_and_phone_payment": "Sie haben eine Zahlung für Ihre Bestellung {{ date }} vorgenommen.",
         "order_status_confirmed_order_with_email_payment": "Sie haben eine Zahlung für Ihre Bestellung {{ date }} vorgenommen.",
         "order_status_confirmed_order_with_phone_payment": "Sie haben eine Zahlung für Ihre Bestellung {{ date }} vorgenommen.",
-        "order_status_confirmed_order_with_email_and_phone_payment": "Sie haben eine Zahlung für Ihre Bestellung {{ date }} vorgenommen."
+        "order_status_confirmed_order_with_email_and_phone_payment": "Sie haben eine Zahlung für Ihre Bestellung {{ date }} vorgenommen.",
+        "order_status_updates_with_email": "Sie erhalten Updates zu Versand und Lieferung per E-Mail.",
+        "order_status_updates_with_phone": "Sie erhalten Updates zu Versand und Lieferung per SMS.",
+        "order_status_updates_with_email_and_phone": "Sie erhalten Updates zu Versand und Lieferung per E-Mail und SMS.",
+        "contact_us_html": "Benötigen Sie Hilfe? {{ contact_us }}"
       },
       "order_payment_collection": {
         "checkout_review_and_pay": "Ihre Bestellung {{ order_name }} wurde aktualisiert. Überprüfen Sie diese Änderungen und bezahlen Sie anschließend, um Ihre Bestellung zu bestätigen.",

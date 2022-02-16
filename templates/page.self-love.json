@@ -1,0 +1,182 @@
+{
+  "sections": {
+    "main": {
+      "type": "therapiedecken-stress",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1634848927f18760e6": {
+      "type": "page-standard-header",
+      "settings": {
+        "custom_title": false,
+        "custom_title_text": "Customize Title if needed",
+        "image": "shopify:\/\/shop_images\/cover-image-1200x600px-desktop.jpg",
+        "mobile_custom": true,
+        "image_mobile": "shopify:\/\/shop_images\/cover-image-750x887px-mobile.jpg",
+        "apply_overlay": true,
+        "review_starts": true,
+        "content": "<p>99% Kundenzufriedenheit<\/p>"
+      }
+    },
+    "163654850371310cac": {
+      "type": "content-single-column",
+      "settings": {
+        "block_style": false,
+        "margin_top": "80px",
+        "bg-color": "",
+        "bg-color-text": "#ffffff",
+        "text_align": "center",
+        "subheading": "",
+        "title": "Selbstliebe lernen: Die besten Tipps",
+        "content": "",
+        "content_html": "",
+        "add_image": false,
+        "info_after_image": false,
+        "content2": "<p>Use when wanting text under image<\/p>",
+        "content_html2": "<p>ERASE the content of the block ABOVE is you want to use this block<\/p>",
+        "button_style": true,
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "1636561317d4cfaf6e": {
+      "type": "icons-custom",
+      "blocks": {
+        "c1686db4-2142-4f6d-94a9-e26d5b7b00df": {
+          "type": "icons-duotone",
+          "settings": {
+            "icons_duotone": "vergleichen-sie",
+            "title_icon": "Vergleichen Sie sich nicht mit anderen Menschen",
+            "content_icon": "<p>Akzeptieren Sie sich so wie Sie sind, auch wenn Sie mal einen schlechten Tag haben und sich erschöpft und ausgelaugt fühlen<\/p>"
+          }
+        },
+        "b01f9c72-e60b-46ee-ac09-f544bd14da4e": {
+          "type": "icons-duotone",
+          "settings": {
+            "icons_duotone": "erfreuen-sie",
+            "title_icon": "Erfreuen Sie sich an den kleinen Dingen",
+            "content_icon": "<p>Versuchen Sie auch kleine Erfolge und glückliche Momente wertzuschätzen, sich an diesen zu erfreuen und an ihnen festzuhalten<\/p>"
+          }
+        },
+        "ab047b41-2051-4190-b8ec-3d3a98be2285": {
+          "type": "icons-duotone",
+          "settings": {
+            "icons_duotone": "tuen-sie",
+            "title_icon": "Tuen Sie sich selbst etwas Gutes",
+            "content_icon": "<p>Seien Sie nicht so streng zu sich selbst, gönnen Sie sich zwischendurch eine Auszeit, essen Sie Ihre Lieblingsspeise oder nehmen Sie sich Zeit für Ihr Lieblingsbuch<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c1686db4-2142-4f6d-94a9-e26d5b7b00df",
+        "b01f9c72-e60b-46ee-ac09-f544bd14da4e",
+        "ab047b41-2051-4190-b8ec-3d3a98be2285"
+      ],
+      "settings": {
+        "bg-color": "",
+        "margin-top": "-50px",
+        "margin-top-mobile": "inehrit",
+        "bg-color-icons": "",
+        "icons-size": "40px",
+        "icons-color": "#fac636",
+        "text-color": "#3a3c3c",
+        "mobile-style-glider": true,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "1631197109b2759aaf": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "",
+        "title": "Was ist Selbstliebe?",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/Was_ist_Selbstliebe-100.jpg",
+        "image_position": "right",
+        "content_html": "",
+        "content_rich": "<p>Selbstliebe bedeutet, dass man sein eigenes Wohlbefinden und Glück wertschätzt. Es heißt sich um die eigenen Bedürfnisse zu kümmern und sein Wohlbefinden nicht zu opfern, um anderen zu gefallen. Selbstliebe bedeutet daher auch, sich nicht mit weniger zufrieden zu geben, als man verdient hat. Selbstliebe kann für jeden Menschen etwas anderes bedeuten, denn wir alle haben viele verschiedene Wünsche und Bedürfnisse. Herauszufinden, wie Selbstliebe für Sie als Individuum aussieht, ist ein wichtiger Bestandteil Ihrer geistigen Gesundheit.<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "1631197250ed5d793f": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "",
+        "title": "Ist Selbstliebe erlernbar?",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/Ist_Selbstliebe_erlernbar-100.jpg",
+        "image_position": "left",
+        "content_html": "",
+        "content_rich": "<p>Wenn Sie sich selbst wertschätzen, werden Sie sich eher für Dinge entscheiden, die Ihr Wohlbefinden fördern und Ihnen gut tun. Diese Dinge können in Form von gesunder Ernährung, sportlicher Betätigung oder gesunden Beziehungen erfolgen. Menschen, die mehr Selbstliebe empfinden, wissen in der Regel, was sie denken, fühlen und wollen. Üben Sie sich in guter Selbstfürsorge. Sie werden sich selbst mehr lieben, wenn Sie sich besser um Ihre Grundbedürfnisse kümmern. Fokussieren Sie sich auf Aktivitäten, die Ihnen Spaß machen, legen Sie Wert auf eine gesunde Ernährung, viel Bewegung, ausreichenden Schlaf und gesunde soziale Interaktionen.<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "16448558403ea5b481": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "",
+        "title": "Therapiedecken fördern Selbstliebe",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/Therapiedecken_fordern_Selbstliebe-100.jpg",
+        "image_position": "right",
+        "content_html": "",
+        "content_rich": "<p>Therapiedecken sind für viele ein Rückzugsort, der Ihnen Geborgenheit, innere Ruhe und Entspannung bringt. Um Selbstliebe zu praktizieren, ‘müssen’ Sie erst einmal gar nichts tun. Nehmen Sie sich bewusst Zeit für sich selbst, kuscheln Sie sich mit Ihrer Therapiedecke auf Ihr Sofa, kochen Sie sich eine leckere Tasse Tee und lesen Sie ein Buch oder schauen Sie Ihren Lieblingsfilm. Konzentrieren Sie sich auf Ihre Wünsche und Ziele und genießen Sie Ihre Ruhe mit Ihrer Therapiedecke. Das Gewicht der Therapiedecke wird Ihnen dabei helfen, diese Momente des Mit-sich-seins besser wahrzunehmen und mehr und mehr zu genießen.<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "1636562629a5c0533d": {
+      "type": "button-block",
+      "settings": {
+        "bg-color": "#ffffff",
+        "button_text": "Finden Sie Ihre Therapiedecke für mehr Selbstliebe",
+        "button_url": "shopify:\/\/collections",
+        "spacer_top": "0px",
+        "spacer_bottom": "50px"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1634848927f18760e6",
+    "163654850371310cac",
+    "1636561317d4cfaf6e",
+    "1631197109b2759aaf",
+    "1631197250ed5d793f",
+    "16448558403ea5b481",
+    "1636562629a5c0533d"
+  ]
+}

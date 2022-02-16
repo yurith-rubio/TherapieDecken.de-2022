@@ -59,12 +59,6 @@
         "bg-color": "#f8f8f8"
       }
     },
-    "16291457001a7d71ef": {
-      "type": "banner-promotion",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "1629451775c72cd56a": {
       "type": "accordion-video-product",
       "blocks": {
@@ -113,82 +107,6 @@
         "video_url": "https:\/\/player.vimeo.com\/video\/355977614"
       }
     },
-    "16294611499d6cacbd": {
-      "type": "advantages-overview",
-      "disabled": true,
-      "blocks": {
-        "25172f29-0114-40ec-b5fd-889c6869f773": {
-          "type": "Advantages-Info",
-          "settings": {
-            "span-icon": "<span class=\"icon-icn_premiumcotton-1\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><\/span>",
-            "title-icon": "Hochwertiger Premium Bezug"
-          }
-        },
-        "379133bf-a793-4f42-b390-0b5b13bfef28": {
-          "type": "Advantages-Info",
-          "settings": {
-            "span-icon": "50.000+",
-            "title-icon": "Zufriedene Kunden"
-          }
-        },
-        "20ceba28-02b9-4d83-8630-4ddb0ff68cc0": {
-          "type": "Advantages-Info",
-          "settings": {
-            "span-icon": "<span class=\"icon-icn_loopribbon\"><\/span>",
-            "title-icon": "Einfaches Wechseln durch Schlaufen"
-          }
-        },
-        "dc17a353-2422-4335-ad4a-e0751d10ac30": {
-          "type": "Advantages-Info",
-          "settings": {
-            "span-icon": "80%",
-            "title-icon": "Gewichtsverteilung durch Glasperlen"
-          }
-        },
-        "9fdc7973-e63f-4f8e-aab5-b1263761f598": {
-          "type": "Advantages-Info",
-          "settings": {
-            "span-icon": "28",
-            "title-icon": "Tage bequem von zuhause aus probeschlafen"
-          }
-        },
-        "103be984-c3e7-462b-85ea-a55aac3fac41": {
-          "type": "Advantages-Info",
-          "settings": {
-            "span-icon": "<span class=\"icon-preis-leistung-sieger-1\"><\/span>",
-            "title-icon": "Preis-Leistungs-Sieger aller Gewichtsdecken"
-          }
-        },
-        "40dd4b2c-4b21-4636-b94c-08f5af7cbdb2": {
-          "type": "Advantages-Info",
-          "settings": {
-            "span-icon": "365",
-            "title-icon": "Tage im Jahr verwendbar"
-          }
-        },
-        "7a20b4a4-3362-4eef-9124-6c6be4bb01cb": {
-          "type": "Advantages-Info",
-          "settings": {
-            "span-icon": "12",
-            "title-icon": "Monate Herstellergarantie"
-          }
-        }
-      },
-      "block_order": [
-        "25172f29-0114-40ec-b5fd-889c6869f773",
-        "379133bf-a793-4f42-b390-0b5b13bfef28",
-        "20ceba28-02b9-4d83-8630-4ddb0ff68cc0",
-        "dc17a353-2422-4335-ad4a-e0751d10ac30",
-        "9fdc7973-e63f-4f8e-aab5-b1263761f598",
-        "103be984-c3e7-462b-85ea-a55aac3fac41",
-        "40dd4b2c-4b21-4636-b94c-08f5af7cbdb2",
-        "7a20b4a4-3362-4eef-9124-6c6be4bb01cb"
-      ],
-      "settings": {
-        "title-sub": "Der bekannteste Therapiedecke",
-        "title": "Vorteile der Standard Gravity Therapiedecke im Überblick"
-      }
-    },
     "1629462422c7c337fa": {
       "type": "html-with-image",
       "settings": {
@@ -200,7 +118,7 @@
         "icons_duotone": "none",
         "subheading": "",
         "title": "Kühlende Überdecke",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/Slider2-1_Therapiedecke_Kinder.jpg",
         "image_position": "left",
         "content_html": "An warmen Sommernächte als kühlende Schlafdecke oder im Winter zusätzlich zur normalen Decke als Überdecke bestens geeignet. Sorgt auch beim Spielen oder Mittagsschlaf für Entspannung zwischendurch. Die Decke hat keinen abnehmbaren Bezug und muss nicht extra mit Bettwäsche bezogen werden.",
@@ -264,7 +182,7 @@
         "icons_duotone": "none",
         "subheading": "Atmungsaktiv & ohne Bezug",
         "title": "Aufbau der Medizinischen Therapiedecke für Kinder",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/NEW_Aufteilung_Kosmos_Astronauten_Kinder_Gewichtsdecken_Therapiedecke_Schlafstorungen.jpg",
         "image_position": "right",
         "content_html": "<style>\nli{\nlist-style: none;\n}\nli > span {\nposition: relative;\nleft: -24px;\nmargin-right: -20px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(2) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(3) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(4) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\n<\/style>\n\n\n<ol>\n<li>\n<span class=\"icon-one\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>Atmungsaktiver Stoff. Die Decke besteht aus 100% Baumwolle.\n<\/li>\n<li>\n<span class=\"icon-two\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nSandfeine Glasperlen. In kleinen Kammern befinden sich hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.<\/li>\n<li>\n<\/li>\n<\/ol>",
@@ -288,7 +206,7 @@
         "icons_duotone": "none",
         "subheading": "Entspannung durch Tiefendruck",
         "title": "Die Wissenschaft hinter den Therapiedecken",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/kinder-wissenschaft-therapiedecken.jpg",
         "image_position": "left",
         "content_html": "Der Tiefendruck, der durch das Gewicht ausgeübt wird, hat eine entspannende Wirkung auf die Gelenke, Muskeln und Sehnen. Dieser Effekt ist auch als “Deep Pressure Touch Stimulation” bekannt, indem ein sanfter und dennoch kräftiger und gleichmäßiger Druck auf den Körper wirkt. Dadurch kommt man körperlich als auch innerlich zur Ruhe. Die Körperwahrnehmung verbessert sich.\nAußerdem erfolgt durch den Druck die Ausschüttung des Hormons Serotonin, gleichzeitig verringert sich der Cortisolspiegel (sog. Stresshormon). Der Tiefendruck signalisiert dem Körper ein Gefühl von Sicherheit und Geborgenheit.",
@@ -312,7 +230,7 @@
         "icons_duotone": "none",
         "subheading": "Nachhaltig und fair",
         "title": "Therapiedecken aus Europa",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/therapiedecken_gewichtsdecken_kinder_unterstutzung.jpg",
         "image_position": "right",
         "content_html": "<p>Die Medizinische Gewichtsdecke für Kinder wird ausschließlich in Europa hergestellt, die dabei verwendete Baumwolle stammt aus nachhaltigem Anbau und ist zertifiziert. Die Glasperlen im Inneren der Decken werden sicher und hochwertig in Europa produziert.<\/p>\n\n\n<img class=\" lazyloaded\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/all_logos_gewichtsdecken_therapiedecken_zertifikate_b2dfb83c-9301-42f1-92e1-71467ad6d47c.png?2213\" height=\"37\" width=\"290\" vspace=\"5\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/all_logos_gewichtsdecken_therapiedecken_zertifikate_b2dfb83c-9301-42f1-92e1-71467ad6d47c.png?2213\">\n<br>\n<br>\n<br>",
@@ -425,9 +343,7 @@
     "main",
     "16291424324bdf770a",
     "1629459987d4cac0a9",
-    "16291457001a7d71ef",
     "1629451775c72cd56a",
-    "16294611499d6cacbd",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
     "1629709567bc66549f",

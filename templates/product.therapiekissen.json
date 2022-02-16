@@ -27,7 +27,19 @@
             "show_payment_button": false
           }
         },
-        "474cdfda-1ced-42f7-af0e-d67dabc32547": {
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "share_buttons": {
+          "type": "share_buttons",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "c12e7ead-2612-40e0-823a-2ea979657849": {
           "type": "payment_methods",
           "settings": {
           }
@@ -37,7 +49,9 @@
         "product_meta",
         "variant_selector",
         "buy_buttons",
-        "474cdfda-1ced-42f7-af0e-d67dabc32547"
+        "description",
+        "share_buttons",
+        "c12e7ead-2612-40e0-823a-2ea979657849"
       ],
       "settings": {
         "image_size": "large",
