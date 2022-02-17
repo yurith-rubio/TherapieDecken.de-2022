@@ -1,29 +1,29 @@
-#PetPrint_MainContainer{
+#GravityPrint_MainContainer{
   max-width: 1200px;
   text-align: center;
   margin: 50px auto;
 }
 
-.PetPrint_steps_wr{
+.GravityPrint_steps_wr{
   display: flex;
   flex-direction: column;
   padding: 25px;
   flex-basis: 33%;
 }
-.PetPrint_text_wr{
+.GravityPrint_text_wr{
   max-width: 200px;
   margin: auto;
   text-align: left;
 }
-.PetPrint_iconText_wr{
+.GravityPrint_iconText_wr{
   display: inline-flex;
 }
 
 @media only screen and (min-width: 768px){
-  #PetPrint_ColumnsContainer{
+  #GravityPrint_ColumnsContainer{
     display: flex;
   }
-  .PetPrint_steps_wr{
+  .GravityPrint_steps_wr{
     display: flex;
     flex-direction: column;
     padding: 0 20px;
