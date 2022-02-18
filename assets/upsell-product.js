@@ -70,7 +70,7 @@ $(document).ready(function () {
     $("span.Set_Price--highlight").html(adjustedPrice);
     
     const adjustedComparePrice = Shopify.formatMoney(totalComparePrice, window.moneyFormat);
-    $("span.Price--compareAt").html(adjustedComparePrice);
+    $("span.Set_Price--compareAt").html(adjustedComparePrice);
   }
   
   function updateGravityInlettPrice(additionalVariantId, mainVariantId) {       
@@ -88,7 +88,7 @@ $(document).ready(function () {
     $("span.Set_Price--highlight").html(adjustedPrice);
     
     const adjustedComparePrice = Shopify.formatMoney(totalComparePrice, window.moneyFormat);
-    $("span.Price--compareAt").html(adjustedComparePrice);
+    $("span.Set_Price--compareAt").html(adjustedComparePrice);
   }
   
   function selectBalanceInlettVariant() {
