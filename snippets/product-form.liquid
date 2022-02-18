@@ -157,7 +157,7 @@
           value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
           data-option-position="{{ option.position }}">
         <label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" 
-               class="SizeSwatch{% if value == 'Komplettdruck' or value == 'Kopfdruck' %} Druck_SizeSwatch{% endif%}">
+               class="SizeSwatch{% if value == 'Komplettdruck' or value == 'Kopfdruck' or value == 'Standard Druck' or value == 'Cartoon Druck' %} Druck_SizeSwatch{% endif%}">
               {% if value == 'Komplettdruck' or value == 'Kopfdruck' %}
               {% else %}
                 {{ value }}
