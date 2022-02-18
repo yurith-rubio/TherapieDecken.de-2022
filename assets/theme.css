@@ -3971,7 +3971,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 
-.Price--highlight {
+.Price--highlight, .Item_Price--highlight {
   /*color: var(--product-sale-price-color);*/
     color: #ba2e2e;
 }
