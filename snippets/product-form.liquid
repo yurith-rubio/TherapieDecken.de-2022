@@ -158,12 +158,12 @@
           data-option-position="{{ option.position }}">
         <label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" 
                class="SizeSwatch{% if value == 'Komplettdruck' or value == 'Kopfdruck' or value == 'Standard Druck' or value == 'Cartoon Druck' %} Druck_SizeSwatch{% endif%}">
-              {% if value == 'Komplettdruck' or value == 'Kopfdruck' %}
+              {% if value == 'Komplettdruck' or value == 'Kopfdruck' or value == 'Standard Druck' or value == 'Cartoon Druck' %}
               {% else %}
                 {{ value }}
               {% endif %}
         </label>
-        {% if value == 'Komplettdruck' or value == 'Kopfdruck' %}
+        {% if value == 'Komplettdruck' or value == 'Kopfdruck' or value == 'Standard Druck' or value == 'Cartoon Druck' %}
         	<div class="Druck_Value">{{ value }}</div>
         {% endif %}
       </li>
