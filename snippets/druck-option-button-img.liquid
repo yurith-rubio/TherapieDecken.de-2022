@@ -1,8 +1,16 @@
 {% comment %}Style for 'Druck' button on the pet-printed template {% endcomment %}
 
-{% if product.handle == 'testing-printing' or product.handle == 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene' or product.handle == 'therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv' %}
+{% if product.handle == 'test-family-standard-gravity-gewichtsdecke' or product.handle == 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene' or product.handle == 'therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv' %}
 
   {% style %}
+    .SizeSwatchList input[value="Komplettdruck"] + .SizeSwatch{
+      background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/KOMPLETTDRUCK-newdog.jpg?v=1644230594");
+      background-size: contain;
+    }
+    .SizeSwatchList input[value="Kopfdruck"] + .SizeSwatch{
+      background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/KOPFDRUCK-newdog.jpg?v=1644230581");
+      background-size: contain;
+    }
     .SizeSwatchList input[value="Komplettdruck"] + .SizeSwatch{
       background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/KOMPLETTDRUCK-newdog.jpg?v=1644230594");
       background-size: contain;
