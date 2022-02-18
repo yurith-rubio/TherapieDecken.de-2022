@@ -3986,7 +3986,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   margin-left: 10px;
 }
 
-.Price--compareAt::before {
+.Price--compareAt::before, .Item_Price--compareAt::before {
   position: absolute;
   content: "";
   top: 50%;
