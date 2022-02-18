@@ -3981,7 +3981,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     font-size: 24px!important;
 }
 
-.Price--compareAt {
+.Price--compareAt, .Item_Price--compareAt {
   position: relative;
   margin-left: 10px;
 }
