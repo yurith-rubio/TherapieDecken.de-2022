@@ -67,7 +67,7 @@ $(document).ready(function () {
     } 
     
     const adjustedPrice = Shopify.formatMoney(totalPrice, window.moneyFormat);
-    $("span.Price--highlight").html(adjustedPrice);
+    $("span.Set_Price--highlight").html(adjustedPrice);
     
     const adjustedComparePrice = Shopify.formatMoney(totalComparePrice, window.moneyFormat);
     $("span.Price--compareAt").html(adjustedComparePrice);
@@ -85,7 +85,7 @@ $(document).ready(function () {
       }
     } 
     const adjustedPrice = Shopify.formatMoney(totalPrice, window.moneyFormat);
-    $("span.Price--highlight").html(adjustedPrice);
+    $("span.Set_Price--highlight").html(adjustedPrice);
     
     const adjustedComparePrice = Shopify.formatMoney(totalComparePrice, window.moneyFormat);
     $("span.Price--compareAt").html(adjustedComparePrice);
