@@ -148,7 +148,7 @@
                 <div>
                   <div class="filter_size filter_styling" data-size="{{ tag }}">
                     <div class="circle-radio {{ selected }}" data-size="{{ tag }}"></div>
-                    <div class="text-radio-tag" data-size="{{ tag }}">{{ tag_value[0] }}</div>
+                    <div class="text-radio-tag" data-size="{{ tag }}">{{ tag_value[0] | replace: "0", ' ' | lstrip |replace: ' ', '0' }}</div>
                   </div>
                 </div>                           
               {% endif %}
