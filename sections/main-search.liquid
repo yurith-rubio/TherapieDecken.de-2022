@@ -37,7 +37,13 @@
       {%- if search.types contains 'product' -%}
         <div class="ProductList ProductList--grid Grid" data-mobile-count="2" data-desktop-count="4">
           {%- for result in search.results -%}
-              {% if result.handle == 'therapiedecken-gravity-inlett' or result.handle == 'inlett' or result.handle == 'balance-gewichtsdecken-inlett' or result.handle == 'gravity-gewichtsdecken-inlett-fur-kinder' or result.handle == 'balance-gewichtsdecken-inlett-fur-kinder' or result.handle == 'testing-printing' %}
+              {% if result.handle == 'therapiedecken-gravity-inlett' 
+              	or result.handle == 'inlett' or result.handle == 'balance-gewichtsdecken-inlett' 
+          		or result.handle == 'gravity-gewichtsdecken-inlett-fur-kinder' 
+          		or result.handle == 'balance-gewichtsdecken-inlett-fur-kinder' 
+          		or result.handle == 'testing-printing' 
+              	or result.handle == 'standard-gravity-gewichtsdecke-familien-motiv'
+          		or result.handle == 'or result.handle == ' %}
           		{% continue %}
           	{% endif %}
             <div class="Grid__Cell 1/2 1/3--tablet 1/4--lap-and-up">
