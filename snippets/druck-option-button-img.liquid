@@ -1,6 +1,9 @@
 {% comment %}Style for 'Druck' button on the pet-printed template {% endcomment %}
 
-{% if product.handle == 'testing-printing' or product.handle == 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene' or product.handle == 'therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv' %}
+{% if product.handle == 'standard-gravity-gewichtsdecke-familien-motiv' 
+	or product.handle == 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene' 
+	or product.handle == 'standard-gravity-gewichtsdecke-mit-personalisiertem-partner-motiv-fur-erwachsene' 
+	or product.handle == 'therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv' %}
 
   {% style %}
     .SizeSwatchList input[value="Komplettdruck"] + .SizeSwatch{
@@ -11,6 +14,29 @@
       background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/KOPFDRUCK-newdog.jpg?v=1644230581");
       background-size: contain;
     }
+
+	{% if product.handle == 'standard-gravity-gewichtsdecke-familien-motiv' %}
+      .SizeSwatchList input[value="Standard Druck"] + .SizeSwatch{
+        background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/family-regular-swatch.jpg?v=1645192037");
+        background-size: contain;
+      }
+      .SizeSwatchList input[value="Cartoon Druck"] + .SizeSwatch{
+        background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/family-cartoon-swatch.jpg?v=1645192037");
+        background-size: contain;
+      }
+	{% endif %}
+
+	{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisiertem-partner-motiv-fur-erwachsene' %}
+      .SizeSwatchList input[value="Standard Druck"] + .SizeSwatch{
+        background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/couples-regular-swatch.jpg?v=1645191934");
+        background-size: contain;
+      }
+      .SizeSwatchList input[value="Cartoon Druck"] + .SizeSwatch{
+        background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/couples-cartoon-swatch.jpg?v=1645191934");
+        background-size: contain;
+      }
+	{% endif %}
+
     .Druck_SizeSwatch{
       min-width: 100px !important;
       padding: 0 !important;

@@ -215,7 +215,7 @@
         "164245184467da80d8-1": {
           "type": "liquid",
           "settings": {
-            "code": "{% render 'pet-printed-blanket-steps' %}",
+            "code": "{% render 'gravity-printed-blanket-steps' %}",
             "width": "50%",
             "alignment": "center"
           }
