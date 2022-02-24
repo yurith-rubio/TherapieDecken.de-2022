@@ -706,6 +706,10 @@
     "settings": [
       {
         "type": "header",
+        "content": "Homepage"
+      },
+      {
+        "type": "header",
         "content": "Collection Pages"
       },
       {
