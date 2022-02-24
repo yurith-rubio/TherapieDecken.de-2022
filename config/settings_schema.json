@@ -715,6 +715,11 @@
         "default": false
       },
       {
+        "type": "image_picker",
+        "id": "promotional_hero_image",
+        "label": "Select hero image"
+      },
+      {
         "type": "header",
         "content": "Collection Pages"
       },
