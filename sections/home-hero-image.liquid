@@ -1,5 +1,7 @@
 {% if settings.promotional_hero_hp_cover %}
 	{% render 'standard-home-hero' %}
+{% else %}
+	{% render 'promotion-home-hero' %}
 {% endif %}
 
 {% schema %}
