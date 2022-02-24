@@ -61,6 +61,8 @@
     "left_product_inventory": true,
     "promotional_hero_hp_cover": true,
     "promotional_hero_image": "shopify:\/\/shop_images\/Cover_Image_tiny2.jpg",
+    "button_1_text": "ddd",
+    "button_1_link": "shopify:\/\/pages\/anwendung-therapiedecken",
     "promotional_collection_cover": false,
     "enable_collection_badge": true,
     "enable_product_badge": false,
