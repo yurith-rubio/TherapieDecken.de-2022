@@ -744,7 +744,7 @@
         "type": "checkbox",
         "id": "enable_product_badge",
         "label": "Enable Promotional Badge on Product Pages",
-        "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/120441634955?key=snippets\/product-promotional-badge.liquid)",
+        "info": "[For design and rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/120441634955?key=snippets\/product-promotional-badge.liquid)",
         "default": false
       },
       {
