@@ -1,5 +1,10 @@
 /* Home Cover Pages */
 
+.promotion-home-hero_content_container{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
 .Centered_Promotional{
   height: 100%;
   padding: 100px 0 30px 0;
