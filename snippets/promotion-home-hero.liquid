@@ -45,6 +45,13 @@
             <div class="home_promotional_content_wrapper">
               <img class="homePromotional_svg Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/Weltfrauentag_Promotion_tiny3.png?v=1645697972" alt="Cover-Valentines-Therapiedecken">
             </div>
+
+            {%- if settings.button_1_text == blank and settings.button_1_link != blank -%}
+              <a href="{{ settings.button_1_link }}" id="Slide{{ block.id }}" class="Slideshow__Slide Carousel__Cell {% if forloop.first %}is-selected{% endif %}" {% if forloop.first %}style="visibility: visible"{% endif %} data-slide-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
+                {{- slide_content -}}
+              </a>
+        	{%- endif -%}
+
           </div>
 
           {%- endcapture -%}
