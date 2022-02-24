@@ -709,14 +709,14 @@
         "content": "Homepage"
       },
       {
-        "type": "header",
-        "content": "Collection Pages"
-      },
-      {
         "type": "checkbox",
         "id": "promotional_hero_hp_cover",
         "label": "Enable Promotional Cover on Homepage",
         "default": false
+      },
+      {
+        "type": "header",
+        "content": "Collection Pages"
       },
       {
         "type": "checkbox",
