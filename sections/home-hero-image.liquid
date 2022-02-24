@@ -1,4 +1,6 @@
-{% render 'standard-home-hero' %}
+{% if settings.promotional_hero_hp_cover %}
+	{% render 'standard-home-hero' %}
+{% endif %}
 
 {% schema %}
 {
