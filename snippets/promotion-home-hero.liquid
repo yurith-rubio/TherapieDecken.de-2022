@@ -47,7 +47,7 @@
             </div>
             
               {%- if settings.button_1_text != blank -%}
-              	<a href="{{ settings.button_1_link }}" class="promotion-home-hero_button Button Button--primary" >{{ settings.button_1_text | escape }}</a></div>
+              	<a href="{{ settings.button_1_link }}" class="Button Button--primary" >{{ settings.button_1_text | escape }}</a></div>
               {%- endif -%}
       
 
@@ -62,6 +62,17 @@
           {%- endif -%}
         {%- endcapture -%}
 
+        {%- comment -%}This code allows to cover a common use case where merchant would like to have a clickable image{%- endcomment -%}
+
+        {%- if settings.button_1_text == blank and settings.button_1_link != blank -%}
+          <a href="{{ settings.button_1_link }}" id="Slide{{ block.id }}" class="Slideshow__Slide Carousel__Cell {% if forloop.first %}is-selected{% endif %}" {% if forloop.first %}style="visibility: visible"{% endif %} data-slide-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
+            {{- slide_content -}}
+          </a>
+        {%- else -%}
+          <div id="Slide{{ block.id }}" class="Slideshow__Slide Carousel__Cell {% if forloop.first %}is-selected{% endif %}" {% if forloop.first %}style="visibility: visible"{% endif %} data-slide-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
+            {{- slide_content -}}
+          </div>
+        {%- endif -%}
       {%- endfor -%}
     </div>
   </div>
