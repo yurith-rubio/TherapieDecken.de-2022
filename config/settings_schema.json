@@ -712,13 +712,13 @@
         "type": "checkbox",
         "id": "promotional_hero_hp_cover",
         "label": "Enable Promotional Cover on Homepage",
+        "info": "[For editing:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/promotion-home-hero.liquid)",
         "default": false
       },
       {
         "type": "image_picker",
         "id": "promotional_hero_image",
-        "label": "Select hero image",
-        "info": "[For editing:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/promotion-home-hero.liquid)"
+        "label": "Select hero image"
       },
       {
         "type": "header",
