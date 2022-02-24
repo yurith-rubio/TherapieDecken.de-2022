@@ -1,1 +1,185 @@
-{"sections":{"main":{"type":"main-list-collections","blocks":{"57fb5787-f1c6-4b8c-ab63-2ffc38059fbb":{"type":"collection","settings":{"collection":"erwachsene","image_alignment":"center center","content_position":"bottomLeft","subheading":"","title":"Therapiedecken für Erwachsene","button_text":"Mehr Erfahren"}},"caf64738-ad97-4215-ab5b-801cbfc0d6c6":{"type":"collection","settings":{"collection":"kinder","image_alignment":"center center","content_position":"bottomLeft","subheading":"","title":"Therapiedecken für Kinder","button_text":"Mehr erfahren"}},"448bd5a6-b739-438e-952d-3a2f4c4782b4":{"type":"collection","settings":{"collection":"therapiedecken-sets","image":"shopify:\/\/shop_images\/1-47_1_-min.jpg","image_alignment":"center center","content_position":"bottomLeft","subheading":"","title":"Therapiedecken Sets","button_text":"Mehr erfahren"}},"73b0d1b4-632b-4418-8eda-b5c14820a472":{"type":"collection","settings":{"collection":"ersatzbezuge-fur-therapiedecken","image_alignment":"center center","content_position":"bottomLeft","subheading":"","title":"Ersatzbezüge für Therapiedecken","button_text":"Mehr erfahren"}},"2be49438-6887-4f88-bc2b-2747957fbfb6":{"type":"collection","settings":{"collection":"bettwaschen-set-fur-therapiedecken","image_alignment":"center center","content_position":"bottomLeft","subheading":"","title":"Therapiedecken Bettwäschen Set","button_text":"Mehr Erfahren"}},"80fc7849-6f80-4219-88ae-8d858f408eb1":{"type":"collection","settings":{"collection":"gewichtsmasken-fur-besseren-schlaf","image":"shopify:\/\/shop_images\/Obszar_kompozycji_15.jpg","image_alignment":"center center","content_position":"bottomLeft","subheading":"","title":"Gewichtsschlafmaske","button_text":"Mehr erfahren"}},"cf9b81ae-2c0c-4372-85ab-bec6ff07de7f":{"type":"collection","settings":{"collection":"knotendecke","image_alignment":"center center","content_position":"bottomLeft","subheading":"","title":"Knotendecke","button_text":"Mehr erfahren"}},"93e23be5-e881-4e31-968b-92e98ceb5d11":{"type":"collection","settings":{"collection":"therapiekissen","image_alignment":"center center","content_position":"bottomLeft","subheading":"","title":"Therapiekissen","button_text":"Mehr erfahren"}},"5fabee55-481b-440a-a90c-ad63a5a48751":{"type":"collection","disabled":true,"settings":{"collection":"therapiekissen-ersatzbezuge","image":"shopify:\/\/shop_images\/IMG_9431_low-min.jpg","image_alignment":"center center","content_position":"bottomLeft","subheading":"","title":"Ersatzbezüge für Therapiekissen","button_text":"Mehr erfahren"}},"e097dbed-ea96-4822-9a1e-0cf90da2c145":{"type":"collection","settings":{"collection":"anti-falten-kissen","image_alignment":"center center","content_position":"bottomLeft","subheading":"","title":"Anti-Falten-Kissen","button_text":"Mehr erfahren"}},"ba5de683-084d-4973-9221-f94349b1749d":{"type":"collection","settings":{"collection":"geschenkgutschein","image":"shopify:\/\/shop_images\/giftcardtiny_decken_1_-min.png","image_alignment":"center center","content_position":"bottomLeft","subheading":"","title":"Geschenkgutschein","button_text":"Mehr erfahren"}},"0e8b79fd-9de9-488f-8ae3-cce99d53c479":{"type":"collection","settings":{"collection":"sale","image_alignment":"center center","content_position":"bottomLeft","subheading":"","title":"Sale","button_text":"Mehr erfahren"}}},"block_order":["57fb5787-f1c6-4b8c-ab63-2ffc38059fbb","caf64738-ad97-4215-ab5b-801cbfc0d6c6","448bd5a6-b739-438e-952d-3a2f4c4782b4","73b0d1b4-632b-4418-8eda-b5c14820a472","2be49438-6887-4f88-bc2b-2747957fbfb6","80fc7849-6f80-4219-88ae-8d858f408eb1","cf9b81ae-2c0c-4372-85ab-bec6ff07de7f","93e23be5-e881-4e31-968b-92e98ceb5d11","5fabee55-481b-440a-a90c-ad63a5a48751","e097dbed-ea96-4822-9a1e-0cf90da2c145","ba5de683-084d-4973-9221-f94349b1749d","0e8b79fd-9de9-488f-8ae3-cce99d53c479"],"settings":{"collections_to_show":"selected","image_size":"small","add_spacing":true,"expand_collection":false,"apply_overlay":true,"text_color":"#ffffff","button_color":"#363636"}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "blocks": {
+        "57fb5787-f1c6-4b8c-ab63-2ffc38059fbb": {
+          "type": "collection",
+          "settings": {
+            "collection": "erwachsene",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Therapiedecken für Erwachsene",
+            "button_text": "Mehr Erfahren"
+          }
+        },
+        "caf64738-ad97-4215-ab5b-801cbfc0d6c6": {
+          "type": "collection",
+          "settings": {
+            "collection": "kinder",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Therapiedecken für Kinder",
+            "button_text": "Mehr erfahren"
+          }
+        },
+        "448bd5a6-b739-438e-952d-3a2f4c4782b4": {
+          "type": "collection",
+          "settings": {
+            "collection": "therapiedecken-sets",
+            "image": "shopify:\/\/shop_images\/1-47_1_-min.jpg",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Therapiedecken Sets",
+            "button_text": "Mehr erfahren"
+          }
+        },
+        "fe4ad3a3-690b-44a7-a580-b7ee65e6230a": {
+          "type": "collection",
+          "settings": {
+            "collection": "personalisierte-therapiedecken",
+            "image": "shopify:\/\/shop_images\/pet_cover.jpg",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Personalisierte Therapiedecken",
+            "button_text": "Mehr erfahren"
+          }
+        },
+        "73b0d1b4-632b-4418-8eda-b5c14820a472": {
+          "type": "collection",
+          "settings": {
+            "collection": "ersatzbezuge-fur-therapiedecken",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Ersatzbezüge für Therapiedecken",
+            "button_text": "Mehr erfahren"
+          }
+        },
+        "2be49438-6887-4f88-bc2b-2747957fbfb6": {
+          "type": "collection",
+          "settings": {
+            "collection": "bettwaschen-set-fur-therapiedecken",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Therapiedecken Bettwäsche Set",
+            "button_text": "Mehr Erfahren"
+          }
+        },
+        "80fc7849-6f80-4219-88ae-8d858f408eb1": {
+          "type": "collection",
+          "settings": {
+            "collection": "gewichtsmasken-fur-besseren-schlaf",
+            "image": "shopify:\/\/shop_images\/Obszar_kompozycji_15.jpg",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Gewichtsschlafmaske",
+            "button_text": "Mehr erfahren"
+          }
+        },
+        "cf9b81ae-2c0c-4372-85ab-bec6ff07de7f": {
+          "type": "collection",
+          "settings": {
+            "collection": "knotendecke",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Knotendecke",
+            "button_text": "Mehr erfahren"
+          }
+        },
+        "93e23be5-e881-4e31-968b-92e98ceb5d11": {
+          "type": "collection",
+          "settings": {
+            "collection": "therapiekissen",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Therapiekissen",
+            "button_text": "Mehr erfahren"
+          }
+        },
+        "5fabee55-481b-440a-a90c-ad63a5a48751": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "therapiekissen-ersatzbezuge",
+            "image": "shopify:\/\/shop_images\/IMG_9431_low-min.jpg",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Ersatzbezüge für Therapiekissen",
+            "button_text": "Mehr erfahren"
+          }
+        },
+        "e097dbed-ea96-4822-9a1e-0cf90da2c145": {
+          "type": "collection",
+          "settings": {
+            "collection": "anti-falten-kissen",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Anti-Falten-Kissen",
+            "button_text": "Mehr erfahren"
+          }
+        },
+        "ba5de683-084d-4973-9221-f94349b1749d": {
+          "type": "collection",
+          "settings": {
+            "collection": "geschenkgutschein",
+            "image": "shopify:\/\/shop_images\/giftcardtiny_decken_1_-min.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Geschenkgutschein",
+            "button_text": "Mehr erfahren"
+          }
+        },
+        "0e8b79fd-9de9-488f-8ae3-cce99d53c479": {
+          "type": "collection",
+          "settings": {
+            "collection": "sale",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Sale",
+            "button_text": "Mehr erfahren"
+          }
+        }
+      },
+      "block_order": [
+        "57fb5787-f1c6-4b8c-ab63-2ffc38059fbb",
+        "caf64738-ad97-4215-ab5b-801cbfc0d6c6",
+        "448bd5a6-b739-438e-952d-3a2f4c4782b4",
+        "fe4ad3a3-690b-44a7-a580-b7ee65e6230a",
+        "73b0d1b4-632b-4418-8eda-b5c14820a472",
+        "2be49438-6887-4f88-bc2b-2747957fbfb6",
+        "80fc7849-6f80-4219-88ae-8d858f408eb1",
+        "cf9b81ae-2c0c-4372-85ab-bec6ff07de7f",
+        "93e23be5-e881-4e31-968b-92e98ceb5d11",
+        "5fabee55-481b-440a-a90c-ad63a5a48751",
+        "e097dbed-ea96-4822-9a1e-0cf90da2c145",
+        "ba5de683-084d-4973-9221-f94349b1749d",
+        "0e8b79fd-9de9-488f-8ae3-cce99d53c479"
+      ],
+      "settings": {
+        "collections_to_show": "selected",
+        "image_size": "small",
+        "add_spacing": true,
+        "expand_collection": false,
+        "apply_overlay": true,
+        "text_color": "#ffffff",
+        "button_color": "#363636"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
