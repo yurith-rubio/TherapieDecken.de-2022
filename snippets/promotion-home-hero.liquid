@@ -84,7 +84,7 @@
             {{- slide_content -}}
           </a>
         {%- else -%}
-          <div id="Slide{{ block.id }}" class="promotion-home-hero_content_container Slideshow__Slide Carousel__Cell {% if forloop.first %}is-selected{% endif %}" {% if forloop.first %}style="visibility: visible"{% endif %} data-slide-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
+          <div id="Slide{{ block.id }}" class="Slideshow__Slide Carousel__Cell {% if forloop.first %}is-selected{% endif %}" {% if forloop.first %}style="visibility: visible"{% endif %} data-slide-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
             {{- slide_content -}}
           </div>
         {%- endif -%}
