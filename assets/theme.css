@@ -10947,9 +10947,9 @@ a.Link-Button-General:hover {
   }
 }
 .Slideshow__Content {
-  max-width: 1400px;
+  max-width: 1200px;
   position: absolute;
-  padding: 0 24px;
+  padding: 0 50px;
   width: 100%;
   left: 50%;
   top: 50%;
@@ -11008,7 +11008,7 @@ a.Link-Button-General:hover {
 
 @media screen and (min-width: 1008px) {
   .Slideshow__Content {
-    padding: 0 70px;
+    padding: 0 50px;
   }
 }
 .store-availability-container {

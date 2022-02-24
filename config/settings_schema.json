@@ -706,13 +706,37 @@
     "settings": [
       {
         "type": "header",
-        "content": "Collection Pages"
+        "content": "Homepage"
       },
       {
         "type": "checkbox",
         "id": "promotional_hero_hp_cover",
         "label": "Enable Promotional Cover on Homepage",
+        "info": "[For editing:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/promotion-home-hero.liquid)",
         "default": false
+      },
+      {
+        "type": "image_picker",
+        "id": "promotional_hero_image",
+        "label": "Select hero image"
+      },
+      {
+        "type": "header",
+        "content": "Button"
+      },
+      {
+        "type": "text",
+        "id": "button_1_text",
+        "label": "Text"
+      },
+      {
+        "type": "url",
+        "id": "button_1_link",
+        "label": "Link"
+      },
+      {
+        "type": "header",
+        "content": "Collection Pages"
       },
       {
         "type": "checkbox",
@@ -721,28 +745,28 @@
         "default": false
       },
       {
+        "type": "checkbox",
+        "id": "enable_collection_badge",
+        "label": "Enable Promotional Badge on Collection Pages",
+        "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/collection-promotional-badge.liquid)",
+        "default": false
+      },
+      {
         "type": "header",
         "content": "Product Pages"
       },
       {
         "type": "checkbox",
-        "id": "enable_collection_badge",
-        "label": "Enable Promotional Badge on Collection Pages",
-        "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/120441634955?key=snippets\/collection-promotional-badge.liquid)",
-        "default": false
-      },
-      {
-        "type": "checkbox",
         "id": "enable_product_badge",
         "label": "Enable Promotional Badge on Product Pages",
-        "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/120441634955?key=snippets\/product-promotional-badge.liquid)",
+        "info": "[For design and rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/product-promotional-badge.liquid)",
         "default": false
       },
       {
         "type": "checkbox",
         "id": "show_product_guarantee_exceptions",
         "label": "Show promotional caption in product form",
-        "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/120441634955?key=snippets\/guarantee-exceptions.liquid)",
+        "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/guarantee-exceptions.liquid)",
         "default": false
       }
     ]
