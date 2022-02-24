@@ -717,7 +717,8 @@
       {
         "type": "image_picker",
         "id": "promotional_hero_image",
-        "label": "Select hero image"
+        "label": "Select hero image",
+        "info": "[For editing:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/promotion-home-hero.liquid)"
       },
       {
         "type": "header",
