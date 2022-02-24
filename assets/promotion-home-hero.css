@@ -20,19 +20,19 @@
   }
 }
 
-@media screen  and (min-width: 500px) and (max-width: 1199px) and (orientation: landscape){
+@media screen  and (min-width: 600px) and (max-width: 1199px) and (orientation: landscape){
   .home_promotional_content_wrapper{
     width: 50%;
   }
 }
 
-@media screen  and (min-width: 500px) and (max-width: 1199px) and (orientation: portrait){
+@media screen  and (min-width: 600px) and (max-width: 1199px) and (orientation: portrait){
   .home_promotional_content_wrapper{
     width: 50%;
   }
 }
 
-@media screen  and (max-width: 499px) and (orientation: portrait) {
+@media screen  and (max-width: 599px) and (orientation: portrait) {
   .home_promotional_content_wrapper{
     width: 86%;
   }
