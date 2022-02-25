@@ -34,7 +34,8 @@
         
 			{% when 'title' %}
               <h2 class="SectionHeader__Heading Heading u-h2">{{ section.settings.title | escape }}</h2>
-
+        
+	        {% when 'richtext' %}
               {% if section.settings.content != blank %}
                 <div class="Container--extraNarrow">
                   {{ section.settings.content }}
