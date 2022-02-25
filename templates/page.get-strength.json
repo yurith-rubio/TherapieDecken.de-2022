@@ -11,6 +11,39 @@
     },
     "1645825201e4ed561b": {
       "type": "one-column-content",
+      "blocks": {
+        "de29e031-a7d3-4bc1-9b1a-d45387a303af": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Sub-heading"
+          }
+        },
+        "95d3e2d0-1bbc-4cd4-b83a-28122b1b3eb1": {
+          "type": "title",
+          "settings": {
+            "title": "Title"
+          }
+        },
+        "91ecb998-55fb-4581-b899-da3d7f8e437c": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        },
+        "eef213d0-759d-4033-9a81-51322cb69dbd": {
+          "type": "button",
+          "settings": {
+            "button_text": "Testing",
+            "button_url": "shopify:\/\/products\/beauty-queen-anti-falten-kissen"
+          }
+        }
+      },
+      "block_order": [
+        "de29e031-a7d3-4bc1-9b1a-d45387a303af",
+        "95d3e2d0-1bbc-4cd4-b83a-28122b1b3eb1",
+        "91ecb998-55fb-4581-b899-da3d7f8e437c",
+        "eef213d0-759d-4033-9a81-51322cb69dbd"
+      ],
       "settings": {
         "spacer": "50px 0",
         "bg-color": "",
