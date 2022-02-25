@@ -44,24 +44,17 @@
         		<div>
                   {{ block.settings.liquid }}
                 </div>
-              
+        
+            {% when 'button' %}
               {%- if section.settings.link_text != blank -%}
                 <a href="{{ section.settings.link_url }}" class="Link Link--underline">{{ section.settings.link_text | escape }}</a>
               {%- endif -%}
 
+        	{% when 'image' %}
               {%- if section.settings.image != blank -%}
                 <img data-src="{{ section.settings.image | img_url:'master' }}" class="image-text-simple Image--lazyLoad" />
               {%- endif -%}
 
-              {% if section.settings.content2 != blank %}
-                <div class="Container--extraNarrow">
-                  {{ section.settings.content2 }}
-                </div>
-              {% elsif section.settings.content_html2 != blank %}
-                <div>
-                  {{ section.settings.content_html2 }}
-                </div>
-              {%- endif -%}
 
               {%- if section.settings.button_text != blank -%}
                   <div class="Button__Blocks">
