@@ -46,11 +46,11 @@
     "social_youtube": "https:\/\/www.youtube.com\/channel\/UCzoQFn6SP0y-YTgCNnrLIfA?view_as=subscriber",
     "social_fancy": "https:\/\/therapiedecken.de\/blogs\/news?nopreview",
     "favicon": "shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png",
-    "countdown_date": "",
+    "countdown_date": "March 8, 2022",
     "enable_days_view": false,
     "loop_time": 0,
-    "announcement_countdown_enable": false,
-    "text_color_countdown": "#bb1d33",
+    "announcement_countdown_enable": true,
+    "text_color_countdown": "#fa558c",
     "product_countdown_enable": false,
     "icon_countdown_product": "<span class=\"icon-price-tags\"><\/span>",
     "countdown_product_text": "Garantierte Weihnachtszustellung endet in",
@@ -95,7 +95,7 @@
           "home_page_only": false,
           "background": "#fa558c",
           "text_color": "#ffffff",
-          "content": "Valentinstag <b>SALE<\/b> ❤️ 10% Rabatt + Gratis Kissen mit Code: <span style=\"background-color:white; color:#DC0810; padding: 2px 5px; border-radius:3px; font-weight:bold\">LOVE<\/span> | Endet in",
+          "content": "🤍 Weltfrauentag <b>Spezial<\/b>! GRATIS pinke Gewichtsmaske (Wert 59€) | Endet in",
           "link": "https:\/\/therapiedecken.de\/collections\/valentinstag-therapiedecken-kollektion"
         }
       },
