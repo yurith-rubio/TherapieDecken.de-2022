@@ -7,13 +7,7 @@
   .TextSimple__Content-{{ section.id }}{
     position: relative;
   }
-{% if section.settings.spacer != blank %}
-    @media only screen and (min-width: 641px) {
-      .TextSimple__Content-{{ section.id }}{
-        margin-bottom:{{ section.settings.margin_bottom }}px;
-      }
-    }
-  {% endif %}
+
   {% if section.settings.spacer != blank %}
     @media only screen and (max-width: 640px) {
       .TextSimple__Content-{{ section.id }}{
@@ -118,7 +112,7 @@
       },
       {
         "type": "text",
-        "id": "margin_bottom",
+        "id": "margin",
         "label": "Space Bottom in px",
         "info": "Write the number of pixels you want to have for the space above",
         "default": "30"
