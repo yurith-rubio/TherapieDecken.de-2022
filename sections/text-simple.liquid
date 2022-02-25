@@ -37,12 +37,12 @@
         
 	        {% when 'richtext' %}
                 <div class="Container--extraNarrow">
-                  {{ section.settings.content }}
+                  {{ block.settings.richtext }}
                 </div>
         
 	        {% when 'liquid' %}
         		<div>
-                  {{ section.settings.content_html }}
+                  {{ block.settings.liquid }}
                 </div>
               
               {%- if section.settings.link_text != blank -%}
