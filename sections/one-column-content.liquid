@@ -1,8 +1,186 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<!-- text-simple.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'product-custom.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  .TextSimple__Content-{{ section.id }}{
+    position: relative;
   }
+{% if section.settings.spacer != blank %}
+    @media only screen and (min-width: 641px) {
+      .TextSimple__Content-{{ section.id }}{
+        margin-bottom:{{ section.settings.margin_bottom }}px;
+      }
+    }
+  {% endif %}
+  {% if section.settings.spacer != blank %}
+    @media only screen and (max-width: 640px) {
+      .TextSimple__Content-{{ section.id }}{
+        margin-bottom:{{ section.settings.margin_bottom_mobile }}px;
+      }
+    }
+  {% endif %}
+{% endstyle %}
+
+<section class="Section">
+      
+    <div class="FeatureText__ContentWrapper" style="{% if section.settings.bg-color != blank %}background-color: {{ section.settings.bg-color }};{% endif %} {% if section.settings.spacer != blank %}padding: {{ section.settings.spacer }};{% endif %}">
+      <div class="FeatureText__Content_addons TextSimple__Content-{{ section.id }}" style="background-color: {{ section.settings.bg-color-text }}; text-align:{{ section.settings.text_align }}; margin-top:{{ section.settings.margin_top }}px;">
+		{% for block in section.blocks %}
+          {% case block.type %}
+        	{% when 'subheading' %}
+              <p class="SectionHeader__SubHeading Heading u-h6">{{ block.settings.subheading | escape }}</p>
+        
+			{% when 'title' %}
+              <h2 class="SectionHeader__Heading Heading u-h2">{{ block.settings.title | escape }}</h2>
+        
+	        {% when 'richtext' %}
+                <div class="Container--extraNarrow">
+                  {{ block.settings.richtext }}
+                </div>
+        
+	        {% when 'liquid' %}
+        		<div>
+                  {{ block.settings.liquid }}
+                </div>
+        
+            {% when 'button' %}
+                  <div class="Button__Blocks">
+                    <a href="{{ block.settings.button_url }}" class="Button Button--primary">
+                        {{ block.settings.button_text }}
+                    </a>
+                  </div>
+
+        	{% when 'image' %}
+                <img data-src="{{ block.settings.image | img_url:'master' }}" class="image-text-simple Image--lazyLoad" />
+
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "Richtext - one column",
+  "class": "shopify-section--bordered",
+  "settings": [
+      {
+        "type": "text",
+        "id": "spacer",
+        "label": "Space Top and Bottom",
+        "default": "50px 0"
+        },
+      {
+        "type": "color",
+        "id": "bg-color",
+        "label": "Background Color Container"
+        },
+      {
+        "type": "color",
+        "id": "bg-color-text",
+        "label": "Background Color Text",
+        "default": "#ffffff"
+        },
+      	{
+        "type": "select",
+        "id": "text_align",
+        "label": "Text Align",
+        "info": "Align your text to the left or center",
+        "options": [
+            {
+            "value": "left",
+            "label": "Left"
+            },
+            {
+            "value": "center",
+            "label": "Center"
+            }
+            ],
+          "default": "left"
+       	},
+		{
+          "type": "text",
+          "id": "margin_top",
+          "label": "Space Top in px",
+          "info": "Write the number of pixels you want to have for the space above",
+          "default": "30"
+        },
+      	{
+          "type": "text",
+          "id": "margin_bottom",
+          "label": "Space Bottom in px",
+          "info": "Write the number of pixels you want to have for the space above",
+          "default": "30"
+      	},
+      	{
+          "type": "text",
+          "id": "margin_bottom_mobile",
+          "label": "For Mobile - Space Bottom in px",
+          "info": "Write the number of pixels you want to have for the space above",
+          "default": "30"
+		}
+    ],
+  "blocks": [
+      { 
+        "type": "content",
+        "name": "Content",
+        "settings": [
+            {
+              "type": "text",
+              "id": "subheading",
+              "label": "Sub-heading",
+              "default": "Sub-heading"
+            },
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Heading",
+              "default": "Title"
+            },
+            {
+              "type": "richtext",
+              "id": "richtext",
+              "label": "Text",
+              "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+            },
+            {
+              "type": "liquid",
+              "id": "content_liquid",
+              "label": "Liquid block for more styling",
+              "default": "<p>ERASE the content of the block ABOVE is you want to use this block</p>"
+            },
+            {
+              "type": "url",
+              "id": "link_url",
+              "label": "Link URL"
+            },
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "button_text",
+              "label": "Button text"
+            },
+            {
+              "type": "url",
+              "id": "button_url",
+              "label": "Button URL"
+            }
+		]
+      }
+	],
+  "presets": [
+    {
+      "name": "Richtext - one column"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
