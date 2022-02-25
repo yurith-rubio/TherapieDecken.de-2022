@@ -4,14 +4,16 @@
 {{ 'product-custom.css' | asset_url | stylesheet_tag }}
 
 {% style %}
-.TextSimple__Content-{{ section.id }}{
-  position: relative;
-}
-.FeatureText__ContentWrapper{
-  display: flex;
-  justify-content: center;
-}
-
+  .TextSimple__Content-{{ section.id }}{
+    position: relative;
+  }
+  .FeatureText__ContentWrapper{
+    display: flex;
+    justify-content: center;
+  }
+  .Button__Blocks{
+    margin: 10px 0;
+  }
 {% endstyle %}
 
 <section class="Section">
