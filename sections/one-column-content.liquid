@@ -6,14 +6,11 @@
 {% style %}
   .TextSimple__Content-{{ section.id }}{
     position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
   }
-{% if section.settings.spacer != blank %}
-    @media only screen and (min-width: 641px) {
-      .TextSimple__Content-{{ section.id }}{
-        margin-bottom:{{ section.settings.margin_bottom }}px;
-      }
-    }
-  {% endif %}
+
   {% if section.settings.spacer != blank %}
     @media only screen and (max-width: 640px) {
       .TextSimple__Content-{{ section.id }}{
