@@ -4,21 +4,14 @@
 {{ 'product-custom.css' | asset_url | stylesheet_tag }}
 
 {% style %}
-  .TextSimple__Content-{{ section.id }}{
-    position: relative;
+.TextSimple__Content-{{ section.id }}{
+  position: relative;
+}
+.FeatureText__ContentWrapper{
+  display: flex;
+  justify-content: center;
 }
 
-  .FeatureText__ContentWrapper{
-	display: flex;
-	justify-content: center;
-  }
-  {% if section.settings.spacer != blank %}
-    @media only screen and (max-width: 640px) {
-      .TextSimple__Content-{{ section.id }}{
-        margin-bottom:{{ section.settings.margin_bottom_mobile }}px;
-      }
-    }
-  {% endif %}
 {% endstyle %}
 
 <section class="Section">
