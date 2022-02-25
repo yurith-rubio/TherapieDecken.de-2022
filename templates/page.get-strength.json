@@ -9,60 +9,31 @@
         "back_link_url": ""
       }
     },
-    "1631193615fcc39e24": {
-      "type": "collection-list-pages",
-      "blocks": {
-        "1631193615fcc39e24-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/CODECBAD.jpg",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Personalisierte Therapiedecken",
-            "button_text": "Mehr Erfahren",
-            "button_link": "shopify:\/\/collections\/personalisierte-therapiedecken",
-            "apply_overlay": true
-          }
-        },
-        "1631193615fcc39e24-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "personalisierte-ersatzbezuge",
-            "image": "shopify:\/\/shop_images\/DOUBLE-DUVET_infographic_1200x_e2f4a541-d55d-40ef-bd7d-5a3f0943feef.jpg",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Personalisierte Ersatzbezüge",
-            "button_text": "Mehr Erfahren",
-            "button_link": "shopify:\/\/products\/therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv",
-            "apply_overlay": true
-          }
-        }
-      },
-      "block_order": [
-        "1631193615fcc39e24-0",
-        "1631193615fcc39e24-1"
-      ],
+    "164580578902c95468": {
+      "type": "text-simple",
       "settings": {
-        "image_size": "small",
-        "set_width": "1000",
-        "stack_on_mobile": true,
-        "text_color": "#ffffff",
-        "button_color": "#363636"
-      }
-    },
-    "16310249852258c377": {
-      "type": "reviews-homepage",
-      "settings": {
-        "maxwidth": 1080
+        "spacer": "50px 0",
+        "bg-color": "",
+        "bg-color-text": "#ffffff",
+        "text_align": "left",
+        "margin_top": "30",
+        "margin_bottom": "30",
+        "margin_bottom_mobile": "30",
+        "subheading": "Sub-heading",
+        "title": "Title",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "content_html": "<p>ERASE the content of the block ABOVE is you want to use this block<\/p>",
+        "link_text": "",
+        "link_url": "",
+        "content2": "<p>Use when wanting text under image<\/p>",
+        "content_html2": "<p>ERASE the content of the block ABOVE is you want to use this block<\/p>",
+        "button_text": "",
+        "button_url": ""
       }
     }
   },
   "order": [
     "main",
-    "1631193615fcc39e24",
-    "16310249852258c377"
+    "164580578902c95468"
   ]
 }
