@@ -49,7 +49,7 @@
         "bg-color": "#f8f8f8",
         "bg-color-text": "#ffffff",
         "text_align": "left",
-        "margin": "300 0",
+        "margin": "300",
         "margin_bottom": "30",
         "margin_bottom_mobile": "30"
       }
