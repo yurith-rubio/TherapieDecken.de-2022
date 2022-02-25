@@ -29,14 +29,11 @@
       <div class="FeatureText__Content_addons TextSimple__Content-{{ section.id }}" style="background-color: {{ section.settings.bg-color-text }}; text-align:{{ section.settings.text_align }}; margin-top:{{ section.settings.margin_top }}px;">
 		{% for block in section.blocks %}
           {% case block.type %}
-        	{% when '' %}
-              {%- if section.settings.subheading != blank -%}
-                <p class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</p>
-              {%- endif -%}
-
-              {%- if section.settings.title != blank -%}
-                <h2 class="SectionHeader__Heading Heading u-h2">{{ section.settings.title | escape }}</h2>
-              {%- endif -%}
+        	{% when 'subheading' %}
+              <p class="SectionHeader__SubHeading Heading u-h6">{{ block.settings.subheading | escape }}</p>
+        
+			{% when 'title' %}
+              <h2 class="SectionHeader__Heading Heading u-h2">{{ section.settings.title | escape }}</h2>
 
               {% if section.settings.content != blank %}
                 <div class="Container--extraNarrow">
