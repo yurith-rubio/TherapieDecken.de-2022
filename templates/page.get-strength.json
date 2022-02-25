@@ -8,32 +8,9 @@
         "back_link_text": "Zurück zur...",
         "back_link_url": ""
       }
-    },
-    "164580578902c95468": {
-      "type": "text-simple",
-      "settings": {
-        "spacer": "50px 0",
-        "bg-color": "",
-        "bg-color-text": "#ffffff",
-        "text_align": "left",
-        "margin_top": "30",
-        "margin_bottom": "30",
-        "margin_bottom_mobile": "30",
-        "subheading": "Sub-heading",
-        "title": "Title",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "content_html": "<p>ERASE the content of the block ABOVE is you want to use this block<\/p>",
-        "link_text": "",
-        "link_url": "",
-        "content2": "<p>Use when wanting text under image<\/p>",
-        "content_html2": "<p>ERASE the content of the block ABOVE is you want to use this block<\/p>",
-        "button_text": "",
-        "button_url": ""
-      }
     }
   },
   "order": [
-    "main",
-    "164580578902c95468"
+    "main"
   ]
 }
