@@ -6,11 +6,13 @@
 {% style %}
   .TextSimple__Content-{{ section.id }}{
     position: relative;
+}
+
+  .FeatureText__ContentWrapper{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
   }
-
   {% if section.settings.spacer != blank %}
     @media only screen and (max-width: 640px) {
       .TextSimple__Content-{{ section.id }}{
