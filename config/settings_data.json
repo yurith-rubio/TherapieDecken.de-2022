@@ -47,7 +47,7 @@
     "social_fancy": "https:\/\/therapiedecken.de\/blogs\/news?nopreview",
     "favicon": "shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png",
     "countdown_date": "March 8, 2022",
-    "enable_days_view": false,
+    "enable_days_view": true,
     "loop_time": 0,
     "announcement_countdown_enable": true,
     "text_color_countdown": "#fa558c",
