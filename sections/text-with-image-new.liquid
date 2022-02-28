@@ -56,7 +56,7 @@
                       </div>
 
                   {% when 'button' %}
-                      <a href="{{ block.settings.link_url }}" class="{% if block.settings.button_style == true %}Button Button--primary{% else %} Link Link--underline{% endif %}" {%- if block.settings.button_extra -%}style="margin-right:20px; margin-bottom:20px;"{% endif %}>{{ block.settings.button_text | escape
+                      <a href="{{ block.settings.button_url }}" class="{% if block.settings.button_style == true %}Button Button--primary{% else %} Link Link--underline{% endif %}" {%- if block.settings.button_extra -%}style="margin-right:20px; margin-bottom:20px;"{% endif %}>{{ block.settings.button_text | escape
                         }}</a>
 
                     {%- if block.settings.button_extra -%}
