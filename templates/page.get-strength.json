@@ -44,29 +44,6 @@
         "content_bottom_margin": "50px"
       }
     },
-    "1646039896ed673183": {
-      "type": "html-with-image",
-      "settings": {
-        "spacer_top": true,
-        "spacer_bottom": true,
-        "bg-color": "",
-        "bg-color-text-html": "",
-        "icon_title": false,
-        "icons_duotone": "none",
-        "subheading": "Sub-heading",
-        "title": "Title",
-        "text_color": "#3a3c3c",
-        "image_position": "right",
-        "content_html": "<p>Erase this text if you would rather use the Rich Text block below<\/p>",
-        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
-        "button_style": false,
-        "link_text": "",
-        "link_url": "",
-        "button_extra": false,
-        "link_text_extra": "Mehr Erfahren",
-        "link_url_extra": ""
-      }
-    },
     "16460405611f723754": {
       "type": "text-with-image-new",
       "blocks": {
@@ -116,7 +93,6 @@
     "1646038188cd04844e",
     "main",
     "1645825201e4ed561b",
-    "1646039896ed673183",
     "16460405611f723754"
   ]
 }
