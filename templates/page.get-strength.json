@@ -56,9 +56,7 @@
         "bcaf931e-d160-4b4f-8f44-2e8251c2dae9": {
           "type": "title",
           "settings": {
-            "title": "Title",
-            "icon_title": true,
-            "icons_duotone": "allergy"
+            "title": "Title"
           }
         },
         "00d58617-322b-4902-9c12-35974c0b6eae": {
@@ -78,7 +76,9 @@
         "spacer_bottom": true,
         "bg-color": "",
         "bg-color-text-html": "",
-        "text_color": "#3a3c3c"
+        "text_color": "#3a3c3c",
+        "icon_title": true,
+        "icons_duotone": "add"
       }
     }
   },
