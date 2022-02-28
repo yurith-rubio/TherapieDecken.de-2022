@@ -38,16 +38,12 @@
                       </div>
                     </div>
                   {% endif %}
-                
-				
-                  {%- if section.settings.content_html != blank -%}
+
+                {% when 'liquid' %}
                     <div class="SectionHeader__Description Rte"
                          style="color: {{ section.settings.text_color }};">
                       {{ section.settings.content_html }}
                     </div>
-                  {% elsif section.settings.content_rich != blank %}
-                    <span style="color: {{ section.settings.text_color }};">{{ section.settings.content_rich }}</span>
-                  {%- endif -%}
 
                   {%- if section.settings.link_text != blank -%}
                     <a href="{{ section.settings.link_url }}" class="{% if section.settings.button_style == true %}Button Button--primary{% else %} Link Link--underline{% endif %}" {%- if section.settings.button_extra -%}style="margin-right:20px; margin-bottom:20px;"{% endif %}>{{ section.settings.link_text | escape
