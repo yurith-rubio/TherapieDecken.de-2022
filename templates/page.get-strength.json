@@ -55,7 +55,7 @@
         "icons_duotone": "none",
         "subheading": "Sub-heading",
         "title": "Title",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image_position": "right",
         "content_html": "<p>Erase this text if you would rather use the Rich Text block below<\/p>",
         "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
@@ -69,17 +69,25 @@
     },
     "16460405611f723754": {
       "type": "text-with-image-new",
+      "blocks": {
+        "bcaf931e-d160-4b4f-8f44-2e8251c2dae9": {
+          "type": "title",
+          "settings": {
+            "title": "Title",
+            "icon_title": true,
+            "icons_duotone": "alzheimer"
+          }
+        }
+      },
+      "block_order": [
+        "bcaf931e-d160-4b4f-8f44-2e8251c2dae9"
+      ],
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
         "bg-color": "",
         "bg-color-text-html": "",
-        "icon_title": false,
-        "icons_duotone": "none",
-        "subheading": "Sub-heading",
-        "title": "Title",
-        "text_color": "#3A3C3C",
-        "image_position": "right",
+        "text_color": "#3a3c3c",
         "content_html": "<p>Erase this text if you would rather use the Rich Text block below<\/p>",
         "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
         "button_style": false,
