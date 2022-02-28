@@ -42,7 +42,7 @@
                 {% when 'liquid' %}
                     <div class="SectionHeader__Description Rte"
                          style="color: {{ section.settings.text_color }};">
-                      {{ section.settings.content_html }}
+                      {{ block.settings.liquid }}
                     </div>
 
 				{% when 'button' %}
