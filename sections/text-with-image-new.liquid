@@ -87,8 +87,8 @@
     {%- endcapture -%}
 
     <div
-      class="FeatureText {% if section.settings.image != blank %}FeatureText--withImage FeatureText--image{{ section.settings.image_position | capitalize }}{% endif %}">
-      {%- if section.settings.image_position == 'left' -%}
+      class="FeatureText {% if section.settings.image != blank %}FeatureText--withImage FeatureText--image{{ block.settings.image_position | capitalize }}{% endif %}">
+      {%- if block.settings.image_position == 'left' -%}
       {{- section_image -}}
       {{- section_content -}}
       {%- else -%}
