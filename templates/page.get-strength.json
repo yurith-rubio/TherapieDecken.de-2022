@@ -80,7 +80,7 @@
           "type": "title",
           "settings": {
             "title": "Title",
-            "icon_title": true,
+            "icon_title": false,
             "icons_duotone": "long_lasting"
           }
         }
