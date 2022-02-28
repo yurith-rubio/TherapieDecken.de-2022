@@ -70,6 +70,7 @@
 
     {%- capture section_image -%}
       {% case block.type %}
+        {% when 'image' %}
         <div class="FeatureText__ImageWrapper">
           {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image:
           block.settings.image -%}{%- endcapture -%}
