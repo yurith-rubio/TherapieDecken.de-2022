@@ -46,11 +46,11 @@
                     </div>
 
 				{% when 'button' %}
-                    <a href="{{ section.settings.link_url }}" class="{% if section.settings.button_style == true %}Button Button--primary{% else %} Link Link--underline{% endif %}" {%- if section.settings.button_extra -%}style="margin-right:20px; margin-bottom:20px;"{% endif %}>{{ section.settings.link_text | escape
+                    <a href="{{ block.settings.link_url }}" class="{% if block.settings.button_style == true %}Button Button--primary{% else %} Link Link--underline{% endif %}" {%- if block.settings.button_extra -%}style="margin-right:20px; margin-bottom:20px;"{% endif %}>{{ block.settings.link_text | escape
                       }}</a>
 
-                  {%- if section.settings.button_extra -%}
-                    <a href="{{ section.settings.link_url_extra }}" class="Button Button--primary">{{ section.settings.link_text_extra | escape
+                  {%- if block.settings.button_extra -%}
+                    <a href="{{ block.settings.link_url_extra }}" class="Button Button--primary">{{ block.settings.link_text_extra | escape
                       }}</a>
                   {%- endif -%}
               </div>
