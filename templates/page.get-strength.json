@@ -130,7 +130,10 @@
           "settings": {
             "button_style": true,
             "button_text": "Mehr Erfahren",
-            "button_url": ""
+            "button_url": "shopify:\/\/collections",
+            "button_extra": true,
+            "button_text_extra": "Mehr Erfahren",
+            "button_url_extra": ""
           }
         }
       },
