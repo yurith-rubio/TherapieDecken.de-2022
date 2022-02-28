@@ -124,11 +124,20 @@
           "settings": {
             "richtext": "<p>Die Nutzung einer Gewichtsdecke kann innere Unruhe, Gedankenkreisen und Stress verringern und zu einem kuscheligen Rückzugsort nach stressigen Arbeitstagen oder Alltagssituationen werden. Die Therapiedecke wird zum Ort der Ruhe und Entspannung, der einem Kraft und Energie für den nächsten Tag schenkt. <\/p>"
           }
+        },
+        "da7d3e85-6b81-444f-817d-2d4b0601192c": {
+          "type": "button",
+          "settings": {
+            "button_style": true,
+            "button_text": "Mehr Erfahren",
+            "button_url": ""
+          }
         }
       },
       "block_order": [
         "da147483-60b8-4211-82ae-85bfef9d81e6",
-        "9f61439c-d159-4735-8432-75ba4005013f"
+        "9f61439c-d159-4735-8432-75ba4005013f",
+        "da7d3e85-6b81-444f-817d-2d4b0601192c"
       ],
       "settings": {
         "spacer_top": true,
@@ -136,7 +145,7 @@
         "bg-color": "#f8f8f8",
         "bg-color-text-html": "#ffffff",
         "text_align": "left",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/get-strength3.jpg",
         "image_position": "right"
       }
