@@ -60,8 +60,7 @@
                         }}</a>
 
                     {%- if block.settings.button_extra -%}
-                      <a href="{{ block.settings.link_url_extra }}" class="Button Button--primary">{{ block.settings.link_text_extra | escape
-                        }}</a>
+                      <a href="{{ block.settings.button_url_extra }}" class="Button Button--primary">{{ block.settings.button_text_extra | escape }}</a>
                     {%- endif -%}
                   
                 {% endcase %}
