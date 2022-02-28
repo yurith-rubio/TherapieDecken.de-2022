@@ -19,6 +19,7 @@
 
               <div class="FeatureText__Content html-text-wr">
                 {% case block.type %}
+                  {% when 'title' %}
                   {% if block.settings.icon_title %}
                 	<div class=" HTMLimg__WithIcon">
                   	  <div class="icon_html_img icon-40">{% render 'icons_duotone' | block:block, settings: settings %}</div>
