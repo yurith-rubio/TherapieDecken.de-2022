@@ -24,7 +24,8 @@
       <div class="FeatureText__Content_addons TextSimple__Content-{{ section.id }}" 
            style="background-color: {{ section.settings.bg-color-text }}; 
                   text-align:{{ section.settings.text_align }}"
-           		  {% if section.settings.content_top_margin != blank %}padding-top: {{ section.settings.content_top_margin }}; {% endif %}>
+           		  {% if section.settings.content_top_margin != blank %}padding-top: {{ section.settings.content_top_margin }}; {% endif %}
+           		  {% if section.settings.content_top_margin != blank %}padding-bottom: {{ section.settings.content_bottom_margin }}; {% endif %}>
 		{% for block in section.blocks %}
           {% case block.type %}
         	{% when 'subheading' %}
