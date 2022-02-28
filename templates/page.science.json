@@ -50,7 +50,7 @@
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
-        "bg-color": "#ffffff",
+        "bg-color": "#f8f8f8",
         "bg-color-text-html": "#ffffff",
         "icon_title": true,
         "icons_duotone": "anxiety",
