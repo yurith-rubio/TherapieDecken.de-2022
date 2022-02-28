@@ -13,7 +13,7 @@
 
 {% comment %}Find comparable product by title - Suggested COVER Upsell on Pillow Product Pages {% endcomment %}
 {% if product.title contains 'Gesundheitskissen für Erwachsene' %}
-	{% assign pillow_title_base = product.title | remove: 'Blaues Gesundheitskissen für Erwachsene' | strip %}
+	{% assign pillow_title_base = product.title | remove: 'Gesundheitskissen für Erwachsene' | strip %}
 {% endif %}
 {% if product.title contains 'für Kinder' %}
 	{% assign pillow_title_base = product.title | remove: 'für Kinder' | remove: 'Gesundheitskissen' | strip %}
