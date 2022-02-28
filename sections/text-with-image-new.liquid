@@ -20,22 +20,22 @@
 			  
               <div class="FeatureText__Content html-text-wr">
                   <div class=" HTMLimg__WithIcon">
-                  {% if block.settings.icon_title %}
-                  	  <div class="icon_html_img icon-40">{% render 'icons_duotone' | block:block, settings: settings %}</div>
-                  	  <div class="HTMLimg__titleWithIcon">
-                  {% endif %}
-                  {% when 'subheading' %}
-                    <p class="SectionHeader__SubHeading Heading u-h6"
-                         style="color: {{ section.settings.text_color }};">{{ block.settings.subheading | escape }}</p>
-
-                  {% when 'title' %}
-                    <h2 class="SectionHeader__Heading Heading u-h2"
-                        style="color: {{ section.settings.text_color }};">{{ block.settings.title | escape }}</h2>
-
                     {% if block.settings.icon_title %}
-                        </div>
-                      
+                        <div class="icon_html_img icon-40">{% render 'icons_duotone' | block:block, settings: settings %}</div>
+                        <div class="HTMLimg__titleWithIcon">
                     {% endif %}
+                    {% when 'subheading' %}
+                      <p class="SectionHeader__SubHeading Heading u-h6"
+                           style="color: {{ section.settings.text_color }};">{{ block.settings.subheading | escape }}</p>
+
+                    {% when 'title' %}
+                      <h2 class="SectionHeader__Heading Heading u-h2"
+                          style="color: {{ section.settings.text_color }};">{{ block.settings.title | escape }}</h2>
+
+                      {% if block.settings.icon_title %}
+                          </div>
+
+                      {% endif %}
                   </div>
 
                   {% when 'richtext' %}
