@@ -1,5 +1,6 @@
 .FeaturedHtmlImage-container .FeatureText__ContentWrapper{
   position: relative;
+  padding-left: 20px !important;
 }
 
 @media only screen and (max-width: 640px){
