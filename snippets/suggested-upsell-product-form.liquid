@@ -16,9 +16,9 @@
 	{% assign pillow_title_base = product.title | remove: 'Blaues Gesundheitskissen für Erwachsene' | strip %}
 {% endif %}
 {% if product.title contains 'für Kinder' %}
-	  {% assign pillow_title_base = product.title | remove: 'Gesundheitskissen' | strip %}
+	{% assign pillow_title_base = product.title | remove: 'Gesundheitskissen' | strip %}
 {% elsif product.title[0] contains 'Gesundheitskissen' %}
-      {% assign pillow_title_base = product.title | remove: 'Gesundheitskissen' | strip %}
+    {% assign pillow_title_base = product.title | remove: 'Gesundheitskissen' | strip %}
 {% endif %}
 
 
