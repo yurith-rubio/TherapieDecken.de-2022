@@ -124,23 +124,11 @@
           "settings": {
             "richtext": "<p>Die Nutzung einer Gewichtsdecke kann innere Unruhe, Gedankenkreisen und Stress verringern und zu einem kuscheligen Rückzugsort nach stressigen Arbeitstagen oder Alltagssituationen werden. Die Therapiedecke wird zum Ort der Ruhe und Entspannung, der einem Kraft und Energie für den nächsten Tag schenkt. <\/p>"
           }
-        },
-        "da7d3e85-6b81-444f-817d-2d4b0601192c": {
-          "type": "button",
-          "settings": {
-            "button_style": true,
-            "button_text": "Mehr Erfahren",
-            "button_url": "shopify:\/\/collections",
-            "button_extra": true,
-            "button_text_extra": "Mehr Erfahren",
-            "button_url_extra": "shopify:\/\/pages\/caroline-helmings-erfahrung-mit-therapiedecken"
-          }
         }
       },
       "block_order": [
         "da147483-60b8-4211-82ae-85bfef9d81e6",
-        "9f61439c-d159-4735-8432-75ba4005013f",
-        "da7d3e85-6b81-444f-817d-2d4b0601192c"
+        "9f61439c-d159-4735-8432-75ba4005013f"
       ],
       "settings": {
         "spacer_top": true,
