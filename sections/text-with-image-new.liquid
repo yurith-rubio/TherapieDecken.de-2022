@@ -145,45 +145,7 @@
           "id": "text_color",
           "label": "Text Color",
 		  "default": "#3A3C3C"
-        },
-        {
-          "type": "header",
-          "content": "Button"
-        },
-        {
-          "type": "checkbox",
-          "id": "button_style",
-          "label": "Yellow Button Style",
-		  "default": false
-        },
-        {
-          "type": "text",
-          "id": "link_text",
-          "label": "Link text"
-        },
-        {
-          "type": "url",
-          "id": "link_url",
-          "label": "Link URL"
-        },
-        {
-          "type": "checkbox",
-          "id": "button_extra",
-          "label": "Extra Button",
-		  "default": false
-        },
-        {
-          "type": "text",
-          "id": "link_text_extra",
-          "label": "Link text",
-		  "default": "Mehr Erfahren"
-        },
-        {
-          "type": "url",
-          "id": "link_url_extra",
-          "label": "Link URL"
         }
-
       ],
 	  "blocks": [
 	    { 
@@ -344,6 +306,12 @@
           "type": "button",
           "name": "Button",
           "settings": [
+              {
+                "type": "checkbox",
+                "id": "button_style",
+                "label": "Yellow Button Style",
+                "default": false
+              },
               {
                 "type": "text",
                 "id": "button_text",
