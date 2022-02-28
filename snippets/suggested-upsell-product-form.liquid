@@ -1,5 +1,6 @@
 {{ 'suggested_upsell_product.css' | asset_url | stylesheet_tag }}
 
+{% comment %}Find comparable product by title - Suggested PILLOW Upsell on Cover Product Pages {% endcomment %}
 {% if product.title contains 'Therapiedecken Baumwollbezug' %}
 	{% assign cover_title_base = product.title | remove: 'Therapiedecken Baumwollbezug' | strip %}
 {% endif %}
@@ -10,6 +11,20 @@
 	{% assign cover_title_base = product.title | remove: 'Therapiedecken 4-Jahreszeiten Bezug' | strip %}
 {% endif %}
 
+{% comment %}Find comparable product by title - Suggested COVER Upsell on Pillow Product Pages {% endcomment %}
+{% if product.title contains 'Gesundheitskissen für Erwachsene' %}
+	{% assign pillow_title_base = product.title | remove: 'Blaues Gesundheitskissen für Erwachsene' | strip %}
+{% endif %}
+{% if product.title[0] contains 'Gesundheitskissen' %}
+	{% assign pillow_title_base = product.title | remove: 'Gesundheitskissen' | strip %}
+{% endif %}
+{% if product.title contains 'Gesundheitskissen' and contains 'für Kinder' %}
+	{% assign pillow_title_base = product.title | remove: 'Gesundheitskissen' | strip %}
+{% endif %}
+
+
+
+{% comment %}Place Upsell product under the buy button - Suggested PILLOW Upsell on Cover Product Pages {% endcomment %}
 {% layout none %}
 {% paginate collections['Therapiekissen'].products by 1000 %}
   {% for product in collections['Therapiekissen'].products %}
@@ -38,6 +53,38 @@
     {% endif %}
   {% endfor %}
 {% endpaginate %}
+
+
+{% comment %}Place Upsell product under the buy button - Suggested COVER Upsell on Pillow Product Pages {% endcomment %}
+{% layout none %}
+{% paginate collections['Bettwäsche Sets für Therapiedecken'].products by 1000 %}
+  {% for product in collections['Bettwäsche Sets für Therapiedecken'].products %}
+    {% if product.title contains pillow_title_base %}
+      {%- assign image_url = product.images[1] | image_url: width: 300 -%}
+      <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <a href="{{ product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
+        <div class="SuggestedUpProd_infoWr">
+          <a href="{{ product.url }}"><h2>{{ product.title }}</h2></a>
+          <div>
+            <span class="ProductMeta__Price Price Suggested_Price--highlight Text--subdued u-h4" style="font-weight:bold">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+            <span class="ProductMeta__Price Price Suggested_Price--compareAt Text--subdued u-h4">{{ product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
+            <div class="SuggestedUpPro_variantText">
+              {% for size_option in product.options_by_name['Größe'].values[0] %}
+                 Größe: {{ size_option }} <br>
+              {% endfor %}
+              {% for size_option in product.options_by_name['Füllung'].values[0] %}
+                  Füllung: {{ size_option }}
+              {% endfor %}
+          	</div>
+          </div>
+          <button class="SuggestedUpProd_buttonWr Button Button--primary" type="submit">Hinzufügen</button>
+        </div>
+      </form>
+    {% endif %}
+  {% endfor %}
+{% endpaginate %}
+
 
 
 
