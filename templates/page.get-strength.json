@@ -109,6 +109,27 @@
     },
     "16460558841cd507a0": {
       "type": "text-with-image-new",
+      "blocks": {
+        "da147483-60b8-4211-82ae-85bfef9d81e6": {
+          "type": "title",
+          "settings": {
+            "subheading": "",
+            "title": "Gewichtsdecken geben Kraft und innere Ruhe",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "9f61439c-d159-4735-8432-75ba4005013f": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Die Nutzung einer Gewichtsdecke kann innere Unruhe, Gedankenkreisen und Stress verringern und zu einem kuscheligen Rückzugsort nach stressigen Arbeitstagen oder Alltagssituationen werden. Die Therapiedecke wird zum Ort der Ruhe und Entspannung, der einem Kraft und Energie für den nächsten Tag schenkt. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "da147483-60b8-4211-82ae-85bfef9d81e6",
+        "9f61439c-d159-4735-8432-75ba4005013f"
+      ],
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
