@@ -18,9 +18,7 @@
 {% if product.title[0] contains 'Gesundheitskissen' %}
 	{% assign pillow_title_base = product.title | remove: 'Gesundheitskissen' | strip %}
 {% endif %}
-{% if product.title contains 'Gesundheitskissen' and contains 'für Kinder' %}
-	{% assign pillow_title_base = product.title | remove: 'Gesundheitskissen' | strip %}
-{% endif %}
+
 
 
 
