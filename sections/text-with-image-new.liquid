@@ -32,11 +32,10 @@
                       <h2 class="SectionHeader__Heading Heading u-h2"
                           style="color: {{ section.settings.text_color }};">{{ block.settings.title | escape }}</h2>
 
-                      {% if section.settings.icon_title %}
-                          </div>
-
-                      {% endif %}
+                    {% if section.settings.icon_title %}
+                        </div>
                   </div>
+                  {% endif %}
 
                   {% when 'richtext' %}
                       <div class="SectionHeader__Description Rte"
