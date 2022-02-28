@@ -70,7 +70,7 @@
     "16460405611f723754": {
       "type": "text-with-image-new",
       "blocks": {
-        "974b581c-0a16-4193-af95-0cd18880b474": {
+        "27d3ae7f-1af3-400e-b409-2d729159b461": {
           "type": "subheading",
           "settings": {
             "subheading": "Sub-heading"
@@ -81,12 +81,12 @@
           "settings": {
             "title": "Title",
             "icon_title": false,
-            "icons_duotone": "long_lasting"
+            "icons_duotone": "allergy"
           }
         }
       },
       "block_order": [
-        "974b581c-0a16-4193-af95-0cd18880b474",
+        "27d3ae7f-1af3-400e-b409-2d729159b461",
         "bcaf931e-d160-4b4f-8f44-2e8251c2dae9"
       ],
       "settings": {
