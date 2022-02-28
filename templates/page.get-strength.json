@@ -78,8 +78,8 @@
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
-        "bg-color": "",
-        "bg-color-text-html": "",
+        "bg-color": "#f22626",
+        "bg-color-text-html": "#fa558c",
         "text_align": "left",
         "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/Cover_Image_tiny2.jpg",
