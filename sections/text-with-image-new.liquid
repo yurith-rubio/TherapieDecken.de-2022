@@ -6,8 +6,7 @@
 
 <section class="Section">
   	<div class="FeaturedHtmlImage-container Image--lazyLoad spacer" 
-         style="
-                {% if section.settings.bg_img %}background-position: center; background-size:cover;{% endif %} 
+         style="{% if section.settings.bg_img %}background-position: center; background-size:cover;{% endif %} 
                 {% if section.settings.spacer_top %}padding-top: 50px;{% endif %} 
          		{% if section.settings.spacer_bottom %}padding-bottom: 50px;{% endif %}"
 	            {% if section.settings.bg-color != blank %}background-color: {{ section.settings.bg-color }};{% endif %} 
