@@ -13,49 +13,51 @@
 	            {% if section.settings.bg-color != blank %}background-color: {{ section.settings.bg-color }};{% endif %} 
          		{% if section.settings.bg_img %}data-bgset="{{ section.settings.bg_img | img_url: '750x', crop: 'center' }} 750w, {{ section.settings.bg_img | img_url: '1000x' }} 1000w, {{ section.settings.bg_img | img_url: '1500x' }} 1500w"{% endif %}>
 
-  	  {%- capture section_content -%} 
-        <div class="FeatureText__ContentWrapper"
-            {% if section.settings.bg-color-text-html != blank %} style="background-color:{{ section.settings.bg-color-text-html }}; {% endif %}">
+      {% for block in section.blocks %}
+        {%- capture section_content -%}
+          <div class="FeatureText__ContentWrapper"
+              {% if section.settings.bg-color-text-html != blank %} style="background-color:{{ section.settings.bg-color-text-html }}; {% endif %}">
 
-          <div class="FeatureText__Content html-text-wr">
+            <div class="FeatureText__Content html-text-wr">
 
-              {% if section.settings.icon_title %}<div class=" HTMLimg__WithIcon">{% endif %}
-              {% if section.settings.icon_title %}  
-                <div class="icon_html_img icon-40">{% render 'icons_duotone' | block:block, settings: settings %}</div><div class="HTMLimg__titleWithIcon">
-              {% endif %}
+                {% if section.settings.icon_title %}<div class=" HTMLimg__WithIcon">{% endif %}
+                {% if section.settings.icon_title %}  
+                  <div class="icon_html_img icon-40">{% render 'icons_duotone' | block:block, settings: settings %}</div><div class="HTMLimg__titleWithIcon">
+                {% endif %}
 
-              {%- if section.settings.subheading != blank -%}
-                <p class="SectionHeader__SubHeading Heading u-h6"
-                   style="color: {{ section.settings.text_color }};">{{ section.settings.subheading | escape }}</p>
-              {%- endif -%}
+                {%- if section.settings.subheading != blank -%}
+                  <p class="SectionHeader__SubHeading Heading u-h6"
+                     style="color: {{ section.settings.text_color }};">{{ section.settings.subheading | escape }}</p>
+                {%- endif -%}
 
-              {%- if section.settings.title != blank -%}
-                <h2 class="SectionHeader__Heading Heading u-h2"
-                    style="color: {{ section.settings.text_color }};">{{ section.settings.title | escape }}</h2>
-              {%- endif -%}
-              {% if section.settings.icon_title %}</div></div>{% endif %}
+                {%- if section.settings.title != blank -%}
+                  <h2 class="SectionHeader__Heading Heading u-h2"
+                      style="color: {{ section.settings.text_color }};">{{ section.settings.title | escape }}</h2>
+                {%- endif -%}
+                {% if section.settings.icon_title %}</div></div>{% endif %}
 
-              {%- if section.settings.content_html != blank -%}
-                <div class="SectionHeader__Description Rte"
-                     style="color: {{ section.settings.text_color }};">
-                  {{ section.settings.content_html }}
-                </div>
-              {% elsif section.settings.content_rich != blank %}
-                <span style="color: {{ section.settings.text_color }};">{{ section.settings.content_rich }}</span>
-              {%- endif -%}
+                {%- if section.settings.content_html != blank -%}
+                  <div class="SectionHeader__Description Rte"
+                       style="color: {{ section.settings.text_color }};">
+                    {{ section.settings.content_html }}
+                  </div>
+                {% elsif section.settings.content_rich != blank %}
+                  <span style="color: {{ section.settings.text_color }};">{{ section.settings.content_rich }}</span>
+                {%- endif -%}
 
-              {%- if section.settings.link_text != blank -%}
-                <a href="{{ section.settings.link_url }}" class="{% if section.settings.button_style == true %}Button Button--primary{% else %} Link Link--underline{% endif %}" {%- if section.settings.button_extra -%}style="margin-right:20px; margin-bottom:20px;"{% endif %}>{{ section.settings.link_text | escape
-                  }}</a>
-              {%- endif -%}
+                {%- if section.settings.link_text != blank -%}
+                  <a href="{{ section.settings.link_url }}" class="{% if section.settings.button_style == true %}Button Button--primary{% else %} Link Link--underline{% endif %}" {%- if section.settings.button_extra -%}style="margin-right:20px; margin-bottom:20px;"{% endif %}>{{ section.settings.link_text | escape
+                    }}</a>
+                {%- endif -%}
 
-              {%- if section.settings.button_extra -%}
-                <a href="{{ section.settings.link_url_extra }}" class="Button Button--primary">{{ section.settings.link_text_extra | escape
-                  }}</a>
-              {%- endif -%}
+                {%- if section.settings.button_extra -%}
+                  <a href="{{ section.settings.link_url_extra }}" class="Button Button--primary">{{ section.settings.link_text_extra | escape
+                    }}</a>
+                {%- endif -%}
+            </div>
           </div>
-        </div>
-      {%- endcapture -%}
+        {%- endcapture -%}
+      {% endfor %}
 
     {%- capture section_image -%}
     {%- if section.settings.image != blank -%}
