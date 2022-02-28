@@ -106,6 +106,18 @@
         "content_top_margin": "50px",
         "content_bottom_margin": "50px"
       }
+    },
+    "16460558841cd507a0": {
+      "type": "text-with-image-new",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image_position": "right"
+      }
     }
   },
   "order": [
@@ -113,6 +125,7 @@
     "main",
     "1645825201e4ed561b",
     "16460405611f723754",
-    "164605578326fccafa"
+    "164605578326fccafa",
+    "16460558841cd507a0"
   ]
 }
