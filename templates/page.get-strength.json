@@ -57,14 +57,8 @@
           "type": "title",
           "settings": {
             "title": "Title",
-            "icon_title": false,
+            "icon_title": true,
             "icons_duotone": "allergy"
-          }
-        },
-        "8825d8ab-91a2-4387-9309-52cac7686043": {
-          "type": "richtext",
-          "settings": {
-            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
           }
         },
         "00d58617-322b-4902-9c12-35974c0b6eae": {
@@ -77,7 +71,6 @@
       "block_order": [
         "27d3ae7f-1af3-400e-b409-2d729159b461",
         "bcaf931e-d160-4b4f-8f44-2e8251c2dae9",
-        "8825d8ab-91a2-4387-9309-52cac7686043",
         "00d58617-322b-4902-9c12-35974c0b6eae"
       ],
       "settings": {
