@@ -34,6 +34,6 @@
 
 @media screen  and (max-width: 599px) and (orientation: portrait) {
   .home_promotional_content_wrapper{
-    width: 86%;
+    width: 100%;
   }
 }
