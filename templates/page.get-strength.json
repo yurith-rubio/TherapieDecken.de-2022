@@ -99,8 +99,8 @@
         "68bbbce3-1298-4eaa-8818-1d2eec07627f"
       ],
       "settings": {
-        "bg-color": "#F8F8F8",
-        "section_margin": "50px",
+        "bg-color": "#e6e6e6",
+        "section_margin": "0",
         "bg-color-text": "#ffffff",
         "text_align": "left",
         "content_top_margin": "50px",
