@@ -1,7 +1,20 @@
 {
   "sections": {
+    "1646038188cd04844e": {
+      "type": "page-standard-header",
+      "settings": {
+        "custom_title": false,
+        "custom_title_text": "Customize Title if needed",
+        "image": "shopify:\/\/shop_images\/get-strength1.jpg",
+        "mobile_custom": false,
+        "apply_overlay": true,
+        "review_starts": false,
+        "content": ""
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "show_large": false,
         "back_link_checkbox": false,
@@ -14,12 +27,14 @@
       "blocks": {
         "de29e031-a7d3-4bc1-9b1a-d45387a303af": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "subheading": "Sub-heading"
           }
         },
         "95d3e2d0-1bbc-4cd4-b83a-28122b1b3eb1": {
           "type": "title",
+          "disabled": true,
           "settings": {
             "title": "Title"
           }
@@ -45,17 +60,16 @@
         "eef213d0-759d-4033-9a81-51322cb69dbd"
       ],
       "settings": {
-        "spacer": "50px 0",
         "bg-color": "#f8f8f8",
+        "section_margin": "50px 0",
         "bg-color-text": "#ffffff",
         "text_align": "left",
-        "margin": "30",
-        "margin_bottom": "30",
-        "margin_bottom_mobile": "30"
+        "section_padding": "50px 0"
       }
     }
   },
   "order": [
+    "1646038188cd04844e",
     "main",
     "1645825201e4ed561b"
   ]
