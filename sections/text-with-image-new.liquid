@@ -7,9 +7,10 @@
 <section class="Section">
   	<div class="FeaturedHtmlImage-container Image--lazyLoad spacer" 
          style="{% if section.settings.bg_img %}background-position: center; background-size:cover;{% endif %} 
-                {% if section.settings.spacer_top %}padding-top: 50px;{% endif %} 
-         		{% if section.settings.spacer_bottom %}padding-bottom: 50px;{% endif %}"
-	            {% if section.settings.bg-color != blank %}background-color: {{ section.settings.bg-color }};{% endif %} 
+                {% if section.settings.spacer_top %}padding-top: 50px; {% endif %} 
+         		{% if section.settings.spacer_bottom %}padding-bottom: 50px; {% endif %}
+                {% if section.settings.bg-color != blank %}background-color: {{ section.settings.bg-color }}; {% endif %} "
+	            
          		{% if section.settings.bg_img %}data-bgset="{{ section.settings.bg_img | img_url: '750x', crop: 'center' }} 750w, {{ section.settings.bg_img | img_url: '1000x' }} 1000w, {{ section.settings.bg_img | img_url: '1500x' }} 1500w"{% endif %}>
 
       {%- capture section_content -%}
