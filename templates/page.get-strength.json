@@ -145,8 +145,8 @@
       "type": "button-block",
       "settings": {
         "bg-color": "#ffffff",
-        "button_text": "Mehr Erfharen",
-        "button_url": "",
+        "button_text": "Zu den Therapiedecken",
+        "button_url": "shopify:\/\/collections",
         "spacer_top": "50px",
         "spacer_bottom": "50px"
       }
