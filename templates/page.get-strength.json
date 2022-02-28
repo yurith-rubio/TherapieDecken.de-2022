@@ -61,17 +61,26 @@
           "settings": {
             "liquid": "<p>ERASE the content of the block ABOVE is you want to use this block<\/p>gdgfdgfd"
           }
+        },
+        "af913a35-269e-427a-811c-31eb1d7047f2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/get-strength1.jpg",
+            "image_position": "right"
+          }
         }
       },
       "block_order": [
         "bcaf931e-d160-4b4f-8f44-2e8251c2dae9",
-        "00d58617-322b-4902-9c12-35974c0b6eae"
+        "00d58617-322b-4902-9c12-35974c0b6eae",
+        "af913a35-269e-427a-811c-31eb1d7047f2"
       ],
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
         "bg-color": "",
         "bg-color-text-html": "",
+        "text_align": "left",
         "text_color": "#3a3c3c"
       }
     }
