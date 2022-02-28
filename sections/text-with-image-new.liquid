@@ -45,10 +45,9 @@
                       {{ section.settings.content_html }}
                     </div>
 
-                  {%- if section.settings.link_text != blank -%}
+				{% when 'button' %}
                     <a href="{{ section.settings.link_url }}" class="{% if section.settings.button_style == true %}Button Button--primary{% else %} Link Link--underline{% endif %}" {%- if section.settings.button_extra -%}style="margin-right:20px; margin-bottom:20px;"{% endif %}>{{ section.settings.link_text | escape
                       }}</a>
-                  {%- endif -%}
 
                   {%- if section.settings.button_extra -%}
                     <a href="{{ section.settings.link_url_extra }}" class="Button Button--primary">{{ section.settings.link_text_extra | escape
