@@ -38,7 +38,8 @@
                       </div>
                     </div>
                   {% endif %}
-
+                
+				{% when 'title' %}
                   {%- if section.settings.content_html != blank -%}
                     <div class="SectionHeader__Description Rte"
                          style="color: {{ section.settings.text_color }};">
