@@ -36,7 +36,7 @@
         "91ecb998-55fb-4581-b899-da3d7f8e437c"
       ],
       "settings": {
-        "bg-color": "#f8f8f8",
+        "bg-color": "#e6e6e6",
         "section_margin": "",
         "bg-color-text": "#ffffff",
         "text_align": "left",
@@ -78,7 +78,7 @@
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
-        "bg-color": "#ffffff",
+        "bg-color": "#f8f8f8",
         "bg-color-text-html": "#ffffff",
         "text_align": "left",
         "text_color": "#3a3c3c",
