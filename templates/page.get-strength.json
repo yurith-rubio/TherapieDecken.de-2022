@@ -25,40 +25,15 @@
     "1645825201e4ed561b": {
       "type": "one-column-content",
       "blocks": {
-        "de29e031-a7d3-4bc1-9b1a-d45387a303af": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "subheading": "Sub-heading"
-          }
-        },
-        "95d3e2d0-1bbc-4cd4-b83a-28122b1b3eb1": {
-          "type": "title",
-          "disabled": true,
-          "settings": {
-            "title": "Title"
-          }
-        },
         "91ecb998-55fb-4581-b899-da3d7f8e437c": {
           "type": "richtext",
           "settings": {
             "richtext": "<p>Die Wärme einer weichen, kuscheligen Decke kann sich wunderbar anfühlen, wenn wir müde und erschöpft sind und uns entspannen wollen. Aber was ist, wenn wir uns ängstlich oder einsam fühlen? Könnte eine Decke auch das gleiche Gefühl der Behaglichkeit vermitteln und uns helfen, uns zu entspannen, wenn sich unser Körper und unser Geist überhaupt nicht entspannt fühlen?<\/p><p><\/p><p>Therapiedecken sind beschwerte Decken, die manchmal auch als Gewichtsdecken bezeichnet werden und seit Jahren in vielen Krankenhäusern und therapeutischen Programmen eingesetzt werden. In jüngster Zeit haben sich die Gewichtsdecken mehr und mehr durchgesetzt, da die Menschen die vielen Vorteile der Verwendung einer Gewichtsdecke zu Hause kennengelernt haben. <\/p>"
           }
-        },
-        "eef213d0-759d-4033-9a81-51322cb69dbd": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_text": "Testing",
-            "button_url": "shopify:\/\/products\/beauty-queen-anti-falten-kissen"
-          }
         }
       },
       "block_order": [
-        "de29e031-a7d3-4bc1-9b1a-d45387a303af",
-        "95d3e2d0-1bbc-4cd4-b83a-28122b1b3eb1",
-        "91ecb998-55fb-4581-b899-da3d7f8e437c",
-        "eef213d0-759d-4033-9a81-51322cb69dbd"
+        "91ecb998-55fb-4581-b899-da3d7f8e437c"
       ],
       "settings": {
         "bg-color": "#f8f8f8",
