@@ -21,10 +21,8 @@
 
               <div class="FeatureText__Content html-text-wr">
 				{% when 'subheading' %}
-                  {%- if block.settings.subheading != blank -%}
-                    <p class="SectionHeader__SubHeading Heading u-h6"
+                  <p class="SectionHeader__SubHeading Heading u-h6"
                        style="color: {{ section.settings.text_color }};">{{ block.settings.subheading | escape }}</p>
-                  {%- endif -%}
                 
                 {% when 'title' %}
                   {% if block.settings.icon_title %}
