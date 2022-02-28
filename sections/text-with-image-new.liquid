@@ -25,15 +25,16 @@
               		<div class="HTMLimg__titleWithIcon">
                 {% endif %}
 
-                {%- if section.settings.subheading != blank -%}
+                {%- if block.settings.subheading != blank -%}
                   <p class="SectionHeader__SubHeading Heading u-h6"
-                     style="color: {{ section.settings.text_color }};">{{ section.settings.subheading | escape }}</p>
+                     style="color: {{ section.settings.text_color }};">{{ block.settings.subheading | escape }}</p>
                 {%- endif -%}
 
                 {%- if section.settings.title != blank -%}
                   <h2 class="SectionHeader__Heading Heading u-h2"
                       style="color: {{ section.settings.text_color }};">{{ section.settings.title | escape }}</h2>
                 {%- endif -%}
+                      
                 {% if section.settings.icon_title %}
               		</div>
               	  </div>
