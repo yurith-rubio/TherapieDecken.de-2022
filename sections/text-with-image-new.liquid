@@ -39,6 +39,12 @@
                       </div>
                     {% endif %}
 
+                  {% when 'richtext' %}
+                      <div class="SectionHeader__Description Rte"
+                           style="color: {{ section.settings.text_color }};">
+                        {{ block.settings.liquid }}
+                      </div>
+                
                   {% when 'liquid' %}
                       <div class="SectionHeader__Description Rte"
                            style="color: {{ section.settings.text_color }};">
