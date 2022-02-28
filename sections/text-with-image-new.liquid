@@ -68,8 +68,6 @@
       {%- endcapture -%}
 
     {%- capture section_image -%}
-      {% case block.type %}
-        {% when 'image' %}
         <div class="FeatureText__ImageWrapper">
           {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image:
           block.settings.image -%}{%- endcapture -%}
@@ -86,12 +84,11 @@
             </noscript>
           </div>
         </div>
-      {% endcase %}
     {%- endcapture -%}
 
     <div
       class="FeatureText {% if block.settings.image != blank %}FeatureText--withImage FeatureText--image{{ block.settings.image_position | capitalize }}{% endif %}">
-      {%- if block.settings.image_position == 'left' -%}
+      {%- if section.settings.image_position == 'left' -%}
         {{- section_image -}}
         {{- section_content -}}
       {%- else -%}
