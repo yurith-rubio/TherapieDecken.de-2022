@@ -50,30 +50,22 @@
         "bcaf931e-d160-4b4f-8f44-2e8251c2dae9": {
           "type": "title",
           "settings": {
-            "subheading": "Sub-heading",
-            "title": "Title",
-            "icon_title": true,
+            "subheading": "",
+            "title": "Stimulation durch Tiefendruck",
+            "icon_title": false,
             "icons_duotone": "allergy"
           }
         },
-        "00d58617-322b-4902-9c12-35974c0b6eae": {
-          "type": "liquid",
+        "0543c81b-b44d-4c23-9c1d-ad967ca0b39d": {
+          "type": "richtext",
           "settings": {
-            "liquid": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          }
-        },
-        "af913a35-269e-427a-811c-31eb1d7047f2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/get-strength1.jpg",
-            "image_position": "right"
+            "richtext": "<p>Eine Gewichtsdecke übt durch ihr Gewicht einen besonderen Druck auf den gesamten Körper aus. Dieser wird auch als Tiefendruckstimulation (engl. Deep Pressure Touch Stimulation) bezeichnet. Traditionell wurden Gewichtsdecken bei Menschen eingesetzt, die mit sensorischen Störungen zu kämpfen haben. Die Tiefendruckstimulation hilft, ein überreiztes System zu beruhigen. Bei richtiger Anwendung kann dieser Druck, der einer warmen Umarmung ähnelt, dem Körper helfen, von seinem sympathischen Nervensystem auf sein parasympathisches Nervensystem umzuschalten. Die Decke übt einen gleichmäßig verteilten, sanften Druck auf einen großen Bereich des Körpers aus und schafft so ein Gefühl der Ruhe und Sicherheit für diejenigen, die sich ängstlich oder überreizt fühlen.<\/p>"
           }
         }
       },
       "block_order": [
         "bcaf931e-d160-4b4f-8f44-2e8251c2dae9",
-        "00d58617-322b-4902-9c12-35974c0b6eae",
-        "af913a35-269e-427a-811c-31eb1d7047f2"
+        "0543c81b-b44d-4c23-9c1d-ad967ca0b39d"
       ],
       "settings": {
         "spacer_top": true,
