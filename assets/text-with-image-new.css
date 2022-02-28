@@ -1,5 +1,4 @@
-.FeaturedHtmlImage-container .FeatureText__ContentWrapper{
-  position: relative;
+.text-with-image-new_ContentWrapper{
   padding-left: 20px !important;
 }
 
@@ -29,6 +28,9 @@
 	padding-left: 8px;
   }
 }
-  .icon_html_img{
-	line-height: 1.1;
-  }
+.icon_html_img{
+  line-height: 1.1;
+}
+.text-align-left{
+  text-align: left;
+}
