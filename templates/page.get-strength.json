@@ -74,8 +74,30 @@
         "bg-color-text-html": "#ffffff",
         "text_align": "left",
         "text_color": "#3a3c3c",
-        "image": "shopify:\/\/shop_images\/pet_cover.jpg",
+        "image": "shopify:\/\/shop_images\/get-strength2_a5f5221b-d3d8-435b-a111-6590ee0d6ec2.jpg",
         "image_position": "right"
+      }
+    },
+    "164605578326fccafa": {
+      "type": "one-column-content",
+      "blocks": {
+        "68bbbce3-1298-4eaa-8818-1d2eec07627f": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Der Körper ist ein komplexes Gebilde mit Systemen, die uns helfen, unsere Funktionen zu regulieren und uns in unserer Welt zurechtzufinden. Unser autonomes Nervensystem reguliert die unbewussten Funktionen unseres Körpers, wie Atmung, Herzschlag, Blutkreislauf und bestimmte Reflexe. Dies sind im Wesentlichen die Funktionen, die unser Körper jeden Tag ausführt, ohne dass wir darüber nachdenken müssen. Wir können zum Beispiel atmen, ohne darüber nachzudenken, wie wir atmen. Wenn wir gestresst sind oder auf eine Bedrohung in unserer Umgebung aufmerksam gemacht werden, schaltet sich unser sympathisches Nervensystem ein. Das sympathische Nervensystem ist der Motor unserer Flucht- oder Kampfreaktion. Er nutzt die Informationen, die wir aufnehmen, und versucht, uns zu helfen, schnell zu reagieren, um den Moment zu überleben. Wenn wir unter anhaltendem Stress und Angst leiden, sendet unser sympathisches Nervensystem Signale an Bereiche in unserem ganzen Körper, um uns zu signalisieren, dass wir einer Bedrohung gegenüberstehen. Das Problem ist, dass wir uns bei alltäglichem Stress wie Arbeit, Sorgen, familiären Verpflichtungen und hektischen Terminen normalerweise nicht in einer gefährlichen und lebensbedrohlichen Situation befinden. Die Verwendung einer Gewichtsdecke bietet unserem Körper die Möglichkeit in einen \"Ruhe- und Entspannungs\"-Modus zu schalten, der von unserem parasympathischen Nervensystem gesteuert wird. Wenn unser Körper das Signal erhält, dass er nicht mehr auf der Hut sein muss und in Sicherheit ist, hat der Parasympathikus die Möglichkeit, sich einzuschalten und unserem Körper zu helfen, sich zu beruhigen, zu regulieren und sein inneres Gleichgewicht zu finden.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "68bbbce3-1298-4eaa-8818-1d2eec07627f"
+      ],
+      "settings": {
+        "bg-color": "#F8F8F8",
+        "section_margin": "50px",
+        "bg-color-text": "#ffffff",
+        "text_align": "left",
+        "content_top_margin": "50px",
+        "content_bottom_margin": "50px"
       }
     }
   },
@@ -83,6 +105,7 @@
     "1646038188cd04844e",
     "main",
     "1645825201e4ed561b",
-    "16460405611f723754"
+    "16460405611f723754",
+    "164605578326fccafa"
   ]
 }
