@@ -13,15 +13,16 @@
          		{% if section.settings.bg_img %}data-bgset="{{ section.settings.bg_img | img_url: '750x', crop: 'center' }} 750w, {{ section.settings.bg_img | img_url: '1000x' }} 1000w, {{ section.settings.bg_img | img_url: '1500x' }} 1500w"{% endif %}>
 
       {%- capture section_content -%}
-      	{% for block in section.blocks %}
+      	
       	  
             <div class="FeatureText__ContentWrapper"
               {% if section.settings.bg-color-text-html != blank %} style="background-color:{{ section.settings.bg-color-text-html }}; {% endif %}">
 			  
               <div class="FeatureText__Content html-text-wr
                           {% if section.settings.text_align == 'left' %}text-align-left{% endif %}">
+                {% for block in section.blocks %}
                 {% case block.type %}
-
+				
                 {% when 'title' %}
                   {% if block.settings.icon_title %}
                     <div class=" HTMLimg__WithIcon">
@@ -61,10 +62,11 @@
                       <a href="{{ block.settings.link_url_extra }}" class="Button Button--primary">{{ block.settings.link_text_extra | escape
                         }}</a>
                     {%- endif -%}
+                  
                 {% endcase %}
+                {% endfor %}
               </div>
             </div>
-        {% endfor %}
       {%- endcapture -%}
 
     {%- capture section_image -%}
