@@ -18,7 +18,10 @@
 
 <section class="Section">
       
-    <div class="FeatureText__ContentWrapper" style="{% if section.settings.bg-color != blank %}background-color: {{ section.settings.bg-color }};{% endif %} {% if section.settings.spacer != blank %}padding: {{ section.settings.spacer }};{% endif %}">
+    <div class="FeatureText__ContentWrapper" 
+         style="{% if section.settings.bg-color != blank %}background-color: {{ section.settings.bg-color }}; {% endif %} 
+                {% if section.settings.section_margin != blank %}margin: {{ section.settings.section_margin }}; {% endif %}
+                {% if section.settings.section_padding != blank %}padding: {{ section.settings.section_padding }}; {% endif %}">
       <div class="FeatureText__Content_addons TextSimple__Content-{{ section.id }}" style="background-color: {{ section.settings.bg-color-text }}; text-align:{{ section.settings.text_align }}">
 		{% for block in section.blocks %}
           {% case block.type %}
