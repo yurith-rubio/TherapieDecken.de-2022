@@ -81,7 +81,9 @@
         "bg-color": "",
         "bg-color-text-html": "",
         "text_align": "left",
-        "text_color": "#3a3c3c"
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/Cover_Image_tiny2.jpg",
+        "image_position": "right"
       }
     }
   },
