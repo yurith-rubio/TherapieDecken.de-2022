@@ -133,10 +133,11 @@
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
-        "bg-color": "",
-        "bg-color-text-html": "",
+        "bg-color": "#f8f8f8",
+        "bg-color-text-html": "#ffffff",
         "text_align": "left",
         "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/get-strength3.jpg",
         "image_position": "right"
       }
     }
