@@ -47,12 +47,6 @@
     "16460405611f723754": {
       "type": "text-with-image-new",
       "blocks": {
-        "27d3ae7f-1af3-400e-b409-2d729159b461": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Sub-heading"
-          }
-        },
         "bcaf931e-d160-4b4f-8f44-2e8251c2dae9": {
           "type": "title",
           "settings": {
@@ -67,7 +61,6 @@
         }
       },
       "block_order": [
-        "27d3ae7f-1af3-400e-b409-2d729159b461",
         "bcaf931e-d160-4b4f-8f44-2e8251c2dae9",
         "00d58617-322b-4902-9c12-35974c0b6eae"
       ],
