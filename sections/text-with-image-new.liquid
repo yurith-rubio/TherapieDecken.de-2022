@@ -89,17 +89,20 @@
           </div>
         {% endcase %}
     {%- endcapture -%}
-
-    <div
-      class="FeatureText {% if block.settings.image != blank %}FeatureText--withImage FeatureText--image{{ block.settings.image_position | capitalize }}{% endif %}">
-      {%- if block.settings.image_position == 'left' -%}
-        {{- section_image -}}
-        {{- section_content -}}
-      {%- else -%}
-        {{- section_content -}}
-        {{- section_image -}}
-      {%- endif -%}
-    </div>
+      
+    {% case block.type %}
+      {% when 'image' %}
+        <div
+          class="FeatureText {% if block.settings.image != blank %}FeatureText--withImage FeatureText--image{{ block.settings.image_position | capitalize }}{% endif %}">
+          {%- if block.settings.image_position == 'left' -%}
+            {{- section_image -}}
+            {{- section_content -}}
+          {%- else -%}
+            {{- section_content -}}
+            {{- section_image -}}
+          {%- endif -%}
+        </div>
+    {% endcase %}
   </div>
   
   {% endfor %}
