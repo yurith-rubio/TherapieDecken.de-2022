@@ -140,6 +140,16 @@
         "image": "shopify:\/\/shop_images\/get-strength3.jpg",
         "image_position": "right"
       }
+    },
+    "16460560171948f6f9": {
+      "type": "button-block",
+      "settings": {
+        "bg-color": "#ffffff",
+        "button_text": "Mehr Erfharen",
+        "button_url": "",
+        "spacer_top": "50px",
+        "spacer_bottom": "50px"
+      }
     }
   },
   "order": [
@@ -148,6 +158,7 @@
     "1645825201e4ed561b",
     "16460405611f723754",
     "164605578326fccafa",
-    "16460558841cd507a0"
+    "16460558841cd507a0",
+    "16460560171948f6f9"
   ]
 }
