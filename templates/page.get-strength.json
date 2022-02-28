@@ -81,6 +81,12 @@
     "164605578326fccafa": {
       "type": "one-column-content",
       "blocks": {
+        "dde3f941-b9a5-45af-9677-e8813a5af6ef": {
+          "type": "title",
+          "settings": {
+            "title": "Beruhigung unseres Nervensystems"
+          }
+        },
         "68bbbce3-1298-4eaa-8818-1d2eec07627f": {
           "type": "richtext",
           "settings": {
@@ -89,6 +95,7 @@
         }
       },
       "block_order": [
+        "dde3f941-b9a5-45af-9677-e8813a5af6ef",
         "68bbbce3-1298-4eaa-8818-1d2eec07627f"
       ],
       "settings": {
