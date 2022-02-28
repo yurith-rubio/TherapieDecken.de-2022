@@ -74,7 +74,7 @@
               alt="{{ block.settings.image.alt | escape }}">
 
             <noscript>
-              <img src="{{ section.settings.image | img_url: '800x' }}" alt="{{ section.settings.image.alt | escape }}">
+              <img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt | escape }}">
             </noscript>
           </div>
         </div>
@@ -82,7 +82,7 @@
     {%- endcapture -%}
 
     <div
-      class="FeatureText {% if section.settings.image != blank %}FeatureText--withImage FeatureText--image{{ block.settings.image_position | capitalize }}{% endif %}">
+      class="FeatureText {% if block.settings.image != blank %}FeatureText--withImage FeatureText--image{{ block.settings.image_position | capitalize }}{% endif %}">
       {%- if block.settings.image_position == 'left' -%}
       {{- section_image -}}
       {{- section_content -}}
