@@ -70,24 +70,24 @@
     {%- capture section_image -%}
         <div class="FeatureText__ImageWrapper">
           {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image:
-          block.settings.image -%}{%- endcapture -%}
+          section.settings.image -%}{%- endcapture -%}
 
           <div class="AspectRatio"
-            style="max-width: {{ block.settings.image.width }}px; --aspect-ratio: {{ block.settings.image.aspect_ratio }}">
-            {%- assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            <img class="Image--lazyLoad Image--slide{{ block.settings.image_position | capitalize }}"
+            style="max-width: {{ section.settings.image.width }}px; --aspect-ratio: {{ section.settings.image.aspect_ratio }}">
+            {%- assign image_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+            <img class="Image--lazyLoad Image--slide{{ section.settings.image_position | capitalize }}"
               data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto"
-              alt="{{ block.settings.image.alt | escape }}">
+              alt="{{ section.settings.image.alt | escape }}">
 
             <noscript>
-              <img src="{{ block.settings.image | img_url: '800x' }}" alt="{{ block.settings.image.alt | escape }}">
+              <img src="{{ section.settings.image | img_url: '800x' }}" alt="{{ section.settings.image.alt | escape }}">
             </noscript>
           </div>
         </div>
     {%- endcapture -%}
 
     <div
-      class="FeatureText {% if block.settings.image != blank %}FeatureText--withImage FeatureText--image{{ block.settings.image_position | capitalize }}{% endif %}">
+      class="FeatureText {% if section.settings.image != blank %}FeatureText--withImage FeatureText--image{{ section.settings.image_position | capitalize }}{% endif %}">
       {%- if section.settings.image_position == 'left' -%}
         {{- section_image -}}
         {{- section_content -}}
