@@ -47,6 +47,7 @@
         },
         "eef213d0-759d-4033-9a81-51322cb69dbd": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_text": "Testing",
             "button_url": "shopify:\/\/products\/beauty-queen-anti-falten-kissen"
