@@ -5954,7 +5954,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .Article__ImageWrapper {
   overflow: hidden;
-  height: 215px;
+  height: 315px;
   padding-top: 100px;
 }
 
