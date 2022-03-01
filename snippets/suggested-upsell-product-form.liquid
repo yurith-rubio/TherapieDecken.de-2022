@@ -11,14 +11,6 @@
 	{% assign cover_title_base = product.title | remove: 'Therapiedecken 4-Jahreszeiten Bezug' | strip %}
 {% endif %}
 
-{% comment %}Find comparable product by title - Suggested COVER Upsell on Pillow Product Pages {% endcomment %}
-{% if product.title contains 'Gesundheitskissen' %}
-    {% assign pillow_title_base = product.title | remove: 'Gesundheitskissen' | strip %}
-{% endif %}
-
-
-
-
 {% comment %}Place Upsell product under the buy button - Suggested PILLOW Upsell on Cover Product Pages {% endcomment %}
 {% layout none %}
 {% paginate collections['Therapiekissen'].products by 1000 %}
@@ -49,6 +41,11 @@
   {% endfor %}
 {% endpaginate %}
 
+
+{% comment %}Find comparable product by title - Suggested COVER Upsell on Pillow Product Pages {% endcomment %}
+{% if product.title contains 'Gesundheitskissen' %}
+    {% assign pillow_title_base = product.title | remove: 'Gesundheitskissen' | strip %}
+{% endif %}
 
 {{ pillow_title_base }}
 {% comment %}Place Upsell product under the buy button - Suggested COVER Upsell on Pillow Product Pages {% endcomment %}
