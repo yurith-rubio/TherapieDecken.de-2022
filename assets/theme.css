@@ -5979,7 +5979,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   position: relative;
   max-width: 620px;
   margin: 0 auto 90px auto;
-  padding: 24px 24px 0 24px;
+  padding: 144px 24px 0 24px;
   background: var(--background);
 }
 
