@@ -52,7 +52,9 @@
 {% endpaginate %}
 
 
-{{ collection.handle }}
+{% for collection in product.collections %}
+    {{ collection.title }}
+{% endfor %}
 
 {% comment %}Place Upsell product under the buy button - Suggested COVER Upsell on Pillow Product Pages {% endcomment %}
 {% layout none %}
