@@ -5,6 +5,8 @@
       "settings": {
         "show_collection_info": true,
         "show_collection_image": true,
+        "bg_position_y": "center",
+        "bg_position_x": "right",
         "apply_overlay": true,
         "show_color_swatch": true,
         "show_vendor": false,
