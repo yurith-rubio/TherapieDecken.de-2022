@@ -12,9 +12,7 @@
 {% endif %}
 
 {% comment %}Find comparable product by title - Suggested COVER Upsell on Pillow Product Pages {% endcomment %}
-{% if product.title contains 'Gesundheitskissen für Erwachsene' %}
-	{% assign pillow_title_base = product.title | remove: 'Gesundheitskissen für Erwachsene' | strip %}
-{% elsif product.title contains 'Gesundheitskissen' %}
+{% if product.title contains 'Gesundheitskissen' %}
     {% assign pillow_title_base = product.title | remove: 'Gesundheitskissen' | strip %}
 {% endif %}
 
@@ -52,6 +50,7 @@
 {% endpaginate %}
 
 
+{{ pillow_title_base }}
 {% comment %}Place Upsell product under the buy button - Suggested COVER Upsell on Pillow Product Pages {% endcomment %}
 {% layout none %}
 {% paginate collections['Ersatzbezüge für Therapiedecken'].products by 1000 %}
