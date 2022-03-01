@@ -58,7 +58,7 @@
         <p><font size="1" style="text-decoration:underline"><a href="/blogs/news">Zurück zur Übersicht</a></font></p> 
         {%- capture article_meta -%}
           {%- if section.settings.show_date -%}
-            <span class="Article__MetaItem">{{ article.published_at | date: format: 'month_day_year' }}</span>
+            <span class="Article__MetaItem">{{ article.published_at | date: format: '%b %d %y' }}</span>
           {%- endif -%}
 
           {%- if section.settings.show_category and article.tags != empty -%}
