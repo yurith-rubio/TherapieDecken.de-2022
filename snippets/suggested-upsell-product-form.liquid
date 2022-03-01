@@ -50,8 +50,8 @@
 {{ pillow_title_base }}
 {% comment %}Place Upsell product under the buy button - Suggested COVER Upsell on Pillow Product Pages {% endcomment %}
 {% layout none %}
-{% paginate collections['Ersatzbezüge für Therapiedecken'].products by 1000 %}
-  {% for product in collections['Ersatzbezüge für Therapiedecken'].products %}
+{% paginate collections['ersatzbezuge-fur-therapiedecken'].products by 1000 %}
+  {% for product in collections['ersatzbezuge-fur-therapiedecken'].products %}
     {% if product.title contains pillow_title_base %}
 		Test
       {%- assign image_url = product.images[1] | image_url: width: 300 -%}
