@@ -77,7 +77,8 @@
           <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if section.settings.apply_overlay %}Image--contrast{% endif %}"
                data-optimumx="1.2"
                data-bgset="{{ collection.image | img_url: 'x600' }} 600w, {{ collection.image | img_url: '800x' }} 800w, {{ collection.image | img_url: '1200x' }} 1200w, {{ collection.image | img_url: '1400x' }} 1400w, {{ collection.image | img_url: '1600x' }} 1600w"
-               style="background-position-x: {{ section.settings.bg_position_x }}">
+               style="background-position-x: {{ section.settings.bg_position_x }}; 
+                      background-position-y: {{ section.settings.bg_position_y }}">
           </div>
 
           <noscript>
