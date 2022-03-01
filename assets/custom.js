@@ -65,7 +65,6 @@ $(document).ready(function () {
 
     $("[data-variant-id=" + variantId + "]").removeClass("info-wr-hidden");
     $("[data-variant-id=" + variantId + "]").removeClass("twtd-shipping-time-hidden");
-    
 
     $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("is-limited-badge-hidden");
 	//Extra hidding rule for the upsell products limitiert badges
