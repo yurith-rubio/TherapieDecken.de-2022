@@ -58,8 +58,8 @@
 
 {% comment %}Place Upsell product under the buy button - Suggested COVER Upsell on Pillow Product Pages {% endcomment %}
 {% layout none %}
-{% paginate collections['Bettwäsche Sets für Therapiedecken'].products by 1000 %}
-  {% for product in collections['Bettwäsche Sets für Therapiedecken'].products %}
+{% paginate collections['Ersatzbezüge für Therapiedecken'].products by 1000 %}
+  {% for product in collections['Ersatzbezüge für Therapiedecken'].products %}
     {% if product.title contains pillow_title_base %}
       {%- assign image_url = product.images[1] | image_url: width: 300 -%}
       <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
