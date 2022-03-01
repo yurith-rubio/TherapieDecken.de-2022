@@ -26,12 +26,18 @@
             "show_price_in_button": false,
             "show_payment_button": false
           }
+        },
+        "fa06d660-2955-4943-9639-fd9c703fc7d5": {
+          "type": "payment_methods",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "product_meta",
         "variant_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "fa06d660-2955-4943-9639-fd9c703fc7d5"
       ],
       "settings": {
         "image_size": "large",
@@ -207,6 +213,7 @@
         "icons_duotone": "none",
         "subheading": "",
         "title": "Die bekannteste Therapiedecke",
+        "text_color": "#3A3C3C",
         "image": "shopify:\/\/shop_images\/TD-SLIDE-MOTHERS-DAY-C.jpg",
         "image_position": "right",
         "content_html": "Die Standard Gravity Therapiedecke ist der Liebling unter unseren Therapiedecken, da dieses Modell schon seit Tag 1 dabei ist. Das Gravity Inlett und die hochwertigen Premium Bezüge werden über Schlaufen miteinander verknüpft und sorgen für einen wohltuenden Schlaf.",
@@ -270,6 +277,7 @@
         "icons_duotone": "none",
         "subheading": "Glasperlen & Premium Bezug",
         "title": "Aufbau der Standard Gravity Therapiedecke",
+        "text_color": "#3A3C3C",
         "image": "shopify:\/\/shop_images\/NEW_Therapiedecken-Aufbau-Gravity-Balance.jpg",
         "image_position": "right",
         "content_html": "<style>\nli{\nlist-style: none;\n}\nli > span {\nposition: relative;\nleft: -24px;\nmargin-right: -20px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(2) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(3) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(4) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\n<\/style>\n\n\n<ol>\n<li>\n<span class=\"icon-one\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester\n<\/li>\n<li>\n<span class=\"icon-two\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nGravity Gewichtsdecke (Inlett) aus 100% organischer Baumwolle. <\/li>\n<li>\n<span class=\"icon-three\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nDie Füllung besteht aus 32% Polyester und 68% Baumwolle.<\/li>\n<li>\n<span class=\"icon-four\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nIn der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.<\/li>\n<\/ol>",
@@ -293,6 +301,7 @@
         "icons_duotone": "none",
         "subheading": "Entspannung durch Tiefendruck",
         "title": "Die Wissenschaft hinter den Therapiedecken",
+        "text_color": "#3A3C3C",
         "image": "shopify:\/\/shop_images\/Product-page-sience-behind-TD_500x_56d6eafa-6b1e-46db-b225-0914f54287c6.jpg",
         "image_position": "left",
         "content_html": "Der Tiefendruck, der durch das Gewicht ausgeübt wird, hat eine entspannende Wirkung auf die Gelenke, Muskeln und Sehnen. Dieser Effekt ist auch als “Deep Pressure Touch Stimulation” bekannt, indem ein sanfter und dennoch kräftiger und gleichmäßiger Druck auf den Körper wirkt. Dadurch kommt man körperlich als auch innerlich zur Ruhe. Die Körperwahrnehmung verbessert sich.\nAußerdem erfolgt durch den Druck die Ausschüttung des Hormons Serotonin, gleichzeitig verringert sich der Cortisolspiegel (sog. Stresshormon). Der Tiefendruck signalisiert dem Körper ein Gefühl von Sicherheit und Geborgenheit.",
@@ -316,6 +325,7 @@
         "icons_duotone": "none",
         "subheading": "Nachhaltig und fair",
         "title": "Therapiedecken aus Europa",
+        "text_color": "#3A3C3C",
         "image": "shopify:\/\/shop_images\/gravity-schlaufen-herstellung_500x_484eedb3-18d5-4df8-a69c-ac36ab5b66e7.jpg",
         "image_position": "right",
         "content_html": "<p>Die Standard Gravity Gewichtsdecke wird ausschließlich in Europa hergestellt, die dabei verwendete Baumwolle stammt aus nachhaltigem Anbau und ist zertifiziert. Die Glasperlen im Inneren der Decken werden sicher und hochwertig in Europa produziert.<\/p>\n\n\n<img class=\" lazyloaded\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/all_logos_gewichtsdecken_therapiedecken_zertifikate_b2dfb83c-9301-42f1-92e1-71467ad6d47c.png?2213\" height=\"37\" width=\"290\" vspace=\"5\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/all_logos_gewichtsdecken_therapiedecken_zertifikate_b2dfb83c-9301-42f1-92e1-71467ad6d47c.png?2213\">\n<br>\n<br>\n<br>",

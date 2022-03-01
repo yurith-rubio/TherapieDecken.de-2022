@@ -16,11 +16,9 @@
 
 {%- assign selected_variant = product.selected_or_first_available_variant -%}
 
-<style>
-  .hide_option, .blank_option{
-    display:none;
-  }
-</style>
+{{ 'product-form.css' | asset_url | stylesheet_tag }}
+{% render 'druck-option-button-img' %}
+
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
   {%- for option in product.options_with_values -%}
@@ -41,7 +39,7 @@
     {%- assign size_chart_page = block.settings.size_chart -%}
 
     <span class="ProductForm__Label">
-      {{ option.name }}:
+      {{ option.position }}. {{ option.name }}:
 
       {% if color_label contains downcase_option and block.settings.show_color_swatch %}
       <span class="ProductForm__SelectedValue">{{ option.selected_value }}</span>
@@ -66,8 +64,7 @@
         {% if option.name == "Bezugsart" or option.name == "Design" or option.name == "Farbe" or option.name == "Bezugssystem" %}
         {%- assign downcase_value = value | downcase -%}
 
-         <li class="HorizontalList__Item MainVariant_container">
-
+         <li class="HorizontalList__Item MainVariant_container {% if value==option.selected_value %}yellow_style{% endif %}">
           <input id="option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
             class="ColorSwatch__Radio" type="radio" name="option-{{ parent_index }}"
             value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
@@ -78,6 +75,7 @@
             style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: value %}">
             <span class="u-visually-hidden">{{ value }}</span>
           </label>
+           
           {% if option.name == "Bezugssystem" %}
           <p class="VariantValue--style">
             {% assign simple_value = value %}
@@ -93,16 +91,16 @@
            {% endif %}
 
           {% comment %} Is Limited Badge - bgd.is_limited Metafield {% endcomment %}  
-          {% for v in product.variants %}
-              {% if v.option3 == value %}
-                  {% assign isLimited = v.metafields.bgd.is_limited %}
+          {% for variant in product.variants %}
+              {% if variant.option3 == value %}
+                  {% assign isLimited = variant.metafields.bgd.is_limited %}
                   {% if isLimited == "true" %}
                        <div
                        class="is-limited-badge"
-                       data-variant-id="{{ v.id }}"
-                       data-variant-option1="{{ v.option1 }}"
-                       data-variant-option2="{{ v.option2 }}"
-                       data-variant-option3="{{ v.option3 }}"
+                       data-variant-id="{{ variant.id }}"
+                       data-variant-option1="{{ variant.option1 }}"
+                       data-variant-option2="{{ variant.option2 }}"
+                       data-variant-option3="{{ variant.option3 }}"
                        >
                        Limitiert
                        </div>
@@ -130,6 +128,9 @@
         {% endif %}  
       </li>
       {%- endfor -%}
+
+      {% render 'more-cover-options' %}
+        
     </ul>
 
     {%- comment -%} Product Info for Variants - bgd.cover-type Metafield - Yurith {%- endcomment -%}
@@ -146,15 +147,25 @@
     {% endfor %}
     
     {%- elsif block.settings.selector_mode == 'block' -%}
-    <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
+    <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight
+               {% if option.name == 'Druck'%} Druck_SizeSwatchList{% endif%}">
       {%- for value in option.values -%}
-      <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
+      <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}
+                 {% if value == 'Komplettdruck' or value == 'Kopfdruck' or value == 'Standard Druck' or value == 'Cartoon Druck' %} Druck_HorizontalList__Item{% endif%}">
         <input id="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
           class="SizeSwatch__Radio" type="radio" name="option-{{ forloop.parentloop.index0 }}"
           value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
           data-option-position="{{ option.position }}">
-        <label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{
-          value }}</label>
+        <label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" 
+               class="SizeSwatch{% if value == 'Komplettdruck' or value == 'Kopfdruck' or value == 'Standard Druck' or value == 'Cartoon Druck' %} Druck_SizeSwatch{% endif%}">
+              {% if value == 'Komplettdruck' or value == 'Kopfdruck' or value == 'Standard Druck' or value == 'Cartoon Druck' %}
+              {% else %}
+                {{ value }}
+              {% endif %}
+        </label>
+        {% if value == 'Komplettdruck' or value == 'Kopfdruck' or value == 'Standard Druck' or value == 'Cartoon Druck' %}
+        	<div class="Druck_Value">{{ value }}</div>
+        {% endif %}
       </li>
       {%- endfor -%}
     </ul>
@@ -207,13 +218,11 @@
 
       {%- for option_nested in product.options_with_values -%}
       {%- if option_nested.position != option.position -%}
-      {%- assign option_indexes_excluded_color = option_indexes_excluded_color | append: option_nested.position |
-      append: ',' -%}
+      {%- assign option_indexes_excluded_color = option_indexes_excluded_color | append: option_nested.position | append: ',' -%}
 
       {%- for option_nested_value in option_nested.values -%}
       {%- if option_nested_value == option_nested.selected_value -%}
-      {%- assign selected_variant_title_excluded_color = selected_variant_title_excluded_color | append:
-      option_nested_value -%}
+      {%- assign selected_variant_title_excluded_color = selected_variant_title_excluded_color | append: option_nested_value -%}
       {%- endif -%}
       {%- endfor -%}
       {%- endif -%}
@@ -241,8 +250,9 @@
             class="VariantSelector__ImageWrapper AspectRatio AspectRatio--withFallback"
             aria-hidden="{% if selected_variant_title_excluded_color == variant_title_excluded_color %}false{% else %}true{% endif %}"
             style="max-width: {{ variant_image.width }}px; padding-bottom: {{ 100.0 | divided_by: variant_image.aspect_ratio }}%; --aspect-ratio: {{ variant_image.aspect_ratio }}">
-            {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,400,600,800', image: variant_image
-            -%}{%- endcapture -%}
+            {%- capture supported_sizes -%}
+            	{%- render 'image-size', sizes: '200,400,600,800', image: variant_image -%}
+            {%- endcapture -%}
             {%- assign image_url = variant_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
             <img class="VariantSelector__Image Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}"
@@ -269,7 +279,6 @@
           <div class="VariantSelector__Choice {% if value == option.selected_value %}is-selected{% endif %}">
             <div class="VariantSelector__ChoiceColor">
               {%- assign downcase_value = value | downcase -%}
-
               {%- assign color_swatch_name = value | handle | append: '.png' -%}
               {%- assign color_swatch_image = images[color_swatch_name] -%}
 
@@ -340,9 +349,11 @@
 
       <select id="product-select-{{ product.id }}" name="id" title="Variant">
         {%- for variant in product.variants -%}
-        <option {% if variant==selected_variant %}selected="selected" {% endif %} {% unless variant.available
-          %}disabled="disabled" {% endunless %} value="{{ variant.id }}" data-sku="{{ variant.sku }}">{{ variant.title
-          }} - {{ variant.price | money_without_trailing_zeros }}</option>
+        <option {% if variant==selected_variant %}selected="selected" {% endif %}
+                {% unless variant.available %}disabled="disabled" {% endunless %} 
+                value="{{ variant.id }}" 
+                data-sku="{{ variant.sku }}">{{ variant.title }} - {{ variant.price | money_without_trailing_zeros }}
+        </option>
         {%- endfor -%}
       </select>
     </div>
@@ -352,7 +363,14 @@
   {%- endunless -%}
 </div>
 
-  {%- if product.template_suffix != 'coming-soon' -%}
+{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene' 
+	or product.handle == 'therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv'
+	or  product.handle == 'standard-gravity-gewichtsdecke-familien-motiv'
+	or  product.handle == 'standard-gravity-gewichtsdecke-mit-personalisiertem-partner-motiv-fur-erwachsene' %}
+	<div class="live_preview_app"></div>
+{% endif %}
+
+{%- if product.template_suffix != 'coming-soon' -%}
     <div class="ProductMeta__PriceList Heading">
       {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
         <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
@@ -377,26 +395,26 @@
   {% render 'left-inventory', selected_variant:selected_variant %}
 
 {%- if size_chart_page != empty -%}
-{%- comment -%}If we have a size chart we capture the modal content (it must be displayed outside the form for proper
-positioning){%- endcomment -%}
+  {%- comment -%}If we have a size chart we capture the modal content (it must be displayed outside the form for proper
+  positioning){%- endcomment -%}
 
-{%- capture product_modals -%}
-<div id="modal-{{ size_chart_page.handle }}" class="Modal Modal--dark Modal--fullScreen Modal--pageContent"
-  aria-hidden="true" role="dialog" data-scrollable>
-  <header class="Modal__Header">
-    <h2 class="Modal__Title Heading u-h1">{{ size_chart_page.title }}</h2>
-  </header>
+  {%- capture product_modals -%}
+  <div id="modal-{{ size_chart_page.handle }}" class="Modal Modal--dark Modal--fullScreen Modal--pageContent"
+    aria-hidden="true" role="dialog" data-scrollable>
+    <header class="Modal__Header">
+      <h2 class="Modal__Title Heading u-h1">{{ size_chart_page.title }}</h2>
+    </header>
 
-  <div class="Modal__Content Rte">
-    <div class="Container Container--extraNarrow">
-      {{- size_chart_page.content -}}
+    <div class="Modal__Content Rte">
+      <div class="Container Container--extraNarrow">
+        {{- size_chart_page.content -}}
+      </div>
     </div>
-  </div>
 
-  <button class="Modal__Close RoundButton RoundButton--large" data-animate-bottom data-action="close-modal">{% render
-    'icon' with 'close' %}</button>
-</div>
-{%- endcapture -%}
+    <button class="Modal__Close RoundButton RoundButton--large" data-animate-bottom data-action="close-modal">{% render
+      'icon' with 'close' %}</button>
+  </div>
+  {%- endcapture -%}
 {%- endif -%}
 
 {%- comment -%}

@@ -1,1 +1,358 @@
-{"sections":{"main":{"type":"main-product","blocks":{"product_meta":{"type":"product_meta","settings":{"show_vendor":true,"show_sku":false,"show_taxes_included":false}},"variant_selector":{"type":"variant_selector","settings":{"selector_mode":"block","show_color_swatch":true,"show_color_carousel":false,"size_chart":""}},"buy_buttons":{"type":"buy_buttons","settings":{"show_price_in_button":false,"show_payment_button":false}}},"block_order":["product_meta","variant_selector","buy_buttons"],"settings":{"image_size":"medium","stack_images":false,"show_thumbnails":true,"enable_image_zoom":true,"enable_video_looping":false}},"16291424324bdf770a":{"type":"icons-delivery-info","settings":{"bg-color":"#5b5b5b"}},"1629459987d4cac0a9":{"type":"icons-prestige","settings":{"bg-color":"#f8f8f8"}},"16291457001a7d71ef":{"type":"banner-promotion","disabled":true,"settings":{}},"1629451775c72cd56a":{"type":"accordion-video-product","blocks":{"1f839e9f-2603-4353-a5a6-ba6f229a891f":{"type":"accordion_simple","settings":{"simple_icons":"wirkung","summary":"Wirkung","content":"Handgefertigte und hochwertige Gewichtsdecke, die begleitend zur Behandlung von Entwicklungs- und sensorischen Integrationsstörungen bei Kindern eingesetzt wird, einschließlich Autismus, ADHS, Asperger-Syndrom, Tourette-Syndrom und Down-Syndrom. Unsere Kunden sind oft besorgte Eltern, die ihrem Kind helfen wollen. Auch Kinder ohne Erkrankungen, aber dafür mit Schlafproblemen, können von dem Schlafen unter einer Gewichtsdecke profitieren."}},"b80a235a-3817-42f9-b2d5-9a98afb675b8":{"type":"accordion_simple","settings":{"simple_icons":"gewicht","summary":"Gewicht","content":"Wir empfehlen eine Therapiedecke auszuwählen, die ungefähr 10% des Körpergewichts des Kindes entspricht. Wenn das Kind zwischen zwei Gewichtsklassen liegt, nehmen Sie die schwerere Version. Umtäusche sind bei uns kostenlos."}},"dafcf498-5a5d-439d-bce0-c5bbda17aa63":{"type":"accordion_simple","settings":{"simple_icons":"materialien","summary":"Materialien","content":"Atmungsaktiver Stoff aus 100% Baumwolle (<u>ohne abnehmbaren Bezug<\/u>). In kleinen Kammern befinden sich hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben."}},"40379873-43e4-4165-ac51-c5c79455cc47":{"type":"accordion_simple","settings":{"simple_icons":"28tagen","summary":"28 Tage Probeschlafen","content":"Mit dem Kauf einer Therapiedecke erhalten Sie automatisch die Möglichkeit, diese ab Erhalt 28 Tage lang zu testen und das perfekte Modell und Gewicht für das Kind finden. Bei Nichtgefallen können Sie die Ware retournieren oder unseren kostenlosen Umtausch in Anspruch nehmen."}}},"block_order":["1f839e9f-2603-4353-a5a6-ba6f229a891f","b80a235a-3817-42f9-b2d5-9a98afb675b8","dafcf498-5a5d-439d-bce0-c5bbda17aa63","40379873-43e4-4165-ac51-c5c79455cc47"],"settings":{"sub-heading":"Medizinische Therapiedecke","heading":"Eigenschaften der Medizinischen Gewichtsdecke für Kinder","video_url":"https:\/\/player.vimeo.com\/video\/355977614"}},"16294611499d6cacbd":{"type":"advantages-overview","disabled":true,"blocks":{"25172f29-0114-40ec-b5fd-889c6869f773":{"type":"Advantages-Info","settings":{"span-icon":"<span class=\"icon-icn_premiumcotton-1\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><\/span>","title-icon":"Hochwertiger Premium Bezug"}},"379133bf-a793-4f42-b390-0b5b13bfef28":{"type":"Advantages-Info","settings":{"span-icon":"50.000+","title-icon":"Zufriedene Kunden"}},"20ceba28-02b9-4d83-8630-4ddb0ff68cc0":{"type":"Advantages-Info","settings":{"span-icon":"<span class=\"icon-icn_loopribbon\"><\/span>","title-icon":"Einfaches Wechseln durch Schlaufen"}},"dc17a353-2422-4335-ad4a-e0751d10ac30":{"type":"Advantages-Info","settings":{"span-icon":"80%","title-icon":"Gewichtsverteilung durch Glasperlen"}},"9fdc7973-e63f-4f8e-aab5-b1263761f598":{"type":"Advantages-Info","settings":{"span-icon":"28","title-icon":"Tage bequem von zuhause aus probeschlafen"}},"103be984-c3e7-462b-85ea-a55aac3fac41":{"type":"Advantages-Info","settings":{"span-icon":"<span class=\"icon-preis-leistung-sieger-1\"><\/span>","title-icon":"Preis-Leistungs-Sieger aller Gewichtsdecken"}},"40dd4b2c-4b21-4636-b94c-08f5af7cbdb2":{"type":"Advantages-Info","settings":{"span-icon":"365","title-icon":"Tage im Jahr verwendbar"}},"7a20b4a4-3362-4eef-9124-6c6be4bb01cb":{"type":"Advantages-Info","settings":{"span-icon":"12","title-icon":"Monate Herstellergarantie"}}},"block_order":["25172f29-0114-40ec-b5fd-889c6869f773","379133bf-a793-4f42-b390-0b5b13bfef28","20ceba28-02b9-4d83-8630-4ddb0ff68cc0","dc17a353-2422-4335-ad4a-e0751d10ac30","9fdc7973-e63f-4f8e-aab5-b1263761f598","103be984-c3e7-462b-85ea-a55aac3fac41","40dd4b2c-4b21-4636-b94c-08f5af7cbdb2","7a20b4a4-3362-4eef-9124-6c6be4bb01cb"],"settings":{"title-sub":"Der bekannteste Therapiedecke","title":"Vorteile der Standard Gravity Therapiedecke im Überblick"}},"1629462422c7c337fa":{"type":"html-with-image","settings":{"bg-color":"","bg-color-text-html":"","subheading":"","title":"Kühlende Überdecke","image":"shopify:\/\/shop_images\/Slider2-1_Therapiedecke_Kinder.jpg","image_position":"left","content_html":"An warmen Sommernächte als kühlende Schlafdecke oder im Winter zusätzlich zur normalen Decke als Überdecke bestens geeignet. Sorgt auch beim Spielen oder Mittagsschlaf für Entspannung zwischendurch. Die Decke hat keinen abnehmbaren Bezug und muss nicht extra mit Bettwäsche bezogen werden.","content_rich":"<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>","link_text":"","link_url":""}},"1629465806e866cd2d":{"type":"impact-outcome","blocks":{"b9612911-78b1-4ec0-9eb1-362f7d45c3ef":{"type":"blocks_outcome","settings":{"icon_span":"<span class=\"icon-Icons_Sleep01\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><\/span>","title-icon":"Ruhige Nächte für Kinder und Eltern","content":"Unsere Kunden sind oft besorgte Eltern, die ihrem Kind helfen möchten, da es an Schlafproblemen leidet, Autismus, ADHS, Asperger-, Tourette- oder Down-Syndrom hat. Auch begleitend zur Behandlung von Entwicklungs- und sensorischen Integrationsstörungen kann eine Gewichtsdecke eingesetzt werden und Eltern und Kind Erholung bringen."}},"198c972f-c489-4358-8f56-0a406d477eac":{"type":"blocks_outcome","settings":{"icon_span":"<span class=\"icon-Icons_WellBeing01 icons21_font_size\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><\/span>","title-icon":"Erholung für Körper und Nervensystem","content":"Die Gewichtsdecke übt einen angenehmen und festen Druck aus und aktiviert damit tiefsitzende Rezeptoren. Das Kind kann den Körper nun intensiver wahrnehmen: ein Gefühl von Sicherheit und Geborgenheit stellt sich ein und das Kind entspannt sich. Diese körperliche Entspannung wirkt sich wiederum auf den Geist und das Wohlbefinden aus."}},"2dbe9fc2-5360-4a42-82cd-3f6127123c64":{"type":"blocks_outcome","settings":{"icon_span":"<span class=\"icon-Icons_Quality01 icons21_font_size\" style=\"font-size: ;\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><\/span>","title-icon":"Medizinprodukt für den Alltag","content":"Der positive Effekt der Gewichtsdecke auf Schlaf und körperliche Beschwerden konnte wissenschaftlich nachgewiesen werden, wodurch sie in die Liste von Medizinprodukten aufgenommen werden konnte. Viele Ergo- und Physiotherapeuten setzen Gewichtsdecken mit großem Erfolg ein. Im Alltag kann die Gewichtsdecke ebenfalls für jedes Kind eine Stütze sein."}}},"block_order":["b9612911-78b1-4ec0-9eb1-362f7d45c3ef","198c972f-c489-4358-8f56-0a406d477eac","2dbe9fc2-5360-4a42-82cd-3f6127123c64"],"settings":{"subheading":"","title":"Wirkung der Medizinischen Therapiedecke","button_label":"","button_link":""}},"1629709567bc66549f":{"type":"html-with-image","settings":{"bg-color":"","bg-color-text-html":"","subheading":"Atmungsaktiv & ohne Bezug","title":"Aufbau der Medizinischen Therapiedecke für Kinder","image":"shopify:\/\/shop_images\/NEW_Aufteilung_Kosmos_Astronauten_Kinder_Gewichtsdecken_Therapiedecke_Schlafstorungen.jpg","image_position":"right","content_html":"<style>\nli{\nlist-style: none;\n}\nli > span {\nposition: relative;\nleft: -24px;\nmargin-right: -20px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(2) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(3) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(4) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\n<\/style>\n\n\n<ol>\n<li>\n<span class=\"icon-one\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>Atmungsaktiver Stoff. Die Decke besteht aus 100% Baumwolle.\n<\/li>\n<li>\n<span class=\"icon-two\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nSandfeine Glasperlen. In kleinen Kammern befinden sich hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.<\/li>\n<li>\n<\/li>\n<\/ol>","content_rich":"<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>","link_text":"","link_url":""}},"1629713540ecd6fa17":{"type":"html-with-image","settings":{"bg-color":"","bg-color-text-html":"","subheading":"Entspannung durch Tiefendruck","title":"Die Wissenschaft hinter den Therapiedecken","image":"shopify:\/\/shop_images\/kinder-wissenschaft-therapiedecken.jpg","image_position":"left","content_html":"Der Tiefendruck, der durch das Gewicht ausgeübt wird, hat eine entspannende Wirkung auf die Gelenke, Muskeln und Sehnen. Dieser Effekt ist auch als “Deep Pressure Touch Stimulation” bekannt, indem ein sanfter und dennoch kräftiger und gleichmäßiger Druck auf den Körper wirkt. Dadurch kommt man körperlich als auch innerlich zur Ruhe. Die Körperwahrnehmung verbessert sich.\nAußerdem erfolgt durch den Druck die Ausschüttung des Hormons Serotonin, gleichzeitig verringert sich der Cortisolspiegel (sog. Stresshormon). Der Tiefendruck signalisiert dem Körper ein Gefühl von Sicherheit und Geborgenheit.","content_rich":"<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>","link_text":"","link_url":""}},"1629713705b12acbc0":{"type":"html-with-image","settings":{"bg-color":"","bg-color-text-html":"","subheading":"Nachhaltig und fair","title":"Therapiedecken aus Europa","image":"shopify:\/\/shop_images\/therapiedecken_gewichtsdecken_kinder_unterstutzung.jpg","image_position":"right","content_html":"<p>Die Medizinische Gewichtsdecke für Kinder wird ausschließlich in Europa hergestellt, die dabei verwendete Baumwolle stammt aus nachhaltigem Anbau und ist zertifiziert. Die Glasperlen im Inneren der Decken werden sicher und hochwertig in Europa produziert.<\/p>\n\n\n<img class=\" lazyloaded\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/all_logos_gewichtsdecken_therapiedecken_zertifikate_b2dfb83c-9301-42f1-92e1-71467ad6d47c.png?2213\" height=\"37\" width=\"290\" vspace=\"5\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/all_logos_gewichtsdecken_therapiedecken_zertifikate_b2dfb83c-9301-42f1-92e1-71467ad6d47c.png?2213\">\n<br>\n<br>\n<br>","content_rich":"<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>","link_text":"","link_url":""}},"16293784209ff1ca2b":{"type":"custom-html","disabled":true,"settings":{"html":"<div class=\"product-page-feature-section\">\n\n<div class=\"product-page-feature-text\">\nNachhaltig und fair       \n        <h2 class=\"herstellung-title\">Therapiedecken aus Europa<\/h2>\n        <div class=\"product-page-title-line\"><\/div>\n\t\t\t<p>Die Standard Gravity Gewichtsdecke wird ausschließlich in Europa hergestellt, die dabei verwendete Baumwolle stammt aus nachhaltigem Anbau und ist zertifiziert. Die Glasperlen im Inneren der Decken werden sicher und hochwertig in Europa produziert.<\/p>\n\t\t\t<center>\n<img class=\" lazyloaded\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/all_logos_gewichtsdecken_therapiedecken_zertifikate_b2dfb83c-9301-42f1-92e1-71467ad6d47c.png?2213\" height=\"37\" width=\"290\" vspace=\"5\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/all_logos_gewichtsdecken_therapiedecken_zertifikate_b2dfb83c-9301-42f1-92e1-71467ad6d47c.png?2213\">\n        <\/center>\n<\/div>\n      <div class=\"product-page-feature-img\">\n        \t<img data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0053\/3243\/4990\/files\/Therapiedecke-Schlaufen-Gravity.jpeg?v=1608644545\" class=\" ls-is-cached lazyloaded\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0053\/3243\/4990\/files\/Therapiedecke-Schlaufen-Gravity.jpeg?v=1608644545\">\n      <\/div>      \n      \n      \n    <\/div>\n\n<style>\n.product-page-feature-section {\n    display: flex;\n    flex-wrap: wrap;\n    align-items: center;\n    justify-content: center;\n    padding-bottom: 25px;\n}\n\n.product-page-feature-img, .product-page-feature-text {\n    flex: 0 0 50%;\n    max-width: 50%;\n    padding: 30px 50px;\n    text-align: left;\n}\n\n.product-page-feature-img {\n    text-align: center!important;\n}\n<\/style>","spacer":"50px","bg-color":""}},"1629467370a1305632":{"type":"product-details","blocks":{"2ff3c74b-41b4-4aab-bf79-5d8afe927bc3":{"type":"info-product-details","settings":{"title_block":"Gewicht","html_content":"<p>Das Deckengewicht des Kindes sollte ungefähr 10% des Körpergewichtes ausmachen. Unsicher? Verwenden Sie diese Deckengewichtstabelle:<\/p>\n<div class=\"deckengewicht-wrap\">\n<table class=\"deckengewicht-tg\">\n<tbody>\n<tr class=\"deckengewicht-tr\">\n<th class=\"tg-c6of\"><\/th>\n<th class='\"tg-rg0h'>5 - 10 kg<\/th>\n<th class=\"tg-rg0h\">11 - 20 kg<\/th>\n<th class=\"tg-rg0h\">21 - 30 kg<\/th>\n<th class=\"tg-rg0h\">31 - 40 kg<\/th>\n<th class=\"tg-rg0h\">41 - 50 kg<\/th>\n<th class=\"tg-rg0h\">51 - 60 kg<\/th>\n<th class=\"tg-rg0h\">61 - 70 kg<\/th>\n<\/tr>\n<tr class=\"deckengewicht-tr\">\n<td class=\"tg-4ir0\">Deckengewicht<\/td>\n<td class=\"tg-amwm\">1 kg<\/td>\n<td class=\"tg-amwm\">2 kg<\/td>\n<td class=\"tg-amwm\">3 kg<\/td>\n<td class=\"tg-amwm\">4 kg<\/td>\n<td class=\"tg-amwm\">5 kg<\/td>\n<td class=\"tg-amwm\">6 kg<\/td>\n<td class=\"tg-amwm\">7 kg<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<\/div>\n<div class=\"deckengewicht-wrap\">\n<table class=\"deckengewicht-tg\">\n<tbody>\n<tr class=\"deckengewicht-tr\">\n<th class=\"tg-c6of\">Körpergröße<\/th>\n<th class=\"tg-rg0h\">60 - 90 cm<\/th>\n<th class=\"tg-rg0h\">91 - 120 cm<\/th>\n<th class=\"tg-rg0h\">121 - 150 cm<\/th>\n<th class=\"tg-rg0h\">151 - 170 cm<\/th>\n<th class=\"tg-rg0h\">&gt; 170 cm<\/th>\n<\/tr>\n<tr class=\"deckengewicht-tr\">\n<td class=\"tg-4ir0\">Deckengröße<\/td>\n<td class=\"tg-amwm\">60x100 cm<\/td>\n<td class=\"tg-amwm\">90x120 cm<\/td>\n<td class=\"tg-amwm\">100x150 cm<\/td>\n<td class=\"tg-amwm\">110x170 cm<\/td>\n<td class=\"tg-amwm\">135x200 cm<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<\/div>","extra_block":false,"subtitle_block":"Place your title","html_content_extra":"ONLY IF Extra Content 1 - Place here your content","extra_block2":false,"subtitle_block2":"Place your title","html_content_extra2":"ONLY IF Extra Content 1 - Place here your content","extra_block3":false,"subtitle_block3":"Place your title","html_content_extra3":"ONLY IF Extra content 3 - Place here your content","richtext_content2":""}},"9468dd88-2aaf-463a-924f-602dc88fc8d1":{"type":"info-product-details","settings":{"title_block":"Häufige Fragen","html_content":"","extra_block":true,"subtitle_block":"Was ist die 1-Jahr-Wachstums-Garantie?","html_content_extra":"Unsere Kinder Gewichtsdecken können in der Regel von den meisten Kindern für 2-3 Jahre verwendet werden. Haben Sie dennoch Sorge, dass Ihr Kind zu schnell wächst und die maßgefertigte Therapiedecke nach einiger Zeit nicht mehr passt?<br>\nTherapiedecken bietet allen Kunden, die eine Kinderdecke von Therapiedecken.de gekauft haben die Möglichkeit nach 12 Monaten ab dem Kaufdatum ihre alte, zu klein gewordene Decke kostenlos zurückzuschicken und 50% Nachlass auf eine neue Decke zu erhalten. Weitere Infos <a href=\"https:\/\/therapiedecken.de\/pages\/1-jahr-wachstums-garantie\">hier<\/a>.","extra_block2":true,"subtitle_block2":"Ab welchem Alter dürfen Therapiedecken verwendet werden?","html_content_extra2":"Wir empfehlen Therapiedecken für Kleinkinder, die älter als 1 Jahr sind. Wenn Sie ein Baby haben, sprechen Sie bitte zuerst mit Ihrem Kinderarzt, ob eine Gewichtsdecke in Frage kommt.","extra_block3":true,"subtitle_block3":"Muss für Kinder jedes Jahr eine neue Decke gekauft werden?","html_content_extra3":"Nein. Die Decke ist meistens 40 cm länger, als die Körpergröße. Es dauert zwischen 2-3 Jahren bist das Kind 40 cm gewachsen ist und 10 kg zugenommen hat.\n<br>\nFalls Sie jedoch Angst haben, dass Ihr Kind zu schnell wächst, haben wir eine 1-Jahr Wachstums Garantie. Mehr dazu finden Sie hier: <a href=\"https:\/\/therapiedecken.de\/pages\/1-jahr-wachstums-garantie\">1-Jahr-Wachstums-Garantie<\/a>","richtext_content2":"<p>Bei weiteren Fragen besuchen Sie bitte unsere ausführliche <a href=\"https:\/\/therapiedecken.de\/apps\/help-center\">FAQ Seite<\/a>, schreiben uns eine E-Mail an <a href=\"mailto:kundenservice@therapiedecken.de\">kundenservice@therapiedecken.de<\/a> oder rufen uns an: <a href=\"tel:+498921093242\">+49 89-21 09 32 42<\/a>.<\/p>"}},"bec58932-c4aa-4ad3-bc3c-bf23b4e49297":{"type":"info-product-details","settings":{"title_block":"Versand- und Zahlungsinformationen","html_content":"<div class=\"versand-informationen\">\n                <div class=\"versand-icon\"><span class=\"icon-versand-icon\"><\/span><\/div>\n                <div class=\"versand-main-text\">\n                <div class=\"versand-main-headline\">Versicherter DHL Standardversand<\/div>\n                <div class=\"versand-sub-text\">1-3 Werktage<\/div>\n                <\/div>\n             <\/div>\n\t\t\t<div class=\"produktion-informationen\">\n                <div class=\"produktion-icon\"><span class=\"icon-tools\"><\/span><\/div>\n                <div class=\"produktion-main-text\">\n                <div class=\"produktion-main-headline\">Produktionszeit<\/div>\n                  <div class=\"produktion-sub-text\">Siehe Produktionszeit\/Verfügbarkeit unter der Warenkorb Schaltfläche <a href=\"#twtd-shipping-time\">hier<\/a>\n<\/div>\n                <\/div>\n             <\/div>          \n\t\t\t<div class=\"tage-probeschlafen-informationen\">\n                <div class=\"tage-probeschlafen-icon\"><span class=\"icon-Tage-Probeschlafen\"><\/span><\/div>\n                <div class=\"tage-probeschlafen-main-text\">\n                <div class=\"tage-probeschlafen-main-headline\">28 Tage Probeschlafen<\/div>\n                <div class=\"tage-probeschlafen-sub-text\">Ab Erhalt<\/div>\n                <\/div>\n              <\/div>\n\t\t\t<div class=\"zahlungsarten-informationen\">\n                  <div class=\"zahlungsarten-icon\"><span class=\"icon-coin-euro\"><\/span><\/div>\n                  <div class=\"zahlungsarten-main-text\">\n                  <div class=\"zahlungsarten-main-headline\">Verfügbare Zahlungsarten<\/div>\n                  <div class=\"zahlungsarten-sub-text\">Verschlüsselt und sicher<\/div>\n                  <\/div>\n              <\/div>          \n                            <ul class=\"zahlungsarten-auflistung\">\n<li>PayPal<\/li>\n<li>Auf Rechnung<\/li>\n<li>SEPA-Lastschrift<\/li>\n<li>Kreditkarte<\/li>  <li>Ratenzahlung<\/li>    <li>Sofortüberweisung<\/li>         <li>Amazon Pay<\/li>\n                            <\/ul>","extra_block":false,"subtitle_block":"Place your title","html_content_extra":"ONLY IF Extra content 1 - Place here your content","extra_block2":false,"subtitle_block2":"Place your title","html_content_extra2":"ONLY IF Extra content 2 - Place here your content","extra_block3":false,"subtitle_block3":"Place your title","html_content_extra3":"ONLY IF Extra content 3 - Place here your content","richtext_content2":""}}},"block_order":["2ff3c74b-41b4-4aab-bf79-5d8afe927bc3","9468dd88-2aaf-463a-924f-602dc88fc8d1","bec58932-c4aa-4ad3-bc3c-bf23b4e49297"],"settings":{"bg-color":"#f8f8f8","subheading_tag1":"","title_tag1":"Häufige Fragen über Kinder Therapiedecken"}},"16294440249ce6f304":{"type":"reviews-product","settings":{}},"1630334324a50af4b4":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"heading":"Diese Produkte könnten Ihnen auch gefallen","show_product_info":true,"show_vendor":false,"show_color_swatch":false}},"16346817713455eca1":{"type":"back-to-top-product","settings":{}}},"order":["main","16291424324bdf770a","1629459987d4cac0a9","16291457001a7d71ef","1629451775c72cd56a","16294611499d6cacbd","1629462422c7c337fa","1629465806e866cd2d","1629709567bc66549f","1629713540ecd6fa17","1629713705b12acbc0","16293784209ff1ca2b","1629467370a1305632","16294440249ce6f304","1630334324a50af4b4","16346817713455eca1"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_taxes_included": false
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "block",
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        },
+        "b4d4bf60-3389-4352-8e10-68f12a6a4059": {
+          "type": "payment_methods",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "variant_selector",
+        "buy_buttons",
+        "b4d4bf60-3389-4352-8e10-68f12a6a4059"
+      ],
+      "settings": {
+        "image_size": "medium",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": false,
+        "enable_video_looping": false
+      }
+    },
+    "16291424324bdf770a": {
+      "type": "icons-delivery-info",
+      "settings": {
+        "bg-color": "#5b5b5b"
+      }
+    },
+    "1629459987d4cac0a9": {
+      "type": "icons-prestige",
+      "settings": {
+        "bg-color": "#f8f8f8"
+      }
+    },
+    "1629451775c72cd56a": {
+      "type": "accordion-video-product",
+      "blocks": {
+        "1f839e9f-2603-4353-a5a6-ba6f229a891f": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "wirkung",
+            "summary": "Wirkung",
+            "content": "Handgefertigte und hochwertige Gewichtsdecke, die begleitend zur Behandlung von Entwicklungs- und sensorischen Integrationsstörungen bei Kindern eingesetzt wird, einschließlich Autismus, ADHS, Asperger-Syndrom, Tourette-Syndrom und Down-Syndrom. Unsere Kunden sind oft besorgte Eltern, die ihrem Kind helfen wollen. Auch Kinder ohne Erkrankungen, aber dafür mit Schlafproblemen, können von dem Schlafen unter einer Gewichtsdecke profitieren."
+          }
+        },
+        "b80a235a-3817-42f9-b2d5-9a98afb675b8": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "gewicht",
+            "summary": "Gewicht",
+            "content": "Wir empfehlen eine Therapiedecke auszuwählen, die ungefähr 10% des Körpergewichts des Kindes entspricht. Wenn das Kind zwischen zwei Gewichtsklassen liegt, nehmen Sie die schwerere Version. Umtäusche sind bei uns kostenlos."
+          }
+        },
+        "dafcf498-5a5d-439d-bce0-c5bbda17aa63": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "materialien",
+            "summary": "Materialien",
+            "content": "Atmungsaktiver Stoff aus 100% Baumwolle (<u>ohne abnehmbaren Bezug<\/u>). In kleinen Kammern befinden sich hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben."
+          }
+        },
+        "40379873-43e4-4165-ac51-c5c79455cc47": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "28tagen",
+            "summary": "28 Tage Probeschlafen",
+            "content": "Mit dem Kauf einer Therapiedecke erhalten Sie automatisch die Möglichkeit, diese ab Erhalt 28 Tage lang zu testen und das perfekte Modell und Gewicht für das Kind finden. Bei Nichtgefallen können Sie die Ware retournieren oder unseren kostenlosen Umtausch in Anspruch nehmen."
+          }
+        }
+      },
+      "block_order": [
+        "1f839e9f-2603-4353-a5a6-ba6f229a891f",
+        "b80a235a-3817-42f9-b2d5-9a98afb675b8",
+        "dafcf498-5a5d-439d-bce0-c5bbda17aa63",
+        "40379873-43e4-4165-ac51-c5c79455cc47"
+      ],
+      "settings": {
+        "sub-heading": "Medizinische Therapiedecke",
+        "heading": "Eigenschaften der Medizinischen Gewichtsdecke für Kinder",
+        "video_url": "https:\/\/player.vimeo.com\/video\/355977614"
+      }
+    },
+    "1629462422c7c337fa": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "",
+        "title": "Kühlende Überdecke",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/Slider2-1_Therapiedecke_Kinder.jpg",
+        "image_position": "left",
+        "content_html": "An warmen Sommernächte als kühlende Schlafdecke oder im Winter zusätzlich zur normalen Decke als Überdecke bestens geeignet. Sorgt auch beim Spielen oder Mittagsschlaf für Entspannung zwischendurch. Die Decke hat keinen abnehmbaren Bezug und muss nicht extra mit Bettwäsche bezogen werden.",
+        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "1629465806e866cd2d": {
+      "type": "impact-outcome",
+      "blocks": {
+        "b9612911-78b1-4ec0-9eb1-362f7d45c3ef": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "<span class=\"icon-Icons_Sleep01\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><\/span>",
+            "title-icon": "Ruhige Nächte für Kinder und Eltern",
+            "content": "Unsere Kunden sind oft besorgte Eltern, die ihrem Kind helfen möchten, da es an Schlafproblemen leidet, Autismus, ADHS, Asperger-, Tourette- oder Down-Syndrom hat. Auch begleitend zur Behandlung von Entwicklungs- und sensorischen Integrationsstörungen kann eine Gewichtsdecke eingesetzt werden und Eltern und Kind Erholung bringen."
+          }
+        },
+        "198c972f-c489-4358-8f56-0a406d477eac": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "<span class=\"icon-Icons_WellBeing01 icons21_font_size\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><span class=\"path14\"><\/span><\/span>",
+            "title-icon": "Erholung für Körper und Nervensystem",
+            "content": "Die Gewichtsdecke übt einen angenehmen und festen Druck aus und aktiviert damit tiefsitzende Rezeptoren. Das Kind kann den Körper nun intensiver wahrnehmen: ein Gefühl von Sicherheit und Geborgenheit stellt sich ein und das Kind entspannt sich. Diese körperliche Entspannung wirkt sich wiederum auf den Geist und das Wohlbefinden aus."
+          }
+        },
+        "2dbe9fc2-5360-4a42-82cd-3f6127123c64": {
+          "type": "blocks_outcome",
+          "settings": {
+            "icon_span": "<span class=\"icon-Icons_Quality01 icons21_font_size\" style=\"font-size: ;\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><span class=\"path3\"><\/span><span class=\"path4\"><\/span><span class=\"path5\"><\/span><span class=\"path6\"><\/span><span class=\"path7\"><\/span><span class=\"path8\"><\/span><span class=\"path9\"><\/span><span class=\"path10\"><\/span><span class=\"path11\"><\/span><span class=\"path12\"><\/span><span class=\"path13\"><\/span><\/span>",
+            "title-icon": "Medizinprodukt für den Alltag",
+            "content": "Der positive Effekt der Gewichtsdecke auf Schlaf und körperliche Beschwerden konnte wissenschaftlich nachgewiesen werden, wodurch sie in die Liste von Medizinprodukten aufgenommen werden konnte. Viele Ergo- und Physiotherapeuten setzen Gewichtsdecken mit großem Erfolg ein. Im Alltag kann die Gewichtsdecke ebenfalls für jedes Kind eine Stütze sein."
+          }
+        }
+      },
+      "block_order": [
+        "b9612911-78b1-4ec0-9eb1-362f7d45c3ef",
+        "198c972f-c489-4358-8f56-0a406d477eac",
+        "2dbe9fc2-5360-4a42-82cd-3f6127123c64"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Wirkung der Medizinischen Therapiedecke",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "1629709567bc66549f": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "Atmungsaktiv & ohne Bezug",
+        "title": "Aufbau der Medizinischen Therapiedecke für Kinder",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/NEW_Aufteilung_Kosmos_Astronauten_Kinder_Gewichtsdecken_Therapiedecke_Schlafstorungen.jpg",
+        "image_position": "right",
+        "content_html": "<style>\nli{\nlist-style: none;\n}\nli > span {\nposition: relative;\nleft: -24px;\nmargin-right: -20px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(2) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(3) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(4) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\n<\/style>\n\n\n<ol>\n<li>\n<span class=\"icon-one\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>Atmungsaktiver Stoff. Die Decke besteht aus 100% Baumwolle.\n<\/li>\n<li>\n<span class=\"icon-two\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nSandfeine Glasperlen. In kleinen Kammern befinden sich hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.<\/li>\n<li>\n<\/li>\n<\/ol>",
+        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "1629713540ecd6fa17": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "Entspannung durch Tiefendruck",
+        "title": "Die Wissenschaft hinter den Therapiedecken",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/kinder-wissenschaft-therapiedecken.jpg",
+        "image_position": "left",
+        "content_html": "Der Tiefendruck, der durch das Gewicht ausgeübt wird, hat eine entspannende Wirkung auf die Gelenke, Muskeln und Sehnen. Dieser Effekt ist auch als “Deep Pressure Touch Stimulation” bekannt, indem ein sanfter und dennoch kräftiger und gleichmäßiger Druck auf den Körper wirkt. Dadurch kommt man körperlich als auch innerlich zur Ruhe. Die Körperwahrnehmung verbessert sich.\nAußerdem erfolgt durch den Druck die Ausschüttung des Hormons Serotonin, gleichzeitig verringert sich der Cortisolspiegel (sog. Stresshormon). Der Tiefendruck signalisiert dem Körper ein Gefühl von Sicherheit und Geborgenheit.",
+        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "1629713705b12acbc0": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "Nachhaltig und fair",
+        "title": "Therapiedecken aus Europa",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/therapiedecken_gewichtsdecken_kinder_unterstutzung.jpg",
+        "image_position": "right",
+        "content_html": "<p>Die Medizinische Gewichtsdecke für Kinder wird ausschließlich in Europa hergestellt, die dabei verwendete Baumwolle stammt aus nachhaltigem Anbau und ist zertifiziert. Die Glasperlen im Inneren der Decken werden sicher und hochwertig in Europa produziert.<\/p>\n\n\n<img class=\" lazyloaded\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/all_logos_gewichtsdecken_therapiedecken_zertifikate_b2dfb83c-9301-42f1-92e1-71467ad6d47c.png?2213\" height=\"37\" width=\"290\" vspace=\"5\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/all_logos_gewichtsdecken_therapiedecken_zertifikate_b2dfb83c-9301-42f1-92e1-71467ad6d47c.png?2213\">\n<br>\n<br>\n<br>",
+        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "16293784209ff1ca2b": {
+      "type": "custom-html",
+      "disabled": true,
+      "settings": {
+        "html": "<div class=\"product-page-feature-section\">\n\n<div class=\"product-page-feature-text\">\nNachhaltig und fair       \n        <h2 class=\"herstellung-title\">Therapiedecken aus Europa<\/h2>\n        <div class=\"product-page-title-line\"><\/div>\n\t\t\t<p>Die Standard Gravity Gewichtsdecke wird ausschließlich in Europa hergestellt, die dabei verwendete Baumwolle stammt aus nachhaltigem Anbau und ist zertifiziert. Die Glasperlen im Inneren der Decken werden sicher und hochwertig in Europa produziert.<\/p>\n\t\t\t<center>\n<img class=\" lazyloaded\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/all_logos_gewichtsdecken_therapiedecken_zertifikate_b2dfb83c-9301-42f1-92e1-71467ad6d47c.png?2213\" height=\"37\" width=\"290\" vspace=\"5\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/all_logos_gewichtsdecken_therapiedecken_zertifikate_b2dfb83c-9301-42f1-92e1-71467ad6d47c.png?2213\">\n        <\/center>\n<\/div>\n      <div class=\"product-page-feature-img\">\n        \t<img data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0053\/3243\/4990\/files\/Therapiedecke-Schlaufen-Gravity.jpeg?v=1608644545\" class=\" ls-is-cached lazyloaded\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0053\/3243\/4990\/files\/Therapiedecke-Schlaufen-Gravity.jpeg?v=1608644545\">\n      <\/div>      \n      \n      \n    <\/div>\n\n<style>\n.product-page-feature-section {\n    display: flex;\n    flex-wrap: wrap;\n    align-items: center;\n    justify-content: center;\n    padding-bottom: 25px;\n}\n\n.product-page-feature-img, .product-page-feature-text {\n    flex: 0 0 50%;\n    max-width: 50%;\n    padding: 30px 50px;\n    text-align: left;\n}\n\n.product-page-feature-img {\n    text-align: center!important;\n}\n<\/style>",
+        "spacer": "50px",
+        "bg-color": ""
+      }
+    },
+    "1629467370a1305632": {
+      "type": "product-details",
+      "blocks": {
+        "2ff3c74b-41b4-4aab-bf79-5d8afe927bc3": {
+          "type": "info-product-details",
+          "settings": {
+            "title_block": "Gewicht",
+            "html_content": "<p>Das Deckengewicht des Kindes sollte ungefähr 10% des Körpergewichtes ausmachen. Unsicher? Verwenden Sie diese Deckengewichtstabelle:<\/p>\n<div class=\"deckengewicht-wrap\">\n<table class=\"deckengewicht-tg\">\n<tbody>\n<tr class=\"deckengewicht-tr\">\n<th class=\"tg-c6of\"><\/th>\n<th class='\"tg-rg0h'>5 - 10 kg<\/th>\n<th class=\"tg-rg0h\">11 - 20 kg<\/th>\n<th class=\"tg-rg0h\">21 - 30 kg<\/th>\n<th class=\"tg-rg0h\">31 - 40 kg<\/th>\n<th class=\"tg-rg0h\">41 - 50 kg<\/th>\n<th class=\"tg-rg0h\">51 - 60 kg<\/th>\n<th class=\"tg-rg0h\">61 - 70 kg<\/th>\n<\/tr>\n<tr class=\"deckengewicht-tr\">\n<td class=\"tg-4ir0\">Deckengewicht<\/td>\n<td class=\"tg-amwm\">1 kg<\/td>\n<td class=\"tg-amwm\">2 kg<\/td>\n<td class=\"tg-amwm\">3 kg<\/td>\n<td class=\"tg-amwm\">4 kg<\/td>\n<td class=\"tg-amwm\">5 kg<\/td>\n<td class=\"tg-amwm\">6 kg<\/td>\n<td class=\"tg-amwm\">7 kg<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<\/div>\n<div class=\"deckengewicht-wrap\">\n<table class=\"deckengewicht-tg\">\n<tbody>\n<tr class=\"deckengewicht-tr\">\n<th class=\"tg-c6of\">Körpergröße<\/th>\n<th class=\"tg-rg0h\">60 - 90 cm<\/th>\n<th class=\"tg-rg0h\">91 - 120 cm<\/th>\n<th class=\"tg-rg0h\">121 - 150 cm<\/th>\n<th class=\"tg-rg0h\">151 - 170 cm<\/th>\n<th class=\"tg-rg0h\">&gt; 170 cm<\/th>\n<\/tr>\n<tr class=\"deckengewicht-tr\">\n<td class=\"tg-4ir0\">Deckengröße<\/td>\n<td class=\"tg-amwm\">60x100 cm<\/td>\n<td class=\"tg-amwm\">90x120 cm<\/td>\n<td class=\"tg-amwm\">100x150 cm<\/td>\n<td class=\"tg-amwm\">110x170 cm<\/td>\n<td class=\"tg-amwm\">135x200 cm<\/td>\n<\/tr>\n<\/tbody>\n<\/table>\n<\/div>",
+            "extra_block": false,
+            "subtitle_block": "Place your title",
+            "html_content_extra": "ONLY IF Extra Content 1 - Place here your content",
+            "extra_block2": false,
+            "subtitle_block2": "Place your title",
+            "html_content_extra2": "ONLY IF Extra Content 1 - Place here your content",
+            "extra_block3": false,
+            "subtitle_block3": "Place your title",
+            "html_content_extra3": "ONLY IF Extra content 3 - Place here your content",
+            "richtext_content2": ""
+          }
+        },
+        "9468dd88-2aaf-463a-924f-602dc88fc8d1": {
+          "type": "info-product-details",
+          "settings": {
+            "title_block": "Häufige Fragen",
+            "html_content": "",
+            "extra_block": true,
+            "subtitle_block": "Was ist die 1-Jahr-Wachstums-Garantie?",
+            "html_content_extra": "Unsere Kinder Gewichtsdecken können in der Regel von den meisten Kindern für 2-3 Jahre verwendet werden. Haben Sie dennoch Sorge, dass Ihr Kind zu schnell wächst und die maßgefertigte Therapiedecke nach einiger Zeit nicht mehr passt?<br>\nTherapiedecken bietet allen Kunden, die eine Kinderdecke von Therapiedecken.de gekauft haben die Möglichkeit nach 12 Monaten ab dem Kaufdatum ihre alte, zu klein gewordene Decke kostenlos zurückzuschicken und 50% Nachlass auf eine neue Decke zu erhalten. Weitere Infos <a href=\"https:\/\/therapiedecken.de\/pages\/1-jahr-wachstums-garantie\">hier<\/a>.",
+            "extra_block2": true,
+            "subtitle_block2": "Ab welchem Alter dürfen Therapiedecken verwendet werden?",
+            "html_content_extra2": "Wir empfehlen Therapiedecken für Kleinkinder, die älter als 1 Jahr sind. Wenn Sie ein Baby haben, sprechen Sie bitte zuerst mit Ihrem Kinderarzt, ob eine Gewichtsdecke in Frage kommt.",
+            "extra_block3": true,
+            "subtitle_block3": "Muss für Kinder jedes Jahr eine neue Decke gekauft werden?",
+            "html_content_extra3": "Nein. Die Decke ist meistens 40 cm länger, als die Körpergröße. Es dauert zwischen 2-3 Jahren bist das Kind 40 cm gewachsen ist und 10 kg zugenommen hat.\n<br>\nFalls Sie jedoch Angst haben, dass Ihr Kind zu schnell wächst, haben wir eine 1-Jahr Wachstums Garantie. Mehr dazu finden Sie hier: <a href=\"https:\/\/therapiedecken.de\/pages\/1-jahr-wachstums-garantie\">1-Jahr-Wachstums-Garantie<\/a>",
+            "richtext_content2": "<p>Bei weiteren Fragen besuchen Sie bitte unsere ausführliche <a href=\"https:\/\/therapiedecken.de\/apps\/help-center\">FAQ Seite<\/a>, schreiben uns eine E-Mail an <a href=\"mailto:kundenservice@therapiedecken.de\">kundenservice@therapiedecken.de<\/a> oder rufen uns an: <a href=\"tel:+498921093242\">+49 89-21 09 32 42<\/a>.<\/p>"
+          }
+        },
+        "bec58932-c4aa-4ad3-bc3c-bf23b4e49297": {
+          "type": "info-product-details",
+          "settings": {
+            "title_block": "Versand- und Zahlungsinformationen",
+            "html_content": "<div class=\"versand-informationen\">\n                <div class=\"versand-icon\"><span class=\"icon-versand-icon\"><\/span><\/div>\n                <div class=\"versand-main-text\">\n                <div class=\"versand-main-headline\">Versicherter DHL Standardversand<\/div>\n                <div class=\"versand-sub-text\">1-3 Werktage<\/div>\n                <\/div>\n             <\/div>\n\t\t\t<div class=\"produktion-informationen\">\n                <div class=\"produktion-icon\"><span class=\"icon-tools\"><\/span><\/div>\n                <div class=\"produktion-main-text\">\n                <div class=\"produktion-main-headline\">Produktionszeit<\/div>\n                  <div class=\"produktion-sub-text\">Siehe Produktionszeit\/Verfügbarkeit unter der Warenkorb Schaltfläche <a href=\"#twtd-shipping-time\">hier<\/a>\n<\/div>\n                <\/div>\n             <\/div>          \n\t\t\t<div class=\"tage-probeschlafen-informationen\">\n                <div class=\"tage-probeschlafen-icon\"><span class=\"icon-Tage-Probeschlafen\"><\/span><\/div>\n                <div class=\"tage-probeschlafen-main-text\">\n                <div class=\"tage-probeschlafen-main-headline\">28 Tage Probeschlafen<\/div>\n                <div class=\"tage-probeschlafen-sub-text\">Ab Erhalt<\/div>\n                <\/div>\n              <\/div>\n\t\t\t<div class=\"zahlungsarten-informationen\">\n                  <div class=\"zahlungsarten-icon\"><span class=\"icon-coin-euro\"><\/span><\/div>\n                  <div class=\"zahlungsarten-main-text\">\n                  <div class=\"zahlungsarten-main-headline\">Verfügbare Zahlungsarten<\/div>\n                  <div class=\"zahlungsarten-sub-text\">Verschlüsselt und sicher<\/div>\n                  <\/div>\n              <\/div>          \n                            <ul class=\"zahlungsarten-auflistung\">\n<li>PayPal<\/li>\n<li>Auf Rechnung<\/li>\n<li>SEPA-Lastschrift<\/li>\n<li>Kreditkarte<\/li>  <li>Ratenzahlung<\/li>    <li>Sofortüberweisung<\/li>         <li>Amazon Pay<\/li>\n                            <\/ul>",
+            "extra_block": false,
+            "subtitle_block": "Place your title",
+            "html_content_extra": "ONLY IF Extra content 1 - Place here your content",
+            "extra_block2": false,
+            "subtitle_block2": "Place your title",
+            "html_content_extra2": "ONLY IF Extra content 2 - Place here your content",
+            "extra_block3": false,
+            "subtitle_block3": "Place your title",
+            "html_content_extra3": "ONLY IF Extra content 3 - Place here your content",
+            "richtext_content2": ""
+          }
+        }
+      },
+      "block_order": [
+        "2ff3c74b-41b4-4aab-bf79-5d8afe927bc3",
+        "9468dd88-2aaf-463a-924f-602dc88fc8d1",
+        "bec58932-c4aa-4ad3-bc3c-bf23b4e49297"
+      ],
+      "settings": {
+        "bg-color": "#f8f8f8",
+        "subheading_tag1": "",
+        "title_tag1": "Häufige Fragen über Kinder Therapiedecken"
+      }
+    },
+    "16294440249ce6f304": {
+      "type": "reviews-product",
+      "settings": {
+      }
+    },
+    "1630334324a50af4b4": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "heading": "Diese Produkte könnten Ihnen auch gefallen",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
+    "16346817713455eca1": {
+      "type": "back-to-top-product",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16291424324bdf770a",
+    "1629459987d4cac0a9",
+    "1629451775c72cd56a",
+    "1629462422c7c337fa",
+    "1629465806e866cd2d",
+    "1629709567bc66549f",
+    "1629713540ecd6fa17",
+    "1629713705b12acbc0",
+    "16293784209ff1ca2b",
+    "1629467370a1305632",
+    "16294440249ce6f304",
+    "1630334324a50af4b4",
+    "16346817713455eca1"
+  ]
+}

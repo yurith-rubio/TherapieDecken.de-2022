@@ -1,0 +1,39 @@
+/* Home Cover Pages */
+
+.promotion-home-hero_content_container{
+  height: 100%;
+  padding: 100px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home_promotional_content_wrapper{
+  margin: auto;
+}
+.promotion-home-hero_button{
+  margin-top: 30px;
+}
+
+@media screen  and (min-width: 1200px){
+  .home_promotional_content_wrapper{
+    width: 40%;
+  }
+}
+
+@media screen  and (min-width: 500px) and (max-width: 1199px) and (orientation: landscape){
+  .home_promotional_content_wrapper{
+    width: 50%;
+  }
+}
+
+@media screen  and (min-width: 500px) and (max-width: 1199px) and (orientation: portrait){
+  .home_promotional_content_wrapper{
+    width: 50%;
+  }
+}
+
+@media screen  and (max-width: 499px) and (orientation: portrait) {
+  .home_promotional_content_wrapper{
+    width: 100%;
+  }
+}

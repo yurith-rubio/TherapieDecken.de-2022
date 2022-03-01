@@ -1,55 +1,51 @@
+{% if settings.announcement_countdown_enable or settings.product_countdown_enable %}
 // countdown.js.liquid
 
-{% if settings.announcement_countdown_enable or settings.product_countdown_enable %}
-    var countDownDate = new Date("{{ settings.countdown_date }}").getTime();
-    var loopTime = {{ settings.loop_time }};
-    var resetingTime = new Date("{{ settings.reseting_time }}");
+  let endDate = new Date("{{ settings.countdown_date }}").getTime();
+  const intervall = 1000 * 60 * 60 * {{ settings.loop_time }};
+  const now = new Date().getTime();
 
-  // If do not want a loop, we select '0' and get the normal countdown
-  if (loopTime <= 0) {
-    var currentCountdown = countDownDate;
+  const dates = [];
+
+  if (intervall > 0){
+    while (endDate > now) {
+      dates.push(new Date(endDate));
+      endDate -= intervall;
+    }
   } else {
-    var currentCountdown = resetingTime;
+      dates.push(new Date(endDate));
   }
 
-  // Update the count down every 1 second
-  var x = setInterval(function() {
+  dates.reverse();
 
-    // Get today's date and time
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
+  function getNextDate() {
+    let now = new Date().getTime();
+    for (let date of dates) {
+      if (date > now) {
+        return date;
+      }
+    }
+    return null;
+  }
 
-    // If the count down is over
-    if (distance <= 0) {
-      clearInterval(x);
-	  {% if settings.announcement_countdown_enable %}
-        document.getElementById("countdown_announcement").innerHTML = "";
-      {% endif %}
-
-      {% if settings.product_countdown_enable %}
-        document.getElementById("countdown_product").innerHTML = "";
-        document.getElementById("countdown_product_wrapper").className = " no-js";
-      {% endif %}
+  const intervallId = setInterval(function () {
+    let countDown = getNextDate();
+    if (countDown === null) {
+      document.getElementById("countdown_announcement").innerHTML = "";
+      document.getElementById("countdown_product").innerHTML = "";
+      document.getElementById("countdown_product_wrapper").className = " no-js"; 
+      clearInterval(intervallId);
       return;
     }
 
-    var distanceNow = currentCountdown - now;
+    const distanceNow = countDown - new Date().getTime();
 
     var days = Math.floor(distanceNow / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distanceNow % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distanceNow % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distanceNow % (1000 * 60)) / 1000);
 
-    // If we want a loop  
-    if (distanceNow <= 0) {
-      let i = 0;
-      i = i + {{ settings.loop_time }};
-      currentCountdown = new Date(resetingTime.getTime() + loopTime*60000*60);
-      loopTime = loopTime + i;
-      return;
-    }
-    
-	{% if settings.announcement_countdown_enable %}
+    {% if settings.announcement_countdown_enable %}
       document.getElementById("countdown_announcement").innerHTML = `<span class="countdown_days"><span class="countdown_text">${days}</span>` + "T " + `</span>` + `<span class="countdown_text">${hours}</span>` + "STD "
       + `<span class="countdown_text">${minutes}</span>` + "MIN " + `<span class="countdown_text">${seconds}</span>` + "S ";
     {% endif %}

@@ -3,7 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TP3DS7X');</script>
+    <!-- End Google Tag Manager -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TP3DS7X');</script>
+    <!-- End Google Tag Manager -->
     
     {% comment %} ICOMOON link - Yurith {% endcomment%}
     <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/163995/TDTWCheckoutIcons/style-cf.css?pv87nq">
@@ -67,6 +84,9 @@
       .point_wrapper{
         display: flex;
         padding: 10px 0;}
+      .point_wrapper div{
+    	padding-left:10px;
+      }
       .icon-css::before {
         font-size: 40px;
         line-height: 1.2;
@@ -177,6 +197,40 @@
         border: none;}
       button.field__input-btn.btn {
         border: 1px black solid;}
+	  .field__input{
+    	border: 1px solid #d9d9d9;
+    	background-color: white;
+      }
+      
+      .total-line--shipping .total-line__name, .total-line--shipping .total-line__price{
+    	padding-bottom: 10px;
+      }
+      .order-summary__emphasis, .payment-due__price{
+    	letter-spacing: .3px !important;
+      }
+    @media only screen and (max-width: 768px){
+      .total-line-table__footer .total-line .total-line__name, .total-line-table__footer .total-line .total-line__price{
+    	padding-top: 1rem !important;
+      } 
+      .total-line-table__footer{
+          border-top: 1px solid #d9d9d9;
+      }
+    }
+    @media only screen and (max-width: 768px){
+      .Summary_Container{
+		display: none;
+      }
+      .Summary_Container_mobile{
+        padding: 0 20px;
+    	border-bottom: 1px solid rgba(174,174,174,0.34);
+    	background-color: #f8f8f8;
+      }
+    }
+    @media only screen and (min-width: 769px){
+      .Summary_Container_mobile{
+        display: none;
+      }
+    }
     {% endstyle %}
   </head>
   
@@ -188,6 +242,7 @@
       </div>
     </header>
     {{ order_summary_toggle }}
+    <div class="Summary_Container_mobile">{{ content_for_order_summary }}</div>
     <div class="content" data-content>
       <div class="wrap">
         <div class="main">
@@ -206,13 +261,15 @@
             {{ content_for_footer }}
           </footer>
         </div>
+        
+        
         <aside class="sidebar" role="complementary">
 		  {% render 'checkout-countdown' %}
           <div class="sidebar__header">
             {{ content_for_logo }}
           </div>
           <div class="sidebar__content">
-            {{ content_for_order_summary }}
+            <div class="Summary_Container">{{ content_for_order_summary }}</div>
             <div class="checkout-cert-con">
               <div class="title_area">
                 <div class="line_title"></div>

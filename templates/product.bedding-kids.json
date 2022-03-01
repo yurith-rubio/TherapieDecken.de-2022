@@ -1,1 +1,138 @@
-{"sections":{"main":{"type":"main-product-covers","blocks":{"product_meta":{"type":"product_meta","settings":{"show_vendor":true,"show_sku":false,"show_taxes_included":false}},"variant_selector":{"type":"variant_selector","settings":{"selector_mode":"block","show_color_swatch":true,"show_color_carousel":false,"size_chart":""}},"buy_buttons":{"type":"buy_buttons","settings":{"show_price_in_button":false,"show_payment_button":false}},"description":{"type":"description","disabled":true,"settings":{}},"share_buttons":{"type":"share_buttons","disabled":true,"settings":{}}},"block_order":["product_meta","variant_selector","buy_buttons","description","share_buttons"],"settings":{"image_size":"large","stack_images":false,"show_thumbnails":true,"enable_image_zoom":true,"enable_video_looping":false}},"16329258760d95ba98":{"type":"html-with-image","settings":{"spacer_top":true,"spacer_bottom":true,"bg-color":"","bg-color-text-html":"","icon_title":false,"icons_duotone":"none","subheading":"Therapiedecken Bettbezüge Set","title":"Produktdetails","image":"shopify:\/\/shop_images\/IMG_0368-600x400.jpg","image_position":"right","content_html":"<ul>\n<li>Option 1: Set aus 1 x Sommerbezug 100 x 135 cm + 1 x Kissenbezug 40 x 80 cm, 40 x 60 cm oder 40 x 40 cm<\/li>\n<li>Option 2: Set aus 1 x Sommerbezug 135 x 200 cm + 1 x Kissenbezug 40 x 80 cm, 40 x 60 cm oder 40 x 40 cm<\/li>\n<li>Kuscheliger, atmungsaktiver Baumwollbezug für Kinder<\/li>\n<li>Auswahl zwischen Bettbezug im Standard, mit Schlaufen (Gravity) oder Reißverschlüssen (Balance)<\/li>\n<li>Decken- und Kissenbezug aus 100% Baumwolle<\/li>\n<li>Bei 40° in der Waschmaschine waschbar<\/li>\n<li>Deckenbezüge mit dem Gravity oder Balance Inlett kompatibel. Die Gravity oder Balance Decke erhalten Sie hier: <a href=\"https:\/\/therapiedecken.de\/pages\/therapiedecken\">Therapiedecken<\/a>.<\/li>\n<\/ul>","content_rich":"<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>","button_style":false,"link_text":"","link_url":"","button_extra":false,"link_text_extra":"Mehr Erfahren","link_url_extra":""}},"16329262155f215ad4":{"type":"html-with-image","settings":{"spacer_top":true,"spacer_bottom":true,"bg-color":"","bg-color-text-html":"","icon_title":false,"icons_duotone":"none","subheading":"Nachhaltige Herstellung","title":"Beste Qualität aus Europa","image":"shopify:\/\/shop_images\/ranurte-kSdi_gqbGGs-unsplash_1_1_2_1.jpg","image_position":"left","content_html":"","content_rich":"<p>Alle unsere Produkte werden ausschließlich in Europa hergestellt, die verwendete Baumwolle ist zertifiziert.<\/p><p>Es ist für uns wichtig, dass bei dem gesamten Herstellungsprozess nachhaltige Materialien verwendet werden und faire Arbeitsbedingungen herrschen. Mit der europäischen Herstellung halten wir Lieferketten kurz und verringern so Umweltbelastungen.<\/p>","button_style":false,"link_text":"","link_url":"","button_extra":false,"link_text_extra":"Mehr Erfahren","link_url_extra":""}},"1631727606922dc094":{"type":"reviews-product","settings":{}},"product-recommendations":{"type":"product-recommendations","blocks":{"8468a92b-25cb-45d8-87f7-3a567b7fd48a":{"type":"product","settings":{"product":""}}},"block_order":["8468a92b-25cb-45d8-87f7-3a567b7fd48a"],"settings":{"show_product_recommendations":true,"heading":"Das könnte Ihnen auch gefallen","show_product_info":true,"show_vendor":false,"show_color_swatch":false}},"1634680362a04de941":{"type":"back-to-top-product","settings":{}}},"order":["main","16329258760d95ba98","16329262155f215ad4","1631727606922dc094","product-recommendations","1634680362a04de941"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product-covers",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_taxes_included": false
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "block",
+            "show_color_swatch": true,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        },
+        "9f66d2dd-2b06-4a50-822a-2f957b670993": {
+          "type": "payment_methods",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "variant_selector",
+        "buy_buttons",
+        "9f66d2dd-2b06-4a50-822a-2f957b670993"
+      ],
+      "settings": {
+        "image_size": "large",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "16329258760d95ba98": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "Therapiedecken Bettbezüge Set",
+        "title": "Produktdetails",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/IMG_0368-600x400.jpg",
+        "image_position": "right",
+        "content_html": "<ul>\n<li>Option 1: Set aus 1 x Sommerbezug 100 x 135 cm + 1 x Kissenbezug 40 x 80 cm, 40 x 60 cm oder 40 x 40 cm<\/li>\n<li>Option 2: Set aus 1 x Sommerbezug 135 x 200 cm + 1 x Kissenbezug 40 x 80 cm, 40 x 60 cm oder 40 x 40 cm<\/li>\n<li>Kuscheliger, atmungsaktiver Baumwollbezug für Kinder<\/li>\n<li>Auswahl zwischen Bettbezug im Standard, mit Schlaufen (Gravity) oder Reißverschlüssen (Balance)<\/li>\n<li>Decken- und Kissenbezug aus 100% Baumwolle<\/li>\n<li>Bei 40° in der Waschmaschine waschbar<\/li>\n<li>Deckenbezüge mit dem Gravity oder Balance Inlett kompatibel. Die Gravity oder Balance Decke erhalten Sie hier: <a href=\"https:\/\/therapiedecken.de\/pages\/therapiedecken\">Therapiedecken<\/a>.<\/li>\n<\/ul>",
+        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "16329262155f215ad4": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "Nachhaltige Herstellung",
+        "title": "Beste Qualität aus Europa",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/ranurte-kSdi_gqbGGs-unsplash_1_1_2_1.jpg",
+        "image_position": "left",
+        "content_html": "",
+        "content_rich": "<p>Alle unsere Produkte werden ausschließlich in Europa hergestellt, die verwendete Baumwolle ist zertifiziert.<\/p><p>Es ist für uns wichtig, dass bei dem gesamten Herstellungsprozess nachhaltige Materialien verwendet werden und faire Arbeitsbedingungen herrschen. Mit der europäischen Herstellung halten wir Lieferketten kurz und verringern so Umweltbelastungen.<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "1631727606922dc094": {
+      "type": "reviews-product",
+      "settings": {
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "blocks": {
+        "8468a92b-25cb-45d8-87f7-3a567b7fd48a": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "8468a92b-25cb-45d8-87f7-3a567b7fd48a"
+      ],
+      "settings": {
+        "show_product_recommendations": true,
+        "heading": "Das könnte Ihnen auch gefallen",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
+    "1634680362a04de941": {
+      "type": "back-to-top-product",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16329258760d95ba98",
+    "16329262155f215ad4",
+    "1631727606922dc094",
+    "product-recommendations",
+    "1634680362a04de941"
+  ]
+}

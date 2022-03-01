@@ -1,0 +1,164 @@
+{
+  "sections": {
+    "1646038188cd04844e": {
+      "type": "page-standard-header",
+      "settings": {
+        "custom_title": false,
+        "custom_title_text": "Customize Title if needed",
+        "image": "shopify:\/\/shop_images\/get-strength1.jpg",
+        "mobile_custom": false,
+        "apply_overlay": true,
+        "review_starts": false,
+        "content": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": false,
+        "back_link_checkbox": false,
+        "back_link_text": "Zurück zur...",
+        "back_link_url": ""
+      }
+    },
+    "1645825201e4ed561b": {
+      "type": "one-column-content",
+      "blocks": {
+        "91ecb998-55fb-4581-b899-da3d7f8e437c": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Die Wärme einer weichen, kuscheligen Decke kann sich wunderbar anfühlen, wenn wir müde und erschöpft sind und uns entspannen wollen. Aber was ist, wenn wir uns ängstlich oder einsam fühlen? Könnte eine Decke auch das gleiche Gefühl der Behaglichkeit vermitteln und uns helfen, uns zu entspannen, wenn sich unser Körper und unser Geist überhaupt nicht entspannt fühlen?<\/p><p><\/p><p>Therapiedecken sind beschwerte Decken, die manchmal auch als Gewichtsdecken bezeichnet werden und seit Jahren in vielen Krankenhäusern und therapeutischen Programmen eingesetzt werden. In jüngster Zeit haben sich die Gewichtsdecken mehr und mehr durchgesetzt, da die Menschen die vielen Vorteile der Verwendung einer Gewichtsdecke zu Hause kennengelernt haben. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "91ecb998-55fb-4581-b899-da3d7f8e437c"
+      ],
+      "settings": {
+        "bg-color": "#e6e6e6",
+        "section_margin": "",
+        "bg-color-text": "#ffffff",
+        "text_align": "left",
+        "content_top_margin": "-100px",
+        "content_bottom_margin": "50px"
+      }
+    },
+    "16460405611f723754": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "bcaf931e-d160-4b4f-8f44-2e8251c2dae9": {
+          "type": "title",
+          "settings": {
+            "subheading": "",
+            "title": "Stimulation durch Tiefendruck",
+            "icon_title": false,
+            "icons_duotone": "allergy"
+          }
+        },
+        "0543c81b-b44d-4c23-9c1d-ad967ca0b39d": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Eine Gewichtsdecke übt durch ihr Gewicht einen besonderen Druck auf den gesamten Körper aus. Dieser wird auch als Tiefendruckstimulation (engl. Deep Pressure Touch Stimulation) bezeichnet. Traditionell wurden Gewichtsdecken bei Menschen eingesetzt, die mit sensorischen Störungen zu kämpfen haben. Die Tiefendruckstimulation hilft, ein überreiztes System zu beruhigen. Bei richtiger Anwendung kann dieser Druck, der einer warmen Umarmung ähnelt, dem Körper helfen, von seinem sympathischen Nervensystem auf sein parasympathisches Nervensystem umzuschalten. Die Decke übt einen gleichmäßig verteilten, sanften Druck auf einen großen Bereich des Körpers aus und schafft so ein Gefühl der Ruhe und Sicherheit für diejenigen, die sich ängstlich oder überreizt fühlen.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "bcaf931e-d160-4b4f-8f44-2e8251c2dae9",
+        "0543c81b-b44d-4c23-9c1d-ad967ca0b39d"
+      ],
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "#f8f8f8",
+        "bg-color-text-html": "#ffffff",
+        "text_align": "left",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/get-strength2_a5f5221b-d3d8-435b-a111-6590ee0d6ec2.jpg",
+        "image_position": "right"
+      }
+    },
+    "164605578326fccafa": {
+      "type": "one-column-content",
+      "blocks": {
+        "dde3f941-b9a5-45af-9677-e8813a5af6ef": {
+          "type": "title",
+          "settings": {
+            "title": "Beruhigung unseres Nervensystems"
+          }
+        },
+        "68bbbce3-1298-4eaa-8818-1d2eec07627f": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Der Körper ist ein komplexes Gebilde mit Systemen, die uns helfen, unsere Funktionen zu regulieren und uns in unserer Welt zurechtzufinden. Unser autonomes Nervensystem reguliert die unbewussten Funktionen unseres Körpers, wie Atmung, Herzschlag, Blutkreislauf und bestimmte Reflexe. Dies sind im Wesentlichen die Funktionen, die unser Körper jeden Tag ausführt, ohne dass wir darüber nachdenken müssen. Wir können zum Beispiel atmen, ohne darüber nachzudenken, wie wir atmen.<\/p><p>Wenn wir gestresst sind oder auf eine Bedrohung in unserer Umgebung aufmerksam gemacht werden, schaltet sich unser sympathisches Nervensystem ein. Das sympathische Nervensystem ist der Motor unserer Flucht- oder Kampfreaktion. Er nutzt die Informationen, die wir aufnehmen, und versucht, uns zu helfen, schnell zu reagieren, um den Moment zu überleben. Wenn wir unter anhaltendem Stress und Angst leiden, sendet unser sympathisches Nervensystem Signale an Bereiche in unserem ganzen Körper, um uns zu signalisieren, dass wir einer Bedrohung gegenüberstehen. Das Problem ist, dass wir uns bei alltäglichem Stress wie Arbeit, Sorgen, familiären Verpflichtungen und hektischen Terminen normalerweise nicht in einer gefährlichen und lebensbedrohlichen Situation befinden.<\/p><p>Die Verwendung einer Gewichtsdecke bietet unserem Körper die Möglichkeit in einen \"Ruhe- und Entspannungs\"-Modus zu schalten, der von unserem parasympathischen Nervensystem gesteuert wird. Wenn unser Körper das Signal erhält, dass er nicht mehr auf der Hut sein muss und in Sicherheit ist, hat der Parasympathikus die Möglichkeit, sich einzuschalten und unserem Körper zu helfen, sich zu beruhigen, zu regulieren und sein inneres Gleichgewicht zu finden.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "dde3f941-b9a5-45af-9677-e8813a5af6ef",
+        "68bbbce3-1298-4eaa-8818-1d2eec07627f"
+      ],
+      "settings": {
+        "bg-color": "#e6e6e6",
+        "section_margin": "0",
+        "bg-color-text": "#ffffff",
+        "text_align": "left",
+        "content_top_margin": "50px",
+        "content_bottom_margin": "50px"
+      }
+    },
+    "16460558841cd507a0": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "da147483-60b8-4211-82ae-85bfef9d81e6": {
+          "type": "title",
+          "settings": {
+            "subheading": "",
+            "title": "Gewichtsdecken geben Kraft und innere Ruhe",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "9f61439c-d159-4735-8432-75ba4005013f": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Die Nutzung einer Gewichtsdecke kann innere Unruhe, Gedankenkreisen und Stress verringern und zu einem kuscheligen Rückzugsort nach stressigen Arbeitstagen oder Alltagssituationen werden. Die Therapiedecke wird zum Ort der Ruhe und Entspannung, der einem Kraft und Energie für den nächsten Tag schenkt. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "da147483-60b8-4211-82ae-85bfef9d81e6",
+        "9f61439c-d159-4735-8432-75ba4005013f"
+      ],
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "#f8f8f8",
+        "bg-color-text-html": "#ffffff",
+        "text_align": "left",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/get-strength3.jpg",
+        "image_position": "right"
+      }
+    },
+    "16460560171948f6f9": {
+      "type": "button-block",
+      "settings": {
+        "bg-color": "#ffffff",
+        "button_text": "Zu den Therapiedecken",
+        "button_url": "shopify:\/\/collections\/welche-therapiedecken-modelle-fur-erwachsene-gibt-es",
+        "spacer_top": "50px",
+        "spacer_bottom": "50px"
+      }
+    }
+  },
+  "order": [
+    "1646038188cd04844e",
+    "main",
+    "1645825201e4ed561b",
+    "16460405611f723754",
+    "164605578326fccafa",
+    "16460558841cd507a0",
+    "16460560171948f6f9"
+  ]
+}

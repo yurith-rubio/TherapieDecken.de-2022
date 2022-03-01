@@ -16,6 +16,8 @@ for size, we use it to display a size chart (if applicable)
 
 {%- assign selected_variant = product.selected_or_first_available_variant -%}
 
+{{ 'product-form.css' | asset_url | stylesheet_tag }}
+
 <!-- EDIT -->
 {% comment %} Extra Variant for Set Products - Yurith {% endcomment %}
 {% assign additional_product = all_products['weitere-bezugsart'] %}
@@ -42,7 +44,7 @@ for size, we use it to display a size chart (if applicable)
     {%- assign size_chart_page = block.settings.size_chart -%}
 
     <span class="ProductForm__Label">
-      {{ option.name }}:
+      {{ option.position }}. {{ option.name }}:
 
       <!--{% if color_label contains downcase_option and block.settings.show_color_swatch %}
       <span class="ProductForm__SelectedValue">{{ option.selected_value }}</span>

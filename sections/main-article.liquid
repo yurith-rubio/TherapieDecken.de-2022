@@ -5,7 +5,9 @@
 
 <article class="Article" data-section-id="{{ section.id }}" data-section-type="article">
   
+  <div style="padding-top:100px"></div>
  
+  {% comment %}
   <aside class="ArticleToolbar hidden-phone">
     <div class="ArticleToolbar__Left">
       <span class="Heading Text--subdued u-h8 hidden-tablet">{{ 'blog.article.now_reading' | t }}</span>
@@ -42,6 +44,7 @@
       {%- endif -%}
     </div>
   </aside>
+  {% endcomment %}
 
   {%- if article.image and section.settings.show_article_image -%}
     <div class="Article__ImageWrapper" style="background-image: url({{ article.image | img_url: '1x1' }})">
@@ -58,7 +61,7 @@
         <p><font size="1" style="text-decoration:underline"><a href="/blogs/news">Zurück zur Übersicht</a></font></p> 
         {%- capture article_meta -%}
           {%- if section.settings.show_date -%}
-            <span class="Article__MetaItem">{{ article.published_at | date: format: 'month_day_year' }}</span>
+            <span class="Article__MetaItem">{{ article.published_at | date: '%d %b %y' }}</span>
           {%- endif -%}
 
           {%- if section.settings.show_category and article.tags != empty -%}

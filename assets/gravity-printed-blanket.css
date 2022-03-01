@@ -1,0 +1,31 @@
+#GravityPrint_MainContainer{
+  max-width: 1200px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.GravityPrint_steps_wr{
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  flex-basis: 33%;
+}
+.GravityPrint_text_wr{
+  max-width: 200px;
+  margin: auto;
+  text-align: left;
+}
+.GravityPrint_iconText_wr{
+  display: inline-flex;
+}
+
+@media only screen and (min-width: 768px){
+  #GravityPrint_ColumnsContainer{
+    display: flex;
+  }
+  .GravityPrint_steps_wr{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}

@@ -3971,7 +3971,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 
 
-.Price--highlight {
+.Price--highlight, .Item_Price--highlight {
   /*color: var(--product-sale-price-color);*/
     color: #ba2e2e;
 }
@@ -3981,12 +3981,12 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     font-size: 24px!important;
 }
 
-.Price--compareAt {
+.Price--compareAt, .Item_Price--compareAt {
   position: relative;
   margin-left: 10px;
 }
 
-.Price--compareAt::before {
+.Price--compareAt::before, .Item_Price--compareAt::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -5658,6 +5658,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .SectionHeader__ButtonWrapper {
   margin-top: 20px;
+  padding: 0 10px;
 }
 
 .SectionHeader__IconHolder {
@@ -5710,6 +5711,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
   .SectionHeader__ButtonWrapper {
     margin-top: 30px;
+    padding: 0 10px;
   }
 
   .SectionFooter {
@@ -5952,7 +5954,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .Article__ImageWrapper {
   overflow: hidden;
-  height: 215px;
+  height: 315px;
 }
 
 .Article__Image {
@@ -10908,7 +10910,7 @@ a.Link-Button-General:hover {
   .js .Slideshow--fullscreen {
     height: calc(var(--window-height) - (var(--header-height) * 0) - 0px);
     height: calc(var(--window-height) - (var(--header-height) * var(--header-is-not-transparent, 0)) - var(--announcement-bar-height, 0px));
-    max-height: 100vh;
+    max-height: 80vh;
   }
 }
 /* Slideshow transition are handled in JavaScript, so while we use Flickity, we need to disable any transition */
@@ -10945,8 +10947,9 @@ a.Link-Button-General:hover {
   }
 }
 .Slideshow__Content {
+  max-width: 1200px;
   position: absolute;
-  padding: 0 24px;
+  padding: 0 50px;
   width: 100%;
   left: 50%;
   top: 50%;
@@ -11005,7 +11008,7 @@ a.Link-Button-General:hover {
 
 @media screen and (min-width: 1008px) {
   .Slideshow__Content {
-    padding: 0 70px;
+    padding: 0 50px;
   }
 }
 .store-availability-container {
@@ -11930,7 +11933,7 @@ h3.wirkung-section-sub-title {
 .row2 .image-rabat{
   display:none;
 }
-  .row1{
+.row1{
   padding-bottom:0px;
 }
 .row2{
@@ -12040,4 +12043,30 @@ a.entspannung-topseller-link:hover {
     height: 60px;
     width: 60px;
     padding: 13px 5px;
+}
+
+/* Live Preview App CSS */
+.cl-po--upload .cl-po--upload-button{
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.cl-po--label{
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: var(--text-font-family);
+  font-style: var(--text-font-style);
+}
+.cl-po--wrapper .cl-po--input{
+  box-shadow: unset !important;
+  border-radius: 3px !important;
+}
+.cl-po--wrapper input[type="radio"]:checked + .cl-po--swatch{
+  box-shadow: unset !important;
+}
+
+.cl-po--wrapper input[type="radio"]:checked + .cl-po--swatch{
+  border: #fac637 solid 3px !important;
+  background: #fac6371c;
+  font-weight: 600;
 }

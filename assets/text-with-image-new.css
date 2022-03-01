@@ -1,0 +1,36 @@
+.text-with-image-new_ContentWrapper{
+  padding-left: 20px !important;
+}
+
+@media only screen and (max-width: 640px){
+  .spacer{
+    padding: 0 !important;
+  }
+  .FeatureText{
+    display: grid;
+  }
+  .FeatureText__ContentWrapper{
+    order: 2;
+  }
+  .FeatureText__ImageWrapper{
+    order: 1;
+  }
+  .icon_html_img{
+	margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 641px){
+  .HTMLimg__WithIcon{
+	display:flex;
+	align-items:center;
+  }
+  .HTMLimg__titleWithIcon{
+	padding-left: 8px;
+  }
+}
+.icon_html_img{
+  line-height: 1.1;
+}
+.text-align-left{
+  text-align: left;
+}
