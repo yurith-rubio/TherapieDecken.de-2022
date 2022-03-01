@@ -71,9 +71,7 @@ while for size, we use it to display a size chart (if applicable)
           </span>
           {%- endif -%}
 		  
-          <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
           {% render 'options-static-notes', option: option %}
-          <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
 
           {%- if color_label contains downcase_option and block.settings.show_color_swatch -%}
             <ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
@@ -112,14 +110,45 @@ while for size, we use it to display a size chart (if applicable)
               {% render 'information-badges', product: product %}
               <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
 
-              {% endif %}  
-            </li>
-            {%- endfor -%}
+                {%- for value in option.values -%}
+                  {% if option.name == "Bezugsart" or option.name == "Design" or option.name == "Farbe" or option.name == "Bezugssystem" %}
+                  {%- assign downcase_value = value | downcase -%}
+
+                   <li class="HorizontalList__Item MainVariant_container">
+
+                      <input id="option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
+                        class="ColorSwatch__Radio" type="radio" name="option-{{ parent_index }}"
+                        value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
+                        data-option-position="{{ option.position }}">
+                      <label for="option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
+                        class="ColorSwatch {% if option.name == "Bezugssystem" %}ColorSwatch--simple{% endif %} ColorSwatch--large {% if downcase_value == 'white' %}ColorSwatch--white{% endif %}"
+                        data-tooltip="{{ value | escape }}"
+                        style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: value %}">
+                        <span class="u-visually-hidden">{{ value }}</span>
+                      </label>
+
+                        {% if option.name == "Bezugssystem" %}
+                          <p class="VariantValue--style">
+                            {% assign simple_value = value %}
+                            {% assign name_variant = simple_value %}            
+                            {{ name_variant | escape }}    
+                          </p>           
+                        {% else %}
+                          <p class="VariantValue--style">
+                            {% assign simple_value = value | split: '(' | last %}
+                            {% assign name_variant = simple_value | split: ')' | first %}
+                            {{ name_variant | escape }}    
+                          </p>
+                        {% endif %}
+
+                        {% render 'information-badges', product: product %}
+
+                      {% endif %}  
+                	</li>
+                {%- endfor -%}
           </ul>
 		  
-          <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
           {% render 'information-bgd-cover-type', product: product %}
-          <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
           
           <style>
             .Inlett__Input:checked > .SizeSwatch {
@@ -163,9 +192,7 @@ while for size, we use it to display a size chart (if applicable)
                       {{ option.name }}:
                   </span>
 
-                  <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
                   {% render 'options-static-notes', option: option %}
-                  <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
                 
                   {%- if block.settings.selector_mode == 'block' -%}
                     <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
@@ -225,9 +252,7 @@ while for size, we use it to display a size chart (if applicable)
                         {{ option.name }}:
                     </span>
 
-                    <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
                     {% render 'options-static-notes', option: option %}
-                    <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
 
                     {%- if block.settings.selector_mode == 'block' -%}
                       <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
@@ -248,9 +273,9 @@ while for size, we use it to display a size chart (if applicable)
                         {%- endfor -%}
                       </ul>
                     {% endif %}
-                    <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
-                    {% render 'information-bgd-weight', gravity_inlett_product: gravity_inlett_product, option: option %}
-                    <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+
+                  	{% render 'information-bgd-weight', gravity_inlett_product: gravity_inlett_product, option: option %}
+                  
                 </div>
             {% endfor %}
           </div>
