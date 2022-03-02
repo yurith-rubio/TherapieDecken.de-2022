@@ -202,31 +202,6 @@
         "title": "Vorteile der Standard Gravity Therapiedecke im Überblick"
       }
     },
-    "16396710303f553ab0": {
-      "type": "html-with-image",
-      "disabled": true,
-      "settings": {
-        "spacer_top": true,
-        "spacer_bottom": true,
-        "bg-color": "",
-        "bg-color-text-html": "",
-        "icon_title": false,
-        "icons_duotone": "none",
-        "subheading": "",
-        "title": "",
-        "text_color": "#3a3c3c",
-        "image": "shopify:\/\/shop_images\/Glasses-HP.png",
-        "image_position": "left",
-        "content_html": "<style>\n.harry_potter_wrapper{\n  background-color: rgba(0, 0, 0, 0.5);\n  position:relative;\n  margin: -40px;\n  padding: 40px;\n}\n@media only screen and (max-width: 640px){\n.harry_potter_wrapper{\n  margin: 0px;\n  padding: 40px;\n}\n}\n<\/style>\n<div class=\"harry_potter_wrapper\">\n<h2 style=\"color: white\">Ein Muss für alle Fans. Abtauchen in die Welt der Zauberer.<\/h2>\n<p style=\"color: white\">Wer liebt nicht die weiten Fantasiewelten gigantischer Zauberer und fliegender Besen? Die Gewichtsdecke mit fantasievollen Bezügen nimmt Sie mit auf die Reise in die Zauberwelt. Ganz nebenbei wird Sie die beschwerte Decke beruhigen und entspannen, selbst bei den spannendsten Szenen.<\/p>\n<\/div>",
-        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
-        "button_style": false,
-        "link_text": "",
-        "link_url": "",
-        "button_extra": false,
-        "link_text_extra": "Mehr Erfahren",
-        "link_url_extra": ""
-      }
-    },
     "16462193204a171c05": {
       "type": "text-with-image-new",
       "blocks": {
@@ -459,7 +434,6 @@
     "16291457001a7d71ef",
     "1629451775c72cd56a",
     "16294611499d6cacbd",
-    "16396710303f553ab0",
     "16462193204a171c05",
     "1629465806e866cd2d",
     "1629709567bc66549f",
