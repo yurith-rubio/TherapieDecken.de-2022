@@ -163,7 +163,6 @@
 
     {%- if product.media.size > 0 -%}
       <div class="Product__Gallery {% if section.settings.stack_images %}Product__Gallery--stack{% endif %} {% if section.settings.show_thumbnails and media_count > 1 %}Product__Gallery--withThumbnails{% else %}Product__Gallery--withDots{% endif %}">
-        <div class="Product__Gallery_Wrapper">
         <span id="ProductGallery" class="Anchor"></span>
 		
         {% render 'product-promotional-badge' %}
@@ -308,7 +307,6 @@
       {%- endif -%}
     {%- endcapture -%}
 
-    </div>
     <div class="Product__InfoWrapper">
       <div class="Product__Info {% if media_count == 0 %}Product__Info--noGallery{% endif %}">
         <div class="Container">
