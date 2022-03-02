@@ -9130,6 +9130,10 @@ a.CollectionItemPage {
   .Product__ViewInSpace[data-shopify-xr] {
     display: none;
   }
+  .Product__Gallery_Wrapper{
+    position: sticky;
+    top: 0;
+  }
 }
 .Product__ViewInSpace svg {
   margin: -1px 12px 0 0;
