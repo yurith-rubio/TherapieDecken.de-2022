@@ -9432,10 +9432,11 @@ a.CollectionItemPage {
 }
 @media screen and (min-width: 1008px) {
   .Product__InfoWrapper {
-    position: absolute;
+    position: relative;
     right: 0;
     top: 0;
     height: 100%;
+	width: 45%;
   }
 
   .Product__Info {
