@@ -9081,6 +9081,9 @@ a.CollectionItemPage {
   .Product {
     margin-bottom: 80px;
   }
+  .Product__Wrapper {
+    display: flex;
+  }
 }
 @media screen and (min-width: 1008px) {
   .Product__Wrapper {
