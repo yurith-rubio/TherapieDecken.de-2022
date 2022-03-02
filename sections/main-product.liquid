@@ -163,6 +163,7 @@
 
     {%- if product.media.size > 0 -%}
       <div class="Product__Gallery {% if section.settings.stack_images %}Product__Gallery--stack{% endif %} {% if section.settings.show_thumbnails and media_count > 1 %}Product__Gallery--withThumbnails{% else %}Product__Gallery--withDots{% endif %}">
+        <div class="Product__Gallery_Wrapper">
         <span id="ProductGallery" class="Anchor"></span>
 		
         {% render 'product-promotional-badge' %}
@@ -305,6 +306,7 @@
           {% render 'product-item', product: associated_product, use_horizontal: true, show_labels: false, show_product_info: true, show_vendor: false, show_price_on_hover: false %}
         </div>
       {%- endif -%}
+    </div>
     {%- endcapture -%}
 
     <div class="Product__InfoWrapper">
