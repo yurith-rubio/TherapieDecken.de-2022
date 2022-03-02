@@ -9237,6 +9237,11 @@ a.CollectionItemPage {
     width: 45%;
     position:relative;
   }
+  
+  .Product__Gallery{
+    position: sticky;
+    top: 0;
+  }
 
   .Product__SlideshowNav--dots {
     display: block;
