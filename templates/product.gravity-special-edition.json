@@ -208,7 +208,7 @@
         "spacer_top": true,
         "spacer_bottom": true,
         "bg-color": "",
-        "bg_img": "shopify:\/\/shop_images\/Section-bg-HP-Desktop_f8d63c26-f52f-4092-9fcb-3bf9df693a6c.jpg",
+        "bg_img": "{{ product.metafields.gravity_special.image.value }}",
         "bg-color-text-html": "",
         "icon_title": false,
         "icons_duotone": "none",
