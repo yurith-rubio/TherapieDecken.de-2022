@@ -204,11 +204,11 @@
     },
     "16396710303f553ab0": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
         "bg-color": "",
-        "bg_img": "{{ product.metafields.gravity_special.image.value }}",
         "bg-color-text-html": "",
         "icon_title": false,
         "icons_duotone": "none",
@@ -225,6 +225,29 @@
         "button_extra": false,
         "link_text_extra": "Mehr Erfahren",
         "link_url_extra": ""
+      }
+    },
+    "16462193204a171c05": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "0cbe56d8-a9b1-40fe-ae51-b77755db5bc7": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0cbe56d8-a9b1-40fe-ae51-b77755db5bc7"
+      ],
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image_position": "right"
       }
     },
     "1629465806e866cd2d": {
@@ -435,6 +458,7 @@
     "1629451775c72cd56a",
     "16294611499d6cacbd",
     "16396710303f553ab0",
+    "16462193204a171c05",
     "1629465806e866cd2d",
     "1629709567bc66549f",
     "1629713540ecd6fa17",
