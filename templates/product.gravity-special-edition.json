@@ -233,7 +233,7 @@
         "2aeeb21d-8385-4772-b41e-f6c674a97add": {
           "type": "liquid",
           "settings": {
-            "liquid": "{% render 'gravity-special-edition-block-content' %}"
+            "liquid": "{% render 'gravity-special-edition-block-content' %}\n\n{% comment %}\nEdit content on the link:\nhttps:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627\n{% endcomment %}"
           }
         }
       },
