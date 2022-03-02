@@ -9234,7 +9234,8 @@ a.CollectionItemPage {
   .Product__Gallery {
     margin-top: 50px;
     margin-left: 50px;
-    width: 45%
+    width: 45%;
+    position:relative;
   }
 
   .Product__SlideshowNav--dots {
