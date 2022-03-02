@@ -9090,7 +9090,7 @@ a.CollectionItemPage {
 }
 @media screen and (min-width: 1140px) {
   .Product__Wrapper {
-    max-width: calc(100% - 550px);
+    max-width: 100%;
   }
 
   .Product--small .Product__Slideshow {
@@ -9103,7 +9103,7 @@ a.CollectionItemPage {
 }
 @media screen and (min-width: 1500px) {
   .Product__Wrapper {
-    max-width: calc(100% - 500px);
+    max-width: 100%;
   }
 }
 /**
