@@ -9084,7 +9084,7 @@ a.CollectionItemPage {
 }
 @media screen and (min-width: 1008px) {
   .Product__Wrapper {
-    max-width: calc(100% - 525px);
+    max-width: 100%;
     margin-left: 0;
   }
 }
