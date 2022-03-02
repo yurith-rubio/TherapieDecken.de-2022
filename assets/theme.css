@@ -9225,6 +9225,7 @@ a.CollectionItemPage {
 @media screen and (min-width: 641px) {
   .Product__Gallery {
     margin-bottom: 65px;
+    width: 50%;
   }
 }
 @media screen and (min-width: 1008px) {
