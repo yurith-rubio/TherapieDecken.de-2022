@@ -9086,12 +9086,15 @@ a.CollectionItemPage {
   .Product__Wrapper {
     max-width: calc(100% - 525px);
     margin-left: 0;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 1140px) {
-  .Product__Wrapper {
+/*  .Product__Wrapper {
     max-width: calc(100% - 550px);
-  }
+  }*/
 
   .Product--small .Product__Slideshow {
     max-width: 400px;
@@ -9102,9 +9105,9 @@ a.CollectionItemPage {
   }
 }
 @media screen and (min-width: 1500px) {
-  .Product__Wrapper {
+  /*.Product__Wrapper {
     max-width: calc(100% - 500px);
-  }
+  }*/
 }
 /**
  * ----------------------------------------------------------------------------
