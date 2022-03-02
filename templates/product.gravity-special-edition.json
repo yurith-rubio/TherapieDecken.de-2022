@@ -230,22 +230,22 @@
     "16462193204a171c05": {
       "type": "text-with-image-new",
       "blocks": {
-        "0cbe56d8-a9b1-40fe-ae51-b77755db5bc7": {
-          "type": "richtext",
+        "2aeeb21d-8385-4772-b41e-f6c674a97add": {
+          "type": "liquid",
           "settings": {
-            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            "liquid": "{% render 'gravity-special-edition-block-content' %}"
           }
         }
       },
       "block_order": [
-        "0cbe56d8-a9b1-40fe-ae51-b77755db5bc7"
+        "2aeeb21d-8385-4772-b41e-f6c674a97add"
       ],
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
         "bg-color": "",
         "bg_img": "{{ product.metafields.gravity_special.bg_image.value }}",
-        "bg-color-text-html": "#ffffff",
+        "bg-color-text-html": "rgba(0,0,0,0)",
         "text_align": "left",
         "text_color": "#3A3C3C",
         "image": "{{ product.metafields.gravity_special.icon_image.value }}",
