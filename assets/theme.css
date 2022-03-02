@@ -9238,7 +9238,7 @@ a.CollectionItemPage {
     position:relative;
   }
   
-  .Product__Gallery{
+  .Product__Gallery_Wrapper{
     position: sticky;
     top: 0;
   }
