@@ -245,11 +245,11 @@
         "spacer_bottom": true,
         "bg-color": "",
         "bg_img": "{{ product.metafields.gravity_special.bg_image.value }}",
-        "bg-color-text-html": "",
+        "bg-color-text-html": "#ffffff",
         "text_align": "left",
         "text_color": "#3A3C3C",
         "image": "{{ product.metafields.gravity_special.icon_image.value }}",
-        "image_position": "right"
+        "image_position": "left"
       }
     },
     "1629465806e866cd2d": {
