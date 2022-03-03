@@ -47,11 +47,14 @@
   })();
 </script>
 
+{% comment %}
 <style>
   .Product{
     overflow-x: hidden;
   }
 </style>
+{% endcomment %}
+
 <section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
   <div class="Product__Wrapper">
     {%- capture action_list_items -%}
