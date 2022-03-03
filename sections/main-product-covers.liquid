@@ -259,38 +259,38 @@
             {{- slideshow_nav -}}
           {%- endunless -%}
         </div>
+      </div>
+    {%- endif -%}
+
+    {%- capture product_aside -%}
+      {%- comment -%}
+      --------------------------------------------------------------------------------------------------------------------
+      PRODUCT TABS
+      --------------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
+
+      {%- render 'product-tabs' -%}
+
+      {%- comment -%}
+      --------------------------------------------------------------------------------------------------------------------
+      PRODUCT WEAR IT WITH
+      --------------------------------------------------------------------------------------------------------------------
+      {%- endcomment -%}
+
+      {%- assign buy_it_with_block = section.blocks | where: 'type', 'buy_it_with' | first -%}
+
+      {%- if buy_it_with_block != blank and buy_it_with_block.settings.product != blank -%}
+        {%- assign associated_product = buy_it_with_block.settings.product -%}
+
+        <div class="Section Section--spacingNormal">
+          <header class="SectionHeader SectionHeader--center">
+            <h3 class="SectionHeader__Heading Heading u-h4">{{ buy_it_with_block.settings.title | escape }}</h3>
+          </header>
+
+          {% render 'product-item', product: associated_product, use_horizontal: true, show_labels: false, show_product_info: true, show_vendor: false, show_price_on_hover: false %}
+        </div>
       {%- endif -%}
-
-      {%- capture product_aside -%}
-        {%- comment -%}
-        --------------------------------------------------------------------------------------------------------------------
-        PRODUCT TABS
-        --------------------------------------------------------------------------------------------------------------------
-        {%- endcomment -%}
-
-        {%- render 'product-tabs' -%}
-
-        {%- comment -%}
-        --------------------------------------------------------------------------------------------------------------------
-        PRODUCT WEAR IT WITH
-        --------------------------------------------------------------------------------------------------------------------
-        {%- endcomment -%}
-
-        {%- assign buy_it_with_block = section.blocks | where: 'type', 'buy_it_with' | first -%}
-
-        {%- if buy_it_with_block != blank and buy_it_with_block.settings.product != blank -%}
-          {%- assign associated_product = buy_it_with_block.settings.product -%}
-
-          <div class="Section Section--spacingNormal">
-            <header class="SectionHeader SectionHeader--center">
-              <h3 class="SectionHeader__Heading Heading u-h4">{{ buy_it_with_block.settings.title | escape }}</h3>
-            </header>
-
-            {% render 'product-item', product: associated_product, use_horizontal: true, show_labels: false, show_product_info: true, show_vendor: false, show_price_on_hover: false %}
-          </div>
-        {%- endif -%}
-      {%- endcapture -%}
-    </div>
+    {%- endcapture -%}
 
     <div class="Product__InfoWrapper">
       <div class="Product__Info {% if media_count == 0 %}Product__Info--noGallery{% endif %}">
