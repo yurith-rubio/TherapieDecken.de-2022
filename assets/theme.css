@@ -9443,6 +9443,7 @@ a.CollectionItemPage {
     top: 0;
     height: 100%;
     width: 43%;
+    margin-top: 50px;
   }
 
   .Product__Info {
