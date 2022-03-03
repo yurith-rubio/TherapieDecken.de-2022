@@ -9450,7 +9450,7 @@ a.CollectionItemPage {
     position: sticky;
     right: 0;
     width: 375px;
-    margin: 0 100px -40px 50px;
+    margin: 0 0 0 50px;
     padding-top: 0;
     padding-bottom: 40px;
   }
