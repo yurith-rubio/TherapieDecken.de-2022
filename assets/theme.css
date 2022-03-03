@@ -9240,7 +9240,7 @@ a.CollectionItemPage {
   
   .Product__Gallery_Wrapper{
     position: sticky;
-    top: 0;
+    top: 50px;
   }
 
   .Product__SlideshowNav--dots {
