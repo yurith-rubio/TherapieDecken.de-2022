@@ -9448,7 +9448,6 @@ a.CollectionItemPage {
 
   .Product__Info {
     position: sticky;
-    top: 50px !important;
     right: 0;
     width: 375px;
     margin: 0 100px -40px 50px;
