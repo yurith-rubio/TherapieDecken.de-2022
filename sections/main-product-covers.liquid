@@ -47,11 +47,14 @@
   })();
 </script>
 
+{% comment %}
 <style>
   .Product{
     overflow-x: hidden;
   }
 </style>
+{% endcomment %}
+
 <section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
   <div class="Product__Wrapper">
     {%- capture action_list_items -%}
@@ -150,114 +153,115 @@
 
     {%- if product.media.size > 0 -%}
       <div class="Product__Gallery {% if section.settings.stack_images %}Product__Gallery--stack{% endif %} {% if section.settings.show_thumbnails and media_count > 1 %}Product__Gallery--withThumbnails{% else %}Product__Gallery--withDots{% endif %}">
-        <span id="ProductGallery" class="Anchor"></span>
-
-        {%- if action_list_items != blank -%}
-          <div class="Product__ActionList hidden-lap-and-up {% if product.media[initial_media_index].media_type != 'image' %}is-hidden{% endif %}">
-            {{ action_list_items }}
-          </div>
-        {%- endif -%}
-
-        {%- capture slideshow_nav -%}
-          {%- if media_count > 1 -%}
-            {%- if section.settings.show_thumbnails -%}
-              <div class="Product__SlideshowNav Product__SlideshowNav--thumbnails">
-                <div class="Product__SlideshowNavScroller">
-                  {%- for media in product.media -%}
-                    {%- capture nav_item_badge -%}
-                      {%- case media.media_type -%}
-                        {%- when 'model' -%}
-                          <span class="Product__SlideshowNavBadge">{% render 'icon', icon: 'media-model-badge' %}</span>
-
-                        {%- when 'video' or 'external_video' -%}
-                          <span class="Product__SlideshowNavBadge">{% render 'icon', icon: 'media-video-badge' %}</span>
-                      {%- endcase -%}
-                    {%- endcapture -%}
-
-                    {%- if section.settings.stack_images -%}
-                      <a href="#Media{{ media.id }}" data-offset="-25" data-focus-on-click data-media-id="{{ media.id }}" class="Product__SlideshowNavImage AspectRatio {% if forloop.first %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
-                        <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
-                        {{- nav_item_badge -}}
-                      </a>
-                    {%- else -%}
-                      <a href="{{ media | img_url: '1024x' }}" data-media-id="{{ media.id }}" class="Product__SlideshowNavImage AspectRatio {% if media.id == initial_media_id %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
-                        <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
-                        {{- nav_item_badge -}}
-                      </a>
-                    {%- endif -%}
-                  {%- endfor -%}
-                </div>
-              </div>
-            {%- endif -%}
-
-            {%- if section.settings.stack_images -%}
-              <div class="Product__SlideshowNav Product__SlideshowNav--dots">
-                <div class="Product__SlideshowNavScroller">
-                  {%- for media in product.media -%}
-                    <a href="#Media{{ media.id }}" data-offset="-25" data-focus-on-click class="Product__SlideshowNavDot {% if forloop.first %}is-selected{% endif %}"></a>
-                  {%- endfor -%}
-                </div>
-              </div>
-            {%- endif -%}
-          {%- endif -%}
-        {%- endcapture -%}
-
-        {%- if section.settings.stack_images -%}
-          {{- slideshow_nav -}}
-        {%- endif -%}
-
-        {%- capture flickity_options -%}
-        {
-          "prevNextButtons": false,
-          "pageDots": false,
-          "adaptiveHeight": true,
-          "watchCSS": true,
-          "dragThreshold": 8,
-          "initialIndex": {{ initial_media_index }},
-          "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25}
-        }
-        {%- endcapture -%}
-
-        <div class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel" data-flickity-config='{{ flickity_options }}'>
-          {{ slideshow_media }}
-        </div>
-
-        {%- comment -%}Add the "view in your space" button, which allows to show the product in customer's environment (if the device supports it){%- endcomment -%}
-        {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
-
-        {%- if first_3d_model -%}
-          <button class="Product__ViewInSpace Button Button--full" data-shopify-xr data-shopify-model3d-id="{{ first_3d_model.id }}" data-shopify-model3d-default-id="{{ first_3d_model.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>
-            {%- render 'icon', icon: 'media-view-in-space' -%} {{- 'product.general.view_in_space' | t -}}
-          </button>
-        {%- endif -%}
-
-        {%- if media_count > 1 -%}
-          {%- comment -%}
-            IMPLEMENTATION NOTE: The reason we create ourselves our own UI instead of relying of the built-in feature of Flickity is that,
-            since the media API, Shopify requires to add arrows next to the dot. Unfortunately this layout is not
-            achievable easily using Flickity options only, so we have to run our own
-          {%- endcomment -%}
-
-          <div class="Product__SlideshowMobileNav {% if section.settings.stack_images or section.settings.show_thumbnails %}hidden-lap-and-up{% endif %}">
-            <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--previous" type="button" data-direction="previous" aria-label="{{ 'general.accessibility.previous' | t }}">
-              {% render 'icon' with 'media-arrow-left' %}
-            </button>
-
-            <div class="flickity-page-dots">
-              {%- for i in (1..media_count) -%}
-                <button type="button" aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}" class="dot {% if forloop.index0 == initial_media_index %}is-selected{% endif %}" data-index="{{ forloop.index0 }}"></button>
-              {%- endfor -%}
+        <div class="Product__Gallery_Wrapper">
+          <span id="ProductGallery" class="Anchor"></span>
+          {%- if action_list_items != blank -%}
+            <div class="Product__ActionList hidden-lap-and-up {% if product.media[initial_media_index].media_type != 'image' %}is-hidden{% endif %}">
+              {{ action_list_items }}
             </div>
+          {%- endif -%}
 
-            <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--next" type="button" data-direction="next" aria-label="{{ 'general.accessibility.next' | t }}">
-              {% render 'icon' with 'media-arrow-right' %}
-            </button>
+          {%- capture slideshow_nav -%}
+            {%- if media_count > 1 -%}
+              {%- if section.settings.show_thumbnails -%}
+                <div class="Product__SlideshowNav Product__SlideshowNav--thumbnails">
+                  <div class="Product__SlideshowNavScroller">
+                    {%- for media in product.media -%}
+                      {%- capture nav_item_badge -%}
+                        {%- case media.media_type -%}
+                          {%- when 'model' -%}
+                            <span class="Product__SlideshowNavBadge">{% render 'icon', icon: 'media-model-badge' %}</span>
+
+                          {%- when 'video' or 'external_video' -%}
+                            <span class="Product__SlideshowNavBadge">{% render 'icon', icon: 'media-video-badge' %}</span>
+                        {%- endcase -%}
+                      {%- endcapture -%}
+
+                      {%- if section.settings.stack_images -%}
+                        <a href="#Media{{ media.id }}" data-offset="-25" data-focus-on-click data-media-id="{{ media.id }}" class="Product__SlideshowNavImage AspectRatio {% if forloop.first %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
+                          <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
+                          {{- nav_item_badge -}}
+                        </a>
+                      {%- else -%}
+                        <a href="{{ media | img_url: '1024x' }}" data-media-id="{{ media.id }}" class="Product__SlideshowNavImage AspectRatio {% if media.id == initial_media_id %}is-selected{% endif %}" style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
+                          <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
+                          {{- nav_item_badge -}}
+                        </a>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
+                </div>
+              {%- endif -%}
+
+              {%- if section.settings.stack_images -%}
+                <div class="Product__SlideshowNav Product__SlideshowNav--dots">
+                  <div class="Product__SlideshowNavScroller">
+                    {%- for media in product.media -%}
+                      <a href="#Media{{ media.id }}" data-offset="-25" data-focus-on-click class="Product__SlideshowNavDot {% if forloop.first %}is-selected{% endif %}"></a>
+                    {%- endfor -%}
+                  </div>
+                </div>
+              {%- endif -%}
+            {%- endif -%}
+          {%- endcapture -%}
+
+          {%- if section.settings.stack_images -%}
+            {{- slideshow_nav -}}
+          {%- endif -%}
+
+          {%- capture flickity_options -%}
+          {
+            "prevNextButtons": false,
+            "pageDots": false,
+            "adaptiveHeight": true,
+            "watchCSS": true,
+            "dragThreshold": 8,
+            "initialIndex": {{ initial_media_index }},
+            "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25}
+          }
+          {%- endcapture -%}
+
+          <div class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel" data-flickity-config='{{ flickity_options }}'>
+            {{ slideshow_media }}
           </div>
-        {%- endif -%}
 
-        {%- unless section.settings.stack_images -%}
-          {{- slideshow_nav -}}
-        {%- endunless -%}
+          {%- comment -%}Add the "view in your space" button, which allows to show the product in customer's environment (if the device supports it){%- endcomment -%}
+          {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
+
+          {%- if first_3d_model -%}
+            <button class="Product__ViewInSpace Button Button--full" data-shopify-xr data-shopify-model3d-id="{{ first_3d_model.id }}" data-shopify-model3d-default-id="{{ first_3d_model.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>
+              {%- render 'icon', icon: 'media-view-in-space' -%} {{- 'product.general.view_in_space' | t -}}
+            </button>
+          {%- endif -%}
+
+          {%- if media_count > 1 -%}
+            {%- comment -%}
+              IMPLEMENTATION NOTE: The reason we create ourselves our own UI instead of relying of the built-in feature of Flickity is that,
+              since the media API, Shopify requires to add arrows next to the dot. Unfortunately this layout is not
+              achievable easily using Flickity options only, so we have to run our own
+            {%- endcomment -%}
+
+            <div class="Product__SlideshowMobileNav {% if section.settings.stack_images or section.settings.show_thumbnails %}hidden-lap-and-up{% endif %}">
+              <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--previous" type="button" data-direction="previous" aria-label="{{ 'general.accessibility.previous' | t }}">
+                {% render 'icon' with 'media-arrow-left' %}
+              </button>
+
+              <div class="flickity-page-dots">
+                {%- for i in (1..media_count) -%}
+                  <button type="button" aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}" class="dot {% if forloop.index0 == initial_media_index %}is-selected{% endif %}" data-index="{{ forloop.index0 }}"></button>
+                {%- endfor -%}
+              </div>
+
+              <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--next" type="button" data-direction="next" aria-label="{{ 'general.accessibility.next' | t }}">
+                {% render 'icon' with 'media-arrow-right' %}
+              </button>
+            </div>
+          {%- endif -%}
+
+          {%- unless section.settings.stack_images -%}
+            {{- slideshow_nav -}}
+          {%- endunless -%}
+        </div>
       </div>
     {%- endif -%}
 
