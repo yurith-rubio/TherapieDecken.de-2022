@@ -46,9 +46,6 @@
 {% if product.title contains 'Gesundheitskissen' %}
     {% assign pillow_title_base = product.title | remove: 'Gesundheitskissen' | strip %}
 {% endif %}
-{% if product.title contains 'Gesundheitskissen für Erwachsene' %}
-    {% assign pillow_title_base = product.title | remove: 'Gesundheitskissen für Erwachsene' | strip %}
-{% endif %}
 
 {% comment %}Place Upsell product under the buy button - Suggested COVER Upsell on Pillow Product Pages {% endcomment %}
 {% layout none %}
