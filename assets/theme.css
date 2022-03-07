@@ -12074,5 +12074,5 @@ a.entspannung-topseller-link:hover {
 /* Quick fix for the drawer cart, Erase once we change the app for the drawer */
 
 #sellify-ucd-cart-drawer, #sellify-ucd-cart-drawer > div {
-    transform-style: preserve-3d;
+    transform-style: unset !important;
 }
