@@ -18,6 +18,7 @@
     {% if product.title contains cover_title_base %}
       {%- assign image_url = product.images[1] | image_url: width: 300 -%}
       <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
+        <h2> Kissen + Bezug kombinieren & <span class="">10% sparen!</span> </h2>
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
         <a href="{{ product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
         <div class="SuggestedUpProd_infoWr">
