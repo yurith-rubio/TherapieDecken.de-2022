@@ -26,7 +26,6 @@
   text-align: center;
   background-color: white;
   position: relative;
-  top: -174px;
   width: fit-content;
   margin: auto;
 }
@@ -36,6 +35,12 @@
     max-width: 140px;
   }
   
+  .SuggestedUpProd_Heading{
+    top: -174px;
+  }
+}
+
+@media only screen and (max-width: 400px){  
   .SuggestedUpProd_Heading{
     top: -174px;
   }
