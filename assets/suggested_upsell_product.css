@@ -38,11 +38,17 @@
   .SuggestedUpProd_Heading{
     top: -174px;
   }
+  .SuggestedUpProd_ContentWr{
+    padding: 11px;
+  }
 }
 
 @media only screen and (max-width: 400px){  
   .SuggestedUpProd_Heading{
     top: -174px;
+  }
+  .SuggestedUpProd_ContentWr{
+    padding: 11px;
   }
 }
 
