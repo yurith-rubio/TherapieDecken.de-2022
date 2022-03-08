@@ -17,7 +17,6 @@
   {% for product in collections['Therapiekissen'].products %}
     {% if product.title contains cover_title_base %}
       {%- assign image_url = product.images[1] | image_url: width: 300 -%}
-	  <h2 class="Heading u-h2 SuggestedUpProd_Heading"> Kissen + Bezug kombinieren & <span class="">10% sparen!</span> </h2>
       <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
         <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
         <a href="{{ product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
@@ -38,6 +37,7 @@
           <button class="SuggestedUpProd_buttonWr Button Button--primary" type="submit">Hinzufügen</button>
         </div>
       </form>
+	  <h2 class="Heading u-h2 SuggestedUpProd_Heading"> Kissen + Bezug kombinieren & <span class="">10% sparen!</span> </h2>
     {% endif %}
   {% endfor %}
 {% endpaginate %}
