@@ -243,11 +243,11 @@
         if (currentScrollPos <= 65){
           document.getElementById("header").style.top = "0px";
           document.getElementById("header").style.position = "relative";
-          document.getElementById("main").style.padding-top = "0px";
+          document.getElementById("main").style.padding = "0";
         } else if (prevScrollpos > currentScrollPos) {
           document.getElementById("header").style.top = "0";
           document.getElementById("header").style.position = "fixed";
-          document.getElementById("main").style.padding-top = "100px";
+          document.getElementById("main").style.padding = "100px 0 0 0";
         } else if (currentScrollPos >= 170) {
           document.getElementById("header").style.top = "-194px";
         }
