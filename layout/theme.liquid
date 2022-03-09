@@ -241,9 +241,7 @@
         if (currentScrollPos <= 65){
           document.getElementById("header").style.top = "0px";
           document.getElementById("header").style.position = "relative";
-          {% if template contains 'index' %}
-          	document.getElementById("main").style.padding = "0";
-          {% endif %}
+          document.getElementById("main").style.padding = "0";
         } else if (prevScrollpos > currentScrollPos) {
           document.getElementById("header").style.top = "0";
           document.getElementById("header").style.position = "fixed";
