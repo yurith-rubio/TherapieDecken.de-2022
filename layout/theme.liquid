@@ -213,16 +213,14 @@
       {% render 'cart-drawer' %}
     {%- endif -%}
 
+            <div style="position:relative; top:0; margin-top: -30px;">
+          {% render 'website-tab-redirecting' %}
+        </div>
     <div class="PageContainer">
 
       <div id="header">
-        <div style="position:relative; top:0; margin-top: -30px;">
-          {% render 'website-tab-redirecting' %}
-        </div>
-        <div style="padding-top: 30px">
-          {% section 'header' %}
-          {% section 'announcement' %}
-        </div>
+        {% section 'header' %}
+        {% section 'announcement' %}
       </div>
 
       <main id="main" role="main">
