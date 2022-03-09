@@ -238,8 +238,8 @@
       window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
-          document.getElementById("header").style.top = "30px";
-        } else if (currentScrollPos >= 135) {
+          document.getElementById("header").style.top = "0";
+        } else if (currentScrollPos >= 60) {
           document.getElementById("header").style.top = "-194px";
         }
         prevScrollpos = currentScrollPos;
