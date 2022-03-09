@@ -245,9 +245,7 @@
         } else if (prevScrollpos > currentScrollPos) {
           document.getElementById("header").style.top = "0";
           document.getElementById("header").style.position = "fixed";
-          {% if template contains 'index' %}
-          	document.getElementById("main").style.padding = "100px 0 0 0";
-          {% endif %}
+          document.getElementById("main").style.padding = "100px 0 0 0";
         } else if (currentScrollPos >= 170) {
           document.getElementById("header").style.top = "-194px";
         }
