@@ -239,8 +239,7 @@
       var prevScrollpos = window.pageYOffset;
       console.log({prevScrollpos});
       window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset + 30;
-      var currentScrollPosTabs = window.pageYOffset + 30;
+      var currentScrollPos = window.pageYOffset;
         
         if (prevScrollpos > currentScrollPos) {
           document.getElementById("header").style.top = "0";
@@ -249,10 +248,7 @@
         }
         prevScrollpos = currentScrollPos;
         
-        if (prevScrollpos > currentScrollPosTabs) {
-          document.getElementById("tabs-redirecting").style.top = "0px";
-        }
-        prevScrollpos = currentScrollPosTabs;
+
         
       }
 	</script>
