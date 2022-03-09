@@ -217,12 +217,13 @@
       <div style="">
         {% render 'website-tab-redirecting' %}
       </div>
-      <div id="header" style="top:65px !important;">
-        {% section 'header' %}
-        {% section 'announcement' %}
-      </div>
 
       <main id="main" role="main">
+        <div id="header" style="top:65px !important;">
+          {% section 'header' %}
+          {% section 'announcement' %}
+        </div>        
+        
         {{ content_for_layout }}
       </main>
 
