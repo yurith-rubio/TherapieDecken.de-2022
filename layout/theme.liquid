@@ -242,13 +242,15 @@
         if (currentScrollPos <= 65){
           document.getElementById("header").style.top = "0px";
           document.getElementById("header").style.position = "relative";
+            {% unless template contains 'blog' %}
           document.getElementById("main").style.padding = "0";
+           {% endunless %}
         } else if (prevScrollpos > currentScrollPos) {
           document.getElementById("header").style.top = "0";
           document.getElementById("header").style.position = "fixed";
-          {% unless template contains 'blog' %}
+        
           	document.getElementById("main").style.padding = "90px 0 0 0";
-          {% endunless %}
+         
         } else if (currentScrollPos >= 170) {
           document.getElementById("header").style.top = "-194px";
         }
