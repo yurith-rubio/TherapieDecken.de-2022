@@ -250,9 +250,8 @@
         
         if (prevScrollpos > currentScrollPosTabs) {
           document.getElementById("tabs-redirecting").style.top = "0";
-        } else if (currentScrollPos >= 65) {
-          document.getElementById("header").style.top = "-194px";
         }
+        prevScrollpos = currentScrollPosTabs;
         
       }
 	</script>
