@@ -242,7 +242,11 @@
         if (currentScrollPos <= 65){
           document.getElementById("header").style.top = "0px";
           document.getElementById("header").style.position = "relative";
-          document.getElementById("main").style.padding = "0";
+          {% if template contains 'page' %}
+          	document.getElementById("main").style.padding = "100px";
+          {% else %}
+          	document.getElementById("main").style.padding = "0";
+          {% endif %}
         } else if (prevScrollpos > currentScrollPos) {
           document.getElementById("header").style.top = "0";
           document.getElementById("header").style.position = "fixed";
