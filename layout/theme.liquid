@@ -214,11 +214,10 @@
     {%- endif -%}
 
     <div class="PageContainer">
-
+      <div style="position: absolute">
+        {% render 'website-tab-redirecting' %}
+      </div>
       <div id="header">
-        <div style="position: absolute">
-          {% render 'website-tab-redirecting' %}
-      	</div>
         {% section 'header' %}
         {% section 'announcement' %}
       </div>
