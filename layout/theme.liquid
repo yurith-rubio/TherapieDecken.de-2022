@@ -214,10 +214,10 @@
     {%- endif -%}
 
     <div class="PageContainer">
-      <div id="tabs-redirecting" style="position: sticky; top: 0px;">
-        {% render 'website-tab-redirecting' %}
-      </div>
-      <div id="header" style="top: 30px;">
+      <div id="header">
+        <div id="tabs-redirecting" style="position: sticky; top: 0px;">
+          {% render 'website-tab-redirecting' %}
+        </div>
         {% section 'header' %}
         {% section 'announcement' %}
       </div>
