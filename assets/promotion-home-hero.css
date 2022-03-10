@@ -35,7 +35,7 @@
 }
 
 @media screen  and (max-width: 499px) and (orientation: portrait) {
-  .home_promotional_content_wrapper{
+  .promotion-home-hero_content_container{
     width: 100%;
   }
 }
