@@ -21,7 +21,6 @@
   align-items: center;
   background-image: url('https://cdn.shopify.com/s/files/1/2451/6611/files/Sleeping_Bottom.svg?v=1646924609'); 
   text-align: center; background-position-x: center;
-  background-size: cover;
 }
 
 @media screen  and (min-width: 1024px){
