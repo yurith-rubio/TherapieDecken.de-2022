@@ -24,13 +24,13 @@
 }
 
 @media screen  and (min-width: 500px) and (max-width: 1199px) and (orientation: landscape){
-  .home_promotional_content_wrapper{
+  .promotion-home-hero_content_container{
     width: 50%;
   }
 }
 
 @media screen  and (min-width: 500px) and (max-width: 1199px) and (orientation: portrait){
-  .home_promotional_content_wrapper{
+  .promotion-home-hero_content_container{
     width: 50%;
   }
 }
