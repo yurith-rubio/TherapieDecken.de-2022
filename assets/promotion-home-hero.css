@@ -13,6 +13,18 @@
   flex-direction: column;
 }
 
+.home_promotional_bottom_part{
+  width: 100%; 
+  padding: 15px 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 5%; 
+  background-image: url('https://cdn.shopify.com/s/files/1/2451/6611/files/Sleeping_Bottom.svg?v=1646923594'); 
+  text-align: center; background-position-x: center;
+  background-size: cover;
+}
+
 @media screen  and (min-width: 1200px){
   .promotion-home-hero_content_container{
     width: 40%;
