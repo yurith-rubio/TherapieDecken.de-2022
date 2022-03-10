@@ -14,7 +14,9 @@
 }
 
 .homePromotional_svg_ribbon{
-
+  position: absolute;
+  width: 40%;
+  top: 66%;
 }
 
 .home_promotional_bottom_part{
