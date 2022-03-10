@@ -44,11 +44,13 @@
 			<div class="promotion-home-hero_content_container">
   	          <div class="home_promotional_content_wrapper">
                 <img class="homePromotional_svg Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/Sleep_Day_Promotion.svg.svg?v=1646918919" alt="">
-           	  </div>
-            
-              {%- if settings.button_1_text != blank -%}
-                <a href="{{ settings.button_1_link }}" class="promotion-home-hero_button Button Button--primary" >{{ settings.button_1_text | escape }}</a>
-              {%- endif -%}
+           	            
+                {%- if settings.button_1_text != blank -%}
+                  <a href="{{ settings.button_1_link }}" class="promotion-home-hero_button Button Button--primary" >{{ settings.button_1_text | escape }}</a>
+                {%- endif -%}
+              </div>
+              
+
 			</div>
           {%- endcapture -%}
 
