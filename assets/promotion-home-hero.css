@@ -19,7 +19,8 @@
 }
 
 .homePromotional_svg_ribbon_left{
-
+  position: absolute;
+  left: -3.4%;
 }
 
 .home_promotional_bottom_part{
