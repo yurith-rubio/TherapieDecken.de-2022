@@ -50,7 +50,7 @@
     "enable_days_view": true,
     "loop_time": 0,
     "announcement_countdown_enable": true,
-    "text_color_countdown": "#3a3c3c",
+    "text_color_countdown": "#2b3075",
     "product_countdown_enable": false,
     "icon_countdown_product": "<span class=\"icon-price-tags\"><\/span>",
     "countdown_product_text": "Garantierte Weihnachtszustellung endet in",
