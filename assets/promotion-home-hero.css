@@ -14,9 +14,8 @@
 }
 
 .homePromotional_svg_ribbon{
-  position: relative;
+  position: absolute;
   top: 64%;
-  height: 11%;
 }
 
 .home_promotional_bottom_part{
@@ -30,25 +29,25 @@
 }
 
 @media screen  and (min-width: 1024px){
-  .promotion-home-hero_content_container{
+  .promotion-home-hero_content_container, .homePromotional_svg_ribbon{
     width: 40%;
   }
 }
 
 @media screen  and (min-width: 500px) and (max-width: 1023px) and (orientation: landscape){
-  .promotion-home-hero_content_container{
+  .promotion-home-hero_content_container, .homePromotional_svg_ribbon{
     width: 40%;
   }
 }
 
 @media screen  and (min-width: 500px) and (max-width: 1023px) and (orientation: portrait){
-  .promotion-home-hero_content_container{
+  .promotion-home-hero_content_container, .homePromotional_svg_ribbon{
     width: 55%;
   }
 }
 
 @media screen  and (max-width: 499px) and (orientation: portrait) {
-  .promotion-home-hero_content_container{
+  .promotion-home-hero_content_container, .homePromotional_svg_ribbon{
     width: 100%;
   }
 }
