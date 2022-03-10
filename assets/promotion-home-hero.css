@@ -9,6 +9,8 @@
 }
 .home_promotional_content_wrapper{
   /*margin: auto;*/
+  display: flex;
+  flex-direction: column;
 }
 .promotion-home-hero_button{
   margin-top: 30px;
