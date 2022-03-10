@@ -142,7 +142,7 @@
           "show_currency_selector": false,
           "show_locale_selector": false,
           "navigation_menu": "main-top-bar-menu-1",
-          "navigation_style": "logoLeft",
+          "navigation_style": "inline",
           "show_icons": true,
           "enable_transparent_header": false,
           "enable_transparent_header_collection": false,
