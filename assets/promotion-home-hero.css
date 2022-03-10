@@ -14,13 +14,12 @@
 }
 
 .homePromotional_svg_ribbon{
+  position: relative;
   top: 64%;
   height: 11%;
 }
 
 .homePromotional_svg_ribbon_left{
-  position: absolute;
-  left: -2.5%;
   height: -webkit-fill-available;
 }
 
