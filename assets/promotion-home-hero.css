@@ -40,3 +40,9 @@
     width: 100%;
   }
 }
+
+@media screen  and (max-width: 899px) and (orientation: landscape ) {
+  .promotion-home-hero_content_container{
+    width: 80%;
+  }
+}
