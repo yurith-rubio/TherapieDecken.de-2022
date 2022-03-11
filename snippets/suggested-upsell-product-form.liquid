@@ -26,7 +26,9 @@
             <span class="ProductMeta__Price Price Suggested_Price--highlight Text--subdued u-h4" style="font-weight:bold">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
             <span class="ProductMeta__Price Price Suggested_Price--compareAt Text--subdued u-h4">
               {% for variant in product.variants %}
-              <div>{{ variant | json }}</div>
+              	{% if  variant.option1 == "Normal" and variant.option2 == "40 x 80 cm" %}
+              		Hello {{ variant | json }}
+              	{% endif %}
               {% endfor %}
             </span>
             <div class="SuggestedUpPro_variantText">
