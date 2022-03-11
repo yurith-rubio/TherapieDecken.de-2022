@@ -30,7 +30,7 @@
   .homePromotional_svg_shorter{
     display: block;
   }  
-  .homePromotional_svg_shorter{
+  .homePromotional_svg_taller{
     display: none;
   }
 }
@@ -39,7 +39,7 @@
   .homePromotional_svg_shorter{
     display: none;
   }  
-  .homePromotional_svg_shorter{
+  .homePromotional_svg_taller{
     display: block;
   }
 }
