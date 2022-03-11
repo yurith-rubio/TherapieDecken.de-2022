@@ -13,10 +13,6 @@
   flex-direction: column;
 }
 
-.homePromotional_svg_ribbon{
-  position: absolute;
-  top: 64%;
-}
 
 .home_promotional_bottom_part{
   display: flex; 
@@ -26,7 +22,7 @@
 }
 
 @media screen  and (min-width: 1024px){
-  .promotion-home-hero_content_container, .homePromotional_svg_ribbon{
+  .promotion-home-hero_content_container{
     width: 40%;
   }
   .home_promotional_bottom_part{
@@ -35,19 +31,19 @@
 }
 
 @media screen  and (min-width: 500px) and (max-width: 1023px) and (orientation: landscape){
-  .promotion-home-hero_content_container, .homePromotional_svg_ribbon{
+  .promotion-home-hero_content_container{
     width: 40%;
   }
 }
 
 @media screen  and (min-width: 500px) and (max-width: 1023px) and (orientation: portrait){
-  .promotion-home-hero_content_container, .homePromotional_svg_ribbon{
+  .promotion-home-hero_content_container{
     width: 55%;
   }
 }
 
 @media screen  and (max-width: 499px) and (orientation: portrait) {
-  .promotion-home-hero_content_container, .homePromotional_svg_ribbon{
+  .promotion-home-hero_content_container{
     width: 100%;
   }
 }
