@@ -33,10 +33,10 @@
                 </span>
 
                 <div class="SuggestedUpPro_variantText">
-                  {% for size_option in product.options_by_name['Größe'].values %}
+                  {% for size_option in product.options_by_name['Größe'].values[4] %}
                      Größe: {{ size_option }} <br>
                   {% endfor %}
-                  {% for size_option in product.options_by_name['Füllung'].values %}
+                  {% for size_option in product.options_by_name['Füllung'].values[0] %}
                       Füllung: {{ size_option }}
                   {% endfor %}
                 </div>
