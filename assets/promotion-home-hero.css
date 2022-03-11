@@ -13,7 +13,6 @@
   flex-direction: column;
 }
 
-
 .home_promotional_bottom_part{
   display: flex; 
   justify-content: center;
@@ -30,6 +29,9 @@
   }
   .homePromotional_svg_shorter{
     display: block;
+  }  
+  .homePromotional_svg_shorter{
+    display: none;
   }
 }
 
