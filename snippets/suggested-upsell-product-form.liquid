@@ -18,7 +18,8 @@
     {% if product.title contains cover_title_base %}
       {% for variant in product.variants %}
         {% if  variant.option1 == "Normal" and variant.option2 == "40 x 80 cm" %}
-          {%- assign image_url = variant.images.src -%}
+			variant image: {{ variant.image.src }}
+          {%- assign image_url = variant.image.src -%}
           <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
             <input type="hidden" name="id" value="{{ variant.id }}">
             <a href="{{ product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
