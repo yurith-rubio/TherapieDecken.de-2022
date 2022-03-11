@@ -18,7 +18,6 @@
     {% if product.title contains cover_title_base %}
       {% for variant in product.variants %}
         {% if  variant.option1 == "Normal" and variant.option2 == "40 x 80 cm" %}
-			{{ variant | json }}
           {%- assign image_url = product.images[1] | image_url: width: 300 -%}
           <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
             <input type="hidden" name="id" value="{{ variant.id }}">
