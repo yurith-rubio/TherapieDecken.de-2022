@@ -17,7 +17,6 @@
   display: flex; 
   justify-content: center;
   text-align: center;
-  margin-top: -20%;
 }
 
 @media screen  and (min-width: 900px){
@@ -33,6 +32,9 @@
   .homePromotional_svg_taller{
     display: none;
   }
+  .home_promotional_bottom_part{
+    margin-top: -23%;
+  }
 }
 
 @media screen  and (max-width: 899px) {
@@ -41,6 +43,9 @@
   }  
   .homePromotional_svg_taller{
     display: block;
+  }
+  .home_promotional_bottom_part{
+    margin-top: -23%;
   }
 }
 
