@@ -20,7 +20,7 @@
         {% if  variant.option1 == "Normal" and variant.option2 == "40 x 80 cm" %}
           {%- assign image_url = product.images[1] | image_url: width: 300 -%}
           <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
-            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+            <input type="hidden" name="id" value="{{ variant.id }}">
             <a href="{{ product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
             <div class="SuggestedUpProd_infoWr">
               <a href="{{ product.url }}"><h2>{{ product.title }}</h2></a>
