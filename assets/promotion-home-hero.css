@@ -37,6 +37,6 @@
 
 @media screen  and (max-width: 899px) {
   .promotion-home-hero_content_container{
-    width: 70%;
+    width: 100%;
   }
 }
