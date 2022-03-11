@@ -25,7 +25,7 @@
           <div>
             <span class="ProductMeta__Price Price Suggested_Price--highlight Text--subdued u-h4" style="font-weight:bold">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
             <span class="ProductMeta__Price Price Suggested_Price--compareAt Text--subdued u-h4">
-              {% for variant in product.varitants %}
+              {% for variant in product.variants %}
               <div>{{ variant | json }}</div>
               {% endfor %}
             </span>
