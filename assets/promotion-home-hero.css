@@ -35,9 +35,13 @@
   }
 }
 
-
-
 @media screen  and (max-width: 899px) {
+  .promotion-home-hero_content_container{
+    width: 100%;
+  }
+}
+
+@media screen  and (max-width: 899px) and (orientation: portrait ) {
   .promotion-home-hero_content_container{
     width: 100%;
   }
