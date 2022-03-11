@@ -16,35 +16,36 @@
 {% paginate collections['Therapiekissen'].products by 1000 %}
   {% for product in collections['Therapiekissen'].products %}
     {% if product.title contains cover_title_base %}
-      {%- assign image_url = product.images[1] | image_url: width: 300 -%}
-      <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
-        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-        <a href="{{ product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
-        <div class="SuggestedUpProd_infoWr">
-          <a href="{{ product.url }}"><h2>{{ product.title }}</h2></a>
-          <div>
-            {% for variant in product.variants %}
-              {% if  variant.option1 == "Normal" and variant.option2 == "40 x 80 cm" %}
+      {% for variant in product.variants %}
+        {% if  variant.option1 == "Normal" and variant.option2 == "40 x 80 cm" %}
+          {%- assign image_url = product.images[1] | image_url: width: 300 -%}
+          <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
+            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+            <a href="{{ product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
+            <div class="SuggestedUpProd_infoWr">
+              <a href="{{ product.url }}"><h2>{{ product.title }}</h2></a>
+              <div>
                 <span class="ProductMeta__Price Price Suggested_Price--highlight Text--subdued u-h4" style="font-weight:bold">
                   {{ variant.price | money_without_trailing_zeros }}
                 </span>
                 <span class="ProductMeta__Price Price Suggested_Price--compareAt Text--subdued u-h4">
                   {{ variant.compare_at_price | money_without_trailing_zeros }}
                 </span>
-              {% endif %}
-            {% endfor %}
-            <div class="SuggestedUpPro_variantText">
-              {% for size_option in product.options_by_name['Größe'].values[4] %}
-                 Größe: {{ size_option }} <br>
-              {% endfor %}
-              {% for size_option in product.options_by_name['Füllung'].values[0] %}
-                  Füllung: {{ size_option }}
-              {% endfor %}
-          	</div>
-          </div>
-          <button class="SuggestedUpProd_buttonWr Button Button--primary" type="submit">Hinzufügen</button>
-        </div>
-      </form>
+
+                <div class="SuggestedUpPro_variantText">
+                  {% for size_option in product.options_by_name['Größe'].values %}
+                     Größe: {{ size_option }} <br>
+                  {% endfor %}
+                  {% for size_option in product.options_by_name['Füllung'].values %}
+                      Füllung: {{ size_option }}
+                  {% endfor %}
+                </div>
+              </div>
+              <button class="SuggestedUpProd_buttonWr Button Button--primary" type="submit">Hinzufügen</button>
+            </div>
+          </form>
+         {% endif %}
+       {% endfor %}
 	  <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Bezug + Kissen kombinieren & <span style="color: #ba2e2e">10% sparen!</span> </h2>
     {% endif %}
   {% endfor %}
