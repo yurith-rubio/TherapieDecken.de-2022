@@ -32,6 +32,9 @@
   .promotion-home-hero_content_container, .homePromotional_svg_ribbon{
     width: 40%;
   }
+  .home_promotional_bottom_part{
+    padding: 15px 0 20px 0; 
+  }
 }
 
 @media screen  and (min-width: 500px) and (max-width: 1023px) and (orientation: landscape){
