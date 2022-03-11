@@ -20,7 +20,7 @@
 
 .home_promotional_bottom_part{
   width: 100%; 
-  padding: 15px 0 30px 0; 
+  padding: 15px 0 20px 0; 
   display: flex; 
   justify-content: center; 
   align-items: center;
@@ -33,7 +33,7 @@
     width: 40%;
   }
   .home_promotional_bottom_part{
-    padding: 15px 0 20px 0; 
+    padding: 15px 0 30px 0; 
   }
 }
 
