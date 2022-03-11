@@ -19,11 +19,8 @@
 }
 
 .home_promotional_bottom_part{
-  width: 100%; 
-  padding: 15px 0 20px; 
   display: flex; 
-  justify-content: center; 
-  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
