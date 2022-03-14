@@ -64,7 +64,7 @@
     "button_1_text": "Mehr Erfahren",
     "button_1_link": "shopify:\/\/collections\/erwachsene",
     "promotional_collection_cover": false,
-    "enable_collection_badge": true,
+    "enable_collection_badge": false,
     "enable_product_badge": false,
     "show_product_guarantee_exceptions": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-banner-2.jpg",
