@@ -212,11 +212,15 @@
     {%- if template != 'cart' -%}
       {% render 'cart-drawer' %}
     {%- endif -%}
-
+    
+    {% render 'top-styling' %}
     <div class="PageContainer">
+      <div id="tabs-redirecting" style="relative: fixed; top: 0px">
+        {% render 'website-tab-redirecting' %}
+      </div>
       <div id="header">
-      {% section 'announcement' %}
-      {% section 'header' %}
+        {% section 'header' %}
+        {% section 'announcement' %}
       </div>
 
       <main id="main" role="main">
@@ -231,14 +235,23 @@
 
       // Show menu when scrolling up and Hide Menu when scrolling down
       var prevScrollpos = window.pageYOffset;
+      console.log({prevScrollpos});
       window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
+        
+        if (currentScrollPos <= 65){
+          document.getElementById("header").style.top = "0px";
+          document.getElementById("header").style.position = "relative";
+          document.getElementById("main").style.padding = "0";
+        } else if (prevScrollpos > currentScrollPos) {
           document.getElementById("header").style.top = "0";
-        } else if (currentScrollPos >= 60) {
-          document.getElementById("header").style.top = "-150px";
+          document.getElementById("header").style.position = "fixed";
+          document.getElementById("main").style.padding = "90px 0 0 0";
+        } else if (currentScrollPos >= 170) {
+          document.getElementById("header").style.top = "-194px";
         }
         prevScrollpos = currentScrollPos;
+        
       }
 	</script>
     

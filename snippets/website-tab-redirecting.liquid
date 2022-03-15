@@ -1,0 +1,62 @@
+{% style %}
+  .website-tab{
+  	background: #ebebeb;
+  }
+  .website-tab__Wrapper{
+	display: flex;
+	max-width: 1200px;
+	padding-left: 15fipx;
+	margin: auto;
+	height: 25px;
+  }
+  .website-tab-img{
+  	display: inline-flex;
+	justify-content:center;
+	align-items: center;
+	height: 100%;
+	padding: 8px 10px 5px 10px;
+  }
+  .website-tab-img img{
+  }
+  .website-tab-img.active{
+  	background: #fff;
+  }
+  .website-tab-img.inactive{
+    margin-left: -4px;
+  	background: #5b5b5b;
+    -webkit-box-shadow: inset 11px -11px 17px -13px #151515; 
+    box-shadow: inset 11px -11px 17px -13px #151515;
+    transition: all 0.3s ease;
+  }
+  .website-tab-img.inactive:hover,
+  .website-tab-img.inactive:focus{
+  	background: #3a3c3c;
+  }
+  @media (min-width: 641px){
+    .website-tab-img.active{
+      margin-left: 30px;
+    }
+  }
+  @media (max-width: 640px){
+    .website-tab{
+    	text-align: center;
+    }
+    .website-tab__Wrapper{
+      display: flex;
+      padding: 0 0;
+    }
+  }
+{% endstyle %}
+
+<div class="website-tab">
+  <div class="website-tab__Wrapper">
+    <div class="website-tab-img active">
+      <img width= "90px" height="auto" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_svg.svg?v=1646927811">
+    </div>
+    <div class="website-tab-img inactive">
+      <a href="https://therapiewelt.de/" target="_blank">
+        <img width= "80px" height="auto" style="margin-top: 5px;" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TW_logo_white_svg.svg?v=1646927890">
+      </a>
+    </div>
+  </div>
+</div>

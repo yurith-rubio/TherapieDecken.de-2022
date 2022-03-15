@@ -12032,10 +12032,10 @@ a.entspannung-topseller-link:hover {
 /* Adjutments for Show Header when scrolling Up, Hide Header when Scrolling Down */
 #header{
   position: fixed;
-  transition: top 0.3s;
+  transition: top 0.5s;
   width: 100%;
   z-index: 19;
-  top: 0;
+  top: 30px;
   display: block;
 }
 
