@@ -52,8 +52,8 @@
     "announcement_countdown_enable": true,
     "text_color_countdown": "#2b3075",
     "product_countdown_enable": true,
-    "icon_countdown_product": "💤 <font color=\"#FAC636\">Weltschlaftag<\/font> ANGEBOT!<font color=\"#FAC636\"> Endet in<\/font>",
-    "countdown_product_text": "",
+    "icon_countdown_product": "",
+    "countdown_product_text": "😴 <font color=\"#FAC636\">Weltschlaftag<\/font><b> ANGEBOT!<\/b> Endet in",
     "countdown_container_bg_color": "#2b3075",
     "countdown_product_numbers_color": "#2b3075",
     "checkout_countdown_enable": true,
@@ -96,7 +96,7 @@
           "home_page_only": false,
           "background": "#2b3075",
           "text_color": "#ffffff",
-          "content": "💤 <font color=\"FAC636\">Weltschlaftag<\/font> <b>ANGEBOT!<\/b> Bis zu <font color=\"FAC636\">40% Rabatt<\/font> | Endet in",
+          "content": "😴 <font color=\"FAC636\">Weltschlaftag<\/font> <b>ANGEBOT!<\/b> Bis zu <font color=\"FAC636\">40% Rabatt<\/font> | Endet in",
           "link": "https:\/\/therapiedecken.de\/collections\/valentinstag-therapiedecken-kollektion"
         }
       },
