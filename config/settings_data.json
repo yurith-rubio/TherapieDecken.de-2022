@@ -95,8 +95,8 @@
           "enable_bar": true,
           "home_page_only": false,
           "background": "#2b3075",
-          "text_color": "#fac636",
-          "content": "💤 Weltschlaftag <font color=\"white\"><b>ANGEBOT!<\/b><\/font> Bis zu <font color=\"white\">40%<\/font> Rabatt | Endet in",
+          "text_color": "#ffffff",
+          "content": "💤 <font color=\"FAC636\">Weltschlaftag<\/font> <b>ANGEBOT!<\/b> Bis zu <font color=\"FAC636\">40% Rabatt<\/font> | Endet in",
           "link": "https:\/\/therapiedecken.de\/collections\/valentinstag-therapiedecken-kollektion"
         }
       },
