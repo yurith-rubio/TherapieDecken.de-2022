@@ -119,6 +119,54 @@
         "link_url_extra": ""
       }
     },
+    "164737615464c54d85": {
+      "type": "accordion-video-product",
+      "blocks": {
+        "c23f89a3-61db-4eaf-aa01-c634790f5618": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "wirkung",
+            "summary": "Welche Wirkung hat eine Therapiedecke?",
+            "content": "Therapiedecken sind Decken mit eingearbeitetem Gewicht. Das Gewicht verteilt sich gleichmäßig über den gesamten Körper und erzeugt einen Tiefendruck, der für Entspannung und einen besseren Schlaf sorgt sowie Stress, Angst- und Schlafstörungen mindern kann."
+          }
+        },
+        "b8c9164c-cde6-4742-969a-471bc1d13180": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "gewicht",
+            "summary": "Wie wählt man das Gewicht aus?",
+            "content": "Wir empfehlen eine Therapiedecke auszuwählen, die ungefähr 10% Ihres Körpergewichts entspricht. Wenn Sie zwischen zwei Gewichtsklassen liegen, nehmen Sie die schwerere Version. Umtäusche sind bei uns kostenlos."
+          }
+        },
+        "2e2cbf06-c359-409b-bd8b-5267a2e7a701": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "materialien",
+            "summary": "Füllung der Therapiedecken Modelle",
+            "content": "Die Gravity Decke wird mit hochwertigen, sandfeinen Glasperlen, die sich in kleinen Kammern befinden, beschwert.\nDie Balance Decke hat im Inneren kleine Edelstahlperlen, die fest eingeklebt werden und daher nicht verrutschen. \nDie Inletts beider Modelle werden aus 100% Baumwolle gefertigt."
+          }
+        },
+        "d40fecc3-6cf0-4eda-9d38-f596b6b2ec26": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "28tagen",
+            "summary": "28 Tage Probeschlafen",
+            "content": "Mit dem Kauf einer Therapiedecke erhalten Sie automatisch die Möglichkeit, diese ab Erhalt 28 Tage lang zu testen. So finden Sie heraus, ob Gewicht und Modell passend für Sie sind. Bei Nichtgefallen können Sie die Ware retournieren oder unseren kostenlosen Umtausch in Anspruch nehmen."
+          }
+        }
+      },
+      "block_order": [
+        "c23f89a3-61db-4eaf-aa01-c634790f5618",
+        "b8c9164c-cde6-4742-969a-471bc1d13180",
+        "2e2cbf06-c359-409b-bd8b-5267a2e7a701",
+        "d40fecc3-6cf0-4eda-9d38-f596b6b2ec26"
+      ],
+      "settings": {
+        "sub-heading": "Die Bettdecke mit Gewicht",
+        "heading": "Was ist eine Therapiedecke?",
+        "video_url": "https:\/\/player.vimeo.com\/video\/355973188?h=626f5d783f&color=f7d72e&title=0&byline=0&portrait=0"
+      }
+    },
     "16305044894f9cd936": {
       "type": "product-details-blanket",
       "blocks": {
@@ -201,54 +249,6 @@
       "type": "back-to-top-product",
       "settings": {
       }
-    },
-    "164737615464c54d85": {
-      "type": "accordion-video-product",
-      "blocks": {
-        "c23f89a3-61db-4eaf-aa01-c634790f5618": {
-          "type": "accordion_simple",
-          "settings": {
-            "simple_icons": "wirkung",
-            "summary": "Welche Wirkung hat eine Therapiedecke?",
-            "content": "Therapiedecken sind Decken mit eingearbeitetem Gewicht. Das Gewicht verteilt sich gleichmäßig über den gesamten Körper und erzeugt einen Tiefendruck, der für Entspannung und einen besseren Schlaf sorgt sowie Stress, Angst- und Schlafstörungen mindern kann."
-          }
-        },
-        "b8c9164c-cde6-4742-969a-471bc1d13180": {
-          "type": "accordion_simple",
-          "settings": {
-            "simple_icons": "gewicht",
-            "summary": "Wie wählt man das Gewicht aus?",
-            "content": "Wir empfehlen eine Therapiedecke auszuwählen, die ungefähr 10% Ihres Körpergewichts entspricht. Wenn Sie zwischen zwei Gewichtsklassen liegen, nehmen Sie die schwerere Version. Umtäusche sind bei uns kostenlos."
-          }
-        },
-        "2e2cbf06-c359-409b-bd8b-5267a2e7a701": {
-          "type": "accordion_simple",
-          "settings": {
-            "simple_icons": "materialien",
-            "summary": "Füllung der Therapiedecken Modelle",
-            "content": "Die Gravity Decke wird mit hochwertigen, sandfeinen Glasperlen, die sich in kleinen Kammern befinden, beschwert.\nDie Balance Decke hat im Inneren kleine Edelstahlperlen, die fest eingeklebt werden und daher nicht verrutschen. \nDie Inletts beider Modelle werden aus 100% Baumwolle gefertigt."
-          }
-        },
-        "d40fecc3-6cf0-4eda-9d38-f596b6b2ec26": {
-          "type": "accordion_simple",
-          "settings": {
-            "simple_icons": "28tagen",
-            "summary": "28 Tage Probeschlafen",
-            "content": "Mit dem Kauf einer Therapiedecke erhalten Sie automatisch die Möglichkeit, diese ab Erhalt 28 Tage lang zu testen. So finden Sie heraus, ob Gewicht und Modell passend für Sie sind. Bei Nichtgefallen können Sie die Ware retournieren oder unseren kostenlosen Umtausch in Anspruch nehmen."
-          }
-        }
-      },
-      "block_order": [
-        "c23f89a3-61db-4eaf-aa01-c634790f5618",
-        "b8c9164c-cde6-4742-969a-471bc1d13180",
-        "2e2cbf06-c359-409b-bd8b-5267a2e7a701",
-        "d40fecc3-6cf0-4eda-9d38-f596b6b2ec26"
-      ],
-      "settings": {
-        "sub-heading": "Die Bettdecke mit Gewicht",
-        "heading": "Was ist eine Therapiedecke?",
-        "video_url": "https:\/\/player.vimeo.com\/video\/355973188?h=626f5d783f&color=f7d72e&title=0&byline=0&portrait=0"
-      }
     }
   },
   "order": [
@@ -256,10 +256,10 @@
     "163044858332a671dd",
     "1630502279241963c8",
     "1630604392d268efb9",
+    "164737615464c54d85",
     "16305044894f9cd936",
     "1631652355e16d57e5",
     "product-recommendations",
-    "16346816958726f66c",
-    "164737615464c54d85"
+    "16346816958726f66c"
   ]
 }
