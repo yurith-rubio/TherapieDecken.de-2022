@@ -49,7 +49,7 @@
     "countdown_date": "April 1, 2022  00:00 GMT+0100",
     "enable_days_view": true,
     "loop_time": 0,
-    "announcement_countdown_enable": false,
+    "announcement_countdown_enable": true,
     "text_color_countdown": "#2b3075",
     "product_countdown_enable": false,
     "icon_countdown_product": "<span class=\"icon-price-tags\"><\/span>",
@@ -59,10 +59,10 @@
     "checkout_countdown_enable": false,
     "checkout_countdown_text": "⚠️ Auf Grund unserer Pre Black Friday Angebote ist Ihr Warenkorb für nur",
     "left_product_inventory": true,
-    "promotional_hero_hp_cover": false,
+    "promotional_hero_hp_cover": true,
     "promotional_hero_image": "shopify:\/\/shop_images\/TD_sleep_day_cover_image.jpg",
     "button_1_text": "Mehr Erfahren",
-    "button_1_link": "shopify:\/\/collections\/erwachsene",
+    "button_1_link": "shopify:\/\/pages\/fur-wen-benotigen-sie-eine-therapiedecke",
     "promotional_collection_cover": false,
     "enable_collection_badge": false,
     "enable_product_badge": false,
@@ -92,11 +92,11 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
           "background": "#2b3075",
           "text_color": "#fac636",
-          "content": "💤 Weltfrauentag <b>Spezial<\/b>! GRATIS pinke Gewichtsmaske (Wert 59€) + 10€ Rabatt | Endet in",
+          "content": "💤 Weltschlaftag <font color=\"white\"><b>ANGEBOT!<\/b><\/font> Bis zu 40% Rabatt | Endet in",
           "link": "https:\/\/therapiedecken.de\/collections\/valentinstag-therapiedecken-kollektion"
         }
       },
