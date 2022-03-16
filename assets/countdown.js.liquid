@@ -50,7 +50,7 @@
       + `<span class="countdown_text">${minutes}</span>` + "MIN " + `<span class="countdown_text">${seconds}</span>` + "S ";
     {% endif %}
     {% if settings.product_countdown_enable %}
-      document.getElementById("countdown_product").innerHTML = `<span>{{ settings.countdown_product_text }} </span><span class="countdown_product_text">${days}</span>` + "T " + `<span class="countdown_product_text">${hours}</span>` + "STD "
+      document.getElementById("countdown_product").innerHTML = `<span>{{ settings.countdown_product_text }} </span><span class="countdown_days"><span class="countdown_product_text">${days}</span>` + "T " + `</span>` + `<span class="countdown_product_text">${hours}</span>` + "STD "
       + `<span class="countdown_product_text">${minutes}</span>` + "MIN " + `<span class="countdown_product_text">${seconds}</span>` + "S ";
     {% endif %}
 
