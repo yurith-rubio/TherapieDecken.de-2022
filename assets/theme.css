@@ -7844,6 +7844,7 @@ a.CollectionItemPage {
   display: grid;
   grid-template-areas: 'therapiedecken informationen'
     'verprechen verprechen'
+    'icons icons'
 }
 
 .Footer__Block:nth-child(1){
@@ -7859,7 +7860,7 @@ a.CollectionItemPage {
 }
 
 .Footer__Block:nth-child(4){
-  grid-area: verprechen;
+  grid-area: icons;
 }
 
 .Footer__Block {
