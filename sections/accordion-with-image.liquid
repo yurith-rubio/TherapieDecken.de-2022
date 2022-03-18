@@ -18,10 +18,7 @@
               {% endfor %}
           </div>
           <div class="accordion-with-image_IntroPart2">
-            {%- assign image_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-			<img class="Image--lazyLoad Image--slide{{ section.settings.image_position | capitalize }}"
-              data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto"
-              alt="{{ section.settings.image.alt | escape }}">
+			<img class="Slideshow__Image" src="{{ settings.image | img_url: '1000x' }}" alt="{{ settings.image.alt | escape }}">
           </div>
         
       </div>
