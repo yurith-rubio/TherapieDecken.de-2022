@@ -20,7 +20,7 @@
           <div class="accordion-with-image_IntroPart2">
 			<img class="Slideshow__Image" src="{{ settings.image | img_url : 'master' }}" alt="{{ settings.image.alt | escape }}">
           </div>
-        
+        {{ settings.image | img_url : 'master' }}
       </div>
   </div>
 </div>
