@@ -8,13 +8,13 @@
  .accordion-with-image_IntroSection{
      text-align: center;
 }
- .intro-sec-content{
+ .accordion-with-image_IntroSecContent{
      display: flex;
      align-items: center;
      width: 100%;
      text-align: left;
 }
- .intro-sec-content > div{
+ .accordion-with-image_IntroSecContent > div{
      width: 50%;
      display: flex;
      flex-direction: column;
@@ -96,7 +96,7 @@
          text-align: left!important;
          margin: auto;
     }
-     .intro-sec-content>div {
+     .accordion-with-image_IntroSecContent>div {
          width: 100%;
     }
      .intro-part-2 {
@@ -104,7 +104,7 @@
          max-width: 120%;
          margin-bottom: -65px;
     }
-     .intro-sec-content {
+     .accordion-with-image_IntroSecContent {
          display: inline-block;
     }
      .grid-general-product{
