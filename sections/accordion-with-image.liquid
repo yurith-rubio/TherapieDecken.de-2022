@@ -20,11 +20,10 @@
           <div class="accordion-with-image_IntroPart2">
             {%- assign image_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 			<img class="Image--lazyLoad Image--slide{{ section.settings.image_position | capitalize }}"
-              data-src="//cdn.shopify.com/s/files/1/2451/6611/files/TD_sleep_day_cover_image_{width}x.jpg?v=1646916209 " data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto"
+              data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto"
               alt="{{ section.settings.image.alt | escape }}">
           </div>
         
-        image url: {{ image_url }}
       </div>
   </div>
 </div>
