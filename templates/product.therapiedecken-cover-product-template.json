@@ -119,8 +119,57 @@
         "link_url_extra": ""
       }
     },
+    "1647615607796d0801": {
+      "type": "accordion-with-image",
+      "blocks": {
+        "f3ad9ae1-4699-46bd-81b5-683d99909dbb": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "none",
+            "summary": "Title Example",
+            "content": "Example of text that could be paced with something related to the title above"
+          }
+        },
+        "360aa993-b4fe-443b-90b2-f581b6b3715e": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "none",
+            "summary": "Title Example",
+            "content": "Example of text that could be paced with something related to the title above"
+          }
+        },
+        "f73a83ae-095f-4f9f-9d7f-1ca323ce8ec7": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "none",
+            "summary": "Title Example",
+            "content": "Example of text that could be paced with something related to the title above"
+          }
+        },
+        "e91ecbd0-c501-4264-bfa3-f639d5d1b622": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "none",
+            "summary": "Title Example",
+            "content": "Example of text that could be paced with something related to the title above"
+          }
+        }
+      },
+      "block_order": [
+        "f3ad9ae1-4699-46bd-81b5-683d99909dbb",
+        "360aa993-b4fe-443b-90b2-f581b6b3715e",
+        "f73a83ae-095f-4f9f-9d7f-1ca323ce8ec7",
+        "e91ecbd0-c501-4264-bfa3-f639d5d1b622"
+      ],
+      "settings": {
+        "sub-heading": "Premium Therapiedecke",
+        "heading": "Eigenschaften der Balance Gewichtsdecke",
+        "image": "shopify:\/\/shop_images\/TD_sleep_day_cover_image.jpg"
+      }
+    },
     "164737615464c54d85": {
       "type": "accordion-video-product",
+      "disabled": true,
       "blocks": {
         "c23f89a3-61db-4eaf-aa01-c634790f5618": {
           "type": "accordion_simple",
@@ -256,6 +305,7 @@
     "163044858332a671dd",
     "1630502279241963c8",
     "1630604392d268efb9",
+    "1647615607796d0801",
     "164737615464c54d85",
     "16305044894f9cd936",
     "1631652355e16d57e5",
