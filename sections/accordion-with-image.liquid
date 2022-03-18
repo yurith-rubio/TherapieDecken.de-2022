@@ -18,7 +18,7 @@
               {% endfor %}
           </div>
           <div class="accordion-with-image_IntroPart2">
-			<img class="Slideshow__Image" src="{{ settings.image | img_url: '1000x' }}" alt="{{ settings.image.alt | escape }}">
+			<img class="Slideshow__Image" src="{{ settings.image | master }}" alt="{{ settings.image.alt | escape }}">
           </div>
         
       </div>
