@@ -18,7 +18,9 @@
               {% endfor %}
           </div>
           <div class="accordion-with-image_IntroPart2">
-
+			<img class="Image--lazyLoad Image--slide{{ section.settings.image_position | capitalize }}"
+              data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto"
+              alt="{{ section.settings.image.alt | escape }}">
           </div>
       </div>
   </div>
