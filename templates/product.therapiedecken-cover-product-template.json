@@ -149,9 +149,9 @@
         "e91ecbd0-c501-4264-bfa3-f639d5d1b622": {
           "type": "accordion_simple",
           "settings": {
-            "simple_icons": "none",
-            "summary": "Title Example",
-            "content": "Example of text that could be paced with something related to the title above"
+            "simple_icons": "28tagen",
+            "summary": "28 Tage Probeschlafen",
+            "content": "Mit dem Kauf einer Therapiedecke erhalten Sie automatisch die Möglichkeit, diese ab Erhalt 28 Tage lang zu testen. So finden Sie heraus, ob Gewicht und Modell passend für Sie sind. Bei Nichtgefallen können Sie die Ware retournieren oder unseren kostenlosen Umtausch in Anspruch nehmen."
           }
         }
       },
@@ -162,13 +162,14 @@
         "e91ecbd0-c501-4264-bfa3-f639d5d1b622"
       ],
       "settings": {
-        "sub-heading": "Premium Therapiedecke",
-        "heading": "Eigenschaften der Balance Gewichtsdecke",
+        "sub-heading": "Die Bettdecke mit Gewicht",
+        "heading": "Was ist eine Therapiedecke?",
         "image": "shopify:\/\/shop_images\/get-strength1.jpg"
       }
     },
     "164737615464c54d85": {
       "type": "accordion-video-product",
+      "disabled": true,
       "blocks": {
         "c23f89a3-61db-4eaf-aa01-c634790f5618": {
           "type": "accordion_simple",
