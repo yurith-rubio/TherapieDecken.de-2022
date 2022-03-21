@@ -79,6 +79,9 @@
     .accordion-with-image_IntroPart1 p.content{
 		 padding-left:21px;
     }
+    .accordion-with-image_IntroSecContent > div{
+     padding-top: 20px;
+	}
 }
  @media (min-width: 481px) and (max-width: 650px){
      .icon_accordion{
