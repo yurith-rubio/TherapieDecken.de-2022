@@ -1,130 +1,130 @@
 /* accordion-video-product.liquid */
 
 .grid-general-product{
-     max-width: 900px;
-     margin: auto;
-     padding: 50px 0;
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 0;
 }
- .accordion-with-image_IntroSection{
-     text-align: center;
+.accordion-with-image_IntroSection{
+  text-align: center;
 }
- .accordion-with-image_IntroSecContent{
-     display: flex;
-     align-items: center;
-     width: 100%;
-     text-align: left;
+.accordion-with-image_IntroSecContent{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
 }
- .accordion-with-image_IntroSecContent > div{
-     width: 50%;
-     display: flex;
-     flex-direction: column;
+.accordion-with-image_IntroSecContent > div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
- .accordion-with-image_IntroPart1 {
-     padding-right: 20px;
+.accordion-with-image_IntroPart1 {
+  padding-right: 20px;
 }
- details{
-     width: 100%;
+details{
+  width: 100%;
 }
- summary::before{
-     content: "+";
-     padding: 0 10px;
-     width: 23px;
-     height: 23px;
-     float: right;
+summary::before{
+  content: "+";
+  padding: 0 10px;
+  width: 23px;
+  height: 23px;
+  float: right;
 }
- .accordion-with-image_IntroPart1 summary:before{
-     position:relative;
-     top: 13px;
+.accordion-with-image_IntroPart1 summary:before{
+  position:relative;
+  top: 13px;
 }
- details[open] summary:before {
-     content: "-";
-     padding: 0 7px;
+details[open] summary:before {
+  content: "-";
+  padding: 0 7px;
 }
- details summary::-webkit-details-marker {
-     display: none!important;
+details summary::-webkit-details-marker {
+  display: none!important;
 }
- details:focus, summary:focus {
-     outline: 0!important;
+details:focus, summary:focus {
+  outline: 0!important;
 }
- summary {
-     width: 100%;
-     padding: 10px 10px;
+summary {
+  width: 100%;
+  padding: 10px 10px;
 }
- details {
-     border-bottom: 1px solid #ccc;
+details {
+  border-bottom: 1px solid #ccc;
 }
- .accordion-with-image_IntroPart1 p.content{
-	padding-left:50px;
+.accordion-with-image_IntroPart1 p.content{
+  padding-left:50px;
 }
  .content{
-     padding: 5px 10px 10px 10px;
-     width: 100%;
+  padding: 5px 10px 10px 10px;
+  width: 100%;
 }
- .icon_accordion > span{
-     font-size: 23px;
-     width: 35px;
-     text-align: center;
-     float: left;
-     margin-right: 5px;
-     position:relative;
-     top: 13px;
+.icon_accordion > span{
+  font-size: 23px;
+  width: 35px;
+  text-align: center;
+  float: left;
+  margin-right: 5px;
+  position:relative;
+  top: 13px;
 }
  @media (max-width: 650px){
-     .accordion-with-image_IntroPart1 summary{
-         padding: 10px 10px !important;
-    }
-     .accordion-with-image_IntroPart1 summary:before{
-         top:0;
-    }
-    .accordion-with-image_IntroPart1 p.content{
-		 padding-left:21px;
-    }
-    .accordion-with-image_IntroSecContent > div{
-     padding-top: 20px;
-	}
+  .accordion-with-image_IntroPart1 summary{
+    padding: 10px 10px !important;
+  }
+  .accordion-with-image_IntroPart1 summary:before{
+    top:0;
+  }
+  .accordion-with-image_IntroPart1 p.content{
+    padding-left:21px;
+  }
+  .accordion-with-image_IntroSecContent > div{
+    padding-top: 20px;
+  }
 }
- @media (min-width: 481px) and (max-width: 650px){
-     .icon_accordion{
-         float:left;
-    }
-     .icon_accordion>span{
-         margin-top: 1px;
-         position: inherit;
-         top:6px;
-    }
+@media (min-width: 481px) and (max-width: 650px){
+  .icon_accordion{
+    float:left;
+  }
+  .icon_accordion>span{
+    margin-top: 1px;
+    position: inherit;
+    top:6px;
+  }
 }
- @media screen and (max-width: 600px) {
-     .accordion-with-image_IntroPart1 {
-         width: 80%!important;
-         text-align: left!important;
-         margin: auto;
-    }
-     .accordion-with-image_IntroSecContent>div {
-         width: 100%;
-    }
-     .accordion-with-image_IntroPart2 {
-         flex: 0 0 120%;
-         max-width: 120%;
-         margin-bottom: -65px;
-    }
-     .accordion-with-image_IntroSecContent {
-         display: inline-block;
-    }
-     .grid-general-product{
-         padding: 50px 0 0px;
-         margin-bottom: -20px;
-    }
-     .icon_accordion{
-         position: relative;
-         top: -7px;
-         float: left;
-         width: 35px;
-    }
+@media screen and (max-width: 600px) {
+  .accordion-with-image_IntroPart1 {
+    width: 80%!important;
+    text-align: left!important;
+    margin: auto;
+  }
+  .accordion-with-image_IntroSecContent>div {
+    width: 100%;
+  }
+  .accordion-with-image_IntroPart2 {
+    flex: 0 0 120%;
+    max-width: 120%;
+    margin-bottom: -65px;
+  }
+  .accordion-with-image_IntroSecContent {
+    display: inline-block;
+  }
+  .grid-general-product{
+    padding: 50px 0 0px;
+    margin-bottom: -20px;
+  }
+  .icon_accordion{
+    position: relative;
+    top: -7px;
+    float: left;
+    width: 35px;
+  }
 }
- @media (max-width: 480px){
-     .icon_accordion > span{
-         margin-top: 7px;
-       	 position: inherit;
-         top:0;
-    }
+@media (max-width: 480px){
+  .icon_accordion > span{
+    margin-top: 7px;
+    position: inherit;
+    top:0;
+  }
 }
