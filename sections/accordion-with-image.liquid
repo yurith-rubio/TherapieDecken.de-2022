@@ -7,7 +7,9 @@
       <p class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.sub-heading}}</p>
       <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.heading}}</h2>
       <div class="accordion-with-image_IntroSecContent">
-
+          <div class="accordion-with-image_IntroPart2">
+			<img class="Image--lazyLoad" data-src="{{ section.settings.image | img_url : '450x300', crop: 'center' }}" alt="{{ section.settings.image.alt | escape }}">
+          </div>
           <div class="accordion-with-image_IntroPart1">
               {% for block in section.blocks %}
                   <details>
@@ -17,9 +19,7 @@
                   </details>
               {% endfor %}
           </div>
-          <div class="accordion-with-image_IntroPart2">
-			<img class="Image--lazyLoad" data-src="{{ section.settings.image | img_url : '450x300', crop: 'center' }}" alt="{{ section.settings.image.alt | escape }}">
-          </div>
+
       </div>
   </div>
 </div>
