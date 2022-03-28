@@ -64,19 +64,6 @@
         "bg-color": "#f8f8f8"
       }
     },
-    "16484808573a932b33": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "section_size": "normal",
-        "image": "shopify:\/\/shop_images\/1_2_1_1.jpg",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 31,
-        "subheading": "",
-        "title": "Das Single Langschläfer Set",
-        "content": "<p>Mit dem Langschläfer Set tun Sie sich etwas Gutes für Ihren Schlaf und Ihr Wohlbefinden. Genießen Sie die Wirkung der Gewichtsdecke auf Ihren Körper, die Gewichtsschlafmaske bei Stress und Anspannung und das mit Zirbenholz gefüllte Kissen für Ruhe und Gelassenheit.<\/p>"
-      }
-    },
     "16291457001a7d71ef": {
       "type": "banner-promotion",
       "disabled": true,
@@ -204,6 +191,19 @@
       "settings": {
         "title-sub": "Die bekannteste Therapiedecke",
         "title": "Vorteile der Standard Gravity Therapiedecke im Überblick"
+      }
+    },
+    "16484808573a932b33": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "normal",
+        "image": "shopify:\/\/shop_images\/1_2_1_1.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 31,
+        "subheading": "",
+        "title": "Das Single Langschläfer Set",
+        "content": "<p>Mit dem Langschläfer Set tun Sie sich etwas Gutes für Ihren Schlaf und Ihr Wohlbefinden. Genießen Sie die Wirkung der Gewichtsdecke auf Ihren Körper, die Gewichtsschlafmaske bei Stress und Anspannung und das mit Zirbenholz gefüllte Kissen für Ruhe und Gelassenheit.<\/p>"
       }
     },
     "1629462422c7c337fa": {
@@ -443,10 +443,10 @@
     "163145566685d0e395",
     "16291424324bdf770a",
     "1629459987d4cac0a9",
-    "16484808573a932b33",
     "16291457001a7d71ef",
     "16484814484cf9db9a",
     "16294611499d6cacbd",
+    "16484808573a932b33",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
     "1629709567bc66549f",
