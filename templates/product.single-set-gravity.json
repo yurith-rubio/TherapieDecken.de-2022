@@ -221,32 +221,9 @@
         "content": "<p>Mit dem Langschläfer Set tun Sie etwas Gutes für Ihren Schlaf und Ihr Wohlbefinden. Genießen Sie die Wirkung der Gewichtsdecke auf Ihren Körper, die Gewichtsschlafmaske bei Stress und Anspannung und das mit Zirbenholz gefüllte Kissen für Ruhe und Gelassenheit.<\/p>"
       }
     },
-    "1629462422c7c337fa": {
-      "type": "html-with-image",
-      "settings": {
-        "spacer_top": true,
-        "spacer_bottom": true,
-        "bg-color": "#ffffff",
-        "bg-color-text-html": "#ffffff",
-        "icon_title": false,
-        "icons_duotone": "none",
-        "subheading": "",
-        "title": "Die bekannteste Therapiedecke",
-        "text_color": "#3a3c3c",
-        "image": "shopify:\/\/shop_images\/TD-SLIDE-MOTHERS-DAY-C.jpg",
-        "image_position": "right",
-        "content_html": "Die Standard Gravity Therapiedecke ist der Liebling unter unseren Therapiedecken, da dieses Modell schon seit Tag 1 dabei ist. Das Gravity Inlett und die hochwertigen Premium Bezüge werden über Schlaufen miteinander verknüpft und sorgen für einen wohltuenden Schlaf.",
-        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
-        "button_style": false,
-        "link_text": "",
-        "link_url": "",
-        "button_extra": false,
-        "link_text_extra": "Mehr Erfahren",
-        "link_url_extra": ""
-      }
-    },
     "1629465806e866cd2d": {
       "type": "impact-outcome",
+      "disabled": true,
       "blocks": {
         "b9612911-78b1-4ec0-9eb1-362f7d45c3ef": {
           "type": "blocks_outcome",
@@ -287,7 +264,6 @@
     },
     "1629709567bc66549f": {
       "type": "html-with-image",
-      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
@@ -295,13 +271,13 @@
         "bg-color-text-html": "",
         "icon_title": false,
         "icons_duotone": "none",
-        "subheading": "Glasperlen & Premium Bezug",
-        "title": "Aufbau der Standard Gravity Therapiedecke",
+        "subheading": "Mit Glasperlen gefüllt",
+        "title": "Gewichtsdecke mit 4-Jahreszeiten Bezug",
         "text_color": "#3a3c3c",
-        "image": "shopify:\/\/shop_images\/NEW_Therapiedecken-Aufbau-Gravity-Balance.jpg",
+        "image": "shopify:\/\/shop_images\/gravity-lifestyle-min.jpg",
         "image_position": "right",
-        "content_html": "<style>\nli{\nlist-style: none;\n}\nli > span {\nposition: relative;\nleft: -24px;\nmargin-right: -20px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(2) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(3) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(4) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\n<\/style>\n\n\n<ol>\n<li>\n<span class=\"icon-one\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester\n<\/li>\n<li>\n<span class=\"icon-two\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nGravity Gewichtsdecke (Inlett) aus 100% organischer Baumwolle. <\/li>\n<li>\n<span class=\"icon-three\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nDie Füllung besteht aus 32% Polyester und 68% Baumwolle.<\/li>\n<li>\n<span class=\"icon-four\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nIn der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.<\/li>\n<\/ol>",
-        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
+        "content_html": "",
+        "content_rich": "<p>Therapiedecken haben eine entspannende Wirkung auf den Körper und fördern schnelleres Einschlafen. Durch das Auflegen der Decke wird die Ausschüttung des Schlafhormons Melatonin gefördert. Durch den Druck der Decke auf den Körper wird der Cortisolspiegel gesenkt (sog. Stresshormon). Die Muskeln und das Nervensystem sind nun entspannt. Dies wirkt sich positiv auf die Schlafqualität aus und bestimmt Ihre Energie am nächsten Tag.<\/p>",
         "button_style": false,
         "link_text": "",
         "link_url": "",
@@ -322,7 +298,7 @@
         "subheading": "Tief durchatmen und entspannen",
         "title": "Gesundheitskissen mit Zirbenholz",
         "text_color": "#3a3c3c",
-        "image": "shopify:\/\/shop_images\/1-92-min.jpg",
+        "image": "shopify:\/\/shop_images\/pillow-lifestyle-min_c85d7313-4216-4263-854b-9450f45db390.jpg",
         "image_position": "left",
         "content_html": "Das Zirbenholzkissen bietet eine erfrischende Alternative zum herkömmlichen Kopfkissen. Die Zirbelkiefer mit vielen wertvollen Eigenschaften kann das Wohlbefinden steigern und den Schlaf verbessern. Gerade bei viel Stress und Schwierigkeiten, Körper und Geist herunterzufahren, kann der würzige, waldartige und balsamische Duft der Zirbe wohltuend wirken.",
         "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
@@ -334,9 +310,32 @@
         "link_url_extra": ""
       }
     },
+    "1629462422c7c337fa": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "#ffffff",
+        "bg-color-text-html": "#ffffff",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "Schmerzlindernd und wohltuend",
+        "title": "Gewichtsschlafmaske",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/mask-lifestyle-min_7a0c0eba-5fd3-4834-8889-0c34394325fb.jpg",
+        "image_position": "right",
+        "content_html": "Ein stressiger, anstrengender Tag zeichnet sich oft im Gesicht ab. Mit der gewichteten Schlafmaske können Sie sich tagsüber eine Pause gönnen, denn der leichte Druck auf die Augenpartie fühlt sich wohltuend und entspannend an. Bei Migräne oder Verspannungen kann die Stimulation des Gesichts mit einer Gewichtsmaske Schmerzen lindern. Die Gesichtsmuskeln werden durch den angenehmen Druck sanfter und das Gehirn lenkt automatisch in einen Zustand der Gelassenheit um. Nachts hilft dieser Effekt besonders beim Einschlafen, indem kreisende Gedanken und Stress abfallen und Sie friedlich schlafen können.",
+        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
     "1629713705b12acbc0": {
       "type": "html-with-image",
-      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
@@ -345,10 +344,10 @@
         "icon_title": false,
         "icons_duotone": "none",
         "subheading": "Nachhaltig und fair",
-        "title": "Therapiedecken aus Europa",
+        "title": "Produkte aus Europa",
         "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/gravity-schlaufen-herstellung_500x_484eedb3-18d5-4df8-a69c-ac36ab5b66e7.jpg",
-        "image_position": "right",
+        "image_position": "left",
         "content_html": "<style>\n    .zertifikatehomepage {\n        display: flex;\n        align-items: center;\n        flex-wrap: wrap;\n        max-width: 400px;\n        margin: auto;\n    }\n\n    .zertifikatehomepage>img {\n        margin-right: 10px;\n        margin-left: 10px;\n        margin-bottom: 10px;\n    }\n\n    @media only screen and (max-width: 640px) {\n        .zertifikatehomepage {\n            justify-content: center;\n        }\n    }\n<\/style>\n\n<p>Die Standard Gravity Gewichtsdecke wird ausschließlich in Europa hergestellt, die dabei verwendete Baumwolle stammt\n    aus nachhaltigem Anbau und ist zertifiziert. Die Glasperlen im Inneren der Decken werden sicher und hochwertig in\n    Europa produziert.<\/p>\n\n    <div class=\"zertifikatehomepage\">\n        <img class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TrustedShop_Therapiedecken_4eee273a-5e44-41a1-bc30-e3bb8ea79c85.png?v=1632215967\" alt=\"zertifikate gewichtsdecke therapiedecke\" width=\"50px\" height=\"auto\"><img class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/EC_Medizinprodukt_cd487c46-52a9-4833-901e-cbc40f0c9aa9.png?v=1632215966\" width=\"50px\">\n        <img class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/Made_in_EU_01622bed-5557-4ee9-90bb-49c74aa41ce1.png?v=1632215966\" width=\"50px\" height=\"auto\">\n        <img class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/CE_50ce326c-5266-41c1-90c0-e2d712fa71e6.png?v=1632215966\" width=\"50px\">\n        <img class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/recycle-svg-green_1.svg?v=1647532973\" width=\"40px\">\n        <img class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0053\/3243\/4990\/files\/GTO-New-Certificate-Logos_PLATINUM.png?v=1647520496\" width=\"50px\">\n        <img class=\"Image--lazyLoad\" data-src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/textiles_vertrauen-new-110x53.png?v=1632237794\" width=\"110px\">\n    <\/div>",
         "content_rich": "",
         "button_style": false,
@@ -465,10 +464,10 @@
     "16294611499d6cacbd",
     "1648494344645f8a19",
     "16484808573a932b33",
-    "1629462422c7c337fa",
     "1629465806e866cd2d",
     "1629709567bc66549f",
     "1629713540ecd6fa17",
+    "1629462422c7c337fa",
     "1629713705b12acbc0",
     "16293784209ff1ca2b",
     "1629467370a1305632",
