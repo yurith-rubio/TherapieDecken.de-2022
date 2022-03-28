@@ -64,10 +64,53 @@
         "bg-color": "#f8f8f8"
       }
     },
+    "16484808573a932b33": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "normal",
+        "image": "shopify:\/\/shop_images\/1_2_1_1.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 31,
+        "subheading": "",
+        "title": "Das Single Langschläfer Set",
+        "content": "<p>Mit dem Langschläfer Set tun Sie sich etwas Gutes für Ihren Schlaf und Ihr Wohlbefinden. Genießen Sie die Wirkung der Gewichtsdecke auf Ihren Körper, die Gewichtsschlafmaske bei Stress und Anspannung und das mit Zirbenholz gefüllte Kissen für Ruhe und Gelassenheit.<\/p>"
+      }
+    },
     "16291457001a7d71ef": {
       "type": "banner-promotion",
       "disabled": true,
       "settings": {
+      }
+    },
+    "16484814484cf9db9a": {
+      "type": "accordion-with-image",
+      "blocks": {
+        "7c4abba2-e761-4274-9a72-ba2b3cc6508c": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "wirkung",
+            "summary": "Wirkung",
+            "content": "Hochwertige Therapiedecke mit abnehmbarem Bezug hilft bei Stress, Angst- und Schlafstörungen. Das Gewicht verteilt sich gleichmäßig über den gesamten Körper und erzeugt einen Tiefendruck, der für Entspannung und einen besseren Schlaf sorgt. \n\nDie Gewichtsschlafmaske löst einen ähnlichen Effekt auf die Augenpartie aus und hilft bei Stress, Anspannung und Kopfschmerzen.\n\nDas Kissen ist mit Zirbenholz gefüllt. Der angenehme Duft fördert das Einschlafen und wirkt beruhigend und ist antibakteriell."
+          }
+        },
+        "a494d8d0-53bb-425e-81e2-d1c57f5206f4": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "3optionen",
+            "summary": "Enthaltene Produkte",
+            "content": "Im Set enthalten sind jeweils ein Gravity Inlett mit 4-Jahreszeiten Bezug, ein 40 x 80 cm Kissen mit Zirbenholzfüllung, eine Gewichtsschlafmaske\nin ihrer gewünschten Farbe in Grau oder Blau."
+          }
+        }
+      },
+      "block_order": [
+        "7c4abba2-e761-4274-9a72-ba2b3cc6508c",
+        "a494d8d0-53bb-425e-81e2-d1c57f5206f4"
+      ],
+      "settings": {
+        "sub-heading": "3 in 1",
+        "heading": "Eigenschaften des Single Langschläfer Sets",
+        "image": "shopify:\/\/shop_images\/Video-cover-1200x.jpg"
       }
     },
     "1629451775c72cd56a": {
@@ -122,8 +165,8 @@
         "40379873-43e4-4165-ac51-c5c79455cc47"
       ],
       "settings": {
-        "sub-heading": "Standard Therapiedecke",
-        "heading": "Eigenschaften der Gravity Gewichtsdecke",
+        "sub-heading": "3 in 1",
+        "heading": "Eigenschaften des Single Langschläfer Sets",
         "video_url": "https:\/\/player.vimeo.com\/video\/352267408"
       }
     },
@@ -439,7 +482,9 @@
     "163145566685d0e395",
     "16291424324bdf770a",
     "1629459987d4cac0a9",
+    "16484808573a932b33",
     "16291457001a7d71ef",
+    "16484814484cf9db9a",
     "1629451775c72cd56a",
     "16294611499d6cacbd",
     "1629462422c7c337fa",
