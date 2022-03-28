@@ -12106,3 +12106,6 @@ a.entspannung-topseller-link:hover {
 }
 
 /* Style added to Thank You Page */
+.logos_bekannt_thank_you_wrapper{
+  display: flex;
+}
