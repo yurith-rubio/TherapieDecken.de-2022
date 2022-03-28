@@ -193,8 +193,23 @@
         "title": "Vorteile der Standard Gravity Therapiedecke im Überblick"
       }
     },
+    "1648494344645f8a19": {
+      "type": "image-with-text-block",
+      "settings": {
+        "plain_bg": "#696969",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "normal",
+        "title": "Das Schlafset für alle Langschläfer",
+        "content": "<p>Mit dem Langschläfer Set tun Sie etwas Gutes für Ihren Schlaf und Ihr Wohlbefinden. Genießen Sie die Wirkung der Gewichtsdecke auf Ihren Körper, die Gewichtsschlafmaske bei Stress und Anspannung und das mit Zirbenholz gefüllte Kissen für Ruhe und Gelassenheit.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_parallax": true
+      }
+    },
     "16484808573a932b33": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "section_size": "normal",
         "image": "shopify:\/\/shop_images\/1-46-min.jpg",
@@ -272,6 +287,7 @@
     },
     "1629709567bc66549f": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
@@ -303,12 +319,12 @@
         "bg-color-text-html": "",
         "icon_title": false,
         "icons_duotone": "none",
-        "subheading": "Entspannung durch Tiefendruck",
-        "title": "Die Wissenschaft hinter den Therapiedecken",
+        "subheading": "Tief durchatmen und entspannen",
+        "title": "Gesundheitskissen mit Zirbenholz",
         "text_color": "#3a3c3c",
-        "image": "shopify:\/\/shop_images\/Product-page-sience-behind-TD_500x_56d6eafa-6b1e-46db-b225-0914f54287c6.jpg",
+        "image": "shopify:\/\/shop_images\/1-92-min.jpg",
         "image_position": "left",
-        "content_html": "Der Tiefendruck, der durch das Gewicht ausgeübt wird, hat eine entspannende Wirkung auf die Gelenke, Muskeln und Sehnen. Dieser Effekt ist auch als “Deep Pressure Touch Stimulation” bekannt, indem ein sanfter und dennoch kräftiger und gleichmäßiger Druck auf den Körper wirkt. Dadurch kommt man körperlich als auch innerlich zur Ruhe. Die Körperwahrnehmung verbessert sich.\nAußerdem erfolgt durch den Druck die Ausschüttung des Hormons Serotonin, gleichzeitig verringert sich der Cortisolspiegel (sog. Stresshormon). Der Tiefendruck signalisiert dem Körper ein Gefühl von Sicherheit und Geborgenheit.",
+        "content_html": "Das Zirbenholzkissen bietet eine erfrischende Alternative zum herkömmlichen Kopfkissen. Die Zirbelkiefer mit vielen wertvollen Eigenschaften kann das Wohlbefinden steigern und den Schlaf verbessern. Gerade bei viel Stress und Schwierigkeiten, Körper und Geist herunterzufahren, kann der würzige, waldartige und balsamische Duft der Zirbe wohltuend wirken.",
         "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
         "button_style": false,
         "link_text": "",
@@ -320,6 +336,7 @@
     },
     "1629713705b12acbc0": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
@@ -446,6 +463,7 @@
     "16291457001a7d71ef",
     "16484814484cf9db9a",
     "16294611499d6cacbd",
+    "1648494344645f8a19",
     "16484808573a932b33",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
