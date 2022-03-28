@@ -86,6 +86,14 @@
     "16484814484cf9db9a": {
       "type": "accordion-with-image",
       "blocks": {
+        "a494d8d0-53bb-425e-81e2-d1c57f5206f4": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "3optionen",
+            "summary": "Enthaltene Produkte",
+            "content": "Im Set enthalten sind jeweils ein Gravity Inlett mit 4-Jahreszeiten Bezug, ein 40 x 80 cm Kissen mit Zirbenholzfüllung, eine Gewichtsschlafmaske\nin ihrer gewünschten Farbe in Grau oder Blau."
+          }
+        },
         "7c4abba2-e761-4274-9a72-ba2b3cc6508c": {
           "type": "accordion_simple",
           "settings": {
@@ -94,80 +102,33 @@
             "content": "Hochwertige Therapiedecke mit abnehmbarem Bezug hilft bei Stress, Angst- und Schlafstörungen. Das Gewicht verteilt sich gleichmäßig über den gesamten Körper und erzeugt einen Tiefendruck, der für Entspannung und einen besseren Schlaf sorgt. \n\nDie Gewichtsschlafmaske löst einen ähnlichen Effekt auf die Augenpartie aus und hilft bei Stress, Anspannung und Kopfschmerzen.\n\nDas Kissen ist mit Zirbenholz gefüllt. Der angenehme Duft fördert das Einschlafen und wirkt beruhigend und ist antibakteriell."
           }
         },
-        "a494d8d0-53bb-425e-81e2-d1c57f5206f4": {
+        "41683d2f-208f-4378-aab3-fcff7ad62f87": {
           "type": "accordion_simple",
           "settings": {
-            "simple_icons": "3optionen",
-            "summary": "Enthaltene Produkte",
-            "content": "Im Set enthalten sind jeweils ein Gravity Inlett mit 4-Jahreszeiten Bezug, ein 40 x 80 cm Kissen mit Zirbenholzfüllung, eine Gewichtsschlafmaske\nin ihrer gewünschten Farbe in Grau oder Blau."
+            "simple_icons": "materialien",
+            "summary": "Materialien",
+            "content": "Die Gravity Decke wird mit hochwertigen, sandfeinen Glasperlen, die sich in kleinen Kammern befinden, beschwert. Der 4-Jahreszeiten Bezug der Decke sowie der Kissenbezug bestehen aus einem kuscheligen Baumwoll-Polyester-Gemisch. Die Gewichtsschlafmaske besteht aus weichem Plüsch."
+          }
+        },
+        "d48f7f75-5cd2-42c8-a549-6a8507a696d6": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "28tagen",
+            "summary": "28 Tage Probeschlafen",
+            "content": "Mit dem Kauf des Sets erhalten Sie automatisch die Möglichkeit, diese ab Erhalt 28 Tage lang zu testen. Bei Nichtgefallen können Sie die Ware retournieren oder unseren kostenlosen Umtausch in Anspruch nehmen."
           }
         }
       },
       "block_order": [
+        "a494d8d0-53bb-425e-81e2-d1c57f5206f4",
         "7c4abba2-e761-4274-9a72-ba2b3cc6508c",
-        "a494d8d0-53bb-425e-81e2-d1c57f5206f4"
+        "41683d2f-208f-4378-aab3-fcff7ad62f87",
+        "d48f7f75-5cd2-42c8-a549-6a8507a696d6"
       ],
       "settings": {
         "sub-heading": "3 in 1",
         "heading": "Eigenschaften des Single Langschläfer Sets",
         "image": "shopify:\/\/shop_images\/Video-cover-1200x.jpg"
-      }
-    },
-    "1629451775c72cd56a": {
-      "type": "accordion-video-product",
-      "blocks": {
-        "1f839e9f-2603-4353-a5a6-ba6f229a891f": {
-          "type": "accordion_simple",
-          "settings": {
-            "simple_icons": "wirkung",
-            "summary": "Wirkung",
-            "content": "Hochwertige Therapiedecke mit abnehmbarem Bezug hilft bei Stress, Angst- und Schlafstörungen. Das Gewicht verteilt sich gleichmäßig über den gesamten Körper und erzeugt einen Tiefendruck, der für Entspannung und einen besseren Schlaf sorgt."
-          }
-        },
-        "b80a235a-3817-42f9-b2d5-9a98afb675b8": {
-          "type": "accordion_simple",
-          "settings": {
-            "simple_icons": "gewicht",
-            "summary": "Gewicht",
-            "content": "Wir empfehlen eine Therapiedecke auszuwählen, die ungefähr 10% Ihres Körpergewichts entspricht. Wenn Sie zwischen zwei Gewichtsklassen liegen, nehmen Sie die schwerere Version. Umtäusche sind bei uns kostenlos."
-          }
-        },
-        "dafcf498-5a5d-439d-bce0-c5bbda17aa63": {
-          "type": "accordion_simple",
-          "settings": {
-            "simple_icons": "materialien",
-            "summary": "Materialien",
-            "content": "Die Gravity Decke wird mit hochwertigen, sandfeinen Glasperlen, die sich in kleinen Kammern befinden, beschwert.\nDer 4-Jahreszeiten Bezug besteht aus einem kuscheligen Baumwoll-Polyester-Gemisch. Der Baumwollbezug setzt sich auf der Vorderseite aus 100% Baumwolle und auf der Rückseite aus anschmiegsamem Samt\/Velours zusammen."
-          }
-        },
-        "7a3dbf4b-baba-49ee-8285-2db331e9f895": {
-          "type": "accordion_simple",
-          "settings": {
-            "simple_icons": "4jahreszeiten",
-            "summary": "4-Jahreszeiten oder Baumwollbezug",
-            "content": "Der 4-Jahreszeiten Bezug ist atmungsaktiv und kuschelig zugleich und eignet sich für das gesamte Jahr. Der Baumwollbezug ist vorteilhaft für besonders heiße Nächte und alle, die schnell schwitzen."
-          }
-        },
-        "40379873-43e4-4165-ac51-c5c79455cc47": {
-          "type": "accordion_simple",
-          "settings": {
-            "simple_icons": "28tagen",
-            "summary": "28 Tage Probeschlafen",
-            "content": "Mit dem Kauf einer Therapiedecke erhalten Sie automatisch die Möglichkeit, diese ab Erhalt 28 Tage lang zu testen. So finden Sie heraus, ob Gewicht und Modell passend für Sie sind. Bei Nichtgefallen können Sie die Ware retournieren oder unseren kostenlosen Umtausch in Anspruch nehmen."
-          }
-        }
-      },
-      "block_order": [
-        "1f839e9f-2603-4353-a5a6-ba6f229a891f",
-        "b80a235a-3817-42f9-b2d5-9a98afb675b8",
-        "dafcf498-5a5d-439d-bce0-c5bbda17aa63",
-        "7a3dbf4b-baba-49ee-8285-2db331e9f895",
-        "40379873-43e4-4165-ac51-c5c79455cc47"
-      ],
-      "settings": {
-        "sub-heading": "3 in 1",
-        "heading": "Eigenschaften des Single Langschläfer Sets",
-        "video_url": "https:\/\/player.vimeo.com\/video\/352267408"
       }
     },
     "16294611499d6cacbd": {
@@ -485,7 +446,6 @@
     "16484808573a932b33",
     "16291457001a7d71ef",
     "16484814484cf9db9a",
-    "1629451775c72cd56a",
     "16294611499d6cacbd",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
