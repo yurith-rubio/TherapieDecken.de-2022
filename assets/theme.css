@@ -12109,7 +12109,7 @@ a.entspannung-topseller-link:hover {
 .logos_bekannt_thank_you_wrapper{
   display: flex;
 }
-.logos_bekannt_thank_you_wrapper > .logo_bekannt_thank_you{
+.logo_bekannt_thank_you{
   height: fit-content;
   align-self: center;
 }
