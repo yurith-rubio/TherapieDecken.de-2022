@@ -196,6 +196,7 @@
     "1648494344645f8a19": {
       "type": "image-with-text-block",
       "settings": {
+        "image": "shopify:\/\/shop_images\/28_1.jpg",
         "plain_bg": "#696969",
         "background": "#ffffff",
         "text_color": "#1c1b1b",
