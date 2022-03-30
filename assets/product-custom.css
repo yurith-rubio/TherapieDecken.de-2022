@@ -135,8 +135,8 @@
     .responsive-video embed, 
     .responsive-video iframe, 
     .responsive-video object {
-         top: inherit;
-         height: inherit;
+         top: auto;
+         height: auto;
     }
 }
  @media (max-width: 480px){
