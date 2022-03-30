@@ -98,6 +98,7 @@ details {
     width: 80%!important;
     text-align: left!important;
     margin: auto;
+    padding: 0;
   }
   .accordion-with-image_IntroSecContent>div {
     width: 100%;
