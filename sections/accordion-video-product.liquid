@@ -1,23 +1,6 @@
 <!-- accordion-video-product.liquid -->
 
 {{ 'product-custom.css' | asset_url | stylesheet_tag}}
-{% if product.handle == 'gesundheitskissen-rabe-im-mondlicht' %}
-  {% assign square_video = 'square_video' %}
-{% endif %}
-{% if product.handle == 'gesundheitskissen-mit-eiszapfen' %}
-  {% assign square_video = 'square_video' %}
-{% endif %}
-{% if product.handle == 'gesundheitskissen-schwarz-games' %}
-  {% assign square_video = 'square_video' %}
-{% endif %}
-{% if product.handle == 'gesundheitskissen-beige-mit-motten' %}
-  {% assign square_video = 'square_video' %}
-{% endif %}
-{% if product.handle == 'gesundheitskissen-weiss-mit-blauen-wellen' %}
-  {% assign square_video = 'square_video' %}
-{% endif %}
-
-
 <div class="grid-general-product">
   <div class="intro-section">
       <p class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.sub-heading}}</p>
@@ -34,7 +17,7 @@
               {% endfor %}
 
           </div>
-          <div class="intro-part-2 {{ square_video }}">
+          <div class="intro-part-2">
               <div class="responsive-video">
                   <iframe class="Image--lazyLoad" data-src="{{ section.settings.video_url}}?autoplay=0&portrait=0&byline=0&color={{ settings.accent_color | remove_first: '#' }}" frameborder="0"></iframe>
               </div>
