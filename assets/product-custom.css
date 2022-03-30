@@ -132,12 +132,6 @@
          float: left;
          width: 35px;
     }
-    .responsive-video embed, 
-    .responsive-video iframe, 
-    .responsive-video object {
-         top: auto;
-         height: auto;
-    }
 }
  @media (max-width: 480px){
      .icon_accordion > span{
