@@ -2,7 +2,6 @@
   position: relative;
   padding-left: 20px !important;
 }
-
 @media only screen and (max-width: 640px){
   .spacer{
     padding: 0 !important;
@@ -18,6 +17,9 @@
   }
   .icon_html_img{
 	margin-bottom: 10px;
+  }
+  .FeaturedHtmlImage-container .FeatureText__ContentWrapper .html-text-wr ul{
+	text-align:left;
   }
 }
 @media only screen and (min-width: 641px){
