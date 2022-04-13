@@ -1,1 +1,24 @@
-{"sections":{"main":{"type":"main-contact","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-contact",
+      "blocks": {
+        "a0226aa0-98d4-421e-a72e-2d8c618029f7": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Custom field",
+            "values": "value 1, value 2, value 3"
+          }
+        }
+      },
+      "block_order": [
+        "a0226aa0-98d4-421e-a72e-2d8c618029f7"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
