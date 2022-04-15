@@ -1,5 +1,34 @@
 {
   "sections": {
+    "1650028399a480a700": {
+      "type": "one-column-content",
+      "blocks": {
+        "7b84027a-4fca-4bd6-9ff0-b40005578d7b": {
+          "type": "title",
+          "settings": {
+            "title": "Rückruf-Service"
+          }
+        },
+        "c9ba7edb-9f3b-4f99-b2a1-189754b94b7e": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Bei Fragen oder Anregungen schreiben Sie uns bitte eine E-Mail an <strong>kundenservice@therapiedecken.de<\/strong>,<br\/> hinterlassen Sie uns eine Nachricht auf unserer Facebook Seite: <br\/>fb.com\/therapiedecken oder rufen Sie uns an unter 08921093242, zwischen <br\/>10:00 und 17:00 Uhr Montags bis Freitags.<br\/><\/p><p>Bei weiteren Fragen besuchen Sie bitte unsere <a href=\"https:\/\/therapiedecken.de\/apps\/help-center\">FAQ<\/a> Seite.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7b84027a-4fca-4bd6-9ff0-b40005578d7b",
+        "c9ba7edb-9f3b-4f99-b2a1-189754b94b7e"
+      ],
+      "settings": {
+        "bg-color": "#F8F8F8",
+        "section_margin": "50px",
+        "bg-color-text": "#ffffff",
+        "text_align": "left",
+        "content_top_margin": "50px",
+        "content_bottom_margin": "50px"
+      }
+    },
     "main": {
       "type": "main-contact",
       "blocks": {
@@ -19,6 +48,7 @@
     }
   },
   "order": [
+    "1650028399a480a700",
     "main"
   ]
 }
