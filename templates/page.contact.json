@@ -53,12 +53,21 @@
             "use_long_text": false,
             "is_required": false
           }
+        },
+        "4d797457-a136-4c7b-8956-432bc3ee0682": {
+          "type": "text",
+          "settings": {
+            "title": "Ihre Telefonnummer",
+            "use_long_text": false,
+            "is_required": true
+          }
         }
       },
       "block_order": [
         "a0226aa0-98d4-421e-a72e-2d8c618029f7",
         "8932c208-ab14-41ad-a839-960125834622",
-        "375e5b10-e3c7-402e-bf7d-5cb1e193539d"
+        "375e5b10-e3c7-402e-bf7d-5cb1e193539d",
+        "4d797457-a136-4c7b-8956-432bc3ee0682"
       ],
       "settings": {
       }
