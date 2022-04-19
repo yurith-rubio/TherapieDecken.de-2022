@@ -12,7 +12,7 @@
         "c9ba7edb-9f3b-4f99-b2a1-189754b94b7e": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>Bei Fragen oder Anregungen schreiben Sie uns bitte eine E-Mail an <strong>kundenservice@therapiedecken.de<\/strong>,<br\/> hinterlassen Sie uns eine Nachricht auf unserer Facebook Seite: <br\/>fb.com\/therapiedecken oder rufen Sie uns an unter 08921093242, zwischen <br\/>10:00 und 17:00 Uhr Montags bis Freitags.<br\/><\/p><p>Bei weiteren Fragen besuchen Sie bitte unsere <a href=\"https:\/\/therapiedecken.de\/apps\/help-center\">FAQ<\/a> Seite.<\/p>"
+            "richtext": "<p>Bei Fragen oder Anregungen schreiben Sie uns bitte eine E-Mail an <strong>kundenservice@therapiedecken.de<\/strong> oder<br\/> hinterlassen Sie uns eine Nachricht auf unserer Facebook Seite: <br\/>fb.com\/therapiedecken.<\/p><p>Gerne rufen wir Sie auch zurück und beraten Sie zum Thema Therapiedecken. <br\/>Unser Rückrufservice ist verfügbar von 10:00 und 17:00 Uhr Montags bis Freitags.<br\/><\/p><p>Bei weiteren Fragen besuchen Sie bitte unsere <a href=\"https:\/\/therapiedecken.de\/apps\/help-center\">FAQ<\/a> Seite.<\/p>"
           }
         }
       },
@@ -21,7 +21,7 @@
         "c9ba7edb-9f3b-4f99-b2a1-189754b94b7e"
       ],
       "settings": {
-        "bg-color": "#F8F8F8",
+        "bg-color": "#f8f8f8",
         "section_margin": "50px",
         "bg-color-text": "#ffffff",
         "text_align": "left",
@@ -35,8 +35,8 @@
         "a0226aa0-98d4-421e-a72e-2d8c618029f7": {
           "type": "dropdown",
           "settings": {
-            "title": "Custom field",
-            "values": "value 1, value 2, value 3"
+            "title": "Wählen Sie den Grund Ihres Rückrufs",
+            "values": "Beratung, Fragen zu Produkten, Anderer Grund"
           }
         }
       },
