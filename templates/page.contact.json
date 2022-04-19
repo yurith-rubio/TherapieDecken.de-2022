@@ -36,12 +36,29 @@
           "type": "dropdown",
           "settings": {
             "title": "Wählen Sie den Grund Ihres Rückrufs",
-            "values": "Beratung, Fragen zu Produkten, Anderer Grund"
+            "values": "Beratung, Fragen zu Produkten, Umtausch, Anderer Grund"
+          }
+        },
+        "8932c208-ab14-41ad-a839-960125834622": {
+          "type": "dropdown",
+          "settings": {
+            "title": "Uhrzeit",
+            "values": "Zwischen 10-12 Uhr, Zwischen 12-15 Uhr, Zwischen 15-17 Uhr"
+          }
+        },
+        "375e5b10-e3c7-402e-bf7d-5cb1e193539d": {
+          "type": "text",
+          "settings": {
+            "title": "Ihre Bestellnummer",
+            "use_long_text": false,
+            "is_required": false
           }
         }
       },
       "block_order": [
-        "a0226aa0-98d4-421e-a72e-2d8c618029f7"
+        "a0226aa0-98d4-421e-a72e-2d8c618029f7",
+        "8932c208-ab14-41ad-a839-960125834622",
+        "375e5b10-e3c7-402e-bf7d-5cb1e193539d"
       ],
       "settings": {
       }
