@@ -36,7 +36,7 @@
           "type": "dropdown",
           "settings": {
             "title": "Wählen Sie den Grund Ihres Rückrufs",
-            "values": "Beratung, Fragen zu Produkten, Umtausch, Anderer Grund"
+            "values": "Beratung, Fragen zu Produkten, Umtausch"
           }
         },
         "8932c208-ab14-41ad-a839-960125834622": {
