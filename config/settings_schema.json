@@ -743,7 +743,8 @@
       {
         "type": "color",
         "id": "text_button_color",
-        "label": "Color of text in button"
+        "label": "Color of text in button",
+        "default": "#222323"
       },
       {
         "type": "header",
