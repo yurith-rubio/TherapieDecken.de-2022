@@ -735,6 +735,11 @@
         "label": "Link"
       },
       {
+        "type": "color",
+        "id": "button_color",
+        "label": "Color button"
+      },
+      {
         "type": "header",
         "content": "Collection Pages"
       },
