@@ -32,9 +32,7 @@
   .homePromotional_svg_taller{
     display: none;
   }
-  .home_promotional_bottom_part{
-    margin-top: -22%;
-  }
+
 }
 
 @media screen  and (max-width: 899px) {
