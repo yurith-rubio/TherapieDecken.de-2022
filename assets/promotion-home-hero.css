@@ -21,6 +21,9 @@
 
 .promotion-home-hero_button:before{
   background-color: #48765F !important;
+}
+
+.promotion-home-hero_button{
   color: #fff !important;
 }
 
