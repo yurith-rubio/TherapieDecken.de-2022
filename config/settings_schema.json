@@ -737,7 +737,8 @@
       {
         "type": "color",
         "id": "button_color",
-        "label": "Color button"
+        "label": "Color button",
+        "default": "#FAC636"
       },
       {
         "type": "color",
