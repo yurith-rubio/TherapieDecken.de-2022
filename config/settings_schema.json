@@ -740,6 +740,11 @@
         "label": "Color button"
       },
       {
+        "type": "color",
+        "id": "text_button_color",
+        "label": "Color of text in button"
+      },
+      {
         "type": "header",
         "content": "Collection Pages"
       },
