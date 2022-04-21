@@ -59,7 +59,7 @@
     "checkout_countdown_enable": true,
     "checkout_countdown_text": "⚠️ Auf Grund unseres Weltschlaftag Angebots ist Ihr Warenkorb für nur",
     "left_product_inventory": false,
-    "promotional_hero_hp_cover": false,
+    "promotional_hero_hp_cover": true,
     "promotional_hero_image": "shopify:\/\/shop_images\/TD_sleep_day_cover_image.jpg",
     "button_1_text": "Mehr Erfahren",
     "button_1_link": "shopify:\/\/pages\/fur-wen-benotigen-sie-eine-therapiedecke",
