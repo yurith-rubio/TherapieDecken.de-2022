@@ -3,14 +3,8 @@
 
 {% if settings.enable_product_badge %}
 	{% if product.handle == 'balance-gewichtsdecke-fur-erwachsene'
-      or product.title == 'Standard Gravity Gewichtsdecke für Erwachsene'
-      or product.title == 'Basic Gravity Gewichtsdecke für Erwachsene'
-      or product.title == 'Medizinische Gewichtsdecke für Erwachsene'
-      or product.title == 'Premium Balance Gewichtsdecke für Kinder'
-      or product.title == 'Standard Gravity Gewichtsdecke für Kinder'
-      or product.title == 'Medizinische Gewichtsdecke für Kinder'
-      or product.title == 'Set: Premium Balance Gewichtsdecke für Erwachsene'
-      or product.title == 'Set: Standard Gravity Gewichtsdecke für Erwachsene'
+      or product.handle == 'therapiedecken'
+      or product.handle == 'basic-gravity-gewichtsdecke-fur-erwachsene'
       %}
 		<div class="ProductBadge_Wrapper">
           {% comment %}
