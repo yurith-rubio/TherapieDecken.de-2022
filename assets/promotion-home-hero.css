@@ -21,7 +21,9 @@
 
 .promotion-home-hero_button:before{
   background-color: #48765F !important;
+  color: #fff !important;
 }
+
 @media screen  and (min-width: 900px){
   .promotion-home-hero_content_container{
     width: 60%;
