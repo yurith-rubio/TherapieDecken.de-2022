@@ -79,7 +79,6 @@
 }
 .Prod_ImgSmallBadge {
   z-index: 2;
-  width: 120px;
 }
 .Prod_ImgSize-SmallBadge{
     width: 100%;
@@ -94,5 +93,17 @@
 @media only screen and (max-width: 640px) and (orientation: portrait){
   .Prod_SmallBadge {
     padding: 0 30px 0 10px;
+  }
+}
+
+@media only screen and (min-width: 641px){
+  .Prod_ImgSmallBadge {
+    width: 140px;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .Prod_ImgSmallBadge {
+    width: 120px;
   }
 }
