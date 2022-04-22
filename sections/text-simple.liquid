@@ -51,7 +51,7 @@
             {%- endif -%}
         
             {%- if section.settings.image != blank -%}
-              <img data-src="{{ section.settings.image | img_url:'master' }}" class="image-text-simple Image--lazyLoad" />
+              <img data-src="{{ section.settings.image | img_url }}" class="image-text-simple Image--lazyLoad" />
             {%- endif -%}
         
             {% if section.settings.content2 != blank %}
