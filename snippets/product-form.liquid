@@ -76,17 +76,17 @@
           </label>
            
           {% if option.name == "Bezugssystem" %}
-          <p class="VariantValue--style">
-            {% assign simple_value = value %}
-            {% assign name_variant = simple_value %}            
-            {{ name_variant | escape }}    
-           </p>           
+            <p class="VariantValue--style">
+              {% assign simple_value = value %}
+              {% assign name_variant = simple_value %}            
+              {{ name_variant | escape }}    
+            </p>           
           {% else %}
-          <p class="VariantValue--style">
-            {% assign simple_value = value | split: '(' | last %}
-            {% assign name_variant = simple_value | split: ')' | first %}
-            {{ name_variant | escape }}    
-           </p>
+          	<p class="VariantValue--style">
+              {% assign simple_value = value | split: '(' | last %}
+              {% assign name_variant = simple_value | split: ')' | first %}
+              {{ name_variant | escape }}    
+           	</p>
            {% endif %}
 
           {% comment %} Is Limited Badge - bgd.is_limited Metafield {% endcomment %}  
