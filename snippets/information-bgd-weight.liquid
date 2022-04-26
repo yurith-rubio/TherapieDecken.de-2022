@@ -1,7 +1,21 @@
 <!-- information-bgd-weight.liquid -->
 
 {% comment %} Product Info for all Main Variants from Metafield - bgd.weight - Yurith {% endcomment %}
-{% if option.name == 'Gewicht' or option.name == 'Deckengewicht' %}
+{% if option.name == 'Gewicht' %}
+  {% for variant in product.variants %}
+    {% if variant.metafields.bgd.weight %}
+      {% assign weight_class = "info-wr info-wr-hidden" %}
+      {% if variant.id == product.selected_or_first_available_variant.id %}
+      	{% assign weight_class = "info-wr" %}
+      {% endif %}
+      <div data-variant-id="{{variant.id}}" class="{{ weight_class }}">
+        {{ variant.metafields.bgd.weight }}
+      </div>
+    {% endif%}
+  {% endfor %}
+{% endif%}
+
+{% if option.name == 'Deckengewicht' %}
   {% for variant in product.variants %}
     {% if variant.metafields.bgd.weight %}
       {% assign weight_class = "info-wr info-wr-hidden" %}
