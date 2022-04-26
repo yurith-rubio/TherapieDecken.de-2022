@@ -61,8 +61,9 @@
       {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
   
       {%- for value in option.values -%}
+        {% assign option_name = option.name | downcase %}
         {% for color in color_label %}
-        	{% if option.name | downcase == color %}
+        	{% if option_name == color %}
         		{{ color }}
         	{% endif %}
         	
