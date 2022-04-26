@@ -735,6 +735,18 @@
         "label": "Link"
       },
       {
+        "type": "color",
+        "id": "button_color",
+        "label": "Color button",
+        "default": "#FAC636"
+      },
+      {
+        "type": "color",
+        "id": "text_button_color",
+        "label": "Color of text in button",
+        "default": "#222323"
+      },
+      {
         "type": "header",
         "content": "Collection Pages"
       },
