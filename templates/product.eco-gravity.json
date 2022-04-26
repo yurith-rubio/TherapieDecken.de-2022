@@ -212,11 +212,11 @@
         "icon_title": false,
         "icons_duotone": "none",
         "subheading": "",
-        "title": "Die bekannteste Therapiedecke",
+        "title": "Die natürliche Therapiedecke",
         "text_color": "#3a3c3c",
-        "image": "shopify:\/\/shop_images\/TD-SLIDE-MOTHERS-DAY-C.jpg",
+        "image": "shopify:\/\/shop_images\/lifestyle_eco_gravity.jpg",
         "image_position": "right",
-        "content_html": "Die Standard Gravity Therapiedecke ist der Liebling unter unseren Therapiedecken, da dieses Modell schon seit Tag 1 dabei ist. Das Gravity Inlett und die hochwertigen Premium Bezüge werden über Schlaufen miteinander verknüpft und sorgen für einen wohltuenden Schlaf.",
+        "content_html": "Die neue Gewichtsdecke aus Leinen ist für alle Menschen, die Wert auf Naturmaterialien legen. Mit den kühlenden Eigenschaften von Leinen ist die ECO Gewichtsdecke perfekt für warme Frühlingstage und heiße Sommernächte. Der Vorteil der neuen Gewichtsdecke liegt in ihrer Funktionalität – die passende Größe und das Gewicht ermöglichen einen alltagstauglichen Einsatz. Die entspannende Belohnung nach der Arbeit, dem Training oder zum Herunterfahren vor dem Schlafengehen.",
         "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
         "button_style": false,
         "link_text": "",
@@ -268,6 +268,7 @@
     },
     "1629709567bc66549f": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
