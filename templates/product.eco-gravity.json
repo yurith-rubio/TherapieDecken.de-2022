@@ -134,7 +134,7 @@
           "type": "Advantages-Info",
           "settings": {
             "span-icon": "<span class=\"icon-premium-cotton\"><\/span>",
-            "title-icon": "Hochwertiger Premium Bezug"
+            "title-icon": "Hochwertiger Leinen Bezug"
           }
         },
         "379133bf-a793-4f42-b390-0b5b13bfef28": {
@@ -146,6 +146,7 @@
         },
         "20ceba28-02b9-4d83-8630-4ddb0ff68cc0": {
           "type": "Advantages-Info",
+          "disabled": true,
           "settings": {
             "span-icon": "<span class=\"icon-loop\"><\/span>",
             "title-icon": "Einfaches Wechseln durch Schlaufen"
@@ -169,7 +170,7 @@
           "type": "Advantages-Info",
           "settings": {
             "span-icon": "<span class=\"icon-winner1\"><\/span>",
-            "title-icon": "Preis-Leistungs-Sieger aller Gewichtsdecken"
+            "title-icon": "Öko-Sieger aller Gewichtsdecken"
           }
         },
         "40dd4b2c-4b21-4636-b94c-08f5af7cbdb2": {
@@ -198,8 +199,8 @@
         "7a20b4a4-3362-4eef-9124-6c6be4bb01cb"
       ],
       "settings": {
-        "title-sub": "Die bekannteste Therapiedecke",
-        "title": "Vorteile der Standard Gravity Therapiedecke im Überblick"
+        "title-sub": "Die natürliche Therapiedecke",
+        "title": "Vorteile der ECO Gravity Therapiedecke im Überblick"
       }
     },
     "1629462422c7c337fa": {
