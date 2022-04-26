@@ -203,6 +203,21 @@
         "title": "Vorteile der ECO Gravity Therapiedecke im Überblick"
       }
     },
+    "16510085415748514c": {
+      "type": "image-with-text-block",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/flax_eco_gravity1.jpg",
+        "plain_bg": "#696969",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "normal",
+        "title": "Der ökologische Naturstoff Leinen",
+        "content": "<p>Leinen werden aus der Flachspflanze gewonnen und ist besonders reißfest und flusenfrei. Leinen hat hervorragende natürliche Eigenschaften, die die Pflege erleichtern und das Wohlbefinden fördern. Die Flachsfasern sind antibakteriell, antistatisch und schmutzabweisend. Zudem haben Leinen eine kühlende Wirkung, da es aufgenommene Feuchtigkeit an die Umgebung abgibt. Bei trockenem Zustand wärmt es angenehm. <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_parallax": true
+      }
+    },
     "1629462422c7c337fa": {
       "type": "html-with-image",
       "settings": {
@@ -456,6 +471,7 @@
     "16291457001a7d71ef",
     "1629451775c72cd56a",
     "16294611499d6cacbd",
+    "16510085415748514c",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
     "1629709567bc66549f",
