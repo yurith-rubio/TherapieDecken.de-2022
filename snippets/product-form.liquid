@@ -81,7 +81,7 @@
             {% assign name_variant = simple_value %}            
             {{ name_variant | escape }}    
            </p>           
-        {% else %}
+          {% else %}
           <p class="VariantValue--style">
             {% assign simple_value = value | split: '(' | last %}
             {% assign name_variant = simple_value | split: ')' | first %}
