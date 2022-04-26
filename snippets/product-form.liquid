@@ -62,7 +62,10 @@
   
       {%- for value in option.values -%}
         {% for color in color_label %}
-        	{{ color }}
+        	{% if option.name == color %}
+        		{{ color }}
+        	{% endif %}
+        	
         {% endfor %}
         {% if option.name == "Bezugsart" or option.name == "Design" or option.name == "Farbe" or option.name == "Bezugssystem" %}
         {%- assign downcase_value = value | downcase -%}
