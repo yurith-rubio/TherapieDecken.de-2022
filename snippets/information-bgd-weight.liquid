@@ -1,7 +1,7 @@
 <!-- information-bgd-weight.liquid -->
 
 {% comment %} Product Info for all Main Variants from Metafield - bgd.weight - Yurith {% endcomment %}
-{% if option.name == 'Gewicht' %}
+{% if option.name == 'Gewicht' or option.name == 'Deckengewicht' %}
   {% for variant in product.variants %}
     {% if variant.metafields.bgd.weight %}
       {% assign weight_class = "info-wr info-wr-hidden" %}
