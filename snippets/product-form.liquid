@@ -59,9 +59,11 @@
     {%- if color_label contains downcase_option and block.settings.show_color_swatch -%}
 	  <ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
       {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
-  
+
+      {% assign option_name = option.name | downcase %}
+
       {%- for value in option.values -%}
-        {% if option.name == "Bezugsart" or option.name == "Design" or option.name == "Farbe" or option.name == "Bezugssystem" %}
+        {% if option_name == color_label %}
         {%- assign downcase_value = value | downcase -%}
 
          <li class="HorizontalList__Item MainVariant_container {% if value==option.selected_value %}yellow_style{% endif %}">
