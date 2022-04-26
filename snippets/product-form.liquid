@@ -172,7 +172,7 @@
       {% comment %} Product Info for Variants - bgd.weight Metafield - Yurith{% endcomment %}
       {% if option.name == 'Gewicht' or option.name == 'Deckengewicht' %}
         {% for variant in product.variants %}
-    		{{ variant }}
+    		{{ variant.id }}
           {% if variant.metafields.bgd.weight %}
             {% assign weight_class = "info-wr info-wr-hidden" %}
             {% if variant.id == product.selected_or_first_available_variant.id %}
