@@ -210,7 +210,7 @@
         {%- endif -%}
 
         {%- if section.settings.show_filters and collection.filters != empty -%}
-          {%- assign color_label = 'color,colour,couleur,colore,farbe,색,色,färg,farve,bezugsart,design' | split: ',' -%}
+          {%- assign color_label = 'color,colour,farbe,bezugsart,design,bezugssystem,setfarbe' | split: ',' -%}
 
           {%- for filter in collection.filters -%}
             {%- assign downcase_filter_label = filter.label | downcase -%}

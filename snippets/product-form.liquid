@@ -6,7 +6,7 @@
 {%- endcomment -%}
 
 {% comment %} Added 'bezugsart' to the current color_label, in order to have a swatch option for 'Bezugsart' - Yurith {% endcomment %}
-{%- assign color_label = 'color,colour,farbe,bezugsart,design,bezugssystem' | split: ',' -%}
+{%- assign color_label = 'color,colour,farbe,bezugsart,design,bezugssystem,setfarbe' | split: ',' -%}
 {%- assign size_label = 'size,größe' | split: ',' -%}
 {%- assign gewicht_label = 'gewicht' | split: ',' -%}
 
@@ -61,7 +61,6 @@
       {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
   
       {%- for value in option.values -%}
-        {% if option.name == "Bezugsart" or option.name == "Design" or option.name == "Farbe" or option.name == "Bezugssystem" %}
         {%- assign downcase_value = value | downcase -%}
 
          <li class="HorizontalList__Item MainVariant_container {% if value==option.selected_value %}yellow_style{% endif %}">
@@ -77,17 +76,17 @@
           </label>
            
           {% if option.name == "Bezugssystem" %}
-          <p class="VariantValue--style">
-            {% assign simple_value = value %}
-            {% assign name_variant = simple_value %}            
-            {{ name_variant | escape }}    
-           </p>           
-        {% else %}
-          <p class="VariantValue--style">
-            {% assign simple_value = value | split: '(' | last %}
-            {% assign name_variant = simple_value | split: ')' | first %}
-            {{ name_variant | escape }}    
-           </p>
+            <p class="VariantValue--style">
+              {% assign simple_value = value %}
+              {% assign name_variant = simple_value %}            
+              {{ name_variant | escape }}    
+            </p>           
+          {% else %}
+          	<p class="VariantValue--style">
+              {% assign simple_value = value | split: '(' | last %}
+              {% assign name_variant = simple_value | split: ')' | first %}
+              {{ name_variant | escape }}    
+           	</p>
            {% endif %}
 
           {% comment %} Is Limited Badge - bgd.is_limited Metafield {% endcomment %}  
@@ -125,7 +124,7 @@
                  {% endif %}
               {% endif%}
           {% endfor %}
-        {% endif %}  
+        
       </li>
       {%- endfor -%}
 
@@ -150,7 +149,7 @@
     <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight
                {% if option.name == 'Druck'%} Druck_SizeSwatchList{% endif%}">
       {%- for value in option.values -%}
-      <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}
+      <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' or option.name == 'Deckengewicht' %} gewicht_option {% endif %}
                  {% if value == 'Komplettdruck' or value == 'Kopfdruck' or value == 'Standard Druck' or value == 'Cartoon Druck' %} Druck_HorizontalList__Item{% endif%}">
         <input id="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
           class="SizeSwatch__Radio" type="radio" name="option-{{ forloop.parentloop.index0 }}"
@@ -170,20 +169,20 @@
       {%- endfor -%}
     </ul>
 
-    {% comment %} Product Info for Variants - bgd.weight Metafield - Yurith{% endcomment %}
-    {% if option.name == 'Gewicht' %}
-      {% for variant in product.variants %}
-        {% if variant.metafields.bgd.weight %}
-          {% assign weight_class = "info-wr info-wr-hidden" %}
-          {% if variant.id == product.selected_or_first_available_variant.id %}
-	          {% assign weight_class = "info-wr" %}
-          {% endif %}
-          <div data-variant-id="{{variant.id}}" class="{{ weight_class }}">
-            {{ variant.metafields.bgd.weight }}
-          </div>
-        {% endif%}
-      {% endfor %}
-    {% endif%}
+      {% comment %} Product Info for Variants - bgd.weight Metafield - Yurith{% endcomment %}
+      {% if option.name == 'Gewicht' or option.name == 'Deckengewicht' %}
+        {% for variant in product.variants %}
+          {% if variant.metafields.bgd.weight %}
+            {% assign weight_class = "info-wr info-wr-hidden" %}
+            {% if variant.id == product.selected_or_first_available_variant.id %}
+                {% assign weight_class = "info-wr" %}
+            {% endif %}
+            <div data-variant-id="{{variant.id}}" class="{{ weight_class }}">
+              {{ variant.metafields.bgd.weight }}
+            </div>
+          {% endif%}
+        {% endfor %}
+      {% endif%}
     
     {%- else -%}
     <button type="button" class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">

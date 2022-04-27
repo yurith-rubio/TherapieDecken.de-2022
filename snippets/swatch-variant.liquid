@@ -4,7 +4,7 @@
       {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
   
       {%- for value in option.values -%}
-        {% if option.name == "Bezugsart"%}
+        {% if option.name == "Bezugsart" or option.name == "Setfarbe" %}
 
         {%- assign downcase_value = value | downcase -%}
 

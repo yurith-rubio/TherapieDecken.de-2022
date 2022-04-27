@@ -22,6 +22,7 @@
   position: relative;
   top: 2px;
   margin-left: -22px;
+  font-size: 12px;
 }
 
 .balance-info-wr > span, .additinal-info-wr > span{
