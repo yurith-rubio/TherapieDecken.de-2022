@@ -85,8 +85,8 @@
           "type": "accordion_simple",
           "settings": {
             "simple_icons": "gewicht",
-            "summary": "Standardgewicht- und größe",
-            "content": "Die ECO Gewichtsdecke hat ein Standardgewicht von 5,5 kg.  Die Standardgröße beträgt 120 x 180 cm. Damit eignet sie sich für tagsüber, abends oder nachts zum Entspannen oder Schlafen. Der leichte, angenehme Druck ist besonders bei wärmeren Temperaturen wohltuend."
+            "summary": "Standardgewicht und -größe",
+            "content": "Die ECO Gewichtsdecke hat ein Standardgewicht von 5,5 kg.  Die Standardgröße beträgt 120 x 180 cm. Damit eignet sie sich für alle Personen für tagsüber, abends oder nachts zum Entspannen oder Schlafen. Der leichte, angenehme Druck ist besonders bei wärmeren Temperaturen wohltuend."
           }
         },
         "dafcf498-5a5d-439d-bce0-c5bbda17aa63": {
@@ -212,7 +212,7 @@
         "text_color": "#1c1b1b",
         "block_size": "large",
         "title": "Der ökologische Naturstoff Leinen",
-        "content": "<p>Leinen werden aus der Flachspflanze gewonnen und ist besonders reißfest und flusenfrei. Leinen hat hervorragende natürliche Eigenschaften, die die Pflege erleichtern und das Wohlbefinden fördern. Die Flachsfasern sind antibakteriell, antistatisch und schmutzabweisend. Zudem haben Leinen eine kühlende Wirkung, da es aufgenommene Feuchtigkeit an die Umgebung abgibt. Bei trockenem Zustand wärmt es angenehm. <\/p>",
+        "content": "<p>Leinen wird aus der Flachspflanze gewonnen und ist besonders reißfest und flusenfrei. Leinen hat hervorragende natürliche Eigenschaften, die die Pflege erleichtern und das Wohlbefinden fördern. Die Flachsfasern sind antibakteriell, antistatisch und schmutzabweisend. Zudem hat Leinen eine kühlende Wirkung, da es aufgenommene Feuchtigkeit an die Umgebung abgibt. Bei trockenem Zustand wärmt es angenehm. <\/p>",
         "button_label": "",
         "button_link": "",
         "show_parallax": true
