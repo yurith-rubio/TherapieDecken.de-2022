@@ -57,7 +57,7 @@
     "countdown_product_text": "💝 Muttertag Angebot! 10% Rabatt + Gratis Gewichtsmaske | Endet in",
     "countdown_container_bg_color": "#8a1855",
     "countdown_product_numbers_color": "#8a1855",
-    "checkout_countdown_enable": true,
+    "checkout_countdown_enable": false,
     "checkout_countdown_text": "⚠️ Auf Grund unseres Weltschlaftag Angebots ist Ihr Warenkorb für nur",
     "left_product_inventory": false,
     "promotional_hero_hp_cover": false,
