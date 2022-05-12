@@ -11,7 +11,10 @@
 {% elsif option.name=="Bezugssystem" %}
 	<div class="info-title-div"><p><span class="icon-information-outline"></span> Bitte wählen Sie das Therapiedecken Modell, das Sie besitzen. Handelsübliche Bezüge eignen sich nicht für Therapiedecken.</p></div>
 {% elsif option.name=="Druck" %}
-	{% if product.handle == 'standard-gravity-gewichtsdecke-familien-motiv' or product.handle == 'standard-gravity-gewichtsdecke-mit-personalisiertem-partner-motiv-fur-erwachsene' %}
+	{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisiertem-partner-motiv-fur-erwachsene' %}
+	  <div class="info-title-div"><p><span class="icon-information-outline"></span> Beim Komplettdruck wird Ihr Familie komplett auf die Vorderseite des Bezuges gedruckt. Beim Kopfdruck verwenden wir nur den Kopf des Tieres. Die Farbe der Rückseite bzw. der restlichen Vorderseite des Bezugs können Sie unten auswählen.</p></div>
+	{% endif %}
+	{% if product.handle == 'standard-gravity-gewichtsdecke-familien-motiv' %}
 	  <div class="info-title-div"><p><span class="icon-information-outline"></span> Beim Komplettdruck wird Ihr Familie komplett auf die Vorderseite des Bezuges gedruckt. Beim Kopfdruck verwenden wir nur den Kopf des Tieres. Die Farbe der Rückseite bzw. der restlichen Vorderseite des Bezugs können Sie unten auswählen.</p></div>
 	{% endif %}
 	{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene' %}
