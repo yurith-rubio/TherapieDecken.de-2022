@@ -2226,7 +2226,10 @@
       this.element = container;
       this.delegateElement = new domDelegate.Delegate(this.element);
       this.options = options;
-      var jsonData = JSON.parse(this.element.querySelector('[data-product-json]').innerHTML);
+      
+      var node = this.element.querySelector('[data-product-json]');
+      if (node.length == 0) return;
+      var jsonData = JSON.parse(node.innerHTML);
       this.productData = jsonData['product'];
       this.variantsInventories = jsonData['inventories'] || {};
       this.masterSelector = this.element.querySelector("#product-select-".concat(this.productData['id'])); // We init value with the first selected variant
