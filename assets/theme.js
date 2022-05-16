@@ -2228,7 +2228,7 @@
       this.options = options;
       
       var node = this.element.querySelector('[data-product-json]');
-      if (node.length == 0) return;
+      if (!node) return;
       var jsonData = JSON.parse(node.innerHTML);
       this.productData = jsonData['product'];
       this.variantsInventories = jsonData['inventories'] || {};
