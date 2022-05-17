@@ -111,7 +111,7 @@
                        class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" 
                        data-line="{{ forloop.index }}" 
                        value="{{ line_item.quantity }}"
-                       data-ajax-cart-quantity-input>
+                       data-ajax-cart-quantity-input="{{ item_index }}">
 
                 {%- assign quantity_plus_one = line_item.quantity | plus: 1 -%}
 
