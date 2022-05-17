@@ -30,7 +30,6 @@
   flex-direction: column;
   padding: 10px;
   width: 100px;
-  margin: 20px 20px;
 }
 
 .icons21_wrapper_block {
@@ -46,3 +45,10 @@
     margin: 10px 0px;
   }
 }
+
+@media only screen and (min-width: 641px) {
+  .icons21_small_wrapper_products {
+    margin: 20px 20px;
+  }
+}
+
