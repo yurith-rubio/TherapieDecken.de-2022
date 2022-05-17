@@ -100,7 +100,7 @@
                   <!-- data-ajax-cart-request-button ajaxifies the "Minus one" button -->
                   <a class="button_cart" 
                      data-ajax-cart-request-button 
-                     href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | minus: 1 }}" >
+                     href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ line_item.quantity | minus: 1 }}" >
 
                     <svg width="10" viewBox="0 0 12 2" xmlns="http://www.w3.org/2000/svg"><path d="M11.25 0H.75C.3 0 0 .4 0 1s.3 1 .75 1h10.5c.45 0 .75-.4.75-1s-.3-1-.75-1z" fill="#7A7A7A" fill-rule="nonzero"></path></svg>
 
@@ -109,7 +109,7 @@
                   <input class="input_cart" 
                          data-ajax-cart-quantity-input="{{ item_index }}" 
                          name="updates[]" 
-                         value="{{ item.quantity }}" 
+                         value="{{ line_item.quantity }}" 
                          type="number" />
                   <!-- data-ajax-cart-request-button ajaxifies the "Plus one" button -->
                   <a class="button_cart"
