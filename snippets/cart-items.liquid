@@ -15,7 +15,6 @@
   {%- endunless -%}
 
   {%- for line_item in cart.items -%}
-    {% assign item_index = forloop.index %}
     {%- if for_drawer -%}
       <div class="CartItemWrapper">
     {%- endif -%}
@@ -97,22 +96,23 @@
             <div class="CartItem__QuantitySelector">
               <div class="QuantitySelector">
                 {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}>
+                
                   <!-- data-ajax-cart-request-button ajaxifies the "Minus one" button -->
                   <a class="button_cart" 
                      data-ajax-cart-request-button 
-                     href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ line_item.quantity | minus: 1 }}" >
+                     href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity={{ line_item.quantity | minus: 1 }}" >
                     <svg width="10" viewBox="0 0 12 2" xmlns="http://www.w3.org/2000/svg"><path d="M11.25 0H.75C.3 0 0 .4 0 1s.3 1 .75 1h10.5c.45 0 .75-.4.75-1s-.3-1-.75-1z" fill="#7A7A7A" fill-rule="nonzero"></path></svg>
                   </a>
                   <!-- Input -->
                   <input class="input_cart" 
-                         data-ajax-cart-quantity-input="{{ item_index }}" 
+                         data-ajax-cart-quantity-input="{{ forloop.index }}" 
                          name="updates[]" 
                          value="{{ line_item.quantity }}" 
                          type="number" />
                   <!-- data-ajax-cart-request-button ajaxifies the "Plus one" button -->
                   <a class="button_cart"
                      data-ajax-cart-request-button 
-                     href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ line_item.quantity | plus: 1 }}">
+                     href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity={{ line_item.quantity | plus: 1 }}">
                     <svg width="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M11 5H7V1a1 1 0 00-2 0v4H1a1 1 0 000 2h4v4a1 1 0 002 0V7h4a1 1 0 000-2z" fill="currentColor" fill-rule="nonzero"></path></svg>
                   </a>
               </div>
