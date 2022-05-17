@@ -6,6 +6,7 @@
 
 {%- comment -%} CSS Added {%- endcomment -%}
 {{ 'product-custom.css' | asset_url | stylesheet_tag}}
+{{ 'icons-text.css' | asset_url | stylesheet_tag }}
 
 <div class="full-bg-color-product-details">
   <div class="medium-grid">
@@ -102,7 +103,7 @@
 
 
 <center>
-  <div id="icons21_wrapper_products">
+  <div class="icons21_wrapper_products">
     <div class="icons21_wrapper_block">
       <div class="icons21_small_wrapper_products">
         <span class="icon-Icons_Cotton01 icons21_font_size"><span class="path1"></span><span class="path2"></span><span
@@ -164,7 +165,7 @@
 
 {% schema %}
 {
-  "name": "More Information Cover",
+  "name": "Product details blanket",
   "settings": [
       {
         "type": "color",
@@ -304,7 +305,7 @@
   "presets": [
     {
       "category": "Therapiedecken Cover Template",
-      "name": "More Information Cover",
+      "name": "Product details blanket",
       "settings": {}
     }
   ]
