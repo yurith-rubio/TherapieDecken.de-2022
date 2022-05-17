@@ -21,6 +21,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   padding: 10px;
+  width: 145px;
 }
 
 .icons21_small_wrapper_products {
@@ -43,15 +44,5 @@
 @media only screen and (max-width: 640px) {
   .icons21_small_wrapper_products {
     margin: 10px 0px;
-  }
-
-  .icons21_small_wrapper {
-    width: 145px;
-  }
-}
-
-@media only screen and (min-width: 641px) {
-  .icons21_small_wrapper {
-    width: 150px;
   }
 }
