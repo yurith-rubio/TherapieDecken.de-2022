@@ -99,7 +99,7 @@
                 {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
 
                 <a class="QuantitySelector__Button Link Link--primary" 
-                   href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ line_item.quantity | minus: 1 }}"ntity"
+                   href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ line_item.quantity | minus: 1 }}"
                    data-ajax-cart-request-button>
                   {%- render 'icon' with 'minus' -%}
                 </a>
