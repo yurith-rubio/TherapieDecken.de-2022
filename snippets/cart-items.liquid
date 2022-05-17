@@ -15,6 +15,7 @@
   {%- endunless -%}
 
   {%- for line_item in cart.items -%}
+    {% assign item_index = forloop.index %}
     {%- if for_drawer -%}
       <div class="CartItemWrapper">
     {%- endif -%}
