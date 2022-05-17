@@ -27,7 +27,7 @@ body.js-my-cart-open{
   right: 0;
 }
 #cart-overlay{
-  z-index:var(--z-index-drawer-overlay);
+  z-index:100;
   position:fixed;
   top:0;
   right:0;
