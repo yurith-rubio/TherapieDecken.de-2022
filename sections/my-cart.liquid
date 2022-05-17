@@ -32,7 +32,7 @@
             <div class="content_cart_wrapper">
               {% assign item_index = forloop.index %}
               {% comment %} item title {% endcomment %}
-              <h2 class="h2_cart"><a href="{{ item.url }}">{{ item.title }}</a></h2>
+              <h2 class="Heading u-h6"><a href="{{ item.url }}">{{ item.title }}</a></h2>
               {% for option in item.options_with_values %}
               <p>{{ option.value }}</p>
               {% endfor %}
@@ -83,7 +83,7 @@
         </div>
         <div class="footer_cart_wrapper">
           <div class="versand_cart_wrapper">
-            <h2 class="h2_cart">Versand</h2>
+            <h2 class="Heading u-h6">Versand</h2>
             <p class="p_cart">Gratis</p>
           </div>
           <div class="total_cart_wrapper">
