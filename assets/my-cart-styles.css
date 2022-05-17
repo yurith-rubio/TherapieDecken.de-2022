@@ -70,7 +70,8 @@ body.js-my-cart-open{
   margin-left: 15px;
 }
 .content_cart_wrapper > p{
-  margin: 0;
+  margin: 0 0 10px;
+  line-height: 1.1
 }
 .quantity_price_wrapper{
   display: flex;
