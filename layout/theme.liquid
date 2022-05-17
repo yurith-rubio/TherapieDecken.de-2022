@@ -209,10 +209,12 @@
         {% section 'popup' %}
         {% section 'sidebar-menu' %}
 
-        {%- if template != 'cart' -%}
-          {% render 'cart-drawer' %}
-        {%- endif -%}
-
+        {% comment %}
+          {%- if template != 'cart' -%}
+            {% render 'cart-drawer' %}
+          {%- endif -%}
+		{% endcomment %}
+        
         {% render 'top-styling' %}
 
         <div class="PageContainer">
