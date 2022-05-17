@@ -2,7 +2,7 @@
 <div id="my-container__cart" class="my-container__cart open-cart">
   <div class="my-floating-cart"> 
     <form id="cart_slider" action="{{ routes.cart_url }}" method="post" class="my-cart" >
-      <!-- data-ajax-cart-section makes the element's HTML update when the cart gets changed -->
+      {% comment %} data-ajax-cart-section makes the element's HTML update when the cart gets changed {% endcomment %}
       <div data-ajax-cart-section>
 
         <div class="cart-header close-cart" data-ajax-cart-toggle-class-button="js-my-cart-open">
