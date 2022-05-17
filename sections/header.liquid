@@ -441,7 +441,9 @@ HEADER CONTENT
         <span class="hidden-phone">{%- render 'icon' with 'search-desktop' -%}</span>
       </a>
 
-      <a href="{{ routes.cart_url }}" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless section.settings.show_icons or use_sidebar_menu %}hidden-desk{% endunless %}" {% if settings.cart_type == 'drawer' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-expanded="false" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endif %}>
+      <a href="{{ routes.cart_url }}" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless section.settings.show_icons or use_sidebar_menu %}hidden-desk{% endunless %}" 
+         {% if settings.cart_type == 'drawer' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-expanded="false" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endif %}
+         data-ajax-cart-toggle-class-button="js-my-cart-open">
         <span class="hidden-tablet-and-up">{%- render 'icon' with 'cart' -%}</span>
         <span class="hidden-phone">{%- render 'icon' with 'cart-desktop' -%}</span>
         <span class="Header__CartDot {% if cart.item_count > 0 %}is-visible{% endif %}"></span>
