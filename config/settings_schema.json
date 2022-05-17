@@ -782,5 +782,16 @@
         "default": false
       }
     ]
+  },
+  {
+    "name": "Gift Product",
+    "settings": [
+      {
+        "type": "text",
+        "id": "gift_product_variant_id",
+        "label": "Gift product",
+        "info": "Find the Id of the variant of the product you want to give for free and add it here and add the rule on the [discounts tab](https:\/\/gravitydecke.myshopify.com\/admin\/discounts\/automatic\/1082385268869)"
+      }
+    ]
   }
 ]
