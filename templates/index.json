@@ -204,6 +204,26 @@
         "bg-color": ""
       }
     },
+    "165277572759e6bcfa": {
+      "type": "advanced-content",
+      "blocks": {
+        "1652775727eff2c155-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "{% render 'wirkung-von-therapiedecken' %}",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1652775727eff2c155-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
     "1630348738a0496c0e": {
       "type": "banner-call2action",
       "blocks": {
@@ -318,6 +338,7 @@
     "16299931230028979b",
     "1629994387ef06967d",
     "16292736021fd32f34",
+    "165277572759e6bcfa",
     "1630348738a0496c0e",
     "1629966613300d359b",
     "162927586932fdcf24",
