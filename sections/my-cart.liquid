@@ -53,7 +53,7 @@
                          name="updates[]" 
                          value="{{ item.quantity }}" 
                          type="number" />
-                  <!-- data-ajax-cart-request-button ajaxifies the "Plus one" button -->
+                  {% comment %} data-ajax-cart-request-button ajaxifies the "Plus one" button {% endcomment %}
                   <a class="button_cart"
                      data-ajax-cart-request-button 
                      href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | plus: 1 }}">
