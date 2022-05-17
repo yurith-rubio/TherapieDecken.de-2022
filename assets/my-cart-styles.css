@@ -76,6 +76,7 @@ body.js-my-cart-open{
 .quantity_price_wrapper{
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 .remove_cart{
   position: absolute;
