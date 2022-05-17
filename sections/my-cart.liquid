@@ -33,9 +33,11 @@
               {% assign item_index = forloop.index %}
               {% comment %} item title {% endcomment %}
               <h2 class="Heading u-h6"><a href="{{ item.url }}">{{ item.title }}</a></h2>
-              {% for option in item.options_with_values %}
-              <p>{{ option.value }}</p>
-              {% endfor %}
+              <p>
+                {% for option in item.options_with_values %}
+                {{ option.value }}
+                {% endfor %}
+              </p>
 
               <div class="quantity_price_wrapper">
                 {% comment %} quantity selector {% endcomment %}
