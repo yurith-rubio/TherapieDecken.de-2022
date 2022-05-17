@@ -119,7 +119,7 @@
                    title="{{ 'cart.items.set_quantity' | t: new_quantity: quantity_plus_one }}" 
                    href="{{ routes.cart_change_url }}?quantity={{ quantity_plus_one }}&line={{ forloop.index }}" 
                    data-quantity="{{ quantity_plus_one }}" data-line="{{ forloop.index }}" 
-                   data-action="update-item-quantity"
+                   {% comment %}data-action="update-item-quantity"{% endcomment %}
                    data-ajax-cart-request-button>
                   {%- render 'icon' with 'plus' -%}
                 </a>
