@@ -13,7 +13,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   padding: 10px;
-  width: 150px;
 }
 
 .icons21_small_wrapper_products {
@@ -40,6 +39,12 @@
   }
 
   .icons21_small_wrapper {
-    width: 145px !important;
+    width: 145px;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .icons21_small_wrapper {
+    width: 150px;
   }
 }
