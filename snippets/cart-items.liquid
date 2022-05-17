@@ -112,7 +112,8 @@
                          type="number" />
                   <!-- data-ajax-cart-request-button ajaxifies the "Plus one" button -->
                   <a class="button_cart"
-                     data-ajax-cart-request-button 
+                     data-ajax-cart-request-button
+                     onclick="overlayOn()"
                      href="{{ routes.cart_change_url }}?line={{ forloop.index }}&quantity={{ line_item.quantity | plus: 1 }}">
                     <svg width="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M11 5H7V1a1 1 0 00-2 0v4H1a1 1 0 000 2h4v4a1 1 0 002 0V7h4a1 1 0 000-2z" fill="currentColor" fill-rule="nonzero"></path></svg>
                   </a>
