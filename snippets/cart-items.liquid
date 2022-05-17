@@ -109,7 +109,7 @@
 
                 <input type="text" name="updates[]" id="updates_{{ line_item.key }}" 
                        class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" 
-                       data-line="{{ forloop.index }}" 
+                       {% comment %}data-line="{{ forloop.index }}"{% endcomment %} 
                        value="{{ line_item.quantity }}"
                        data-ajax-cart-quantity-input="{{ forloop.index }}">
 
