@@ -105,10 +105,10 @@
                 </a>
 
                 <input type="text" name="updates[]" id="updates_{{ line_item.key }}" 
-                       class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" 
-                       {% comment %}data-line="{{ forloop.index }}"{% endcomment %} 
+                       class="QuantitySelector__CurrentQuantity" pattern="[0-9]*"
                        value="{{ line_item.quantity }}"
-                       data-ajax-cart-quantity-input="{{ item_index }}">
+                       data-ajax-cart-quantity-input="{{ item_index }}"
+                       >
 
                 {%- assign quantity_plus_one = line_item.quantity | plus: 1 -%}
 
