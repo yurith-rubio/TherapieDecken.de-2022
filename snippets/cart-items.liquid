@@ -107,7 +107,9 @@
                   {%- render 'icon' with 'minus' -%}
                 </a>
 
-                <input type="text" name="updates[]" id="updates_{{ line_item.key }}" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" data-line="{{ forloop.index }}" value="{{ line_item.quantity }}">
+                <input type="text" name="updates[]" id="updates_{{ line_item.key }}" 
+                       class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" 
+                       data-line="{{ forloop.index }}" value="{{ line_item.quantity }}">
 
                 {%- assign quantity_plus_one = line_item.quantity | plus: 1 -%}
 
