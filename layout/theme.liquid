@@ -196,36 +196,41 @@
   {%- endif -%}
 
   <body class="prestige--v4 {{ classes }} {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
-    <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
-    <span class="LoadingBar"></span>
-    <div class="PageOverlay"></div>
+    <div class="my-container" data-drawer-push>
+      <div class="my-container__content">
+        <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
+        <span class="LoadingBar"></span>
+        <div class="PageOverlay"></div>
 
-    {%- if settings.show_page_transition -%}
-      <div class="PageTransition"></div>
-    {%- endif -%}
+        {%- if settings.show_page_transition -%}
+          <div class="PageTransition"></div>
+        {%- endif -%}
 
-    {% section 'popup' %}
-    {% section 'sidebar-menu' %}
+        {% section 'popup' %}
+        {% section 'sidebar-menu' %}
 
-    {%- if template != 'cart' -%}
-      {% render 'cart-drawer' %}
-    {%- endif -%}
-    
-    {% render 'top-styling' %}
-    <div class="PageContainer">
-      <div id="tabs-redirecting" style="relative: fixed; top: 0px">
-        {% render 'website-tab-redirecting' %}
+        {%- if template != 'cart' -%}
+          {% render 'cart-drawer' %}
+        {%- endif -%}
+
+        {% render 'top-styling' %}
+
+        <div class="PageContainer">
+          <div id="tabs-redirecting" style="relative: fixed; top: 0px">
+            {% render 'website-tab-redirecting' %}
+          </div>
+          <div id="header">
+            {% section 'header' %}
+            {% section 'announcement' %}
+          </div>
+
+          <main id="main" role="main">
+            {{ content_for_layout }}
+          </main>
+
+          {% section 'footer' %}
+        </div>
       </div>
-      <div id="header">
-        {% section 'header' %}
-        {% section 'announcement' %}
-      </div>
-
-      <main id="main" role="main">
-        {{ content_for_layout }}
-      </main>
-
-      {% section 'footer' %}
     </div>
     
     <script>
