@@ -208,7 +208,6 @@
         {%- if settings.show_page_transition -%}
           <div class="PageTransition"></div>
         {%- endif -%}
-
         {% section 'popup' %}
         {% section 'sidebar-menu' %}
 
@@ -219,7 +218,6 @@
 		{% endcomment %}
         
         {% render 'top-styling' %}
-        
 		{% section 'my-cart' %}
         
         <div class="PageContainer">
@@ -230,11 +228,9 @@
             {% section 'header' %}
             {% section 'announcement' %}
           </div>
-
           <main id="main" role="main">
             {{ content_for_layout }}
           </main>
-
           {% section 'footer' %}
         </div>
       </div>
