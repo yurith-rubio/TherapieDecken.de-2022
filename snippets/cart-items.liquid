@@ -51,7 +51,7 @@
                   {%- endif -%}
 
                   <li class="CartItem__Property"
-                      data-ajax-cart-property-input="{{ item_index }}[{{ property.first }}]">{{ property.first }}: {{ property.last }}</li>
+                      data-ajax-cart-property-input="{{ forloop.index }}[{{ property.first }}]">{{ property.first }}: {{ property.last }}</li>
                 {%- endfor -%}
               </ul>
             {%- endif -%}
