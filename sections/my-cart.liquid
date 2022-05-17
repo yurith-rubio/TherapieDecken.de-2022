@@ -2,8 +2,7 @@
 <div id="my-container__cart" class="my-container__cart open-cart">
   <div class="my-floating-cart"> 
     <form id="cart_slider" action="{{ routes.cart_url }}" method="post" class="my-cart" >
-      <!-- data-ajax-cart-section makes the element's HTML update
-      when the cart gets changed -->
+      <!-- data-ajax-cart-section makes the element's HTML update when the cart gets changed -->
       <div data-ajax-cart-section>
 
         <div class="cart-header close-cart" data-ajax-cart-toggle-class-button="js-my-cart-open">
@@ -14,8 +13,7 @@
           </a>
         </div>
 
-        <!-- data-ajax-cart-section-scroll keeps the scroll position unchanged
-        when the element's HTML is changed -->
+        <!-- data-ajax-cart-section-scroll keeps the scroll position unchanged when the element's HTML is changed -->
         <div class="my-cart__items" data-ajax-cart-section-scroll>
 
           {% for item in cart.items %} 
@@ -106,8 +104,7 @@
         </textarea>
         {% endcomment %}
 
-        <!-- data-ajax-cart-static-element keeps the container unchanged
-        when the cart and the surrounding HTML get updated -->
+        <!-- data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated -->
         <div data-ajax-cart-static-element class="my-cart__app-container"></div>
     </form>
   </div>
