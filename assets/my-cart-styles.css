@@ -47,9 +47,8 @@ body.js-my-cart-open{
   justify-content: center;
   align-items: center;
 }
-.h2_cart, .p_cart{
-  margin: 10px 0;
-  font-size: 16px;
+#cart_slider h2{
+  margin-top: 10px;
 }
 .heading_cart{
   text-align: center;
