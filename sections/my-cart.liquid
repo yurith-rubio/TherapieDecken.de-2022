@@ -120,6 +120,7 @@
           $close = $('.close-cart'),
           $open = $('.open-cart'),
           $holder = $('#my-container__cart'),
+          
       // Close with 'esc' key
       $(document).keyup(function (e) {
           if (e.keyCode == 27) $close.trigger('click');
@@ -133,11 +134,13 @@
                   'backgroundColor': '#00D',
                   'top': -offsetY + 'px'
           });
+        
           // Show popup
           $holder.css('display', 'block');
       });
 
       $close.click(function () {
+        
           // Allow scrolling again
           $body.css({
               'position': 'static',
