@@ -30,14 +30,14 @@
             </div>
             <div class="content_cart_wrapper">
               {% assign item_index = forloop.index %}
-              <!-- item title -->
+              {% comment %} item title {% endcomment %}
               <h2 class="h2_cart"><a href="{{ item.url }}">{{ item.title }}</a></h2>
               {% for option in item.options_with_values %}
               <p>{{ option.value }}</p>
               {% endfor %}
 
               <div class="quantity_price_wrapper">
-                <!-- quanity selector -->
+                {% comment %} quantity selector {% endcomment %}
                 <div class="quantity-selector">
                   <!-- data-ajax-cart-request-button ajaxifies the "Minus one" button -->
                   <a class="button_cart" 
