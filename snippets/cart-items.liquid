@@ -104,7 +104,7 @@
                   {%- render 'icon' with 'minus' -%}
                 </a>
 
-                <input type="text" name="updates[]" id="updates_{{ line_item.key }}" 
+                <input type="number" name="updates[]" id="updates_{{ line_item.key }}" 
                        class="QuantitySelector__CurrentQuantity" pattern="[0-9]*"
                        value="{{ line_item.quantity }}"
                        data-ajax-cart-quantity-input="{{ item_index }}"
