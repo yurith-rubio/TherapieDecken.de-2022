@@ -13,7 +13,7 @@
           </a>
         </div>
 
-        <!-- data-ajax-cart-section-scroll keeps the scroll position unchanged when the element's HTML is changed -->
+        {% comment %} data-ajax-cart-section-scroll keeps the scroll position unchanged when the element's HTML is changed {% endcomment %}
         <div class="my-cart__items" data-ajax-cart-section-scroll>
 
           {% for item in cart.items %} 
