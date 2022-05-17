@@ -146,7 +146,10 @@
                       </style>
                     {%- endif -%}
 
-                    <button type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
+                    <button type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" 
+                            class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" 
+                            {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}
+                            data-ajax-cart-request-button>
                       {%- if product.selected_or_first_available_variant.available -%}
                         <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
 
@@ -244,7 +247,9 @@
 
                 {%- when 'buy_buttons' -%}
                   <div class="ProductForm__BuyButtons" {{ block.shopify_attributes }}>
-                    <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary Button--full">{{- 'product.form.add_to_cart' | t -}}</button>
+                    <button type="submit" data-use-primary-button="true" 
+                            class="ProductForm__AddToCart Button Button--primary Button--full"
+                            data-ajax-cart-request-button>{{- 'product.form.add_to_cart' | t -}}</button>
                   </div>
               </div>
             {%- endcase -%}
