@@ -40,7 +40,6 @@
             <p class="CartItem__PlanAllocation">{{ line_item.selling_plan_allocation.selling_plan.name }}</p>
           {%- endif -%}
 
-          {% comment %}
             {%- if line_item.properties != empty -%}
               <ul class="CartItem__PropertyList">
                 {%- for property in line_item.properties -%}
@@ -55,7 +54,6 @@
                 {%- endfor -%}
               </ul>
             {%- endif -%}
-          {% endcomment %}
 
           <div class="CartItem__PriceList">
             {%- if line_item.original_price != line_item.final_price -%}
