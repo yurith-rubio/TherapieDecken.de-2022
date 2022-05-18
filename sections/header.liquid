@@ -420,7 +420,8 @@ HEADER CONTENT
             <li class="HorizontalList__Item">
               <a href="{{ routes.cart_url }}" class="Heading u-h6" 
                  {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endunless %}>{{ 'header.navigation.cart' | t }} (<span class="Header__CartCount"
-                 data-ajax-cart-toggle-class-button="js-my-cart-open">{{ cart.item_count }}</span>)</a>
+                 data-ajax-cart-toggle-class-button="js-my-cart-open"
+                 onclick="overlayOn()">{{ cart.item_count }}</span>)</a>
             </li>
           </ul>
         </nav>
