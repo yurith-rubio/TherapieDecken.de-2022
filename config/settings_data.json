@@ -71,6 +71,7 @@
     "promotional_collection_cover": false,
     "enable_collection_badge": true,
     "enable_product_badge": true,
+    "hide_discount_general_badge": true,
     "show_product_guarantee_exceptions": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-banner-2.jpg",
     "checkout_logo_position": "center",
