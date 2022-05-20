@@ -721,6 +721,26 @@
         "label": "Select hero image"
       },
       {
+        "type": "select",
+        "id": "image_position",
+        "label": "Image position on mobile",
+        "options": [
+          {
+            "value": "center",
+            "label": "center"
+          },
+          {
+            "value": "left",
+            "label": "left"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          }
+        ],
+        "default": "center"
+      },
+      {
         "type": "header",
         "content": "Button"
       },
@@ -744,6 +764,12 @@
         "type": "color",
         "id": "text_button_color",
         "label": "Color of text in button",
+        "default": "#222323"
+      },
+      {
+        "type": "color",
+        "id": "text_button_color_hover",
+        "label": "Color of text in button on hover",
         "default": "#222323"
       },
       {
