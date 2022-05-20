@@ -66,6 +66,7 @@
     "button_1_link": "shopify:\/\/collections\/erwachsene",
     "button_color": "#fac636",
     "text_button_color": "#3a3c3c",
+    "text_button_color_hover": "#ffffff",
     "promotional_collection_cover": false,
     "enable_collection_badge": false,
     "enable_product_badge": false,
