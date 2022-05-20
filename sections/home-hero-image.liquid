@@ -42,6 +42,26 @@
           "info": "750 x 1100px .jpg recommended. If none is set, desktop image will be cropped."
         },
         {
+          "type": "select",
+          "id": "image_position",
+          "label": "Image position on mobile",
+		  "options": [
+            {
+              "value": "center",
+              "label": "center"
+            },
+            {
+              "value": "left",
+              "label": "left"
+            },
+            {
+              "value": "right",
+              "label": "right"
+            }
+		  ],
+		  "default": "center"
+        },
+        {
           "type": "checkbox",
           "id": "apply_overlay",
           "label": "Apply overlay on image",
