@@ -747,6 +747,12 @@
         "default": "#222323"
       },
       {
+        "type": "color",
+        "id": "text_button_color_hover",
+        "label": "Color of text in button on hover",
+        "default": "#222323"
+      },
+      {
         "type": "header",
         "content": "Collection Pages"
       },
