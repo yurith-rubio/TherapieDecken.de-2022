@@ -97,11 +97,11 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
           "background": "#8a1855",
           "text_color": "#ffffff",
-          "content": "💝 Muttertag Angebot endet in",
+          "content": "Bald ist Vatertag! Therapiedecken 40% reduziert 👨🏻‍🦱 Endet in",
           "link": "shopify:\/\/pages\/therapiedecken"
         }
       },
