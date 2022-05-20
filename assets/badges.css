@@ -55,7 +55,7 @@
 /* FreeMask badge on Product Pages */
 .ProductBadge_Wrapper{
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     z-index: 1;
     right: 7%;
     display: inline-flex;
