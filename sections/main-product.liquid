@@ -117,7 +117,7 @@
                 {% assign percentage = saving | at_least: percentage %}
                 {% endfor %} 
               {% if product.title != 'Geschenkgutschein' %}
-              	{% if settings.hide_discount_general_badge == false %}
+              	{% if settings.hide_discount_general_badge != false %}
               		<div class="bf-badge">-{{ percentage }}%</div>
                 {% endif %}
               {% endif %}
