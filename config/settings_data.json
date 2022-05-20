@@ -51,7 +51,7 @@
     "border_radius_countdown": 4,
     "loop_time": 0,
     "announcement_countdown_enable": true,
-    "text_color_countdown": "#8a1855",
+    "text_color_countdown": "#fac636",
     "product_countdown_enable": false,
     "icon_countdown_product": "",
     "countdown_product_text": "💝 Muttertag Angebot! 10% Rabatt + Gratis Gewichtsmaske | Endet in",
@@ -99,7 +99,7 @@
         "settings": {
           "enable_bar": true,
           "home_page_only": false,
-          "background": "#8a1855",
+          "background": "#fac636",
           "text_color": "#ffffff",
           "content": "Bald ist Vatertag! Therapiedecken 40% reduziert 👨🏻‍🦱 Endet in",
           "link": "shopify:\/\/pages\/therapiedecken"
