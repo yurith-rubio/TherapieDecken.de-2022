@@ -71,6 +71,8 @@ body.js-my-cart-open{
 .content_cart_wrapper{
   flex-grow: 3;
   padding-right: 30px;
+  padding-left: 15px;
+  width: inherit;
 }
 .quantity_price_wrapper{
   display: flex;
