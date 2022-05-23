@@ -127,6 +127,10 @@ input.input_cart{
   -moz-appearance:textfield !important;
 }
 
+.my-cart_imageWrapper{
+  width: 20%;
+}
+
 .my-container__content {
   flex: 1 1 auto;
 }
