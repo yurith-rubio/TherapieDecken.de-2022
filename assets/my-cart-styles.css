@@ -57,6 +57,7 @@ body.js-my-cart-open{
 .heading_cart{
   text-align: center;
   text-transform: uppercase !important;
+  padding-top: 10px;
 }
 .close-slide-cart{
   position: absolute;
