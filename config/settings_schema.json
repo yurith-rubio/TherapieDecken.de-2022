@@ -787,7 +787,7 @@
     "name": "Gift Product",
     "settings": [
       {
-        "type": "text",
+        "type": "product",
         "id": "gift_product_variant_id",
         "label": "Gift product ID",
         "info": "Find the Id of the variant of the product you want to give for free and add it here and add the product that goes for free in here as well [discounts tab](https:\/\/therapiewelt.myshopify.com\/admin\/discounts\/automatic\/932332732480)"
