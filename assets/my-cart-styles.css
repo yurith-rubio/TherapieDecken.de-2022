@@ -243,4 +243,5 @@ body.js-ajax-cart-not-empty .icon-cart-header {
 .payment-icons li.icon--payment {
   cursor: default;
   margin: 0 4px 0px 0;
+  list-style: none;
 }
