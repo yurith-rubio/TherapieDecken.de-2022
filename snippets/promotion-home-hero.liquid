@@ -21,6 +21,7 @@
       {%- for block in section.blocks -%}
         {%- capture slide_content -%}
       	  {%- assign desktop_image = settings.promotional_hero_image -%}
+      	  {% comment %}
           {%- assign mobile_image = settings.promotional_hero_image -%}
           {%- if mobile_image -%}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio{% endunless %} hidden-tablet-and-up"
@@ -28,6 +29,7 @@
                   <img class="Slideshow__Image" src="{{ mobile_image | img_url: 'x400' }}" alt="{{ mobile_image.alt | escape }}">
             </div>
           {%- endif -%}
+      	  {% endcomment %}
           {%- if settings.promotional_hero_image -%}
 
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} hidden-phone"
