@@ -1,0 +1,26 @@
+header.html-text-wr{
+  padding: 0 30px;
+}
+.FeaturedImage-banner{
+  display:none;
+}
+.FeaturedImage-banner>img{
+  width: 100%
+}
+
+@media only screen and (max-width: 641px){
+  .FeaturedText__banner{
+    margin: 0 30px;
+    display: inline-flex;
+  }
+  header.html-text-wr{
+    padding: 0;
+  }
+  .FeatureText__ImageWrapper-desktop{
+    display:none;
+  }
+  .FeaturedImage-banner{
+    display:flex;
+	margin-bottom: -70px;
+  }
+}
