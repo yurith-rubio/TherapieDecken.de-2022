@@ -20,7 +20,7 @@
          data-flickity-config='{{ flickity_options }}'>
       {%- for block in section.blocks -%}
         {%- capture slide_content -%}
-      	  {%- assign desktop_image = settings.promotional_hero_image -%}
+
       	  {% comment %}
           {%- assign mobile_image = settings.promotional_hero_image -%}
           {%- if mobile_image -%}
@@ -31,10 +31,9 @@
           {%- endif -%}
       	  {% endcomment %}
           {%- if settings.promotional_hero_image -%}
-
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}"
                  style="{% unless section.settings.show_fullscreen %}padding-bottom: {{ 100.0 | divided_by: settings.promotional_hero_image.aspect_ratio }}%; --aspect-ratio: {{ settings.promotional_hero_image.aspect_ratio }};{% endunless %} background-image: url({{ settings.promotional_hero_image | img_url: '1x1', format: 'jpg' }})">
-			  {% assign img_url = settings.promotional_hero_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+			        {% assign img_url = settings.promotional_hero_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
               <img class="Slideshow__Image Image--lazyLoad"
                    src="{{ settings.promotional_hero_image | img_url: 'x300' }}"
                    data-src="{{ img_url }}"
