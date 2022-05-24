@@ -20,21 +20,30 @@
          data-flickity-config='{{ flickity_options }}'>
       {%- for block in section.blocks -%}
         {%- capture slide_content -%}
+
       	  {% comment %}
           {%- assign mobile_image = settings.promotional_hero_image -%}
           {%- if mobile_image -%}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio{% endunless %} hidden-tablet-and-up"
                  style="{% unless section.settings.show_fullscreen %}--aspect-ratio: {{ mobile_image.aspect_ratio }};{% endunless %} background-image: url({{ mobile_image | img_url: '1x1', format: 'jpg' }})">
-                  <img class="Slideshow__Image" src="{{ mobile_image | img_url: 'x800' }}" alt="{{ mobile_image.alt | escape }}">
+                  <img class="Slideshow__Image" src="{{ mobile_image | img_url: 'x400' }}" alt="{{ mobile_image.alt | escape }}">
             </div>
           {%- endif -%}
       	  {% endcomment %}
           {%- if settings.promotional_hero_image -%}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}"
                  style="{% unless section.settings.show_fullscreen %}padding-bottom: {{ 100.0 | divided_by: settings.promotional_hero_image.aspect_ratio }}%; --aspect-ratio: {{ settings.promotional_hero_image.aspect_ratio }};{% endunless %} background-image: url({{ settings.promotional_hero_image | img_url: '1x1', format: 'jpg' }})">
-              {% assign image_url = settings.promotional_hero_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
-                <img class="Slideshow__Image" src="{{ settings.promotional_hero_image | img_url: '1000x' }}" alt="{{ settings.promotional_hero_image.alt | escape }}">
+			        {% assign img_url = settings.promotional_hero_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+              <img class="Slideshow__Image Image--lazyLoad"
+                   src="{{ settings.promotional_hero_image | img_url: 'x300' }}"
+                   data-src="{{ img_url }}"
+                   data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+                   data-aspectratio="{{ settings.promotional_hero_image.aspect_ratio }}"
+                   data-sizes="auto"
+                   data-parent-fit="cover"
+                   alt="{{ settings.promotional_hero_image.image.alt | escape }}">
             </div>
+      
           {%- else -%}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% if section.settings.show_fullscreen %}PlaceholderBackground{% endif %} PlaceholderSvg--dark">
               {%- capture placeholder -%}{% cycle 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
@@ -43,7 +52,6 @@
           {%- endif -%}
 
           {%- capture slideshow_content -%}
-
 			<div class="promotion-home-hero_content_container">
   	          <div class="home_promotional_content_wrapper">
                 <img class="homePromotional_art_desktop Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_Father_s_day_promotion.svg?v=1653035128" alt="Therapiedecken Father's day homepage">
@@ -85,6 +93,7 @@
   </div>
   <span id="section-{{ section.id }}-end" class="Anchor"></span>
 </section>
+
 <style>
   #section-{{ section.id }} .Heading,
    #section-{{ section.id }} .flickity-page-dots {
