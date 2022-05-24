@@ -32,7 +32,16 @@
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} hidden-phone"
                  style="{% unless section.settings.show_fullscreen %}padding-bottom: {{ 100.0 | divided_by: settings.promotional_hero_image.aspect_ratio }}%; --aspect-ratio: {{ settings.promotional_hero_image.aspect_ratio }};{% endunless %} background-image: url({{ settings.promotional_hero_image | img_url: '1x1', format: 'jpg' }})">
                 {% assign image_url = settings.promotional_hero_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
-                <img class="Slideshow__Image" src="{{ settings.promotional_hero_image | img_url: '1000x' }}" alt="{{ settings.promotional_hero_image.alt | escape }}">
+                
+              
+              <img class="slideshow__image"
+                    src="{{ settings.promotional_hero_image | img_url: '300x' }}"
+                    data-src="{{ settings.promotional_hero_image }}"
+                    data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+                    data-aspectratio="{{ settings.promotional_hero_image.aspect_ratio }}"
+                    data-sizes="auto"
+                    data-parent-fit="cover"
+                    alt="{{ settings.promotional_hero_image.alt | escape }}">
             </div>
       
           {%- else -%}
