@@ -145,6 +145,8 @@
     </script>
     
     {% render 'microdata-schema' %}
+    {% comment %} JQuery library - Yurith {% endcomment %}
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
 
   </head>
 
@@ -240,8 +242,7 @@
     <script type="text/javascript" src="https://bcdn.starapps.studio/apps/via/therapiedecken/script-1631272472.js?shop={{shop.permanent_domain}}" async></script>
     <!-- starapps_scripts_end -->
     
-    {% comment %} JQuery library - Yurith {% endcomment %}
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    
+ 
     {{ 'countdown.js' | asset_url | script_tag }}
     {% comment %}<script src="{{ 'theme2.js' | asset_url }}" defer></script>{% endcomment %}
     <script src="{{ 'custom.js' | asset_url }}" defer></script>
