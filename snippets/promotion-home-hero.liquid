@@ -34,7 +34,7 @@
 
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}"
                  style="{% unless section.settings.show_fullscreen %}padding-bottom: {{ 100.0 | divided_by: settings.promotional_hero_image.aspect_ratio }}%; --aspect-ratio: {{ settings.promotional_hero_image.aspect_ratio }};{% endunless %} background-image: url({{ settings.promotional_hero_image | img_url: '1x1', format: 'jpg' }})">
-              <img class="Slideshow__Image lazyload"
+              <img class="Slideshow__Image Image--lazyLoad"
                    src="{{ settings.promotional_hero_image | img_url: '300x' }}"
                    data-src="{{ settings.promotional_hero_image }}"
                    data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
