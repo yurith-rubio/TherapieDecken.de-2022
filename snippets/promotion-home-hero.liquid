@@ -35,13 +35,12 @@
             
               
               <img class="Slideshow__Image"
-                    src="{{ settings.promotional_hero_image | img_url: 'master' }}"
-                    data-src="{{ settings.promotional_hero_image }}"
-                    data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
-                    data-aspectratio="{{ settings.promotional_hero_image.aspect_ratio }}"
-                    data-sizes="auto"
-                    data-parent-fit="cover"
-                    alt="{{ settings.promotional_hero_image.alt | escape }}">
+                   src="{{ block.settings.image | img_url: 'master' }}"
+                   data-src="{{ settings.promotional_hero_image }}"
+                   data-aspectratio="{{ settings.promotional_hero_image.aspect_ratio }}"
+                   data-sizes="auto"
+                   alt="{{ settings.promotional_hero_image.alt | escape }}">
+              
             </div>
       
           {%- else -%}
