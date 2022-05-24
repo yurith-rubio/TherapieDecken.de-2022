@@ -40,7 +40,7 @@ header.html-text-wr{
     {%- capture section_content -%}
  
     <div class="FeaturedImage-banner">
-     <img src="{{ section.settings.image | img_url: '800x' }}" alt="{{ section.settings.image.alt | escape }}">
+     <img class="Image--lazyLoad" data-src="{{ section.settings.image | img_url: '800x' }}" alt="{{ section.settings.image.alt | escape }}">
     </div>
     <div class="FeatureText__ContentWrapper FeaturedText__banner"
         {% for block in section.blocks %} style="background-color:{{ block.settings.bg-color-text-html }}; {% endfor %}">
