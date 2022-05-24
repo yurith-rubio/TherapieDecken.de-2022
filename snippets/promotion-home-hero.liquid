@@ -32,7 +32,7 @@
       	  {% endcomment %}
           {%- if settings.promotional_hero_image -%}
 
-            <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} hidden-phone"
+            <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}"
                  style="{% unless section.settings.show_fullscreen %}padding-bottom: {{ 100.0 | divided_by: settings.promotional_hero_image.aspect_ratio }}%; --aspect-ratio: {{ settings.promotional_hero_image.aspect_ratio }};{% endunless %} background-image: url({{ settings.promotional_hero_image | img_url: '1x1', format: 'jpg' }})">
                 <img class="Slideshow__Image promo-heroImage" src="{{ desktop_image | img_url: '1000x' }}" alt="{{ desktop_image.alt | escape }}">
               
