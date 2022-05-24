@@ -24,7 +24,7 @@
           {%- if mobile_image -%}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio{% endunless %} hidden-tablet-and-up"
                  style="{% unless section.settings.show_fullscreen %}--aspect-ratio: {{ mobile_image.aspect_ratio }};{% endunless %} background-image: url({{ mobile_image | img_url: '1x1', format: 'jpg' }})">
-                  <img class="Slideshow__Image" src="{{ mobile_image | img_url: 'x800' }}" alt="{{ mobile_image.alt | escape }}">
+                  <img class="Slideshow__Image" src="{{ mobile_image | img_url: 'x600' }}" alt="{{ mobile_image.alt | escape }}">
             </div>
           {%- endif -%}
           {%- if settings.promotional_hero_image -%}
