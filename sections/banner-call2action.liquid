@@ -8,7 +8,6 @@
     {%- capture section_content -%}
  
     <div class="FeaturedImage-banner">
-     <img class="Image--lazyLoad" data-src="{{ section.settings.image | img_url: '800x' }}" alt="{{ section.settings.image.alt | escape }}">
       {% assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
       <img class="Slideshow__Image Image--lazyLoad"
            src="{{ section.settings.image | img_url: 'x300' }}"
