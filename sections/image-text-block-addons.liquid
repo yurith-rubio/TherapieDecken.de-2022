@@ -7,7 +7,7 @@
 </style>
 
 <section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="image-with-text-block">
-  {%- capture mobile_size -%}400x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
+  {%- capture mobile_size -%}500x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
 
   <div class="FlexboxIeFix FlexboxAddon">
     <div class="ImageHero ImageHero--large" {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1', format: 'pjpg' }}); background:#E6E6E6; background-size: auto;"{% endif %}>
