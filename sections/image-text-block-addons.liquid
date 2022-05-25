@@ -16,7 +16,8 @@
           <div class="ImageHero__Addons Image--lazyLoad Image--zoomOut {% if section.settings.show_parallax %}ImageHero__Image--parallax{% endif %}" style=" background-size: cover;"
                data-optimumx="1.4"
                data-expand="-150"
-               {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: mobile_size, crop: 'center' }} 750w, {{ section.settings.image | img_url: '1000x' }} 1000w, {{ section.settings.image | img_url: '1500x' }} 1500w"{% endif %}>
+               {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: mobile_size, crop: 'center' }} 400w, {{ section.settings.image | img_url: '1000x' }} 1000w, {{ section.settings.image | img_url: '1500x' }} 1500w"{% endif %}>
+            
           </div>
 
         <noscript>
