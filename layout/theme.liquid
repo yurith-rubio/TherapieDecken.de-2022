@@ -166,8 +166,7 @@
 
   <body class="prestige--v4 {{ classes }} {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
     
-    {% comment %} JQuery library - Yurith {% endcomment %}
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
     
     <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
     <span class="LoadingBar"></span>
@@ -244,7 +243,8 @@
 	{% render "starapps-product-json", product: product, starapps_app: "VIA", starapps_attribute: "sa-product-json" %}
     <script type="text/javascript" src="https://bcdn.starapps.studio/apps/via/therapiedecken/script-1631272472.js?shop={{shop.permanent_domain}}" async></script>
     <!-- starapps_scripts_end -->
-    
+    {% comment %} JQuery library - Yurith {% endcomment %}
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     <script src="https://cdn.polyfill.io/v3/polyfill.min.js?unknown=polyfill&features=fetch,Element.prototype.closest,Element.prototype.remove,Element.prototype.classList,Array.prototype.includes,Array.prototype.fill,Object.assign,CustomEvent,IntersectionObserver,IntersectionObserverEntry,URL" defer></script>
     {{ 'countdown.js' | asset_url | script_tag }}
     {% comment %}<script src="{{ 'theme2.js' | asset_url }}" defer></script>{% endcomment %}
