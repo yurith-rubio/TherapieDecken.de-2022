@@ -9,6 +9,15 @@
  
     <div class="FeaturedImage-banner">
      <img class="Image--lazyLoad" data-src="{{ section.settings.image | img_url: '800x' }}" alt="{{ section.settings.image.alt | escape }}">
+      {% assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+      <img class="Slideshow__Image Image--lazyLoad"
+           src="{{ section.settings.image | img_url: 'x300' }}"
+           data-src="{{ img_url }}"
+           data-widths="[380, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+           data-aspectratio="{{ section.settings.image.aspect_ratio }}"
+           data-sizes="auto"
+           data-parent-fit="cover"
+           alt="{{ section.settings.image.alt | escape }}">
     </div>
     <div class="FeatureText__ContentWrapper FeaturedText__banner"
         {% for block in section.blocks %} style="background-color:{{ block.settings.bg-color-text-html }}; {% endfor %}">
