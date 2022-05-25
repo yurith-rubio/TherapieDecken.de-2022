@@ -51,8 +51,6 @@
   {% endpaginate %}
 {% endif %}
 
-
-
 {% if product.title contains 'Gesundheitskissen' %}
   {% comment %}Find comparable product by title - Suggested COVER Upsell on Pillow Product Pages {% endcomment %}
   {% assign pillow_title_base = product.title | remove: 'Gesundheitskissen' | strip %}
