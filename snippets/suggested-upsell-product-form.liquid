@@ -1,7 +1,8 @@
 {{ 'suggested_upsell_product.css' | asset_url | stylesheet_tag }}
 
-{% comment %}Find comparable product by title - Suggested PILLOW Upsell on Cover Product Pages {% endcomment %}
+
 {% if product.title contains 'Therapiedecken Baumwollbezug' or product.title contains 'Therapiedecken Basic Bezug' %}
+  {% comment %}Find comparable product by title - Suggested PILLOW Upsell on Cover Product Pages {% endcomment %}
   {% if product.title contains 'Therapiedecken Baumwollbezug' %}
       {% assign cover_title_base = product.title | remove: 'Therapiedecken Baumwollbezug' | strip %}
   {% endif %}
