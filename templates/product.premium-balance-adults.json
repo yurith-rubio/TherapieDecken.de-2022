@@ -112,6 +112,14 @@
             "summary": "28 Tage Probeschlafen",
             "content": "Mit dem Kauf einer Therapiedecke erhalten Sie automatisch die Möglichkeit, diese ab Erhalt 28 Tage lang zu testen. So finden Sie heraus, ob Gewicht und Modell passend für Sie sind. Bei Nichtgefallen können Sie die Ware retournieren oder unseren kostenlosen Umtausch in Anspruch nehmen."
           }
+        },
+        "cf8da4a7-c35e-46c0-b610-f5233c8d3363": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "washing_machine",
+            "summary": "Pflegehinweise",
+            "content": "Die 4-Jahreszeiten Bezüge können bei 40°, die Baumwollbezüge bei 30° gewaschen werden. Das Balance Inlett ist nicht waschbar. Regelmäßiges Auslüften und Abwischen ist ausreichend."
+          }
         }
       },
       "block_order": [
@@ -119,7 +127,8 @@
         "b80a235a-3817-42f9-b2d5-9a98afb675b8",
         "dafcf498-5a5d-439d-bce0-c5bbda17aa63",
         "7a3dbf4b-baba-49ee-8285-2db331e9f895",
-        "40379873-43e4-4165-ac51-c5c79455cc47"
+        "40379873-43e4-4165-ac51-c5c79455cc47",
+        "cf8da4a7-c35e-46c0-b610-f5233c8d3363"
       ],
       "settings": {
         "sub-heading": "Premium Therapiedecke",
