@@ -35,8 +35,8 @@
                  style="{% unless section.settings.show_fullscreen %}padding-bottom: {{ 100.0 | divided_by: settings.promotional_hero_image.aspect_ratio }}%; --aspect-ratio: {{ settings.promotional_hero_image.aspect_ratio }};{% endunless %} background-image: url({{ settings.promotional_hero_image | img_url: '1x1', format: 'jpg' }})">
 			        {% assign img_url = settings.promotional_hero_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
               <img class="Slideshow__Image"
-                   loading=”eager”
-                   rel=”preload”
+                   loading="eager"
+                   rel="preload"
                    src="{{ settings.promotional_hero_image | img_url: 'x800' }}"
                    data-src="{{ img_url }}"
                    data-widths="[380, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
