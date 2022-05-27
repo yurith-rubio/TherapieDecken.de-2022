@@ -2,10 +2,22 @@
 {{ 'promotion-home-hero.css' | asset_url | stylesheet_tag }}
 {{ 'slideshow.css' | asset_url | stylesheet_tag }}
 
+{%- capture flickity_options -%}
+{
+  "prevNextButtons": false,
+  "setGallerySize": {% if section.settings.show_fullscreen %}false{% else %}true{% endif %},
+  "adaptiveHeight": {% if section.settings.show_fullscreen %}false{% else %}true{% endif %},
+  "wrapAround": true,
+  "dragThreshold": 15,
+  "pauseAutoPlayOnHover": false,
+  "autoPlay": {% if section.settings.autoplay %}{{ section.settings.cycle_speed | times: 1000 }}{% else %}false{% endif %},
+  "pageDots": {% if section.blocks.size > 1 %}true{% else %}false{% endif %}
+}
+{%- endcapture -%}
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="slideshow">
   <div class="Slideshow {% if section.settings.show_fullscreen %}Slideshow--fullscreen{% endif %}">
     <div class="Slideshow__Carousel {% if section.settings.show_arrow %}Slideshow__Carousel--withScrollButton{% endif %} Carousel Carousel--fadeIn {% if section.settings.show_fullscreen %}Carousel--fixed{% endif %} Carousel--insideDots"
-         >
+         data-flickity-config='{{ flickity_options }}'>
       {%- for block in section.blocks -%}
         {%- capture slide_content -%}
 
