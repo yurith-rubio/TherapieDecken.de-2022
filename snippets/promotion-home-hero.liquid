@@ -33,9 +33,10 @@
       
       
           {%- if settings.promotional_hero_image -%}
+      		{% assign img_url = settings.promotional_hero_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}"
-                 style="background-image: url({{ settings.promotional_hero_image | img_url: '1x1', format: 'jpg' }})">
-			        {% assign img_url = settings.promotional_hero_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+                 style="background-image: url({{ img_url }})">
+			        
             </div>
       
           {%- else -%}
