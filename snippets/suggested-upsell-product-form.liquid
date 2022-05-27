@@ -87,7 +87,7 @@
   {% endpaginate %}
 {% endif %}
 
-{% if product.handle == 'balance-gewichtsdecke-fur-erwachsene' or product.handle == 'therapiedecken' or product.handle == 'basic-gravity-gewichtsdecke-fur-erwachsene'  %}
+{% if product.handle == 'balance-gewichtsdecke-fur-erwachsene' or product.handle == 'therapiedecken' or product.handle == 'basic-gravity-gewichtsdecke-fur-erwachsene' or product.handle == 'premium-balance-gewichtsdecke-fur-kinder' or product.handle == 'gravity-gewichtsdecke-fur-kinder' or product.handle == 'medizinische-gewichtsdecke-fur-kinder' %}
   {% assign upseli_product = all_products['hellgraues-therapiekissen-fur-erwachsene'] %}
   {%- assign image_url = upseli_product.images[0] | image_url: width: 300 -%}
   <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
