@@ -87,7 +87,7 @@
   {% endpaginate %}
 {% endif %}
 
-{% if product.handle == 'balance-gewichtsdecke-fur-erwachsene' or product.handle == 'therapiedecken' or product.handle == 'products/basic-gravity-gewichtsdecke-fur-erwachsene'  %}
+{% if product.handle == 'balance-gewichtsdecke-fur-erwachsene' or product.handle == 'therapiedecken' or product.handle == 'basic-gravity-gewichtsdecke-fur-erwachsene'  %}
 	Test
   {%- assign image_url = product.images[0] | image_url: width: 300 -%}
   <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
