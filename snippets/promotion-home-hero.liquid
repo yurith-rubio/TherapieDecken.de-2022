@@ -35,7 +35,7 @@
           {%- if settings.promotional_hero_image -%}
       		{% assign img_url = settings.promotional_hero_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}"
-                 style="background-image: url('https://cdn.shopify.com/s/files/1/2451/6611/files/TD_Father_s_day_promotion_-_main_image_x800.jpg?v=1653034340'); background-size: cover;">
+                 style="background-image: url('https://cdn.shopify.com/s/files/1/2451/6611/files/TD_Father_s_day_promotion_-_main_image_x800.jpg?v=1653034340'); background-size: cover; background-position: right;">
 			        
             </div>
       
