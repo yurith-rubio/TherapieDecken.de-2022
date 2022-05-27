@@ -29,6 +29,21 @@
                   <img class="Slideshow__Image" src="{{ mobile_image | img_url: 'x400' }}" alt="{{ mobile_image.alt | escape }}">
             </div>
           {%- endif -%}
+      
+      
+                {%- capture slideshow_content -%}
+			<div class="promotion-home-hero_content_container">
+  	          <div class="home_promotional_content_wrapper">
+                <img class="homePromotional_art_desktop Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_Father_s_day_promotion.svg?v=1653035128" alt="Therapiedecken Father's day homepage">
+                {%- if settings.button_1_text != blank -%}
+                  <div class="home_promotional_bottom_part">
+                    <a href="{{ settings.button_1_link }}" class="promotion-home-hero_button Button Button--primary" >{{ settings.button_1_text | escape }}</a>
+                  </div>
+                {%- endif -%}
+               </div>
+			</div>
+          {%- endcapture -%}
+      
       	  {% endcomment %}
           {%- if settings.promotional_hero_image -%}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}"
@@ -53,18 +68,7 @@
             </div>
           {%- endif -%}
 
-          {%- capture slideshow_content -%}
-			<div class="promotion-home-hero_content_container">
-  	          <div class="home_promotional_content_wrapper">
-                <img class="homePromotional_art_desktop Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_Father_s_day_promotion.svg?v=1653035128" alt="Therapiedecken Father's day homepage">
-                {%- if settings.button_1_text != blank -%}
-                  <div class="home_promotional_bottom_part">
-                    <a href="{{ settings.button_1_link }}" class="promotion-home-hero_button Button Button--primary" >{{ settings.button_1_text | escape }}</a>
-                  </div>
-                {%- endif -%}
-               </div>
-			</div>
-          {%- endcapture -%}
+
 
           {%- if slideshow_content != blank -%}
             <div class="Slideshow__Content Slideshow__Content--{{ block.settings.content_position }}">
