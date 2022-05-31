@@ -1,1 +1,94 @@
-{"sections":{"main":{"type":"therapiedecken-depressionen","settings":{}},"1631200086add15fc4":{"type":"custom-html","settings":{"html":"<div class=\"lp-header__ads\" style=\"max-width: 680px; margin: auto;\">\n             <div class=\"lp-row\">\n                <div class=\"lp-col\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0053\/3243\/4990\/files\/Bekannt_aus_Gewichtsdecke_Brigitte_Galileo_Freundin_1.jpg?v=157685361\"><\/div>\n                <div class=\"lp-col\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/gewichtsdecke_westwing_welt_suddeutsche_copy.jpg?v=1587297450\"><\/div>\n             <\/div>\n          <\/div>","spacer":"50px","bg-color":""}},"163120016676db3bb4":{"type":"html-with-image","settings":{"bg-color":"","bg-color-text-html":"","subheading":"","title":"Sie fühlen sich innerlich ausgelaugt und antriebslos?","image":"shopify:\/\/shop_images\/depression.jpg","image_position":"right","content_html":"<p>Viele Menschen, die an Depressionen erkrankt sind, klagen über Schwierigkeiten beim Ein- und Durchschlafen. Sie wachen mehrmals in der Nacht oder morgens sehr früh auf und liegen dann nachdenklich im Bett. Häufig sind auch die Schlafstörungen zuerst da, dann beginnt die Depression. Verschiedene Studien belegen, dass ein dauerhaft gestörter Schlaf das Risiko an einer Depression zu erkranken erheblich steigert. Auffällig ist auch, dass bei depressiven Menschen im Vergleich zu Gesunden die Werte des Stresshormons Cortisol deutlich erhöht sind. Cortisol stört den Schlaf und sorgt dafür, dass man sich wach und unruhig fühlt.\n\n<\/p>","content_rich":"","link_text":"","link_url":""}},"163120026751f93cb7":{"type":"html-with-image","settings":{"bg-color":"","bg-color-text-html":"","subheading":"","title":"Schlafstörungen einer Depression mit der Therapiedecke bekämpfen","image":"shopify:\/\/shop_images\/zakopane-98.jpg","image_position":"left","content_html":"<p>Durch das Auflegen der schweren Therapiedecke werden die Ausschüttung des Glückshormons Serotonin und des Schlafhormons Melatonin gefördert. Zudem wird durch den Druck der Decke auf den Körper der Cortisolspiegel gesenkt. Die Muskeln und das Nervensystem entspannen sich, Ängste werden gemindert und der Körper kann sich insgesamt leichter von angestautem Stress erholen und das Ein- und Durchschlafen wird erleichtert.\n\n<\/p>","content_rich":"","link_text":"","link_url":""}},"16312002714b1fc786":{"type":"custom-html","settings":{"html":"<div style=\"margin: 50px 0 60px;\"><a class=\"Button Button--primary\" href=\"\/collections\/erwachsene\/products\/therapiedecken\">Jetzt Testen<\/a><\/div>","spacer":"50px","bg-color":""}}},"order":["main","1631200086add15fc4","163120016676db3bb4","163120026751f93cb7","16312002714b1fc786"]}
+{
+  "sections": {
+    "1654022734f31633e9": {
+      "type": "page-standard-header",
+      "settings": {
+        "custom_title": false,
+        "custom_title_text": "Customize Title if needed",
+        "image": "shopify:\/\/shop_images\/td-sad_a3f33d71-4207-4243-af8a-800x535px_3a714774-001a-474a-ba49-758925c25abe.jpg",
+        "mobile_custom": false,
+        "apply_overlay": true,
+        "review_starts": true,
+        "content": "<p>99% zufriedene Kunden<\/p>"
+      }
+    },
+    "main": {
+      "type": "therapiedecken-depressionen",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1631200086add15fc4": {
+      "type": "custom-html",
+      "settings": {
+        "html": "<div class=\"lp-header__ads\" style=\"max-width: 680px; margin: auto;\">\n             <div class=\"lp-row\">\n                <div class=\"lp-col\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0053\/3243\/4990\/files\/Bekannt_aus_Gewichtsdecke_Brigitte_Galileo_Freundin_1.jpg?v=157685361\"><\/div>\n                <div class=\"lp-col\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/gewichtsdecke_westwing_welt_suddeutsche_copy.jpg?v=1587297450\"><\/div>\n             <\/div>\n          <\/div>",
+        "spacer": "50px",
+        "bg-color": ""
+      }
+    },
+    "163120016676db3bb4": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "",
+        "title": "Sie fühlen sich innerlich ausgelaugt und antriebslos?",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/depression.jpg",
+        "image_position": "right",
+        "content_html": "<p>Viele Menschen, die an Depressionen erkrankt sind, klagen über Schwierigkeiten beim Ein- und Durchschlafen. Sie wachen mehrmals in der Nacht oder morgens sehr früh auf und liegen dann nachdenklich im Bett. Häufig sind auch die Schlafstörungen zuerst da, dann beginnt die Depression. Verschiedene Studien belegen, dass ein dauerhaft gestörter Schlaf das Risiko an einer Depression zu erkranken erheblich steigert. Auffällig ist auch, dass bei depressiven Menschen im Vergleich zu Gesunden die Werte des Stresshormons Cortisol deutlich erhöht sind. Cortisol stört den Schlaf und sorgt dafür, dass man sich wach und unruhig fühlt.\n\n<\/p>",
+        "content_rich": "",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "163120026751f93cb7": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "",
+        "title": "Schlafstörungen einer Depression mit der Therapiedecke bekämpfen",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/zakopane-98.jpg",
+        "image_position": "left",
+        "content_html": "<p>Durch das Auflegen der schweren Therapiedecke werden die Ausschüttung des Glückshormons Serotonin und des Schlafhormons Melatonin gefördert. Zudem wird durch den Druck der Decke auf den Körper der Cortisolspiegel gesenkt. Die Muskeln und das Nervensystem entspannen sich, Ängste werden gemindert und der Körper kann sich insgesamt leichter von angestautem Stress erholen und das Ein- und Durchschlafen wird erleichtert.\n\n<\/p>",
+        "content_rich": "",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "16312002714b1fc786": {
+      "type": "custom-html",
+      "settings": {
+        "html": "<div style=\"margin: 50px 0 60px;\"><a class=\"Button Button--primary\" href=\"\/collections\/erwachsene\/products\/therapiedecken\">Jetzt Testen<\/a><\/div>",
+        "spacer": "50px",
+        "bg-color": ""
+      }
+    }
+  },
+  "order": [
+    "1654022734f31633e9",
+    "main",
+    "1631200086add15fc4",
+    "163120016676db3bb4",
+    "163120026751f93cb7",
+    "16312002714b1fc786"
+  ]
+}
