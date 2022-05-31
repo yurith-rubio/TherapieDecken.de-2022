@@ -1,1 +1,103 @@
-{"sections":{"main":{"type":"therapiedecken-langzeitsymptomen","settings":{}},"163119617322b3bf95":{"type":"custom-html","settings":{"html":"<div style=\"margin: 10px 0 60px;\"><a class=\"Button Button--primary\" href=\"\/collections\/erwachsene\/products\/therapiedecken\">Jetzt Testen<\/a><\/div>","spacer":"50px","bg-color":""}},"16311956722d261f8e":{"type":"html-with-image","settings":{"bg-color":"","bg-color-text-html":"","subheading":"","title":"Sie leiden nach Ihrer Corona Erkrankung unter anhaltenden Schlafproblemen?","image":"shopify:\/\/shop_images\/Stress_aac6e1eb-bc80-4a6a-918f-5262adf949fb.jpg","image_position":"right","content_html":"<p>Bisher ist die Studienlage zu den Langzeitfolgen von Corona Infektionen noch vage. Klar ist, dass bis zu 20 Prozent aller Infizierten auch noch nach ihrer Corona Erkrankung an verschiedenen Symptomen wie Müdigkeit, Erschöpfung, Atemprobleme und Konzentrationsstörungen leiden. Anhaltende Schlafprobleme führen dabei häufig zu einer Verschlechterung des allgemeinen Zustandes, da sich im Schlaf unser Körper regeneriert und Krankheiten abwehrt.\n\n<\/p>","content_rich":"","link_text":"","link_url":""}},"1631196169a64fd4d5":{"type":"html-with-image","settings":{"bg-color":"","bg-color-text-html":"","subheading":"","title":"Langzeitsymptome von Corona mit 12kg schweren Decken verbessern","image":"shopify:\/\/shop_images\/Sleeping.jpg","image_position":"left","content_html":"<p>Mit Hilfe des Gewichts der Therapiedecke wird die Ausschüttung des Glückshormons Serotonin und des Schlafhormons Melatonin gefördert. Der Körper kann sich schneller entspannen und das Ein- und Durchschlafen wird erleichtert. Das Ergebnis ist ein Gefühl von innerer Ruhe, Gelassenheit und Entspannung. Das Nervensystem beruhigt sich und die Atmung wird ruhiger.\n\n<\/p>","content_rich":"","link_text":"","link_url":""}},"1631196513f4e0625f":{"type":"custom-html","settings":{"html":"<div style=\"margin: 50px 0 60px;\"><a class=\"Button Button--primary\" href=\"\/collections\/erwachsene\/products\/therapiedecken\">Jetzt Testen<\/a><\/div>","spacer":"50px","bg-color":""}},"1631196527fa31a893":{"type":"custom-html","settings":{"html":"<h2 class=\"Heading u-h2\">Therapiedecken sind bekannt aus:<\/h2>\n<div class=\"lp-header__ads\" style=\"max-width: 680px; margin: auto;\">\n             <div class=\"lp-row\">\n                <div class=\"lp-col\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0053\/3243\/4990\/files\/Bekannt_aus_Gewichtsdecke_Brigitte_Galileo_Freundin_1.jpg?v=157685361\"><\/div>\n                <div class=\"lp-col\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/gewichtsdecke_westwing_welt_suddeutsche_copy.jpg?v=1587297450\"><\/div>\n             <\/div>\n          <\/div>","spacer":"50px","bg-color":""}}},"order":["main","163119617322b3bf95","16311956722d261f8e","1631196169a64fd4d5","1631196513f4e0625f","1631196527fa31a893"]}
+{
+  "sections": {
+    "16540230350bd4977e": {
+      "type": "page-standard-header",
+      "settings": {
+        "custom_title": false,
+        "custom_title_text": "Customize Title if needed",
+        "image": "shopify:\/\/shop_images\/covid-800x535px_a7fc12f8-9448-4d8b-a94b-923a164595f8.jpg",
+        "mobile_custom": false,
+        "apply_overlay": true,
+        "review_starts": true,
+        "content": "<p>Über 50.000 zufriedene Verwender<\/p>"
+      }
+    },
+    "main": {
+      "type": "therapiedecken-langzeitsymptomen",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "163119617322b3bf95": {
+      "type": "custom-html",
+      "settings": {
+        "html": "<div style=\"margin: 10px 0 60px;\"><a class=\"Button Button--primary\" href=\"\/collections\/erwachsene\/products\/therapiedecken\">Jetzt Testen<\/a><\/div>",
+        "spacer": "50px",
+        "bg-color": ""
+      }
+    },
+    "16311956722d261f8e": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "",
+        "title": "Sie leiden nach Ihrer Corona Erkrankung unter anhaltenden Schlafproblemen?",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/Stress_aac6e1eb-bc80-4a6a-918f-5262adf949fb.jpg",
+        "image_position": "right",
+        "content_html": "<p>Bisher ist die Studienlage zu den Langzeitfolgen von Corona Infektionen noch vage. Klar ist, dass bis zu 20 Prozent aller Infizierten auch noch nach ihrer Corona Erkrankung an verschiedenen Symptomen wie Müdigkeit, Erschöpfung, Atemprobleme und Konzentrationsstörungen leiden. Anhaltende Schlafprobleme führen dabei häufig zu einer Verschlechterung des allgemeinen Zustandes, da sich im Schlaf unser Körper regeneriert und Krankheiten abwehrt.\n\n<\/p>",
+        "content_rich": "",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "1631196169a64fd4d5": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "none",
+        "subheading": "",
+        "title": "Langzeitsymptome von Corona mit 12kg schweren Decken verbessern",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/Sleeping.jpg",
+        "image_position": "left",
+        "content_html": "<p>Mit Hilfe des Gewichts der Therapiedecke wird die Ausschüttung des Glückshormons Serotonin und des Schlafhormons Melatonin gefördert. Der Körper kann sich schneller entspannen und das Ein- und Durchschlafen wird erleichtert. Das Ergebnis ist ein Gefühl von innerer Ruhe, Gelassenheit und Entspannung. Das Nervensystem beruhigt sich und die Atmung wird ruhiger.\n\n<\/p>",
+        "content_rich": "",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "1631196513f4e0625f": {
+      "type": "custom-html",
+      "settings": {
+        "html": "<div style=\"margin: 50px 0 60px;\"><a class=\"Button Button--primary\" href=\"\/collections\/erwachsene\/products\/therapiedecken\">Jetzt Testen<\/a><\/div>",
+        "spacer": "50px",
+        "bg-color": ""
+      }
+    },
+    "1631196527fa31a893": {
+      "type": "custom-html",
+      "settings": {
+        "html": "<h2 class=\"Heading u-h2\">Therapiedecken sind bekannt aus:<\/h2>\n<div class=\"lp-header__ads\" style=\"max-width: 680px; margin: auto;\">\n             <div class=\"lp-row\">\n                <div class=\"lp-col\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0053\/3243\/4990\/files\/Bekannt_aus_Gewichtsdecke_Brigitte_Galileo_Freundin_1.jpg?v=157685361\"><\/div>\n                <div class=\"lp-col\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/gewichtsdecke_westwing_welt_suddeutsche_copy.jpg?v=1587297450\"><\/div>\n             <\/div>\n          <\/div>",
+        "spacer": "50px",
+        "bg-color": ""
+      }
+    }
+  },
+  "order": [
+    "16540230350bd4977e",
+    "main",
+    "163119617322b3bf95",
+    "16311956722d261f8e",
+    "1631196169a64fd4d5",
+    "1631196513f4e0625f",
+    "1631196527fa31a893"
+  ]
+}
