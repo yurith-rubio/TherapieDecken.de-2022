@@ -2,48 +2,48 @@
 
 {% style %}
 
-.tm22_wr_lp{
+.tmex_wr_lp{
   display: flex;
   flex-wrap: wrap;
   max-width: 990px;
   justify-content: space-around;
 }
 
-.tm22_wr_lp > div {
+.tmex_wr_lp > div {
   width: 300px;
 }
 
-<!--.tm22_wr_hp{
+<!--.tmex_wr_hp{
   display: flex;
   max-width: 990px;
   justify-content: center;
 }
-.tm22_wr_hp > div {
+.tmex_wr_hp > div {
   width: 380px;
 }-->
 
 @media only screen and (max-width: 640px){
-  .tm22_wr_hidden {
+  .tmex_wr_hidden {
     display: none !important;
   }
-  .tm22_wr_hp{
+  .tmex_wr_hp{
 	flex-wrap: wrap;
   }
 }
 @media only screen and (min-width: 641px){
 }
-.tm22_wr_quote {
+.tmex_wr_quote {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: -150px 20px 30px 20px;
 }
 
-.tm22_wr_quote a:before {
+.tmex_wr_quote a:before {
     height: 0px!important;
 }
 
-.tm22_pic_wr {
+.tmex_pic_wr {
     position: relative;
     width: 150px!important;
     height: 150px!important;
@@ -53,7 +53,7 @@
     bottom: -150px;
 }
 
-.tm22_text_wr {
+.tmex_text_wr {
   background-color: #ffffff;
   border-radius: 10px;
   margin-top: 75px;
@@ -65,26 +65,26 @@
   min-height: 385px;
 }
 
-.tm22_wr_lp > div a {
+.tmex_wr_lp > div a {
     text-decoration: none!important;
 }
 
-.tm22_wr_lp img, .tm22_pic_wr img {
+.tmex_wr_lp img, .tmex_pic_wr img {
 	max-width: 100%!important;
 }
 
-.tm22_left_quote{
+.tmex_left_quote{
   margin-top: 10px;
   margin-bottom: -5px;
 }
-.tm22_citation > p {
+.tmex_citation > p {
   overflow: hidden;
 }
-.tm22_citation > p {
+.tmex_citation > p {
   margin: 0px;
   overflow: hidden;
 }
-.tm22_img{
+.tmex_img{
   height: inherit;
 }
 
@@ -95,34 +95,34 @@
   <div class="Container--standard--medium centered section-space-medium">
   	<h2 style="margin-bottom: 40px;" class="Heading u-h2">{{ section.settings.header }}</h2>
   
-  	<div class="tm22_wr_hp">
+  	<div class="tmex_wr_hp">
       <div class="owl-carousel">
       {% for block in section.blocks %}
-      	<div class="tm22_wr_quote item">
-          <div class="tm22_pic_wr">
+      	<div class="tmex_wr_quote item">
+          <div class="tmex_pic_wr">
             <img
               style="border-radius: 50%"
-              class="tm22_img Image--lazyLoad"
-              data-src="{{ block.settings.tm22_picture | img_url:'master' }}"
-              src="{{ block.settings.tm22_picture | img_url:'master' }}"
+              class="tmex_img Image--lazyLoad"
+              data-src="{{ block.settings.tmex_picture | img_url:'master' }}"
+              src="{{ block.settings.tmex_picture | img_url:'master' }}"
               alt=""
             />
           </div>
 
-            <div class="tm22_text_wr">
-              <div style="font-weight: bold; margin-bottom: 0px" class="gral_font_16px tm22_name">
-                {{ block.settings.tm22_name }}
+            <div class="tmex_text_wr">
+              <div style="font-weight: bold; margin-bottom: 0px" class="gral_font_16px tmex_name">
+                {{ block.settings.tmex_name }}
               </div>
-              {% if block.settings.tm22_role != blank %}
-              <div style="font-weight: normal; height: 50px" class="gral_font_16px tm22_name">
-                {{ block.settings.tm22_role }}
+              {% if block.settings.tmex_role != blank %}
+              <div style="font-weight: normal; height: 50px" class="gral_font_16px tmex_name">
+                {{ block.settings.tmex_role }}
               </div>
               {% endif %}
-              <div class="tm22_left_quote">
+              <div class="tmex_left_quote">
                 <span class="gral_icon21_yellow gral_font_20px icon-left-quote"></span>
               </div>
-              <div class="tm22_citation">
-                {{ block.settings.tm22_paragraph }}
+              <div class="tmex_citation">
+                {{ block.settings.tmex_paragraph }}
               </div>
               <div>
                 <span style="position: relative; left: 220px" class="gral_icon21_yellow gral_font_20px icon-right-quote"></span>
@@ -136,7 +136,7 @@
 </div>
 
 <script>
-$('.tm22_wr_hp .owl-carousel').owlCarousel({
+$('.tmex_wr_hp .owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     dots:true,
@@ -183,23 +183,23 @@ $('.tm22_wr_hp .owl-carousel').owlCarousel({
                 {
                   "type": "image_picker",
                   "label": "Picture",
-                  "id": "tm22_picture"						
+                  "id": "tmex_picture"						
                 },
                 {
                   "type": "text",
-                  "id": "tm22_name",
+                  "id": "tmex_name",
                   "label": "Name",
                   "default": "Joe Doe"
                 },
                 {
                   "type": "text",
-                  "id": "tm22_role",
+                  "id": "tmex_role",
                   "label": "Role",
                   "default": "Psychologin"
                 },
                 {
                   "type": "richtext",
-                  "id": "tm22_paragraph",
+                  "id": "tmex_paragraph",
                   "label": "Citation 1",
                   "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>"
                 }
