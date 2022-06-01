@@ -1,7 +1,10 @@
 <!-- section: experts-testimonials-left.liquid -->
 
 {% style %}
-
+.expert-testimonial-container{
+	max-width: 1200px;
+margin: 0 auto;
+}
 .tmex_wr_lp{
   display: flex;
   flex-wrap: wrap;
@@ -71,7 +74,7 @@ width: 185px;
 
 
 <div class="full-bg-color-prestige" style="{% if section.settings.bg-color != blank %}background-color: {{ section.settings.bg-color }};{% endif %}">
-  <div class="Container--standard centered section-space-medium">
+  <div class="expert-testimonial-container centered section-space-medium">
   	<h2 style="margin-bottom: 40px;" class="Heading u-h2">{{ section.settings.header }}</h2>
   
   	<div class="tmex_wr_hp">
@@ -117,7 +120,7 @@ width: 185px;
 <script>
 $('.tmex_wr_hp .owl-carousel').owlCarousel({
     loop:true,
-    margin:60,
+    margin:100,
     dots:true,
     responsiveClass:true,
     responsive:{
