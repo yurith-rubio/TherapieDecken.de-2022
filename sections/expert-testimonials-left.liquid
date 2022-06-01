@@ -96,7 +96,8 @@
   
   	<div class="tm22_wr_hp">
       {% for block in section.blocks %}
-        <div class="tm22_wr_quote">
+      <div class="owl-carousel">
+      	<div class="tm22_wr_quote item">
           <div class="tm22_pic_wr">
             <img
               style="border-radius: 50%"
@@ -127,10 +128,31 @@
               </div>
             </div>
         </div>
+      </div>
       {% endfor %}
     </div>
   </div>
 </div>
+
+<script>
+$('.tm22_wr_hp .owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+</script>
 
 {% schema %}
   {
