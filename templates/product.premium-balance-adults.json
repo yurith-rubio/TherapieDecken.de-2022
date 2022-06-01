@@ -136,14 +136,6 @@
         "video_url": "https:\/\/player.vimeo.com\/video\/399192093"
       }
     },
-    "16540816874745e5fc": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "paddings": false,
-        "custom_liquid": "{% render 'erwachsene-gewichtsdecke-reviews' %}"
-      }
-    },
     "1654091167e0500dd2": {
       "type": "expert-testimonials-left",
       "blocks": {
@@ -507,7 +499,6 @@
     "1629459987d4cac0a9",
     "16291457001a7d71ef",
     "1629451775c72cd56a",
-    "16540816874745e5fc",
     "1654091167e0500dd2",
     "16294611499d6cacbd",
     "1629462422c7c337fa",
