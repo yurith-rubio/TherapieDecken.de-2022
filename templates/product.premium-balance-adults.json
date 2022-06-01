@@ -143,6 +143,28 @@
         "custom_liquid": "{% render 'erwachsene-gewichtsdecke-reviews' %}"
       }
     },
+    "1654091167e0500dd2": {
+      "type": "expert-testimonials-left",
+      "blocks": {
+        "8a534fa2-a4e9-4479-a3be-a0c04b4cdba5": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tm21_picture": "shopify:\/\/shop_images\/diana_zur_lowen.jpg",
+            "tm21_name": "Joe Doe",
+            "tm21_role": "Psychologin",
+            "tm21_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8a534fa2-a4e9-4479-a3be-a0c04b4cdba5"
+      ],
+      "settings": {
+        "bg-color": "",
+        "header": ""
+      }
+    },
     "16294611499d6cacbd": {
       "type": "advantages-overview",
       "blocks": {
@@ -453,27 +475,6 @@
       "type": "back-to-top-product",
       "settings": {
       }
-    },
-    "1654080713f4c9243a": {
-      "type": "experts-testimonials-custom",
-      "blocks": {
-        "99fd3b6d-c599-4a3e-ab54-c8b3175d29d9": {
-          "type": "testimonial",
-          "settings": {
-            "link": "",
-            "tm21_name": "Joe Doe",
-            "tm21_role": "Psychologin",
-            "tm21_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "99fd3b6d-c599-4a3e-ab54-c8b3175d29d9"
-      ],
-      "settings": {
-        "bg-color": "",
-        "header": "hello"
-      }
     }
   },
   "order": [
@@ -484,6 +485,7 @@
     "16291457001a7d71ef",
     "1629451775c72cd56a",
     "16540816874745e5fc",
+    "1654091167e0500dd2",
     "16294611499d6cacbd",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
@@ -495,7 +497,6 @@
     "16294440249ce6f304",
     "163061824983a1c03c",
     "1634663235f2643922",
-    "16346824644d8e2b78",
-    "1654080713f4c9243a"
+    "16346824644d8e2b78"
   ]
 }
