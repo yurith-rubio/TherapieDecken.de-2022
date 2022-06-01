@@ -131,15 +131,63 @@
     </div>
   </div>
 </div>
+
 {% schema %}
   {
-    "name": "Expert reviews",
-    "settings": []
+    "name": "Expert testimonials left",
+    "settings": [
+            {
+              "type": "color",
+              "id": "bg-color",
+              "label": "Background Color"					
+            },
+            {
+              "type": "text",
+              "id": "header",
+              "label": "Header Title"					
+            }
+				],
+	"blocks": [
+	  {
+            "type": "testimonial",
+            "name": "Expert testimonials left",
+            "settings": [
+                {
+				  "type": "url",
+                  "id": "link",
+                  "label": "Link"					
+                },
+                {
+                  "type": "image_picker",
+                  "label": "Picture",
+                  "id": "tm21_picture"						
+                },
+                {
+                  "type": "text",
+                  "id": "tm21_name",
+                  "label": "Name",
+                  "default": "Joe Doe"
+                },
+                {
+                  "type": "text",
+                  "id": "tm21_role",
+                  "label": "Role",
+                  "default": "Psychologin"
+                },
+                {
+                  "type": "richtext",
+                  "id": "tm21_paragraph",
+                  "label": "Citation 1",
+                  "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>"
+                }
+            ]
+        }
+	],
+	"presets": [
+				{
+                  "category": "Homepage Section",
+                  "name": "Expert testimonials left"
+                  }
+				]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
