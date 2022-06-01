@@ -138,6 +138,7 @@
     },
     "16540816874745e5fc": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "paddings": false,
         "custom_liquid": "{% render 'erwachsene-gewichtsdecke-reviews' %}"
@@ -161,11 +162,7 @@
         "83a85cc3-e03b-4719-918f-33bb9c5286e9": {
           "type": "testimonial",
           "settings": {
-            "link": "",
-            "tm22_picture": "shopify:\/\/shop_images\/covid-800x535px_a7fc12f8-9448-4d8b-a94b-923a164595f8.jpg",
-            "tm22_name": "Joe Doe",
-            "tm22_role": "Psychologin",
-            "tm22_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+            "link": ""
           }
         }
       },
