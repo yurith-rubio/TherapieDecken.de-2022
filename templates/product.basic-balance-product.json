@@ -140,11 +140,37 @@
         "video_url": "https:\/\/player.vimeo.com\/video\/352267408"
       }
     },
-    "16540820832a2671e5": {
-      "type": "custom-liquid",
+    "1654097667dbef902a": {
+      "type": "expert-testimonials-left",
+      "blocks": {
+        "70e90597-be62-4b18-8fa0-922d63d17d02": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/diana_zur_lowen.jpg",
+            "tmex_name": "Diana zur Löwen",
+            "tmex_role": "Unternehmerin & Influencerin",
+            "tmex_paragraph": "<p>Man fühlt sich einfach geborgen und wiein Schutz genommen.  Das hilft mir besonderes, wenn ich wieder sehr nachdenklich und unruhig bin...<\/p>"
+          }
+        },
+        "82e988f3-c28e-41b7-921f-526804f74758": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/markus_ruppert.jpg",
+            "tmex_name": "Markus Ruppert",
+            "tmex_role": "Heilpraktiker & Traumatherapeut",
+            "tmex_paragraph": "<p>Für mich ist die Decke weder privat noch in meiner Arbeit wegzudenken. Es ist ein wichtiges Werkzeug und eine  wertvolle Ressource.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "70e90597-be62-4b18-8fa0-922d63d17d02",
+        "82e988f3-c28e-41b7-921f-526804f74758"
+      ],
       "settings": {
-        "paddings": false,
-        "custom_liquid": "{% render 'erwachsene-gewichtsdecke-reviews' %}"
+        "bg-color": "",
+        "header": "Was experten über die Wirkung von Therapiedecken sagen"
       }
     },
     "16294611499d6cacbd": {
@@ -444,7 +470,7 @@
     "1629459987d4cac0a9",
     "16291457001a7d71ef",
     "1629451775c72cd56a",
-    "16540820832a2671e5",
+    "1654097667dbef902a",
     "16294611499d6cacbd",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
