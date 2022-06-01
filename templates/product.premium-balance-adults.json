@@ -159,17 +159,21 @@
             "link": ""
           }
         },
-        "83a85cc3-e03b-4719-918f-33bb9c5286e9": {
+        "1f4ac89c-e1cf-4f66-897f-c303c9d37e09": {
           "type": "testimonial",
           "settings": {
-            "link": ""
+            "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/caroline_helming.jpg",
+            "tmex_name": "Joe Doe",
+            "tmex_role": "Psychologin",
+            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
           }
         }
       },
       "block_order": [
         "8a534fa2-a4e9-4479-a3be-a0c04b4cdba5",
         "f365e846-0e28-419d-a6f1-f413a24ad574",
-        "83a85cc3-e03b-4719-918f-33bb9c5286e9"
+        "1f4ac89c-e1cf-4f66-897f-c303c9d37e09"
       ],
       "settings": {
         "bg-color": "",
