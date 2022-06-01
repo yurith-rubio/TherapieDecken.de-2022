@@ -136,11 +136,26 @@
         "video_url": "https:\/\/player.vimeo.com\/video\/352267408"
       }
     },
-    "1654082146725e7386": {
-      "type": "custom-liquid",
+    "16540972822e9c1533": {
+      "type": "expert-testimonials-left",
+      "blocks": {
+        "481ac8ac-e0db-49dc-994e-34c3e5a27c66": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/diana_zur_lowen.jpg",
+            "tmex_name": "Diana zur Löwen",
+            "tmex_role": "Unternehmerin & Influencerin",
+            "tmex_paragraph": "<p>Man fühlt sich einfach geborgen und wiein Schutz genommen.  Das hilft mir besonderes, wenn ich wieder sehr nachdenklich und unruhig bin...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "481ac8ac-e0db-49dc-994e-34c3e5a27c66"
+      ],
       "settings": {
-        "paddings": false,
-        "custom_liquid": "{% render 'erwachsene-gewichtsdecke-reviews' %}"
+        "bg-color": "",
+        "header": ""
       }
     },
     "16294611499d6cacbd": {
@@ -469,7 +484,7 @@
     "1629459987d4cac0a9",
     "16291457001a7d71ef",
     "1629451775c72cd56a",
-    "1654082146725e7386",
+    "16540972822e9c1533",
     "16294611499d6cacbd",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
