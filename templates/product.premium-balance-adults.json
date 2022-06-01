@@ -136,6 +136,13 @@
         "video_url": "https:\/\/player.vimeo.com\/video\/399192093"
       }
     },
+    "16540816874745e5fc": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'erwachsene-gewichtsdecke-reviews' %}"
+      }
+    },
     "16294611499d6cacbd": {
       "type": "advantages-overview",
       "blocks": {
@@ -467,13 +474,6 @@
         "bg-color": "",
         "header": "hello"
       }
-    },
-    "16540816874745e5fc": {
-      "type": "custom-liquid",
-      "settings": {
-        "paddings": false,
-        "custom_liquid": "{% render 'erwachsene-gewichtsdecke-reviews' %}"
-      }
     }
   },
   "order": [
@@ -483,6 +483,7 @@
     "1629459987d4cac0a9",
     "16291457001a7d71ef",
     "1629451775c72cd56a",
+    "16540816874745e5fc",
     "16294611499d6cacbd",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
@@ -495,7 +496,6 @@
     "163061824983a1c03c",
     "1634663235f2643922",
     "16346824644d8e2b78",
-    "1654080713f4c9243a",
-    "16540816874745e5fc"
+    "1654080713f4c9243a"
   ]
 }
