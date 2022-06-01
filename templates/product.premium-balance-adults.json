@@ -161,9 +161,10 @@
           "type": "testimonial",
           "settings": {
             "link": "",
-            "tmex_name": "Joe Doe",
-            "tmex_role": "Psychologin",
-            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+            "tmex_picture": "shopify:\/\/shop_images\/markus_ruppert.jpg",
+            "tmex_name": "Markus Ruppert",
+            "tmex_role": "Heilpraktiker & Traumatherapeut",
+            "tmex_paragraph": "<p>Für mich ist die Decke weder privat noch in meiner Arbeit wegzudenken. Es ist ein wichtiges Werkzeug und eine  wertvolle Ressource.<\/p>"
           }
         },
         "1f4ac89c-e1cf-4f66-897f-c303c9d37e09": {
