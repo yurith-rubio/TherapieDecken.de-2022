@@ -162,11 +162,44 @@
             "tmex_role": "Heilpraktiker & Traumatherapeut",
             "tmex_paragraph": "<p>Für mich ist die Decke weder privat noch in meiner Arbeit wegzudenken. Es ist ein wichtiges Werkzeug und eine  wertvolle Ressource.<\/p>"
           }
+        },
+        "f0c2c67d-6256-4d1e-b200-694275304732": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/caroline_helming.jpg",
+            "tmex_name": "Joe Doe",
+            "tmex_role": "Psychologin",
+            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+          }
+        },
+        "10389a8f-2a9b-44e6-a884-1bb7d288f9e5": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/dinah_berger.jpg",
+            "tmex_name": "Joe Doe",
+            "tmex_role": "Psychologin",
+            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+          }
+        },
+        "9f7eff75-d6d3-4f18-82e0-3517acbb93e9": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/phsycologist-therapiedecken-img1.jpg",
+            "tmex_name": "Joe Doe",
+            "tmex_role": "Psychologin",
+            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+          }
         }
       },
       "block_order": [
         "70e90597-be62-4b18-8fa0-922d63d17d02",
-        "82e988f3-c28e-41b7-921f-526804f74758"
+        "82e988f3-c28e-41b7-921f-526804f74758",
+        "f0c2c67d-6256-4d1e-b200-694275304732",
+        "10389a8f-2a9b-44e6-a884-1bb7d288f9e5",
+        "9f7eff75-d6d3-4f18-82e0-3517acbb93e9"
       ],
       "settings": {
         "bg-color": "",
