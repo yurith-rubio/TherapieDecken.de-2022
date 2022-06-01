@@ -168,12 +168,34 @@
             "tmex_role": "Psychologin",
             "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
           }
+        },
+        "c0450054-62e0-4aa1-a5a3-77770ed2434e": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/dinah_berger.jpg",
+            "tmex_name": "Joe Doe",
+            "tmex_role": "Psychologin",
+            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+          }
+        },
+        "350251f4-17bf-412a-96a1-7cb3c0e48775": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/phsycologist-therapiedecken-img1.jpg",
+            "tmex_name": "Joe Doe",
+            "tmex_role": "Psychologin",
+            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+          }
         }
       },
       "block_order": [
         "8a534fa2-a4e9-4479-a3be-a0c04b4cdba5",
         "f365e846-0e28-419d-a6f1-f413a24ad574",
-        "1f4ac89c-e1cf-4f66-897f-c303c9d37e09"
+        "1f4ac89c-e1cf-4f66-897f-c303c9d37e09",
+        "c0450054-62e0-4aa1-a5a3-77770ed2434e",
+        "350251f4-17bf-412a-96a1-7cb3c0e48775"
       ],
       "settings": {
         "bg-color": "",
