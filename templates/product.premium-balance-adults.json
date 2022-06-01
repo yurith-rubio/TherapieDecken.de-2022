@@ -446,6 +446,27 @@
       "type": "back-to-top-product",
       "settings": {
       }
+    },
+    "1654080713f4c9243a": {
+      "type": "experts-testimonials-custom",
+      "blocks": {
+        "99fd3b6d-c599-4a3e-ab54-c8b3175d29d9": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tm21_name": "Joe Doe",
+            "tm21_role": "Psychologin",
+            "tm21_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "99fd3b6d-c599-4a3e-ab54-c8b3175d29d9"
+      ],
+      "settings": {
+        "bg-color": "",
+        "header": "hello"
+      }
     }
   },
   "order": [
@@ -466,6 +487,7 @@
     "16294440249ce6f304",
     "163061824983a1c03c",
     "1634663235f2643922",
-    "16346824644d8e2b78"
+    "16346824644d8e2b78",
+    "1654080713f4c9243a"
   ]
 }
