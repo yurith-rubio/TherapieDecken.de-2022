@@ -94,9 +94,8 @@
   <div class="Container--standard--medium centered section-space-medium">
   	<h2 style="margin-bottom: 40px;" class="Heading u-h2">{{ section.settings.header }}</h2>
   
-  	<div class="tm22_wr_hp">
+  	<div class="tm22_wr_hp owl-carousel">
       {% for block in section.blocks %}
-      <div class="owl-carousel">
       	<div class="tm22_wr_quote item">
           <div class="tm22_pic_wr">
             <img
@@ -128,14 +127,13 @@
               </div>
             </div>
         </div>
-      </div>
       {% endfor %}
     </div>
   </div>
 </div>
 
 <script>
-$('.tm22_wr_hp .owl-carousel').owlCarousel({
+$('.tm22_wr_hp.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     dots:true,
