@@ -149,16 +149,19 @@
         "8a534fa2-a4e9-4479-a3be-a0c04b4cdba5": {
           "type": "testimonial",
           "settings": {
-            "link": "",
-            "tm21_picture": "shopify:\/\/shop_images\/diana_zur_lowen.jpg",
-            "tm21_name": "Joe Doe",
-            "tm21_role": "Psychologin",
-            "tm21_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+            "link": ""
+          }
+        },
+        "f365e846-0e28-419d-a6f1-f413a24ad574": {
+          "type": "testimonial",
+          "settings": {
+            "link": ""
           }
         }
       },
       "block_order": [
-        "8a534fa2-a4e9-4479-a3be-a0c04b4cdba5"
+        "8a534fa2-a4e9-4479-a3be-a0c04b4cdba5",
+        "f365e846-0e28-419d-a6f1-f413a24ad574"
       ],
       "settings": {
         "bg-color": "",
