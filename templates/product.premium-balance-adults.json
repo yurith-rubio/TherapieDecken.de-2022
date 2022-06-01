@@ -467,6 +467,13 @@
         "bg-color": "",
         "header": "hello"
       }
+    },
+    "16540816874745e5fc": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'erwachsene-gewichtsdecke-reviews' %}"
+      }
     }
   },
   "order": [
@@ -488,6 +495,7 @@
     "163061824983a1c03c",
     "1634663235f2643922",
     "16346824644d8e2b78",
-    "1654080713f4c9243a"
+    "1654080713f4c9243a",
+    "16540816874745e5fc"
   ]
 }
