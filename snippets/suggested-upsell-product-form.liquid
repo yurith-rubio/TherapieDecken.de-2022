@@ -90,7 +90,7 @@
 {% if product.handle == 'balance-gewichtsdecke-fur-erwachsene' or product.handle == 'therapiedecken' %}
   {% assign upsell_product = all_products['graues-gesundheitskissen-fur-erwachsene'] %}
   	{% for variant in upsell_product.variants %}
-	  {{ variant.option1 | json }}
+	  {{ variant.option1["Normal"] | json }}
       {% if variant.option1 == "Normal" and variant.option2 == "40 x 80 cm" %}
       {%- assign image_url = upsell_product.featured_image | image_url: width: 300 -%}
       <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
