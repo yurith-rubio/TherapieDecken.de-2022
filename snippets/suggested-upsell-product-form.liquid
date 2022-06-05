@@ -97,7 +97,6 @@
 		{% assign variant_filling =  variant.option2 %}
 		{{ variant_filling }}
         {% if variant_size and variant_filling %}
-
         {%- assign image_url = upsell_product.featured_image | image_url: width: 300 -%}
         <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
           <input type="hidden" name="id" value="{{ upsell_product.selected_or_first_available_variant.id }}">
@@ -108,12 +107,8 @@
               <span class="ProductMeta__Price Price Suggested_Price--highlight Text--subdued u-h4" style="font-weight:bold">{{ upsell_product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
               <span class="ProductMeta__Price Price Suggested_Price--compareAt Text--subdued u-h4">{{ upsell_product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
               <div class="SuggestedUpPro_variantText">
-                {% for size_option in upsell_product.options_by_name['Größe'].values["40 x 80 cm"] %}
-                Größe: {{ size_option }} <br>
-                {% endfor %}
-                {% for size_option in upsell_product.options_by_name['Füllung'].values["Normal"] %}
-                Füllung: {{ size_option }}
-                {% endfor %}
+                Größe: {{ variant_size }} <br>
+                Füllung: {{ variant_filling }}
               </div>
             </div>
             <button class="SuggestedUpProd_buttonWr Button Button--primary" type="submit">Hinzufügen</button>
