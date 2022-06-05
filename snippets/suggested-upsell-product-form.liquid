@@ -91,7 +91,7 @@
   {% assign upsell_product = all_products['graues-gesundheitskissen-fur-erwachsene'] %}
   	{% for variant in upsell_product.variants %}
       {% if variant.option1 == "Normal" and variant.option2 == "40 x 80 cm" %}
-      {%- assign image_url = upsell_product.images[0] | image_url: width: 300 -%}
+      {%- assign image_url = upsell_product.product.featured_image | image_url: width: 300 -%}
       <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
         <input type="hidden" name="id" value="{{ upsell_product.selected_or_first_available_variant.id }}">
         <a href="{{ upsell_product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
