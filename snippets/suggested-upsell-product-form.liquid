@@ -163,7 +163,6 @@
     {% if variant.id == 39690333126795 %}
       {% assign upsell_variant =  variant %}
 	{% endif %}
-		{{ upsell_variant | json }}
   {% endfor %}
 		
       {% if variant_size and variant_filling %}
@@ -174,8 +173,8 @@
           <div class="SuggestedUpProd_infoWr">
             <a href="{{ upsell_product.url }}"><h2>{{ upsell_product.title }}</h2></a>
             <div>
-              <span class="ProductMeta__Price Price Suggested_Price--highlight Text--subdued u-h4" style="font-weight:bold">{{ upsell_product.price | money_without_trailing_zeros }}</span>
-              <span class="ProductMeta__Price Price Suggested_Price--compareAt Text--subdued u-h4">{{ upsell_product.compare_at_price | money_without_trailing_zeros }}</span>
+              <span class="ProductMeta__Price Price Suggested_Price--highlight Text--subdued u-h4" style="font-weight:bold">{{ upsell_variant.price | money_without_trailing_zeros }}</span>
+              <span class="ProductMeta__Price Price Suggested_Price--compareAt Text--subdued u-h4">{{ upsell_variant.compare_at_price | money_without_trailing_zeros }}</span>
               <div class="SuggestedUpPro_variantText">
                 Größe: {{ variant_size }} <br>
                 Füllung: {{ variant_filling }}
