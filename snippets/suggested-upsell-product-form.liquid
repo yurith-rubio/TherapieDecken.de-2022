@@ -160,10 +160,10 @@
     {% if variant.option2 == "40 x 80 cm" %}
       {% assign variant_size =  variant.option2 %}
 	{% endif %}
-    {% if variant.id == "39690333126795" %}
-      {% assign upsell_variant.id =  variant.id %}
+    {% if variant.id == 39690333126795 %}
+      {% assign upsell_variant =  variant.id %}
 	{% endif %}
-		{{ upsell_variant.id }}
+		{{ upsell_variant }}
   {% endfor %}
 		
       {% if variant_size and variant_filling %}
