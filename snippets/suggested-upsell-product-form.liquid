@@ -120,29 +120,35 @@
 {% endif %}
 
 {% if product.handle == 'basic-gravity-gewichtsdecke-fur-erwachsene' %}
-  {% assign upseli_product = all_products['hellgraues-therapiekissen-fur-erwachsene'] %}
-  {%- assign image_url = upseli_product.images[0] | image_url: width: 300 -%}
-  <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
-    <input type="hidden" name="id" value="{{ upseli_product.selected_or_first_available_variant.id }}">
-    <a href="{{ upseli_product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
-    <div class="SuggestedUpProd_infoWr">
-      <a href="{{ upseli_product.url }}"><h2>{{ upseli_product.title }}</h2></a>
-      <div>
-        <span class="ProductMeta__Price Price Suggested_Price--highlight Text--subdued u-h4" style="font-weight:bold">{{ upseli_product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
-        <span class="ProductMeta__Price Price Suggested_Price--compareAt Text--subdued u-h4">{{ upseli_product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
-        <div class="SuggestedUpPro_variantText">
-          {% for size_option in upseli_product.options_by_name['Größe'].values[0] %}
-          Größe: {{ size_option }} <br>
-          {% endfor %}
-          {% for size_option in upseli_product.options_by_name['Füllung'].values[0] %}
-          Füllung: {{ size_option }}
-          {% endfor %}
-        </div>
-      </div>
-      <button class="SuggestedUpProd_buttonWr Button Button--primary" type="submit">Hinzufügen</button>
-    </div>
-  </form>
-  <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Kissen + Bezug kombinieren & <span style="color: #ba2e2e">10% sparen!</span> </h2>
+  {% assign upsell_product = all_products['hellgraues-therapiekissen-fur-erwachsene'] %}
+  {% for variant in upsell_product.variants %}
+    {% if variant.option1 == "Ohne (Nur Kissenbezug)" %}
+      {% assign variant_filling =  variant.option1 %}
+	{% endif %}
+    {% if variant.option2 == "40 x 80 cm" %}
+      {% assign variant_size =  variant.option2 %}
+	{% endif %}
+  {% endfor %}
+      {% if variant_size and variant_filling %}
+        {%- assign image_url = upsell_product.featured_image | image_url: width: 300 -%}
+        <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
+          <input type="hidden" name="id" value="39460604838027">
+          <a href="{{ upsell_product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
+          <div class="SuggestedUpProd_infoWr">
+            <a href="{{ upsell_product.url }}"><h2>{{ upsell_product.title }}</h2></a>
+            <div>
+              <span class="ProductMeta__Price Price Suggested_Price--highlight Text--subdued u-h4" style="font-weight:bold">{{ upsell_product.price | money_without_trailing_zeros }}</span>
+              <span class="ProductMeta__Price Price Suggested_Price--compareAt Text--subdued u-h4">{{ upsell_product.compare_at_price | money_without_trailing_zeros }}</span>
+              <div class="SuggestedUpPro_variantText">
+                Größe: {{ variant_size }} <br>
+                Füllung: {{ variant_filling }}
+              </div>
+            </div>
+            <button class="SuggestedUpProd_buttonWr Button Button--primary" type="submit">Hinzufügen</button>
+          </div>
+        </form>
+        <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Kissen + Bezug kombinieren & <span style="color: #ba2e2e">10% sparen!</span> </h2>
+      {% endif %}
 {% endif %}
 
 
