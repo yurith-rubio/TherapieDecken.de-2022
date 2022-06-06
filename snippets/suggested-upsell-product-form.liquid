@@ -87,6 +87,7 @@
   {% endpaginate %}
 {% endif %}
 
+{% comment %}
 {% if product.handle == 'balance-gewichtsdecke-fur-erwachsene' or product.handle == 'therapiedecken' %}
   {% assign upsell_product = all_products['graues-gesundheitskissen-fur-erwachsene'] %}
   {% for variant in upsell_product.variants %}
@@ -182,7 +183,7 @@
         <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Kissen + Bezug kombinieren & <span style="color: #ba2e2e">10% sparen!</span> </h2>
       {% endif %}
 {% endif %}
-
+{% endcomment %}
 
 {% assign suggestedCollection = collection %}
 {% assign mainCollection = collection %}
