@@ -96,6 +96,7 @@
     {% if variant.option2 == "40 x 80 cm" %}
       {% assign variant_size =  variant.option2 %}
 	{% endif %}
+  {% endfor %}
       {% if variant_size and variant_filling %}
         {%- assign image_url = upsell_product.featured_image | image_url: width: 300 -%}
         <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
@@ -116,7 +117,7 @@
         </form>
         <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Kissen + Bezug kombinieren & <span style="color: #ba2e2e">10% sparen!</span> </h2>
       {% endif %}
-  {% endfor %}
+  
 {% endif %}
 
 {% if product.handle == 'basic-gravity-gewichtsdecke-fur-erwachsene' %}
