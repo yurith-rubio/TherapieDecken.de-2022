@@ -161,9 +161,9 @@
       {% assign variant_size =  variant.option2 %}
 	{% endif %}
     {% if variant.id == "39690333126795" %}
-      {% assign upsell_variant =  variant.id %}
+      {% assign upsell_variant.id =  variant.id %}
 	{% endif %}
-		{{ upsell_variant }}
+		{{ upsell_variant.id }}
   {% endfor %}
 		
       {% if variant_size and variant_filling %}
