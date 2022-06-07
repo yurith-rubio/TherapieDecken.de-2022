@@ -23,7 +23,7 @@
       
           {%- if settings.promo_image -%}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}"
-                 style="background-size: cover; background-position: right; background-position-y: top;">
+                 style="background-size: cover; background-position: right;">
             </div>
       
           {%- else -%}
