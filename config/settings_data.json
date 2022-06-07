@@ -100,10 +100,10 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
-          "background": "#fac636",
-          "text_color": "#1c1b1b",
+          "background": "#ee5183",
+          "text_color": "#ffffff",
           "content": "Vatertag Sale! Therapiedecken 40% reduziert 👨🏻‍🦱 Endet in",
           "link": "shopify:\/\/pages\/therapiedecken"
         }
