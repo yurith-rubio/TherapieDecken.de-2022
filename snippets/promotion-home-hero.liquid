@@ -35,7 +35,7 @@
           {%- if settings.promo_image -%}
       		{% assign img_url = settings.promo_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}"
-                 style="background-size: cover; background-position: right;">
+                 style="background-size: cover; background-position: right; background-position-y: top;">
             </div>
       
           {%- else -%}
