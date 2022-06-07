@@ -21,7 +21,7 @@
     "16311973875d2f0dd0": {
       "type": "custom-html",
       "settings": {
-        "html": "<div style=\"margin: 0px 0 10px;\"><a class=\"Button\" style=\"background-color: pink!important\" href=\"https:\/\/therapiedecken.de\/collections\/therapiedecken-brustkrebs-monat-oktober-kollektion\">Jetzt Unterstützen<\/a><\/div>",
+        "html": "<div style=\"margin: 0px 0 10px;\"><a class=\"Button\" style=\"background-color: pink!important\" href=\"https:\/\/therapiedecken.de\/pages\/therapiedecken\">Jetzt Unterstützen<\/a><\/div>",
         "spacer": "50px",
         "bg-color": "#ffffff"
       }
