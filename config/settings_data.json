@@ -46,12 +46,13 @@
     "social_youtube": "https:\/\/www.youtube.com\/channel\/UCzoQFn6SP0y-YTgCNnrLIfA?view_as=subscriber",
     "social_fancy": "https:\/\/therapiedecken.de\/blogs\/news?nopreview",
     "favicon": "shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png",
-    "countdown_date": "May 30, 2022 00:00 GMT+0100",
+    "countdown_date": "July 31, 2022 00:00 GMT+0100",
     "enable_days_view": true,
     "border_radius_countdown": 4,
     "loop_time": 0,
-    "announcement_countdown_enable": false,
-    "text_color_countdown": "#1c1b1b",
+    "announcement_countdown_enable": true,
+    "background_countdown": "#ffffff",
+    "text_color_countdown": "#ee5183",
     "product_countdown_enable": false,
     "icon_countdown_product": "",
     "countdown_product_text": "💝 Muttertag Angebot! 10% Rabatt + Gratis Gewichtsmaske | Endet in",
@@ -104,8 +105,8 @@
           "home_page_only": false,
           "background": "#ee5183",
           "text_color": "#ffffff",
-          "content": "Vatertag Sale! Therapiedecken 40% reduziert 👨🏻‍🦱 Endet in",
-          "link": "shopify:\/\/pages\/therapiedecken"
+          "content": "Entspannt in den Sommer!☀️Gratis 1x kühlender Basic Bezug ❄️ Endet in",
+          "link": "shopify:\/\/collections\/erwachsene"
         }
       },
       "header": {
