@@ -542,7 +542,7 @@ em {
     display: block;
 }
 .padding-5{
-	padding: 5px;
+	padding: 0 10px;
 }
 @media (max-width: 767px){
 .grid {
