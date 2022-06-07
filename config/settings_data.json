@@ -62,6 +62,7 @@
     "left_product_inventory": true,
     "promotional_hero_hp_cover": true,
     "promo_image": "shopify:\/\/shop_images\/TD_Summer_Cooling_desktop_image.jpg",
+    "promo_image_mobile": "shopify:\/\/shop_images\/TD_Summer_Cooling_mobile_image.jpg",
     "image_position": "right",
     "button_1_text": "Mehr Erfahren",
     "button_1_link": "shopify:\/\/collections\/erwachsene",
