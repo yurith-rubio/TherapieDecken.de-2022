@@ -721,6 +721,11 @@
         "label": "Select hero image"
       },
       {
+        "type": "image_picker",
+        "id": "promo_image_mobile",
+        "label": "Select hero image"
+      },
+      {
         "type": "select",
         "id": "image_position",
         "label": "Image position on mobile",
