@@ -717,7 +717,7 @@
       },
       {
         "type": "image_picker",
-        "id": "promotional_hero_image",
+        "id": "promo_image",
         "label": "Select hero image"
       },
       {
