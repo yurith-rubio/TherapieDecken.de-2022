@@ -1,0 +1,109 @@
+<style>
+   li{
+   list-style: none;
+   }
+   li > span {
+   position: relative;
+   left: -24px;
+   margin-right: -20px;
+   top: 6px;
+   font-size: 20px;
+   }
+   li:nth-child(2) > span {
+   position: relative;
+   left: -24px;
+   margin-right: -24px;
+   top: 6px;
+   font-size: 20px;
+   }
+   li:nth-child(3) > span {
+   position: relative;
+   left: -24px;
+   margin-right: -24px;
+   top: 6px;
+   font-size: 20px;
+   }
+   li:nth-child(4) > span {
+   position: relative;
+   left: -24px;
+   margin-right: -24px;
+   top: 6px;
+   font-size: 20px;
+   }
+   .mobile-ol{
+   display: none;
+   }
+.mobile-ol .item > span{
+font-size: 35px;
+display: block;
+padding: 5px 0 10px;
+}
+.mobile-ol .owl-dots button{
+width: 15px;
+    height: 15px;
+    background: #d6d6d6;
+    border-radius: 50px;
+    margin: 0 8px;
+}
+.mobile-ol .owl-dots button.active{background: #fac636;}
+   @media (max-width: 768px){
+   .mobile-ol{
+   display: block;
+   }
+   .desktop-ol{
+   display: none;
+   }
+   }
+</style>
+
+
+
+<div class="desktop-ol">
+   <ol>
+      <li>
+         <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester
+      </li>
+      <li>
+         <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+         Balance Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.
+      </li>
+      <li>
+         <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+         Die Füllung besteht aus 32% Polyester und 68% Baumwolle.
+      </li>
+      <li>
+         <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+         Die Gewichtsdecke wird mit rostfreien Edelstahlkügelchen beschwert, die sicher und ohne zu verrutschen im Inneren fixiert werden.
+      </li>
+   </ol>
+</div>
+<div class="mobile-ol">
+   <div class="owl-carousel-ol owl-carousel owl-theme">
+	   <div class="item">
+	      <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester
+	   </div>
+	   <div class="item">
+	      <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+	      Balance Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.
+	   </div>
+	   <div class="item">
+	      <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+	      Die Füllung besteht aus 32% Polyester und 68% Baumwolle.
+	   </div>
+	   <div class="item">
+	      <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+	      Die Gewichtsdecke wird mit rostfreien Edelstahlkügelchen beschwert, die sicher und ohne zu verrutschen im Inneren fixiert werden.
+	   </div>
+	</div>
+</div>
+
+
+<script>
+   $('.owl-carousel-ol').owlCarousel({
+items:1,
+       loop:true,
+       margin:30,
+       nav:false,
+dots:true
+   })
+</script>
