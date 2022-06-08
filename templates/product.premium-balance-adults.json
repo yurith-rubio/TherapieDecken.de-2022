@@ -380,12 +380,13 @@
         "8868e093-0a28-47f4-bffa-8e298437c65e"
       ],
       "settings": {
+        "slide_style": true,
         "spacer_top": true,
         "spacer_bottom": true,
         "bg-color": "",
         "bg-color-text-html": "",
         "text_align": "center",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/Therapiedecken-Aufbau-Balance-gray3_1c68380f-cdec-4b3e-ae02-f73508b520ed.jpg",
         "image_position": "right"
       }
