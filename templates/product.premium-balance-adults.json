@@ -365,32 +365,6 @@
         "link_url_extra": ""
       }
     },
-    "165468776385f95174": {
-      "type": "text-with-image-new",
-      "disabled": true,
-      "blocks": {
-        "8868e093-0a28-47f4-bffa-8e298437c65e": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "{% render 'text-with-image-slider' %}"
-          }
-        }
-      },
-      "block_order": [
-        "8868e093-0a28-47f4-bffa-8e298437c65e"
-      ],
-      "settings": {
-        "slide_style": true,
-        "spacer_top": true,
-        "spacer_bottom": true,
-        "bg-color": "",
-        "bg-color-text-html": "",
-        "text_align": "center",
-        "text_color": "#3a3c3c",
-        "image": "shopify:\/\/shop_images\/Therapiedecken-Aufbau-Balance-gray3_1c68380f-cdec-4b3e-ae02-f73508b520ed.jpg",
-        "image_position": "right"
-      }
-    },
     "1629713540ecd6fa17": {
       "type": "html-with-image",
       "settings": {
@@ -552,7 +526,6 @@
     "1629462422c7c337fa",
     "1629465806e866cd2d",
     "1629709567bc66549f",
-    "165468776385f95174",
     "1629713540ecd6fa17",
     "1629713705b12acbc0",
     "16293784209ff1ca2b",
