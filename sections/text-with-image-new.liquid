@@ -18,7 +18,7 @@
       	  
             <div class="FeatureText__ContentWrapper text-with-image-new_ContentWrapper"
               style="{% if section.settings.bg-color-text-html != blank %}background-color:{{ section.settings.bg-color-text-html }};{% endif %} 
-                     {% if section.settings.slide_style %}padding-left: 0;{% endif %}">
+                     {% if section.settings.slide_style %}padding-left: 0 !important;{% endif %}">
 			  
               <div class="FeatureText__Content html-text-wr
                           {% if section.settings.text_align == 'left' %}text-align-left{% endif %}">
