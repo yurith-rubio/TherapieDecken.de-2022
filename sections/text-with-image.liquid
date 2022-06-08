@@ -1,4 +1,4 @@
-{{ 'text-with-image.css' | asset_url | stylesheet_tag }}
+{{ 'html-with-image.css' | asset_url | stylesheet_tag }}
 
 <section class="Section {% unless section.settings.image %}Section--spacingNormal{% endunless %}">
   {%- capture section_content -%}
