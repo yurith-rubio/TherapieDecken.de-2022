@@ -4,6 +4,12 @@
 {{ 'product-custom.css' | asset_url | stylesheet_tag }}
 {{ 'text-with-image-new.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .text-with-image-new_ContentWrapper{
+  {% if section.settings.slide_style %}padding-right: 0 !important;{% endif %}
+  }
+</style>
+
 <section class="Section">
   	<div class="FeaturedHtmlImage-container Image--lazyLoad spacer" 
          style="{% if section.settings.bg_img %}background-position: center; background-size:cover; {% endif %} 
@@ -17,8 +23,7 @@
       	
       	  
             <div class="FeatureText__ContentWrapper text-with-image-new_ContentWrapper"
-              style="{% if section.settings.bg-color-text-html != blank %}background-color:{{ section.settings.bg-color-text-html }};{% endif %} 
-                     {% if section.settings.slide_style %}padding-left: 0 !important;{% endif %}">
+              style="{% if section.settings.bg-color-text-html != blank %}background-color:{{ section.settings.bg-color-text-html }};{% endif %}">
 			  
               <div class="FeatureText__Content html-text-wr
                           {% if section.settings.text_align == 'left' %}text-align-left{% endif %}">
