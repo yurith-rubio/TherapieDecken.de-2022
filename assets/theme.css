@@ -3311,8 +3311,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .AspectRatio {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .AspectRatio::before {
