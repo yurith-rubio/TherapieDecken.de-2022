@@ -199,7 +199,7 @@
       ],
       "settings": {
         "bg-color": "",
-        "header": "Was experten über die Wirkung von Therapiedecken sagen"
+        "header": "Was Experten über die Wirkung von Therapiedecken sagen"
       }
     },
     "16294611499d6cacbd": {
@@ -511,6 +511,7 @@
     "1647521535e1944306": {
       "type": "text-with-image-new",
       "settings": {
+        "slide_style": false,
         "spacer_top": true,
         "spacer_bottom": true,
         "bg-color": "",
