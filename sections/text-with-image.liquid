@@ -2,7 +2,7 @@
 
 <section class="Section {% unless section.settings.image %}Section--spacingNormal{% endunless %}">
   {%- capture section_content -%}
-    <div class="FeatureText__ContentWrapper" {% if section.settings.slide_style %}{% endif %}>
+    <div class="FeatureText__ContentWrapper" {% if section.settings.slide_style %}style="padding-left: 0;"{% endif %}>
       <div class="FeatureText__Content">
         {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
           <header class="SectionHeader">
