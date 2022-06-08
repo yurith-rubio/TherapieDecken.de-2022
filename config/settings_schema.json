@@ -717,7 +717,12 @@
       },
       {
         "type": "image_picker",
-        "id": "promotional_hero_image",
+        "id": "promo_image",
+        "label": "Select hero image"
+      },
+      {
+        "type": "image_picker",
+        "id": "promo_image_mobile",
         "label": "Select hero image"
       },
       {

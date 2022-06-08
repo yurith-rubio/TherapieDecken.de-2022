@@ -20,23 +20,10 @@
          data-flickity-config='{{ flickity_options }}'>
       {%- for block in section.blocks -%}
         {%- capture slide_content -%}
-
-      	  {% comment %}
-          {%- assign mobile_image = settings.promotional_hero_image -%}
-          {%- if mobile_image -%}
-            <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio{% endunless %} hidden-tablet-and-up"
-                 style="background-image: url({{ mobile_image | img_url: '1x1', format: 'jpg' }})">
-                  <img class="Slideshow__Image" src="{{ mobile_image | img_url: 'x400' }}" alt="{{ mobile_image.alt | escape }}">
-            </div>
-          {%- endif -%}
-      	  {% endcomment %}
       
-      
-          {%- if settings.promotional_hero_image -%}
-      		{% assign img_url = settings.promotional_hero_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+          {%- if settings.promo_image -%}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}"
                  style="background-size: cover; background-position: right;">
-			        
             </div>
       
           {%- else -%}
@@ -46,10 +33,11 @@
             </div>
           {%- endif -%}
 
+      	  {% comment %} Capture the promo art content {% endcomment %}
           {%- capture slideshow_content -%}
 			<div class="promotion-home-hero_content_container">
   	          <div class="home_promotional_content_wrapper">
-                <img class="homePromotional_art_desktop Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_Father_s_day_promotion.svg?v=1653035128" alt="Therapiedecken Father's day homepage">
+                <img class="homePromotional_art_desktop" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_-_Summer_Cooling_Cover_Promotion_WEB_DESKTOP.png?v=1654598408" alt="Summer Cooling's day homepage">
                 {%- if settings.button_1_text != blank -%}
                   <div class="home_promotional_bottom_part">
                     <a href="{{ settings.button_1_link }}" class="promotion-home-hero_button Button Button--primary" >{{ settings.button_1_text | escape }}</a>

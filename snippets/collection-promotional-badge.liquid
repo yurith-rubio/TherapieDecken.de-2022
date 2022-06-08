@@ -1,17 +1,13 @@
 <!-- collection-promotional-badge.liquid -->
 
-{%- comment -%}See CSS on badges.css file {%- endcomment -%}
-{{ 'badges.css' | asset_url | stylesheet_tag }}
-
 {% if settings.enable_collection_badge %}
+  {%- comment -%}See CSS on badges.css file {%- endcomment -%}
+  {{ 'badges.css' | asset_url | stylesheet_tag }}
 
   {% if collection.handle == 'erwachsene' %}
     <div class="CollectionBadge_Mask__Wrapper">
-      {% comment %}
-        <div class="Collection_SmallBadge">Gratis Maske</div>
-      {% endcomment %}
-      <div class="Collection_ImgSmallBadge"><img class="Collection_ImgSize_SmallBadge Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_Father_s_day_promotion_-_badge.svg?v=1653038358" alt="Father's day badge" /></div>
+      <div class="Collection_SmallBadge">Gratis</div>
+      <div class="Collection_ImgSmallBadge"><img class="Collection_ImgSize_SmallBadge Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_Summer_Cooling_art_png.png?v=1654588702" alt="Summer Cooling's day badge" /></div>
     </div>
   {% endif %}
-
 {% endif %}
