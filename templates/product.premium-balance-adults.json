@@ -371,7 +371,7 @@
         "8868e093-0a28-47f4-bffa-8e298437c65e": {
           "type": "liquid",
           "settings": {
-            "liquid": "<p>ERASE the content of the block ABOVE is you want to use this block<\/p>"
+            "liquid": "enable_days_view"
           }
         }
       },
