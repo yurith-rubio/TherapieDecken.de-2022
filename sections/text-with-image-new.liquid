@@ -5,9 +5,15 @@
 {{ 'text-with-image-new.css' | asset_url | stylesheet_tag }}
 
 <style>
-  .text-with-image-new_ContentWrapper{
-  {% if section.settings.slide_style %}padding-right: 0 !important;{% endif %}
-  }
+  {% if section.settings.slide_style %}
+  	@media only screen and (max-width: 640px){
+      .text-with-image-new_ContentWrapper{
+        padding-right: 20;
+        width: 100vw;
+        max-width:
+      }
+    }
+  {% endif %}
 </style>
 
 <section class="Section">
