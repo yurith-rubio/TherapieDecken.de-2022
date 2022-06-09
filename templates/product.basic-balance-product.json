@@ -201,6 +201,33 @@
             "tmex_role": "Psychologin",
             "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
           }
+        },
+        "facb8633-f9fb-43c7-be5f-264a32689f64": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_name": "Katharina Meier-Batrakow",
+            "tmex_role": "Psychologin für Kinder- und Jugendliche",
+            "tmex_paragraph": "<p>Jemanden zu umarmen, um Trost zu spenden, ein Kind zu halten, um es zu beruhigen – all das sind altbewährte Methoden zur Stressreduktion.<\/p>"
+          }
+        },
+        "244e5073-a188-497e-a65d-964041ce47f4": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_name": "Carolin Weigand",
+            "tmex_role": "Sozialpädagogin & Erzieherin",
+            "tmex_paragraph": "<p>Oft wird mir berichtet, dass sich Schüler nur schwer konzentrieren können. Gerne empfehle ich dann die Therapiedecke um runterzufahren.<\/p>"
+          }
+        },
+        "1495ebbf-a667-4d77-8ed5-722686762c0d": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_name": "Christine Tuchler",
+            "tmex_role": "Psychotherapeutin für Kinder & Jugendliche",
+            "tmex_paragraph": "<p>Es ist einfach schön mit anzusehen wie nach kurzer Zeit die motorische Unruhe des Patienten zurückgeht.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -209,7 +236,10 @@
         "f0c2c67d-6256-4d1e-b200-694275304732",
         "10389a8f-2a9b-44e6-a884-1bb7d288f9e5",
         "03c7bf8f-2dc1-4de6-8dc4-fd884e9db3ed",
-        "9f7eff75-d6d3-4f18-82e0-3517acbb93e9"
+        "9f7eff75-d6d3-4f18-82e0-3517acbb93e9",
+        "facb8633-f9fb-43c7-be5f-264a32689f64",
+        "244e5073-a188-497e-a65d-964041ce47f4",
+        "1495ebbf-a667-4d77-8ed5-722686762c0d"
       ],
       "settings": {
         "bg-color": "",
