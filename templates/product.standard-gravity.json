@@ -179,11 +179,47 @@
             "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
           }
         },
+        "fdf8e9f7-ad6f-4205-a688-101323511069": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_name": "Joe Doe",
+            "tmex_role": "Psychologin",
+            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+          }
+        },
         "9d554a42-272f-4982-9633-8aaadd46420a": {
           "type": "testimonial",
           "settings": {
             "link": "",
             "tmex_picture": "shopify:\/\/shop_images\/phsycologist-therapiedecken-img1.jpg",
+            "tmex_name": "Joe Doe",
+            "tmex_role": "Psychologin",
+            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+          }
+        },
+        "399c06f9-bd66-4a95-a533-a38d743eb7f7": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_name": "Joe Doe",
+            "tmex_role": "Psychologin",
+            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+          }
+        },
+        "de783f0c-db2d-41a7-bb17-6855c561bb43": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_name": "Joe Doe",
+            "tmex_role": "Psychologin",
+            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+          }
+        },
+        "817e1f13-a792-47f3-9c92-db140b44e961": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
             "tmex_name": "Joe Doe",
             "tmex_role": "Psychologin",
             "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
@@ -195,7 +231,11 @@
         "50240af9-3242-4fea-8cb0-a6db4379e089",
         "644d0c13-97ca-49e0-b4c1-0c2ece163060",
         "b36c3480-f257-4644-b8e4-84516d0723de",
-        "9d554a42-272f-4982-9633-8aaadd46420a"
+        "fdf8e9f7-ad6f-4205-a688-101323511069",
+        "9d554a42-272f-4982-9633-8aaadd46420a",
+        "399c06f9-bd66-4a95-a533-a38d743eb7f7",
+        "de783f0c-db2d-41a7-bb17-6855c561bb43",
+        "817e1f13-a792-47f3-9c92-db140b44e961"
       ],
       "settings": {
         "bg-color": "",
