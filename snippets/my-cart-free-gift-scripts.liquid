@@ -13,7 +13,8 @@
         subscribeToCartStateUpdate( state => {
             
             console.log("cart items: ")
-			state.cart.items.forEach(itemId => {
+            const itemsArray = state.cart.items;
+			itemsArray.forEach(itemId => {
               console.log("itemId");
               console.log(itemId);
             });
