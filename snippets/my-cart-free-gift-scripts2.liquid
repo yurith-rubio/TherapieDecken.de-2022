@@ -2,7 +2,7 @@
 {% if product.handle == 'therapiedecken' %}
 
   {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
-  {% assign promoVariant = 34447711240331  %}
+  {% assign promoVariant = '34447711240331'  %}
   {% assign promoSubtotal = settings.gift_product_min_spend  %}
 
   {% if promoVariant != blank and promoSubtotal != blank %}
