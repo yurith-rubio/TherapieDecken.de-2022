@@ -541,6 +541,9 @@ em {
 .hc-title-desktop {
     display: block;
 }
+.padding-5{
+	padding: 0 15px;
+}
 @media (max-width: 767px){
 .grid {
     padding: 50px 8px;

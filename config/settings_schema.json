@@ -717,8 +717,33 @@
       },
       {
         "type": "image_picker",
-        "id": "promotional_hero_image",
+        "id": "promo_image",
         "label": "Select hero image"
+      },
+      {
+        "type": "image_picker",
+        "id": "promo_image_mobile",
+        "label": "Select hero image"
+      },
+      {
+        "type": "select",
+        "id": "image_position",
+        "label": "Image position on mobile",
+        "options": [
+          {
+            "value": "center",
+            "label": "center"
+          },
+          {
+            "value": "left",
+            "label": "left"
+          },
+          {
+            "value": "right",
+            "label": "right"
+          }
+        ],
+        "default": "center"
       },
       {
         "type": "header",
@@ -747,6 +772,12 @@
         "default": "#222323"
       },
       {
+        "type": "color",
+        "id": "text_button_color_hover",
+        "label": "Color of text in button on hover",
+        "default": "#222323"
+      },
+      {
         "type": "header",
         "content": "Collection Pages"
       },
@@ -771,6 +802,13 @@
         "type": "checkbox",
         "id": "enable_product_badge",
         "label": "Enable Promotional Badge on Product Pages",
+        "info": "[For design and rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/product-promotional-badge.liquid)",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_discount_general_badge",
+        "label": "Hide regular badge on product pages",
         "info": "[For design and rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/product-promotional-badge.liquid)",
         "default": false
       },

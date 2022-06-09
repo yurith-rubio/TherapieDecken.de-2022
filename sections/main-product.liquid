@@ -117,7 +117,9 @@
                 {% assign percentage = saving | at_least: percentage %}
                 {% endfor %} 
               {% if product.title != 'Geschenkgutschein' %}
-              <div class="bf-badge">-{{ percentage }}%</div>
+              	{% if settings.hide_discount_general_badge != true %}
+              		<div class="bf-badge">-{{ percentage }}%</div>
+                {% endif %}
               {% endif %}
               <div class="AspectRatio AspectRatio--withFallback" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }};">
                 {% assign image_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
