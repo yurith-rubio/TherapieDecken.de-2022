@@ -1,4 +1,8 @@
 <!-- sections/my-cart.liquid -->
+{% for item in cart.items %}
+  item: {{ item }}
+{% endfor %}
+
 
 {% render 'my-cart-free-gift-scripts', settings: settings %}
 
