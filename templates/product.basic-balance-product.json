@@ -187,6 +187,7 @@
           "type": "testimonial",
           "settings": {
             "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/Michaela_Gross_10_1_4.jpg",
             "tmex_name": "Michaela Gross",
             "tmex_role": "Heilpraktikerin für Psychotherapie",
             "tmex_paragraph": "<p>Als Traumatherapeutin empfehle ich die Decken bei Schlaf-\/Angst- und Panikstörungen. Es hilft, dass sich die Patienten wieder spüren können.<\/p>"
@@ -197,15 +198,16 @@
           "settings": {
             "link": "",
             "tmex_picture": "shopify:\/\/shop_images\/phsycologist-therapiedecken-img1.jpg",
-            "tmex_name": "Joe Doe",
-            "tmex_role": "Psychologin",
-            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+            "tmex_name": "Dr. Sabine Hoffmann",
+            "tmex_role": "Leitende Psychologin",
+            "tmex_paragraph": "<p>Diese Decken können ein spontanes Gefühl von Ruhe, kurz gesagt „alles ist gut” auf der körperlichen und damit auch psychischen Ebene auslösen.<\/p>"
           }
         },
         "facb8633-f9fb-43c7-be5f-264a32689f64": {
           "type": "testimonial",
           "settings": {
             "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/tm21_pic.jpg",
             "tmex_name": "Katharina Meier-Batrakow",
             "tmex_role": "Psychologin für Kinder- und Jugendliche",
             "tmex_paragraph": "<p>Jemanden zu umarmen, um Trost zu spenden, ein Kind zu halten, um es zu beruhigen – all das sind altbewährte Methoden zur Stressreduktion.<\/p>"
@@ -215,6 +217,7 @@
           "type": "testimonial",
           "settings": {
             "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/tm21_pic_4.jpg",
             "tmex_name": "Carolin Weigand",
             "tmex_role": "Sozialpädagogin & Erzieherin",
             "tmex_paragraph": "<p>Oft wird mir berichtet, dass sich Schüler nur schwer konzentrieren können. Gerne empfehle ich dann die Therapiedecke um runterzufahren.<\/p>"
@@ -224,6 +227,7 @@
           "type": "testimonial",
           "settings": {
             "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/Tuchler_stehend_1_1.jpg",
             "tmex_name": "Christine Tuchler",
             "tmex_role": "Psychotherapeutin für Kinder & Jugendliche",
             "tmex_paragraph": "<p>Es ist einfach schön mit anzusehen wie nach kurzer Zeit die motorische Unruhe des Patienten zurückgeht.<\/p>"
