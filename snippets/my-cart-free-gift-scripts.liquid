@@ -10,7 +10,7 @@
         import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
 		console.log("cart items: ")
-		console.log(state.cart.items);
+		console.log(state.cart);
         subscribeToCartStateUpdate( state => {
             const promoVariant = {{ promoVariant }};
             const promoSubtotal = {{ promoSubtotal }}00;
