@@ -24,12 +24,12 @@
         {% comment %} data-ajax-cart-section-scroll keeps the scroll position unchanged when the element's HTML is changed {% endcomment %}
         <div class="my-cart__items" data-ajax-cart-section-scroll>
             {% for item in cart.items %}
-              {% if item.id == '34485696430219' %}
+              {% if item.id == 34485696430219 %}
           		{% render 'my-cart-free-gift-scripts', settings: settings %}
           	  {% endif %}
             {% endfor %}
             {% for item in cart.items %}
-              {% if item.id == '34440242954379' %}
+              {% if item.id == 34440242954379 %}
           		{% render 'my-cart-free-gift-scripts2', settings: settings %}
           	  {% endif %}
             {% endfor %}
