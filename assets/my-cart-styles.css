@@ -247,6 +247,6 @@ body.js-ajax-cart-not-empty .icon-cart-header {
 }
 
 /* style for discount price auto added when a free gift product */
-.discount_price {
+#my-cart_finalPrice-34447711174795, #my-cart_finalPrice-34447711240331, .discount_price {
   color: green;
 }
