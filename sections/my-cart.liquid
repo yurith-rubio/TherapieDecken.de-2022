@@ -1,12 +1,15 @@
 <!-- sections/my-cart.liquid -->
-{% for item in cart.items %}
-  item: {{ item }}
-{% endfor %}
-
 
 {% render 'my-cart-free-gift-scripts', settings: settings %}
 
 <div id="my-container__cart" class="my-container__cart open-cart">
+  
+  {% for item in cart.items %}
+    item: {{ item }}
+  {% endfor %}
+
+
+  
   <div class="my-floating-cart"> 
     <form id="cart_slider" action="{{ routes.cart_url }}" method="post" class="my-cart" >
       {% comment %} data-ajax-cart-section makes the element's HTML update when the cart gets changed {% endcomment %}
