@@ -12,6 +12,8 @@
         subscribeToCartStateUpdate( state => {
         	console.log("cart state changes ");
             
+
+            
             state.cart.items.forEach(item => {
             	console.log(item.id)
             	if ( item.id == '34485696430219' ) {
@@ -21,7 +23,8 @@
                 	console.log(" 150 product selected ");
                 	const promoVariant = '34447711240331';
                 };
-                
+               console.log("promoVariant: ");
+               console.log(promoVariant);
             });
             
             const promoSubtotal = {{ promoSubtotal }}00;
