@@ -19,7 +19,13 @@
             console.log(state.cart);
         
             const promoVariant = {{ promoVariant }};
+            const product150 = 
             const promoSubtotal = {{ promoSubtotal }}00;
+            
+            state.cart.items.forEach(itemId => {
+            	console.log("itemId");
+            	console.log(itemId);
+            });
 
             // If cart state exists and there is no Ajax Cart API request in progress
             if ( state.status.cartStateSet && !state.status.requestInProgress ) {
@@ -42,6 +48,7 @@
                     // lets add one with _autoadded property
                     if ( autoAddedLineItem === -1 ) {
                         setTimeout(function(){
+                          if ( )
                           cartRequestAdd({ 
                               items: [{
                                   id: promoVariant,
