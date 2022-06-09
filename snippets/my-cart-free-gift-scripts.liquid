@@ -12,7 +12,7 @@
         subscribeToCartStateUpdate( state => {
         	console.log("cart state changes ");
             
-            const promoVariant = '34447711240331';
+            let promoVariant = '34447711240331';
             
             state.cart.items.forEach(item => {
             	if ( item.id == '34485696430219' ) {
