@@ -12,21 +12,22 @@
         subscribeToCartStateUpdate( state => {
         	console.log("cart state changes ");
             
-
+            const promoVariant = '34447711240331';
             
             state.cart.items.forEach(item => {
             	console.log(item.id)
             	if ( item.id == '34485696430219' ) {
                 	console.log(" 135 product selected ");
-                	const promoVariant = 34447711174795;
-                } else if ( item.id == '34440242954379' ) {
+                	promoVariant = '34447711174795';
+                } else ( item.id == '34440242954379' ) {
                 	console.log(" 150 product selected ");
-                	const promoVariant = '34447711240331';
+                	promoVariant = '34447711240331';
                 };
-               console.log("promoVariant: ");
-               console.log(promoVariant);
             });
             
+            console.log("promoVariant: ");
+            console.log(promoVariant);
+               
             const promoSubtotal = {{ promoSubtotal }}00;
 
             // If cart state exists and there is no Ajax Cart API request in progress
