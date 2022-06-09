@@ -248,5 +248,5 @@ body.js-ajax-cart-not-empty .icon-cart-header {
 
 /* style for discount price auto added when a free gift product */
 .discount_price {
-  color: #A40000;
+  color: green;
 }
