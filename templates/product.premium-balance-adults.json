@@ -164,9 +164,9 @@
           "settings": {
             "link": "",
             "tmex_picture": "shopify:\/\/shop_images\/caroline_helming.jpg",
-            "tmex_name": "Joe Doe",
-            "tmex_role": "Psychologin",
-            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+            "tmex_name": "Caroline Helming",
+            "tmex_role": "Ergotherapeutin & Schlafberaterin",
+            "tmex_paragraph": "<p>Ich bin ein großer Fan des Konzepts. Ob privat oder beruflich, ich kann sie uneingeschränkt weiterempfehlen.<\/p>"
           }
         },
         "c0450054-62e0-4aa1-a5a3-77770ed2434e": {
@@ -174,9 +174,19 @@
           "settings": {
             "link": "",
             "tmex_picture": "shopify:\/\/shop_images\/dinah_berger.jpg",
-            "tmex_name": "Joe Doe",
+            "tmex_name": "Dinah Berger",
             "tmex_role": "Psychologin",
-            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+            "tmex_paragraph": "<p>Während Ängste gemildert werden, führt der Tiefendruck zu einem Gefühl von Sicherheit, das gerade bei Menschen mit Traumata oft fehlt.<\/p>"
+          }
+        },
+        "6c7301e8-9edc-4174-92cd-57ed5932e441": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/Michaela_Gross_10_1_4.jpg",
+            "tmex_name": "Michaela Gross",
+            "tmex_role": "Heilpraktikerin für Psychotherapie",
+            "tmex_paragraph": "<p>Als Traumatherapeutin empfehle ich die Decken bei Schlaf-\/Angst- und Panikstörungen. Es hilft, dass sich die Patienten wieder spüren können.<\/p>"
           }
         },
         "350251f4-17bf-412a-96a1-7cb3c0e48775": {
@@ -184,9 +194,39 @@
           "settings": {
             "link": "",
             "tmex_picture": "shopify:\/\/shop_images\/phsycologist-therapiedecken-img1.jpg",
-            "tmex_name": "Joe Doe",
-            "tmex_role": "Psychologin",
-            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+            "tmex_name": "Dr. Sabine Hoffmann",
+            "tmex_role": "Leitende Psychologin",
+            "tmex_paragraph": "<p>Diese Decken können ein spontanes Gefühl von Ruhe, kurz gesagt „alles ist gut” auf der körperlichen und damit auch psychischen Ebene auslösen.<\/p>"
+          }
+        },
+        "3c6c1a48-095b-47c6-b67a-d3bae0356db2": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/tm21_pic.jpg",
+            "tmex_name": "Katharina Meier-Batrakow",
+            "tmex_role": "Psychologin für Kinder- und Jugendliche",
+            "tmex_paragraph": "<p>Jemanden zu umarmen, um Trost zu spenden, ein Kind zu halten, um es zu beruhigen – all das sind altbewährte Methoden zur Stressreduktion.<\/p>"
+          }
+        },
+        "cf4c09cd-5dfe-4b9d-bf1b-71a2999bae67": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/tm21_pic_4.jpg",
+            "tmex_name": "Carolin Weigand",
+            "tmex_role": "Sozialpädagogin & Erzieherin",
+            "tmex_paragraph": "<p>Oft wird mir berichtet, dass sich Schüler nur schwer konzentrieren können. Gerne empfehle ich dann die Therapiedecke um runterzufahren.<\/p>"
+          }
+        },
+        "8c2dd925-c355-4c3f-9d56-688120fb9f4d": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/Tuchler_stehend_1_1.jpg",
+            "tmex_name": "Christine Tuchler",
+            "tmex_role": "Psychotherapeutin für Kinder & Jugendliche",
+            "tmex_paragraph": "<p>Es ist einfach schön mit anzusehen wie nach kurzer Zeit die motorische Unruhe des Patienten zurückgeht.<\/p>"
           }
         }
       },
@@ -195,7 +235,11 @@
         "f365e846-0e28-419d-a6f1-f413a24ad574",
         "1f4ac89c-e1cf-4f66-897f-c303c9d37e09",
         "c0450054-62e0-4aa1-a5a3-77770ed2434e",
-        "350251f4-17bf-412a-96a1-7cb3c0e48775"
+        "6c7301e8-9edc-4174-92cd-57ed5932e441",
+        "350251f4-17bf-412a-96a1-7cb3c0e48775",
+        "3c6c1a48-095b-47c6-b67a-d3bae0356db2",
+        "cf4c09cd-5dfe-4b9d-bf1b-71a2999bae67",
+        "8c2dd925-c355-4c3f-9d56-688120fb9f4d"
       ],
       "settings": {
         "bg-color": "",
