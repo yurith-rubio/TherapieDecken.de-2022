@@ -1,4 +1,3 @@
-
 {% if product.handle == 'therapiedecken' %}
 
   {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
@@ -9,12 +8,7 @@
     <script type="module">
         import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-            console.log("cart items: ");
-
         subscribeToCartStateUpdate( state => {
-            
-
-        
             const promoVariant = {{ promoVariant }};
             const promoSubtotal = {{ promoSubtotal }}00;
 
