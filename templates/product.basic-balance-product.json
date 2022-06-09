@@ -183,6 +183,15 @@
             "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
           }
         },
+        "03c7bf8f-2dc1-4de6-8dc4-fd884e9db3ed": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tmex_name": "Michaela Gross",
+            "tmex_role": "Heilpraktikerin für Psychotherapie",
+            "tmex_paragraph": "<p>Als Traumatherapeutin empfehle ich die Decken bei Schlaf-\/Angst- und Panikstörungen. Es hilft, dass sich die Patienten wieder spüren können.<\/p>"
+          }
+        },
         "9f7eff75-d6d3-4f18-82e0-3517acbb93e9": {
           "type": "testimonial",
           "settings": {
@@ -199,6 +208,7 @@
         "82e988f3-c28e-41b7-921f-526804f74758",
         "f0c2c67d-6256-4d1e-b200-694275304732",
         "10389a8f-2a9b-44e6-a884-1bb7d288f9e5",
+        "03c7bf8f-2dc1-4de6-8dc4-fd884e9db3ed",
         "9f7eff75-d6d3-4f18-82e0-3517acbb93e9"
       ],
       "settings": {
