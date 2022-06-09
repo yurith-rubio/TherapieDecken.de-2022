@@ -16,7 +16,7 @@
         <div class="cart-header close-cart" data-ajax-cart-toggle-class-button="js-my-cart-open">
           <h2 class="heading_cart Heading u-h5">Warenkorb   
             {% for item in cart.items %}
-              item: {{ item }}
+              item: {{ item | json }}
             {% endfor %}
           </h2>
           <a class="close-slide-cart" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0"
