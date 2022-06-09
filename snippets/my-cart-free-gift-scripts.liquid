@@ -14,13 +14,17 @@
             
             state.cart.items.forEach(item => {
             	if ( item.id == '34485696430219' ) {
-                	console.log("test");
+                	console.log(" 135 product selected ");
+                	const promoVariant = {{ promoVariant }};
+                } else if ( item.id == '34440242954379' ) {
+                	console.log(" 150 product selected ");
+                	const promoVariant = '34447711240331';
                 };
             });
             
             
             
-            const promoVariant = {{ promoVariant }};
+
             const promoSubtotal = {{ promoSubtotal }}00;
 
             // If cart state exists and there is no Ajax Cart API request in progress
