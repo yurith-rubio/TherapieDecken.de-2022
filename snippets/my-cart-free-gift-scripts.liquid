@@ -18,7 +18,7 @@
             	if ( item.id == '34485696430219' || item.id == '34440242036875' || item.id == '34440242266251' || item.id == '34440242495627' || item.id == '34440242725003' ) {
                 	console.log(" 135 ");
                 	promoVariant = '34447711174795';
-                } else if ( item.id == 34440242954379 ) {
+                } else if ( item.id == 34440242954379 || item.id == '34440243183755' || item.id == '34440243413131' || item.id == '34440243642507' ) {
                 	console.log(" 150 item.id: ");
                     console.log(item);
                 	promoVariant = '34447711240331';
@@ -76,8 +76,7 @@
             
             const promoVariantSelector = document.getElementById("my-cart_finalPrice-" + promoVariant);
             promoVariantSelector.classList.add('discount_price');
-            console.log("promoVariantSelector: ");
-            console.log(promoVariantSelector);
+
          });
     </script>
   {% endif %}
