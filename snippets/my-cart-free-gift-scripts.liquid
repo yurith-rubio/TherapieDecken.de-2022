@@ -21,10 +21,7 @@
             const promoVariant = {{ promoVariant }};
             const promoSubtotal = {{ promoSubtotal }}00;
             
-            state.cart.items.forEach(itemId => {
-            	console.log("itemId");
-            	console.log(itemId);
-            });
+
 
             // If cart state exists and there is no Ajax Cart API request in progress
             if ( state.status.cartStateSet && !state.status.requestInProgress ) {
