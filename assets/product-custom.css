@@ -513,55 +513,6 @@ header.html-text-wr{
 }
 
 
-/* icons-prestige.liquid */
-
-.icons-prestige-wr{
-  display:flex;
-}  
-.icons-prestige-wr > .icons-prestige-single{
-  width: 20%  
-}
-.icons-prestige-single > p{
-  text-align: center;
-  font-style: italic;
-  font-size: 12px;
-  padding: 15px 15px 0 15px;
-}
-.prestige-img-wr{
-  display: flex;
-  min-height: 60px;
-  justify-content: center;
-}
-.prestige-img{
-  max-height: 60px;
-  max-width: 120px;
-}
-@media only screen and (max-width: 641px){
-  .icons-prestige-wr{
-	width: 80%;
-  }
-  .icons-prestige-wr > .icons-prestige-single{
-    scroll-snap-align: center;
-	flex: 0 0 45%;
-    padding: 0 10px;
-  }
-  .prestige-img-wr{
-    max-width: 120px;
-    align-items: center;
-    margin: auto;
-  }
-  .icons-prestige-single > p{
-    padding: 15px 0;
-  }
-  .prestige-img{
-    max-height: 50px;
-    max-width: 100px;
-  }
-  .icons-prestige-single{
-    padding: 0 15px;
-  }
-}
-
 /* icons-delivery-info.liquid */
 
 .icons-container{

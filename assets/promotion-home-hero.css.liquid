@@ -1,4 +1,8 @@
 /* Home Cover Pages */
+.promo-heroImage{
+  width: 1000px;
+  height: auto;
+}
 
 .Slideshow__Content{
   padding: unset !important;
@@ -11,9 +15,11 @@
   align-items: center;
 }
 .home_promotional_content_wrapper{
-  /*margin: auto;*/
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .home_promotional_bottom_part{
@@ -27,52 +33,67 @@
 }
 
 .promotion-home-hero_button{
+  position: relative;
   color: {{ settings.text_button_color }} !important;
 }
 
-@media screen  and (min-width: 900px){
+.promotion-home-hero_button:hover{
+  position: relative;
+  color: {{ settings.text_button_color_hover }} !important;
+}
+
+.homePromotional_art_desktop{
+  display: block;
+  width: 100%;
+  max-width: 471px;
+} 
+
+.Slideshow--fullscreen .Slideshow__Image{
+  object-position: {{ settings.image_position }} !important;
+}
+
+@media screen  and (max-width: 640px) {
   .promotion-home-hero_content_container{
-    width: 60%;
+    width: 100%;
   }
-  .home_promotional_bottom_part{
-    padding: 15px 0 30px 0; 
+  .homePromotional_art_desktop{
+    position: relative;
   }
-  .homePromotional_svg_shorter{
-    display: block;
-  }  
-  .homePromotional_svg_taller{
-    display: none;
+  .promotion-home-hero_button{
+    top: 10px;
   }
-
-}
-
-@media screen  and (max-width: 899px) {
-  .homePromotional_svg_shorter{
-    display: none;
-  }  
-  .homePromotional_svg_taller{
-    display: block;
+  .promo-heroImage{
+    width: 500px;
+    height: auto;
   }
-  .home_promotional_bottom_part{
-    margin-top: 20px;
+  .Slideshow__ImageContainer{
+    background-image: url('{{ settings.promo_image_mobile | img_url: 'master' }}');
   }
 }
 
-@media screen  and (min-width: 500px) and (max-width: 899px) and (orientation: portrait ) {
+@media screen and (min-width: 641px) {
+  .promotion-home-hero_button{
+    right: 8%;
+  }
+  .Slideshow__ImageContainer{
+    background-image: url('{{ settings.promo_image | img_url: 'master' }}');
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 900px) {
   .promotion-home-hero_content_container{
     width: 70%;
   }
 }
 
-@media screen  and (max-width: 499px) and (orientation: portrait ) {
+@media screen and (min-width: 901px) {
   .promotion-home-hero_content_container{
-    width: 100%;
+    width: 50%;
   }
 }
 
-@media screen  and (max-width: 899px) and (orientation: landscape ) {
-  .promotion-home-hero_content_container{
-    width: 50%;
-    margin: auto;
+@media screen and (min-width: 1922px) {
+  .Slideshow__ImageContainer{
+    background-position-y: top !important;
   }
 }

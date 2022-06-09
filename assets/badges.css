@@ -6,7 +6,7 @@
   align-items: center;
   z-index: 1;
   height: 80px;
-  margin-bottom: -80px;
+  margin-bottom: -50px;
   bottom: -170px;
 }
 .Collection_SmallBadge {
@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   left: 20px;
-  background: #FA558C;
+  background: #EE5183;
   z-index: 1;
   padding: 0 20px 0 10px;
   border-radius: 4px;
@@ -28,7 +28,7 @@
   z-index: 2;
 }
 .Collection_ImgSize_SmallBadge{
-    max-width: 110px;
+    max-width: 80px;
     height: auto;
 }
 
@@ -46,7 +46,7 @@
     width: 40%;
   }
   .Collection_ImgSize_SmallBadge{
-    max-width: 70px;
+    max-width: 60px;
     height: auto;
   }
 }
@@ -55,7 +55,7 @@
 /* FreeMask badge on Product Pages */
 .ProductBadge_Wrapper{
     position: absolute;
-    bottom: 30%;
+    top: 0;
     z-index: 1;
     right: 7%;
     display: inline-flex;
@@ -66,8 +66,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  left: 20px;
-  background: #F01A22;
+  left: 35px;
+  background: #EE5183;
   z-index: 1;
   padding: 0 23px 0 18px;
   border-radius: 5px;
@@ -98,12 +98,12 @@
 
 @media only screen and (min-width: 641px){
   .Prod_ImgSmallBadge {
-    width: 140px;
+    width: 120px;
   }
 }
 
 @media only screen and (max-width: 640px){
   .Prod_ImgSmallBadge {
-    width: 120px;
+    width: 110px;
   }
 }

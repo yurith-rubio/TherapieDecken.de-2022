@@ -1,46 +1,22 @@
-{% style%}
-
-header.html-text-wr{
-  padding: 0 30px;
-}
-.FeaturedImage-banner{
-  display:none;
-}
-.FeaturedImage-banner>img{
-  width: 100%
-}
-
-@media only screen and (max-width: 641px){
-  .FeaturedText__banner{
-    margin: 0 30px;
-    display: inline-flex;
-  }
-  header.html-text-wr{
-    padding: 0;
-  }
-  .FeatureText__ImageWrapper-desktop{
-    display:none;
-  }
-  .FeaturedImage-banner{
-    display:flex;
-	margin-bottom: -70px;
-  }
-}
-{% endstyle %}
-
-
+{{ 'banner-call2action.css' | asset_url | stylesheet_tag }}
 
 <section class="Section {% unless section.settings.image %}Section--spacingNormal{% endunless %}">
   {% for block in section.blocks %}
   	<div style="background-color: {{ block.settings.bg-color }}; padding: {{ block.settings.spacer }}; ">
       {% endfor %}
-      
 
-  
     {%- capture section_content -%}
  
     <div class="FeaturedImage-banner">
-     <img src="{{ section.settings.image | img_url: '800x' }}" alt="{{ section.settings.image.alt | escape }}">
+      {% assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+      <img class="Image--lazyLoad"
+           src="{{ section.settings.image | img_url: 'x300' }}"
+           data-src="{{ img_url }}"
+           data-widths="[380, 540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+           data-aspectratio="{{ section.settings.image.aspect_ratio }}"
+           data-sizes="auto"
+           data-parent-fit="cover"
+           alt="{{ section.settings.image.alt | escape }}">
     </div>
     <div class="FeatureText__ContentWrapper FeaturedText__banner"
         {% for block in section.blocks %} style="background-color:{{ block.settings.bg-color-text-html }}; {% endfor %}">

@@ -15,24 +15,17 @@
 }
 {%- endcapture -%}
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="slideshow">
-  <div class="Slideshow {% if section.settings.show_fullscreen %}Slideshow--fullscreen{% endif %}">
-    <div class="Slideshow__Carousel {% if section.settings.show_arrow %}Slideshow__Carousel--withScrollButton{% endif %} Carousel Carousel--fadeIn {% if section.settings.show_fullscreen %}Carousel--fixed{% endif %} Carousel--insideDots"
+  <div class="Slideshow Slideshow--fullscreen">
+    <div class="Slideshow__Carousel Carousel Carousel--fadeIn Carousel--fixed Carousel--insideDots"
          data-flickity-config='{{ flickity_options }}'>
       {%- for block in section.blocks -%}
         {%- capture slide_content -%}
-          {%- assign mobile_image = settings.promotional_hero_image -%}
-          {%- if mobile_image -%}
-            <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio{% endunless %} hidden-tablet-and-up"
-                 style="{% unless section.settings.show_fullscreen %}--aspect-ratio: {{ mobile_image.aspect_ratio }};{% endunless %} background-image: url({{ mobile_image | img_url: '1x1', format: 'jpg' }})">
-                  <img class="Slideshow__Image" src="{{ mobile_image | img_url: 'x800' }}" alt="{{ mobile_image.alt | escape }}">
+      
+          {%- if settings.promo_image -%}
+            <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}"
+                 style="background-size: cover; background-position: right;">
             </div>
-          {%- endif -%}
-          {%- if settings.promotional_hero_image -%}
-            <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} hidden-phone"
-                 style="{% unless section.settings.show_fullscreen %}padding-bottom: {{ 100.0 | divided_by: settings.promotional_hero_image.aspect_ratio }}%; --aspect-ratio: {{ settings.promotional_hero_image.aspect_ratio }};{% endunless %} background-image: url({{ settings.promotional_hero_image | img_url: '1x1', format: 'jpg' }})">
-              {% assign image_url = settings.promotional_hero_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
-                <img class="Slideshow__Image" src="{{ settings.promotional_hero_image | img_url: '1000x' }}" alt="{{ settings.promotional_hero_image.alt | escape }}">
-            </div>
+      
           {%- else -%}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% if section.settings.show_fullscreen %}PlaceholderBackground{% endif %} PlaceholderSvg--dark">
               {%- capture placeholder -%}{% cycle 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
@@ -40,26 +33,23 @@
             </div>
           {%- endif -%}
 
+      	  {% comment %} Capture the promo art content {% endcomment %}
           {%- capture slideshow_content -%}
-
 			<div class="promotion-home-hero_content_container">
   	          <div class="home_promotional_content_wrapper">
-                <div style="padding-left: 3%; padding-right: 3%">
-                  <img class="homePromotional_svg_shorter Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/WEB_-_Mother_s_day_promotion.png?v=1650564915" alt="Therapiedecken Mother's day homepage">
-				  <img class="homePromotional_svg_taller Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/WEB_-_Mother_s_day_promotion.png?v=1650564915" alt="Therapiedecken Mother's day homepage">
-                  {%- if settings.button_1_text != blank -%}
-                    <div class="home_promotional_bottom_part">
-                      <a href="{{ settings.button_1_link }}" class="promotion-home-hero_button Button Button--primary" >{{ settings.button_1_text | escape }}</a>
-                    </div>
-                  {%- endif -%}
-                </div>
+                <img class="homePromotional_art_desktop" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_-_Summer_Cooling_Cover_Promotion_WEB_DESKTOP.png?v=1654598408" alt="Summer Cooling's day homepage">
+                {%- if settings.button_1_text != blank -%}
+                  <div class="home_promotional_bottom_part">
+                    <a href="{{ settings.button_1_link }}" class="promotion-home-hero_button Button Button--primary" >{{ settings.button_1_text | escape }}</a>
+                  </div>
+                {%- endif -%}
                </div>
 			</div>
           {%- endcapture -%}
 
           {%- if slideshow_content != blank -%}
             <div class="Slideshow__Content Slideshow__Content--{{ block.settings.content_position }}">
-              <header class="SectionHeader">
+              <header class="SectionHeader" style="opacity: 1">
                 {{ slideshow_content }}
               </header>
             </div>
@@ -86,6 +76,7 @@
   </div>
   <span id="section-{{ section.id }}-end" class="Anchor"></span>
 </section>
+
 <style>
   #section-{{ section.id }} .Heading,
    #section-{{ section.id }} .flickity-page-dots {
