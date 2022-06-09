@@ -9,10 +9,10 @@
     <script type="module">
         import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
+            console.log("cart items: ");
 
         subscribeToCartStateUpdate( state => {
             
-            console.log("cart items: ");
 
         
             const promoVariant = {{ promoVariant }};
