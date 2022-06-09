@@ -164,9 +164,9 @@
           "settings": {
             "link": "",
             "tmex_picture": "shopify:\/\/shop_images\/caroline_helming.jpg",
-            "tmex_name": "Joe Doe",
-            "tmex_role": "Psychologin",
-            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+            "tmex_name": "Caroline Helming",
+            "tmex_role": "Ergotherapeutin & Schlafberaterin",
+            "tmex_paragraph": "<p>Ich bin ein großer Fan des Konzepts. Ob privat oder beruflich, ich kann sie uneingeschränkt weiterempfehlen.<\/p>"
           }
         },
         "b36c3480-f257-4644-b8e4-84516d0723de": {
@@ -174,18 +174,19 @@
           "settings": {
             "link": "",
             "tmex_picture": "shopify:\/\/shop_images\/dinah_berger.jpg",
-            "tmex_name": "Joe Doe",
+            "tmex_name": "Dinah Berger",
             "tmex_role": "Psychologin",
-            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+            "tmex_paragraph": "<p>Während Ängste gemildert werden, führt der Tiefendruck zu einem Gefühl von Sicherheit, das gerade bei Menschen mit Traumata oft fehlt.<\/p>"
           }
         },
         "fdf8e9f7-ad6f-4205-a688-101323511069": {
           "type": "testimonial",
           "settings": {
             "link": "",
-            "tmex_name": "Joe Doe",
-            "tmex_role": "Psychologin",
-            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+            "tmex_picture": "shopify:\/\/shop_images\/Michaela_Gross_10_1_4.jpg",
+            "tmex_name": "Michaela Gross",
+            "tmex_role": "Heilpraktikerin für Psychotherapie",
+            "tmex_paragraph": "<p>Als Traumatherapeutin empfehle ich die Decken bei Schlaf-\/Angst- und Panikstörungen. Es hilft, dass sich die Patienten wieder spüren können.<\/p>"
           }
         },
         "9d554a42-272f-4982-9633-8aaadd46420a": {
@@ -193,15 +194,16 @@
           "settings": {
             "link": "",
             "tmex_picture": "shopify:\/\/shop_images\/phsycologist-therapiedecken-img1.jpg",
-            "tmex_name": "Joe Doe",
-            "tmex_role": "Psychologin",
-            "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+            "tmex_name": "Dr. Sabine Hoffmann",
+            "tmex_role": "Leitende Psychologin",
+            "tmex_paragraph": "<p>Diese Decken können ein spontanes Gefühl von Ruhe, kurz gesagt „alles ist gut” auf der körperlichen und damit auch psychischen Ebene auslösen.<\/p>"
           }
         },
         "399c06f9-bd66-4a95-a533-a38d743eb7f7": {
           "type": "testimonial",
           "settings": {
             "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/tm21_pic.jpg",
             "tmex_name": "Joe Doe",
             "tmex_role": "Psychologin",
             "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
@@ -211,6 +213,7 @@
           "type": "testimonial",
           "settings": {
             "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/tm21_pic_4.jpg",
             "tmex_name": "Joe Doe",
             "tmex_role": "Psychologin",
             "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
@@ -220,6 +223,7 @@
           "type": "testimonial",
           "settings": {
             "link": "",
+            "tmex_picture": "shopify:\/\/shop_images\/Tuchler_stehend_1_1.jpg",
             "tmex_name": "Joe Doe",
             "tmex_role": "Psychologin",
             "tmex_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
