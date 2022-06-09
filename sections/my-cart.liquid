@@ -1,5 +1,7 @@
 <!-- sections/my-cart.liquid -->
 
+{% render 'my-cart-free-gift-scripts', settings: settings %}
+
 <div id="my-container__cart" class="my-container__cart open-cart">
   <div class="my-floating-cart"> 
     <form id="cart_slider" action="{{ routes.cart_url }}" method="post" class="my-cart" >
