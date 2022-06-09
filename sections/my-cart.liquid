@@ -1,7 +1,6 @@
 <!-- sections/my-cart.liquid -->
 
 <div id="my-container__cart" class="my-container__cart open-cart">
-  
   <div class="my-floating-cart"> 
     <form id="cart_slider" action="{{ routes.cart_url }}" method="post" class="my-cart" >
       {% comment %} data-ajax-cart-section makes the element's HTML update when the cart gets changed {% endcomment %}
@@ -17,6 +16,7 @@
 
         {% comment %} data-ajax-cart-section-scroll keeps the scroll position unchanged when the element's HTML is changed {% endcomment %}
         <div class="my-cart__items" data-ajax-cart-section-scroll>
+
           {% for item in cart.items %} 
           <div class="item_wrapper">
             {% comment %} remove button {% endcomment %}
@@ -210,6 +210,56 @@
     </form>
   </div>
 </div>
+
+<script>
+  $(document).ready(function () {
+      var offsetY = window.pageYOffset,
+          $body = $('body'),
+          $win = $(window),
+          $close = $('.close-cart'),
+          $open = $('.open-cart'),
+          $holder = $('#my-container__cart'),
+          
+      // Close with 'esc' key
+      $(document).keyup(function (e) {
+          if (e.keyCode == 27) $close.trigger('click');
+      });
+      $open.click(function () {
+          offsetY = window.pageYOffset;
+          // Block scrolling
+          $body.css({
+              'position': 'fixed',
+                  'color': '#FFFF00',
+                  'backgroundColor': '#00D',
+                  'top': -offsetY + 'px'
+          });
+        
+          // Show popup
+          $holder.css('display', 'block');
+      });
+
+      $close.click(function () {
+        
+          // Allow scrolling again
+          $body.css({
+              'position': 'static',
+                  'color': '',
+                  'backgroundColor': ''
+          });
+          /**
+           * Remove the following scrollTop()'s if you want.
+           * just a UI tweak that the user would expect.
+           **/
+          // Make the page stay at the position it was at before the overlay
+          $win.scrollTop(offsetY);
+          // Reset the overlay scroll position to the top
+          $stuff.scrollTop(0);
+          // Hide popup
+          $holder.css('display', 'none');
+      });
+  });
+</script>
+
 
 <script>
   function overlayOn() {
