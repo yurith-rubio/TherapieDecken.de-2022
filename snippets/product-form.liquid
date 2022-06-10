@@ -24,7 +24,7 @@
 	{% if option.name == 'Größe'%}
       {% for variant in product.variants %}
 
-              '{{ variant.id | json }}',
+              '{{ variant | json }}',
 
       {% endfor %}
 	{% endif %}
