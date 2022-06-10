@@ -1,5 +1,10 @@
 <!-- collection-promotional-badge.liquid -->
 
+<style>
+  .ProductItem:nth-child(1) .Collection_ImgSize_SmallBadge{
+    display: none;
+  }
+</style>
 {% if settings.enable_collection_badge %}
   {%- comment -%}See CSS on badges.css file {%- endcomment -%}
   {{ 'badges.css' | asset_url | stylesheet_tag }}
