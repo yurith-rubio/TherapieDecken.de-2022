@@ -19,6 +19,8 @@
 {{ 'product-form.css' | asset_url | stylesheet_tag }}
 {% render 'druck-option-button-img' %}
 
+
+Test 
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
   {%- for option in product.options_with_values -%}
