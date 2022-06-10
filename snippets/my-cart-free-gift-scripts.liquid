@@ -33,13 +33,13 @@
 
                     if(triggerOptionName && triggerOptionName.value) {
                     	console.log("check variants ");
-                        console.log(item);
-                        item.variants = item.variants.filter(function(variant){
+                        console.log(item.variant_options);
+                        item.variant_options = item.variant_options.filter(function(variant){
                         	console.log("here you are! ");
                             return variant.options.includes(option.value);
                         });
 
-                        item.available_variants_count = item.variants.length;
+
                     }
                 };
                 
