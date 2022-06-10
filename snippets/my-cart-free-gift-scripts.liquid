@@ -11,9 +11,8 @@
 
         subscribeToCartStateUpdate( state => {
         	
-            state.cart.items.filter(item => {
-            	console.log("item: ");
-            	console.log(item);
+            const giftTriggerItem = state.cart.items.filter(item => {
+            	return item.handle === 'therapiedecken';
             });
             
             let promoVariant = '34485696430219';
