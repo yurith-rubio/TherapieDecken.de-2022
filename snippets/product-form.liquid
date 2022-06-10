@@ -19,8 +19,9 @@
 {{ 'product-form.css' | asset_url | stylesheet_tag }}
 {% render 'druck-option-button-img' %}
 
-{% for variant in product.variants %}
-	{% for option in product.options %}
+
+{% for option in product.options %}
+	{% for variant in product.variants %}
 		{% if option.name == 'Größe'%}
 			{{ option.name }}
 			'{{ variant.id | json }}',
