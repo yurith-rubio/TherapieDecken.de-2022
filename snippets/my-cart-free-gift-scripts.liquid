@@ -19,6 +19,13 @@
             	return item.handle === 'therapiedecken';
             });
              
+            const getXforY = items.filter(freeItem);
+            
+            function getXforY(item) {
+            	console.log("test item");
+                console.log(item);
+            }
+            
             
             if ( giftTriggerItem && giftTriggerItem.length ) {
             	console.log("giftTriggerItem.length: ");
