@@ -20,7 +20,7 @@
 {% render 'druck-option-button-img' %}
 
 {% for variant in product.variants %}
-{{ variant.id | json }}
+'{{ variant.id | json }}'
 {% endfor %}
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
