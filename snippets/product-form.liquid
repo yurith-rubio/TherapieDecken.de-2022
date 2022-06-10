@@ -20,7 +20,7 @@
 {% render 'druck-option-button-img' %}
 
 
-{% for option in product.options %}
+{% for option in product.options_with_values %}
 	{% for variant in product.variants %}
 		{% if option.name == 'Größe'%}
 			{{ option.name }}
