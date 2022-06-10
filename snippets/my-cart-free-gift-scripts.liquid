@@ -21,29 +21,30 @@
              
             const getXforY = items.filter(item => {
             	console.log("works! ");
+                
+                if ( giftTriggerItem && giftTriggerItem.length ) {
+                    console.log("giftTriggerItem.length: ");
+                    console.log(giftTriggerItem.length);
+
+                    let triggerOptionName = giftTriggerItem[0].options_with_values.find(function(option){
+                        console.log(option.name);
+                        return option.name === 'Größe';
+                    });
+
+                    if(triggerOptionName && triggerOptionName.value) {
+                        item.variants = item.variants.filter(function(variant){
+                            return variant.options.includes(option.value);
+                        });
+
+                        item.available_variants_count = item.variants.length;
+                    }
+                };
+                
             });
 
             
             
-            if ( giftTriggerItem && giftTriggerItem.length ) {
-            	console.log("giftTriggerItem.length: ");
-                console.log(giftTriggerItem.length);
-                
-                let triggerOptionName = giftTriggerItem[0].options_with_values.find(function(option){
-                	console.log(option.name);
-                    return option.name === 'Größe';
-                });
-                
-                if(triggerOptionName && triggerOptionName.value) {
-                    item.variants = item.variants.filter(function(variant){
-                        return variant.options.includes(option.value);
-                    });
 
-                    item.available_variants_count = item.variants.length;
-                }
-
-
-            };
 
             
             
