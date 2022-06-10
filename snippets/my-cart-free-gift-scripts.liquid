@@ -10,8 +10,11 @@
 
 
         subscribeToCartStateUpdate( state => {
-        	console.log("state ");
-            console.log(state)
+        	
+            state.cart.items.filter(item => {
+            	console.log("item: ");
+            	console.log(item);
+            });
             
             let promoVariant = '34485696430219';
             
