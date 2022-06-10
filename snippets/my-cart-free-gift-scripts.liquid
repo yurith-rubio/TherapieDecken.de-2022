@@ -23,6 +23,7 @@
                 console.log(giftTriggerItem.length);
                 
                 let triggerOptionName = giftTriggerItem[0].options_with_values.find(function(option){
+                	console.log(option.name);
                     return option.name === 'Größe';
                 });
 
