@@ -14,7 +14,7 @@
         	const items = state.cart.items;
             const totalItemsInCart = state.cart.item_count;
             
-            const giftTriggerItem = state.cart.items.filter(item => {                
+            const giftTriggerItem = items.filter(item => {                
             	return item.handle === 'therapiedecken';
             });
             
