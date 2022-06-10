@@ -11,10 +11,8 @@
 
         subscribeToCartStateUpdate( state => {
         
-            const giftTriggerItem = state.cart.items.filter(item => {
-            	console.log("state ");
-           		console.log(state);
-                
+        	state.cart.item_count
+            const giftTriggerItem = state.cart.items.filter(item => {                
             	return item.handle === 'therapiedecken';
             });
 
