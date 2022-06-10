@@ -12,8 +12,8 @@
         subscribeToCartStateUpdate( state => {
         
         	
-            console.log("state.cart.item_count ");
-           	console.log(state.cart.item_count);
+            const totalItemsInCart = state.cart.item_count;
+            console.log(totalItemsInCart)
             
             const giftTriggerItem = state.cart.items.filter(item => {                
             	return item.handle === 'therapiedecken';
