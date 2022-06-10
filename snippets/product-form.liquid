@@ -21,12 +21,13 @@
 
 
 {% for option in product.options_with_values %}
-	{% for variant in product.variants %}
-		{% if option.name == 'Größe'%}
-			{{ option.name }}
-			'{{ variant.id | json }}',
-		{% endif %}
-	{% endfor %}
+	{% if option.name == 'Größe'%}
+      {% for variant in product.variants %}
+
+              '{{ variant.id | json }}',
+
+      {% endfor %}
+	{% endif %}
 {% endfor %}
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
