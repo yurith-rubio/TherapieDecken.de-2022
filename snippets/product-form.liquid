@@ -22,10 +22,11 @@
 
 {% for option in product.options_with_values %}
 	{% if option.name == 'Größe'%}
+	
       {% for variant in product.variants %}
-
+		{% if variant.option1 == '135 x 200 cm' %}
               '{{ variant | json }}',
-
+		{% endif %}
       {% endfor %}
 	{% endif %}
 {% endfor %}
