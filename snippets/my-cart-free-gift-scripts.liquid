@@ -8,7 +8,14 @@
     <script type="module">
         import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-
+		const variantsA = [
+        '34485696430219',
+        '34440242036875',
+        '34440242266251',
+        '34440242495627',
+        '34440242725003'
+        
+        ];
         subscribeToCartStateUpdate( state => {
         	console.log("cart state ");
             console.log(state);
@@ -16,7 +23,7 @@
             let promoVariant = '34485696430219';
             
             state.cart.items.forEach(item => {
-            	if ( item.id == '34485696430219' || item.id == '34440242036875' || item.id == '34440242266251' || item.id == '34440242495627' || item.id == '34440242725003' ) {
+            	if ( variantsA.indexOf(item.id) >= 0 ) {
                 	console.log(" 135 ");
                 	promoVariant = '34447711174795';
                 } else if ( item.id == 34440242954379 || item.id == '34440243183755' || item.id == '34440243413131' || item.id == '34440243642507' ) {
