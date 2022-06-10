@@ -11,7 +11,7 @@
 
         subscribeToCartStateUpdate( state => {
         
-        	const Items = state.cart.item;
+        	const item = state.cart.item;
             const totalItemsInCart = state.cart.item_count;
             
             const giftTriggerItem = state.cart.items.filter(item => {                
