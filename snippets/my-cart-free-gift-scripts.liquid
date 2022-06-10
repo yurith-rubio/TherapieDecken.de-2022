@@ -34,8 +34,9 @@
                     if(triggerOptionName && triggerOptionName.value) {
                     	console.log("check variants ");
                         console.log(item.variant_options);
-                        item.variant_options = item.variant_options.filter(function(variant){
+                        item.variant_options = item.variant_options[0].filter(function(variant){
                         	console.log("here you are! ");
+                            console.log(variant);
                             return variant.options.includes(option.value);
                         });
 
