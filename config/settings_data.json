@@ -75,6 +75,8 @@
     "enable_product_badge": true,
     "hide_discount_general_badge": false,
     "show_product_guarantee_exceptions": false,
+    "gift_product_variant_id": "34447711174795",
+    "gift_product_min_spend": 1,
     "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-banner-2.jpg",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
@@ -226,6 +228,11 @@
           "content": "<p>Newsletter abonnieren und 10€ auf die 1. Bestellung erhalten. <br\/>*Ab 100€ Einkaufswert.<\/p>",
           "show_newsletter": true,
           "apparition_delay": 10
+        }
+      },
+      "my-cart": {
+        "type": "my-cart",
+        "settings": {
         }
       }
     },
