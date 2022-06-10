@@ -11,12 +11,18 @@
 
         subscribeToCartStateUpdate( state => {
         
-        	
+        	const Items = state.cart.item;
             const totalItemsInCart = state.cart.item_count;
             
             const giftTriggerItem = state.cart.items.filter(item => {                
             	return item.handle === 'therapiedecken';
             });
+            
+            function getItem(){
+            
+            }
+            
+            
             
             if ( giftTriggerItem && giftTriggerItem.length ) {
             	console.log("giftTriggerItem.length: ");
@@ -26,6 +32,15 @@
                 	console.log(option.name);
                     return option.name === 'Größe';
                 });
+                
+                if(triggerOptionName && triggerOptionName.value) {
+                    item.variants = item.variants.filter(function(variant){
+                        return variant.options.includes(option.value);
+                    });
+
+                    item.available_variants_count = item.variants.length;
+                }
+
 
             };
 
