@@ -19,17 +19,6 @@
 {{ 'product-form.css' | asset_url | stylesheet_tag }}
 {% render 'druck-option-button-img' %}
 
-
-{% for option in product.options_with_values %}
-	{% if option.name == 'Größe'%}
-	
-      {% for variant in product.variants %}
-		{% if variant.option1 == '150 x 220 cm' %}
-              '{{ variant.id | json }}',
-		{% endif %}
-      {% endfor %}
-	{% endif %}
-{% endfor %}
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
   {%- for option in product.options_with_values -%}
