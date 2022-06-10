@@ -25,7 +25,7 @@
 	
       {% for variant in product.variants %}
 		{% if variant.option1 == '135 x 200 cm' %}
-              '{{ variant | json }}',
+              '{{ variant.id | json }}',
 		{% endif %}
       {% endfor %}
 	{% endif %}
