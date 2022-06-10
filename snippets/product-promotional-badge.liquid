@@ -3,9 +3,7 @@
 {% if settings.enable_product_badge %}
   {{ 'badges.css' | asset_url | stylesheet_tag }}
 
-  {% if product.handle == 'balance-gewichtsdecke-fur-erwachsene'
-        or product.handle == 'therapiedecken'
-      	or product.handle == 'basic-gravity-gewichtsdecke-fur-erwachsene' %}
+  {% if product.handle == 'therapiedecken' %}
 
     <div class="ProductBadge_Wrapper">
       <div class="Prod_SmallBadge">Gratis</div>
