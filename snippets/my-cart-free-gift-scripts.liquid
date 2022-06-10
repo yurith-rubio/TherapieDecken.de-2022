@@ -87,25 +87,12 @@
 
     <script type="module">
         import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+        
+        subscribeToCartStateUpdate( state => {            
 
         const promoMessageSelector1 = document.getElementById("my-cart_promoMessage-34447711174795");
         const promoMessageSelector2 = document.getElementById("my-cart_promoMessage-34447711240331");
         addPromoMessage.
-        
-        subscribeToCartStateUpdate( state => {            
-            let promoVariant = '34447711174795';
-            
-            state.cart.items.forEach(item => {
-            	if ( variants135.indexOf("" + item.id) >= 0 ) {
-                	promoVariant = '34447711174795';
-                } else if ( variants150.indexOf("" + item.id) >= 0 ) {
-                	promoVariant = '34447711240331';
-                };
-            });
-
-           
-            /*
-
 
          });
     </script>
