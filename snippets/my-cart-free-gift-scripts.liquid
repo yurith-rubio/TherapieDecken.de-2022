@@ -23,12 +23,11 @@
             let promoVariant = '34447711174795';
             
             state.cart.items.forEach(item => {
-            console.log(typeof item.id);
-            	if ( variants135.indexOf(item.id) >= 0 ) {
+            	if ( variants135.indexOf("" + item.id) >= 0 ) {
                 	console.log(" 135 ");
                     
                 	promoVariant = '34447711174795';
-                } else if ( variants150.indexOf(item.id) >= 0 ) {
+                } else if ( variants150.indexOf("" + item.id) >= 0 ) {
                 	console.log(" 150 item.id: ");
                     console.log(item);
                 	promoVariant = '34447711240331';
