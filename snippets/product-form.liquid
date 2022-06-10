@@ -20,7 +20,11 @@
 {% render 'druck-option-button-img' %}
 
 {% for variant in product.variants %}
-'{{ variant.id | json }}',
+	{% for option in product.options %}
+		{% if option.name == 'Größe'%}
+			'{{ variant.id | json }}',
+		{% endif %}
+	{% endfor %}
 {% endfor %}
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
