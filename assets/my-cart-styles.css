@@ -77,7 +77,6 @@ body.js-my-cart-open{
 }
 .quantity_price_wrapper{
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   margin-top: 15px;
 }
