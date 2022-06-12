@@ -64,6 +64,7 @@ body.js-my-cart-open{
   right: 20px;
 }
 .item_wrapper{
+  display: inline-flex;
   border-top: 1px solid rgba(0,0,0,0.1);
   padding: 30px 20px;
   width: 100%
