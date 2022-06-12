@@ -64,7 +64,6 @@
 
               {%- if cart.cart_level_discount_applications != blank -%}
                 {%- for discount_application in cart.cart_level_discount_applications -%}
-              Test
                   <p class="Cart__Discount Heading u-h6">{{ 'cart.general.discount' | t }} ({{ discount_application.title }}): -<span>{{ discount_application.total_allocated_amount | money_without_trailing_zeros }}</span></p>
                 {%- endfor -%}
               {%- endif -%}
