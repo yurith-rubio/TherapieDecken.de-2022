@@ -76,6 +76,16 @@
           
             {% comment %} Container for errors {% endcomment %}
             <div data-ajax-cart-messages="{{ item.key }}"></div>
+            
+            {%- if item.line_level_discount_allocations != blank -%}
+              <ul class="CartItem__DiscountList">
+                {%- for discount_allocation in item.line_level_discount_allocations -%}
+                  <li class="CartItem__Discount">
+                    {%- render 'icon' with 'sale' -%}{{ discount_allocation.discount_application.title }}: -{{ discount_allocation.amount | money }}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
            
             </div>
           {% endfor %}
