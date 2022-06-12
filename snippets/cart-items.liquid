@@ -69,6 +69,7 @@
               <ul class="CartItem__DiscountList">
                 {%- for discount_allocation in line_item.line_level_discount_allocations -%}
                   <li class="CartItem__Discount">
+                    Test
                     {%- render 'icon' with 'sale' -%}{{ discount_allocation.discount_application.title }}: -{{ discount_allocation.amount | money }}
                   </li>
                 {%- endfor -%}
