@@ -29,7 +29,6 @@
           {% for item in cart.items %}
           <div class="myCart_itemWrapper">
 
-            {% comment %} remove button {% endcomment %}
             <div class="myCart_imageWrapper">
               <img class="myCart_imageCart" src="{{ item.image | image_url: width: 300 }} ">
             </div>
