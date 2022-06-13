@@ -6512,6 +6512,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .CartItem__LinePriceList,
 .CartItem__DiscountList {
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 10px));
+  line-height: 1.2;
 }
 
 .CartItem__PropertyList {
