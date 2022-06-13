@@ -1,4 +1,4 @@
-{% if product.handle == 'therapiedecken' %}
+
 
   {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
   {% assign promoVariant = settings.gift_product_variant_id  %}
@@ -12,10 +12,32 @@
         subscribeToCartStateUpdate( state => {
         
         	console.log("hi ");
+        	let items = state.cart.items;
+            const totalItemsInCart = state.cart.item_count;
+            
+            const giftTriggerItem = items.filter(item => {
+            	return item.handle === 'therapiedecken';
+            });
+            
+            console.log("giftTriggerItem.length: ");
+            console.log(giftTriggerItem);
+
+
+            if ( giftTriggerItem.length >= 1 ) {
+                cartRequestAdd({ 
+                  items: [
+                    {
+                      id: 34447711174795,
+                      quantity: 1,
+                      properties: {
+                      	"_autoadded": "Yes" 
+                        }
+                    }
+                  ]  
+                });
+            }
 
          });
     </script>
   {% endif %}
 
-
-{% endif %}
