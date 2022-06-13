@@ -4003,6 +4003,8 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   .Price--compareAt, .Item_Price--compareAt {
     margin-left: 10px;
   }
+}
+@media screen and (max-width: 640px) {
   .Price--highlight{
     margin-right: 10px;
   }
