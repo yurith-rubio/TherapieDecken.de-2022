@@ -83,8 +83,7 @@ body.js-my-cart-open{
   margin-top: 15px;
 }
 .myCart_removeWrapper{
-  position: relative;
-  right: 30px;  
+ 
 }
 .myCart_remove{
   display: flex;
