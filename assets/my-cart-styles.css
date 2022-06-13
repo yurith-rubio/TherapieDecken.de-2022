@@ -237,7 +237,9 @@ body.js-ajax-cart-empty .icon-cart-header {
 body.js-ajax-cart-not-empty .icon-cart-header {
   
 }
-
+.icon-cart-header{
+  color: transparent;
+}
 .myCart_itemCount{
   font-family: sans-serif;
 }
