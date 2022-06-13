@@ -4824,7 +4824,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 20;
+  z-index: 10;
   visibility: hidden;
   opacity: 0;
   background: #363636;
@@ -10452,7 +10452,6 @@ a.Link-Button-General:hover {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
-  z-index:21
 }
 
 .Search__Inner {
