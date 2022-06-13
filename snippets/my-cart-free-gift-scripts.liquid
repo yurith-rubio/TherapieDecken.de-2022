@@ -40,11 +40,10 @@
                         item.variant_options = item.variant_options.filter(function(value){
                         	console.log("item's size variant ");
                             console.log(value);
-                            return variant_options.includes(option.value);
+                            return value;
                         });
                         
-                        const finalValue = value.options.includes(option.value);
-                        return finalValue;
+                        console.log(value);
                         
                     }
                     
