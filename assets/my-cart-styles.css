@@ -168,10 +168,6 @@ form[action="cart/add"].js-ajax-cart-request-in-progress [type="submit"] {
   display: block; 
 }
 
-.my-cart_button{
-  margin-top: 20px;
-}
-
 /* Footer of cart */
 .myCart_footerWrapper{
   padding: 20px;
@@ -188,7 +184,6 @@ form[action="cart/add"].js-ajax-cart-request-in-progress [type="submit"] {
   display: flex;
   justify-content: space-between;
 }
-
 
 @media only screen and (max-width: 450px){
   #myCart_slider{
