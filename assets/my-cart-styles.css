@@ -31,13 +31,13 @@ body.js-my-cart-open{
 #myCart_Overlay{
   z-index:20;
   position:fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: none; /* Hidden by default */
   background-color: rgb(58 58 58 / 71%);
-  opacity:1;
+  opacity: 1;
   transition:opacity 0.15s ease-in-out
   height: 100vh;
   overflow-y: hidden;
