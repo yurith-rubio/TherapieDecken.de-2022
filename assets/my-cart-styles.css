@@ -87,6 +87,7 @@ body.js-my-cart-open{
   position: absolute;
   right: 30px;
   margin: -10px 4px 4px 4px;
+  background-color: white;
 }
 .myCart_quantitySelector{
   display: inline-flex;
