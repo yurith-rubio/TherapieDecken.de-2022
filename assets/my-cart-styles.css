@@ -80,7 +80,7 @@ body.js-my-cart-open{
   justify-content: space-between;
   margin-top: 15px;
 }
-.remove_cart{
+.myCart_remove{
   position: absolute;
   right: 30px;
   margin-top: -10px;
