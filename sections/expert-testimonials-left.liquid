@@ -89,34 +89,36 @@
   	<div class="tmex_wr_hp">
       <div class="owl-carousel">
       {% for block in section.blocks %}
-      	<div class="tmex_wr_quote item">
+      	<div class="tmex_wr_quote_item item">
           <a href="{{ block.settings.link}}">
-          	<div class="tmex_pic_wr">
-              <img
-                style="border-radius: 50%"
-                class="tmex_img Image--lazyLoad"
-                data-src="{{ block.settings.tmex_picture | img_url:'master' }}"
-                src="{{ block.settings.tmex_picture | img_url:'master' }}"
-                alt=""
-              />
-          	</div>
-          	<div class="tmex_text_wr">
-              <div style="font-weight: bold; margin-bottom: 0px" class="gral_font_16px tmex_name">
-                {{ block.settings.tmex_name }}
+            <div class="tmex_wr_quote">
+              <div class="tmex_pic_wr">
+                <img
+                  style="border-radius: 50%"
+                  class="tmex_img Image--lazyLoad"
+                  data-src="{{ block.settings.tmex_picture | img_url:'master' }}"
+                  src="{{ block.settings.tmex_picture | img_url:'master' }}"
+                  alt=""
+                />
               </div>
-              {% if block.settings.tmex_role != blank %}
-              <div style="font-weight: normal; height: 50px" class="gral_font_16px tmex_name">
-                {{ block.settings.tmex_role }}
-              </div>
-              {% endif %}
-              <div class="tmex_left_quote">
-                <span class="gral_icon21_yellow gral_font_20px icon-left-quote"></span>
-              </div>
-              <div class="tmex_citation">
-                {{ block.settings.tmex_paragraph }}
-              </div>
-              <div style="text-align:right;">
-                <span class="gral_icon21_yellow gral_font_20px icon-right-quote"></span>
+              <div class="tmex_text_wr">
+                <div style="font-weight: bold; margin-bottom: 0px" class="gral_font_16px tmex_name">
+                  {{ block.settings.tmex_name }}
+                </div>
+                {% if block.settings.tmex_role != blank %}
+                <div style="font-weight: normal; height: 50px" class="gral_font_16px tmex_name">
+                  {{ block.settings.tmex_role }}
+                </div>
+                {% endif %}
+                <div class="tmex_left_quote">
+                  <span class="gral_icon21_yellow gral_font_20px icon-left-quote"></span>
+                </div>
+                <div class="tmex_citation">
+                  {{ block.settings.tmex_paragraph }}
+                </div>
+                <div style="text-align:right;">
+                  <span class="gral_icon21_yellow gral_font_20px icon-right-quote"></span>
+                </div>
               </div>
             </div>
           </a>
