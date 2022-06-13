@@ -38,38 +38,40 @@
               {% endfor %}
 
               <div class="quantity_price_wrapper">
-                {% comment %} quantity selector {% endcomment %}
-                <div class="quantity-selector">
-                  {% comment %} data-ajax-cart-request-button ajaxifies the "Minus one" button {% endcomment %}
-                  <a class="button_cart" 
-                     data-ajax-cart-request-button 
-                     href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | minus: 1 }}" >
-
-                    <svg width="10" viewBox="0 0 12 2" xmlns="http://www.w3.org/2000/svg"><path d="M11.25 0H.75C.3 0 0 .4 0 1s.3 1 .75 1h10.5c.45 0 .75-.4.75-1s-.3-1-.75-1z" fill="#7A7A7A" fill-rule="nonzero"></path></svg>
-
-                  </a>
-                  {% comment %} Input {% endcomment %}
-                  <input class="input_cart" 
-                         data-ajax-cart-quantity-input="{{ item_index }}" 
-                         name="updates[]" 
-                         value="{{ item.quantity }}" 
-                         type="number" />
-                  
-                  {% comment %} data-ajax-cart-request-button ajaxifies the "Plus one" button {% endcomment %}
-                  <a class="button_cart"
-                     data-ajax-cart-request-button 
-                     href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | plus: 1 }}">
-
-                    <svg width="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M11 5H7V1a1 1 0 00-2 0v4H1a1 1 0 000 2h4v4a1 1 0 002 0V7h4a1 1 0 000-2z" fill="currentColor" fill-rule="nonzero"></path></svg>
-
-                  </a>
-                </div>
-
-                {% comment %} final price of item {% endcomment %}
-                <div id="my-cart_finalPrice-{{ item.id }}">
-                  <strong>{{ item.final_line_price | money }}</strong>
-                </div>
                 
+                <div>
+                  {% comment %} quantity selector {% endcomment %}
+                  <div class="quantity-selector">
+                    {% comment %} data-ajax-cart-request-button ajaxifies the "Minus one" button {% endcomment %}
+                    <a class="button_cart" 
+                       data-ajax-cart-request-button 
+                       href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | minus: 1 }}" >
+
+                      <svg width="10" viewBox="0 0 12 2" xmlns="http://www.w3.org/2000/svg"><path d="M11.25 0H.75C.3 0 0 .4 0 1s.3 1 .75 1h10.5c.45 0 .75-.4.75-1s-.3-1-.75-1z" fill="#7A7A7A" fill-rule="nonzero"></path></svg>
+
+                    </a>
+                    {% comment %} Input {% endcomment %}
+                    <input class="input_cart" 
+                           data-ajax-cart-quantity-input="{{ item_index }}" 
+                           name="updates[]" 
+                           value="{{ item.quantity }}" 
+                           type="number" />
+
+                    {% comment %} data-ajax-cart-request-button ajaxifies the "Plus one" button {% endcomment %}
+                    <a class="button_cart"
+                       data-ajax-cart-request-button 
+                       href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | plus: 1 }}">
+
+                      <svg width="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M11 5H7V1a1 1 0 00-2 0v4H1a1 1 0 000 2h4v4a1 1 0 002 0V7h4a1 1 0 000-2z" fill="currentColor" fill-rule="nonzero"></path></svg>
+
+                    </a>
+                  </div>
+
+                  {% comment %} final price of item {% endcomment %}
+                  <div id="my-cart_finalPrice-{{ item.id }}">
+                    <strong>{{ item.final_line_price | money }}</strong>
+                  </div>
+                </div>
                 
                 
                 {%- if item.line_level_discount_allocations != blank -%}
