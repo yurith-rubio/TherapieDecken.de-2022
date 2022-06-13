@@ -11,7 +11,7 @@ body.js-my-cart-open{
     right: 0;
   }
 }
-#cart_slider{
+#myCart_slider{
   z-index: 1000;
   transition: 0.4s transform;
   box-shadow: 0 0 14px 0 rgba(0,0,0,0.09),0 0 4px 0 rgba(0,0,0,0.21),0 0 0 1px rgba(0,0,0,0.09);
@@ -209,7 +209,7 @@ body.js-ajax-cart-not-empty .icon-cart-header {
 
 
 @media only screen and (max-width: 450px){
-  #cart_slider{
+  #myCart_slider{
     width: 100%;
   }
 }
