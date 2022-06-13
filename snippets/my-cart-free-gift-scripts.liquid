@@ -6,8 +6,9 @@
         import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
 
-        subscribeToCartStateUpdate( state => {
-
+        subscribeToCartStateUpdate( state => {#
+            console.log("gift here");
+			console.log(window.giftProduct);
 			// get items from the cart
         	let items = state.cart.items;
             const totalItemsInCart = state.cart.item_count;
