@@ -188,10 +188,14 @@
 <script>
   function overlayOn() {
     document.getElementById("myCart_Overlay").style.display = "block";
+    
+    document.body.style.overflow = 'hidden';
   }
 
   function overlayOff() {
     document.getElementById("myCart_Overlay").style.display = "none";
+    
+    document.body.style.overflow = '';
   }
 </script>
 
