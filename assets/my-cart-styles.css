@@ -162,7 +162,7 @@ body.js-my-cart-open .my-container__cart {
   transition:opacity 0.15s ease-in-out
 }
 
-body.js-ajax-cart-request-in-progress .my-cart__items {
+body.js-ajax-cart-request-in-progress .myCart_items {
   opacity: .5;
 }
 
