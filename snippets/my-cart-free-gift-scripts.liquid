@@ -12,30 +12,6 @@
         subscribeToCartStateUpdate( state => {
         
         	console.log("hi ");
-        	let items = state.cart.items;
-            const totalItemsInCart = state.cart.item_count;
-            
-            const giftTriggerItem = items.filter(item => {
-            	return item.handle === 'therapiedecken';
-            });
-            
-            console.log("giftTriggerItem.length: ");
-            console.log(giftTriggerItem);
-
-
-            if ( giftTriggerItem.length >= 1 ) {
-                cartRequestAdd({ 
-                  items: [
-                    {
-                      id: 34447711174795,
-                      quantity: 1,
-                      properties: {
-                      	"_autoadded": "Yes" 
-                        }
-                    }
-                  ]  
-                });
-            }
 
          });
     </script>
