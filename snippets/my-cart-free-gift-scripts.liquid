@@ -32,22 +32,12 @@
                         console.log(option.name);
                         return option.name === 'Größe';
                     });
-
-					/* get comparable value */
-                    if(triggerOptionName && triggerOptionName.value) {
-                    	console.log("check selected options ");
-                        console.log(item.variant_options);
-                        item.variant_options = item.variant_options.filter(function(value){
-                        	console.log("item's size variant ");
-                            console.log(variant_options.options.includes);
-                        });
-                        
-                        
-                        
-                    }
                     
                     console.log("triggerOptionName.value ");
                     console.log(triggerOptionName.value);
+                    
+                    
+
                 };
                 
             });
