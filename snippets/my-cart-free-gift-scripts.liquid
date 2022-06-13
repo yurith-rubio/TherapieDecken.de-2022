@@ -14,11 +14,13 @@
             	return item.handle === 'therapiedecken';
             });
 
-			// choose gift product depending on size value
+			// 
             let giftItem = items.filter(item => {
             	const giftItemHandle = item.handle;
             	return giftItemHandle === 'therapiedecken-basic-bezug-in-weiss';
             });
+            
+            // 
             
             console.log("giftItem: ");
             console.log(giftItem);
@@ -36,8 +38,12 @@
               cartRequestAdd({ 
                 items: [
                   {
-                    id: 34447711174795,
+                    handle: 'therapiedecken-basic-bezug-in-weiss',
                     quantity: 1,
+                    variant_options: {
+                    	0: '135 x 200 cm';
+                        1: 'Gravity (Schlaufen)'
+                    }
                     properties: {
                   	"_autoadded": "Yes" 
                       }
