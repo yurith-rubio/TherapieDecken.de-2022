@@ -34,7 +34,7 @@
               {% comment %} item title {% endcomment %}
               <h2 class="Heading u-h6"><a href="{{ item.url }}">{{ item.product.title }}</a></h2>
               {% for option in item.options_with_values %}
-              <p class="p_cart">{{ option.value }}</p>
+              	<p class="p_cart">{{ option.value }}</p>
               {% endfor %}
 
               <div class="quantity_price_wrapper">
