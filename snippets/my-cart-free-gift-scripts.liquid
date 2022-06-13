@@ -24,9 +24,6 @@
             const giftItem = items.filter(item => {
             	return item.handle === 'therapiedecken-basic-bezug-in-weiss';
             });
-            
-
-   
 
             if ( giftTriggerItem.length >= 1 ) {
                 cartRequestAdd({ 
@@ -39,72 +36,6 @@
                   ]  
                 }, 100 );
             }
-            
-            console.log("giftItem: ");
-            console.log(giftItem.id);
-                
-            const getXforY = items.filter(item => {
-                
-                if ( giftTriggerItem && giftTriggerItem.length ) {
-                    console.log("giftTriggerItem.length: ");
-                    console.log(giftTriggerItem.length);
-
-					/* get option name of desired option value */
-                    let triggerOptionName = giftTriggerItem[0].options_with_values.find(function(option){
-                        console.log(option.name);
-                        return option.name === 'Größe';
-                    });
-                    
-                    console.log("triggerOptionName.value ");
-                    console.log(triggerOptionName.value);
-                    
-                    giftItemOption = giftItem[0];
-                    
-                    console.log("giftItemOption ");
-                    console.log(giftItemOption);
-
-                };
-                
-            });
-            
-            // Find out if there is a product that was automatically added before
-            const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
-            	return lineItem.properties?._autoadded === 'Yes' ;
-            });
-
-            // If there is the automaticaly added product —
-            // lets calculate the currentSubtotal without the product
-            if ( autoAddedLineItem > -1 ) {
-            	currentSubtotal -= state.cart.items[autoAddedLineItem].final_line_price;
-            }
-
-            
-            
-            // If cart state exists and there is no Ajax Cart API request in progress
-            if ( state.status.cartStateSet && !state.status.requestInProgress ) {
-                let currentSubtotal = state.cart.items_subtotal_price;
-
-
-                if ( giftTriggerItem.length >= 1 ) {
-
-                    // If there is no a promoVariant product with an applied discount
-                    // lets add one with _autoadded property
-                    if ( autoAddedLineItem === -1 ) {
-                        setTimeout(function(){
-                          cartRequestAdd({ 
-                              items: [{
-                                  id: promoVariant,
-                                  quantity: 1,
-                                  properties: { "_autoadded": "Yes" }
-                              }]  
-                          });
-
-                        },100);
-                    }
-                }
-            }
-            
-
 
          });
     </script>
