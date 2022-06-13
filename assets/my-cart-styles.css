@@ -230,11 +230,6 @@ form[action="cart/add"].js-ajax-cart-request-in-progress [type="submit"] {
   list-style: none;
 }
 
-/* style for discount price auto added when a free gift product 
-#my-cart_finalPrice-34447711174795, #my-cart_finalPrice-34447711240331, .discount_price {
-  color: green;
-}*/
-
 /* Hides or shows the quantity bubble on the cart icon */
 body.js-ajax-cart-empty .icon-cart-header {
   display: none !important;
