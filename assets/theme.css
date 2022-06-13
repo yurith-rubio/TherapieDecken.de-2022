@@ -10452,6 +10452,7 @@ a.Link-Button-General:hover {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
+  z-index:21
 }
 
 .Search__Inner {
