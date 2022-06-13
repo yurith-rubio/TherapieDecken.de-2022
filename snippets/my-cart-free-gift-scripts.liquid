@@ -5,9 +5,11 @@
 
         subscribeToCartStateUpdate( state => {
 
+			// get items from the cart
         	let items = state.cart.items;
             const totalItemsInCart = state.cart.item_count;
 
+			// check if trigger product is on the cart
             const giftTriggerItem = items.filter(item => {
             	return item.handle === 'therapiedecken';
             });
@@ -15,11 +17,13 @@
             console.log("giftTriggerItem.length: ");
             console.log(giftTriggerItem);
 
+			// check if there is any gift product already added to the cart
             const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
               return lineItem.properties?._autoadded === 'Yes' ;
             });
-    
-            if ( giftTriggerItem.length >= 1 ){
+            
+            // add a gift product if there is a trigger product on the cart
+            if ( giftTriggerItem.length >= 1 && autoAddedLineItem.length <= -1 ){
               cartRequestAdd({ 
                 items: [
                   {
@@ -31,16 +35,7 @@
                     }
                   ]  
               });
-            } else if (giftTriggerItem.length <= -1) {
-              // If trigger product is erased or does not exist
-              // and an autoadded product is still in the cart lets remove it
-              if ( autoAddedLineItem > -1 ) {
-                cartRequestChange({ 
-                  "line": autoAddedLineItem + 1,
-                  "quantity": 0
-                });
-              }
-            }
+            } 
          });
          
 </script>
