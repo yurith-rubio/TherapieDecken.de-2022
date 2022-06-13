@@ -74,8 +74,7 @@ body.js-my-cart-open{
 }
 .myCart_contentWrapper{
   flex-grow: 3;
-  padding-right: 30px;
-  padding-left: 15px;
+  padding: 0 15px;
   width: inherit;
 }
 .myCart_quantityWrapper{
