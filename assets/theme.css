@@ -7200,6 +7200,10 @@ a.CollectionItemPage {
   min-height: 140px;
 }
 
+.ProductItem__Info .ProductItem__Title {
+  padding: 0;
+}
+
 .features--heading-uppercase .ProductItem__Info {
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 11px));
 }
