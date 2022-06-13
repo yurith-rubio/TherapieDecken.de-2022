@@ -15,6 +15,9 @@
             });
 
 			// choose gift product depending on size value
+            const giftItem = items.filter(item => {
+            	return item.handle === 'therapiedecken-basic-bezug-in-weiss';
+            });
 
 			// check if there is any gift product already added to the cart
             const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
