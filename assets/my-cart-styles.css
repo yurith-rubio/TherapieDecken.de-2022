@@ -75,7 +75,7 @@ body.js-my-cart-open{
   padding-left: 15px;
   width: inherit;
 }
-.quantity_price_wrapper{
+.myCart_quantityWrapper{
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
