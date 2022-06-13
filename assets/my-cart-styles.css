@@ -84,16 +84,15 @@ body.js-my-cart-open{
   margin-top: 15px;
 }
 .myCart_removeWrapper{
-
-  justify-content: center;
   position: relative;
-  right: 30px;
-  margin: 4px;
-  width: 20px;
-  background-color: white;
+  right: 30px;  
 }
 .myCart_remove{
   display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 20px;
+  margin: 4px;
 }
 .myCart_quantitySelector{
   display: inline-flex;
