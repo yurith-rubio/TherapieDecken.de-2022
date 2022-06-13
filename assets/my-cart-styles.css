@@ -49,6 +49,7 @@ body.js-my-cart-open{
   justify-content: center;
   align-items: center;
   background-color: #fcfcfc;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .h2_cart{
   font-weight: 500;
