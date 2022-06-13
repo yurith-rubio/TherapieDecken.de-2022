@@ -75,7 +75,7 @@
                   {% comment %} final price of item {% endcomment %}
                   <div class="Heading myCart_priceContainer">
                     <span class="CartItem__Price Price Price--highlight">{{ item.final_line_price | money }}</span>
-                    <span class="CartItem__Price Price Price--compareAt">{{ item.original_price | money }}</span>
+                    <span class="CartItem__Price Price Price--compareAt">{{ item.compare_at_price | money }}</span>
                   </div>
                 </div>
                 
