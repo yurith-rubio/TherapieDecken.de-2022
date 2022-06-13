@@ -6,7 +6,7 @@
       {% comment %} data-ajax-cart-section makes the element's HTML update when the cart gets changed {% endcomment %}
       <div data-ajax-cart-section>
 
-        <div class="myCart_header close-cart" data-ajax-cart-toggle-class-button="js-my-cart-open">
+        <div class="myCart_header myCart_close" data-ajax-cart-toggle-class-button="js-my-cart-open">
           <h2 class="myCart_heading Heading u-h5">Warenkorb</h2>
           <a class="myCart_closeSlide" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0"
              onclick="overlayOff()">
@@ -140,7 +140,7 @@
       var offsetY = window.pageYOffset,
           $body = $('body'),
           $win = $(window),
-          $close = $('.close-cart'),
+          $close = $('.myCart_close'),
           $open = $('.open-cart'),
           $holder = $('#myCart_mainContainer'),
           
