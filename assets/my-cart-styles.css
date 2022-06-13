@@ -191,7 +191,7 @@ body.js-ajax-cart-not-empty .icon-cart-header {
 }
 
 /* Footer of cart */
-.footer_cart_wrapper{
+.myCart_footerWrapper{
   padding: 20px;
   display: flex;
   flex-direction: column;
