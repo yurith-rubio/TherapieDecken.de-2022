@@ -43,7 +43,7 @@
                   {% comment %} quantity selector {% endcomment %}
                   <div class="myCart_quantitySelector">
                     {% comment %} data-ajax-cart-request-button ajaxifies the "Minus one" button {% endcomment %}
-                    <a class="button_cart" 
+                    <a class="myCart_button" 
                        data-ajax-cart-request-button 
                        href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | minus: 1 }}" >
 
@@ -58,7 +58,7 @@
                            type="number" />
 
                     {% comment %} data-ajax-cart-request-button ajaxifies the "Plus one" button {% endcomment %}
-                    <a class="button_cart"
+                    <a class="myCart_button"
                        data-ajax-cart-request-button 
                        href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | plus: 1 }}">
 
