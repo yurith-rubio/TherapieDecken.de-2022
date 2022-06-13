@@ -452,8 +452,7 @@ HEADER CONTENT
          onclick="overlayOn()">
         <span class="hidden-tablet-and-up">{%- render 'icon' with 'cart' -%}</span>
         <span class="hidden-phone">{%- render 'icon' with 'cart-desktop' -%}</span>
-        <span class="icon-cart-header Header__CartDot {% if cart.item_count > 0 %}is-visible{% endif %}">
-          <span class="myCart_itemCount">{{ cart.item_count }}</span></span>
+        <span class="icon-cart-header Header__CartDot {% if cart.item_count > 0 %}is-visible{% endif %}"></span>
       </a>
     </div>
   </div>
