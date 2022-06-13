@@ -23,7 +23,7 @@
             });
             
             // add a gift product if there is a trigger product on the cart
-            if ( giftTriggerItem.length >= 1 && autoAddedLineItem.length <= -1 ){
+            if ( giftTriggerItem.length >= 1 && !autoAddedLineItem.length ){
               cartRequestAdd({ 
                 items: [
                   {
