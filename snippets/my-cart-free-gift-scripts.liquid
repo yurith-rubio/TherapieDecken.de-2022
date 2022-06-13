@@ -39,6 +39,7 @@
                             console.log(variant);
                             return variant.options.includes(option.value);
                         });
+                        
                     }
                 };
                 
@@ -63,9 +64,7 @@
                 };
             });
             
-            console.log("promoVariant: ");
-            console.log(promoVariant);
-            const promoSubtotal = {{ promoSubtotal }}00;
+
 
             // If cart state exists and there is no Ajax Cart API request in progress
             if ( state.status.cartStateSet && !state.status.requestInProgress ) {
