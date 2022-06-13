@@ -43,9 +43,13 @@
                             return value.options.includes(option.value);
                         });
                         
+                        const finalValue = value.options.includes(option.value);
+                        return finalValue;
+                        
                     }
                     
-                    console.log(variant)
+                    console.log("finalValue ");
+                    console.log(finalValue)
                 };
                 
             });
