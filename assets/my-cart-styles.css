@@ -48,7 +48,7 @@ body.js-my-cart-open{
   justify-content: center;
   align-items: center;
 }
-.h2_cart, .my-cart_itemPrice{
+.h2_cart{
   font-weight: 500;
   color: #3A3A3A;
   line-height: 1.1 !important;
