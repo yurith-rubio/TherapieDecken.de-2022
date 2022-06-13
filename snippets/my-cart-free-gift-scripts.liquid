@@ -19,16 +19,7 @@
             	return item.handle === 'therapiedecken';
             });
             
-			// Find out if there is a product that was automatically added before
-            const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
-            	return lineItem.properties?._autoadded === 'Yes' ;
-            });
 
-            // If there is the automaticaly added product —
-            // lets calculate the currentSubtotal without the product
-            if ( autoAddedLineItem > -1 ) {
-            	currentSubtotal -= state.cart.items[autoAddedLineItem].final_line_price;
-            }
                 
             const getXforY = items.filter(item => {
             	console.log("works! ");
@@ -55,6 +46,17 @@
                 };
                 
             });
+            
+            // Find out if there is a product that was automatically added before
+            const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
+            	return lineItem.properties?._autoadded === 'Yes' ;
+            });
+
+            // If there is the automaticaly added product —
+            // lets calculate the currentSubtotal without the product
+            if ( autoAddedLineItem > -1 ) {
+            	currentSubtotal -= state.cart.items[autoAddedLineItem].final_line_price;
+            }
 
             
             
