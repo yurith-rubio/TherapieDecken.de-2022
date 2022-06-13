@@ -133,7 +133,7 @@ input.input_cart{
   flex: 1 1 auto;
 }
 
-.my-container__cart {
+.myCart_mainContainer {
   display: none;
 }
 
@@ -146,7 +146,7 @@ input.input_cart{
   line-height: 1.2;
 }
 
-body.js-my-cart-open .my-container__cart {
+body.js-my-cart-open .myCart_mainContainer {
   flex: 0 0 300px;
   display: block;
   transition:opacity 0.15s ease-in-out
