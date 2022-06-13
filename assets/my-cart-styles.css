@@ -159,7 +159,9 @@ form[action="cart/add"].js-ajax-cart-request-in-progress [type="submit"] {
   opacity: .5;
 }
 
-.my-floating-cart { display: none; }
+.myCart_floating {
+  display: none; 
+}
 
 /* Show the floating cart if the 'js-my-cart-open' CSS class exists */
 .js-my-cart-open .my-floating-cart { 
