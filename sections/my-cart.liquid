@@ -20,6 +20,8 @@
         <div class="myCart_items" data-ajax-cart-section-scroll>
 
           {% for item in cart.items %}
+          
+          {{ item }}
           <div class="myCart_itemWrapper">
             {% comment %} remove button {% endcomment %}
             <div class="myCart_remove">
