@@ -18,7 +18,7 @@
         <div class="my-cart__items" data-ajax-cart-section-scroll>
 
           {% for item in cart.items %} 
-          <div class="item_wrapper">
+          <div class="myCart_itemWrapper">
             {% comment %} remove button {% endcomment %}
             <div class="remove_cart">
               <a data-ajax-cart-request-button href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0">

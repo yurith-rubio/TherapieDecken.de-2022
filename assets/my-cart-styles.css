@@ -63,7 +63,7 @@ body.js-my-cart-open{
   position: absolute;
   right: 20px;
 }
-.item_wrapper{
+.myCart_itemWrapper{
   display: inline-flex;
   border-top: 1px solid rgba(0,0,0,0.1);
   padding: 30px 20px;
