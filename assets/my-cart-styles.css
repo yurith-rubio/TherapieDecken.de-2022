@@ -198,7 +198,6 @@ form[action="cart/add"].js-ajax-cart-request-in-progress [type="submit"] {
 }
 
 /* payment logos on slide cart */
-
 .myCart_paymentOptions {
  display:table!important;
  margin:auto;
