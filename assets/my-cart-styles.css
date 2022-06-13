@@ -31,13 +31,13 @@ body.js-my-cart-open{
 #myCart_Overlay{
   z-index:20;
   position:fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: none; /* Hidden by default */
   background-color: rgb(58 58 58 / 71%);
-  opacity:1;
+  opacity: 1;
   transition:opacity 0.15s ease-in-out
   height: 100vh;
   overflow-y: hidden;
@@ -48,6 +48,8 @@ body.js-my-cart-open{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fcfcfc;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .h2_cart{
   font-weight: 500;
@@ -62,7 +64,8 @@ body.js-my-cart-open{
 }
 .myCart_closeSlide{
   position: absolute;
-  right: 20px;
+  right: 27px;
+  top: 11px;
 }
 .myCart_itemWrapper{
   display: inline-flex;
@@ -72,8 +75,7 @@ body.js-my-cart-open{
 }
 .myCart_contentWrapper{
   flex-grow: 3;
-  padding-right: 30px;
-  padding-left: 15px;
+  padding: 0 15px;
   width: inherit;
 }
 .myCart_quantityWrapper{
@@ -81,10 +83,16 @@ body.js-my-cart-open{
   justify-content: space-between;
   margin-top: 15px;
 }
+
 .myCart_remove{
-  position: absolute;
-  right: 30px;
-  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 20px;
+  margin: 4px;
+  height: 20px;
+  position: relative;
+  top: -5px;
 }
 .myCart_quantitySelector{
   display: inline-flex;
@@ -241,3 +249,11 @@ body.js-ajax-cart-not-empty .icon-cart-header {
   font-family: sans-serif;
 }
 
+.myCart_emptyCartMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  color: #6b6b6b;
+}

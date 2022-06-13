@@ -19,14 +19,17 @@
         {% comment %} data-ajax-cart-section-scroll keeps the scroll position unchanged when the element's HTML is changed {% endcomment %}
         <div class="myCart_items" data-ajax-cart-section-scroll>
 
-          {% for item in cart.items %} 
-          <div class="myCart_itemWrapper">
-            {% comment %} remove button {% endcomment %}
-            <div class="myCart_remove">
-              <a data-ajax-cart-request-button href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0">
-                <svg width="9" viewBox="0 0 10 10"><path d="M9.677 8.118a1.102 1.102 0 11-1.559 1.56L5 6.558 1.882 9.677a1.102 1.102 0 11-1.56-1.559L3.442 5 .323 1.882A1.102 1.102 0 111.882.322L5 3.442 8.118.323a1.102 1.102 0 111.56 1.559L6.558 5l3.118 3.118z" fill="#cacaca" fill-rule="nonzero"></path></svg>
-              </a>
+          {% if cart.item_count == 0 %}
+            <div class="myCart_emptyCartMessage">
+              <h2 class="Heading u-h3">Der Warenkorb ist leer</h3>
+              <div style="font-size: 60px;"><span class="icon-shopping-cart"></span></div>
             </div>
+          {% endif %}
+          
+          {% for item in cart.items %}
+
+          <div class="myCart_itemWrapper">
+
             {% comment %} remove button {% endcomment %}
             <div class="myCart_imageWrapper">
               <img class="myCart_imageCart" src="{{ item.image | image_url: width: 300 }} ">
@@ -90,6 +93,13 @@
                 {%- endif -%}
 
               </div>
+             </div>
+            
+            {% comment %} remove button {% endcomment %}
+            <div class="myCart_removeWrapper">
+              <a class="myCart_remove" data-ajax-cart-request-button href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0">
+                <svg width="12" viewBox="0 0 10 10"><path d="M9.677 8.118a1.102 1.102 0 11-1.559 1.56L5 6.558 1.882 9.677a1.102 1.102 0 11-1.56-1.559L3.442 5 .323 1.882A1.102 1.102 0 111.882.322L5 3.442 8.118.323a1.102 1.102 0 111.56 1.559L6.558 5l3.118 3.118z" fill="#cacaca" fill-rule="nonzero"></path></svg>
+              </a>
             </div>
 
             {% comment %}
@@ -97,42 +107,44 @@
             <div data-ajax-cart-messages="{{ item.key }}"></div>
             {% endcomment %}
             </div>
+          
           {% endfor %}
 
+
         </div>
-        </div>
-        <div>
-          <div class="myCart_footerWrapper">
-            <div class="myCart_versandWrapper">
-              <h2 class="Heading u-h6">Versand</h2>
-              <p class="myCart_p myCart_gratis">Gratis  </p>
-            </div>
-            <div class="myCart_totalCartWrapper">
-              <h2 class="Heading u-h6">Zwischensumme</h2>
-              <p class="Cart__Total Heading u-h6 myCart_p" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
-            </div>
-            <button class="Button Button--primary Button--full" 
-                    type="submit" 
-                    name="checkout">
-              Zur Kasse
-            </button>
+      </div>
+      <div>
+        <div class="myCart_footerWrapper">
+          <div class="myCart_versandWrapper">
+            <h2 class="Heading u-h6">Versand</h2>
+            <p class="myCart_p myCart_gratis">Gratis  </p>
           </div>
-
-          {% render 'my-cart-payment-methods' %}
-
+          <div class="myCart_totalCartWrapper">
+            <h2 class="Heading u-h6">Zwischensumme</h2>
+            <p class="Cart__Total Heading u-h6 myCart_p" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
+          </div>
+          <button class="Button Button--primary Button--full" 
+                  type="submit" 
+                  name="checkout">
+            Zur Kasse
+          </button>
         </div>
 
-        {% comment %}
-        {% comment %} data-ajax-cart-property-input ajaxifies the cart note textarea {% endcomment %}
-        <textarea data-ajax-cart-property-input
-          name="note" 
-          placeholder="Cart note">
-          {{ cart.note }}
-        </textarea>
-        {% endcomment %}
+        {% render 'my-cart-payment-methods' %}
 
-        {% comment %} data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated {% endcomment %}
-        <div data-ajax-cart-static-element class="my-cart__app-container"></div>
+      </div>
+
+      {% comment %}
+      {% comment %} data-ajax-cart-property-input ajaxifies the cart note textarea {% endcomment %}
+      <textarea data-ajax-cart-property-input
+                name="note" 
+                placeholder="Cart note">
+        {{ cart.note }}
+      </textarea>
+      {% endcomment %}
+
+      {% comment %} data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated {% endcomment %}
+      <div data-ajax-cart-static-element class="my-cart__app-container"></div>
     </form>
   </div>
 </div>
@@ -207,11 +219,5 @@
 	"name": "My Cart" 
   }
 {% endschema %}
-
-
-
-
-
-
 
 
