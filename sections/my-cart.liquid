@@ -20,7 +20,9 @@
         <div class="myCart_items" data-ajax-cart-section-scroll>
 
           {% if cart.item_count == 0 %}
-          	There is nothing here
+            <div>
+              There is nothing here
+            </div>
           {% endif %}
           
           {% for item in cart.items %}
