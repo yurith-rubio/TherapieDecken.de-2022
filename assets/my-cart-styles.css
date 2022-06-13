@@ -26,7 +26,7 @@ body.js-my-cart-open{
   animation: mycartmove .5s;
   right: 0;
   justify-content: space-between;
-  max-width:440px;
+  max-width: 440px;
 }
 #myCart_Overlay{
   z-index:20;
@@ -241,12 +241,3 @@ body.js-ajax-cart-not-empty .icon-cart-header {
   font-family: sans-serif;
 }
 
-@media only screen and (max-width: 640px){
-  #myCart_slider{
-    width: 100%;
-  }
-  .myCart_priceContainer{
-    padding-left: 20px;
-  }
-
-}
