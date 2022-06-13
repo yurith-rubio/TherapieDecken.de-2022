@@ -29,21 +29,15 @@
    
 
             if ( giftTriggerItem.length >= 1 ) {
-
-                // If there is no a promoVariant product with an applied discount
-                // lets add one with _autoadded property
-                if ( giftItem === -1 ) {
-                    setTimeout(function(){
-                      cartRequestAdd({ 
-                          items: [{
-                              id: giftItemId,
-                              quantity: 1,
-                              properties: { "_autoadded": "Yes" }
-                           }]  
-                      });
-
-                    },100);
-                }
+                cartRequestAdd({ 
+                  items: [
+                    {
+                      id: 34447711174795,
+                      quantity: 1,
+                      properties: { "_autoadded": "Yes" }
+                    }
+                  ]  
+                }, 100 );
             }
             
             console.log("giftItem: ");
