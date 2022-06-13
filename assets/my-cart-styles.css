@@ -59,7 +59,7 @@ body.js-my-cart-open{
   text-transform: uppercase !important;
   padding-top: 10px;
 }
-.close-slide-cart{
+.myCart_closeSlide{
   position: absolute;
   right: 20px;
 }
