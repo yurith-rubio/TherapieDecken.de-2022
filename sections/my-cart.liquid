@@ -7,7 +7,7 @@
       <div data-ajax-cart-section>
 
         <div class="myCart_header" >
-          <h2 class="">Warenkorb</h2>
+          <h2 class="myCart_heading Heading u-h5">Warenkorb</h2>
           <a class="myCart_closeSlide myCart_close" 
              data-ajax-cart-toggle-class-button="js-my-cart-open" 
              href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0"
@@ -28,6 +28,7 @@
           
           {% for item in cart.items %}
           <div class="myCart_itemWrapper">
+
             <div class="myCart_imageWrapper">
               <img class="myCart_imageCart" src="{{ item.image | image_url: width: 300 }} ">
             </div>
