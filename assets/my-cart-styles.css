@@ -214,6 +214,9 @@ body.js-ajax-cart-not-empty .icon-cart-header {
 }
 
 /* price Container */
+.my-cart_priceContainer{
+  font-size: 12px;
+}
 
 /* payment logos on slide cart */
 
