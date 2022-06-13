@@ -21,7 +21,9 @@
 
           {% for item in cart.items %}
           
-          {{ cart.item_count }}
+          {% if cart.item_count == 0 %}
+          There is nothing here
+          {% endif %}
           <div class="myCart_itemWrapper">
             {% comment %} remove button {% endcomment %}
             <div class="myCart_remove">
