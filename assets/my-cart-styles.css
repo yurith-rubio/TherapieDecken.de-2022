@@ -243,6 +243,7 @@ body.js-ajax-cart-not-empty .icon-cart-header {
 
 .myCart_emptyCartMessage {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 50vh;
