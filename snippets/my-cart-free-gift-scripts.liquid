@@ -27,11 +27,13 @@
                     console.log("giftTriggerItem.length: ");
                     console.log(giftTriggerItem.length);
 
+					/* get option name of desired option value */
                     let triggerOptionName = giftTriggerItem[0].options_with_values.find(function(option){
                         console.log(option.name);
                         return option.name === 'Größe';
                     });
 
+					/* get comparable value */
                     if(triggerOptionName && triggerOptionName.value) {
                     	console.log("check selected options ");
                         console.log(item.variant_options);
