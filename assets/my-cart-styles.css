@@ -43,7 +43,7 @@ body.js-my-cart-open{
   width: 100%;
   cursor:pointer;
 }
-.cart-header{
+.myCart_header{
   display: flex;
   justify-content: center;
   align-items: center;
