@@ -26,6 +26,7 @@ body.js-my-cart-open{
   animation: mycartmove .5s;
   right: 0;
   justify-content: space-between;
+  max-width:440px;
 }
 #myCart_Overlay{
   z-index:20;
