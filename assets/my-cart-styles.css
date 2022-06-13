@@ -202,7 +202,7 @@ body.js-ajax-cart-not-empty .icon-cart-header {
   box-shadow: 0 -5px 10px #EEE;
 }
 
-.total_cart_wrapper, .versand_cart_wrapper{
+.myCart_totalCartWrapper, .versand_cart_wrapper{
   display: flex;
   justify-content: space-between;
 }
