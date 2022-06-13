@@ -97,7 +97,7 @@ body.js-my-cart-open{
   height: 30px;
   border: 1px solid rgba(0,0,0,0.1);
 }
-input.input_cart{
+input.myCart_input{
   display: inline-flex;
   line-height: 28px;
   height: 30px;
