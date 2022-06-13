@@ -86,7 +86,7 @@ body.js-my-cart-open{
   margin-top: -10px;
 }
 
-.quantity-selector{
+.myCart_quantitySelector{
   display: inline-flex;
   align-items: center;
 }
