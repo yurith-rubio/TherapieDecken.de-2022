@@ -7297,6 +7297,7 @@ a.CollectionItemPage {
   .ProductItem--horizontal .ProductItem__Wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .ProductItem--horizontal .ProductItem__ImageWrapper {
