@@ -238,23 +238,7 @@ body.js-ajax-cart-not-empty .icon-cart-header {
   
 }
 
-.quick-cart__icon-indicator {
-  z-index: 10;
-  width: 16px;
-  height: 16px;
-  background-color: var(--color-header-text);
-  color: var(--color-header-bg);
-  border-radius: 16px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 9px;
-  right: -1px;
-  font-size: 9px;
-  font-family: Arial,Helvetica,sans-serif;
-  letter-spacing: 0;
-  line-height: 1;
-  pointer-events: none;
-  box-shadow: 0 0 0 2px var(--color-header-bg);
+.myCart_itemCount{
+  width: 10px;
+  height: 10px;
 }
