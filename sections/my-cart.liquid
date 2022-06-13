@@ -29,7 +29,7 @@
             <div class="myCart_imageWrapper">
               <img class="myCart_imageCart" src="{{ item.image | image_url: width: 300 }} ">
             </div>
-            <div class="content_cart_wrapper">
+            <div class="myCart_contentWrapper">
               {% assign item_index = forloop.index %}
               {% comment %} item title {% endcomment %}
               <h2 class="Heading u-h6"><a href="{{ item.url }}">{{ item.product.title }}</a></h2>
