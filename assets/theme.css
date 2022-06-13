@@ -3987,7 +3987,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 
 .Price--compareAt, .Item_Price--compareAt {
   position: relative;
-  margin-left: 10px;
 }
 
 .Price--compareAt::before, .Item_Price--compareAt::before {
@@ -4000,6 +3999,11 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   background: currentColor;
 }
 
+@media screen and (min-width: 641px) {
+  .Price--compareAt, .Item_Price--compareAt {
+    margin-left: 10px;
+  }
+}
 /**
  * ----------------------------------------------------------------------------
  * Color swatch
