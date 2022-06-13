@@ -15,9 +15,11 @@
             const totalItemsInCart = state.cart.item_count;
             
             const giftTriggerItem = items.filter(item => {
-            	console.log("giftTriggerItem: ");
             	return item.handle === 'therapiedecken';
             });
+            
+            console.log("giftTriggerItem: ");
+            console.log(giftTriggerItem);
             
             const giftItem = items.filter(item => {
             	console.log("giftItem: ");
