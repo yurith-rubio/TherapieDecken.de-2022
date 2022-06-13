@@ -64,7 +64,8 @@ body.js-my-cart-open{
 }
 .myCart_closeSlide{
   position: absolute;
-  right: 20px;
+  right: 27px;
+  top: 11px;
 }
 .myCart_itemWrapper{
   display: inline-flex;
