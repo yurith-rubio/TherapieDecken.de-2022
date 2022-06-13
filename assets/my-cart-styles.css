@@ -185,11 +185,6 @@ form[action="cart/add"].js-ajax-cart-request-in-progress [type="submit"] {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 450px){
-  #myCart_slider{
-    width: 100%;
-  }
-}
 
 /* price Container */
 .myCart_priceContainer{
@@ -242,4 +237,14 @@ body.js-ajax-cart-not-empty .icon-cart-header {
 }
 .myCart_itemCount{
   font-family: sans-serif;
+}
+
+@media only screen and (max-width: 450px){
+  #myCart_slider{
+    width: 100%;
+  }
+  .myCart_priceContainer{
+    padding-left: 20px;
+  }
+
 }
