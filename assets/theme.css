@@ -4000,14 +4000,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   background: currentColor;
 }
 
-@media screen and (min-width: 641px) {
-  .Price--compareAt, .Item_Price--compareAt {
-    
-  }
-}
-@media screen and (max-width: 640px) {
-
-}
 /**
  * ----------------------------------------------------------------------------
  * Color swatch
