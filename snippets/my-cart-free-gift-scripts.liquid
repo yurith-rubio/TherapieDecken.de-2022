@@ -19,7 +19,7 @@
             	return item.handle === 'therapiedecken';
             });
             
-
+			let promoVariant = '34485696430219';
                 
             const getXforY = items.filter(item => {
             	console.log("works! ");
@@ -60,12 +60,6 @@
 
             
             
-
-
-            
-            
-            let promoVariant = '34485696430219';
-            
             // If cart state exists and there is no Ajax Cart API request in progress
             if ( state.status.cartStateSet && !state.status.requestInProgress ) {
                 let currentSubtotal = state.cart.items_subtotal_price;
@@ -74,7 +68,7 @@
 
 
 
-                if ( currentSubtotal >= promoSubtotal ) {
+                if ( giftTriggerItem.length >= 1 ) {
 
                     // If there is no a promoVariant product with an applied discount
                     // lets add one with _autoadded property
@@ -89,17 +83,6 @@
                           });
 
                         },100);
-                    }
-                } else {
-
-                    // If current cart subtotal is less than $100
-                    // and an autoadded product is still in the cart —
-                    // lets remove it
-                    if ( autoAddedLineItem > -1 ) {
-                        cartRequestChange({ 
-                            "line": autoAddedLineItem + 1,
-                            "quantity": 0
-                        });
                     }
                 }
             }
