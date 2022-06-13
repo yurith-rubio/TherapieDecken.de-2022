@@ -27,7 +27,7 @@ body.js-my-cart-open{
   right: 0;
   justify-content: space-between;
 }
-#cart-overlay{
+#myCart_Overlay{
   z-index:20;
   position:fixed;
   top:0;
