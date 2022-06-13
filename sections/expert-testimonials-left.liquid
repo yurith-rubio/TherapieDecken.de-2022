@@ -90,16 +90,17 @@
       <div class="owl-carousel">
       {% for block in section.blocks %}
       	<div class="tmex_wr_quote item">
-          <div class="tmex_pic_wr">
-            <img
-              style="border-radius: 50%"
-              class="tmex_img Image--lazyLoad"
-              data-src="{{ block.settings.tmex_picture | img_url:'master' }}"
-              src="{{ block.settings.tmex_picture | img_url:'master' }}"
-              alt=""
-            />
-          </div>
-          <div class="tmex_text_wr">
+          <a href="{{ block.settings.link}}">
+          	<div class="tmex_pic_wr">
+              <img
+                style="border-radius: 50%"
+                class="tmex_img Image--lazyLoad"
+                data-src="{{ block.settings.tmex_picture | img_url:'master' }}"
+                src="{{ block.settings.tmex_picture | img_url:'master' }}"
+                alt=""
+              />
+          	</div>
+          	<div class="tmex_text_wr">
               <div style="font-weight: bold; margin-bottom: 0px" class="gral_font_16px tmex_name">
                 {{ block.settings.tmex_name }}
               </div>
@@ -118,6 +119,7 @@
                 <span class="gral_icon21_yellow gral_font_20px icon-right-quote"></span>
               </div>
             </div>
+          </a>
         </div>
       {% endfor %}
       </div>
