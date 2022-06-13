@@ -100,39 +100,39 @@
           {% endfor %}
 
         </div>
-        </div>
-        <div>
-          <div class="myCart_footerWrapper">
-            <div class="myCart_versandWrapper">
-              <h2 class="Heading u-h6">Versand</h2>
-              <p class="myCart_p myCart_gratis">Gratis  </p>
-            </div>
-            <div class="myCart_totalCartWrapper">
-              <h2 class="Heading u-h6">Zwischensumme</h2>
-              <p class="Cart__Total Heading u-h6 myCart_p" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
-            </div>
-            <button class="Button Button--primary Button--full" 
-                    type="submit" 
-                    name="checkout">
-              Zur Kasse
-            </button>
+      </div>
+      <div>
+        <div class="myCart_footerWrapper">
+          <div class="myCart_versandWrapper">
+            <h2 class="Heading u-h6">Versand</h2>
+            <p class="myCart_p myCart_gratis">Gratis  </p>
           </div>
-
-          {% render 'my-cart-payment-methods' %}
-
+          <div class="myCart_totalCartWrapper">
+            <h2 class="Heading u-h6">Zwischensumme</h2>
+            <p class="Cart__Total Heading u-h6 myCart_p" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
+          </div>
+          <button class="Button Button--primary Button--full" 
+                  type="submit" 
+                  name="checkout">
+            Zur Kasse
+          </button>
         </div>
 
-        {% comment %}
-        {% comment %} data-ajax-cart-property-input ajaxifies the cart note textarea {% endcomment %}
-        <textarea data-ajax-cart-property-input
-          name="note" 
-          placeholder="Cart note">
-          {{ cart.note }}
-        </textarea>
-        {% endcomment %}
+        {% render 'my-cart-payment-methods' %}
 
-        {% comment %} data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated {% endcomment %}
-        <div data-ajax-cart-static-element class="my-cart__app-container"></div>
+      </div>
+
+      {% comment %}
+      {% comment %} data-ajax-cart-property-input ajaxifies the cart note textarea {% endcomment %}
+      <textarea data-ajax-cart-property-input
+                name="note" 
+                placeholder="Cart note">
+        {{ cart.note }}
+      </textarea>
+      {% endcomment %}
+
+      {% comment %} data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated {% endcomment %}
+      <div data-ajax-cart-static-element class="my-cart__app-container"></div>
     </form>
   </div>
 </div>
