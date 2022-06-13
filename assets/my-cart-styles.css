@@ -83,7 +83,7 @@ body.js-my-cart-open{
   justify-content: space-between;
   margin-top: 15px;
 }
-.myCart_remove{
+.myCart_removeWrapper{
   display: flex;
   justify-content: center;
   position: relative;
