@@ -18,8 +18,8 @@
             let giftItem = items.filter(item => {
             	const giftItemHandle = item.handle;
             	giftItem === 'therapiedecken-basic-bezug-in-weiss';
-                giftItemOptions = giftItem.options_with_values;
-                return giftItemOptions;
+                giftItem = giftItem.options_with_values;
+                return giftItem;
             });
             
             console.log("giftItem: ");
