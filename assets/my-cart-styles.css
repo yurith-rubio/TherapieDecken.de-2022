@@ -145,12 +145,6 @@ input.input_cart{
   margin: 0;
   line-height: 1.2;
 }
-.my-cart_optionValue{
-  margin: 0;
-  line-height: 1.2;
-  font-size: 14px;
-  color: gray;
-}
 
 body.js-my-cart-open .my-container__cart {
   flex: 0 0 300px;
