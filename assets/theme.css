@@ -7194,10 +7194,13 @@ a.CollectionItemPage {
 }
 
 .ProductItem__Info {
-  margin-top: 20px;
-  margin-bottom: 25px;  
+  margin-top: 20px; 
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));
   min-height: 140px;
+}
+
+.ProductItem__Info .ProductItem__Title {
+  padding: 0;
 }
 
 .features--heading-uppercase .ProductItem__Info {
@@ -7297,6 +7300,7 @@ a.CollectionItemPage {
   .ProductItem--horizontal .ProductItem__Wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .ProductItem--horizontal .ProductItem__ImageWrapper {
@@ -10549,13 +10553,16 @@ a.Link-Button-General:hover {
     margin-top: 25px;
   }
   .Search__Results .ProductItem__ImageWrapper {
-    width: 70px;
+    width: 100px;
     min-width: 70px;
     margin-right: 25px;
   }
   .Search__Results .ProductItem__Info {
     margin-top: 0;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   } 
 }
 
