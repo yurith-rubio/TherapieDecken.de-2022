@@ -19,13 +19,11 @@
             	return item.handle === 'therapiedecken';
             });
             
-            const giftItem = items.filter(item => {
+            let giftItem = items.filter(item => {
             	console.log("giftTriggerItem ");
-            	return item.handle === 'therapiedecken';
+            	return item.handle === 'therapiedecken-basic-bezug-in-weiss';
             });
-            
-			let promoVariant = item.handle === 'therapiedecken-basic-bezug-in-weiss';
-                
+   
             const getXforY = items.filter(item => {
                 
                 if ( giftTriggerItem && giftTriggerItem.length ) {
