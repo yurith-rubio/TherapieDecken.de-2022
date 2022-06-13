@@ -89,7 +89,7 @@ body.js-my-cart-open{
   display: inline-flex;
   align-items: center;
 }
-.button_cart{
+.myCart_button{
   display: flex;
   align-items: center;
   justify-content: center;
