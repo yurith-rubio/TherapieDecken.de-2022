@@ -1,6 +1,6 @@
 <!-- sections/my-cart.liquid -->
 
-<div id="my-container__cart" class="my-container__cart open-cart">
+<div id="myCart_mainContainer" class="myCart_mainContainer open-cart">
   <div class="my-floating-cart"> 
     <form id="myCart_slider" action="{{ routes.cart_url }}" method="post" class="my-cart" >
       {% comment %} data-ajax-cart-section makes the element's HTML update when the cart gets changed {% endcomment %}
@@ -142,7 +142,7 @@
           $win = $(window),
           $close = $('.close-cart'),
           $open = $('.open-cart'),
-          $holder = $('#my-container__cart'),
+          $holder = $('#myCart_mainContainer'),
           
       // Close with 'esc' key
       $(document).keyup(function (e) {
