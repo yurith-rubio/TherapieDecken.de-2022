@@ -22,6 +22,9 @@
               return lineItem.properties?._autoadded === 'Yes' ;
             });
             
+            console.log("autoAddedLineItem: ");
+            console.log(autoAddedLineItem);
+            
             // add a gift product if there is a trigger product on the cart
             if ( giftTriggerItem.length >= 1 && autoAddedLineItem.length == 0 ){
               cartRequestAdd({ 
