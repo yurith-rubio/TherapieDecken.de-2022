@@ -17,7 +17,9 @@
 			// choose gift product depending on size value
             let giftItem = items.filter(item => {
             	const giftItemHandle = item.handle;
-            	return giftItemHandle === 'therapiedecken-basic-bezug-in-weiss';
+            	giftItem === 'therapiedecken-basic-bezug-in-weiss';
+                giftItemOptions = giftItem.options_with_values;
+                return giftItemOptions;
             });
             
             console.log("giftItem: ");
