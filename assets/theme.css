@@ -10557,6 +10557,9 @@ a.Link-Button-General:hover {
   .Search__Results .ProductItem__Info {
     margin-top: 0;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   } 
 }
 
