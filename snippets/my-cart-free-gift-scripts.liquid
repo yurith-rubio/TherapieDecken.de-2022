@@ -14,7 +14,7 @@
             	return item.handle === 'therapiedecken';
             });
 
-			// 
+			// choose gift product depending on size value
             let giftItem = items.filter(item => {
             	const giftItemHandle = item.handle;
             	return giftItemHandle === 'therapiedecken-basic-bezug-in-weiss';
@@ -38,7 +38,7 @@
               cartRequestAdd({ 
                 items: [
                   {
-                    handle: 34447711174795,
+                    id: 34447711174795,
                     quantity: 1,
                     properties: {
                   	"_autoadded": "Yes" 
