@@ -137,10 +137,6 @@ input.input_cart{
   display: none;
 }
 
-.my-cart_totalPrice, .my-cart_gratis{
-  font-weight: 500;
-}
-
 .my-cart_gratis{
   color: #BA2E2E;
 }
