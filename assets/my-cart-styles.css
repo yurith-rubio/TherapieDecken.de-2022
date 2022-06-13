@@ -239,6 +239,5 @@ body.js-ajax-cart-not-empty .icon-cart-header {
 }
 
 .myCart_itemCount{
-  width: 10px;
-  height: 10px;
+  font-family: sans-serif;
 }
