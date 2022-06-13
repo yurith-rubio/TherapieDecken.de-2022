@@ -84,7 +84,7 @@ body.js-my-cart-open{
   margin-top: 15px;
 }
 .myCart_remove{
-  position: absolute;
+  position: relative;
   right: 30px;
   margin: -10px 4px 4px 4px;
   background-color: white;
