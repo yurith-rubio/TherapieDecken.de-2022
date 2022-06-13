@@ -15,7 +15,10 @@
             console.log("giftTriggerItem.length: ");
             console.log(giftTriggerItem);
 
-
+            const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
+              return lineItem.properties?._autoadded === 'Yes' ;
+            });
+    
             if ( giftTriggerItem.length >= 1 ){
               cartRequestAdd({ 
                 items: [
@@ -28,6 +31,15 @@
                     }
                   ]  
               });
+            } else if (giftTriggerItem.length <= -1) {
+              // If trigger product is erased or does not exist
+              // and an autoadded product is still in the cart lets remove it
+              if ( autoAddedLineItem > -1 ) {
+                cartRequestChange({ 
+                  "line": autoAddedLineItem + 1,
+                  "quantity": 0
+                });
+              }
             }
          });
          
