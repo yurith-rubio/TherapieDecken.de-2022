@@ -66,19 +66,6 @@
             
             let promoVariant = '34485696430219';
             
-            state.cart.items.forEach(item => {
-            	if ( item.id == '34485696430219' || item.id == '34440242036875' || item.id == '34440242266251' || item.id == '34440242495627' || item.id == '34440242725003' ) {
-                	console.log(" 135 ");
-                	promoVariant = '34447711174795';
-                } else if ( item.id == 34440242954379 || item.id == '34440243183755' || item.id == '34440243413131' || item.id == '34440243642507' ) {
-                	console.log(" 150 item.id: ");
-                    console.log(item);
-                	promoVariant = '34447711240331';
-                };
-            });
-            
-
-
             // If cart state exists and there is no Ajax Cart API request in progress
             if ( state.status.cartStateSet && !state.status.requestInProgress ) {
                 let currentSubtotal = state.cart.items_subtotal_price;
