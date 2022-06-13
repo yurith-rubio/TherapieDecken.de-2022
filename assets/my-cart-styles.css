@@ -83,9 +83,6 @@ body.js-my-cart-open{
   justify-content: space-between;
   margin-top: 15px;
 }
-.myCart_imageCart{
-  width: 100px;
-}
 .myCart_remove{
   display: flex;
   justify-content: center;
