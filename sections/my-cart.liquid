@@ -73,13 +73,15 @@
                 
                 
                 {%- if item.line_level_discount_allocations != blank -%}
-                <ul class="CartItem__DiscountList" style="margin:0;">
-                  {%- for discount_allocation in item.line_level_discount_allocations -%}
-                  <li class="CartItem__Discount">
-                    {%- render 'icon' with 'sale' -%}{{ discount_allocation.discount_application.title }}: -{{ discount_allocation.amount | money }}
-                  </li>
-                  {%- endfor -%}
-                </ul>
+                <div>
+                  <ul class="CartItem__DiscountList" style="margin:0;">
+                    {%- for discount_allocation in item.line_level_discount_allocations -%}
+                    <li class="CartItem__Discount">
+                      {%- render 'icon' with 'sale' -%}{{ discount_allocation.discount_application.title }}: -{{ discount_allocation.amount | money }}
+                    </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
                 {%- endif -%}
 
               </div>
