@@ -7194,8 +7194,7 @@ a.CollectionItemPage {
 }
 
 .ProductItem__Info {
-  margin-top: 20px;
-  margin-bottom: 25px;  
+  margin-top: 20px; 
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));
   min-height: 140px;
 }
