@@ -32,7 +32,7 @@
                     });
 
                     if(triggerOptionName && triggerOptionName.value) {
-                    	console.log("check variants ");
+                    	console.log("check selected options ");
                         console.log(item.variant_options);
                         item.variant_options = item.variant_options.filter(function(variant){
                         	console.log("here you are! ");
@@ -114,8 +114,7 @@
                 }
             }
             
-            const promoVariantSelector = document.getElementById("my-cart_finalPrice-" + promoVariant);
-            promoVariantSelector.classList.add('discount_price');
+
 
          });
     </script>
