@@ -211,6 +211,14 @@ ul.zahlungsarten-auflistung {
     padding-left: 9px;
     padding-top: 9px;
 }
+/* center ul content Grishma-13.06*/
+@media (max-width: 640px){
+	ul.zahlungsarten-auflistung {
+    margin: 0;
+    padding: 10px 10px 10px 15px;
+	}
+}
+/* end center ul content Grishma-13.06*/
 .versand-icon {
     font-size: 15px;
     box-sizing: inherit;
