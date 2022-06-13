@@ -86,7 +86,6 @@ body.js-my-cart-open{
 .myCart_remove{
   display: flex;
   justify-content: center;
-  align-items: center;
   position: relative;
   right: 30px;
   margin: 4px;
