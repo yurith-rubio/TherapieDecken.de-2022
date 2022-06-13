@@ -203,7 +203,7 @@ form[action="cart/add"].js-ajax-cart-request-in-progress [type="submit"] {
 }
 
 .myCart_totalPrice{
-  font-size: 14px;
+  font-size: 16px;
 }
 /* payment logos on slide cart */
 .myCart_paymentOptions {
