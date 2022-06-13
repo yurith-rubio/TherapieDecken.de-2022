@@ -6,7 +6,7 @@
       {% comment %} data-ajax-cart-section makes the element's HTML update when the cart gets changed {% endcomment %}
       <div data-ajax-cart-section>
 
-        <div class="myCart_header">
+        <div class="myCart_header myCart_close" data-ajax-cart-toggle-class-button="js-my-cart-open">
           <h2 class="myCart_heading Heading u-h5">Warenkorb</h2>
           <a class="myCart_closeSlide" href="{{ routes.cart_change_url }}?id={{ item.key }}&quantity=0"
              onclick="overlayOff()">
@@ -15,9 +15,7 @@
         </div>
 
         {% comment %} data-ajax-cart-section-scroll keeps the scroll position unchanged when the element's HTML is changed {% endcomment %}
-        <div class="myCart_items myCart_close" 
-             data-ajax-cart-toggle-class-button="js-my-cart-open" 
-             data-ajax-cart-section-scroll>
+        <div class="myCart_items" data-ajax-cart-section-scroll>
 
           {% for item in cart.items %} 
           <div class="myCart_itemWrapper">
