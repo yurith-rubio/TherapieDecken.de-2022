@@ -25,61 +25,78 @@
                 <svg width="9" viewBox="0 0 10 10"><path d="M9.677 8.118a1.102 1.102 0 11-1.559 1.56L5 6.558 1.882 9.677a1.102 1.102 0 11-1.56-1.559L3.442 5 .323 1.882A1.102 1.102 0 111.882.322L5 3.442 8.118.323a1.102 1.102 0 111.56 1.559L6.558 5l3.118 3.118z" fill="#cacaca" fill-rule="nonzero"></path></svg>
               </a>
             </div>
-            {% comment %} remove button {% endcomment %}
-            <div class="my-cart_imageWrapper">
-              <img class="image_cart" src="{{ item.image | image_url: width: 300 }} ">
-            </div>
-            <div class="content_cart_wrapper">
-              {% assign item_index = forloop.index %}
-              {% comment %} item title {% endcomment %}
-              <h2 class="Heading u-h6"><a href="{{ item.url }}">{{ item.product.title }}</a></h2>
-              {% for option in item.options_with_values %}
-              <p class="p_cart">{{ option.value }}</p>
-              {% endfor %}
+            {% comment %} image and info {% endcomment %}
 
-              <div class="quantity_price_wrapper">
-                {% comment %} quantity selector {% endcomment %}
-                <div class="quantity-selector">
-                  {% comment %} data-ajax-cart-request-button ajaxifies the "Minus one" button {% endcomment %}
-                  <a class="button_cart" 
-                     data-ajax-cart-request-button 
-                     href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | minus: 1 }}" >
+              <div class="my-cart_imageWrapper">
+                <img class="image_cart" src="{{ item.image | image_url: width: 300 }} ">
+              </div>
+              <div class="content_cart_wrapper">
+                {% assign item_index = forloop.index %}
+                {% comment %} item title {% endcomment %}
+                <h2 class="Heading u-h6"><a href="{{ item.url }}">{{ item.product.title }}</a></h2>
+                {% for option in item.options_with_values %}
+                <p class="p_cart">{{ option.value }}</p>
+                {% endfor %}
 
-                    <svg width="10" viewBox="0 0 12 2" xmlns="http://www.w3.org/2000/svg"><path d="M11.25 0H.75C.3 0 0 .4 0 1s.3 1 .75 1h10.5c.45 0 .75-.4.75-1s-.3-1-.75-1z" fill="#7A7A7A" fill-rule="nonzero"></path></svg>
-
-                  </a>
-                  {% comment %} Input {% endcomment %}
-                  <input class="input_cart" 
-                         data-ajax-cart-quantity-input="{{ item_index }}" 
-                         name="updates[]" 
-                         value="{{ item.quantity }}" 
-                         type="number" />
+                <div class="price_content_wrapper">
                   
-                  {% comment %} data-ajax-cart-request-button ajaxifies the "Plus one" button {% endcomment %}
-                  <a class="button_cart"
-                     data-ajax-cart-request-button 
-                     href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | plus: 1 }}">
+                  <div class="quantity_price_wrapper">
+                    {% comment %} quantity selector {% endcomment %}
+                    <div class="quantity-selector">
+                      {% comment %} data-ajax-cart-request-button ajaxifies the "Minus one" button {% endcomment %}
+                      <a class="button_cart" 
+                         data-ajax-cart-request-button 
+                         href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | minus: 1 }}" >
 
-                    <svg width="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M11 5H7V1a1 1 0 00-2 0v4H1a1 1 0 000 2h4v4a1 1 0 002 0V7h4a1 1 0 000-2z" fill="currentColor" fill-rule="nonzero"></path></svg>
+                        <svg width="10" viewBox="0 0 12 2" xmlns="http://www.w3.org/2000/svg"><path d="M11.25 0H.75C.3 0 0 .4 0 1s.3 1 .75 1h10.5c.45 0 .75-.4.75-1s-.3-1-.75-1z" fill="#7A7A7A" fill-rule="nonzero"></path></svg>
 
-                  </a>
+                      </a>
+                      {% comment %} Input {% endcomment %}
+                      <input class="input_cart" 
+                             data-ajax-cart-quantity-input="{{ item_index }}" 
+                             name="updates[]" 
+                             value="{{ item.quantity }}" 
+                             type="number" />
+
+                      {% comment %} data-ajax-cart-request-button ajaxifies the "Plus one" button {% endcomment %}
+                      <a class="button_cart"
+                         data-ajax-cart-request-button 
+                         href="{{ routes.cart_change_url }}?line={{ item_index }}&quantity={{ item.quantity | plus: 1 }}">
+
+                        <svg width="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M11 5H7V1a1 1 0 00-2 0v4H1a1 1 0 000 2h4v4a1 1 0 002 0V7h4a1 1 0 000-2z" fill="currentColor" fill-rule="nonzero"></path></svg>
+
+                      </a>
+                    </div>
+
+                    {% comment %} final price of item {% endcomment %}
+                    <div id="my-cart_finalPrice-{{ item.id }}">
+                      <strong>{{ item.final_line_price | money }}</strong>
+                    </div>
+                  </div>
+                  
+                  {%- if item.line_level_discount_allocations != blank -%}
+                    <ul class="CartItem__DiscountList" style="margin:0;">
+                      {%- for discount_allocation in item.line_level_discount_allocations -%}
+                        <li class="CartItem__Discount">
+                          {%- render 'icon' with 'sale' -%}{{ discount_allocation.discount_application.title }}: -{{ discount_allocation.amount | money }}
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                  
+                  
                 </div>
-
-                {% comment %} final price of item {% endcomment %}
-                <div id="my-cart_finalPrice-{{ item.id }}">
-                  <strong>{{ item.final_line_price | money }}</strong>
-                </div>
+                <div id="my-cart_promoMessage-{{ item.id }}"></div>
               </div>
             </div>
 
-            {% comment %}
+          
             {% comment %} Container for errors {% endcomment %}
             <div data-ajax-cart-messages="{{ item.key }}"></div>
-            {% endcomment %}
+           
             </div>
           {% endfor %}
 
-        </div>
         </div>
         <div>
           <div class="footer_cart_wrapper">
