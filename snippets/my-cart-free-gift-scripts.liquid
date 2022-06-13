@@ -37,13 +37,15 @@
                     if(triggerOptionName && triggerOptionName.value) {
                     	console.log("check selected options ");
                         console.log(item.variant_options);
-                        item.variant_options = item.variant_options.filter(function(variant){
+                        item.variant_options = item.variant_options.filter(function(value){
                         	console.log("item's size variant ");
-                            console.log(variant);
-                            return variant.options.includes(option.value);
+                            console.log(value);
+                            return value.options.includes(option.value);
                         });
                         
                     }
+                    
+                    console.log(variant)
                 };
                 
             });
