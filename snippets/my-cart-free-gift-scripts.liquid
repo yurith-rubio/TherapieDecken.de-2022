@@ -6,7 +6,8 @@
         subscribeToCartStateUpdate( state => {
 
             let giftProduct = window.giftProduct;
-            
+            console.log("giftProduct")
+            console.log(giftProduct)
             
             // console.log("final size");
             // console.log(giftProductSelectedSize);
@@ -33,10 +34,7 @@
                   return value.variant_options[0];
               }).toString();
 
-              giftProduct = giftProduct.find(value => {
-                  console.log("value")
-                  console.log(value)
-              });
+
               
             
               cartRequestAdd({ 
