@@ -6,8 +6,13 @@
         subscribeToCartStateUpdate( state => {
         
         	console.log("window.giftProduct: ");
-        	console.log(window.giftProduct.variants);
-
+            const giftProduct = window.giftProduct;
+            giftProduct.variants.filter(value => {
+            	console.log("find values");
+            	console.log(giftProduct.variants[0].id);
+            });
+            
+        	
 			// get items from the cart
         	let items = state.cart.items;
             const totalItemsInCart = state.cart.item_count;
