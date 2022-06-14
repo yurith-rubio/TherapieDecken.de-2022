@@ -27,11 +27,7 @@
             	return item.handle === 'therapiedecken';
             });
             
-			// find size of trigger product
-            const giftTriggerSize = giftTriggerItem.find(value => {
-            	console.log("trigger product sizes");
-            	return value.variant_options[0];
-            });
+
             
 
 			// check if there is any gift product already added to the cart
@@ -41,6 +37,12 @@
             
             // add a gift product if there is a trigger product on the cart
             if ( giftTriggerItem.length >= 1 && autoAddedLineItem <= -1 ){
+            
+              // find size of trigger product
+              const giftTriggerSize = giftTriggerItem.find(value => {
+                  return value.variant_options[0];
+              });
+            
               cartRequestAdd({ 
                 items: [
                   {
