@@ -5,8 +5,8 @@
         
         subscribeToCartStateUpdate( state => {
 
-            const giftProduct = window.giftProduct;
-            const giftProductSizes = giftProduct.variants.map(value => {
+            let giftProduct = window.giftProduct;
+            giftProduct = giftProduct.variants.map(value => {
             	console.log("value")
             	console.log(value)
             	return value.option1;
