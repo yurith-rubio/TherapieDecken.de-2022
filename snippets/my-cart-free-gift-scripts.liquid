@@ -7,7 +7,7 @@ promoVariant: {{ promoVariant }}
 <script type="module">
         import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-		window.giftProduct = {{ all_products['therapiedecken-basic-bezug-in-weiss'] | json }};
+		window.giftProduct = {{ promoVariant | json }};
 
         subscribeToCartStateUpdate( state => {
 
