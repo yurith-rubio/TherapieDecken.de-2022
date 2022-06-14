@@ -29,10 +29,10 @@
 
 			console.log(giftTriggerItem);
 			// find size of trigger product
-            const giftTriggerSizes = giftTriggerItem.variants.map(value => {
+            const giftTriggerSizes = giftTriggerItem.find(value => {
             	console.log("trigger product sizes");
-                console.log(value.option1)
-            	return value.option1;
+                console.log(giftTriggerItem.variant_options)
+            	return giftTriggerItem.variant_options;
             });
             
 
