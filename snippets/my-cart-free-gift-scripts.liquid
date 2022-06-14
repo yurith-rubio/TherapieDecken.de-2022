@@ -13,7 +13,7 @@
             console.log("gift product sizes");
             console.log(giftProductSizes);
             
-            function promoVariant() {
+            function getGiftProductVariantId () {
             
             }
             
@@ -42,6 +42,8 @@
               const giftTriggerSize = giftTriggerItem.find(value => {
                   return value.variant_options[0];
               });
+              
+              
             
               cartRequestAdd({ 
                 items: [
