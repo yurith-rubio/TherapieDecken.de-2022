@@ -33,7 +33,7 @@
                   return value.variant_options[0];
               }).toString();
 
-              giftProduct = giftProduct.variants.map(value => {
+              giftProduct = giftProduct.variants.find(value => {
                   console.log("value")
                   console.log(value)
                   return value.option1;
