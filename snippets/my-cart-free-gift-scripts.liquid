@@ -2,11 +2,11 @@
         import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
 		window.giftProduct = {{ all_products['therapiedecken-basic-bezug-in-weiss'] | json }};
-        
+
         subscribeToCartStateUpdate( state => {
 
             let giftProduct = window.giftProduct;
-        	
+
 			// get items from the cart
         	let items = state.cart.items;
             const totalItemsInCart = state.cart.item_count;
@@ -20,10 +20,10 @@
             const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
               return lineItem.properties?._autoadded === 'Yes' ;
             });
-            
+
             // add a gift product if there is a trigger product on the cart
             if ( giftTriggerItem.length >= 1 && autoAddedLineItem <= -1 ){
-            
+
               // find size of trigger product
               let giftTriggerSize = giftTriggerItem.map(value => {
                   return value.variant_options[0];
@@ -33,7 +33,7 @@
               let selectedGiftProduct = giftProduct.variants.find(selected => {
                   return selected.option1 === giftTriggerSize;
               });
-              
+
               cartRequestAdd({ 
                 items: [
                   {
