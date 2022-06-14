@@ -6,12 +6,13 @@
         subscribeToCartStateUpdate( state => {
 
             let giftProduct = window.giftProduct;
-            console.log("giftProduct");
-            console.log(giftProduct);
             
             const selectedGiftProduct = giftProduct.variants.find(selected => {
             	return selected.option1 === '135 x 200 cm';
             });
+            
+            console.log("selectedGiftProduct");
+            console.log(selectedGiftProduct);
             
             // console.log("final size");
             // console.log(giftProductSelectedSize);
