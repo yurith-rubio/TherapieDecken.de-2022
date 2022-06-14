@@ -2,12 +2,12 @@
 {% assign promoVariant = settings.gift_product  %}
 {% assign promoSubtotal = settings.gift_product_min_spend  %}
 
-promoVariant: {{ promoVariant | json }}
+promoVariant: {{ promoVariant }}
 
 <script type="module">
         import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-		window.giftProduct = {{ promoVariant | json }};
+		window.giftProduct = {{ all_products[promoVariant] | json }};
 
         subscribeToCartStateUpdate( state => {
 
