@@ -9,7 +9,7 @@
             console.log("giftProduct");
             console.log(giftProduct);
             
-            giftProduct.variants.find(selected => {
+            const selectedGiftProduct = giftProduct.variants.find(selected => {
             	return selected.option1 === '135 x 200 cm';
             });
             
