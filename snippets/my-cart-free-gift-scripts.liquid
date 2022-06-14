@@ -13,6 +13,10 @@
             console.log("gift product sizes");
             console.log(giftProductSizes);
             
+            function promoVariant() {
+            
+            }
+            
         	
 			// get items from the cart
         	let items = state.cart.items;
@@ -23,7 +27,12 @@
             	return item.handle === 'therapiedecken';
             });
 
-			// choose gift product depending on size value
+			// find size of trigger product
+            const giftTriggerSizes = giftTriggerItem.variants.map(value => {
+            	console.log("trigger product sizes");
+                console.log(value.option1)
+            	return value.option1;
+            });
             
 
 			// check if there is any gift product already added to the cart
