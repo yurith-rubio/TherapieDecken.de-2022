@@ -35,18 +35,16 @@
               }).toString();
 
 			  // choose gift product that matches the size
-              const selectedGiftProduct = giftProduct.variants.find(selected => {
+              let selectedGiftProduct = giftProduct.variants.find(selected => {
                   return selected.option1 === giftTriggerSize;
               });
 
-              console.log("selectedGiftProduct");
-              console.log(selectedGiftProduct.id);
+			  selectedGiftProduct = selectedGiftProduct.id
               
-            
               cartRequestAdd({ 
                 items: [
                   {
-                    id: 34447711174795,
+                    id: selectedGiftProduct,
                     quantity: 1,
                     properties: {
                   	"_autoadded": "Yes" 
