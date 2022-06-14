@@ -7,6 +7,7 @@
 
             const giftProduct = window.giftProduct;
             const giftProductSizes = giftProduct.variants.map(value => {
+            	console.log(value)
             	return value.option1;
             });
             
@@ -41,7 +42,8 @@
                   return value.variant_options[0];
               }).toString();
 
-              const giftProductSelectedSize = giftProductSizes.filter(size => {
+			
+              const giftProductSelectedVariant = giftProductSizes.filter(size => {
                 return size === giftTriggerSize;
               }).toString();
               
