@@ -33,6 +33,8 @@ promoVariant: {{ promoVariant }}
 
               // find size of trigger product
               let giftTriggerSize = giftTriggerItem.map(value => {
+              	console.log("trigger item")
+              	console.log(value)
                   return value.variant_options[0];
               }).toString();
 
