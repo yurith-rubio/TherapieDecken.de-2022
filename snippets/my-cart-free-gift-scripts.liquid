@@ -37,9 +37,9 @@
             if ( giftTriggerItem.length >= 1 && autoAddedLineItem <= -1 ){
             
               // find size of trigger product
-              const giftTriggerSize = giftTriggerItem.find(value => {
-              	  console.log(value.variant_options[0]);
-                  return value.variant_options[0];
+              let giftTriggerSize = giftTriggerItem.find(value => {
+                  giftTriggerSize = value.variant_options[0];
+                  return giftTriggerSize;
               });
               
               console.log("giftTriggerSize: ");
