@@ -40,7 +40,7 @@ giftProductOption: {{ giftProductOption }}
 
 			  // choose gift product that matches the size
               let selectedGiftProduct = giftProduct.variants.find(selected => {
-                  return selected.option1 === giftTriggerSize;
+                  return selected.{{ triggerProductOption }} === giftTriggerSize;
               });
 
               cartRequestAdd({ 
