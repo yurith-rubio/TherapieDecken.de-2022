@@ -18,7 +18,7 @@
 
 			// check if trigger product is on the cart
             const giftTriggerItem = items.filter(item => {
-            	return item.handle === triggerProduct;
+            	return item.handle === {{ triggerProduct | json }};
             });
 
 			// check if there is any gift product already added to the cart
