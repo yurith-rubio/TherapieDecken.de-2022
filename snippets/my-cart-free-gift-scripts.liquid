@@ -4,8 +4,7 @@
 		window.giftProduct = {{ all_products['therapiedecken-basic-bezug-in-weiss'] | json }};
         
         subscribeToCartStateUpdate( state => {
-        
-        	console.log("window.giftProduct: ");
+
             const giftProduct = window.giftProduct;
             const giftProductSizes = giftProduct.variants.map(value => {
             	return value.option1;
