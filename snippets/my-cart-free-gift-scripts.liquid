@@ -38,13 +38,11 @@
               let selectedGiftProduct = giftProduct.variants.find(selected => {
                   return selected.option1 === giftTriggerSize;
               });
-
-			  selectedGiftProduct = selectedGiftProduct.id
               
               cartRequestAdd({ 
                 items: [
                   {
-                    id: selectedGiftProduct,
+                    id: selectedGiftProduct.id,
                     quantity: 1,
                     properties: {
                   	"_autoadded": "Yes" 
