@@ -43,53 +43,53 @@
   }
 </style>
 
-<div class="desktop-ol">
-   <ol>
-      <li class="OwlScript_li">
-        <span class="icon-one-1"><span class="path1"></span><span class="path2"></span></span>
-        Abnehmbarer Basic Bezug aus Polyester und Baumwolle
-      </li>
-      <li class="OwlScript_li">
-         <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
-         Gravity Gewichtsdecke (Inlett)
-         Das Gravity Inlett besteht aus 100% organischer Baumwolle.
-         Füllung
-      </li>
-      <li class="OwlScript_li">
-         <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
-         Die Füllung ist aus 32% Polyester und 68% Baumwolle
-      </li>
-      <li class="OwlScript_li">
-         <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
-         In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
-      </li>
-   </ol>
-</div>
+{% if product.handle == 'basic-gravity-gewichtsdecke-fur-erwachsene' %}
+  <div class="desktop-ol">
+     <ol>
+        <li class="OwlScript_li">
+          <span class="icon-one-1"><span class="path1"></span><span class="path2"></span></span>
+          Abnehmbarer Basic Bezug aus Polyester und Baumwolle
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+           Gravity Gewichtsdecke (Inlett)
+           Das Gravity Inlett besteht aus 100% organischer Baumwolle.
+           Füllung
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+           Die Füllung ist aus 32% Polyester und 68% Baumwolle
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+           In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+        </li>
+     </ol>
+  </div>
 
-
-<div class="mobile-ol">
-   <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
-	   <div class="item">
-	     <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
-         Abnehmbarer Basic Bezug aus Polyester und Baumwolle
-	   </div>
-	   <div class="item">
-	      <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
-	      Gravity Gewichtsdecke (Inlett)
-          Das Gravity Inlett besteht aus 100% organischer Baumwolle.
-          Füllung
-	   </div>
-	   <div class="item">
-	      <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
-	      Die Füllung ist aus 32% Polyester und 68% Baumwolle
-	   </div>
-	   <div class="item">
-	      <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
-	      In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
-	   </div>
-	</div>
-</div>
-
+  <div class="mobile-ol">
+     <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
+         <div class="item">
+           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+           Abnehmbarer Basic Bezug aus Polyester und Baumwolle
+         </div>
+         <div class="item">
+            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+            Gravity Gewichtsdecke (Inlett)
+            Das Gravity Inlett besteht aus 100% organischer Baumwolle.
+            Füllung
+         </div>
+         <div class="item">
+            <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+            Die Füllung ist aus 32% Polyester und 68% Baumwolle
+         </div>
+         <div class="item">
+            <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+            In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+         </div>
+      </div>
+  </div>
+{% endif %}
 
 <script>
    $('.OwlCarousel_TextWithImage').owlCarousel({
