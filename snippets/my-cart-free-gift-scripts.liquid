@@ -40,16 +40,11 @@
               let giftTriggerSize = giftTriggerItem.map(value => {
                   return value.variant_options[0];
               }).toString();
-              
-              console.log("giftTriggerSize: ");
-              console.log(giftTriggerSize);
 
               const giftProductSelectedSize = giftProductSizes.filter(size => {
                 return size === giftTriggerSize;
               }).toString();
               
-              console.log("giftProductSelectedSize: ");
-              console.log(giftProductSelectedSize);
             
               cartRequestAdd({ 
                 items: [
