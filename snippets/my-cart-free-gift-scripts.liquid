@@ -34,7 +34,7 @@ giftProductOption: {{ giftProductOption }}
               let giftTriggerSize = giftTriggerItem.map(value => {
               	console.log("trigger item")
               	console.log(value)
-                  return value.variant_options[0];
+                  return value.variant_options[{{ giftProductOption }}];
               }).toString();
 
 			  // choose gift product that matches the size
