@@ -828,6 +828,11 @@
         "type": "product",
         "id": "gift_product",
         "label": "Gift product ID"
+      },
+      {
+        "type": "product",
+        "id": "trigger_product",
+        "label": "Gift product ID"
       }
     ]
   }
