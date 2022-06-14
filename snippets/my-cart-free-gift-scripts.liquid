@@ -6,13 +6,6 @@
         subscribeToCartStateUpdate( state => {
 
             let giftProduct = window.giftProduct;
-            giftProduct = giftProduct.variants.map(value => {
-            	console.log("value")
-            	console.log(value)
-            	return value.option1;
-            });
-            
-
             
             
             // console.log("final size");
@@ -43,10 +36,11 @@
                   return value.variant_options[0];
               }).toString();
 
-			
-              const giftProductSelectedVariant = giftProductSizes.filter(size => {
-                return size === giftTriggerSize;
-              }).toString();
+              giftProduct = giftProduct.variants.map(value => {
+                  console.log("value")
+                  console.log(value)
+                  return value.option1;
+              });
               
             
               cartRequestAdd({ 
