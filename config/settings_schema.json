@@ -845,6 +845,18 @@
         "type": "product",
         "id": "trigger_product",
         "label": "Gift product ID"
+      },
+      {
+        "type": "select",
+        "id": "trigger_option",
+        "label": "Gift product ID",
+        "options": [
+          {
+            "value": "option1",
+            "label": "option1"
+          }
+        ],
+        "default": "option1"
       }
     ]
   }
