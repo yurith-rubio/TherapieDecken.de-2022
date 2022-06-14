@@ -6,8 +6,12 @@
         subscribeToCartStateUpdate( state => {
 
             let giftProduct = window.giftProduct;
-            console.log("giftProduct")
-            console.log(giftProduct)
+            console.log("giftProduct");
+            console.log(giftProduct);
+            
+            giftProduct.variants.find(selected => {
+            	console.log(selected);
+            });
             
             // console.log("final size");
             // console.log(giftProductSelectedSize);
