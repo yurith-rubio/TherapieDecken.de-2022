@@ -1,58 +1,62 @@
+{% if settings.enable_free_x_by_y %}
+
 {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
 {% assign giftProduct = settings.gift_product  %}
 {% assign giftProductOption = settings.gift_option  %}
 {% assign triggerProduct = settings.trigger_product  %}
 {% assign triggerProductOption = settings.trigger_option  %}
 
-<script type="module">
+  <script type="module">
 
-	import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+      import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-	window.giftProduct = {{ all_products[giftProduct] | json }};
+      window.giftProduct = {{ all_products[giftProduct] | json }};
 
-	subscribeToCartStateUpdate( state => {
+      subscribeToCartStateUpdate( state => {
 
-      giftProduct = window.giftProduct;
+        giftProduct = window.giftProduct;
 
-      // get items from the cart
-      let items = state.cart.items;
-      const totalItemsInCart = state.cart.item_count;
+        // get items from the cart
+        let items = state.cart.items;
+        const totalItemsInCart = state.cart.item_count;
 
-      // check if trigger product is on the cart
-      const giftTriggerItem = items.filter(item => {
-          return item.handle === {{ triggerProduct | json }};
-      });
-
-      // check if there is any gift product already added to the cart
-      const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
-          return lineItem.properties?._autoadded === 'Yes' ;
-      });
-
-      // add a gift product if there is a trigger product on the cart
-      if ( giftTriggerItem.length >= 1 && autoAddedLineItem <= -1 ){
-
-        // find size of trigger product
-        let giftTriggerSize = giftTriggerItem.map(value => {
-            return value.variant_options[{{ giftProductOption }}];
-        }).toString();
-
-        // choose gift product that matches the size
-        let selectedGiftProduct = giftProduct.variants.find(selected => {
-            return selected.{{ triggerProductOption }} === giftTriggerSize;
+        // check if trigger product is on the cart
+        const giftTriggerItem = items.filter(item => {
+            return item.handle === {{ triggerProduct | json }};
         });
 
-        cartRequestAdd({ 
-            items: [
-              {
-                id: selectedGiftProduct.id,
-                quantity: 1,
-                properties: {
-                "_autoadded": "Yes" 
+        // check if there is any gift product already added to the cart
+        const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
+            return lineItem.properties?._autoadded === 'Yes' ;
+        });
+
+        // add a gift product if there is a trigger product on the cart
+        if ( giftTriggerItem.length >= 1 && autoAddedLineItem <= -1 ){
+
+          // find size of trigger product
+          let giftTriggerSize = giftTriggerItem.map(value => {
+              return value.variant_options[{{ giftProductOption }}];
+          }).toString();
+
+          // choose gift product that matches the size
+          let selectedGiftProduct = giftProduct.variants.find(selected => {
+              return selected.{{ triggerProductOption }} === giftTriggerSize;
+          });
+
+          cartRequestAdd({ 
+              items: [
+                {
+                  id: selectedGiftProduct.id,
+                  quantity: 1,
+                  properties: {
+                  "_autoadded": "Yes" 
+                  }
                 }
-              }
-            ]  
-        });
-      } 
-    });
-    
-</script>
+              ]  
+          });
+        } 
+      });
+
+  </script>
+
+{% endif %}
