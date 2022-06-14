@@ -7,7 +7,7 @@
         
         	console.log("window.giftProduct: ");
             const giftProduct = window.giftProduct;
-            giftProduct.variants.filter(value => {
+            giftProduct.variants.map(value => {
             	console.log("find values");
             	console.log(giftProduct.variants[0].id);
             });
