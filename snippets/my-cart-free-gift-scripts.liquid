@@ -13,7 +13,7 @@
             console.log("gift product sizes");
             console.log(giftProductSizes);
             
-            giftProductSizes.filter(size => {
+            const giftProductSelectedSize = giftProductSizes.filter(size => {
               console.log("size: ");
               console.log(size);
               return size === "135 x 200 cm";
@@ -21,7 +21,7 @@
             
             
             console.log("final size");
-            console.log(size);
+            console.log(giftProductSelectedSize);
         	
 			// get items from the cart
         	let items = state.cart.items;
