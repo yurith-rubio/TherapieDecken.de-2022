@@ -10,11 +10,7 @@
             	return value.option1;
             });
             
-            const giftProductSelectedSize = giftProductSizes.filter(size => {
-              console.log("size: ");
-              console.log(size);
-              return size === "135 x 200 cm";
-            }).toString();
+
             
             
             console.log("final size");
@@ -45,7 +41,11 @@
                   return value.variant_options[0];
               });
               
-              
+              const giftProductSelectedSize = giftProductSizes.filter(size => {
+                console.log("giftTriggerSize: ");
+                console.log(giftTriggerSize);
+                return size === giftTriggerSize;
+              }).toString();
             
               cartRequestAdd({ 
                 items: [
