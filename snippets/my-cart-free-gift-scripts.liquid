@@ -3,8 +3,6 @@
 {% assign giftProductOption = settings.gift_product  %}
 {% assign triggerProduct = settings.trigger_product  %}
 
-promoVariant: {{ promoVariant }}
-
 <script type="module">
         import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
