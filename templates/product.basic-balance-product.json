@@ -375,6 +375,7 @@
     },
     "1629709567bc66549f": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
@@ -418,6 +419,7 @@
         "bg-color-text-html": "",
         "text_align": "left",
         "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/TD_Father_s_day_promotion_-_main_image_x540_ca82d9f3-6c21-4ac5-9848-b539cfca7c41.jpg",
         "image_position": "right"
       }
     },
