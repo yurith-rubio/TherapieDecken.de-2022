@@ -43,13 +43,13 @@
               
               console.log("giftTriggerSize: ");
               console.log(giftTriggerSize);
-              
-              
+
               const giftProductSelectedSize = giftProductSizes.filter(size => {
-                console.log("giftTriggerSize: ");
-                console.log(giftTriggerSize);
                 return size === giftTriggerSize;
               }).toString();
+              
+              console.log("giftProductSelectedSize: ");
+              console.log(giftProductSelectedSize);
             
               cartRequestAdd({ 
                 items: [
