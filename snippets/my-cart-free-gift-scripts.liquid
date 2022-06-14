@@ -7,12 +7,12 @@
         
         	console.log("window.giftProduct: ");
             const giftProduct = window.giftProduct;
-            giftProduct.variants.map(value => {
+            const giftProductValues = giftProduct.variants.map(value => {
             	return value.option1;
             });
             
             console.log("find values");
-            console.log(giftProduct.variants);
+            console.log(giftProductValues);
             
         	
 			// get items from the cart
