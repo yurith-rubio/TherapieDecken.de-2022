@@ -122,13 +122,16 @@
 	{% assign giftHandle = giftProduct.handle | json %}
 
 	<script>
-      console.log("giftHandle: ");
-      console.log({{ giftHandle }});
+
 	</script>
             
 	{% if product.handle == giftHandle %}
 
       <script type="module">
+      
+          console.log("giftHandle: ");
+      	  console.log({{ giftHandle }});
+          
           console.log(" this product can give you a free item! ");
 
           import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
