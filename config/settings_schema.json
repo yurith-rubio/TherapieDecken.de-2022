@@ -830,9 +830,13 @@
         "label": "Enable free x product by y"
       },
       {
+        "type": "header",
+        "content": "Gift Product"
+      },
+      {
         "type": "product",
         "id": "gift_product",
-        "label": "Gift product ID"
+        "label": "Gift product"
       },
       {
         "type": "select",
@@ -847,9 +851,13 @@
         "default": "0"
       },
       {
+        "type": "header",
+        "content": "Trigger product"
+      },
+      {
         "type": "product",
         "id": "trigger_product",
-        "label": "Gift product ID"
+        "label": "Trigger product"
       },
       {
         "type": "select",
