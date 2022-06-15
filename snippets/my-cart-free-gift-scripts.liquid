@@ -119,8 +119,12 @@
 
             import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
  			{% assign giftCollection = collections['Therapiekissen'] %}
-			          
-            window.triggerCollection = {{ giftCollection.products | json }};
+            {% layout none %}
+			{% paginate collections['Therapiekissen'].products by 1000 %}
+            	{% assign giftCollectionProducts = giftCollection.products | json %}
+            {% endpaginate %}
+            
+            window.giftCollectionProducts = {{ giftCollectionProducts | json }};
             
             console.log("trigger collection: ");
             console.log(window.triggerCollection);
