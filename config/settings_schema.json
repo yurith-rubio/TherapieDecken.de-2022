@@ -827,7 +827,7 @@
       {
         "type": "checkbox",
         "id": "enable_free_selected",
-        "label": "Enable free x product by y"
+        "label": "Enable free x for y with matching values"
       },
       {
         "type": "header",
