@@ -838,7 +838,7 @@
             "label": "Enable free x by y"
           }
         ],
-        "default": "enable_free_x_by_y"
+        "default": "enable_free_x_compared"
       },
       {
         "type": "header",
