@@ -121,6 +121,9 @@
   {% for giftProduct in collections['Therapiekissen'].products %}
 	{% assign giftHandle = giftProduct.handle | json %}
 
+	console.log("giftHandle: ");
+	console.log(giftHandle);
+
 	{% if product.handle == giftHandle %}
 
       <script type="module">
