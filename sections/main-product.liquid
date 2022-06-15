@@ -1,6 +1,7 @@
 {% paginate collections['Therapiekissen'].products by 1000 %}
-  {% for giftProduct in collections['Therapiekissen'].products %}
-	{% assign giftHandles = giftProduct.handle | json %}
+  {% for giftProducts in collections['Therapiekissen'].products %}
+		{{ giftProducts }}
+	{% assign giftHandles = giftProducts.handle | json %}
 
     {% for giftHandle in giftHandles %}
       {% if giftHandle == product.handle %}
