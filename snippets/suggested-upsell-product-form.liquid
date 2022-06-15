@@ -39,7 +39,12 @@
                     {% endfor %}
                   </div>
                 </div>
-                <button class="SuggestedUpProd_buttonWr Button Button--primary" type="submit">Hinzufügen</button>
+                <button type="submit"
+                        class="SuggestedUpProd_buttonWr Button Button--primary"
+                        data-ajax-cart-request-button
+                        onclick="overlayOn()">
+                  Hinzufügen
+                </button>
               </div>
             </form>
            {% endif %}
