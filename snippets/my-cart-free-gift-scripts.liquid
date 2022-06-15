@@ -116,7 +116,7 @@
 {% assign giftProductID = settings.gift_product_id  %}
 
       {% assign giftCollection = collections['Therapiekissen'] %}
-      {% layout none %}
+
         {% layout none %}
         {% paginate collections['Therapiekissen'].products by 1000 %}
           {% for giftProductHandle in collections['Therapiekissen'].products %}
