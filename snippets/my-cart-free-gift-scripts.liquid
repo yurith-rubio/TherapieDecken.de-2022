@@ -117,8 +117,6 @@
 
 		<script type="module">
 
-            console.log(" this product can give you a free item! ");
-
             import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
             
             {% for collection in product.collections %}
@@ -128,7 +126,7 @@
 			{% endfor %}
             
             window.triggerProduct = {{ all_products[giftProduct] | json }};
-            console.log("here: ");
+            console.log("trigger product: ");
             console.log(window.triggerProduct);
 
             subscribeToCartStateUpdate( state => {
