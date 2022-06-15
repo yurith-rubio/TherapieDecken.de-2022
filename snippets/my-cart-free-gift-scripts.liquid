@@ -125,7 +125,9 @@
             // get items from the cart
             let items = state.cart.items;
             
-            console.log(cart);
+            window.collection = {{ collections['Therapiekissen'] | json }}
+            
+            console.log(collection);
             
             let cartProductType = items.map(item => {
             	return item.product_type;
