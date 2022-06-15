@@ -127,7 +127,7 @@
             
             window.triggerProduct = {{ all_products[triggerProduct] | json }};
             console.log("trigger product: ");
-            console.log(window.triggerProduct);
+            console.log(window.triggerProduct.handle);
 
             subscribeToCartStateUpdate( state => {
             
