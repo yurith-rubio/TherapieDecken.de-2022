@@ -831,7 +831,7 @@
         "options": [
           {
             "value": "enable_free_x_compared",
-            "label": "Enable free x by y"
+            "label": "Enable free compared product"
           },
           {
             "value": "enable_free_x_by_y",
