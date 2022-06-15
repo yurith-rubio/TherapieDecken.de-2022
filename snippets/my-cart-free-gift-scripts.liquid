@@ -64,7 +64,7 @@
 {% if settings.enable_free_product == 'enable_free_x_by_y' %}
 
 {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
-{% assign giftProduct = settings.gift_product  %}
+{% assign giftProductID = settings.gift_product_id  %}
 {% assign triggerProduct = settings.trigger_product  %}
 
   <script type="module">
@@ -108,6 +108,13 @@
                 return selected.{{ triggerProductOption }} === giftTriggerSize;
             });
 		  {% endif %}
+          
+          {% if settings.enable_free_product == 'enable_free_x_by_y' %}
+            // choose gift product that matches the size
+            let selectedGiftProduct = giftProduct.variants.find(selected => {
+                return selected.id === {{}};
+            });
+          {% endif %}
 
           cartRequestAdd({ 
               items: [
