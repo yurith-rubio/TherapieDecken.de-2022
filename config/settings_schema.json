@@ -856,7 +856,7 @@
       {
         "type": "number",
         "id": "gift_product_id",
-        "label": "Gift product ID"
+        "label": "Gift product variant ID"
       },
       {
         "type": "select",
