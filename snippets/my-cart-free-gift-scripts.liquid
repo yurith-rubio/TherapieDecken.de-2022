@@ -120,9 +120,9 @@
 
             import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
             
-            {% for giftCollection in collections['Therapiekissen'] %}
-            	console.log("gift collection: ")
-    			console.log( {{ giftCollection | json }} );
+            {% for giftProduct in product.collections['Therapiekissen'] %}
+            	console.log("gift product: ")
+    			console.log( {{ giftProduct | json }} );
 			{% endfor %}
             
             window.triggerProduct = {{ all_products[triggerProduct] | json }};
