@@ -1,6 +1,8 @@
 
 
-collection: {{ collections['Therapiekissen'] | json }}
+{% assign giftCollection = collections['Therapiekissen'] %}
+
+{{ giftCollection.products }}
 
 <!-- section: main-product.liquid -->
 
