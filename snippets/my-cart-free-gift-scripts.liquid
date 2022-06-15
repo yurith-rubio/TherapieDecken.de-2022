@@ -124,14 +124,14 @@
             // get items from the cart
             let items = state.cart.items;
             
-            let cartProductType = items.filter(item => {
+            let cartProductType = items.map(item => {
             	return item.product_type;
             });
             
             console.log("cart product types array: ");
             console.log(cartProductType);
             
-            let cartProductID = items.filter(item => {
+            let cartProductID = items.map(item => {
             	return item.id;
             });
             
