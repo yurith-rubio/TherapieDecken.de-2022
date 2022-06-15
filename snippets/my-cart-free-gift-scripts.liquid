@@ -66,14 +66,12 @@
 {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
 {% assign giftProduct = settings.gift_product  %}
 
+giftProduct: {{ giftProduct }}
 
 {% assign triggerProduct = settings.trigger_product  %}
 
 
   <script type="module">
-
-giftProduct: {{ giftProduct }}
-
 
       import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
