@@ -115,52 +115,47 @@
 
 {% assign giftProductID = settings.gift_product_id  %}
 
-		<script type="module">
+      {% assign giftCollection = collections['Therapiekissen'] %}
+      {% layout none %}
+        {% layout none %}
+        {% paginate collections['Therapiekissen'].products by 1000 %}
+          {% for giftProductHandle in collections['Therapiekissen'].products %}
 
-            import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
- 			{% assign giftCollection = collections['Therapiekissen'] %}
-            {% layout none %}
-			{% paginate collections['Therapiekissen'].products by 1000 %}
-            	{% for triggerCollection in collections['Therapiekissen'].products %}
-            		{% assign giftTrigger = product.handle | json %}
-                {% endfor %}
-            {% endpaginate %}
-            
-            console.log("trigger collection: ");
-            window.giftTrigger = {{ giftTrigger | json }};
-            
-            
+            <script type="module">
 
+                import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-            subscribeToCartStateUpdate( state => {
-            
-              triggerProduct = window.triggerProduct.handle;
+                subscribeToCartStateUpdate( state => {
 
-              // get items from the cart
-              let items = state.cart.items;
+                  let triggerProduct = {{ giftProductHandle | json }}
 
-              // check if there is any gift product already added to the cart
-              const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
-                  return lineItem.properties?._autoadded === 'Yes' ;
-              });
+                  // get items from the cart
+                  let items = state.cart.items;
 
-              // add a gift product if there is a trigger product on the cart
-              if ( triggerProduct.length >= 1 && autoAddedLineItem === -1 ){
+                  // check if there is any gift product already added to the cart
+                  const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
+                      return lineItem.properties?._autoadded === 'Yes' ;
+                  });
 
-                cartRequestAdd({ 
-                    items: [
-                      {
-                        id: {{ giftProductID }},
-                        quantity: 1,
-                        properties: {
-                        "_autoadded": "Yes" 
-                        }
-                      }
-                    ]  
+                  // add a gift product if there is a trigger product on the cart
+                  if ( {{ giftProductHandle }}.length >= 1 && autoAddedLineItem === -1 ){
+
+                    cartRequestAdd({ 
+                        items: [
+                          {
+                            id: triggerProduct,
+                            quantity: 1,
+                            properties: {
+                            "_autoadded": "Yes" 
+                            }
+                          }
+                        ]  
+                    });
+                  } 
                 });
-              } 
-            });
 
-		</script>
+            </script>
+          {% endfor %}
+        {% endpaginate %}
 
 {% endif %}
