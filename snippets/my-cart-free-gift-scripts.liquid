@@ -116,7 +116,14 @@
 {% assign giftProductID = settings.gift_product_id  %}
 {% assign triggerProducts =  %}
 
-<script type="module">
+{% for collection in product.collections %}
+	{% if collection.title == 'Therapiekissen' %}
+
+
+    	{{ collection.title }}
+
+
+		<script type="module">
 
             console.log("giftHandle: ");
             console.log({{ giftHandle }});
@@ -158,7 +165,9 @@
               } 
             });
 
-</script>
+		</script>
 
+	{% endif %}
+{% endfor %}
 
 {% endif %}
