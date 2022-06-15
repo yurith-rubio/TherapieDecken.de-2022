@@ -4,6 +4,7 @@
 	{% paginate collections['Therapiekissen'].products by 1000 %}
 		{% for triggerCollection in collections['Therapiekissen'].products %}
 			{% assign giftTrigger = product.handle | json %}
+			giftTrigger: {{ giftTrigger }}
 		{% endfor %}
 	{% endpaginate %}
 
