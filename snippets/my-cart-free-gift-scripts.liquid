@@ -114,15 +114,14 @@
 {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
 
 {% assign giftProductID = settings.gift_product_id  %}
-{% assign giftProductID = collections['Therapiekissen'] | json  %}
 
 		<script type="module">
 
             import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
-             
-            window.triggerProduct = {{ all_products[triggerProduct] | json }};
+ 			{% assign giftCollection = collections['Therapiekissen'] %}
+			          
+            window.triggerCollection = {{ giftCollection.products | json }};
             
-            window.triggerCollection = {{ giftProductID }};
             console.log("trigger collection: ");
             console.log(window.triggerCollection);
 
