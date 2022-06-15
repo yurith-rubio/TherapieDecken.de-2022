@@ -124,9 +124,18 @@
             // get items from the cart
             let items = state.cart.items;
             
-            console.log("items: ");
             let cartProductType = items.map(item => {
+                console.log("cart product types array: ");
+                console.log(cartProductType);
+                
             	return item.product_type;
+            });
+            
+            let cartProductID = items.map(item => {
+                console.log("cart product id array: ");
+                console.log(item.id);
+                
+            	return item.id;
             });
 
 			console.log("cart product types array: ");
