@@ -1,10 +1,12 @@
 
 {% assign giftCollection = collections['Therapiekissen'] %}
 {% layout none %}
-	
+  {% layout none %}
+  {% paginate collections['Therapiekissen'].products by 1000 %}
 	{% for product in collections['Therapiekissen'].products %}
 		giftTrigger: {{ product.handle }}
 	{% endfor %}
+  {% endpaginate %}
 	
 <!-- section: main-product.liquid -->
 
