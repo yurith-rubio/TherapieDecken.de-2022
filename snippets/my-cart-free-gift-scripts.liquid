@@ -127,9 +127,9 @@
 			{% endfor %}
             
             window.triggerProduct = {{ all_products[triggerProduct] | json }};
-            console.log("trigger collection: ");
-            window.triggerCollection = {{ giftProductID }};
             
+            window.triggerCollection = {{ giftProductID }};
+            console.log("trigger collection: ");
             console.log(window.triggerCollection);
 
             subscribeToCartStateUpdate( state => {
