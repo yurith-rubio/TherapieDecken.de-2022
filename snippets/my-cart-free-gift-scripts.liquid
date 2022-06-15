@@ -74,6 +74,7 @@
   {% assign giftProductOption = settings.gift_option  %}
   {% assign triggerProductOption = settings.trigger_option  %}
 {% endif %}
+
 {% assign triggerProduct = settings.trigger_product  %}
 
   <script type="module">
@@ -86,7 +87,9 @@
 
       subscribeToCartStateUpdate( state => {
 
-        giftProduct = window.giftProduct;
+		{% if settings.enable_free_product == 'enable_free_x_compared' %}
+        	giftProduct = window.giftProduct;
+        {% endif %}
 
         // get items from the cart
         let items = state.cart.items;
