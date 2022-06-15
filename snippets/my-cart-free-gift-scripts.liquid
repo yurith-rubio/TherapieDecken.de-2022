@@ -126,10 +126,11 @@
                 {% endfor %}
             {% endpaginate %}
             
+            console.log("trigger collection: ");
             window.giftTrigger = {{ giftTrigger | json }};
             
-            console.log("trigger collection: ");
-            console.log(window.triggerCollection);
+            
+
 
             subscribeToCartStateUpdate( state => {
             
