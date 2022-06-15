@@ -116,23 +116,25 @@
 {% assign giftProductID = settings.gift_product_id  %}
 {% assign triggerProducts =  %}
 
-{% for collection in product.collections %}
-	{% if collection.title == 'Therapiekissen' %}
-
-
-    	{{ collection.title }}
-
 
 		<script type="module">
-
-            console.log("giftHandle: ");
-            console.log({{ giftHandle }});
 
             console.log(" this product can give you a free item! ");
 
             import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+            
+            {% for collection in product.collections %}
+				{% if collection.title == 'Therapiekissen' %}
+    				{% assign giftProduct = settings.gift_product  %}
+            	{% endif %}
+			{% endfor %}
+
+            
+            window.giftProduct = {{ all_products[giftProduct] | json }};
 
             subscribeToCartStateUpdate( state => {
+            
+              giftProduct = window.giftProduct;
 
               // get items from the cart
               let items = state.cart.items;
@@ -167,7 +169,6 @@
 
 		</script>
 
-	{% endif %}
-{% endfor %}
+
 
 {% endif %}
