@@ -121,7 +121,7 @@
             
             {% for collection in product.collections %}
 				{% if collection.title == 'Therapiekissen' %}
-    				{% assign triggerProduct = settings.gift_product  %}
+    				{% assign triggerProduct = product.handle  %}
             	{% endif %}
 			{% endfor %}
             
