@@ -121,10 +121,12 @@
  			{% assign giftCollection = collections['Therapiekissen'] %}
             {% layout none %}
 			{% paginate collections['Therapiekissen'].products by 1000 %}
-            	{% assign giftCollectionProducts = giftCollection.products | json %}
+            	{% for triggerCollection in collections['Therapiekissen'].products %}
+            		{% assign giftTrigger = product.handle | json %}
+                {% endfor %}
             {% endpaginate %}
             
-            window.giftCollectionProducts = {{ giftCollectionProducts | json }};
+            window.giftTrigger = {{ giftTrigger | json }};
             
             console.log("trigger collection: ");
             console.log(window.triggerCollection);
