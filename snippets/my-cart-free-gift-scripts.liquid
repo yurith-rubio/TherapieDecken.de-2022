@@ -121,6 +121,7 @@
             import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
             
             {% for giftCollection in collections['Therapiekissen'] %}
+            	console.log("gift collection: ")
     			console.log( {{ giftCollection | json }} );
 			{% endfor %}
             
