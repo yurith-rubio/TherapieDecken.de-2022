@@ -5,11 +5,13 @@
   {% paginate collections['Therapiekissen'].products by 1000 %}
 	{% for product in collections['Therapiekissen'].products %}
 		{% assign productHandle = product.handle %}
-		Product Handle: {{ productHandle | json }}
+        {% capture productHandle %}
+        	{{ productHandle | json }}
+        {% endcapture %}
 	{% endfor %}
   {% endpaginate %}
 
-Product Handle: {{ productHandle | json }}
+Product Handle: {{ productHandle }}
 	
 <!-- section: main-product.liquid -->
 
