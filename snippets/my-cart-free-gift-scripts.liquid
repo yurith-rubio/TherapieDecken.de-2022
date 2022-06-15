@@ -1,83 +1,110 @@
-{% if product.handle == 'therapiedecken' %}
+{% if settings.enable_free_product == 'enable_free_x_compared' %}
 
-  {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
-  {% assign promoVariant = settings.gift_product_variant_id  %}
-  {% assign promoSubtotal = settings.gift_product_min_spend  %}
+{% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
+{% assign giftProduct = settings.gift_product  %}
+{% assign giftProductOption = settings.gift_option  %}
+{% assign triggerProduct = settings.trigger_product  %}
+{% assign triggerProductOption = settings.trigger_option  %}
 
-  {% if promoVariant != blank and promoSubtotal != blank %}
-    <script type="module">
-        import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+  <script type="module">
 
-		const variants135 = [
-        '34485696430219', '34485696462987', '39861373042827', '39580072673419', '39620777640075', '40103777665163', '40213584511115', '34507281203339', '34507282645131', '39756881789067', '39756925632651', '34440242036875', '34440242069643', '39861373075595', '39580072902795', '39620777672843', '40103777697931', '40213584543883', '34507281236107', '34507282677899', '39756881821835', '39756925698187', '34440242266251', '34440242299019', '39861373108363', '39580073132171', '39620777705611', '40103777763467', '40213584576651', '34507281268875', '34507282710667', '39756881854603', '39756925763723', '34440242495627', '34440242528395', '39861373141131', '39580073361547', '39620777738379', '40103777796235', '40213584609419', '34507281301643', '34507282743435', '39756881887371', '39756925862027', '34440242725003', '34440242757771', '39861373173899', '39580073754763', '39620777771147', '40103777829003', '40213584642187', '34507281334411', '34507282776203', '39756881920139', '39756925927563' 
-        ];
-        
-        const variants150 = [
-        '34440242954379', '34440242987147', '39861373206667', '39580073984139', '39620777803915', '40103777861771', '40213584674955', '34507281367179', '34507282808971', '39756881952907', '39756926025867', '34440243183755', '34440243216523', '39861373239435', '39580074246283', '39620777836683', '40103777894539', '40213584707723', '34507281399947', '34507282841739', '39756881985675', '39756926091403', '34440243413131', '34440243445899', '39861373272203', '39580074475659', '39620777869451', '40103777927307', '40213584740491', '34507281432715', '34507282874507', '39756882018443', '39756926156939', '34440243642507', '34440243675275', '39861373304971', '39580074737803', '39620777902219', '40103777960075', '40213584773259', '34507281465483', '34507282907275', '39756882051211', '39756926222475'
-        ]
-        
-        subscribeToCartStateUpdate( state => {            
-            let promoVariant = '34447711174795';
-            
-            state.cart.items.forEach(item => {
-            	if ( variants135.indexOf("" + item.id) >= 0 ) {
-                	promoVariant = '34447711174795';
-                } else if ( variants150.indexOf("" + item.id) >= 0 ) {
-                	promoVariant = '34447711240331';
-                };
-            });
-            
-            console.log("promoVariant: ");
-            console.log(promoVariant);
-            const promoSubtotal = {{ promoSubtotal }}00;
+      import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-            // If cart state exists and there is no Ajax Cart API request in progress
-            if ( state.status.cartStateSet && !state.status.requestInProgress ) {
-                let currentSubtotal = state.cart.items_subtotal_price;
+      window.giftProduct = {{ all_products[giftProduct] | json }};
 
-                // Find out if there is a product that was automatically added before
-                const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
-                    return lineItem.properties?._autoadded === 'Yes' ;
-                });
+      subscribeToCartStateUpdate( state => {
 
-                // If there is the automaticaly added product —
-                // lets calculate the currentSubtotal without the product
-                if ( autoAddedLineItem > -1 ) {
-                    currentSubtotal -= state.cart.items[autoAddedLineItem].final_line_price;
+        giftProduct = window.giftProduct;
+
+        // get items from the cart
+        let items = state.cart.items;
+        const totalItemsInCart = state.cart.item_count;
+
+        // check if trigger product is on the cart
+        const giftTriggerItem = items.filter(item => {
+            return item.handle === {{ triggerProduct | json }};
+        });
+
+        // check if there is any gift product already added to the cart
+        const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
+            return lineItem.properties?._autoadded === 'Yes' ;
+        });
+
+        // add a gift product if there is a trigger product on the cart
+        if ( giftTriggerItem.length >= 1 && autoAddedLineItem === -1 ){
+
+          // find size of trigger product
+          let giftTriggerSize = giftTriggerItem.map(value => {
+              return value.variant_options[{{ giftProductOption }}];
+          }).toString();
+
+          // choose gift product that matches the size
+          let selectedGiftProduct = giftProduct.variants.find(selected => {
+              return selected.{{ triggerProductOption }} === giftTriggerSize;
+          });
+
+          cartRequestAdd({ 
+              items: [
+                {
+                  id: selectedGiftProduct.id,
+                  quantity: 1,
+                  properties: {
+                  "_autoadded": "Yes" 
+                  }
                 }
+              ]  
+          });
+        } 
+      });
 
-                if ( currentSubtotal >= promoSubtotal ) {
+  </script>
 
-                    // If there is no a promoVariant product with an applied discount
-                    // lets add one with _autoadded property
-                    if ( autoAddedLineItem === -1 ) {
-                        setTimeout(function(){
-                          cartRequestAdd({ 
-                              items: [{
-                                  id: promoVariant,
-                                  quantity: 1,
-                                  properties: { "_autoadded": "Yes" }
-                              }]  
-                          });
+{% endif %}
 
-                        },100);
-                    }
-                } else {
+{% if settings.enable_free_product == 'enable_free_x_by_y' %}
 
-                    // If current cart subtotal is less than $100
-                    // and an autoadded product is still in the cart —
-                    // lets remove it
-                    if ( autoAddedLineItem > -1 ) {
-                        cartRequestChange({ 
-                            "line": autoAddedLineItem + 1,
-                            "quantity": 0
-                        });
-                    }
+{% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
+
+{% assign giftProductID = settings.gift_product_id  %}
+{% assign triggerProduct = settings.trigger_product  %}
+
+  <script type="module">
+
+      import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+
+      subscribeToCartStateUpdate( state => {
+
+        // get items from the cart
+        let items = state.cart.items;
+        const totalItemsInCart = state.cart.item_count;
+
+        // check if trigger product is on the cart
+        const giftTriggerItem = items.filter(item => {
+            return item.handle === {{ triggerProduct | json }};
+        });
+
+        // check if there is any gift product already added to the cart
+        const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
+            return lineItem.properties?._autoadded === 'Yes' ;
+        });
+
+        // add a gift product if there is a trigger product on the cart
+        if ( giftTriggerItem.length >= 1 && autoAddedLineItem === -1 ){
+
+          cartRequestAdd({ 
+              items: [
+                {
+                  id: {{ giftProductID }},
+                  quantity: 1,
+                  properties: {
+                  "_autoadded": "Yes" 
+                  }
                 }
-            }
+              ]  
+          });
+        } 
+      });
 
-         });
-    </script>
-  {% endif %}
+  </script>
 
 {% endif %}
