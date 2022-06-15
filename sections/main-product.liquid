@@ -1,9 +1,3 @@
-
-
-{% assign giftCollection = collections['Therapiekissen'] %}
-
-{{ giftCollection.products | json }}
-
 <!-- section: main-product.liquid -->
 
 {%- assign meta_block = section.blocks | where: 'type', 'product_meta' | first -%}
