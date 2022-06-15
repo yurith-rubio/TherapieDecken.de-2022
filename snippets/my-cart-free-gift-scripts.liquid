@@ -126,10 +126,10 @@
     				{% assign triggerProduct = settings.gift_product  %}
             	{% endif %}
 			{% endfor %}
-
-			console.log( {{ triggerProduct }} );
             
             window.triggerProduct = {{ all_products[giftProduct] | json }};
+            console.log("here: ");
+            console.log(window.triggerProduct);
 
             subscribeToCartStateUpdate( state => {
             
