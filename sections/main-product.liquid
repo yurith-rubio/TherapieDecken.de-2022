@@ -1,3 +1,5 @@
+
+{% layout none %}
 {% paginate collections['Therapiekissen'].products by 1000 %}
   {% for giftProducts in collections['Therapiekissen'].products %}
 		giftProducts: {{ giftProducts | json }}
