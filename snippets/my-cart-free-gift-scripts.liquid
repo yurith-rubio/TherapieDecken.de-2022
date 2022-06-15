@@ -66,6 +66,8 @@
 {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
 {% assign giftProduct = settings.gift_product  %}
 
+giftProduct: {{ giftProduct }}
+
 {% assign triggerProduct = settings.trigger_product  %}
 
 
@@ -96,15 +98,17 @@
         // add a gift product if there is a trigger product on the cart
         if ( giftTriggerItem.length >= 1 && autoAddedLineItem === -1 ){
 
-          // find size of trigger product
-          let giftTriggerSize = giftTriggerItem.map(value => {
-              return value.variant_options[{{ giftProductOption }}];
-          }).toString();
+		  {% if settings.enable_free_product == 'enable_free_x_compared' %}
+            // find size of trigger product
+            let giftTriggerSize = giftTriggerItem.map(value => {
+                return value.variant_options[{{ giftProductOption }}];
+            }).toString();
 
-          // choose gift product that matches the size
-          let selectedGiftProduct = giftProduct.variants.find(selected => {
-              console.log
-          });
+            // choose gift product that matches the size
+            let selectedGiftProduct = giftProduct.variants.find(selected => {
+                return selected.{{ triggerProductOption }} === giftTriggerSize;
+            });
+		  {% endif %}
 
           cartRequestAdd({ 
               items: [
