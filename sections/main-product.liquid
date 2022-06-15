@@ -1,13 +1,11 @@
 
 {% assign giftCollection = collections['Therapiekissen'] %}
 {% layout none %}
-	{% paginate collections['Therapiekissen'].products by 1000 %}
-		{% for triggerCollection in collections['Therapiekissen'].products %}
-			{% assign giftTrigger = product.handle | json %}
-			giftTrigger: {{ giftTrigger }}
-		{% endfor %}
-	{% endpaginate %}
-
+	
+	{% for product in collections['Therapiekissen'].products %}
+		giftTrigger: {{ product.handle }}
+	{% endfor %}
+	
 <!-- section: main-product.liquid -->
 
 {%- assign meta_block = section.blocks | where: 'type', 'product_meta' | first -%}
