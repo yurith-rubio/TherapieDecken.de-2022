@@ -1,17 +1,10 @@
+{% for collection in product.collections %}
+	{% if collection.title == 'Therapiekissen' %}
+    	{{ collection.title }}
+	{% endif %}
+{% endfor %}
 
-{% layout none %}
-{% paginate collections['Therapiekissen'].products by 1000 %}
-  {% for giftProducts in collections['Therapiekissen'].products %}
-		giftProducts: {{ giftProducts | json }}
-	{% assign giftHandles = giftProducts.handle | json %}
 
-    {% for giftHandle in giftHandles %}
-      {% if giftHandle == product.handle %}
-			Test
-      {% endif %}
-	{% endfor %}
-  {% endfor %}
-{% endpaginate %}
 
 <!-- section: main-product.liquid -->
 
