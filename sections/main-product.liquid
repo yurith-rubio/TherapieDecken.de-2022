@@ -1,11 +1,3 @@
-{% for collection in product.collections %}
-	{% if collection.title == 'Therapiekissen' %}
-    	{{ collection.title }}
-	{% endif %}
-{% endfor %}
-
-
-
 <!-- section: main-product.liquid -->
 
 {%- assign meta_block = section.blocks | where: 'type', 'product_meta' | first -%}
