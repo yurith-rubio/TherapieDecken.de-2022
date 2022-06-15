@@ -121,12 +121,12 @@
 
 		subscribeToCartStateUpdate( state => {
 
-        	let triggerProduct = {{ giftProductHandle | json }}
-            console.log("triggerProduct");
-            console.log(triggerProduct)
-
+			let triggerProduct = 
             // get items from the cart
             let items = state.cart.items;
+            
+                        console.log("triggerProduct");
+            console.log(triggerProduct)
 
             // check if there is any gift product already added to the cart
             const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
