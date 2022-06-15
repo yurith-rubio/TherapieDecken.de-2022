@@ -114,7 +114,14 @@
 {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
 
 {% assign giftProductID = settings.gift_product_id  %}
-{% assign triggerProduct = settings.trigger_product  %}
+{% assign triggerProducts =  %}
+
+
+{% paginate collections['Therapiekissen'].products by 1000 %}
+  {% for product in collections['Therapiekissen'].products %}
+	Product handles: {{ product.handle | json }}
+  {% endfor %}
+{% endpaginate %}
 
   <script type="module">
 
