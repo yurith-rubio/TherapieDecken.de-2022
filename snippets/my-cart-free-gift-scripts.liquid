@@ -116,18 +116,7 @@
 {% assign giftProductID = settings.gift_product_id  %}
 {% assign triggerProducts =  %}
 
-
-{% paginate collections['Therapiekissen'].products by 1000 %}
-  {% for giftProduct in collections['Therapiekissen'].products %}
-	{% assign giftHandles = giftProduct.handle | json %}
-
-	<script>
-
-	</script>
-    {% for giftHandle in giftHandles %}
-      {% if giftHandle == product.handle %}
-
-        <script type="module">
+<script type="module">
 
             console.log("giftHandle: ");
             console.log({{ giftHandle }});
@@ -169,11 +158,7 @@
               } 
             });
 
-        </script>
+</script>
 
-      {% endif %}
-	{% endfor %}
-  {% endfor %}
-{% endpaginate %}
 
 {% endif %}
