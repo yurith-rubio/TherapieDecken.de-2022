@@ -69,6 +69,11 @@
   {% assign giftProductID = settings.gift_product_id  %}
 {% endif %}
 
+{% if settings.enable_free_product == 'enable_free_x_compared' %}
+  {% assign giftProduct = settings.gift_product  %}
+  {% assign giftProductOption = settings.gift_option  %}
+  {% assign triggerProductOption = settings.trigger_option  %}
+{% endif %}
 {% assign triggerProduct = settings.trigger_product  %}
 
   <script type="module">
