@@ -114,8 +114,6 @@
 {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
 
 {% assign giftProductID = settings.gift_product_id  %}
-{% assign triggerProducts =  %}
-
 
 		<script type="module">
 
@@ -125,16 +123,16 @@
             
             {% for collection in product.collections %}
 				{% if collection.title == 'Therapiekissen' %}
-    				{% assign giftProduct = settings.gift_product  %}
+    				{% assign triggerProduct = settings.gift_product  %}
             	{% endif %}
 			{% endfor %}
 
             
-            window.giftProduct = {{ all_products[giftProduct] | json }};
+            window.triggerProduct = {{ all_products[giftProduct] | json }};
 
             subscribeToCartStateUpdate( state => {
             
-              giftProduct = window.giftProduct;
+              triggerProduct = window.triggerProduct;
 
               // get items from the cart
               let items = state.cart.items;
