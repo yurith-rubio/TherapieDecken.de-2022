@@ -125,7 +125,9 @@
             // get items from the cart
             let items = state.cart.items;
             
-            window.collection = {{ collections['Therapiekissen'] | json }}
+            window.collectionCondition = {{ collections['Therapiekissen'].rules | json }}
+            
+            console.log(collection.rules);
             
             console.log(collection.rules);
             
