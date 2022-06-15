@@ -850,6 +850,11 @@
         "label": "Gift product"
       },
       {
+        "type": "number",
+        "id": "gift_product_id",
+        "label": "Gift product ID"
+      },
+      {
         "type": "select",
         "id": "gift_option",
         "label": "Gift option to compare",
