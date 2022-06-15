@@ -825,9 +825,20 @@
     "name": "Gift Product",
     "settings": [
       {
-        "type": "checkbox",
-        "id": "enable_free_selected",
-        "label": "Enable free x for y with matching values"
+        "type": "select",
+        "id": "enable_free_product",
+        "label": "Enable free x for y with matching values",
+        "options": [
+          {
+            "value": "enable_free_x_compared",
+            "label": "Enable free x by y"
+          },
+          {
+            "value": "enable_free_x_by_y",
+            "label": "Enable free x by y"
+          }
+        ],
+        "default": "enable_free_x_by_y"
       },
       {
         "type": "header",
