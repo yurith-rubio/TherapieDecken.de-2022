@@ -125,18 +125,18 @@
             let items = state.cart.items;
             
             let cartProductType = items.filter(item => {
-                console.log("cart product types array: ");
-                console.log(item.product_type);
-                
             	return item.product_type;
             });
             
+            console.log("cart product types array: ");
+            console.log(cartProductType);
+            
             let cartProductID = items.filter(item => {
-                console.log("cart product id array: ");
-                console.log(item.id);
-                
             	return item.id;
             });
+            
+            console.log("cart product id array: ");
+            console.log(cartProductID);
             
 
 
