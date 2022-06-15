@@ -160,10 +160,7 @@
           $open = $('.myCart_open'),
           $holder = $('#myCart_mainContainer'),
           
-      // Close with 'esc' key
-      $(document).keyup(function (e) {
-          if (e.keyCode == 27) $close.trigger('click');
-      });
+
       $open.click(function () {
           offsetY = window.pageYOffset;
           // Block scrolling
