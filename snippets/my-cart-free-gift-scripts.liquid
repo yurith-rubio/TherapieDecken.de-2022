@@ -138,12 +138,12 @@
                   });
 
                   // add a gift product if there is a trigger product on the cart
-                  if ( {{ giftProductHandle }}.length >= 1 && autoAddedLineItem === -1 ){
+                  if ( triggerProduct.length >= 1 && autoAddedLineItem === -1 ){
 
                     cartRequestAdd({ 
                         items: [
                           {
-                            id: triggerProduct,
+                            id: {{ giftProductID }},
                             quantity: 1,
                             properties: {
                             "_autoadded": "Yes" 
