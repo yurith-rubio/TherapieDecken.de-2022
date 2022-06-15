@@ -64,21 +64,24 @@
 {% if settings.enable_free_product == 'enable_free_x_by_y' %}
 
 {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
-{% assign giftProductID = settings.gift_product_id  %}
+
+{% if settings.enable_free_product == 'enable_free_x_by_y' %}
+  {% assign giftProductID = settings.gift_product_id  %}
+{% endif %}
+
 {% assign triggerProduct = settings.trigger_product  %}
 
   <script type="module">
 
       import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-      window.giftProduct = {{ all_products[giftProduct] | json }};
+	  {% if settings.enable_free_product == 'enable_free_x_compared' %}
+      	window.giftProduct = {{ all_products[giftProduct] | json }};
+      {% endif %}
 
       subscribeToCartStateUpdate( state => {
 
         giftProduct = window.giftProduct;
-        
-        console.log("giftProduct: ");
-   		console.log(giftProduct.variants);
 
         // get items from the cart
         let items = state.cart.items;
@@ -108,18 +111,11 @@
                 return selected.{{ triggerProductOption }} === giftTriggerSize;
             });
 		  {% endif %}
-          
-          {% if settings.enable_free_product == 'enable_free_x_by_y' %}
-            // choose gift product that matches the size
-            let selectedGiftProduct = giftProduct.variants.find(selected => {
-                return selected.id === {{}};
-            });
-          {% endif %}
 
           cartRequestAdd({ 
               items: [
                 {
-                  id: selectedGiftProduct.id,
+                  id: {{ giftProductID }},
                   quantity: 1,
                   properties: {
                   "_autoadded": "Yes" 
