@@ -836,10 +836,6 @@
           {
             "value": "enable_free_x_by_y",
             "label": "Enable free x by y"
-          },
-          {
-            "value": "enable_free_x_by_many",
-            "label": "Enable free x by many"
           }
         ],
         "default": "enable_free_x_compared"
