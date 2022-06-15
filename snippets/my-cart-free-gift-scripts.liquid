@@ -133,27 +133,29 @@
             console.log(cartProductType);
             
             
-
             // check if there is any gift product already added to the cart
             const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
             	return lineItem.properties?._autoadded === 'Yes' ;
             });
-
+            
             // add a gift product if there is a trigger product on the cart
-            if ( triggerProduct.length >= 1 && autoAddedLineItem === -1 ){
-
-                    cartRequestAdd({ 
-                        items: [
-                          {
-                            id: {{ giftProductID }},
-                            quantity: 1,
-                            properties: {
-                            "_autoadded": "Yes" 
-                            }
-                          }
-                        ]  
-                    });
-             } 
+            const findTrigger = cartProductType.forEach(triggerProduct => {
+            	if ( triggerProduct.length >= 1 && autoAddedLineItem === -1 ) {
+                    return cartRequestAdd({
+                                items: [
+                                  {
+                                    id: {{ giftProductID }},
+                                    quantity: 1,
+                                    properties: {
+                                    "_autoadded": "Yes" 
+                                    }
+                                  }
+                                ]  
+                            });
+                }
+            });
+            
+ 
         });
 
 	</script>
