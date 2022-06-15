@@ -120,10 +120,8 @@
 
             import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
             
-            {% for collection in product.collections %}
-				{% if collection.title == 'Therapiekissen' %}
-    				{% assign triggerProduct = product.handle  %}
-            	{% endif %}
+            {% for giftProduct in collections['Therapiekissen'] %}
+    			{% assign triggerProduct = product.handle  %}
 			{% endfor %}
             
             window.triggerProduct = {{ all_products[triggerProduct] | json }};
