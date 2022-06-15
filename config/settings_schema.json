@@ -826,7 +826,7 @@
     "settings": [
       {
         "type": "checkbox",
-        "id": "enable_free_x_by_y",
+        "id": "enable_free_selected",
         "label": "Enable free x product by y"
       },
       {
