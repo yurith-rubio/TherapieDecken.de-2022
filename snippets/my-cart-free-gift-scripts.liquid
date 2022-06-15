@@ -67,7 +67,10 @@
 {% assign giftProduct = settings.gift_product  %}
 {% assign triggerProduct = settings.trigger_product  %}
 
-
+<script>
+   console.log("giftProduct: );
+   console.log(giftProduct);
+</script>
   <script type="module">
 
       import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
@@ -75,9 +78,6 @@
       window.giftProduct = {{ all_products[giftProduct] | json }};
 
       subscribeToCartStateUpdate( state => {
-      
-        console.log("giftProduct: );
-  	    console.log(giftProduct);
 
         giftProduct = window.giftProduct;
 
