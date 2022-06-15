@@ -121,7 +121,7 @@
   {% for product in collections['Therapiekissen'].products %}
 	{% assign giftHandle = product.handle | json %}
 
-	{% if giftHandle contains product.handle %}
+	{% if product.handle === giftHandle %}
 
       <script type="module">
           console.log(" this product can give you a free item! ");
