@@ -335,7 +335,7 @@ Product Handle: {{ productHandle }}
           {%- form 'product', product, class: 'ProductForm' -%}
             {% for collection in product.collections %}
                 <input type="text" id="engravingText" 
-                       name="properties[_{{ collection.title }}]" 
+                       name="properties[_{{ collection.handle }}]" 
                        style="display:none">
             {% endfor %}
 
