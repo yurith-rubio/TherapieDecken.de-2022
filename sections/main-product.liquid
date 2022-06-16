@@ -335,13 +335,9 @@ Product Handle: {{ productHandle }}
           {%- form 'product', product, class: 'ProductForm' -%}
             {% for collection in product.collections %}
                 <input type="text" id="engravingText" 
-                       name="properties[_{{ collection.handle }}]" 
+                       name="properties[{{ collection.handle }}]" 
                        style="display:none">
             {% endfor %}
-          
-            <label for="engravingText">Engraving<label>
-            <input type="text" id="engravingText" name="properties[Engraving]">
-
               
             {%- for block in section.blocks -%}
               {%- case block.type -%}
