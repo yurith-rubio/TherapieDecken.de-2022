@@ -825,16 +825,67 @@
     "name": "Gift Product",
     "settings": [
       {
-        "type": "text",
-        "id": "gift_product_variant_id",
-        "label": "Gift product ID",
-        "info": "Find the Id of the variant of the product you want to give for free and add it here and add the product that goes for free in here as well [discounts tab](https:\/\/therapiewelt.myshopify.com\/admin\/discounts\/automatic\/932332732480)"
+        "type": "select",
+        "id": "enable_free_product",
+        "label": "Enable free x for y with matching values",
+        "options": [
+          {
+            "value": "enable_free_x_compared",
+            "label": "Enable free compared product"
+          },
+          {
+            "value": "enable_free_x_by_y",
+            "label": "Enable free x by y"
+          }
+        ],
+        "default": "enable_free_x_compared"
+      },
+      {
+        "type": "header",
+        "content": "Gift Product"
+      },
+      {
+        "type": "product",
+        "id": "gift_product",
+        "label": "Gift product"
       },
       {
         "type": "number",
-        "id": "gift_product_min_spend",
-        "label": "Minimum to spend to get the free product",
-        "info": "Set the minimum amount to spend to get the free item and add again the amount in here [discounts tab](https:\/\/therapiewelt.myshopify.com\/admin\/discounts\/automatic\/932332732480)"
+        "id": "gift_product_id",
+        "label": "Gift product variant ID"
+      },
+      {
+        "type": "select",
+        "id": "gift_option",
+        "label": "Gift option to compare",
+        "options": [
+          {
+            "value": "0",
+            "label": "option1"
+          }
+        ],
+        "default": "0"
+      },
+      {
+        "type": "header",
+        "content": "Trigger product"
+      },
+      {
+        "type": "product",
+        "id": "trigger_product",
+        "label": "Trigger product"
+      },
+      {
+        "type": "select",
+        "id": "trigger_option",
+        "label": "Trigger option to compare",
+        "options": [
+          {
+            "value": "option1",
+            "label": "option1"
+          }
+        ],
+        "default": "option1"
       }
     ]
   }
