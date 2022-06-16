@@ -380,7 +380,7 @@
       ],
       "settings": {
         "subheading": "",
-        "title": "Wirkung der Balance Therapiedecke",
+        "title": "Wirkung der Therapiedecke",
         "button_label": "",
         "button_link": ""
       }
@@ -430,7 +430,7 @@
         "bg-color": "",
         "bg-color-text-html": "",
         "text_align": "center",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/Therapiedecken-Aufbau-Balance-gray_7c62d97f-9c4b-4383-8f18-ed07a951d890.jpg",
         "image_position": "right"
       }
