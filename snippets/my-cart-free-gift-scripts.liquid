@@ -127,11 +127,10 @@
             let triggerCollection = 'Therapiekissen';
             
             console.log(items);
-            items.forEach(triggerProduct => {
-            	if ( triggerProduct.properties = triggerCollection ){
-                	return triggerProduct;
+            let triggerProduct = items.forEach(item => {
+            	if ( item.properties = triggerCollection ){
+                	return item;
                 }
-              	return triggerProduct;
             })
             
             console.log("triggerProduct: ");
