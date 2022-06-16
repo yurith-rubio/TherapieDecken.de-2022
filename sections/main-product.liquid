@@ -332,12 +332,18 @@ Product Handle: {{ productHandle }}
     <div class="Product__InfoWrapper">
       <div class="Product__Info {% if media_count == 0 %}Product__Info--noGallery{% endif %}">
         <div class="Container">
+          
+
+          
+          {% comment %} Input added for free gift product triggered by given collections {% endcomment %}
           {%- form 'product', product, class: 'ProductForm' -%}
-            {% for collection in product.collections %}
-                <input type="text" id="engravingText" 
-                       name="properties[{{ collection.handle }}]" 
-                       style="display:none">
-            {% endfor %}
+            {% if settings.enable_free_product == 'enable_free_x_by_many' %}
+              {% for collection in product.collections %}
+                  <input type="text" id="engravingText" 
+                         name="properties[{{ collection.handle }}]" 
+                         style="display:none">
+              {% endfor %}
+            {% endif %}
               
             {%- for block in section.blocks -%}
               {%- case block.type -%}
