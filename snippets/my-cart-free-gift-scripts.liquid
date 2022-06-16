@@ -124,7 +124,10 @@
 
             // get items from the cart
             let items = state.cart.items;
-            console.log(items)
+            console.log(items);
+            items.forEach(item => {
+              console.log(item.property)
+            })
             
             window.collectionCondition = {{ collections['Therapiekissen'] | json }};
             console.log("collection:");
