@@ -127,6 +127,8 @@
             
             window.collectionCondition = {{ collections['Therapiekissen'] | json }}
             
+            collectionCondition = collectionCondition.rules;
+            
             console.log(collectionCondition);
             
             collectionCondition.forEach(condition => {
