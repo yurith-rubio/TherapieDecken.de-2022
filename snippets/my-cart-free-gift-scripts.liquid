@@ -114,7 +114,7 @@
 {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
 
 {% assign giftProductID = settings.gift_product_id  %}
-{% assign collection = collections['Therapiekissen'] %}
+{% assign triggerCollection = 'Therapiekissen' %}
 
 	<script type="module">
 
@@ -126,31 +126,16 @@
             let items = state.cart.items;
             console.log(items);
             items.forEach(item => {
-              console.log(item.properties)
+            	if (item.properties = {{ triggerCollection }}){
+                	item = triggerProduct;
+                	return triggerProduct;
+                }
+              
             })
             
-            
-            console.log("cart product types array: ");
-            console.log(cartProductType);
-            
-            let cartProductID = items.map(item => {
-            	return item.id;
-            });
-            
-            console.log("cart product id array: ");
-            console.log(cartProductID);
-
-			console.log("cart product types array: ");
-            console.log(cartProductType);
-            
-            
-            collectionConditions.forEach(condition => {
-            	console.log("condition.column");
-            	console.log(condition.column);
-            });
-            
-            
-            
+            console.log("triggerProduct: ");
+            console.log(triggerProduct);
+         
             // check if there is any gift product already added to the cart
             const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
             	return lineItem.properties?._autoadded === 'Yes' ;
