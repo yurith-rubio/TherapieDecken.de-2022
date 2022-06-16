@@ -126,7 +126,9 @@
             let items = state.cart.items;
             console.log(items);
             
-            window.collectionCondition = {{ collections['Therapiekissen'] | json }}
+            window.collectionCondition = {{ collections['Therapiekissen'] | json }};
+            console.log("collection:);
+            console.log(collectionCondition);
             
             collectionConditions = collectionCondition.rules;
             
@@ -145,8 +147,6 @@
             
             console.log("cart product id array: ");
             console.log(cartProductID);
-            
-
 
 			console.log("cart product types array: ");
             console.log(cartProductType);
