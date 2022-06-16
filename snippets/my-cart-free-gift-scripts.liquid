@@ -124,19 +124,13 @@
 
             // get items from the cart
             let items = state.cart.items;
+            console.log(items);
             
             window.collectionCondition = {{ collections['Therapiekissen'] | json }}
             
-            collectionCondition = collectionCondition.rules;
+            collectionConditions = collectionCondition.rules;
             
             console.log(collectionCondition);
-            
-            collectionCondition.forEach(condition => {
-            	console.log("condition.column");
-            	console.log(condition.column);
-            });
-            
-            console.log(items);
             
             let cartProductType = items.map(item => {
             	return item.product_type;
@@ -156,6 +150,13 @@
 
 			console.log("cart product types array: ");
             console.log(cartProductType);
+            
+            
+            collectionConditions.forEach(condition => {
+            	console.log("condition.column");
+            	console.log(condition.column);
+            });
+            
             
             
             // check if there is any gift product already added to the cart
