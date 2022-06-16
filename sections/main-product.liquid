@@ -333,6 +333,11 @@ Product Handle: {{ productHandle }}
       <div class="Product__Info {% if media_count == 0 %}Product__Info--noGallery{% endif %}">
         <div class="Container">
           {%- form 'product', product, class: 'ProductForm' -%}
+          {% for collection in product.collections %}
+                <input type="text" id="collectionTittle" name="properties[_{{ collection.title }}]">
+          {% endfor %}
+
+              
             {%- for block in section.blocks -%}
               {%- case block.type -%}
                 {%- when '@app' -%}
