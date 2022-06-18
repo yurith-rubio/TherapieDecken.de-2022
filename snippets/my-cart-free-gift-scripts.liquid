@@ -139,7 +139,7 @@
             	});
                 
                 console.log(selectedCollection);
-                if ( selectedCollection.length >= 1 && autoAddedLineItem <= 0 ) {
+                if ( selectedCollection.length >= 1 && autoAddedLineItem === -1 ) {
                     return cartRequestAdd({
                                 items: [
                                   {
@@ -152,7 +152,6 @@
                                 ]  
                             });
               	}
-              
             
             }
             
