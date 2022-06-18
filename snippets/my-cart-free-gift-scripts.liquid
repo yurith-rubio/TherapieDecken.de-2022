@@ -142,8 +142,8 @@
             });
             
             // add a gift product if there is a trigger product on the cart
-            const findTrigger = cartProductType.forEach(triggerProduct => {
-            	if ( triggerProduct.length >= 1 && autoAddedLineItem === -1 ) {
+
+            if ( triggerProduct.length >= 1 && autoAddedLineItem === -1 ) {
                     return cartRequestAdd({
                                 items: [
                                   {
@@ -155,8 +155,7 @@
                                   }
                                 ]  
                             });
-                }
-            });
+              }
             
  
         });
