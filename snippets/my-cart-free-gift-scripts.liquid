@@ -141,18 +141,17 @@
                 console.log(selectedCollection);
                 if ( selectedCollection.length >= 1 && autoAddedLineItem === -1 ) {
                     return cartRequestAdd({
-                                items: [
-                                  {
+                      items: [
+                                {
                                     id: {{ giftProductID }},
                                     quantity: 1,
                                     properties: {
                                     "_autoadded": "Yes" 
                                     }
-                                  }
-                                ]  
-                            });
+                                }
+                             ]  
+                      });
               	}
-            
             }
             
  
