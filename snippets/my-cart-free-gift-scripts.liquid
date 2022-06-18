@@ -137,8 +137,8 @@
                 }
             })
             
-            console.log("triggerProduct: ");
-            console.log(triggerProduct);
+            // console.log("triggerProduct: ");
+            // console.log(triggerProduct);
          
             // check if there is any gift product already added to the cart
             const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
@@ -147,7 +147,7 @@
             
             // add a gift product if there is a trigger product on the cart
 
-            if ( triggerProduct.length >= 1 && autoAddedLineItem === -1 ) {
+            /* if ( triggerProduct.length >= 1 && autoAddedLineItem === -1 ) {
                     return cartRequestAdd({
                                 items: [
                                   {
@@ -159,7 +159,7 @@
                                   }
                                 ]  
                             });
-              }
+              } */
             
  
         });
