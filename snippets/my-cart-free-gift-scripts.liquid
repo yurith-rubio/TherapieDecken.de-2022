@@ -129,17 +129,17 @@
             const totalItemsInCart = state.cart.item_count;
             
             if (totalItemsInCart >= 1) {
-            
+            	let triggerProduct = items.filter(item => {
+                  console.log("item.properties: ");
+                  console.log(item.properties);
+                  if ( item.properties = triggerCollection ){
+                      console.log("item here: ");
+                      console.log(item);
+                      triggerProduct =  item;
+                  }
+            	})
             }
-            let triggerProduct = items.filter(item => {
-                console.log("item.properties: ");
-            	console.log(item.properties);
-            	if ( item.properties = triggerCollection ){
-                    console.log("item here: ");
-            		console.log(item);
-                	triggerProduct =  item;
-                }
-            })
+
             
             // console.log("triggerProduct: ");
             // console.log(triggerProduct);
