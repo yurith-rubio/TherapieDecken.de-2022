@@ -128,11 +128,17 @@
             
             const totalItemsInCart = state.cart.item_count;
             
+            // check if there is any gift product already added to the cart
+            const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
+                return lineItem.properties?._autoadded === 'Yes' ;
+            });
+                
             if (totalItemsInCart >= 1) {
             	let selectedCollection = items.filter(item => {
                   	return item.properties = triggerCollection;
             	});
                 
+
                 console.log(selectedCollection);
                 if ( selectedCollection.length >= 1 && autoAddedLineItem === -1 ) {
                     return cartRequestAdd({
@@ -154,10 +160,7 @@
 
 
          
-            // check if there is any gift product already added to the cart
-            const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
-            	return lineItem.properties?._autoadded === 'Yes' ;
-            });
+
             
             // add a gift product if there is a trigger product on the cart
 
