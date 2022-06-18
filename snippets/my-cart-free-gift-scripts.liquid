@@ -126,8 +126,9 @@
             let items = state.cart.items;
             let triggerCollection = 'Therapiekissen';
             
-            // console.log(items);
-            items.filter(item => {
+            console.log(items);
+            
+            let triggerProduct = items.filter(item => {
                 console.log("item.properties: ");
             	console.log(item.properties);
             	if ( item.properties = triggerCollection ){
