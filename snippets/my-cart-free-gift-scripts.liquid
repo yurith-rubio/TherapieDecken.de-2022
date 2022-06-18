@@ -133,10 +133,21 @@
                   if ( item.properties = triggerCollection ){
                       return =  item;
                   }
-                    console.log("triggerProduct: ");
-                    console.log(triggerProduct);
             	})
-
+                
+                if ( triggerProduct.length >= 1 && autoAddedLineItem === -1 ) {
+                    return cartRequestAdd({
+                                items: [
+                                  {
+                                    id: {{ giftProductID }},
+                                    quantity: 1,
+                                    properties: {
+                                    "_autoadded": "Yes" 
+                                    }
+                                  }
+                                ]  
+                            });
+              	}
               
             
             }
