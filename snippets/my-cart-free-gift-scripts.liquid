@@ -126,8 +126,11 @@
             let items = state.cart.items;
             let triggerCollection = 'Therapiekissen';
             
-            console.log(state.cart);
+            const totalItemsInCart = state.cart.item_count;
             
+            if (totalItemsInCart >= 1) {
+            
+            }
             let triggerProduct = items.filter(item => {
                 console.log("item.properties: ");
             	console.log(item.properties);
