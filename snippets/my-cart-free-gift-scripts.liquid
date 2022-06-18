@@ -129,11 +129,9 @@
             const totalItemsInCart = state.cart.item_count;
             
             if (totalItemsInCart >= 1) {
-            	let triggerProduct = items.filter(item => {
-                  if ( item.properties = triggerCollection ){
-                  	return selectedCollection = item.properties;
-                  }
-            	})
+            	let selectedCollection = items.filter(item => {
+                  	return item.properties = triggerCollection;
+            	});
                 
                 console.log(selectedCollection);
                 if ( triggerProduct.length >= 1 && autoAddedLineItem === -1 ) {
