@@ -131,11 +131,10 @@
             if (totalItemsInCart >= 1) {
             	let triggerProduct = items.filter(item => {
                   if ( item.properties = triggerCollection ){
-                              
+                      return =  item;
+                  }
                     console.log("triggerProduct: ");
                     console.log(triggerProduct);
-                      triggerProduct =  item;
-                  }
             	})
                 
                 if ( triggerProduct.length >= 1 && autoAddedLineItem === -1 ) {
