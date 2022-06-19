@@ -75,7 +75,7 @@
     "enable_product_badge": true,
     "hide_discount_general_badge": false,
     "show_product_guarantee_exceptions": false,
-    "enable_free_product": "enable_free_x_by_y",
+    "enable_free_product": "enable_free_x_by_many",
     "gift_product": "therapiedecken-basic-bezug-in-weiss",
     "gift_product_id": 34440244265099,
     "trigger_product": "therapiedecken",
