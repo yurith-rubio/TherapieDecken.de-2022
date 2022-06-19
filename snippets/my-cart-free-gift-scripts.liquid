@@ -135,8 +135,6 @@
             	const autoAddedLineItem = state.cart.items.findIndex( lineItem => { 
                 	return lineItem.properties?._autoadded === 'Yes' ;
             	});
-
-            
             
             	let selectedCollection = items.filter(item => {
                 	return Object.keys(item.properties).indexOf(triggerCollection) >= 0;
