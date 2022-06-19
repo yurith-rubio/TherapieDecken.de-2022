@@ -137,8 +137,12 @@
             	});
 
             
+            
             	let selectedCollection = items.filter(item => {
-                  	return item.properties = triggerCollection;
+                
+                	console.log("=== selected item");
+                	console.log(item);
+                  	return item.properties == triggerCollection;
             	});
                 
                 console.log("=== selected collection");
