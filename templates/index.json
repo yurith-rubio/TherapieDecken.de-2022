@@ -329,6 +329,35 @@
         "title": "10€* Rabatt auf die 1. Bestellung",
         "content": "<p>Newsletter abonnieren und 10€ auf die 1. Bestellung erhalten. <br\/>*Ab 100€ Einkaufswert.<\/p>"
       }
+    },
+    "1655646727de707df9": {
+      "type": "advanced-content",
+      "blocks": {
+        "1655646727a0daa17c-0": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "1655646727a0daa17c-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Custom content<\/h2><p>Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1655646727a0daa17c-0",
+        "1655646727a0daa17c-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
     }
   },
   "order": [
@@ -347,6 +376,7 @@
     "162927586932fdcf24",
     "1630058134be7c93a3",
     "16300518419c7ec488",
-    "16288696084db5673d"
+    "16288696084db5673d",
+    "1655646727de707df9"
   ]
 }
