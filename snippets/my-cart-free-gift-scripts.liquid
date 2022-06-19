@@ -139,14 +139,9 @@
             
             
             	let selectedCollection = items.filter(item => {
-                
-                	console.log("=== selected item");
-                	console.log(item);
-                  	return item.properties == triggerCollection;
+                	return Object.keys(item.properties).indexOf(triggerCollection) >= 0;
             	});
                 
-                console.log("=== selected collection");
-                console.log(autoAddedLineItem);
                 if ( selectedCollection.length >= 1 && autoAddedLineItem === -1 ) {
                     return cartRequestAdd({
                       items: [
