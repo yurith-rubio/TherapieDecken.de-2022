@@ -165,21 +165,6 @@
     {%- comment -%} Product Info for Variants - bgd.cover-type Metafield - Yurith {%- endcomment -%}
     {% render 'dynamic-variant-info', dynamic_info_type == 'weight_info' %}
     
-      {% comment %} Product Info for Variants - bgd.weight Metafield - Yurith{% endcomment %}
-      {% if option.name == 'Gewicht' or option.name == 'Deckengewicht' %}
-        {% for variant in product.variants %}
-          {% if variant.metafields.bgd.weight %}
-            {% assign weight_class = "weight_info hide" %}
-            {% if variant.id == product.selected_or_first_available_variant.id %}
-                {% assign weight_class = "weight_info" %}
-            {% endif %}
-            <div id="weight_info_{{variant.id}}" class="{{ weight_class }}">
-              {{ variant.metafields.bgd.weight }}
-            </div>
-          {% endif%}
-        {% endfor %}
-      {% endif%}
-    
     {%- else -%}
     <button type="button" class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">
       <span class="ProductForm__OptionName">{% unless show_option_label %}{{ option.name }}: {% endunless %}<span
