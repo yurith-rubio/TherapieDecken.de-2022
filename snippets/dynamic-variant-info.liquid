@@ -9,9 +9,9 @@
       </div>
   {% else %}
     {% if variant.metafields.bgd.cover-type %}
-      {% assign design_class = "info-wr hide" %}
+      {% assign design_class = "type_info hide" %}
       {% if variant.id == product.selected_or_first_available_variant.id %}
-          {% assign design_class = "info-wr" %}
+          {% assign design_class = "type_info" %}
       {% endif %}
       <div id="info-wr_{{variant.id}}" class="{{ design_class }}">
         {{ variant.metafields.bgd.cover-type }}
