@@ -1,5 +1,6 @@
 {% for variant in product.variants %}
   {% if settings.seasonal_product_info %}
+
   {% else %}
     {% if variant.metafields.bgd.cover-type %}
       {% assign design_class = "info-wr info-wr-hidden" %}
