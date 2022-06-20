@@ -35,7 +35,7 @@
         "ff9b5025-f5d8-484d-9eac-28f612cc8459": {
           "type": "liquid",
           "settings": {
-            "liquid": "Metafield set in here\n{{ variant.metafields.td_field.cooling_measurement}}"
+            "liquid": "Metafield set in here\n{{ variant.metafields.td_field.cooling_measurement }}"
           }
         }
       },
