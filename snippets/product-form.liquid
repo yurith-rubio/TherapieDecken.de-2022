@@ -95,6 +95,9 @@
                   
                   {% if variant.metafields.bgd.is_limited %}
            			{% assign is_limited = "is-limited-badge hide" %}
+                    {% if variant.id == product.selected_or_first_available_variant.id %}
+                      {% assign is_limited = "is-limited-badge" %}
+                  	{% endif %}
                        <div
                        class={{ is_limited }}
                        data-variant-id="{{ variant.id }}"
