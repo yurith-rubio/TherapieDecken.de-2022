@@ -17,8 +17,8 @@
   {% endfor %}
 {% endif %}
 
+{% comment %} Product Info for Variants - bgd.weight Metafield - Yurith{% endcomment %}
 {% if dynamic_info_type == 'weight_info' %}
-  {% comment %} Product Info for Variants - bgd.weight Metafield - Yurith{% endcomment %}
   {% if option.name == 'Gewicht' or option.name == 'Deckengewicht' %}
     {% for variant in product.variants %}
       {% if variant.metafields.bgd.weight %}
