@@ -75,7 +75,7 @@ $(document).ready(function () {
     console.log("variant changed");
     
     const variantId = getSelectedAdditionalVariantId();
-    ["additional_cover_type_info"].forEach(info => hideOption(info, event.detail.variant.id));
+    ["additional_cover_type_info"].forEach(info => hideOption(info, variantId));
     console.log("additional variant changed");
 
   });
