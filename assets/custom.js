@@ -148,7 +148,7 @@ $(document).ready(function () {
         	const path = location.search;
       		if (path.indexOf("variant") >= 0) {
       			const variantId = path.split("=")[1];              
-                updateBadges(variantId, true);
+                // updateBadges(variantId, true);
               	updatePrice(variantId);              	
         	}
       	}, 0);
