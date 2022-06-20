@@ -13,7 +13,7 @@
       {% if variant.id == product.selected_or_first_available_variant.id %}
           {% assign cover_type_class = "cover_type_info" %}
       {% endif %}
-      <div id="info-wr_{{variant.id}}" class="{{ cover_type_class }}">
+      <div id="cover_type_info_{{variant.id}}" class="{{ cover_type_class }}">
         {{ variant.metafields.bgd.cover-type }}
       </div>
     {% endif%}
