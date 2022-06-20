@@ -7,9 +7,9 @@
       {% endif %}
       <div id="cover_type_info_{{variant.id}}" class="{{ cover_type_class }}">
         {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
-        	{{ variant.metafields.bgd.cover-type }}
-        {% else %}
         	{{ variant.metafields.td_field.seasonal_variant_dynamic_info }}
+        {% else %}
+        	{{ variant.metafields.bgd.cover-type }}
         {% endif%}
       </div>
     {% endif%}
