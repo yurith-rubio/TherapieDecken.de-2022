@@ -91,21 +91,21 @@ $(document).ready(function () {
     $("div.on-sale-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("on-sale-badge-hidden");
   } */
   
-  function updateAdditionalProductBadges() {
+  /* function updateAdditionalProductBadges() {
     const variantId = getSelectedAdditionalVariantId();
     $("div.additional-info-wr").addClass("additional-info-wr-hidden");
     $("[data-variant-id=" + variantId + "]").removeClass("additional-info-wr-hidden");
-  }
+  } */
    
-  function updateBadges(variantId, isAdditional) {
+  /* function updateBadges(variantId, isAdditional) {
     if (isAdditional) {
       updateAdditionalProductBadges();
     } else {
       // Get the currently selected options: size and weight
-      //const opt = getSelectedOptions();
-      //updateProductBadges(variantId, opt);
+      const opt = getSelectedOptions();
+      updateProductBadges(variantId, opt);
     }
-  }
+  } */
   
   function updatePrice(id) {
     const additionalVariantId = getSelectedAdditionalVariantId();    
