@@ -163,7 +163,7 @@
     </ul>
 
     {%- comment -%} Product Info for Variants - bgd.cover-type Metafield - Yurith {%- endcomment -%}
-    {% render 'dynamic-variant-info', dynamic_info_type: 'weight_info' %}
+    {% render 'dynamic-variant-info', dynamic_info_type: 'weight_info', option: option %}
     
     {%- else -%}
     <button type="button" class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">
