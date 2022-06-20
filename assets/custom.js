@@ -103,7 +103,7 @@ $(document).ready(function () {
     } else {
       // Get the currently selected options: size and weight
       const opt = getSelectedOptions();
-      updateProductBadges(variantId, opt);
+      //updateProductBadges(variantId, opt);
     }
   }
   
