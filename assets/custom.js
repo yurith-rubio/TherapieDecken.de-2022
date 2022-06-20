@@ -57,11 +57,25 @@ $(document).ready(function () {
     return mainProduct.price;
   }
   
+  function hideOption(selector, selectedVariant) {
+    const infoMetafield = document.querySelectorAll("." + selector);
+    const selectedInfoMetafield = document.getElementById(selector + "-" + selectedVariant);
+    if (!infoMetafield || !selectedInfoMetafield) return;
+
+    infoMetafield.forEach(function(info){
+      info.classList.add("hide");
+    });
+    selectedInfoMetafield.classList.remove("hide");
+  }
+
+  document.addEventListener("variant:changed", function(event) { // (1)  
+    ["info-wr", "is-limited-badge", "on-sale-badge", "twtd-shipping-time"].forEach(info => hideOption(info, event.detail.variant.id));
+    console.log("metafield changed");
+
+  });
+  
   function updateProductBadges(variantId, opt) {
-    $("div.info-wr").addClass("info-wr-hidden");                           	                  
-   	$("div.is-limited-badge").addClass("is-limited-badge-hidden");
-   	$("div.on-sale-badge").addClass("on-sale-badge-hidden");
-    $("div.twtd-shipping-time").addClass("twtd-shipping-time-hidden");
+
 
     $("[data-variant-id=" + variantId + "]").removeClass("info-wr-hidden");
     $("[data-variant-id=" + variantId + "]").removeClass("twtd-shipping-time-hidden");
