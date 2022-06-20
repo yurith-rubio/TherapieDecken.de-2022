@@ -1,5 +1,5 @@
 {% for variant in product.variants %}
-  {% if variant.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
+  {% if settings.seasonal_product_info %}
 	Test
   {% else %}
     {% if variant.metafields.bgd.cover-type %}
