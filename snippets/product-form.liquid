@@ -134,17 +134,6 @@
 
     {%- comment -%} Product Info for Variants - bgd.cover-type Metafield - Yurith {%- endcomment -%}
     {% render 'dynamic-variant-info' %}
-    {% for variant in product.variants %}
-      {% if variant.metafields.bgd.cover-type %}
-        {% assign design_class = "info-wr info-wr-hidden" %}
-        {% if variant.id == product.selected_or_first_available_variant.id %}
-        	{% assign design_class = "info-wr" %}
-        {% endif %}
-        <div data-variant-id="{{variant.id}}" class="{{ design_class }}">
-          {{ variant.metafields.bgd.cover-type }}
-        </div>
-      {% endif%}
-    {% endfor %}
     
     {%- elsif block.settings.selector_mode == 'block' -%}
     <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight
