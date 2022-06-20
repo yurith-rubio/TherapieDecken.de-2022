@@ -75,7 +75,10 @@ $(document).ready(function () {
   });
   
   function updateProductBadges(variantId, opt) {
-
+    $("div.info-wr").addClass("info-wr-hidden");                           	                  
+   	$("div.is-limited-badge").addClass("is-limited-badge-hidden");
+   	$("div.on-sale-badge").addClass("on-sale-badge-hidden");
+    $("div.twtd-shipping-time").addClass("twtd-shipping-time-hidden");
 
     $("[data-variant-id=" + variantId + "]").removeClass("info-wr-hidden");
     $("[data-variant-id=" + variantId + "]").removeClass("twtd-shipping-time-hidden");
