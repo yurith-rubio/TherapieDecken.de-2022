@@ -2315,7 +2315,6 @@
     }, {
       key: "_onVariantChanged",
       value: function _onVariantChanged(previousVariant, newVariant) {
-                console.log("_onVariantChanged");
         
         // 1st: the prices
         this._updateProductPrices(newVariant, previousVariant); // 2nd: update inventory
