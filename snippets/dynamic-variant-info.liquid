@@ -2,7 +2,7 @@
   {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
       {% assign seasonal_class = "seasonal-info hide" %}
       {% if variant.id == product.selected_or_first_available_variant.id %}
-          {% assign design_class = "seasonal-info" %}
+          {% assign seasonal_class = "seasonal-info" %}
       {% endif %}
       <div id="seasonal_info_{{variant.id}}" class="{{ seasonal_class }}">
         {{ variant.metafields.td_field.seasonal_variant_dynamic_info }}
