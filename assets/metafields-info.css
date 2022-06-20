@@ -16,7 +16,7 @@
 .hide {
   display: none;
 }
-.weight_info > span, .info-wr > span, .additinal-info-wr > span{
+.weight_info > span, .type_info > span, .additinal-info-wr > span{
   color: #6c6c6c;
   padding-right: 5px;
   position: relative;
