@@ -124,7 +124,7 @@ $(document).ready(function () {
         	const path = location.search;
       		if (path.indexOf("variant") >= 0) {
       			const variantId = path.split("=")[1];              
-              	updateBadges(variantId, false);
+              	// updateBadges(variantId, false);
               	updatePrice(variantId);              	
         	}		        	              
       	}, 0);
@@ -135,7 +135,7 @@ $(document).ready(function () {
         	const path = location.search;
       		if (path.indexOf("variant") >= 0) {
       			const variantId = path.split("=")[1];
-              	updateBadges(variantId, false);
+              	// updateBadges(variantId, false);
               	updatePrice(variantId);
         	}		        	              
       	}, 0);
