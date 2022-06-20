@@ -71,7 +71,7 @@ $(document).ready(function () {
   }
 
   document.addEventListener("variant:changed", function(event) { // (1)  
-    ["info-wr"].forEach(info => hideOption(info, event.detail.variant.id));
+    ["info-wr", "seasonal_info"].forEach(info => hideOption(info, event.detail.variant.id));
     console.log("variant changed");
 
   });
