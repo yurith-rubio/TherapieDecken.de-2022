@@ -1,10 +1,11 @@
-, "additional_cover_type_info"/*-----------------------------------------------------------------------------/
+/*-----------------------------------------------------------------------------/
 / Metafields JS for variants changing - Yurith
 /-----------------------------------------------------------------------------*/
 
 
 $(document).ready(function () {
-
+  console.log("working! ");
+  
   function getSelectedOptions() {
     console.log("a: ");
     console.log(getSelectedOptions);
