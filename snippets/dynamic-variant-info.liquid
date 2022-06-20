@@ -1,19 +1,21 @@
-{% for variant in product.variants %}
-  {% if variant.metafields.bgd.cover-type %}
-    {% assign cover_type_class = "cover_type_info hide" %}
-    {% if variant.id == product.selected_or_first_available_variant.id %}
-      {% assign cover_type_class = "cover_type_info" %}
-    {% endif %}
-      <div id="cover_type_info_{{variant.id}}" class="{{ cover_type_class }}">
-        {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
-          <span class="icon-information-outline"></span>
-          {{ variant.metafields.td_field.seasonal_variant_dynamic_info }}
-        {% else %}
-          {{ variant.metafields.bgd.cover-type }}
-        {% endif%}
-      </div>
-  {% endif%}
-{% endfor %}
+{% if dynamic_info_type == 'weight_info' %}
+  {% for variant in product.variants %}
+    {% if variant.metafields.bgd.cover-type %}
+      {% assign cover_type_class = "cover_type_info hide" %}
+      {% if variant.id == product.selected_or_first_available_variant.id %}
+        {% assign cover_type_class = "cover_type_info" %}
+      {% endif %}
+        <div id="cover_type_info_{{variant.id}}" class="{{ cover_type_class }}">
+          {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
+            <span class="icon-information-outline"></span>
+            {{ variant.metafields.td_field.seasonal_variant_dynamic_info }}
+          {% else %}
+            {{ variant.metafields.bgd.cover-type }}
+          {% endif%}
+        </div>
+    {% endif%}
+  {% endfor %}
+{% endif %}
 
 {% if dynamic_info_type == 'weight_info' %}
 
