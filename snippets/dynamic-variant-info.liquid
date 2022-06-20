@@ -4,8 +4,8 @@
       {% if variant.id == product.selected_or_first_available_variant.id %}
           {% assign design_class = "seasonal-info" %}
       {% endif %}
-      <div data-variant-id="{{variant.id}}" class="{{ design_class }}">
-        {{ variant.metafields.bgd.cover-type }}
+      <div data-variant-id="{{variant.id}}" class="{{ seasonal_class }}">
+        {{ variant.metafields.td_field.seasonal_variant_dynamic_info }}
       </div>
 	Test
 	{{ variant.metafields.td_field.seasonal_variant_dynamic_info }}
