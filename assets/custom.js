@@ -14,7 +14,7 @@ $(document).ready(function () {
   
   
   function getSelectedAdditionalVariantId() {
-    return $("li.HorizontalList__Item.AdditionalVariant_container > input[type=radio]:checked ~ .additional-variant-id").attr("data-variant-id");
+    return $("li.HorizontalList__Item.AdditionalVariant_container > input[type=radio]:checked ~ .additional_cover_type_info");
   }
   
   function selectAdditionalVariant() {
