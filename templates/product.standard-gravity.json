@@ -20,6 +20,14 @@
             "size_chart": ""
           }
         },
+        "8fc5486d-8002-42d1-aaf8-8489ab9c5d99": {
+          "type": "content",
+          "settings": {
+            "title": "fff",
+            "content": "dsdsds",
+            "page": ""
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -36,6 +44,7 @@
       "block_order": [
         "product_meta",
         "variant_selector",
+        "8fc5486d-8002-42d1-aaf8-8489ab9c5d99",
         "buy_buttons",
         "fa06d660-2955-4943-9639-fd9c703fc7d5"
       ],
