@@ -1,5 +1,5 @@
 {% for variant in product.variants %}
-  {% if settings.seasonal_product_info %}
+  {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
 	Test
 	{{ variant.metafields.td_field.seasonal_variant_dynamic_info }}
   {% else %}
