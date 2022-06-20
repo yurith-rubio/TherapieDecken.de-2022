@@ -1,4 +1,4 @@
-/*-----------------------------------------------------------------------------/
+, "additional_cover_type_info"/*-----------------------------------------------------------------------------/
 / Metafields JS for variants changing - Yurith
 /-----------------------------------------------------------------------------*/
 
@@ -71,7 +71,7 @@ $(document).ready(function () {
   }
 
   document.addEventListener("variant:changed", function(event) { // (1)  
-    ["weight_info", "cover_type_info"].forEach(info => hideOption(info, event.detail.variant.id));
+    ["weight_info", "cover_type_info", "additional_cover_type_info"].forEach(info => hideOption(info, event.detail.variant.id));
     console.log("variant changed");
 
   });
