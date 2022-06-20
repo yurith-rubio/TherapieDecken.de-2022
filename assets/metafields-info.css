@@ -1,17 +1,17 @@
 /* Product Info Metafields - bgd.weight & bdg.cover-type Metafields */
 
 .weight_info, .cover_type_info, .balance-info-wr, .gravity-info-wr, .additional-info-wr{
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    align-items: center;
-    margin: 10px 0;
-    align-items: baseline;
-    padding-left: 30px;
-    width: fit-content;
-    inline-size: fit-content;
-    background: #f1f1f1;
-    font-size: 11px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  margin: 10px 0;
+  align-items: baseline;
+  padding-left: 30px;
+  width: fit-content;
+  inline-size: fit-content;
+  background: #f1f1f1;
+  font-size: 11px;
 }
 .hide {
   display: none;
