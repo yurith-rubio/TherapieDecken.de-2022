@@ -43,9 +43,6 @@
 
 /* Limited Badge - bgd.is_limited Metafield - Yurith */
 
-.is-limited-badge-hidden {
-  display: none;
-}
 .is-limited-badge {
   color: #fff;
   background: #BA2E2E; 
