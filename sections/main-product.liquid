@@ -449,6 +449,11 @@
           
           		{% when 'payment_methods' %}
                   {% render 'product_payment_methods' %}
+          
+                {%- when 'liquid' -%}
+                  <div>
+                    {{ block.settings.liquid }}
+                  </div>
           			  
               {%- endcase -%}
             {%- endfor -%}
