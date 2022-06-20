@@ -136,7 +136,7 @@
     </ul>
 
     {%- comment -%} Product Info for Variants - bgd.cover-type Metafield - Yurith {%- endcomment -%}
-    {% render 'dynamic-variant-info', dynamic_info_type == 'cover_type_info' %}
+    {% render 'dynamic-variant-info', dynamic_info_type: 'cover_type_info' %}
     
     {%- elsif block.settings.selector_mode == 'block' -%}
     <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight
