@@ -2,7 +2,6 @@
   {% if variant.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
 	Test
   {% else %}
-	Test 2
     {% if variant.metafields.bgd.cover-type %}
       {% assign design_class = "info-wr info-wr-hidden" %}
       {% if variant.id == product.selected_or_first_available_variant.id %}
