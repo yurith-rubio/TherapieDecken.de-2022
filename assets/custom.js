@@ -59,7 +59,7 @@ $(document).ready(function () {
   
   function hideOption(selector, selectedVariant) {
     const infoMetafield = document.querySelectorAll("." + selector);
-    const selectedInfoMetafield = document.querySelectorAll("[data-variant-id=" + selectedVariant);
+    const selectedInfoMetafield = document.querySelectorAll("[data-variant-id=" + selectedVariant + "]");
     console.log("selectedInfoMetafield");
     console.log(selectedInfoMetafield);
     if (!infoMetafield || !selectedInfoMetafield) return;
