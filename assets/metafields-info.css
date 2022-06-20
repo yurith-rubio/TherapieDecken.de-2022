@@ -13,7 +13,7 @@
     background: #f1f1f1;
     font-size: 11px;
 }
-.info-wr-hidden, .additional-info-wr-hidden {
+.hide {
   display: none;
 }
 .info-wr > span, .additinal-info-wr > span{
