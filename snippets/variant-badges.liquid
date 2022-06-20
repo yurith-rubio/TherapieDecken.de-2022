@@ -1,4 +1,6 @@
-          {% if option.name == "Bezugssystem" %}
+{%- for option in product.options_with_values -%}
+
+{% if option.name == "Bezugssystem" %}
             <p class="VariantValue--style">
               {% assign simple_value = value %}
               {% assign name_variant = simple_value %}            
@@ -47,4 +49,5 @@
                  {% endif %}
               {% endif%}
           {% endfor %}
+{% endfor %}
 
