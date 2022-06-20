@@ -15,41 +15,41 @@
       </p>
     {% endif %}
 
-          {% comment %} Is Limited Badge - bgd.is_limited Metafield {% endcomment %}  
-          {% for variant in product.variants %}
-              {% if variant.option3 == value %}
-                  {% assign is_limited = variant.metafields.bgd.is_limited %}
-                  {% if is_limited == "true" %}
-                       <div
-                       class="is-limited-badge"
-                       data-variant-id="{{ variant.id }}"
-                       data-variant-option1="{{ variant.option1 }}"
-                       data-variant-option2="{{ variant.option2 }}"
-                       data-variant-option3="{{ variant.option3 }}"
-                       >
-                       Limitiert
-                       </div>
-                 {% endif %}
-              {% endif%}
-          {% endfor %}
-           
-          {% comment %} On Sale Badge - bgd.on_sale Metafield {% endcomment %}
-          {% for v in product.variants %}
-              {% if v.option3 == value %}
-                  {% assign onSale = v.metafields.bgd.on_sale %}
-                  {% if onSale %}
-                     <div
-                       class="on-sale-badge"
-                       data-variant-id="{{ v.id }}"
-                       data-variant-option1="{{ v.option1 }}"
-                       data-variant-option2="{{ v.option2 }}"
-                       data-variant-bezugsart="{{ v.option3 }}"
-                       >
-                       {{ onSale }}
-                     </div>
-                 {% endif %}
-              {% endif%}
-          {% endfor %}
+    {% comment %} Is Limited Badge - bgd.is_limited Metafield {% endcomment %}  
+    {% for variant in product.variants %}
+      {% if variant.option3 == value %}
+        {% assign is_limited = variant.metafields.bgd.is_limited %}
+        {% if is_limited == "true" %}
+          <div
+               class="is-limited-badge"
+               data-variant-id="{{ variant.id }}"
+               data-variant-option1="{{ variant.option1 }}"
+               data-variant-option2="{{ variant.option2 }}"
+               data-variant-option3="{{ variant.option3 }}"
+               >
+            Limitiert
+          </div>
+        {% endif %}
+      {% endif%}
+    {% endfor %}
+
+    {% comment %} On Sale Badge - bgd.on_sale Metafield {% endcomment %}
+    {% for v in product.variants %}
+      {% if v.option3 == value %}
+        {% assign onSale = v.metafields.bgd.on_sale %}
+        {% if onSale %}
+        <div
+             class="on-sale-badge"
+             data-variant-id="{{ v.id }}"
+             data-variant-option1="{{ v.option1 }}"
+             data-variant-option2="{{ v.option2 }}"
+             data-variant-bezugsart="{{ v.option3 }}"
+             >
+          {{ onSale }}
+        </div>
+        {% endif %}
+      {% endif%}
+    {% endfor %}
 
   {% endfor %}
 {% endfor %}
