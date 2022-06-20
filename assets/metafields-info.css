@@ -1,6 +1,6 @@
 /* Product Info Metafields - bgd.weight & bdg.cover-type Metafields */
 
-.weight_info, .cover_type_info, .balance-info-wr, .gravity-info-wr, .additional-info-wr{
+.weight_info, .cover_type_info, .balance-info-wr, .gravity-info-wr, .additional_cover_type_info{
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
