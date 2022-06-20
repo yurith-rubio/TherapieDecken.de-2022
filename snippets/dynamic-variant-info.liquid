@@ -8,7 +8,7 @@
         {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
           {{ variant.metafields.td_field.seasonal_variant_dynamic_info }}
         {% else %}
-          {{ variant.metafields.bgd.cover-type }}
+          <span class="icon-information-outline"></span>{{ variant.metafields.bgd.cover-type }}
         {% endif%}
       </div>
   {% endif%}
