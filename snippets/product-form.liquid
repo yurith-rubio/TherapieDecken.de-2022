@@ -92,7 +92,6 @@
 		  {% comment %} Is Limited Badge - bgd.is_limited Metafield {% endcomment %}  
           {% for variant in product.variants %}
               {% if variant.option3 == value %}
-                  
                   {% if variant.metafields.bgd.is_limited %}
            			{% assign is_limited = "is-limited-badge hide" %}
                     {% if variant.id == product.selected_or_first_available_variant.id %}
