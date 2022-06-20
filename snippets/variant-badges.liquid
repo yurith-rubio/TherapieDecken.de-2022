@@ -34,14 +34,3 @@
               {% endif%}
           {% endfor %}
 
-
-
-    {% if variant.metafields.bgd.cover-type %}
-      {% assign design_class = "info-wr hide" %}
-      {% if variant.id == product.selected_or_first_available_variant.id %}
-          {% assign design_class = "info-wr" %}
-      {% endif %}
-      <div data-variant-id="{{variant.id}}" class="{{ design_class }}">
-        {{ variant.metafields.bgd.cover-type }}
-      </div>
-    {% endif%}
