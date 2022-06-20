@@ -2074,6 +2074,7 @@
     }, {
       key: "_onVariantChanged",
       value: function _onVariantChanged(event) {
+        console.log("_onVariantChanged");
         
         var _this = this;
 
