@@ -1,8 +1,8 @@
           {% comment %} Is Limited Badge - bgd.is_limited Metafield {% endcomment %}  
           {% for variant in product.variants %}
               {% if variant.option3 == value %}
-                  {% assign isLimited = variant.metafields.bgd.is_limited %}
-                  {% if isLimited == "true" %}
+                  {% assign is_limited = variant.metafields.bgd.is_limited %}
+                  {% if is_limited == "true" %}
                        <div
                        class="is-limited-badge"
                        data-variant-id="{{ variant.id }}"
@@ -33,3 +33,15 @@
                  {% endif %}
               {% endif%}
           {% endfor %}
+
+
+
+    {% if variant.metafields.bgd.cover-type %}
+      {% assign design_class = "info-wr hide" %}
+      {% if variant.id == product.selected_or_first_available_variant.id %}
+          {% assign design_class = "info-wr" %}
+      {% endif %}
+      <div data-variant-id="{{variant.id}}" class="{{ design_class }}">
+        {{ variant.metafields.bgd.cover-type }}
+      </div>
+    {% endif%}
