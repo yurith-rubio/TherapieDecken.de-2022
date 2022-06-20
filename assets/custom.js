@@ -6,6 +6,8 @@
 $(document).ready(function () {
 
   function getSelectedOptions() {
+    console.log("a: ");
+    console.log(getSelectedOptions);
     return {
      	option1: $("input[name=option-0]:checked").val(),
       	option2: $("input[name=option-1]:checked").val()
