@@ -57,6 +57,25 @@ $(document).ready(function () {
     return mainProduct.price;
   }
   
+  function hideOption(selector, selectedVariant) {
+    const infoMetafield = document.querySelectorAll("." + selector);
+    const selectedInfoMetafield = document.getElementById(selector + "_" + selectedVariant);
+    console.log("selectedInfoMetafield");
+    console.log(selectedInfoMetafield);
+    if (!infoMetafield || !selectedInfoMetafield) return;
+
+    infoMetafield.forEach(function(info){
+      info.classList.add("hide");
+    });
+    selectedInfoMetafield.classList.remove("hide");
+  }
+
+  document.addEventListener("variant:changed", function(event) { // (1)  
+    ["weight_info", "cover_type_info"].forEach(info => hideOption(info, event.detail.variant.id));
+    console.log("variant changed");
+
+  });
+  
   function updateProductBadges(variantId, opt) {
     $("div.info-wr").addClass("info-wr-hidden");                           	                  
    	$("div.is-limited-badge").addClass("is-limited-badge-hidden");
