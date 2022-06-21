@@ -1,16 +1,13 @@
 <!-- product-promotional-badge.liquid -->
-{{ 'badges.css' | asset_url | stylesheet_tag }}
 
 {% if settings.enable_product_badge %}
-	{% if product.handle == 'balance-gewichtsdecke-fur-erwachsene'
-      or product.handle == 'therapiedecken'
-      or product.handle == 'basic-gravity-gewichtsdecke-fur-erwachsene'
-      %}
-		<div class="ProductBadge_Wrapper">
-          {% comment %}
-            <div class="Prod_SmallBadge">Gratis Kissen</div>
-          {% endcomment %}
-          <div class="Prod_ImgSmallBadge"><img class="Prod_ImgSize-SmallBadge Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_Father_s_day_promotion_-_badge.svg?v=1653038358" alt="Father's day" /></div>
-        </div>
-  	{% endif %}
+  {{ 'badges.css' | asset_url | stylesheet_tag }}
+
+  {% if product.handle == 'therapiedecken' %}
+
+    <div class="ProductBadge_Wrapper">
+      <div class="Prod_SmallBadge">Gratis</div>
+      <div class="Prod_ImgSmallBadge"><img class="Prod_ImgSize-SmallBadge Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_Summer_Cooling_art_png.png?v=1654588702" alt="Summer Cooling's day badge" /></div>
+    </div>
+  {% endif %}
 {% endif %}

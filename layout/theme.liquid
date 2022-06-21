@@ -30,6 +30,18 @@
     {% render 'social-meta-tags' %}
     {% render 'css-variables' %}
     
+    {% comment %}  Gift item styles - with slidecart styles - Yurith {% endcomment %}
+    {{ 'my-cart-styles.css' | asset_url | stylesheet_tag }}
+    {% comment %} jQuery library - Yurith {% endcomment %}
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    {% comment %}  Add FREE GIFT to slide cart code - Yurith {% endcomment %}
+    {% render 'my-cart-scripts', settings: settings %}
+    {% render 'my-cart-free-gift-scripts', settings: settings %}
+
+    <!-- This code is automatically managed by StarApps Studio -->
+    <!-- Please contact support@starapps.studio for any help -->
+    <script type="text/javascript" src="https://bcdn.starapps.studio/apps/via/therapiedecken/script-1631272472.js?shop={{shop.permanent_domain}}" async></script>
+    <!-- starapps_scripts_end -->
     {{ content_for_header }}
     
     <script>
@@ -97,8 +109,6 @@
     <script src="https://cdn.polyfill.io/v3/polyfill.min.js?unknown=polyfill&features=fetch,Element.prototype.closest,Element.prototype.remove,Element.prototype.classList,Array.prototype.includes,Array.prototype.fill,Object.assign,CustomEvent,IntersectionObserver,IntersectionObserverEntry,URL" defer></script>
     <script src="{{ 'libs.min.js' | asset_url }}" defer></script>
     <script src="{{ 'theme.min.js' | asset_url }}" defer></script>
-    
-    <script src="{{ 'ls.rias.min.js' | asset_url }}" async></script>
     <script src="{{ 'lazysizes.min.js' | asset_url }}" async></script>
 
     {%- if template == 'customers/addresses' -%}
@@ -127,15 +137,16 @@
     </script>
     
     {% render 'microdata-schema' %}
-    {% comment %} JQuery library - Yurith {% endcomment %}
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
     {% comment %}  Owl carousel library for adding sliders to the theme - Yurith {% endcomment %}
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all">
     
     <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
     {% comment %} ICOMOON link {% endcomment%}
-    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/163995/TDTW/style-cf.css?dnelsm">
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/163995/TDTW/style-cf.css?sntwup">
+
     {% comment %} Font added for bold on Headings {% endcomment%}
     <link rel="stylesheet" href="https://use.typekit.net/cmk7jcs.css">
     {{ 'countdown.js' | asset_url | script_tag }}
@@ -144,7 +155,7 @@
 	<!-- This code is automatically managed by StarApps Studio -->
 	<!-- Please contact support@starapps.studio for any help -->
 	{% render "starapps-product-json", product: product, starapps_app: "VIA", starapps_attribute: "sa-product-json" %}
-    <script type="text/javascript" src="https://bcdn.starapps.studio/apps/via/therapiedecken/script-1631272472.js?shop={{shop.permanent_domain}}" async></script>
+    
     <!-- starapps_scripts_end -->
 
   </head>
@@ -176,36 +187,45 @@
   {%- endif -%}
 
   <body class="prestige--v4 {{ classes }} {% if template.directory %}template-{{ template.directory | handle }}{% endif %} template-{{ template.name | handle }}">
-    <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
-    <span class="LoadingBar"></span>
-    <div class="PageOverlay"></div>
 
-    {%- if settings.show_page_transition -%}
-      <div class="PageTransition"></div>
-    {%- endif -%}
+  {% comment %} Theme modified to add our own SLIDE CART - div wrappers added plus the my-cart section - Yurith {% endcomment %}
 
-    {% section 'popup' %}
-    {% section 'sidebar-menu' %}
+    <div class="my-container" data-drawer-push>
+      <div class="my-container__content">
+        <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
+        <span class="LoadingBar"></span>
+        <div class="PageOverlay"></div>
 
-    {%- if template != 'cart' -%}
-      {% render 'cart-drawer' %}
-    {%- endif -%}
-    
-    {% render 'top-styling' %}
-    <div class="PageContainer">
-      <div id="tabs-redirecting" style="relative: fixed; top: 0px">
-        {% render 'website-tab-redirecting' %}
+        {%- if settings.show_page_transition -%}
+          <div class="PageTransition"></div>
+        {%- endif -%}
+        {% section 'popup' %}
+        {% section 'sidebar-menu' %}
+
+        {% comment %}
+          {%- if template != 'cart' -%}
+            {% render 'cart-drawer' %}
+          {%- endif -%}
+		{% endcomment %}
+        
+        {% render 'top-styling' %}
+		{% section 'my-cart' %}
+        
+        <div class="PageContainer">
+          <div id="tabs-redirecting" style="relative: fixed; top: 0px">
+            {% render 'website-tab-redirecting' %}
+          </div>
+          <div id="header">
+            {% section 'header' %}
+            {% section 'announcement' %}
+          </div>
+          <main id="main" role="main">
+            {{ content_for_layout }}
+          </main>
+          {% section 'footer' %}
+        </div>
+        {% render 'my-cart-overlay' %}
       </div>
-      <div id="header">
-        {% section 'header' %}
-        {% section 'announcement' %}
-      </div>
-
-      <main id="main" role="main">
-        {{ content_for_layout }}
-      </main>
-
-      {% section 'footer' %}
     </div>
     
     <script>
@@ -245,7 +265,6 @@
     })(window,document,'script','dataLayer','GTM-TP3DS7X');</script>
     <!-- End Google Tag Manager -->
     
-    {% comment %}<script src="{{ 'theme2.js' | asset_url }}" defer></script>{% endcomment %}
     {% comment %} Reviews Core - Yurith {% endcomment %}
     {% render 'judgeme_core' %} 
 

@@ -21,7 +21,7 @@
     "16311973875d2f0dd0": {
       "type": "custom-html",
       "settings": {
-        "html": "<div style=\"margin: 0px 0 10px;\"><a class=\"Button\" style=\"background-color: pink!important\" href=\"https:\/\/therapiedecken.de\/collections\/therapiedecken-brustkrebs-monat-oktober-kollektion\">Jetzt Unterstützen<\/a><\/div>",
+        "html": "<div style=\"margin: 0px 0 10px;\"><a class=\"Button\" style=\"background-color: pink!important\" href=\"https:\/\/therapiedecken.de\/pages\/therapiedecken\">Jetzt Unterstützen<\/a><\/div>",
         "spacer": "50px",
         "bg-color": "#ffffff"
       }
@@ -37,7 +37,7 @@
         "icons_duotone": "none",
         "subheading": "",
         "title": "Brustkrebs Monat Oktober",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/9_600x_988e13b7-4a21-4132-910c-a3909769b5f9.jpg",
         "image_position": "right",
         "content_html": "<p> Der \"Breastcancer Awareness Month\" wurde im Oktober 1985 ins Leben gerufen. Er soll das öffentliche Bewusstsein für vorbeugende Maßnahmen und das frühzeitige Erkennen für Brustkrebs verschärfen, sowie die Erforschung von neuen Behandlungsoptionen fördern.\n<\/p>",
@@ -61,10 +61,10 @@
         "icons_duotone": "none",
         "subheading": "5% für den guten Zweck",
         "title": "Pink Ribbon Deutschland und Therapiedecken.de",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/brustkrebs-therapiedecken-logo-org.jpg",
         "image_position": "left",
-        "content_html": "Unsere neue Therapiedecke \"Pink Edition\" wurde speziell für den diesjährigen Brustkrebs Awareness Monat entworfen.\n<br>\nIm Oktober spenden wir 5% der Einnahmen der neuen Kollektion an Pink Ribbon Deutschland!",
+        "content_html": "Unsere neue Therapiedecke \"Pink Edition\" wurde speziell für den diesjährigen Brustkrebs Awareness Monat entworfen.\n<br>\n<br>\nIm Oktober spenden wir 5% der Einnahmen der neuen Kollektion an Pink Ribbon Deutschland!",
         "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
         "button_style": false,
         "link_text": "Zu Pink Ribbon Deutschland",
@@ -85,10 +85,10 @@
         "icons_duotone": "none",
         "subheading": "",
         "title": "Mit dem Kauf einer Therapiedecke Gutes tun",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/12_1.jpg",
         "image_position": "right",
-        "content_html": "<p> Die bis zu 12kg schweren Therapiedecken können innere Unruhe, Stress und Angstzustände reduzieren und das Ein- und Durchschlafen verbessern. \n<br> Mit dem Kauf einer Therapiedecke können Sie ihren Schlaf revolutionieren und gleichzeitig ein Zeichen für mehr Aufmerksamkeit auf die Wichtigkeit einer Brustkrebsfrüherkennung richten. \n\n<br> <br> Gemeinsam ein Zeichen setzen!\n<\/p>",
+        "content_html": "<p> Die bis zu 12kg schweren Therapiedecken können innere Unruhe, Stress und Angstzustände reduzieren und das Ein- und Durchschlafen verbessern. \n<br>\n<br>\nMit dem Kauf einer Therapiedecke können Sie ihren Schlaf revolutionieren und gleichzeitig ein Zeichen für mehr Aufmerksamkeit auf die Wichtigkeit einer Brustkrebsfrüherkennung richten. \n<br> \n<br>\nGemeinsam ein Zeichen setzen!\n<\/p>",
         "content_rich": "",
         "button_style": false,
         "link_text": "Zur Decke",
@@ -113,7 +113,7 @@
     "1631197255af5424f4": {
       "type": "custom-html",
       "settings": {
-        "html": "<div style=\"margin: 50px 0 60px;\"><a class=\"Button\" style=\"background-color: pink!important\" href=\"https:\/\/therapiedecken.de\/collections\/therapiedecken-brustkrebs-monat-oktober-kollektion\">Jetzt Unterstützen<\/a><\/div>",
+        "html": "<div style=\"margin: 50px 0 60px;\"><a class=\"Button\" style=\"background-color: pink!important\" href=\"https:\/\/therapiedecken.de\/pages\/therapiedecken\">Jetzt Unterstützen<\/a><\/div>",
         "spacer": "50px",
         "bg-color": ""
       }
