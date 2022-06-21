@@ -73,6 +73,10 @@ $(document).ready(function () {
   document.addEventListener("variant:changed", function(event) { // (1)  
     ["weight_info", "cover_type_info"].forEach(info => hideOption(info, event.detail.variant.id));
     console.log("variant changed");
+    
+    const variantId = getSelectedAdditionalVariantId();
+    ["additional_cover_type_info"].forEach(info => hideOption(info, variantId));
+    console.log("additional variant changed");
 
   });
   
