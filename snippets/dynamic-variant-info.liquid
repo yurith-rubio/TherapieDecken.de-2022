@@ -24,6 +24,9 @@
 .both_temperatures{
   font-size:60px;
 }
+.seasonal_type_info{
+  padding: 10px !important;
+}
 {% endstyle %}
   {% for variant in product.variants %}
     {% if variant.metafields.bgd.cover-type %}
@@ -31,7 +34,10 @@
       {% if variant.id == product.selected_or_first_available_variant.id %}
         {% assign cover_type_class = "cover_type_info" %}
       {% endif %}
-        <div id="cover_type_info_{{variant.id}}" class="{{ cover_type_class }}">
+        <div id="cover_type_info_{{variant.id}}" 
+             class="{{ cover_type_class }} 
+                    {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}seasonal_type_info{% endif%}
+                    ">
           {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
             <div class="seasonalInfo_mainWrapper">
               <span class="both_temperatures icon-both_temperatures"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span></span>
