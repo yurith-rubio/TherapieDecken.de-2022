@@ -3,20 +3,20 @@
 {{ 'product-custom.css' | asset_url | stylesheet_tag}}
 {{ 'glider.min.css' | asset_url | stylesheet_tag}}
 
-{% style%}
-.full-bg-color-icons{
-  background-color: {{ section.settings.bg-color }};
-}
-@media only screen and (min-width: 641px){
-  .icons-container-mobile{
-	display:none !important;
+{% style %}
+  .full-bg-color-icons{
+    background-color: {{ section.settings.bg-color }};
   }
-}
-@media only screen and (max-width: 641px){
-  .icons-container-desktop{
-    display:none !important;
+  @media only screen and (min-width: 641px){
+    .icons-container-mobile{
+      display:none !important;
+    }
   }
-}
+  @media only screen and (max-width: 641px){
+    .icons-container-desktop{
+      display:none !important;
+    }
+  }
 {% endstyle %}
 
 
