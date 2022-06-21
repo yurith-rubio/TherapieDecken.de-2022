@@ -17,6 +17,11 @@
 
 {%- comment -%} Cover type dynamic variant's info - metafields.bgd.cover-type - Yurith {%- endcomment -%}
 {% if dynamic_info_type == 'cover_type_info' %}
+{% style %}
+.seasonalInfo_mainWrapper{
+  display: flex;
+}
+{% endstyle %}
   {% for variant in product.variants %}
     {% if variant.metafields.bgd.cover-type %}
       {% assign cover_type_class = "cover_type_info hide" %}
@@ -33,6 +38,7 @@
               </div>
           	</div>
           	<div>
+              <img src="https://cdn.shopify.com/s/files/1/2451/6611/files/both_measurement.svg?v=1655805392">
           	</div>
           
           {% else %}
