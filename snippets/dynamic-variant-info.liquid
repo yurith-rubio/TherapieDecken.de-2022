@@ -39,7 +39,6 @@
 {% if dynamic_info_type == 'additional_cover_type_info' %}
     {% for variant in additional_product.variants %}
       {% if variant.metafields.bgd.cover-type %}
-Test
         {% assign design_class = "additional-info-wr hide" %}
         {% if variant.id == additional_product.selected_or_first_available_variant.id %}
         	{% assign design_class = "additional-info-wr" %}
