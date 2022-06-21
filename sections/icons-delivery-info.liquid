@@ -39,14 +39,13 @@
       <p style="font-weight: bold; margin-bottom: 0;">1 Jahr Wachstumgsgarantie</p>
       <p style="color: #f8f8f8;">Flexibilität auch für schnell wachsende Kinder! Für weitere Infos klicken Sie <a href="https://therapiedecken.de/pages/1-jahr-wachstums-garantie"><u>hier</u></a>.</p>
     </div>
-   {% elsif template.name == "standard-gravity" %} 
+   {% elsif product.template_suffix == "standard-gravity" %} 
     <div class="icons-del-wr">
       <span class="icon-cooling-blanket"></span>
       <p style="font-weight: bold; margin-bottom: 0;">Atmungsaktive Bezüge</p>
       <p style="color: #f8f8f8;">MISSING CONTENT <a href="https://therapiedecken.de/pages/1-jahr-wachstums-garantie"><u>hier</u></a>.</p>
     </div>
    {% else %}
-   template name: {{ product.template_suffix | json }}
     <div class="icons-del-wr">
       <span class="icon-EU1"></span>
       <p style="font-weight: bold; margin-bottom: 0;">Hergestellt in Europa</p>
@@ -74,14 +73,13 @@
         <p style="font-weight: bold; margin-bottom: 0;">1 Jahr Wachstumgsgarantie</p>
       <p style="color: #f8f8f8;">Flexibilität auch für schnell wachsende Kinder! Für weitere Infos klicken Sie <a href="https://therapiedecken.de/pages/1-jahr-wachstums-garantie"><u>hier</u></a>.</p>
       </div>
-      {% elsif template.name == "standard-gravity" %} 
+      {% elsif product.template_suffix == "standard-gravity" %} 
         <div class="icons-del-wr">
           <span class="icon-cooling-blanket"></span>
           <p style="font-weight: bold; margin-bottom: 0;">Atmungsaktive Bezüge</p>
           <p style="color: #f8f8f8;">MISSING CONTENT <a href="https://therapiedecken.de/pages/1-jahr-wachstums-garantie"><u>hier</u></a>.</p>
         </div>
       {% else %}
-      template name: {{ product.template_suffix }}
       <div class="icons-del-wr">
         <span class="icon-EU1"></span>
         <p style="font-weight: bold; margin-bottom: 0;">Hergestellt in Europa</p>
