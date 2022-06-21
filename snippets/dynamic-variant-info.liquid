@@ -37,15 +37,16 @@
 
 {%- comment -%} Additional cover type dynamic variant's info - metafields.bgd.cover-type - Yurith {%- endcomment -%}
 {% if dynamic_info_type == 'additional_cover_type_info' %}
-  {% for variant in product.variants %}
-    {% if variant.metafields.bgd.cover-type %}
-      {% assign additional_cover_type_class = "additional_cover_type_info hide" %}
-      {% if variant.id == product.selected_or_first_available_variant.id %}
-        {% assign additional_cover_type_class = "additional_cover_type_info" %}
-      {% endif %}
-        <div id="additional_cover_type_info_{{variant.id}}" class="{{ additional_cover_type_class }}">
-            {{ variant.metafields.bgd.cover-type }}
+    {%- comment -%} Product Info for Variants - bgd.cover-type Metafield - Yurith{%- endcomment -%}
+    {% for variant in additional_product.variants %}
+      {% if variant.metafields.bgd.cover-type %}
+        {% assign design_class = "additional-info-wr additional-info-wr-hidden" %}
+        {% if variant.id == additional_product.selected_or_first_available_variant.id %}
+        	{% assign design_class = "additional-info-wr" %}
+        {% endif %}
+        <div data-variant-id="{{variant.id}}" class="{{ design_class }}">
+          {{ variant.metafields.bgd.cover-type }}
         </div>
-    {% endif%}
-  {% endfor %}
+      {% endif%}
+    {% endfor %}
 {% endif %}
