@@ -82,28 +82,26 @@ $(document).ready(function () {
   
   
   
-  /* function updateProductBadges(variantId, opt) {
-    $("div.info-wr").addClass("info-wr-hidden");                           	                  
+  function updateProductBadges(variantId, opt) {                           	                  
    	$("div.is-limited-badge").addClass("is-limited-badge-hidden");
    	$("div.on-sale-badge").addClass("on-sale-badge-hidden");
     $("div.twtd-shipping-time").addClass("twtd-shipping-time-hidden");
 
-    $("[data-variant-id=" + variantId + "]").removeClass("info-wr-hidden");
     $("[data-variant-id=" + variantId + "]").removeClass("twtd-shipping-time-hidden");
 
     $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("is-limited-badge-hidden");
 	//Extra hidding rule for the upsell products limitiert badges
     $("div.is-limited-badge[data-variant-id=" + variantId + "]").removeClass("is-limited-badge-hidden")
     $("div.on-sale-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("on-sale-badge-hidden");
-  } */
+  }
   
-  /* function updateAdditionalProductBadges() {
+  function updateAdditionalProductBadges() {
     const variantId = getSelectedAdditionalVariantId();
     $("div.additional-info-wr").addClass("additional-info-wr-hidden");
     $("[data-variant-id=" + variantId + "]").removeClass("additional-info-wr-hidden");
-  } */
+  }
    
-  /* function updateBadges(variantId, isAdditional) {
+  function updateBadges(variantId, isAdditional) {
     if (isAdditional) {
       updateAdditionalProductBadges();
     } else {
@@ -111,7 +109,7 @@ $(document).ready(function () {
       const opt = getSelectedOptions();
       updateProductBadges(variantId, opt);
     }
-  } */
+  }
   
   function updatePrice(id) {
     const additionalVariantId = getSelectedAdditionalVariantId();    
