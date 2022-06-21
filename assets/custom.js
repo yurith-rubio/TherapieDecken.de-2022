@@ -83,9 +83,9 @@ $(document).ready(function () {
   
   
   function updateProductBadges(variantId, opt) {                           	                  
-   	$("div.is-limited-badge").addClass("is-limited-badge-hidden");
-   	$("div.on-sale-badge").addClass("on-sale-badge-hidden");
-    $("div.twtd-shipping-time").addClass("twtd-shipping-time-hidden");
+   	$("div.is-limited-badge").addClass("hide");
+   	$("div.on-sale-badge").addClass("hide");
+    $("div.twtd-shipping-time").addClass("hide");
 
     $("[data-variant-id=" + variantId + "]").removeClass("hide");
 
