@@ -87,12 +87,12 @@ $(document).ready(function () {
    	$("div.on-sale-badge").addClass("on-sale-badge-hidden");
     $("div.twtd-shipping-time").addClass("twtd-shipping-time-hidden");
 
-    $("[data-variant-id=" + variantId + "]").removeClass("twtd-shipping-time-hidden");
+    $("[data-variant-id=" + variantId + "]").removeClass("hide");
 
-    $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("is-limited-badge-hidden");
+    $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("hide");
 	//Extra hidding rule for the upsell products limitiert badges
-    $("div.is-limited-badge[data-variant-id=" + variantId + "]").removeClass("is-limited-badge-hidden")
-    $("div.on-sale-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("on-sale-badge-hidden");
+    $("div.is-limited-badge[data-variant-id=" + variantId + "]").removeClass("hide")
+    $("div.on-sale-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("hide");
   }
   
   function updateAdditionalProductBadges() {
