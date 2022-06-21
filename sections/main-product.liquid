@@ -12,6 +12,26 @@
 {% comment %}Hide Options - Yurith{% endcomment %}
 {{ 'hide-options.js' | asset_url | script_tag }}
 
+
+{% if product.template_suffix == "standard-gravity" and settings.seasonal_product_info %}
+  {% style %}
+    .seasonal_badge {
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+    left: 5%;
+    background: #ba2e2d;
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    padding: 13px 5px;
+    }
+  {% endstyle %}
+{% endif %}
+
 {%- capture section_settings -%}
 {
   "enableHistoryState": true,
@@ -119,22 +139,6 @@
               {% if product.title != 'Geschenkgutschein' %}
               	{% if settings.hide_discount_general_badge != true %}
               		{% if product.template_suffix == "standard-gravity" and settings.seasonal_product_info %}
-              		{% style %}
-                      .seasonal_badge {
-                          position: absolute;
-                          top: 5%;
-                          z-index: 1;
-                          left: 5%;
-                          background: #ba2e2d;
-                          color: #fff;
-                          font-weight: 900;
-                          font-size: 20px;
-                          border-radius: 50%;
-                          height: 60px;
-                          width: 60px;
-                          padding: 13px 5px;
-                      }
-              		{% endstyle %}
               		<img class="seasonal_badge" src="https://cdn.shopify.com/s/files/1/2451/6611/files/neutral_badge.svg?v=1655823343">
               		{% else %}
               		<div class="bf-badge">-{{ percentage }}%</div>
