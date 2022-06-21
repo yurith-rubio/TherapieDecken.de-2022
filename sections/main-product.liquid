@@ -12,21 +12,6 @@
 {% comment %}Hide Options - Yurith{% endcomment %}
 {{ 'hide-options.js' | asset_url | script_tag }}
 
-
-{% if product.template_suffix == "standard-gravity" and settings.seasonal_product_info %}
-  {% style %}
-    .seasonal_badge {
-    position: absolute;
-    top: 5%;
-    z-index: 1;
-    left: 5%;
-    color: #fff;
-    font-size: 20px;
-    padding: 13px 5px;
-    }
-  {% endstyle %}
-{% endif %}
-
 {%- capture section_settings -%}
 {
   "enableHistoryState": true,

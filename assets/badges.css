@@ -53,7 +53,15 @@
 
 
 /* Badges on Product Pages */
-
+.seasonal_badge {
+  position: absolute;
+  top: 5%;
+  z-index: 1;
+  left: 5%;
+  color: #fff;
+  font-size: 20px;
+  padding: 13px 5px;
+}
 .ProductBadge_Wrapper{
     position: absolute;
     top: 5%;
