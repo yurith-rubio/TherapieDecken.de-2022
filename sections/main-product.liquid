@@ -118,7 +118,11 @@
                 {% endfor %} 
               {% if product.title != 'Geschenkgutschein' %}
               	{% if settings.hide_discount_general_badge != true %}
+              		{% if product.template_suffix == "standard-gravity" and settings.seasonal_product_info %}
+              		
+              		{% else %}
               		<div class="bf-badge">-{{ percentage }}%</div>
+              		{% endif %}
                 {% endif %}
               {% endif %}
               <div class="AspectRatio AspectRatio--withFallback" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }};">
