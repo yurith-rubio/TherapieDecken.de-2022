@@ -1,11 +1,25 @@
-<!-- section: html-with-image.liquid -->
+<!-- section: text-with-image-new.liquid -->
 
 {%- comment -%} CSS Added {%- endcomment -%}
 {{ 'product-custom.css' | asset_url | stylesheet_tag }}
 {{ 'text-with-image-new.css' | asset_url | stylesheet_tag }}
 
+<style>
+  {% if section.settings.slide_style %}
+  	@media only screen and (max-width: 640px){
+      .text-with-image-new_ContentWrapper{
+        padding-right: 20;
+        width: 100vw;
+        max-width:
+      }
+    }
+  {% endif %}
+</style>
+
 <section class="Section">
-  	<div class="FeaturedHtmlImage-container Image--lazyLoad spacer" 
+  
+  	{%comment%}FeaturedHtmlImage-container{%endcomment%}
+  	<div class=" Image--lazyLoad spacer" 
          style="{% if section.settings.bg_img %}background-position: center; background-size:cover; {% endif %} 
                 {% if section.settings.spacer_top %}padding-top: 50px; {% endif %} 
          		{% if section.settings.spacer_bottom %}padding-bottom: 50px; {% endif %}
@@ -17,7 +31,7 @@
       	
       	  
             <div class="FeatureText__ContentWrapper text-with-image-new_ContentWrapper"
-              {% if section.settings.bg-color-text-html != blank %} style="background-color:{{ section.settings.bg-color-text-html }}; {% endif %}">
+              style="{% if section.settings.bg-color-text-html != blank %}background-color:{{ section.settings.bg-color-text-html }};{% endif %}">
 			  
               <div class="FeatureText__Content html-text-wr
                           {% if section.settings.text_align == 'left' %}text-align-left{% endif %}">
@@ -75,7 +89,7 @@
           section.settings.image -%}{%- endcapture -%}
 
           <div class="AspectRatio"
-            style="max-width: {{ section.settings.image.width }}px; --aspect-ratio: {{ section.settings.image.aspect_ratio }}">
+            style="max-width: {{ section.settings.image.width }}px; --aspect-ratio: {{ section.settings.image.aspect_ratio }};">
             {%- assign image_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             <img class="Image--lazyLoad Image--slide{{ section.settings.image_position | capitalize }}"
               data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto"
@@ -107,6 +121,12 @@
   "class": "HtmlImage",
   "tag": "section",
   "settings": [
+        {
+          "type": "checkbox",
+          "id": "slide_style",
+          "label": "Use a slide style for content",
+          "default": false
+        },
         {
           "type": "checkbox",
           "id": "spacer_top",
