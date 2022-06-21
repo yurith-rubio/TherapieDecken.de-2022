@@ -4,7 +4,7 @@
 
 
 $(document).ready(function () {
-  
+
   function getSelectedOptions() {
     return {
      	option1: $("input[name=option-0]:checked").val(),
@@ -14,7 +14,7 @@ $(document).ready(function () {
   
   
   function getSelectedAdditionalVariantId() {
-    return $("li.HorizontalList__Item.AdditionalVariant_container > input[type=radio]:checked ~ .additional_cover_type_info");
+    return $("li.HorizontalList__Item.AdditionalVariant_container > input[type=radio]:checked ~ .additional-variant-id").attr("data-variant-id");
   }
   
   function selectAdditionalVariant() {
@@ -57,48 +57,25 @@ $(document).ready(function () {
     return mainProduct.price;
   }
   
-  function hideOption(selector, selectedVariant) {
-    const infoMetafield = document.querySelectorAll("." + selector);
-    const selectedInfoMetafield = document.getElementById(selector + "_" + selectedVariant);
-    console.log("selectedInfoMetafield");
-    console.log(selectedInfoMetafield);
-    if (!infoMetafield || !selectedInfoMetafield) return;
+  function updateProductBadges(variantId, opt) {
+    $("div.info-wr").addClass("info-wr-hidden");                           	                  
+   	$("div.is-limited-badge").addClass("is-limited-badge-hidden");
+   	$("div.on-sale-badge").addClass("on-sale-badge-hidden");
+    $("div.twtd-shipping-time").addClass("twtd-shipping-time-hidden");
 
-    infoMetafield.forEach(function(info){
-      info.classList.add("hide");
-    });
-    selectedInfoMetafield.classList.remove("hide");
-  }
+    $("[data-variant-id=" + variantId + "]").removeClass("info-wr-hidden");
+    $("[data-variant-id=" + variantId + "]").removeClass("twtd-shipping-time-hidden");
 
-  document.addEventListener("variant:changed", function(event) { // (1)  
-    ["weight_info", "cover_type_info"].forEach(info => hideOption(info, event.detail.variant.id));
-    console.log("variant changed");
-    
-    const variantId = getSelectedAdditionalVariantId();
-    ["additional_cover_type_info"].forEach(info => hideOption(info, variantId));
-    console.log("additional variant changed");
-
-  });
-  
-  
-  
-  function updateProductBadges(variantId, opt) {                           	                  
-   	$("div.is-limited-badge").addClass("hide");
-   	$("div.on-sale-badge").addClass("hide");
-    $("div.twtd-shipping-time").addClass("hide");
-
-    $("[data-variant-id=" + variantId + "]").removeClass("hide");
-
-    $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("hide");
+    $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("is-limited-badge-hidden");
 	//Extra hidding rule for the upsell products limitiert badges
-    $("div.is-limited-badge[data-variant-id=" + variantId + "]").removeClass("hide")
-    $("div.on-sale-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("hide");
+    $("div.is-limited-badge[data-variant-id=" + variantId + "]").removeClass("is-limited-badge-hidden")
+    $("div.on-sale-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("on-sale-badge-hidden");
   }
   
   function updateAdditionalProductBadges() {
     const variantId = getSelectedAdditionalVariantId();
-    $("div.additional-info-wr").addClass("hide");
-    $("[data-variant-id=" + variantId + "]").removeClass("hide");
+    $("div.additional-info-wr").addClass("additional-info-wr-hidden");
+    $("[data-variant-id=" + variantId + "]").removeClass("additional-info-wr-hidden");
   }
    
   function updateBadges(variantId, isAdditional) {
@@ -128,7 +105,7 @@ $(document).ready(function () {
         	const path = location.search;
       		if (path.indexOf("variant") >= 0) {
       			const variantId = path.split("=")[1];              
-              	// updateBadges(variantId, false);
+              	updateBadges(variantId, false);
               	updatePrice(variantId);              	
         	}		        	              
       	}, 0);
@@ -139,7 +116,7 @@ $(document).ready(function () {
         	const path = location.search;
       		if (path.indexOf("variant") >= 0) {
       			const variantId = path.split("=")[1];
-              	// updateBadges(variantId, false);
+              	updateBadges(variantId, false);
               	updatePrice(variantId);
         	}		        	              
       	}, 0);
@@ -152,7 +129,7 @@ $(document).ready(function () {
         	const path = location.search;
       		if (path.indexOf("variant") >= 0) {
       			const variantId = path.split("=")[1];              
-                // updateBadges(variantId, true);
+                updateBadges(variantId, true);
               	updatePrice(variantId);              	
         	}
       	}, 0);
