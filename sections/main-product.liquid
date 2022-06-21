@@ -119,7 +119,7 @@
               {% if product.title != 'Geschenkgutschein' %}
               	{% if settings.hide_discount_general_badge != true %}
               		{% if product.template_suffix == "standard-gravity" and settings.seasonal_product_info %}
-              		<img src="https://cdn.shopify.com/s/files/1/2451/6611/files/neutral_badge.svg?v=1655823343">
+              		<img class="seasonal_badge" src="https://cdn.shopify.com/s/files/1/2451/6611/files/neutral_badge.svg?v=1655823343">
               		{% else %}
               		<div class="bf-badge">-{{ percentage }}%</div>
               		{% endif %}
