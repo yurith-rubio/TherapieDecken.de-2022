@@ -136,6 +136,30 @@
         "video_url": "https:\/\/player.vimeo.com\/video\/352267408"
       }
     },
+    "1655815044371278e6": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "33eb3f11-d7cb-4e46-8227-9e010c04acbb": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "33eb3f11-d7cb-4e46-8227-9e010c04acbb"
+      ],
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "#5b5b5b",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/cooling-warming_image.jpg",
+        "image_position": "left"
+      }
+    },
     "16294611499d6cacbd": {
       "type": "advantages-overview",
       "blocks": {
@@ -209,30 +233,6 @@
       "settings": {
         "title-sub": "Die bekannteste Therapiedecke",
         "title": "Vorteile der Standard Gravity Therapiedecke im Überblick"
-      }
-    },
-    "1655815044371278e6": {
-      "type": "text-with-image-new",
-      "blocks": {
-        "33eb3f11-d7cb-4e46-8227-9e010c04acbb": {
-          "type": "richtext",
-          "settings": {
-            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "33eb3f11-d7cb-4e46-8227-9e010c04acbb"
-      ],
-      "settings": {
-        "spacer_top": true,
-        "spacer_bottom": true,
-        "bg-color": "#5b5b5b",
-        "bg-color-text-html": "",
-        "text_align": "left",
-        "text_color": "#ffffff",
-        "image": "shopify:\/\/shop_images\/cooling-warming_image.jpg",
-        "image_position": "left"
       }
     },
     "1629462422c7c337fa": {
@@ -486,8 +486,8 @@
     "1629459987d4cac0a9",
     "16291457001a7d71ef",
     "1629451775c72cd56a",
-    "16294611499d6cacbd",
     "1655815044371278e6",
+    "16294611499d6cacbd",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
     "1629709567bc66549f",
