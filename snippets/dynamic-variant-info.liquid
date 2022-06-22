@@ -30,7 +30,10 @@
 .seasonal_type_info{
   padding: 10px !important;
 }
-
+.seasonalInfo_graphWrapper{
+  display: flex;
+  justify-content: center;
+}
 {% endstyle %}
   {% for variant in product.variants %}
     {% if variant.metafields.bgd.cover-type %}
