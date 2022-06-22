@@ -76,7 +76,7 @@
       "settings": {
         "bg-color": "",
         "margin-top": "-50px",
-        "margin-top-mobile": "inehrit",
+        "margin-top-mobile": "inherit",
         "bg-color-icons": "",
         "icons-size": "40px",
         "icons-color": "#fac636",
