@@ -49,7 +49,7 @@
     
   </div>
   
-  <div class="icons-container-mobile">
+  <!--<div class="icons-container-mobile">
     <div class="Container--standard--medium glider-delivery">
       <div class="icons-del-wr">
         <span class="icon-days"></span>
@@ -77,13 +77,60 @@
 
     </div>
     <div role="tablist" class="dots-delivery"></div>
+  </div>-->
+  
+  <!--test-->
+  <div class="icons-container-mobile">
+    <div class="Container--standard--medium owl-carousel owl-carousel-glider-delivery owl-theme">
+      <div class="icons-del-wr item">
+        <span class="icon-days"></span>
+        <p style="font-weight: bold; margin-bottom: 0;">28 Tage Probeschlafen</p>
+        <p style="color: #f8f8f8;">Ausreichend Zeit zum Testen, um das passende Modell und Gewicht Ihrer Therapiedecke zu finden.</p>
+      </div>
+      <div class="icons-del-wr item">
+        <span class="icon-invoice"></span>
+        <p style="font-weight: bold; margin-bottom: 0;">Rechnung & Ratenzahlung</p>
+        <p style="color: #f8f8f8;">Bequeme Zahlungsmöglichkeiten, mit denen Sie bestellen, testen und erst später bezahlen können.</p>
+      </div>
+      {% if product.type contains "Kinder" %}  
+      <div class="icons-del-wr item">
+        <span class="icon-one-wachstumsgarantie"></span>
+        <p style="font-weight: bold; margin-bottom: 0;">1 Jahr Wachstumgsgarantie</p>
+      <p style="color: #f8f8f8;">Flexibilität auch für schnell wachsende Kinder! Für weitere Infos klicken Sie <a href="https://therapiedecken.de/pages/1-jahr-wachstums-garantie"><u>hier</u></a>.</p>
+      </div>
+      {% else %}
+      <div class="icons-del-wr item">
+        <span class="icon-EU1"></span>
+        <p style="font-weight: bold; margin-bottom: 0;">Hergestellt in Europa</p>
+        <p style="color: #f8f8f8;">Dank europäischer Produktion und kurzen Lieferwegen nachhaltig und mit gutem Gewissen einkaufen.</p>
+      </div>     
+      {% endif %}
+
+    </div>
   </div>
+  <!--test-->
       
 </div>
 
 <script>
 
-window.addEventListener('load', function(){
+  $('.owl-carousel-glider-delivery').owlCarousel({
+    loop:true,
+    dots:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+  
+/*window.addEventListener('load', function(){
   
   new Glider(document.querySelector('.glider-delivery'), {
   	slidesToShow: 2,
@@ -92,7 +139,7 @@ window.addEventListener('load', function(){
  
   });
   
-});
+});*/
     
 </script>
 
