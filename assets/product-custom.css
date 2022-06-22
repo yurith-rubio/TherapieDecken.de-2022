@@ -524,8 +524,9 @@ header.html-text-wr{
   flex-direction: column;
   color: #f8f8f8;
   align-items: center;
-  padding: 0 25px;
+  padding: 0 10px;
   text-align: center;
+  flex-basis: 32%;
 }
 .icons-del-wr > span {
   font-size: 40px;
