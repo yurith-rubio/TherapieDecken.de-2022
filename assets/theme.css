@@ -12116,3 +12116,14 @@ a.entspannung-topseller-link:hover {
 #sellify-ucd-cart-drawer, #sellify-ucd-cart-drawer > div {
     transform-style: unset !important;
 }
+
+/* judge me review - Grishma 13-06*/
+.jdgm-widget .jdgm-rev__icon{
+	background: #fac6371c;
+}
+@media only screen and (min-width: 641px){
+	.jdgm-widget .jdgm-rev__content{
+      margin-left: 57px;
+  }
+}
+/* end judge me review - Grishma 13-06*/

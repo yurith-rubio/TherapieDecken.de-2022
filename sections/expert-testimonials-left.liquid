@@ -1,0 +1,210 @@
+<!-- section: experts-testimonials-left.liquid -->
+
+{% style %}
+.expert-testimonial-container{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 80px 0;
+}
+.expert-testimonial-container .owl-dots{
+	margin-top: 30px;
+}
+.expert-testimonial-container .owl-dots button{
+	width: 15px;
+    height: 15px;
+    background: #d6d6d6;
+	border-radius: 50px;
+	margin: 0 8px;
+}
+.expert-testimonial-container .owl-dots button.active{
+	background: #fac636;
+}
+.tmex_wr_hp{
+	padding-top: 20px;
+}
+.tmex_wr_quote {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+}
+.tmex_pic_wr {
+    position: relative;
+	z-index: 1;
+	width: 200px;
+    height: 200px;
+}
+.tmex_text_wr {
+    padding-left: 25px;
+    text-align: left;
+}
+.tmex_left_quote{
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+.tmex_citation > p {
+  	overflow: hidden;
+}
+.tmex_citation > p {
+    margin: 0px;
+    overflow: hidden;
+}
+@media(min-width: 641px) and (max-width: 768px){
+  .tmex_wr_quote{
+	padding: 0 30px;
+  }
+  .tmex_pic_wr{
+	margin: 0 auto;
+	width: 170px;
+	height: 170px;
+  }
+}
+@media only screen and (max-width: 640px){
+  .tmex_wr_hp{
+	padding-top: 0;
+  }
+  .expert-testimonial-container h2{
+	padding: 0 10px;
+  }
+  .tmex_wr_quote{
+	display: block;
+  }
+  .tmex_pic_wr{
+	margin: 0 auto;
+	width: 170px;
+	height: 170px;
+  }
+  .tmex_text_wr{
+	padding: 15px 70px 0;
+  }
+  .expert-testimonial-container .owl-dots{
+	margin-top: 0;
+  }
+}
+{% endstyle %}
+
+
+<div class="full-bg-color-prestige" style="{% if section.settings.bg-color != blank %}background-color: {{ section.settings.bg-color }};{% endif %}">
+  <div class="expert-testimonial-container centered section-space-medium">
+  	<h2 style="margin-bottom: 40px;" class="Heading u-h1">{{ section.settings.header }}</h2>
+  
+  	<div class="tmex_wr_hp">
+      <div class="owl-carousel">
+      {% for block in section.blocks %}
+      	<div class="tmex_wr_quote_item item">
+          <a href="{{ block.settings.link}}">
+            <div class="tmex_wr_quote">
+              <div class="tmex_pic_wr">
+                <img
+                  style="border-radius: 50%"
+                  class="tmex_img Image--lazyLoad"
+                  data-src="{{ block.settings.tmex_picture | img_url:'master' }}"
+                  src="{{ block.settings.tmex_picture | img_url:'master' }}"
+                  alt=""
+                />
+              </div>
+              <div class="tmex_text_wr">
+                <div style="font-weight: bold; margin-bottom: 0px" class="gral_font_16px tmex_name">
+                  {{ block.settings.tmex_name }}
+                </div>
+                {% if block.settings.tmex_role != blank %}
+                <div style="font-weight: normal; height: 50px" class="gral_font_16px tmex_name">
+                  {{ block.settings.tmex_role }}
+                </div>
+                {% endif %}
+                <div class="tmex_left_quote">
+                  <span class="gral_icon21_yellow gral_font_20px icon-left-quote"></span>
+                </div>
+                <div class="tmex_citation">
+                  {{ block.settings.tmex_paragraph }}
+                </div>
+                <div style="text-align:right;">
+                  <span class="gral_icon21_yellow gral_font_20px icon-right-quote"></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$('.tmex_wr_hp .owl-carousel').owlCarousel({
+    loop:true,
+    margin:120,
+    dots:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+</script>
+
+{% schema %}
+  {
+    "name": "Expert testimonials left",
+    "settings": [
+            {
+              "type": "color",
+              "id": "bg-color",
+              "label": "Background Color"					
+            },
+            {
+              "type": "text",
+              "id": "header",
+              "label": "Header Title"					
+            }
+				],
+	"blocks": [
+	  {
+            "type": "testimonial",
+            "name": "Expert testimonials left",
+            "settings": [
+                {
+				  "type": "url",
+                  "id": "link",
+                  "label": "Link"					
+                },
+                {
+                  "type": "image_picker",
+                  "label": "Picture",
+                  "id": "tmex_picture"						
+                },
+                {
+                  "type": "text",
+                  "id": "tmex_name",
+                  "label": "Name",
+                  "default": "Joe Doe"
+                },
+                {
+                  "type": "text",
+                  "id": "tmex_role",
+                  "label": "Role",
+                  "default": "Psychologin"
+                },
+                {
+                  "type": "richtext",
+                  "id": "tmex_paragraph",
+                  "label": "Citation 1",
+                  "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>"
+                }
+            ]
+        }
+	],
+	"presets": [
+				{
+                  "category": "Homepage Section",
+                  "name": "Expert testimonials left"
+                  }
+				]
+  }
+{% endschema %}

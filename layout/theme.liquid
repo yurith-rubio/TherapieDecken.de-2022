@@ -139,10 +139,15 @@
     {% render 'microdata-schema' %}
 
 
+    {% comment %}  Owl carousel library for adding sliders to the theme - Yurith {% endcomment %}
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all">
     
     <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
     {% comment %} ICOMOON link {% endcomment%}
+
     <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/163995/TDTW/style-cf.css?iq46su">
+
     {% comment %} Font added for bold on Headings {% endcomment%}
     <link rel="stylesheet" href="https://use.typekit.net/cmk7jcs.css">
     {{ 'countdown.js' | asset_url | script_tag }}

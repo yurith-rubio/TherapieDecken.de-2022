@@ -136,6 +136,116 @@
         "video_url": "https:\/\/player.vimeo.com\/video\/399192093"
       }
     },
+    "1654091167e0500dd2": {
+      "type": "expert-testimonials-left",
+      "blocks": {
+        "8a534fa2-a4e9-4479-a3be-a0c04b4cdba5": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/diana-zur-lowens-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/diana_zur_lowen.jpg",
+            "tmex_name": "Diana zur Löwen",
+            "tmex_role": "Unternehmerin & Influencerin",
+            "tmex_paragraph": "<p>Man fühlt sich einfach geborgen und wiein Schutz genommen.  Das hilft mir besonderes, wenn ich wieder sehr nachdenklich und unruhig bin...<\/p>"
+          }
+        },
+        "f365e846-0e28-419d-a6f1-f413a24ad574": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/markus-rupperts-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/markus_ruppert.jpg",
+            "tmex_name": "Markus Ruppert",
+            "tmex_role": "Heilpraktiker & Traumatherapeut",
+            "tmex_paragraph": "<p>Für mich ist die Decke weder privat noch in meiner Arbeit wegzudenken. Es ist ein wichtiges Werkzeug und eine  wertvolle Ressource.<\/p>"
+          }
+        },
+        "1f4ac89c-e1cf-4f66-897f-c303c9d37e09": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/caroline-helmings-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/caroline_helming.jpg",
+            "tmex_name": "Caroline Helming",
+            "tmex_role": "Ergotherapeutin & Schlafberaterin",
+            "tmex_paragraph": "<p>Ich bin ein großer Fan des Konzepts. Ob privat oder beruflich, ich kann sie uneingeschränkt weiterempfehlen.<\/p>"
+          }
+        },
+        "c0450054-62e0-4aa1-a5a3-77770ed2434e": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/dinah-bergers-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/dinah_berger.jpg",
+            "tmex_name": "Dinah Berger",
+            "tmex_role": "Psychologin",
+            "tmex_paragraph": "<p>Während Ängste gemildert werden, führt der Tiefendruck zu einem Gefühl von Sicherheit, das gerade bei Menschen mit Traumata oft fehlt.<\/p>"
+          }
+        },
+        "6c7301e8-9edc-4174-92cd-57ed5932e441": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/michaela-gross-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/Michaela_Gross_10_1_4.jpg",
+            "tmex_name": "Michaela Gross",
+            "tmex_role": "Heilpraktikerin für Psychotherapie",
+            "tmex_paragraph": "<p>Als Traumatherapeutin empfehle ich die Decken bei Schlaf-\/Angst- und Panikstörungen. Es hilft, dass sich die Patienten wieder spüren können.<\/p>"
+          }
+        },
+        "350251f4-17bf-412a-96a1-7cb3c0e48775": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/dr-sabine-hoffmanns-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/phsycologist-therapiedecken-img1.jpg",
+            "tmex_name": "Dr. Sabine Hoffmann",
+            "tmex_role": "Leitende Psychologin",
+            "tmex_paragraph": "<p>Diese Decken können ein spontanes Gefühl von Ruhe, kurz gesagt „alles ist gut” auf der körperlichen und damit auch psychischen Ebene auslösen.<\/p>"
+          }
+        },
+        "3c6c1a48-095b-47c6-b67a-d3bae0356db2": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/katharina-meier-batrakows-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/tm21_pic.jpg",
+            "tmex_name": "Katharina Meier-Batrakow",
+            "tmex_role": "Psychologin für Kinder- und Jugendliche",
+            "tmex_paragraph": "<p>Jemanden zu umarmen, um Trost zu spenden, ein Kind zu halten, um es zu beruhigen – all das sind altbewährte Methoden zur Stressreduktion.<\/p>"
+          }
+        },
+        "cf4c09cd-5dfe-4b9d-bf1b-71a2999bae67": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/carolin-weigands-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/tm21_pic_4.jpg",
+            "tmex_name": "Carolin Weigand",
+            "tmex_role": "Sozialpädagogin & Erzieherin",
+            "tmex_paragraph": "<p>Oft wird mir berichtet, dass sich Schüler nur schwer konzentrieren können. Gerne empfehle ich dann die Therapiedecke um runterzufahren.<\/p>"
+          }
+        },
+        "8c2dd925-c355-4c3f-9d56-688120fb9f4d": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/christine-tuchlers-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/Tuchler_stehend_1_1.jpg",
+            "tmex_name": "Christine Tuchler",
+            "tmex_role": "Psychotherapeutin für Kinder & Jugendliche",
+            "tmex_paragraph": "<p>Es ist einfach schön mit anzusehen wie nach kurzer Zeit die motorische Unruhe des Patienten zurückgeht.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8a534fa2-a4e9-4479-a3be-a0c04b4cdba5",
+        "f365e846-0e28-419d-a6f1-f413a24ad574",
+        "1f4ac89c-e1cf-4f66-897f-c303c9d37e09",
+        "c0450054-62e0-4aa1-a5a3-77770ed2434e",
+        "6c7301e8-9edc-4174-92cd-57ed5932e441",
+        "350251f4-17bf-412a-96a1-7cb3c0e48775",
+        "3c6c1a48-095b-47c6-b67a-d3bae0356db2",
+        "cf4c09cd-5dfe-4b9d-bf1b-71a2999bae67",
+        "8c2dd925-c355-4c3f-9d56-688120fb9f4d"
+      ],
+      "settings": {
+        "bg-color": "",
+        "header": "Was Experten über die Wirkung von Therapiedecken sagen"
+      }
+    },
     "16294611499d6cacbd": {
       "type": "advantages-overview",
       "blocks": {
@@ -270,13 +380,14 @@
       ],
       "settings": {
         "subheading": "",
-        "title": "Wirkung der Balance Therapiedecke",
+        "title": "Wirkung der Therapiedecke",
         "button_label": "",
         "button_link": ""
       }
     },
     "1629709567bc66549f": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
@@ -289,7 +400,7 @@
         "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/Therapiedecken-Aufbau-Balance-gray3_1c68380f-cdec-4b3e-ae02-f73508b520ed.jpg",
         "image_position": "right",
-        "content_html": "<style>\nli{\nlist-style: none;\n}\nli > span {\nposition: relative;\nleft: -24px;\nmargin-right: -20px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(2) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(3) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(4) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\n<\/style>\n\n\n<ol>\n<li>\n<span class=\"icon-one\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester\n<\/li>\n<li>\n<span class=\"icon-two\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nBalance Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.\n       <\/li>\n<li>\n<span class=\"icon-three\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nDie Füllung besteht aus 32% Polyester und 68% Baumwolle.<\/li>\n<li>\n<span class=\"icon-four\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nDie Gewichtsdecke wird mit rostfreien Edelstahlkügelchen beschwert, die sicher und ohne zu verrutschen im Inneren fixiert werden.<\/li>\n<\/ol>",
+        "content_html": "<style>\n   .OwlScript_li{\n   list-style: none;\n   }\n   .OwlScript_li > span {\n   position: relative;\n   left: -30px;\n   margin-right: -20px;\n   top: 6px;\n   font-size: 20px;\n   }\n   .OwlScript_li > span.icon-one{\n   margin-right: -30px;\n   }\n   .OwlScript_li .icon-one .path2:before{\n   margin-left: -30px;\n   }\n   .OwlScript_li:nth-child(2) > span {\n   position: relative;\n   left: -30px;\n   margin-right: -24px;\n   top: 6px;\n   font-size: 20px;\n   }\n   .OwlScript_li:nth-child(3) > span {\n   position: relative;\n   left: -30px;\n   margin-right: -24px;\n   top: 6px;\n   font-size: 20px;\n   }\n   .OwlScript_li:nth-child(4) > span {\n   position: relative;\n   left: -30px;\n   margin-right: -24px;\n   top: 6px;\n   font-size: 20px;\n   }\n   .mobile-ol{\n   display: none;\n   max-width: 350px;\n   margin: auto;\n   }\n   .mobile-ol .item > span{\n   font-size: 35px;\n   display: block;\n   padding: 5px 0 10px;\n   }\n   .mobile-ol .owl-dots button{\n   width: 15px;\n   height: 15px;\n   background: #d6d6d6;\n   border-radius: 50px;\n   margin: 0 8px;\n   }\n   .mobile-ol .owl-dots button.active{\n   background: #fac636;\n   }\n   @media only screen and (max-width: 640px){\n   .mobile-ol{\n   display: block;\n   }\n   .desktop-ol{\n   display: none;\n   }\n   }\n<\/style>\n<div class=\"desktop-ol\">\n   <ol>\n      <li class=\"OwlScript_li\">\n         <span class=\"icon-one\">\n         <span class=\"path1\"><\/span>\n         <span class=\"path2\"><\/span>\n         <\/span>\n         Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester\n      <\/li>\n      <li class=\"OwlScript_li\">\n         <span class=\"icon-two\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\n         Balance Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.\n      <\/li>\n      <li class=\"OwlScript_li\">\n         <span class=\"icon-three\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\n         Die Füllung besteht aus 32% Polyester und 68% Baumwolle.\n      <\/li>\n      <li class=\"OwlScript_li\">\n         <span class=\"icon-four\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\n         Die Gewichtsdecke wird mit rostfreien Edelstahlkügelchen beschwert, die sicher und ohne zu verrutschen im Inneren fixiert werden.\n      <\/li>\n   <\/ol>\n<\/div>\n<div class=\"mobile-ol\">\n   <div class=\"OwlCarousel_TextWithImage owl-carousel owl-theme\">\n      <div class=\"item\">\n         <span class=\"icon-one\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester\n      <\/div>\n      <div class=\"item\">\n         <span class=\"icon-two\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\n         Balance Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.\n      <\/div>\n      <div class=\"item\">\n         <span class=\"icon-three\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\n         Die Füllung besteht aus 32% Polyester und 68% Baumwolle.\n      <\/div>\n      <div class=\"item\">\n         <span class=\"icon-four\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\n         Die Gewichtsdecke wird mit rostfreien Edelstahlkügelchen beschwert, die sicher und ohne zu verrutschen im Inneren fixiert werden.\n      <\/div>\n   <\/div>\n<\/div>\n<script>\n   $('.OwlCarousel_TextWithImage').owlCarousel({\n    items:1,\n           loop:true,\n           margin:30,\n           nav:false,\n    dots:true\n   })\n<\/script>",
         "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
         "button_style": false,
         "link_text": "",
@@ -297,6 +408,31 @@
         "button_extra": false,
         "link_text_extra": "Mehr Erfahren",
         "link_url_extra": ""
+      }
+    },
+    "16552908985112b1b7": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "9c9f86fd-5f07-4c88-9074-e9dd5394c00b": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% render 'slide-info-material' %}"
+          }
+        }
+      },
+      "block_order": [
+        "9c9f86fd-5f07-4c88-9074-e9dd5394c00b"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "center",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/Therapiedecken-Aufbau-Balance-gray_7c62d97f-9c4b-4383-8f18-ed07a951d890.jpg",
+        "image_position": "right"
       }
     },
     "1629713540ecd6fa17": {
@@ -390,7 +526,7 @@
             "extra_block3": true,
             "subtitle_block3": "Wie unterscheiden sich die Gewichtsdecken Modelle?",
             "html_content_extra3": "Grundsätzlich erfüllen alle Gewichtsdecken den gleichen Zweck, nämlich einen Druck auf den Körper auszuüben. Alle unsere Balance Decken haben eine fest fixierte Füllung mit Edelstahlkügelchen. Gravity Decken und die Medizinischen Gewichtsdecken werden mit Glasperlen gefüllt, die sich innerhalb der Quadrate bewegen können.",
-            "richtext_content2": "<p>Bei weiteren Fragen besuchen Sie bitte unsere ausführliche <a href=\"https:\/\/therapiedecken.de\/apps\/help-center\">FAQ Seite<\/a>, schreiben uns eine E-Mail an <a href=\"mailto:kundenservice@therapiedecken.de\">kundenservice@therapiedecken.de<\/a> oder rufen uns an: <a href=\"tel:+498921093242\">+49 89-21 09 32 42<\/a>.<\/p>"
+            "richtext_content2": "<p>Bei weiteren Fragen besuchen Sie bitte unsere ausführliche <a href=\"https:\/\/therapiedecken.de\/pages\/faq\" title=\"FAQ Seite\">FAQ Seite<\/a>, schreiben uns eine E-Mail an <a href=\"mailto:kundenservice@therapiedecken.de\">kundenservice@therapiedecken.de<\/a> oder rufen uns an: <a href=\"tel:+498921093242\">+49 89-21 09 32 42<\/a>.<\/p>"
           }
         },
         "bec58932-c4aa-4ad3-bc3c-bf23b4e49297": {
@@ -455,10 +591,12 @@
     "1629459987d4cac0a9",
     "16291457001a7d71ef",
     "1629451775c72cd56a",
+    "1654091167e0500dd2",
     "16294611499d6cacbd",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
     "1629709567bc66549f",
+    "16552908985112b1b7",
     "1629713540ecd6fa17",
     "1629713705b12acbc0",
     "16293784209ff1ca2b",

@@ -1,3 +1,5 @@
+{{ 'html-with-image.css' | asset_url | stylesheet_tag }}
+
 <section class="Section {% unless section.settings.image %}Section--spacingNormal{% endunless %}">
   {%- capture section_content -%}
     <div class="FeatureText__ContentWrapper">
@@ -57,7 +59,7 @@
 
 {% schema %}
 {
-  "name": "Rich text with image",
+  "name": "Rich text image*",
   "class": "shopify-section--bordered",
   "settings": [
     {
