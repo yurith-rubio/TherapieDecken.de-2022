@@ -142,7 +142,7 @@
         "b33f486e-5969-4465-874c-863ee6df9ff3": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            "richtext": "<p>Die kühlenden Bezüge bestehen aus 100% Baumwolle. Baumwolle gilt als besonders angenehm auf der Haut und sorgt für angenehme Nächte im Sommer dank kühlendem Effekt.<\/p><p>Die weiche Seite des 4-Jahreszeiten Bezugs wärmt und sorgt für ein angenehmes und wohliges Gefühl für kuschelige und kalte Nächte im Winter.<\/p>"
           }
         }
       },
@@ -156,7 +156,7 @@
         "bg-color": "#5b5b5b",
         "bg-color-text-html": "",
         "text_align": "left",
-        "text_color": "#3A3C3C",
+        "text_color": "#ffffff",
         "image": "shopify:\/\/shop_images\/cooling-warming_image.jpg",
         "image_position": "left"
       }
