@@ -3,20 +3,20 @@
 {{ 'product-custom.css' | asset_url | stylesheet_tag}}
 {{ 'glider.min.css' | asset_url | stylesheet_tag}}
 
-{% style%}
-.full-bg-color-icons{
-  background-color: {{ section.settings.bg-color }};
-}
-@media only screen and (min-width: 641px){
-  .icons-container-mobile{
-	display:none !important;
+{% style %}
+  .full-bg-color-icons{
+    background-color: {{ section.settings.bg-color }};
   }
-}
-@media only screen and (max-width: 641px){
-  .icons-container-desktop{
-    display:none !important;
+  @media only screen and (min-width: 641px){
+    .icons-container-mobile{
+      display:none !important;
+    }
   }
-}
+  @media only screen and (max-width: 641px){
+    .icons-container-desktop{
+      display:none !important;
+    }
+  }
 {% endstyle %}
 
 
@@ -38,6 +38,12 @@
         <span class="icon-one-wachstumsgarantie"></span>
       <p style="font-weight: bold; margin-bottom: 0;">1 Jahr Wachstumgsgarantie</p>
       <p style="color: #f8f8f8;">Flexibilität auch für schnell wachsende Kinder! Für weitere Infos klicken Sie <a href="https://therapiedecken.de/pages/1-jahr-wachstums-garantie"><u>hier</u></a>.</p>
+    </div>
+   {% elsif product.template_suffix == "standard-gravity" %} 
+    <div class="icons-del-wr">
+      <span class="icon-cooling-blanket"></span>
+      <p style="font-weight: bold; margin-bottom: 0;">Atmungsaktive Bezüge</p>
+      <p style="color: #f8f8f8;">Die atmungsaktiven Bezüge bestehen aus 100% Baumwolle und sind daher besonders kühlend und angenehm bei heißen Sommernächten.</p>
     </div>
    {% else %}
     <div class="icons-del-wr">
@@ -67,6 +73,12 @@
         <p style="font-weight: bold; margin-bottom: 0;">1 Jahr Wachstumgsgarantie</p>
       <p style="color: #f8f8f8;">Flexibilität auch für schnell wachsende Kinder! Für weitere Infos klicken Sie <a href="https://therapiedecken.de/pages/1-jahr-wachstums-garantie"><u>hier</u></a>.</p>
       </div>
+      {% elsif product.template_suffix == "standard-gravity" %} 
+        <div class="icons-del-wr">
+          <span class="icon-cooling-blanket"></span>
+          <p style="font-weight: bold; margin-bottom: 0;">Atmungsaktive Bezüge</p>
+          <p style="color: #f8f8f8;">Die atmungsaktiven Bezüge bestehen aus 100% Baumwolle und sind daher besonders kühlend und angenehm bei heißen Sommernächten.</p>
+        </div>
       {% else %}
       <div class="icons-del-wr">
         <span class="icon-EU1"></span>

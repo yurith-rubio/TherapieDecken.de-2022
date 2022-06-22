@@ -211,14 +211,6 @@ ul.zahlungsarten-auflistung {
     padding-left: 9px;
     padding-top: 9px;
 }
-/* center ul content Grishma-13.06*/
-@media (max-width: 640px){
-	ul.zahlungsarten-auflistung {
-    margin: 0;
-    padding: 10px 10px 10px 15px;
-	}
-}
-/* end center ul content Grishma-13.06*/
 .versand-icon {
     font-size: 15px;
     box-sizing: inherit;
@@ -276,7 +268,7 @@ ul.zahlungsarten-auflistung {
 
 .deckengewicht-tg .tg-c6of {
     background-color: #ffffff;
-    border-color: #ccc;
+    border-color: inherit;
     text-align: left;
     vertical-align: middle;
     text-transform: none !important;
@@ -532,8 +524,9 @@ header.html-text-wr{
   flex-direction: column;
   color: #f8f8f8;
   align-items: center;
-  padding: 0 25px;
+  padding: 0 10px;
   text-align: center;
+  flex-basis: 32%;
 }
 .icons-del-wr > span {
   font-size: 40px;
