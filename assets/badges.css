@@ -66,9 +66,9 @@
 /* Badges on Product Pages */
 .ProductBadge_Wrapper{
     position: absolute;
-    top: 5%;
+    top: 3%;
     z-index: 1;
-    right: 7%;
+    right: 5%;
     display: inline-flex;
     justify-content: flex-end;
     align-items: center;
@@ -77,15 +77,15 @@
   position: relative;
   display: flex;
   align-items: center;
-  left: 35px;
+  left: 30px;
   background: #EE5183;
   z-index: 1;
   padding: 0 23px 0 18px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   text-transform: capitalize;
-  height: 30px;
+  height: 25px;
   color: white;
 }
 .Prod_ImgSmallBadge {
@@ -118,6 +118,6 @@
 
 @media only screen and (max-width: 640px){
   .Prod_ImgSmallBadge {
-    width: 110px;
+    width: 90px;
   }
 }
