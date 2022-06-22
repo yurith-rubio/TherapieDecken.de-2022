@@ -2162,6 +2162,23 @@ body:not(.is-tabbing) .flickity-enabled:focus {
     left: auto;
   }
 }
+
+/**
+ * ----------------------------------------------------------------------------------------------
+ * Default styling for owl-carousel
+ * ----------------------------------------------------------------------------------------------
+ */
+.owl-dots button.active{
+	background: #fac636;
+}
+.owl-dots button{
+	width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 7px;
+}
+
 /**
  * ----------------------------------------------------------------------------
  * Collapsible
