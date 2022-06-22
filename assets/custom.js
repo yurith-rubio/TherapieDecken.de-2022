@@ -57,13 +57,30 @@ $(document).ready(function () {
     return mainProduct.price;
   }
   
-  function updateProductBadges(variantId, opt) {
-    $("div.info-wr").addClass("info-wr-hidden");                           	                  
+  function hideOption(selector, selectedVariant) {
+    const infoMetafield = document.querySelectorAll("." + selector);
+    const selectedInfoMetafield = document.getElementById(selector + "_" + selectedVariant);
+    console.log("selectedInfoMetafield");
+    console.log(selectedInfoMetafield);
+    if (!infoMetafield || !selectedInfoMetafield) return;
+
+    infoMetafield.forEach(function(info){
+      info.classList.add("hide");
+    });
+    selectedInfoMetafield.classList.remove("hide");
+  }
+
+  document.addEventListener("variant:changed", function(event) { // (1)  
+    ["weight_info", "cover_type_info"].forEach(info => hideOption(info, event.detail.variant.id));
+    console.log("variant changed");
+
+  });
+  
+  function updateProductBadges(variantId, opt) {                        	                  
    	$("div.is-limited-badge").addClass("is-limited-badge-hidden");
    	$("div.on-sale-badge").addClass("on-sale-badge-hidden");
     $("div.twtd-shipping-time").addClass("twtd-shipping-time-hidden");
 
-    $("[data-variant-id=" + variantId + "]").removeClass("info-wr-hidden");
     $("[data-variant-id=" + variantId + "]").removeClass("twtd-shipping-time-hidden");
 
     $("div.is-limited-badge[data-variant-option1='" + opt.option1 + "'][data-variant-option2='" + opt.option2 + "']").removeClass("is-limited-badge-hidden");
@@ -74,8 +91,8 @@ $(document).ready(function () {
   
   function updateAdditionalProductBadges() {
     const variantId = getSelectedAdditionalVariantId();
-    $("div.additional-info-wr").addClass("additional-info-wr-hidden");
-    $("[data-variant-id=" + variantId + "]").removeClass("additional-info-wr-hidden");
+    $("div.additional-info-wr").addClass("hide");
+    $("[data-variant-id=" + variantId + "]").removeClass("hide");
   }
    
   function updateBadges(variantId, isAdditional) {

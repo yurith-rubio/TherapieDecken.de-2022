@@ -1,0 +1,99 @@
+{%- comment -%} Product Info for Variants - bgd.cover-type Metafield - Yurith {%- endcomment -%}
+{% if dynamic_info_type == 'weight_info' %}
+  {% if option.name == 'Gewicht' or option.name == 'Deckengewicht' %}
+    {% for variant in product.variants %}
+      {% if variant.metafields.bgd.weight %}
+        {% assign weight_class = "weight_info hide" %}
+        {% if variant.id == product.selected_or_first_available_variant.id %}
+          {% assign weight_class = "weight_info" %}
+        {% endif %}
+        <div id="weight_info_{{variant.id}}" class="{{ weight_class }}">
+          {{ variant.metafields.bgd.weight }}
+        </div>
+      {% endif%}
+    {% endfor %}
+  {% endif%}
+{% endif %}
+
+{%- comment -%} Cover type dynamic variant's info - metafields.bgd.cover-type - Yurith {%- endcomment -%}
+{% if dynamic_info_type == 'cover_type_info' %}
+{% style %}
+.seasonalInfo_mainWrapper{
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.seasonalInfo_temperatureIcon{
+  width:60px;
+  padding-right: 10px;
+}
+.seasonal_type_info{
+  padding: 10px !important;
+}
+.seasonalInfo_graphWrapper{
+  display: flex;
+  justify-content: center;
+}
+{% endstyle %}
+  {% for variant in product.variants %}
+    {% if variant.metafields.bgd.cover-type %}
+      {% assign cover_type_class = "cover_type_info hide" %}
+      {% if variant.id == product.selected_or_first_available_variant.id %}
+        {% assign cover_type_class = "cover_type_info" %}
+      {% endif %}
+        <div id="cover_type_info_{{variant.id}}" 
+             class="{{ cover_type_class }} 
+                    {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}seasonal_type_info{% endif%}
+                    ">
+          {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
+              {{ variant.metafields.td_field.seasonal_variant_dynamic_info }}
+          
+          {% comment %}
+          <div class="seasonalInfo_mainWrapper">
+            <img class="seasonalInfo_temperatureIcon" alt="warm and cold weather icon" src="https://cdn.shopify.com/s/files/1/2451/6611/files/warm_and_cold_weather_icon.svg?v=1655883238">
+            <div class="seasonalInfo_infoWrapper">               
+              <span class="icon-information-outline"></span>
+              Für jede Jahreszeit geeignet. Hochwertiger, atmungsaktiver und kuscheliger Stoff aus Baumwolle und Minky/Samt Velours.
+            </div>           	
+          </div>           	
+          <div class="seasonalInfo_graphWrapper"> 
+            <img class="Image--lazyLoad" 
+                 src="https://cdn.shopify.com/s/files/1/2451/6611/files/both_graphic.svg?v=1655883238"> 
+          </div>
+          
+          <div class="seasonalInfo_mainWrapper">
+            <img class="seasonalInfo_temperatureIcon" alt="warm weather icon" src="https://cdn.shopify.com/s/files/1/2451/6611/files/warm_weather_icon.svg?v=1655883238">
+            <div class="seasonalInfo_infoWrapper">               
+              <span class="icon-information-outline"></span>
+              Für warme Sommernächte und Menschen, die schnell schwitzen. Vorderseite 100% Baumwolle, Rückseite aus Samt.
+            </div>           	
+          </div>           	
+          <div class="seasonalInfo_graphWrapper"> 
+            <img class="Image--lazyLoad" 
+                 src="https://cdn.shopify.com/s/files/1/2451/6611/files/cooling_graphic.svg?v=1655883238"> 
+          </div>
+
+          {% endcomment %}
+          
+          {% else %}
+            {{ variant.metafields.bgd.cover-type }}
+          {% endif%}
+        </div>
+    {% endif%}
+  {% endfor %}
+{% endif %}
+
+{%- comment -%} Additional cover type dynamic variant's info - metafields.bgd.cover-type - Yurith {%- endcomment -%}
+{% if dynamic_info_type == 'additional_cover_type_info' %}
+    {% for variant in additional_product.variants %}
+      {% if variant.metafields.bgd.cover-type %}
+        {% assign design_class = "additional-info-wr hide" %}
+        {% if variant.id == additional_product.selected_or_first_available_variant.id %}
+        	{% assign design_class = "additional-info-wr" %}
+        {% endif %}
+        <div data-variant-id="{{variant.id}}" class="{{ design_class }}">
+          {{ variant.metafields.bgd.cover-type }}
+        </div>
+      {% endif%}
+    {% endfor %}
+{% endif %}

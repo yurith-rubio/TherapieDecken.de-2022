@@ -75,7 +75,7 @@
             <span class="u-visually-hidden">{{ value }}</span>
           </label>
            
-          {% if option.name == "Bezugssystem" %}
+		  {% if option.name == "Bezugssystem" %}
             <p class="VariantValue--style">
               {% assign simple_value = value %}
               {% assign name_variant = simple_value %}            
@@ -89,13 +89,16 @@
            	</p>
            {% endif %}
 
-          {% comment %} Is Limited Badge - bgd.is_limited Metafield {% endcomment %}  
+		  {% comment %} Is Limited Badge - bgd.is_limited Metafield {% endcomment %}  
           {% for variant in product.variants %}
               {% if variant.option3 == value %}
-                  {% assign isLimited = variant.metafields.bgd.is_limited %}
-                  {% if isLimited == "true" %}
+                  {% if variant.metafields.bgd.is_limited %}
+           			{% assign is_limited = "is-limited-badge hide" %}
+                    {% if variant.id == product.selected_or_first_available_variant.id %}
+                      {% assign is_limited = "is-limited-badge" %}
+                  	{% endif %}
                        <div
-                       class="is-limited-badge"
+                       class={{ is_limited }}
                        data-variant-id="{{ variant.id }}"
                        data-variant-option1="{{ variant.option1 }}"
                        data-variant-option2="{{ variant.option2 }}"
@@ -124,7 +127,7 @@
                  {% endif %}
               {% endif%}
           {% endfor %}
-        
+
       </li>
       {%- endfor -%}
 
@@ -132,22 +135,11 @@
         
     </ul>
 
-    {%- comment -%} Product Info for Variants - bgd.cover-type Metafield - Yurith {%- endcomment -%}
-    {% for variant in product.variants %}
-      {% if variant.metafields.bgd.cover-type %}
-        {% assign design_class = "info-wr info-wr-hidden" %}
-        {% if variant.id == product.selected_or_first_available_variant.id %}
-        	{% assign design_class = "info-wr" %}
-        {% endif %}
-        <div data-variant-id="{{variant.id}}" class="{{ design_class }}">
-          {{ variant.metafields.bgd.cover-type }}
-        </div>
-      {% endif%}
-    {% endfor %}
+    {% render 'dynamic-variant-info', dynamic_info_type: 'cover_type_info' %}
     
     {%- elsif block.settings.selector_mode == 'block' -%}
     <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight
-               {% if option.name == 'Druck'%} Druck_SizeSwatchList{% endif%}">
+      {% if option.name == 'Druck'%} Druck_SizeSwatchList{% endif%}">
       {%- for value in option.values -%}
       <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' or option.name == 'Deckengewicht' %} gewicht_option {% endif %}
                  {% if value == 'Komplettdruck' or value == 'Kopfdruck' or value == 'Standard Druck' or value == 'Cartoon Druck' %} Druck_HorizontalList__Item{% endif%}">
@@ -169,20 +161,7 @@
       {%- endfor -%}
     </ul>
 
-      {% comment %} Product Info for Variants - bgd.weight Metafield - Yurith{% endcomment %}
-      {% if option.name == 'Gewicht' or option.name == 'Deckengewicht' %}
-        {% for variant in product.variants %}
-          {% if variant.metafields.bgd.weight %}
-            {% assign weight_class = "info-wr info-wr-hidden" %}
-            {% if variant.id == product.selected_or_first_available_variant.id %}
-                {% assign weight_class = "info-wr" %}
-            {% endif %}
-            <div data-variant-id="{{variant.id}}" class="{{ weight_class }}">
-              {{ variant.metafields.bgd.weight }}
-            </div>
-          {% endif%}
-        {% endfor %}
-      {% endif%}
+    {% render 'dynamic-variant-info', dynamic_info_type: 'weight_info', option: option %}
     
     {%- else -%}
     <button type="button" class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">

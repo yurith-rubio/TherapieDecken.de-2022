@@ -1,22 +1,22 @@
 /* Product Info Metafields - bgd.weight & bdg.cover-type Metafields */
 
-.info-wr, .balance-info-wr, .gravity-info-wr, .additional-info-wr{
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    align-items: center;
-    margin: 10px 0;
-    align-items: baseline;
-    padding-left: 30px;
-    width: fit-content;
-    inline-size: fit-content;
-    background: #f1f1f1;
-    font-size: 11px;
+.weight_info, .cover_type_info, .balance-info-wr, .gravity-info-wr, .additional-info-wr{
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  margin: 10px 0;
+  align-items: baseline;
+  padding-left: 30px;
+  width: fit-content;
+  inline-size: fit-content;
+  background: #f1f1f1;
+  font-size: 11px;
 }
-.info-wr-hidden, .additional-info-wr-hidden {
+.hide {
   display: none;
 }
-.info-wr > span, .additinal-info-wr > span{
+.weight_info > span, .cover_type_info > span, .additinal-info-wr > span{
   color: #6c6c6c;
   padding-right: 5px;
   position: relative;
@@ -43,9 +43,6 @@
 
 /* Limited Badge - bgd.is_limited Metafield - Yurith */
 
-.is-limited-badge-hidden {
-  display: none;
-}
 .is-limited-badge {
   color: #fff;
   background: #BA2E2E; 
