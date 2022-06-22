@@ -48,7 +48,6 @@
           {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
               {{ variant.metafields.td_field.seasonal_variant_dynamic_info }}
           
-          {% comment %}
           <div class="seasonalInfo_mainWrapper">
             <img class="seasonalInfo_temperatureIcon" alt="warm and cold weather icon" src="https://cdn.shopify.com/s/files/1/2451/6611/files/warm_and_cold_weather_icon.svg?v=1655883238">
             <div class="seasonalInfo_infoWrapper">               
@@ -73,7 +72,6 @@
                  src="https://cdn.shopify.com/s/files/1/2451/6611/files/cooling_graphic.svg?v=1655883238"> 
           </div>
 
-          {% endcomment %}
           
           {% else %}
             {{ variant.metafields.bgd.cover-type }}
