@@ -2168,13 +2168,16 @@ body:not(.is-tabbing) .flickity-enabled:focus {
  * Default styling for owl-carousel
  * ----------------------------------------------------------------------------------------------
  */
+.owl-dots{
+	text-align:center;
+}
 .owl-dots button.active{
 	background: #fac636;
 }
 .owl-dots button{
 	width: 12px;
     height: 12px;
-    background: #ccc;
+    background: #d6d6d6;
     border-radius: 50px;
     margin: 0 7px;
 }
