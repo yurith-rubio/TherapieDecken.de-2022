@@ -80,11 +80,12 @@
 		{% endcase %}
       {% endfor %}
     </div>
-
+    
+    <!--test-->
     {% if section.settings.mobile-style-glider %}
-      <div class="Container--standard--medium icons-container-mobile glider-delivery">
+      <div class="Container--standard--medium icons-container-mobile owl-carousel owl-theme owl-carousel-glider-delivery">
         {% for block in section.blocks %}
-        <div class="icons-del-wr">
+        <div class="icons-del-wr item">
           <span class="IconsCustom__IconsWrapper" style="font-size:{{ section.settings.icons-size }}; color: {{ section.settings.icons-color }};">{% render 'icons_monotone' | block:block, settings: settings %}</span>
           {% if block.settings.title_icon != blank %}<p style="font-weight: bold; margin-bottom: 0;">{{ block.settings.title_icon }}</p>{% endif %}
           {% if block.settings.content_icon != blank %}{{ block.settings.content_icon }}{% endif %}
@@ -92,6 +93,8 @@
         {% endfor %}
       </div>
     {% else %}
+    <!--test-->
+    
       <div class="Container--standard--medium icons-container-mobile">
         {% for block in section.blocks %}
         <div class="icons-del-wr">
@@ -110,13 +113,30 @@
 </div>
 
 <script>
-window.addEventListener('load', function(){
+  
+  $('.owl-carousel-glider-delivery').owlCarousel({
+    loop:true,
+    dots:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
+/*window.addEventListener('load', function(){
   new Glider(document.querySelector('.glider-delivery'), {
   	slidesToShow: 2,
   	dots: '.dots-delivery',
   	draggable: true
   });
-});
+});*/
 </script>
 
 {% schema %}
