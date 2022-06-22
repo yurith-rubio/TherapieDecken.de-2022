@@ -23,13 +23,14 @@
   align-items: center;
   padding-bottom: 5px;
 }
-.both_temperatures, .cold_temperatures, .hot_temperatures{
-  font-size:60px;
+.seasonalInfo_temperatureIcon{
+  width:60px;
   padding-right: 10px;
 }
 .seasonal_type_info{
   padding: 10px !important;
 }
+
 {% endstyle %}
   {% for variant in product.variants %}
     {% if variant.metafields.bgd.cover-type %}
