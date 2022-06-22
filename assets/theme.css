@@ -7735,7 +7735,8 @@ a.CollectionItemPage {
 }
 
 .FeatureText .SectionHeader__Description {
-  margin: 25px;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 
