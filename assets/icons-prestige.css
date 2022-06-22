@@ -41,6 +41,7 @@
   .prestige-img{
     max-height: 50px;
     max-width: 100px;
+    width: inherit !important;
   }
   .icons-prestige-single{
     padding: 0 15px;
