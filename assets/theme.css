@@ -2171,10 +2171,10 @@ body:not(.is-tabbing) .flickity-enabled:focus {
 .owl-dots{
 	text-align:center;
 }
-.owl-dots .owl-dot.active{
+.owl-carousel button.owl-dot.active{
 	background: #fac636;
 }
-.owl-dots .owl-dot{
+.owl-carousel button.owl-dot{
 	width: 12px;
     height: 12px;
     background: #ccc;
