@@ -82,20 +82,7 @@ for size, we use it to display a size chart (if applicable)
       {%- endfor -%}
     </ul>
 
-    {% comment %} Product Info for Variants - bgd.weight Metafield - Yurith{% endcomment %}
-    {% if option.name == 'Gewicht' %}
-      {% for variant in product.variants %}
-        {% if variant.metafields.bgd.weight %}
-          {% assign weight_class = "info-wr info-wr-hidden" %}
-          {% if variant.id == product.selected_or_first_available_variant.id %}
-	          {% assign weight_class = "info-wr" %}
-          {% endif %}
-          <div data-variant-id="{{variant.id}}" class="{{ weight_class }}">
-            {{ variant.metafields.bgd.weight }}
-          </div>
-        {% endif%}
-      {% endfor %}
-    {% endif%}
+    {% render 'dynamic-variant-info', dynamic_info_type: 'weight_info', option: option %}
 
     {%- else -%}
     <button type="button" class="ProductForm__Item" aria-expanded="false" aria-controls="{{ popover_id }}">
