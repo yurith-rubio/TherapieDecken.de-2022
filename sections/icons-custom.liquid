@@ -92,9 +92,9 @@
     {% else %}
     <!--test-->
     
-      <div class="Container--standard--medium icons-container-mobile">
+      <div class="Container--standard--medium icons-container-mobile owl-carousel owl-theme owl-carousel-glider-delivery">
         {% for block in section.blocks %}
-        <div class="icons-del-wr">
+        <div class="icons-del-wr item">
           <span class="IconsCustom__IconsWrapper" style="font-size:{{ section.settings.icons-size }}; color: {{ section.settings.icons-color }};">{% render 'icons_monotone' | block:block, settings: settings %}</span>
           {% if block.settings.title_icon != blank %}<p style="font-weight: bold; margin-bottom: 0;">{{ block.settings.title_icon }}</p>{% endif %}
           {% if block.settings.content_icon != blank %}{{ block.settings.content_icon }}{% endif %}
