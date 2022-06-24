@@ -77,7 +77,7 @@
     "show_product_guarantee_exceptions": false,
     "gift_product": "therapiedecken-basic-bezug-in-weiss",
     "trigger_product": "therapiedecken",
-    "seasonal_product_info": false,
+    "seasonal_product_info": true,
     "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-banner-2.jpg",
     "checkout_logo_position": "center",
     "checkout_logo_size": "large",
