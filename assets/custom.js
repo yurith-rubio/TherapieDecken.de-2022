@@ -70,7 +70,7 @@ $(document).ready(function () {
   }
 
   document.addEventListener("variant:changed", function(event) { // (1)  
-    ["weight_info", "cover_type_info"].forEach(info => hideOption(info, event.detail.variant.id));
+    ["second_weight_info", "weight_info", "cover_type_info"].forEach(info => hideOption(info, event.detail.variant.id));
     console.log("variant changed");
 
   });
