@@ -17,24 +17,26 @@
 
 {%- comment -%} Cover type dynamic variant's info - metafields.bgd.cover-type - Yurith {%- endcomment -%}
 {% if dynamic_info_type == 'cover_type_info' %}
-{% style %}
-.seasonalInfo_mainWrapper{
-  display: flex;
-  align-items: center;
-  padding-bottom: 10px;
-}
-.seasonalInfo_temperatureIcon{
-  width:60px;
-  padding-right: 10px;
-}
-.seasonal_type_info{
-  padding: 10px !important;
-}
-.seasonalInfo_graphWrapper{
-  display: flex;
-  justify-content: center;
-}
-{% endstyle %}
+
+  {% style %}
+  .seasonalInfo_mainWrapper{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .seasonalInfo_temperatureIcon{
+    width:60px;
+    padding-right: 10px;
+  }
+  .seasonal_type_info{
+    padding: 10px !important;
+  }
+  .seasonalInfo_graphWrapper{
+    display: flex;
+    justify-content: center;
+  }
+  {% endstyle %}
+
   {% for variant in product.variants %}
     {% if variant.metafields.bgd.cover-type %}
       {% assign cover_type_class = "cover_type_info hide" %}
