@@ -1,13 +1,12 @@
 {{ 'html-with-image.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.image_position == 'left' -%}
-{% style %}
+  {% style %}
     .TextWithImage_ContentWrapper{
       padding-top: 10px !important;
     }
-
-{% endstyle %}
-  {% endif %}
+  {% endstyle %}
+{% endif %}
 <section class="Section {% unless section.settings.image %}Section--spacingNormal{% endunless %}">
   {%- capture section_content -%}
     <div class="FeatureText__ContentWrapper TextWithImage_ContentWrapper">
