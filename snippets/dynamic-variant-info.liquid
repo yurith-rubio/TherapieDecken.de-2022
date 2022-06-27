@@ -92,10 +92,10 @@
       {% endif %}
         <div id="cover_type_info_{{variant.id}}" 
              class="{{ cover_type_class }} 
-                    {% if variant.metafields.tw_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}seasonal_type_info{% endif%}
+                    {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}seasonal_type_info{% endif%}
                     ">
-          {% if variant.metafields.tw_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
-              {{ variant.metafields.tw_field.seasonal_variant_dynamic_info }}
+          {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
+              {{ variant.metafields.td_field.seasonal_variant_dynamic_info }}
           
           {% comment %}
           <div class="seasonalInfo_mainWrapper">
