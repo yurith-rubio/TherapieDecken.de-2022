@@ -46,7 +46,7 @@
     {%- endif -%}
   {%- endcapture -%}
 
-  <div class="FeatureText {% if section.settings.image != blank %}FeatureText--withImage FeatureText--image{{ section.settings.image_position | capitalize }}{% endif %}">
+  <div class="FeatureText {% if section.settings.image != blank %}textWithImage_ContentWrapper FeatureText--withImage FeatureText--image{{ section.settings.image_position | capitalize }}{% endif %}">
     {%- if section.settings.image_position == 'left' -%}
       {{- section_image -}}
       {{- section_content -}}
