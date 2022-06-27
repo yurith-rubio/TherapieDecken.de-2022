@@ -19,9 +19,9 @@
   {% if option.name == 'Deckengewicht 2' %}
     {% for variant in product.variants %}
       {% if variant.metafields.td_field.second_weight_info %}
-        {% assign weight_class = "second_weight_info hide" %}
+        {% assign second_weight_class = "second_weight_info hide" %}
         {% if variant.id == product.selected_or_first_available_variant.id %}
-          {% assign weight_class = "second_weight_info" %}
+          {% assign second_weight_class = "second_weight_info" %}
         {% endif %}
         <div id="second_weight_info_{{variant.id}}" class="{{ weight_class }}">
           {{ variant.metafields.td_field.second_weight_info }}
@@ -29,7 +29,6 @@
       {% endif%}
     {% endfor %}
   {% endif%}
-
 
   {% comment %}
   	Information for Balance Inlett from Metafield in Variants: bgd-weight - Yurith
