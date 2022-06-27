@@ -23,7 +23,7 @@
         {% if variant.id == product.selected_or_first_available_variant.id %}
           {% assign second_weight_class = "second_weight_info" %}
         {% endif %}
-        <div id="second_weight_info_{{variant.id}}" class="{{ weight_class }}">
+        <div id="second_weight_info_{{variant.id}}" class="{{ second_weight_class }}">
           {{ variant.metafields.td_field.second_weight_info }} Test
         </div>
       {% endif%}
