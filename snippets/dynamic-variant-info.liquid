@@ -13,7 +13,51 @@
       {% endif%}
     {% endfor %}
   {% endif%}
+
+
+  {% comment %}
+  	Information for Balance Inlett from Metafield in Variants: bgd-weight - Yurith
+  {% endcomment %}
+  {%- for option in balance_inlett_product.options_with_values -%}
+    {% if option.name == 'Gewicht' %}
+      {% for variant in balance_inlett_product.variants %}
+        {% if variant.metafields.bgd.weight %}
+          {% assign weight_class = "balance-info-wr hide" %}
+          {% if variant.id == balance_inlett_product.selected_or_first_available_variant.id %}
+            {% assign weight_class = "balance-info-wr" %}
+          {% endif %}
+          <div data-variant-id="{{variant.id}}" class="{{ weight_class }}">
+            {{ variant.metafields.bgd.weight }}
+          </div>
+        {% endif%}
+      {% endfor %}
+    {% endif%}
+  {% endfor %}
+
+  {% comment %}
+  	Information for Gravity Inlett from Metafield in Variants: bgd-weight - Yurith
+  {% endcomment %}
+
+  {%- for option in gravity_inlett_product.options_with_values -%}
+    {% if option.name == 'Gewicht' %}
+      {% for variant in gravity_inlett_product.variants %}
+        {% if variant.metafields.bgd.weight %}
+          {% assign weight_class = "gravity-info-wr hide" %}
+          {% if variant.id == gravity_inlett_product.selected_or_first_available_variant.id %}
+            {% assign weight_class = "gravity-info-wr" %}
+          {% endif %}
+          <div data-variant-id="{{variant.id}}" class="{{ weight_class }}">
+            {{ variant.metafields.bgd.weight }}
+          </div>
+        {% endif%}
+      {% endfor %}
+    {% endif%}
+  {% endfor %}
 {% endif %}
+
+
+
+
 
 {%- comment -%} Cover type dynamic variant's info - metafields.bgd.cover-type - Yurith {%- endcomment -%}
 {% if dynamic_info_type == 'cover_type_info' %}
@@ -45,10 +89,10 @@
       {% endif %}
         <div id="cover_type_info_{{variant.id}}" 
              class="{{ cover_type_class }} 
-                    {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}seasonal_type_info{% endif%}
+                    {% if variant.metafields.tw_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}seasonal_type_info{% endif%}
                     ">
-          {% if variant.metafields.td_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
-              {{ variant.metafields.td_field.seasonal_variant_dynamic_info }}
+          {% if variant.metafields.tw_field.seasonal_variant_dynamic_info and settings.seasonal_product_info %}
+              {{ variant.metafields.tw_field.seasonal_variant_dynamic_info }}
           
           {% comment %}
           <div class="seasonalInfo_mainWrapper">

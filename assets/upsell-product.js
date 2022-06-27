@@ -108,8 +108,8 @@ $(document).ready(function () {
         updateBalanceInlettPrice(variantId, mainVariantId);
       }
       
-      $("div.balance-info-wr").addClass("info-wr-hidden");
-   	  $("div.balance-info-wr[data-variant-id='" + variantId +"']").removeClass("info-wr-hidden");    
+      $("div.balance-info-wr").addClass("hide");
+   	  $("div.balance-info-wr[data-variant-id='" + variantId +"']").removeClass("hide");    
     }, 0);        
   }
   
@@ -131,8 +131,8 @@ $(document).ready(function () {
         updateGravityInlettPrice(variantId, mainVariantId);
       }
       
-      $("div.gravity-info-wr").addClass("info-wr-hidden");
-      $("div.gravity-info-wr[data-variant-id='" + variantId +"']").removeClass("info-wr-hidden");
+      $("div.gravity-info-wr").addClass("hide");
+      $("div.gravity-info-wr[data-variant-id='" + variantId +"']").removeClass("hide");
     }, 0);
   }
 
