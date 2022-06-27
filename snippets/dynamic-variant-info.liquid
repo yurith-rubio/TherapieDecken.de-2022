@@ -2,7 +2,7 @@
 
 {%- comment -%} Product Info for Variants - bgd.cover-type Metafield - Yurith {%- endcomment -%}
 {% if dynamic_info_type == 'weight_info' %}
-  {% if option.name == 'Gewicht' or option.name == 'Deckengewicht' or option.name == 'Deckengewicht 1' %}
+  {% if option.name == 'Gewicht' or option.name == 'Deckengewicht' %}
     {% for variant in product.variants %}
       {% if variant.metafields.bgd.weight %}
         {% assign weight_class = "weight_info hide" %}
