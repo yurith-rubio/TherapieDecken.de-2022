@@ -1,7 +1,6 @@
 <!-- section: icons-custom -->
 
 {{ 'product-custom.css' | asset_url | stylesheet_tag}}
-{{ 'glider.min.css' | asset_url | stylesheet_tag}}
 
 {% style %}
 .full-bg-color-icons{
@@ -78,7 +77,6 @@
       {% endfor %}
     </div>
     
-    <!--test-->
     {% if section.settings.mobile-style-glider %}
       <div class="Container--standard--medium icons-container-mobile owl-carousel owl-theme owl-carousel-glider-delivery">
         {% for block in section.blocks %}
@@ -100,7 +98,6 @@
         {% endfor %}
       </div>
     {% endif %}
-    <!--test-->
     
   </div>
   {% if section.settings.button_label != blank %}
@@ -126,13 +123,6 @@
     }
 })
 
-/*window.addEventListener('load', function(){
-  new Glider(document.querySelector('.glider-delivery'), {
-  	slidesToShow: 2,
-  	dots: '.dots-delivery',
-  	draggable: true
-  });
-});*/
 </script>
 
 {% schema %}
