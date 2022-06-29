@@ -30,11 +30,23 @@
         "back_link_text": "Zurück zur...",
         "back_link_url": ""
       }
+    },
+    "1656500146f94682b2": {
+      "type": "banner-call2action",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "Title",
+        "image_position": "right",
+        "content_html": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
     }
   },
   "order": [
     "16564895414280962f",
     "16565000715b05fcb2",
-    "main"
+    "main",
+    "1656500146f94682b2"
   ]
 }
