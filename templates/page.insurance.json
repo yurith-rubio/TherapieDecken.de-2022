@@ -15,8 +15,15 @@
         "button_link": "shopify:\/\/products\/balance-gewichtsdecken-inlett-fur-kinder"
       }
     },
+    "16565000715b05fcb2": {
+      "type": "icons-prestige",
+      "settings": {
+        "bg-color": ""
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "show_large": false,
         "back_link_checkbox": false,
@@ -27,6 +34,7 @@
   },
   "order": [
     "16564895414280962f",
+    "16565000715b05fcb2",
     "main"
   ]
 }
