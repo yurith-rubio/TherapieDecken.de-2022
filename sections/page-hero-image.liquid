@@ -35,11 +35,11 @@
           {%- capture slideshow_content -%}
 
             {%- if section.settings.subheading != blank -%}
-            	<span class="SectionHeader__SubHeading">{{ section.settings.subheading | escape }}&nbsp;</span><br>
+            	<span class="SectionHeader__SubHeading Heading">{{ section.settings.subheading | escape }}&nbsp;</span><br>
             {%- endif -%}
 
             {%- if section.settings.title != blank -%}
-	            <h1 class="Heading u_h1_main">{{ section.settings.title }}</h1>
+	            <h1 class="Heading">{{ section.settings.title }}</h1>
             {%- endif -%}
       
             {%- if section.settings.button_text != blank -%}
