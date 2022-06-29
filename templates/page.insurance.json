@@ -51,7 +51,7 @@
         "title": "",
         "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
         "image_position": "right",
-        "content_html": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "content_html": "<h2>\n<span style=\"color:#fac636\">10% auf Therapiedecken <\/span>\n<br>\nfür DAK Krankenkasse<\/h2>",
         "link_text": "",
         "link_url": ""
       }
