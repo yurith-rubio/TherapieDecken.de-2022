@@ -53,7 +53,7 @@
         {%- comment -%}This code allows to cover a common use case where merchant would like to have a clickable image{%- endcomment -%}
 
         {%- if section.settings.button_text == blank and section.settings.button_link != blank -%}
-          <a href="{{ section.settings.button_link }}" id="Slide{{ section.id }}" class="Slideshow__Slide Carousel__Cell {% if forloop.first %}is-selected{% endif %}" {% if forloop.first %}style="visibility: visible"{% endif %} {{ section.shopify_attributes }}>
+          <a href="{{ section.settings.button_link }}" id="Slide{{ section.id }}" class="Slideshow__Slide Carousel__Cell" style="visibility: visible" {{ section.shopify_attributes }}>
             {{- slide_content -}}
           </a>
         {%- else -%}
