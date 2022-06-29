@@ -55,12 +55,20 @@
         "link_text": "",
         "link_url": ""
       }
+    },
+    "165650093635a88658": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'insurance-sale-voucher' %}"
+      }
     }
   },
   "order": [
     "16564895414280962f",
     "16565000715b05fcb2",
     "main",
-    "1656500146f94682b2"
+    "1656500146f94682b2",
+    "165650093635a88658"
   ]
 }
