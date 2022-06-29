@@ -2,27 +2,16 @@
   "sections": {
     "16564895414280962f": {
       "type": "page-hero-image",
-      "blocks": {
-        "165648954196e77f98-0": {
-          "type": "image",
-          "settings": {
-            "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "Tell your story",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "165648954196e77f98-0"
-      ],
       "settings": {
         "show_fullscreen": false,
-        "text_color": "#ffffff"
+        "text_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/Insurance-lp-Hero-image.jpg",
+        "apply_overlay": true,
+        "content_position": "bottomLeft",
+        "subheading": "Slide title",
+        "title": "Tell your story",
+        "button_text": "",
+        "button_link": ""
       }
     },
     "main": {
