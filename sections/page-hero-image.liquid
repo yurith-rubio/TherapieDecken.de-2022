@@ -43,18 +43,6 @@
             {%- else -%}
     	        {%- assign has_two_buttons = false -%}
             {%- endif -%}
-            {%- if section.settings.button_1_text != blank or section.settings.button_2_text != blank -%}
-              <div class="SectionHeader__ButtonWrapper">
-                <div class="ButtonGroup ButtonGroup--spacingSmall {% if has_two_buttons %}ButtonGroup--sameSize{% endif %}">
-                  {%- if section.settings.button_1_text != blank -%}
-                  <a href="{{ section.settings.button_1_link }}" class="Button Button--primary">{{ section.settings.button_1_text | escape }}</a>
-                  {%- endif -%}
-                  {%- if section.settings.button_2_text != blank -%}
-                  <a href="{{ section.settings.button_2_link }}" class="Button Button--primary">{{ section.settings.button_2_text | escape }}</a>
-                  {%- endif -%}
-                </div>
-              </div>
-            {%- endif -%}
 
           {%- endcapture -%}
 
