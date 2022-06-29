@@ -1,14 +1,5 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "show_large": false,
-        "back_link_checkbox": false,
-        "back_link_text": "Zurück zur...",
-        "back_link_url": ""
-      }
-    },
     "16564895414280962f": {
       "type": "page-hero-image",
       "blocks": {
@@ -33,10 +24,19 @@
         "show_fullscreen": false,
         "text_color": "#ffffff"
       }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_large": false,
+        "back_link_checkbox": false,
+        "back_link_text": "Zurück zur...",
+        "back_link_url": ""
+      }
     }
   },
   "order": [
-    "main",
-    "16564895414280962f"
+    "16564895414280962f",
+    "main"
   ]
 }
