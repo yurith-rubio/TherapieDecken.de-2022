@@ -3,7 +3,7 @@
 {% style %}
   .pageHero_ImageContainer{
 	background-size: cover;
-	background-position-x: {{ section.settings.bg_position_x}};
+	background-position-x: {{ section.settings.bg_position_x }};
   }
   .dak_logo{
 	padding-top: 30px;
@@ -114,6 +114,11 @@
       "id": "mobile_image",
       "label": "Mobile image",
       "info": "750 x 1100px .jpg recommended. If none is set, desktop image will be cropped."
+    },
+    {
+      "type": "text",
+      "id": "bg_position_x",
+      "label": "Background position x"
     },
     {
       "type": "checkbox",
