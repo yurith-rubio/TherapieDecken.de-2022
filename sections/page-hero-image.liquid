@@ -7,6 +7,7 @@
   .dak_logo{
 	padding-top: 30px;
   }
+  
 {% endstyle %}
 <section id="section-{{ section.id }}">
   <div class="Slideshow {% if section.settings.show_fullscreen %}Slideshow--fullscreen{% endif %}">
@@ -35,7 +36,7 @@
           {%- capture slideshow_content -%}
 
             {%- if section.settings.subheading != blank -%}
-            	<span class="SectionHeader__SubHeading Heading u-h1-submain">{{ section.settings.subheading }}</span><br>
+            	<span class="SectionHeader__SubHeading Heading">{{ section.settings.subheading }}</span><br>
             {%- endif -%}
 
             {%- if section.settings.title != blank -%}
