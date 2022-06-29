@@ -5,7 +5,7 @@
   <div class="Slideshow {% if section.settings.show_fullscreen %}Slideshow--fullscreen{% endif %}">
     <div class="promotion-home-hero_content_container Slideshow__Carousel {% if section.settings.show_arrow %}Slideshow__Carousel--withScrollButton{% endif %} Carousel Carousel--fadeIn {% if section.settings.show_fullscreen %}Carousel--fixed{% endif %} Carousel--insideDots"
          data-flickity-config='{{ flickity_options }}'>
-      {%- for block in section.blocks -%}
+
         {%- capture slide_content -%}
           {%- assign mobile_image = block.settings.mobile_image | default: block.settings.image -%}
           {%- if mobile_image -%}
@@ -76,7 +76,6 @@
             {{- slide_content -}}
           </div>
         {%- endif -%}
-      {%- endfor -%}
     </div>
   </div>
   <span id="section-{{ section.id }}-end" class="Anchor"></span>
