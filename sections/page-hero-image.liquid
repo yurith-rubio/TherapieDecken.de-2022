@@ -38,7 +38,12 @@
             {%- if section.settings.title != blank -%}
 	            <h1 class="Heading u_h1_main">{{ section.settings.title }}</h1>
             {%- endif -%}
-
+      
+            {%- if section.settings.button_text != blank -%}
+            <div class="home_promotional_bottom_part">
+              <a href="{{ settings.button_1_link }}" class="promotion-home-hero_button Button Button--primary" >{{ settings.button_1_text | escape }}</a>
+            </div>
+            {%- endif -%}
 
           {%- endcapture -%}
 
