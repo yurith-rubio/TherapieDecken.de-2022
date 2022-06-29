@@ -1,11 +1,9 @@
 <!-- section: slideshow.liquid -->
 {{ 'slideshow.css' | asset_url | stylesheet_tag }}
 
-<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="slideshow">
+<section id="section-{{ section.id }}">
   <div class="Slideshow {% if section.settings.show_fullscreen %}Slideshow--fullscreen{% endif %}">
-    <div class="promotion-home-hero_content_container Slideshow__Carousel {% if section.settings.show_arrow %}Slideshow__Carousel--withScrollButton{% endif %} Carousel Carousel--fadeIn {% if section.settings.show_fullscreen %}Carousel--fixed{% endif %} Carousel--insideDots"
-         data-flickity-config='{{ flickity_options }}'>
-
+    <div class="promotion-home-hero_content_container Slideshow__Carousel {% if section.settings.show_arrow %}Slideshow__Carousel--withScrollButton{% endif %} Carousel Carousel--fadeIn {% if section.settings.show_fullscreen %}Carousel--fixed{% endif %} Carousel--insideDots">
         {%- capture slide_content -%}
           {%- assign mobile_image = section.settings.mobile_image | default: section.settings.image -%}
           {%- if mobile_image -%}
