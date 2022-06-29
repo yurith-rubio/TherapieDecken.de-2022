@@ -8,7 +8,11 @@
   .dak_logo{
 	padding-top: 30px;
   }
-
+  @media only screen and (max-width: 640px){
+	.dak_logo{
+	  max-width: 180px;
+	}
+  }
 {% endstyle %}
 <section id="section-{{ section.id }}">
   <div class="Slideshow {% if section.settings.show_fullscreen %}Slideshow--fullscreen{% endif %}">
