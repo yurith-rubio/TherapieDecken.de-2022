@@ -3,7 +3,7 @@
     "16564895414280962f": {
       "type": "page-hero-image",
       "settings": {
-        "show_fullscreen": false,
+        "show_fullscreen": true,
         "text_color": "#ffffff",
         "image": "shopify:\/\/shop_images\/Insurance-lp-Hero-image.jpg",
         "apply_overlay": true,
