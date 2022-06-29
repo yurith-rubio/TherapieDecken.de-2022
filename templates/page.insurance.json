@@ -31,32 +31,6 @@
         "back_link_url": ""
       }
     },
-    "1656500146f94682b2": {
-      "type": "banner-call2action",
-      "disabled": true,
-      "blocks": {
-        "f8475c34-2109-4c3e-871d-e732910d60c2": {
-          "type": "background",
-          "settings": {
-            "spacer": "50px",
-            "bg-color": "rgba(0,0,0,0)",
-            "bg-color-text-html": "#5b5b5b"
-          }
-        }
-      },
-      "block_order": [
-        "f8475c34-2109-4c3e-871d-e732910d60c2"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
-        "image_position": "right",
-        "content_html": "<h2>\n<span style=\"color:#fac636\">\n10% auf Therapiedecken <\/span>\n<br>\n<span style=\"color:#fff\">\nfür DAK Krankenkasse\n<\/span>\n<\/h2>\n\n<ul style=\"color:#fff\">\n<li>\nJetzt als Mitglied der DAK Krankenkasse sparen und schon bald besser schlafen.\n<\/li>\n<\/ul>",
-        "link_text": "",
-        "link_url": ""
-      }
-    },
     "165650093635a88658": {
       "type": "custom-liquid",
       "settings": {
@@ -69,7 +43,6 @@
     "16564895414280962f",
     "16565000715b05fcb2",
     "main",
-    "1656500146f94682b2",
     "165650093635a88658"
   ]
 }
