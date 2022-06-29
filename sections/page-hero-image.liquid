@@ -38,11 +38,10 @@
             {%- if section.settings.title != blank -%}
 	            <h1 class="Heading u_h1_main">{{ section.settings.title }}</h1>
             {%- endif -%}
-      
-            {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
-              <div class="home_promotional_bottom_part">
-                <a href="{{ section.settings.button_link }}" class="Button Button--primary" >{{ settings.button_text | escape }}</a>
-              </div>
+            {%- if section.settings.button_1_text != blank and section.settings.button_2_text != blank -%}
+    	        {%- assign has_two_buttons = true -%}
+            {%- else -%}
+    	        {%- assign has_two_buttons = false -%}
             {%- endif -%}
 
           {%- endcapture -%}
@@ -54,9 +53,19 @@
               </header>
             </div>
           {%- endif -%}
-      
         {%- endcapture -%}
 
+        {%- comment -%}This code allows to cover a common use case where merchant would like to have a clickable image{%- endcomment -%}
+
+        {%- if section.settings.button_text == blank and section.settings.button_link != blank -%}
+          <a href="{{ section.settings.button_link }}" id="Slide{{ section.id }}" class="Slideshow__Slide Carousel__Cell {% if forloop.first %}is-selected{% endif %}" {% if forloop.first %}style="visibility: visible"{% endif %} data-slide-index="{{ forloop.index0 }}" {{ section.shopify_attributes }}>
+            {{- slide_content -}}
+          </a>
+        {%- else -%}
+          <div id="Slide{{ section.id }}" class="Slideshow__Slide Carousel__Cell {% if forloop.first %}is-selected{% endif %}" {% if forloop.first %}style="visibility: visible"{% endif %} data-slide-index="{{ forloop.index0 }}" {{ section.shopify_attributes }}>
+            {{- slide_content -}}
+          </div>
+        {%- endif -%}
     </div>
   </div>
   <span id="section-{{ section.id }}-end" class="Anchor"></span>
