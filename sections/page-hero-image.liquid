@@ -14,7 +14,7 @@
           {%- endif -%}
           {%- if section.settings.image -%}
             <div class="Slideshow__ImageContainer {% if section.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} hidden-phone"
-                 style="{% unless section.settings.show_fullscreen %}padding-bottom: {{ 100.0 | divided_by: section.settings.image.aspect_ratio }}%; --aspect-ratio: {{ section.settings.image.aspect_ratio }};{% endunless %} background-image: url({{ section.settings.image | img_url: '1x1', format: 'jpg' }})">
+                 style="{% unless section.settings.show_fullscreen %}padding-bottom: {{ 100.0 | divided_by: section.settings.image.aspect_ratio }}%; --aspect-ratio: {{ section.settings.image.aspect_ratio }};{% endunless %} background-image: url({{ section.settings.image | img_url: 'master', format: 'jpg' }})">
               {% assign image_url = section.settings.image | img_url: 'master'  %}
                 <img class="Slideshow__Image" src="{{ section.settings.image | img_url: '1000x' }}" alt="{{ section.settings.image.alt | escape }}">
             </div>
