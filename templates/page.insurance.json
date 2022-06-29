@@ -8,8 +8,8 @@
         "image": "shopify:\/\/shop_images\/Insurance-lp-Hero-image.jpg",
         "apply_overlay": true,
         "content_position": "middleLeft",
-        "subheading": "",
-        "title": "<span style=\"font-size: 35px; line-height:1 !important\">DAK Krankenkassen Kunden erhalten\n<br><span style=\"color:#fac636\">10% auf Therapiedecken<\/span><\/span>",
+        "subheading": "DAK Krankenkassen Kunden erhalten",
+        "title": "<span style=\"font-size: 35px\">\n<br><span style=\"color:#fac636\">10% auf Therapiedecken<\/span><\/span>",
         "button_text": "Jetzt Rabatt erhalten",
         "button_link": "shopify:\/\/products\/balance-gewichtsdecken-inlett-fur-kinder"
       }
