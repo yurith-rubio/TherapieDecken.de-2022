@@ -1,6 +1,10 @@
 <!-- section: slideshow.liquid -->
 {{ 'slideshow.css' | asset_url | stylesheet_tag }}
-
+{% style %}
+  .pageHero_ImageContainer{
+	background-size: cover;
+  }
+{% endstyle %}
 <section id="section-{{ section.id }}">
   <div class="Slideshow {% if section.settings.show_fullscreen %}Slideshow--fullscreen{% endif %}">
     <div class="promotion-home-hero_content_container Slideshow__Carousel {% if section.settings.show_arrow %}Slideshow__Carousel--withScrollButton{% endif %} {% if section.settings.show_fullscreen %}Carousel--fixed{% endif %}">
