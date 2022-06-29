@@ -34,8 +34,9 @@
     "1656500146f94682b2": {
       "type": "banner-call2action",
       "settings": {
-        "subheading": "Sub-heading",
-        "title": "Title",
+        "subheading": "",
+        "title": "",
+        "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
         "image_position": "right",
         "content_html": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
         "link_text": "",
