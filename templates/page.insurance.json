@@ -9,7 +9,7 @@
         "apply_overlay": true,
         "content_position": "middleLeft",
         "subheading": "DAK Krankenkassen Kunden erhalten",
-        "title": "<style>\n.pageHero_Heading{\nfont-size: 39px;\ncolor:#fac636 !important;\nposition:relative;\ntop:-10px;\n}\n.pageHero_SubHeading{\nfont-size: 25px;\n}\n@media only screen and (max-width: 640px){\n.pageHero_Heading{\nfont-size: 25px;\n}\n.pageHero_SubHeading{\nfont-size: 25px;\n}\n.pageHero_Content{\ntext-align: center !important;\n}\n}\n<\/style>\n\n10% auf Therapiedecken",
+        "title": "<style>\n.pageHero_Heading{\nfont-size: 39px;\ncolor:#fac636 !important;\nposition:relative;\n}\n.pageHero_SubHeading{\nfont-size: 25px;\n}\n@media only screen and (min-width: 641px){\n.pageHero_Heading{\ntop:-10px;\n}\n}\n@media only screen and (max-width: 640px){\n.pageHero_Heading{\nfont-size: 25px;\n}\n.pageHero_SubHeading{\nfont-size: 25px;\n}\n.pageHero_Content{\ntext-align: center !important;\n}\n}\n<\/style>\n\n10% auf Therapiedecken",
         "button_text": "Jetzt Rabatt erhalten",
         "button_link": "shopify:\/\/products\/balance-gewichtsdecken-inlett-fur-kinder"
       }
