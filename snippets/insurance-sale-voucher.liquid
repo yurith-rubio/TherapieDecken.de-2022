@@ -1,8 +1,65 @@
 {% style %}
+
+  .FeatureText__ImageWrapper.rabatt-code-page img {
+    height: 25em;
+    width: 38em;
+  }
+  
+  .FeatureText__ContentWrapper.rabatt-code-page {
+    background: #5b5b5b;
+    color: white!important;
+    padding: 10% 5%!important;
+	}
+  
+  .FeatureText__ContentWrapper.rabatt-code-page h2 {
+    color: white!important;
+	}
+  
   .grey-rabat.rabatt-code-page {
     width: 60%;
     margin: -10% auto 5%;
+	}
+  
+  .overview-rabatt-code-page {
+	display: flex;
+    max-width: 1024px;
+    margin: auto;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+	}
+  
+  .listing-rabatt-code-page {
+    display: inline-block;
+    background: #f1f1f1;
+    margin: auto 5px;
+    padding: 5%;
+    width: 30%;
+    margin-top: 5%;
+    text-align: center;
+	}
+  
+.listing-rabatt-code-page .Button--primary {
+  	font-size: 10px!important;
+    padding: 10px 15px;
   }
+  
+@media only screen and (max-width: 700px){  
+  .grey-rabat.rabatt-code-page {
+    width: 100%;
+    margin: -40% auto 5%;
+		}
+  
+    .listing-rabatt-code-page {
+    width: 45%;
+    min-height: 460px;
+		}
+  
+  .FeatureText__ImageWrapper.rabatt-code-page img {
+        height: 100%;
+  		}
+	}
+  
+
 {% endstyle %}
 
 <div class="FeaturedHtmlImage-container">
