@@ -41,7 +41,7 @@
       
             {%- if section.settings.button_text != blank -%}
             <div class="home_promotional_bottom_part">
-              <a href="{{ settings.button_1_link }}" class="promotion-home-hero_button Button Button--primary" >{{ settings.button_1_text | escape }}</a>
+              <a href="{{ section.settings.button_link }}" class="promotion-home-hero_button Button Button--primary" >{{ section.settings.button_text | escape }}</a>
             </div>
             {%- endif -%}
 
