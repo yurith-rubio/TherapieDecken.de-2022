@@ -3,7 +3,7 @@
 
 <section id="section-{{ section.id }}">
   <div class="Slideshow {% if section.settings.show_fullscreen %}Slideshow--fullscreen{% endif %}">
-    <div class="promotion-home-hero_content_container Slideshow__Carousel {% if section.settings.show_arrow %}Slideshow__Carousel--withScrollButton{% endif %} Carousel Carousel--fadeIn {% if section.settings.show_fullscreen %}Carousel--fixed{% endif %} Carousel--insideDots">
+    <div class="promotion-home-hero_content_container Slideshow__Carousel {% if section.settings.show_arrow %}Slideshow__Carousel--withScrollButton{% endif %} {% if section.settings.show_fullscreen %}Carousel--fixed{% endif %}">
         {%- capture slide_content -%}
           {%- assign mobile_image = section.settings.mobile_image | default: section.settings.image -%}
           {%- if mobile_image -%}
