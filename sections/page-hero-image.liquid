@@ -38,11 +38,6 @@
             {%- if section.settings.title != blank -%}
 	            <h1 class="Heading u_h1_main">{{ section.settings.title }}</h1>
             {%- endif -%}
-            {%- if section.settings.button_1_text != blank and section.settings.button_2_text != blank -%}
-    	        {%- assign has_two_buttons = true -%}
-            {%- else -%}
-    	        {%- assign has_two_buttons = false -%}
-            {%- endif -%}
 
           {%- endcapture -%}
 
