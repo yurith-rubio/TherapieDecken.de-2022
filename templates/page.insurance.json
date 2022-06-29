@@ -33,6 +33,19 @@
     },
     "1656500146f94682b2": {
       "type": "banner-call2action",
+      "blocks": {
+        "f8475c34-2109-4c3e-871d-e732910d60c2": {
+          "type": "background",
+          "settings": {
+            "spacer": "50px",
+            "bg-color": "rgba(0,0,0,0)",
+            "bg-color-text-html": "#5b5b5b"
+          }
+        }
+      },
+      "block_order": [
+        "f8475c34-2109-4c3e-871d-e732910d60c2"
+      ],
       "settings": {
         "subheading": "",
         "title": "",
