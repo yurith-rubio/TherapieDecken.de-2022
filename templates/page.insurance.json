@@ -51,7 +51,7 @@
         "title": "",
         "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
         "image_position": "right",
-        "content_html": "<h2>\n<span style=\"color:#fac636\">\n10% auf Therapiedecken <\/span>\n<br>\n<span style=\"color:#fff\">\nfür DAK Krankenkasse\n<\/span>\n<\/h2>",
+        "content_html": "<h2>\n<span style=\"color:#fac636\">\n10% auf Therapiedecken <\/span>\n<br>\n<span style=\"color:#fff\">\nfür DAK Krankenkasse\n<\/span>\n<\/h2>\n\n<ul style=\"color:#fff\">\n<li>\nJetzt als Mitglied der DAK Krankenkasse sparen und schon bald besser schlafen.\n<\/li>\n<\/ul>",
         "link_text": "",
         "link_url": ""
       }
