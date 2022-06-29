@@ -33,6 +33,7 @@
     },
     "1656500146f94682b2": {
       "type": "banner-call2action",
+      "disabled": true,
       "blocks": {
         "f8475c34-2109-4c3e-871d-e732910d60c2": {
           "type": "background",
