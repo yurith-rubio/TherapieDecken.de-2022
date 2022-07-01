@@ -17,6 +17,10 @@
     .text-with-image-new_ContentWrapper{
       padding-top: 10px !important;
     }
+    .FeatureText--withImage .FeatureText__ContentWrapper{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 
 </style>
@@ -38,7 +42,7 @@
             <div class="FeatureText__ContentWrapper text-with-image-new_ContentWrapper"
               style="{% if section.settings.bg-color-text-html != blank %}background-color:{{ section.settings.bg-color-text-html }};{% endif %}">
 			  
-              <div class="FeatureText__Content html-text-wr
+              <div class="FeatureText__Content textWithImage_Content html-text-wr
                           {% if section.settings.text_align == 'left' %}text-align-left{% endif %}">
                 {% for block in section.blocks %}
                   {% case block.type %}
