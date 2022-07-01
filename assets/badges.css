@@ -89,6 +89,7 @@
   color: white;
 }
 .Prod_ImgSmallBadge {
+  padding-top: 15px;
   z-index: 2;
 }
 .Prod_ImgSize-SmallBadge{
@@ -114,7 +115,6 @@
 
 @media only screen and (max-width: 640px){
   .Prod_ImgSmallBadge {
-    padding-top: 15px;
     width: 70px;
   }
 }
