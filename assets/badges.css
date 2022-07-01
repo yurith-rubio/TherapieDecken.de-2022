@@ -99,11 +99,7 @@
 	padding-left: 30px;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape){
-  .ProductBadge_Mask__Wrapper{
-    top: 280px;
-  }
-}
+
 @media only screen and (max-width: 640px) and (orientation: portrait){
   .Prod_SmallBadge {
     padding: 0 30px 0 10px;
