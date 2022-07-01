@@ -112,12 +112,12 @@
 
 @media only screen and (min-width: 641px){
   .Prod_ImgSmallBadge {
-    width: 120px;
+    width: 100px;
   }
 }
 
 @media only screen and (max-width: 640px){
   .Prod_ImgSmallBadge {
-    width: 90px;
+    width: 80px;
   }
 }
