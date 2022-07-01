@@ -14,7 +14,23 @@
       background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/KOPFDRUCK-newdog.jpg?v=1644230581");
       background-size: contain;
     }
+    .Druck_SizeSwatch{
+      min-width: 100px !important;
+      padding: 0 !important;
+      height: 100px;
 
+    }
+    .Druck_Value{
+	    text-transform: uppercase;
+    }
+    .Druck_SizeSwatchList{
+    	display: flex;
+    }
+    .Druck_HorizontalList__Item{
+      display: block;
+      text-align: center;
+    }
+  
 	{% if product.handle == 'standard-gravity-gewichtsdecke-familien-motiv' %}
       .SizeSwatchList input[value="Standard Druck"] + .SizeSwatch{
         background-image: url("https://cdn.shopify.com/s/files/1/2451/6611/files/family-regular-swatch.jpg?v=1645192037");
@@ -37,22 +53,6 @@
       }
 	{% endif %}
 
-    .Druck_SizeSwatch{
-      min-width: 100px !important;
-      padding: 0 !important;
-      height: 100px;
-
-    }
-    .Druck_Value{
-	    text-transform: uppercase;
-    }
-    .Druck_SizeSwatchList{
-    	display: flex;
-    }
-    .Druck_HorizontalList__Item{
-      display: block;
-      text-align: center;
-    }
   {% endstyle %}
 
 {% endif%}
