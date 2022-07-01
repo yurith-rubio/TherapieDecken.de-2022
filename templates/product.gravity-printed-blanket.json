@@ -214,6 +214,7 @@
       "blocks": {
         "164245184467da80d8-1": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "code": "{% render 'gravity-printed-blanket-steps' %}",
             "width": "50%",
