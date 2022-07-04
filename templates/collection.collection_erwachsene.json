@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-collection-icons",
+      "disabled": true,
       "settings": {
         "show_collection_info": true,
         "sub-heading": "Original Therapiedecken",
@@ -9,8 +10,8 @@
         "link-info": "\/pages\/therapiedecken-vergleich",
         "link-info-text": "Zum Detailvergleich",
         "show_collection_image": true,
-        "apply_overlay": true,
-        "show_color_swatch": true,
+        "apply_overlay": false,
+        "show_color_swatch": false,
         "show_vendor": false,
         "collection_image_size": "small",
         "show_sort_by": false,
@@ -19,7 +20,7 @@
         "show_filters": false,
         "show_filter_color_swatch": false,
         "expand_filters": false,
-        "filter_position": "sidebar",
+        "filter_position": "drawer",
         "filter_menu": "",
         "grid_items_per_page": 12,
         "grid_mobile_items_per_row": "1",
