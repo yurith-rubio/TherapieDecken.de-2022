@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-collection-icons",
+      "disabled": true,
       "settings": {
         "show_collection_info": true,
         "sub-heading": "Original Therapiedecken",
@@ -25,9 +26,15 @@
         "grid_mobile_items_per_row": "1",
         "grid_desktop_items_per_row": 4
       }
+    },
+    "1656957502d9b39723": {
+      "type": "collection_erwachsene_list",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1656957502d9b39723"
   ]
 }
