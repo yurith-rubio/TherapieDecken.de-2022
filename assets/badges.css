@@ -28,7 +28,7 @@
   z-index: 2;
 }
 .Collection_ImgSize_SmallBadge{
-    max-width: 80px;
+    max-width: 50px;
     height: auto;
 }
 
@@ -46,7 +46,7 @@
     width: 40%;
   }
   .Collection_ImgSize_SmallBadge{
-    max-width: 60px;
+    max-width: 50px;
     height: auto;
   }
 }
@@ -89,6 +89,7 @@
   color: white;
 }
 .Prod_ImgSmallBadge {
+  padding-top: 15px;
   z-index: 2;
 }
 .Prod_ImgSize-SmallBadge{
@@ -99,11 +100,7 @@
 	padding-left: 30px;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape){
-  .ProductBadge_Mask__Wrapper{
-    top: 280px;
-  }
-}
+
 @media only screen and (max-width: 640px) and (orientation: portrait){
   .Prod_SmallBadge {
     padding: 0 30px 0 10px;
@@ -112,12 +109,12 @@
 
 @media only screen and (min-width: 641px){
   .Prod_ImgSmallBadge {
-    width: 120px;
+    width: 90px;
   }
 }
 
 @media only screen and (max-width: 640px){
   .Prod_ImgSmallBadge {
-    width: 90px;
+    width: 70px;
   }
 }
