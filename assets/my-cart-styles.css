@@ -260,3 +260,8 @@ body.js-ajax-cart-not-empty .icon-cart-header {
   height: 50vh;
   color: #6b6b6b;
 }
+
+.hide_sideCart{
+  display: block;
+  overflow: hidden;
+}
