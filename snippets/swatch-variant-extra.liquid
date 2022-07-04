@@ -31,6 +31,7 @@
             {{ additional_name_variant | escape }}    
            </p>
     
+          
           {% comment %}Extra - Is Limited Badge - bgd.is_limited Metafield {% endcomment %}  
           {% for v in additional_product.variants %}
               {% if v.option1 == value %}
@@ -70,16 +71,6 @@
       {%- endfor -%}
     </ul>
 
-    {%- comment -%} Product Info for Variants - bgd.cover-type Metafield - Yurith{%- endcomment -%}
-    {% for variant in additional_product.variants %}
-      {% if variant.metafields.bgd.cover-type %}
-        {% assign design_class = "additional-info-wr additional-info-wr-hidden" %}
-        {% if variant.id == additional_product.selected_or_first_available_variant.id %}
-        	{% assign design_class = "additional-info-wr" %}
-        {% endif %}
-        <div data-variant-id="{{variant.id}}" class="{{ design_class }}">
-          {{ variant.metafields.bgd.cover-type }}
-        </div>
-      {% endif%}
-    {% endfor %}
+	{% render 'dynamic-variant-info', dynamic_info_type: 'additional_cover_type_info', additional_product: additional_product %}
+
 {% endif %}

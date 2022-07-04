@@ -888,5 +888,15 @@
         "default": "option1"
       }
     ]
+  },
+  {
+    "name": "Seasonal Product Info",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "seasonal_product_info",
+        "label": "Seasonal product info"
+      }
+    ]
   }
 ]

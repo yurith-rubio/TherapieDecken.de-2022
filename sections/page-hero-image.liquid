@@ -1,0 +1,203 @@
+<!-- section: slideshow.liquid -->
+{{ 'slideshow.css' | asset_url | stylesheet_tag }}
+{% style %}
+  .pageHero_ImageContainer{
+	background-size: cover;
+	background-position-x: {{ section.settings.bg_position_x }};
+  }
+  .dak_logo{
+	padding-top: 30px;
+  }
+  @media only screen and (max-width: 640px){
+	.dak_logo{
+	  max-width: 180px;
+	}
+  }
+{% endstyle %}
+<section id="section-{{ section.id }}">
+  <div class="Slideshow {% if section.settings.show_fullscreen %}Slideshow--fullscreen{% endif %}">
+    <div class="promotion-home-hero_content_container Slideshow__Carousel {% if section.settings.show_arrow %}Slideshow__Carousel--withScrollButton{% endif %} {% if section.settings.show_fullscreen %}Carousel--fixed{% endif %}">
+        {%- capture slide_content -%}
+          {%- assign mobile_image = section.settings.mobile_image | default: section.settings.image -%}
+          {%- if mobile_image -%}
+            <div class="Slideshow__ImageContainer pageHero_ImageContainer {% if section.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio{% endunless %} hidden-tablet-and-up"
+                 style="{% unless section.settings.show_fullscreen %}--aspect-ratio: {{ mobile_image.aspect_ratio }};{% endunless %} background-image: url({{ mobile_image | img_url: 'master', format: 'jpg' }})">
+                  <img class="Slideshow__Image" src="{{ mobile_image | img_url: 'x800' }}" alt="{{ mobile_image.alt | escape }}">
+            </div>
+          {%- endif -%}
+          {%- if section.settings.image -%}
+            <div class="Slideshow__ImageContainer pageHero_ImageContainer {% if section.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} hidden-phone"
+                 style="{% unless section.settings.show_fullscreen %}padding-bottom: {{ 100.0 | divided_by: section.settings.image.aspect_ratio }}%; --aspect-ratio: {{ section.settings.image.aspect_ratio }};{% endunless %} background-image: url({{ section.settings.image | img_url: 'master', format: 'jpg' }})">
+              {% assign image_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+                <img class="Slideshow__Image" src="{{ section.settings.image | img_url: '1000x' }}" alt="{{ section.settings.image.alt | escape }}">
+            </div>
+          {%- else -%}
+            <div class="Slideshow__ImageContainer {% if section.settings.apply_overlay %}Image--contrast{% endif %} {% if section.settings.show_fullscreen %}PlaceholderBackground{% endif %} PlaceholderSvg--dark">
+              {%- capture placeholder -%}{% cycle 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
+              {{ placeholder | placeholder_svg_tag: 'Slideshow__Image PlaceholderBackground__Svg' }}
+            </div>
+          {%- endif -%}
+
+          {%- capture slideshow_content -%}
+
+            {%- if section.settings.subheading != blank -%}
+            	<span class="pageHero_SubHeading SectionHeader__SubHeading Heading">{{ section.settings.subheading }}</span><br>
+            {%- endif -%}
+
+            {%- if section.settings.title != blank -%}
+	            <h1 class="pageHero_Heading Heading">{{ section.settings.title }}</h1>
+            {%- endif -%}
+      
+            {%- if section.settings.button_text != blank -%}
+              <div class="home_promotional_bottom_part">
+                <a href="{{ section.settings.button_link }}" class="promotion-home-hero_button Button Button--primary" >{{ section.settings.button_text | escape }}</a>
+              </div>
+            {%- endif -%}
+      
+      		{%- if page.handle == 'dak-kunden-sparen-beim-kauf-einer-therapiedecke' -%}
+			  <img class="dak_logo Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/DAK-LOGO_svg_white.svg?v=1656494793" alt="DAK logo">
+      		{% endif %}
+
+          {%- endcapture -%}
+
+          {%- if slideshow_content != blank -%}
+            <div class="pageHero_Content Slideshow__Content--{{ section.settings.content_position }}">
+              <header class="SectionHeader">
+                {{ slideshow_content }}
+              </header>
+            </div>
+          {%- endif -%}
+        {%- endcapture -%}
+
+        {%- comment -%}This code allows to cover a common use case where merchant would like to have a clickable image{%- endcomment -%}
+
+        {%- if section.settings.button_text == blank and section.settings.button_link != blank -%}
+          <a href="{{ section.settings.button_link }}" id="Slide{{ section.id }}" class="Slideshow__Slide Carousel__Cell {% if forloop.first %}is-selected{% endif %}" {% if forloop.first %}style="visibility: visible"{% endif %} data-slide-index="{{ forloop.index0 }}" {{ section.shopify_attributes }}>
+            {{- slide_content -}}
+          </a>
+        {%- else -%}
+          <div id="Slide{{ section.id }}" class="Slideshow__Slide Carousel__Cell {% if forloop.first %}is-selected{% endif %}" {% if forloop.first %}style="visibility: visible"{% endif %} data-slide-index="{{ forloop.index0 }}" {{ section.shopify_attributes }}>
+            {{- slide_content -}}
+          </div>
+        {%- endif -%}
+    </div>
+  </div>
+  <span id="section-{{ section.id }}-end" class="Anchor"></span>
+</section>
+<style>
+  #section-{{ section.id }} .Heading {
+    color: {{ section.settings.text_color }};
+  }
+</style>
+
+
+{% schema %}
+{
+  "name": "Page Hero Image",
+  "class": "shopify-section--slideshow",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_fullscreen",
+      "label": "Show full-screen images",
+      "info": "If enabled, images will be resized to fit the entire screen.",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1800 x 800px .jpg recommended"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image",
+      "info": "750 x 1100px .jpg recommended. If none is set, desktop image will be cropped."
+    },
+    {
+      "type": "text",
+      "id": "bg_position_x",
+      "label": "Background position x"
+    },
+    {
+      "type": "checkbox",
+      "id": "apply_overlay",
+      "label": "Apply overlay on image",
+      "info": "This can improve text visibility.",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "content_position",
+      "label": "Content position",
+      "options": [
+        {
+          "value": "middleLeft",
+          "label": "Middle left"
+        },
+        {
+          "value": "middleCenter",
+          "label": "Middle center"
+        },
+        {
+          "value": "middleRight",
+          "label": "Middle right"
+        },
+        {
+          "value": "bottomLeft",
+          "label": "Bottom left"
+        },
+        {
+          "value": "bottomCenter",
+          "label": "Bottom center"
+        },
+        {
+          "value": "bottomRight",
+          "label": "Bottom right"
+        }
+      ],
+      "default": "bottomLeft"
+    },
+    {
+      "type": "liquid",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Slide title"
+    },
+    {
+      "type": "liquid",
+      "id": "title",
+      "label": "Heading",
+      "default": "Tell your story"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Page Hero",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

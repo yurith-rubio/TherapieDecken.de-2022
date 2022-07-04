@@ -2162,6 +2162,26 @@ body:not(.is-tabbing) .flickity-enabled:focus {
     left: auto;
   }
 }
+
+/**
+ * ----------------------------------------------------------------------------------------------
+ * Default styling for owl-carousel
+ * ----------------------------------------------------------------------------------------------
+ */
+.owl-dots{
+	text-align:center;
+}
+.owl-carousel button.owl-dot.active{
+	background: #fac636;
+}
+.owl-carousel button.owl-dot{
+	width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50px;
+    margin: 0 7px;
+}
+
 /**
  * ----------------------------------------------------------------------------
  * Collapsible
@@ -10986,7 +11006,7 @@ a.Link-Button-General:hover {
     opacity: 0;
   }
 }
-.Slideshow__Content {
+.Slideshow__Content, .pageHero_Content {
   max-width: 1200px;
   position: absolute;
   padding: 0 50px;
@@ -12116,3 +12136,14 @@ a.entspannung-topseller-link:hover {
 #sellify-ucd-cart-drawer, #sellify-ucd-cart-drawer > div {
     transform-style: unset !important;
 }
+
+/* judge me review - Grishma 13-06*/
+.jdgm-widget .jdgm-rev__icon{
+	background: #fac6371c;
+}
+@media only screen and (min-width: 641px){
+	.jdgm-widget .jdgm-rev__content{
+      margin-left: 57px;
+  }
+}
+/* end judge me review - Grishma 13-06*/

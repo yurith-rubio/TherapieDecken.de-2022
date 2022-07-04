@@ -135,9 +135,119 @@
         "b0bf98ae-4fcf-427f-b66d-f5c4770560e8"
       ],
       "settings": {
-        "sub-heading": "Standard Therapiedecke",
+        "sub-heading": "Basic Therapiedecke",
         "heading": "Eigenschaften der Basic Gravity Gewichtsdecke",
         "video_url": "https:\/\/player.vimeo.com\/video\/352267408"
+      }
+    },
+    "1654097667dbef902a": {
+      "type": "expert-testimonials-left",
+      "blocks": {
+        "70e90597-be62-4b18-8fa0-922d63d17d02": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/diana-zur-lowens-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/diana_zur_lowen.jpg",
+            "tmex_name": "Diana zur Löwen",
+            "tmex_role": "Unternehmerin & Influencerin",
+            "tmex_paragraph": "<p>Man fühlt sich einfach geborgen und wiein Schutz genommen.  Das hilft mir besonderes, wenn ich wieder sehr nachdenklich und unruhig bin...<\/p>"
+          }
+        },
+        "82e988f3-c28e-41b7-921f-526804f74758": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/markus-rupperts-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/markus_ruppert.jpg",
+            "tmex_name": "Markus Ruppert",
+            "tmex_role": "Heilpraktiker & Traumatherapeut",
+            "tmex_paragraph": "<p>Für mich ist die Decke weder privat noch in meiner Arbeit wegzudenken. Es ist ein wichtiges Werkzeug und eine  wertvolle Ressource.<\/p>"
+          }
+        },
+        "f0c2c67d-6256-4d1e-b200-694275304732": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/caroline-helmings-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/caroline_helming.jpg",
+            "tmex_name": "Caroline Helming",
+            "tmex_role": "Ergotherapeutin & Schlafberaterin",
+            "tmex_paragraph": "<p>Ich bin ein großer Fan des Konzepts. Ob privat oder beruflich, ich kann sie uneingeschränkt weiterempfehlen.<\/p>"
+          }
+        },
+        "10389a8f-2a9b-44e6-a884-1bb7d288f9e5": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/dinah-bergers-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/dinah_berger.jpg",
+            "tmex_name": "Dinah Berger",
+            "tmex_role": "Psychologin",
+            "tmex_paragraph": "<p>Während Ängste gemildert werden, führt der Tiefendruck zu einem Gefühl von Sicherheit, das gerade bei Menschen mit Traumata oft fehlt.<\/p>"
+          }
+        },
+        "03c7bf8f-2dc1-4de6-8dc4-fd884e9db3ed": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/michaela-gross-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/Michaela_Gross_10_1_4.jpg",
+            "tmex_name": "Michaela Gross",
+            "tmex_role": "Heilpraktikerin für Psychotherapie",
+            "tmex_paragraph": "<p>Als Traumatherapeutin empfehle ich die Decken bei Schlaf-\/Angst- und Panikstörungen. Es hilft, dass sich die Patienten wieder spüren können.<\/p>"
+          }
+        },
+        "9f7eff75-d6d3-4f18-82e0-3517acbb93e9": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/dr-sabine-hoffmanns-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/phsycologist-therapiedecken-img1.jpg",
+            "tmex_name": "Dr. Sabine Hoffmann",
+            "tmex_role": "Leitende Psychologin",
+            "tmex_paragraph": "<p>Diese Decken können ein spontanes Gefühl von Ruhe, kurz gesagt „alles ist gut” auf der körperlichen und damit auch psychischen Ebene auslösen.<\/p>"
+          }
+        },
+        "facb8633-f9fb-43c7-be5f-264a32689f64": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/katharina-meier-batrakows-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/tm21_pic.jpg",
+            "tmex_name": "Katharina Meier-Batrakow",
+            "tmex_role": "Psychologin für Kinder- und Jugendliche",
+            "tmex_paragraph": "<p>Jemanden zu umarmen, um Trost zu spenden, ein Kind zu halten, um es zu beruhigen – all das sind altbewährte Methoden zur Stressreduktion.<\/p>"
+          }
+        },
+        "244e5073-a188-497e-a65d-964041ce47f4": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/carolin-weigands-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/tm21_pic_4.jpg",
+            "tmex_name": "Carolin Weigand",
+            "tmex_role": "Sozialpädagogin & Erzieherin",
+            "tmex_paragraph": "<p>Oft wird mir berichtet, dass sich Schüler nur schwer konzentrieren können. Gerne empfehle ich dann die Therapiedecke um runterzufahren.<\/p>"
+          }
+        },
+        "1495ebbf-a667-4d77-8ed5-722686762c0d": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/christine-tuchlers-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/Tuchler_stehend_1_1.jpg",
+            "tmex_name": "Christine Tuchler",
+            "tmex_role": "Psychotherapeutin für Kinder & Jugendliche",
+            "tmex_paragraph": "<p>Es ist einfach schön mit anzusehen wie nach kurzer Zeit die motorische Unruhe des Patienten zurückgeht.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "70e90597-be62-4b18-8fa0-922d63d17d02",
+        "82e988f3-c28e-41b7-921f-526804f74758",
+        "f0c2c67d-6256-4d1e-b200-694275304732",
+        "10389a8f-2a9b-44e6-a884-1bb7d288f9e5",
+        "03c7bf8f-2dc1-4de6-8dc4-fd884e9db3ed",
+        "9f7eff75-d6d3-4f18-82e0-3517acbb93e9",
+        "facb8633-f9fb-43c7-be5f-264a32689f64",
+        "244e5073-a188-497e-a65d-964041ce47f4",
+        "1495ebbf-a667-4d77-8ed5-722686762c0d"
+      ],
+      "settings": {
+        "bg-color": "",
+        "header": "Was Experten über die Wirkung von Therapiedecken sagen"
       }
     },
     "16294611499d6cacbd": {
@@ -258,13 +368,14 @@
       ],
       "settings": {
         "subheading": "",
-        "title": "Wirkung der Gravity Therapiedecke",
+        "title": "Wirkung der Therapiedecke",
         "button_label": "",
         "button_link": ""
       }
     },
     "1629709567bc66549f": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
@@ -277,7 +388,7 @@
         "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/NEW_Therapiedecken-Aufbau-Basic.jpg",
         "image_position": "right",
-        "content_html": "<style>\nli{\nlist-style: none;\n}\nli > span {\nposition: relative;\nleft: -24px;\nmargin-right: -20px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(2) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(3) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(4) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\n<\/style>\n\n\n<ol>\n<li>\n<span class=\"icon-one\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>Abnehmbarer Basic Bezug aus Polyester und Baumwolle\n\n<\/li>\n<li>\n<span class=\"icon-two\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nGravity Gewichtsdecke (Inlett)\n        Das Gravity Inlett besteht aus 100% organischer Baumwolle.\n        Füllung<\/li>\n<li>\n<span class=\"icon-three\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nDie Füllung ist aus 32% Polyester und 68% Baumwolle<\/li>\n<li>\n<span class=\"icon-four\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nIn der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.<\/li>\n<\/ol>",
+        "content_html": "",
         "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
         "button_style": false,
         "link_text": "",
@@ -285,6 +396,31 @@
         "button_extra": false,
         "link_text_extra": "Mehr Erfahren",
         "link_url_extra": ""
+      }
+    },
+    "165521611649782b5f": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "9f5915ab-0857-4a1e-bc0c-bd043d9d7e55": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% render 'slide-info-material' %}"
+          }
+        }
+      },
+      "block_order": [
+        "9f5915ab-0857-4a1e-bc0c-bd043d9d7e55"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "center",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/NEW_Therapiedecken-Aufbau-Basic.jpg",
+        "image_position": "right"
       }
     },
     "1629713540ecd6fa17": {
@@ -378,7 +514,7 @@
             "extra_block3": true,
             "subtitle_block3": "Wie unterscheiden sich die Gewichtsdecken Modelle?",
             "html_content_extra3": "Grundsätzlich erfüllen alle Gewichtsdecken den gleichen Zweck, nämlich einen Druck auf den Körper auszuüben. Alle unsere Balance Decken haben eine fest fixierte Füllung mit Edelstahlkügelchen. Gravity Decken und die Medizinischen Gewichtsdecken werden mit Glasperlen gefüllt, die sich innerhalb der Quadrate bewegen können.",
-            "richtext_content2": "<p>Bei weiteren Fragen besuchen Sie bitte unsere ausführliche <a href=\"https:\/\/therapiedecken.de\/apps\/help-center\">FAQ Seite<\/a>, schreiben uns eine E-Mail an <a href=\"mailto:kundenservice@therapiedecken.de\">kundenservice@therapiedecken.de<\/a> oder rufen uns an: <a href=\"tel:+498921093242\">+49 89-21 09 32 42<\/a>.<\/p>"
+            "richtext_content2": "<p>Bei weiteren Fragen besuchen Sie bitte unsere ausführliche <a href=\"https:\/\/therapiedecken.de\/pages\/faq\" title=\"FAQ Seite\">FAQ Seite<\/a>, schreiben uns eine E-Mail an <a href=\"mailto:kundenservice@therapiedecken.de\">kundenservice@therapiedecken.de<\/a> oder rufen uns an: <a href=\"tel:+498921093242\">+49 89-21 09 32 42<\/a>.<\/p>"
           }
         },
         "bec58932-c4aa-4ad3-bc3c-bf23b4e49297": {
@@ -437,10 +573,12 @@
     "1629459987d4cac0a9",
     "16291457001a7d71ef",
     "1629451775c72cd56a",
+    "1654097667dbef902a",
     "16294611499d6cacbd",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
     "1629709567bc66549f",
+    "165521611649782b5f",
     "1629713540ecd6fa17",
     "1629713705b12acbc0",
     "16293784209ff1ca2b",
