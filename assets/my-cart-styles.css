@@ -262,6 +262,6 @@ body.js-ajax-cart-not-empty .icon-cart-header {
 }
 
 .hide_sideCart{
-  display: block;
+  display: block !important;
   overflow: hidden;
 }
