@@ -153,9 +153,8 @@
 
 
 <script>
-  function overlayOn() {
-    document.getElementById("myCart_Overlay").style.display = "block";
-    
+  function overlayToggle() {
+    document.querySelector("#myCart_Overlay").classList.toggle("no-js");
     document.body.style.overflow = 'hidden';
   }
 
