@@ -1,16 +1,11 @@
-  
-{%- assign collection_erwachsene_image = block.settings.image -%}
-{%- assign collection_erwachsene_blanket_image = block.settings.blanket_image -%}
-
-
-<div class="collection_erwchsene_list">
+ <div class="collection_erwchsene_list">
         <div class="collection_content_img">
-    		{{collection_erwachsene_image}}
+    		{{block.settings.image}}
         </div>
         <div class="collection_content_block_main">
           <div class="collection_content_block">
             <div class="blanket_image">
-              {{collection_erwachsene_blanket_image}}
+              {{block.settings.blanket_image}}
             </div>
             <div class="blanket_content">
               <div class="price_div Heading">
