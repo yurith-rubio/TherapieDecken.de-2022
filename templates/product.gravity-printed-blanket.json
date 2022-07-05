@@ -211,6 +211,7 @@
     },
     "1642451845af007970": {
       "type": "advanced-content",
+      "disabled": true,
       "blocks": {
         "164245184467da80d8-1": {
           "type": "liquid",
