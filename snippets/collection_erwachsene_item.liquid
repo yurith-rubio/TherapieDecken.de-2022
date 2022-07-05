@@ -1,11 +1,14 @@
- <div class="collection_erwchsene_list">
+{%- assign collection_image = block.settings.image | default: collection.image | default: collection.products.first.featured_image -%}
+{%- assign collection_blanket_image = block.settings.blanket_image | default: collection.image | default: collection.products.first.featured_image -%}
+ 
+<div class="collection_erwchsene_list">
         <div class="collection_content_img">
-    		{{block.settings.image}}
+    		{{collection_image}}
         </div>
         <div class="collection_content_block_main">
           <div class="collection_content_block">
             <div class="blanket_image">
-              {{block.settings.blanket_image}}
+              {{collection_blanket_image}}
             </div>
             <div class="blanket_content">
               <div class="price_div Heading">
