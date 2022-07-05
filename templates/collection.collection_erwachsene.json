@@ -29,6 +29,24 @@
     },
     "1656957502d9b39723": {
       "type": "collection_erwachsene_list",
+      "blocks": {
+        "56af09d9-c31b-42ba-8977-b6584485276f": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
+            "blanket_image": "shopify:\/\/shop_images\/cooling-warming_image_v3.jpg",
+            "price": "229",
+            "title": "PREMIUM Balance",
+            "subheading": "Gewichtsdecke für Erwachsene",
+            "button_text": "Mehr Erfahren",
+            "button_link": "https:\/\/therapiedecken.de\/collections\/erwachsene\/products\/balance-gewichtsdecke-fur-erwachsene"
+          }
+        }
+      },
+      "block_order": [
+        "56af09d9-c31b-42ba-8977-b6584485276f"
+      ],
       "settings": {
       }
     }
