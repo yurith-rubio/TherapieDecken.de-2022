@@ -1,20 +1,25 @@
-   <div class="collection_erwchsene_list">
+  
+{%- assign collection_erwachsene_image = block.settings.image -%}
+{%- assign collection_erwachsene_blanket_image = block.settings.blanket_image -%}
+
+
+<div class="collection_erwchsene_list">
         <div class="collection_content_img">
-    		<img src="https://cdn.shopify.com/s/files/1/2451/6611/files/Insurance-lp-image2.jpg?v=1656500179">
+    		{{collection_erwachsene_image}}
         </div>
         <div class="collection_content_block_main">
           <div class="collection_content_block">
             <div class="blanket_image">
-              <img src="https://cdn.shopify.com/s/files/1/2451/6611/products/1200x1200_9_6e6461a7-7b81-4579-ac03-ba6b860fabc9_900x.jpg?v=1650025256">
+              {{collection_erwachsene_blanket_image}}
             </div>
             <div class="blanket_content">
               <div class="price_div Heading">
                 <span style="font-size: 10px; color: #5B5B5B; vertical-align: text-bottom;">Ab</span>
-                <span class="price">229 €</span>
+                <span class="price">{{block.settings.price}}</span>
               </div>
               <h2 class="title Heading">
-                <span style="text-transform: uppercase;">Premium</span> Balance
-                <span class="title_extra">Gewichtsdecke für Erwachsene</span>
+                <span>{{block.settings.title}}</span>
+                <span class="title_extra">{{block.settings.subheading}}</span>
               </h2>
               <hr class="ce_divider">
               <div class="ce_container">
@@ -59,6 +64,6 @@
               </div>
             </div>
           </div>
-          <a href="/collections/erwachsene/products/balance-gewichtsdecke-fur-erwachsene" class="Button_Colleciton_small Button Button--primary">Mehr Erfahren</a>
+          <a href="{{block-settings.button_link}}" class="Button_Colleciton_small Button Button--primary">{{block.settings.button_text}}</a>
       	</div>
     </div>
