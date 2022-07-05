@@ -5,12 +5,6 @@
   .heading_wrapper p{
   	margin-bottom:0;
   }
-  .collection_erwachsene_wrapper{
-  	display: grid;
-    grid-template-columns:1fr 1fr;
-    margin: 80px 30px;
-    gap: 40px;
-  }
   .collection_erwchsene_list{
     position: relative;
   }
@@ -99,6 +93,14 @@
     font-family:"Maven Pro", sans-serif;
     font-size: 12px;
     font-weight: 100;
+  }
+  @media only screen and (min-width: 768px){
+  	.collection_erwachsene_wrapper{
+      display: grid;
+      grid-template-columns:1fr 1fr;
+      margin: 80px 30px;
+      gap: 40px;
+    }
   }
 </style>
 <div class="collection_erwachsene_main">
