@@ -22,6 +22,8 @@
                 <span class="title_extra">{{block.settings.subheading}}</span>
               </h2>
               <hr class="ce_divider">
+              
+              {% if block.settings.title == "PREMIUM Balance" %}
               <div class="ce_container">
                   <div class="icon-30">
                     <span class="icon-premium-cotton"></span>
@@ -62,6 +64,17 @@
                   	Kühlmöglichkeit<span>Zusatzfunktion</span>
                 </div>
               </div>
+              {% endif %}
+              
+              {% if block.settings.title == "STANDARD Balance" %}
+              {% endif %}
+              
+              {% if block.settings.title == "BASIC Gravity" %}
+              {% endif %}
+              
+              {% if block.settings.title == "ECO Gravity" %}
+              {% endif %}
+              
             </div>
           </div>
           <a href="{{block.settings.button_link}}" class="Button_Colleciton_small Button Button--primary">{{block.settings.button_text}}</a>
