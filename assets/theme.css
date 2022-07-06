@@ -8809,11 +8809,11 @@ a.CollectionItemPage {
     transform: none;
     text-align: left;
   }
-  .ImageHero__Wrapper__Addons{
+  /*.ImageHero__Wrapper__Addons{
     position: absolute;
     margin-left: 100px;
     margin-top: 250px;
-  }
+  }*/
 }
 
 @media screen and (min-width: 1140px) {
