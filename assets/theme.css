@@ -8822,7 +8822,12 @@ a.CollectionItemPage {
       margin-top: 250px;
     }
 }
-
+@media (min-width: 768px) and (max-width: 1023px){
+	.ImageHero__Wrapper__Addons{
+      background-color: #e6e6e6;
+    width: 100%;
+    }
+}
 @media screen and (min-width: 1140px) {
   .ImageHero {
     min-height: 500px;
