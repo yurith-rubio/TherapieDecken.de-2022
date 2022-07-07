@@ -31,7 +31,7 @@
                 {% endif %}
                 <hr class="ce_divider">
                 <div class="ce_container_wrapper">
-                  {% if block.settings.simple_icons %}
+                  {% if block.settings.simple_icons != 'none' %}
                   <div class="ce_container">
                       <div class="icon-30">
                         {% render 'icons_monotone', block:block, settings:settings %}
@@ -223,8 +223,25 @@
             "options": [
               {
                 "value": "premium-cotton",
-                "label": "premium Cotton"
+                "label": "premium cotton"
+              },
+              {
+                "value": "icon-zipper",
+                "label": "zipper"
+              },
+              {
+                "value": "icon-icn_metalballs",
+                "label": "metalballs"
+              },
+              {
+                "value": "icon-icn_stability100-1",
+                "label": "stability"
+              },
+              {
+                "value": "icon-cooling-blanket",
+                "label": "cooling blanket"
               }
+
             ],
             "default": "premium-cotton"
           },
