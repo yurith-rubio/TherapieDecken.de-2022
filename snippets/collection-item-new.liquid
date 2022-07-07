@@ -14,7 +14,7 @@
         </div>
         {% if section.settings.show_title %}
         <h2 class="title Heading">
-          <span>{{ block.settings.title | default: collection.title | escape }}</span>
+          <span>{{ product.title }}</span>
           <span class="title_extra">{{ block.settings.subheading | default: collection.subheading | escape }}</span>
         </h2>
         {% endif %}
