@@ -46,7 +46,8 @@
                   {% if block.settings.simple_icons2 != 'none' %}
                   <div class="ce_container">
                       <div class="icon-30">
-                        {% render 'icons_monotone', block:block, settings:settings %}
+                        {% assign selected_icon = block.settings.simple_icons2 | string %}
+                        {% render 'icons_monotone', selected_icon:selected_icon %}
                       </div>
                       <div class="Heading u-h6">
                         Reißverschluss<span>Bezugssystem</span>
