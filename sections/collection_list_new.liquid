@@ -31,7 +31,19 @@
                 {% endif %}
                 <hr class="ce_divider">
                 <div class="ce_container_wrapper">
-                  {% if block.settings.simple_icons != 'none' %}
+                  {% if block.settings.simple_icons %}
+                  <div class="ce_container">
+                      <div class="icon-30">
+                        {% render 'icons_monotone', block:block, settings:settings %}
+                      </div>
+                      <div class="Heading u-h6">
+                        {{ block.settings.icon_title | default: collection.icon_title | escape }}
+                        <span>{{ block.settings.icon_subheading | default: collection.icon_subheading | escape }}</span>
+                      </div>
+                  </div>
+                  {% endif %}
+                  {% if block.settings.simple_icons != 'none
+                  ' %}
                   <div class="ce_container">
                       <div class="icon-30">
                         {% render 'icons_monotone', block:block, settings:settings %}
@@ -44,7 +56,7 @@
                   {% endif %}
                   <div class="ce_container">
                       <div class="icon-30">
-                        {% render 'icons_monotone', block:block, settings:settings %}
+                        <span class="icon-zipper"></span>
                       </div>
                       <div class="Heading u-h6">
                         Reißverschluss<span>Bezugssystem</span>
@@ -52,7 +64,7 @@
                   </div>
                   <div class="ce_container">
                       <div class="icon-30">
-                        {% render 'icons_monotone', block:block, settings:settings %}
+                        <span class="icon-icn_metalballs"></span>
                       </div>
                       <div class="Heading u-h6">
                         Edelstahlperlen<span>Gewichtsmaterial</span>
@@ -60,7 +72,7 @@
                   </div>
                   <div class="ce_container">
                       <div class="icon-30">
-                        {% render 'icons_monotone', block:block, settings:settings %}
+                        <span class="icon-icn_stability100-1"></span>
                       </div>
                       <div class="Heading u-h6">
                         100% fest stabil<span>Gewichtsverteilung</span>
@@ -68,7 +80,7 @@
                   </div>
                   <div class="ce_container">
                     <div class="icon-30">
-                        {% render 'icons_monotone', block:block, settings:settings %}
+                        <span class="icon-cooling-blanket"></span>
                     </div>
                     <div class="Heading u-h6">
                         Kühlmöglichkeit<span>Zusatzfunktion</span>
@@ -219,145 +231,12 @@
           {
             "type": "select",
             "id": "simple_icons",
-            "label": "Icon 1",
+            "label": "Icons",
             "options": [
               {
                 "value": "premium-cotton",
-                "label": "premium cotton"
-              },
-              {
-                "value": "icon-zipper",
-                "label": "zipper"
-              },
-              {
-                "value": "icon-icn_metalballs",
-                "label": "metalballs"
-              },
-              {
-                "value": "icon-icn_stability100-1",
-                "label": "stability"
-              },
-              {
-                "value": "icon-cooling-blanket",
-                "label": "cooling blanket"
+                "label": "premium Cotton"
               }
-
-            ],
-            "default": "premium-cotton"
-          },
-          {
-            "type": "select",
-            "id": "simple_icons2",
-            "label": "Icon 2",
-            "options": [
-              {
-                "value": "premium-cotton",
-                "label": "premium cotton"
-              },
-              {
-                "value": "icon-zipper",
-                "label": "zipper"
-              },
-              {
-                "value": "icon-icn_metalballs",
-                "label": "metalballs"
-              },
-              {
-                "value": "icon-icn_stability100-1",
-                "label": "stability"
-              },
-              {
-                "value": "icon-cooling-blanket",
-                "label": "cooling blanket"
-              }
-
-            ],
-            "default": "premium-cotton"
-          },
-          {
-            "type": "select",
-            "id": "simple_icons3",
-            "label": "Icon 3",
-            "options": [
-              {
-                "value": "premium-cotton",
-                "label": "premium cotton"
-              },
-              {
-                "value": "icon-zipper",
-                "label": "zipper"
-              },
-              {
-                "value": "icon-icn_metalballs",
-                "label": "metalballs"
-              },
-              {
-                "value": "icon-icn_stability100-1",
-                "label": "stability"
-              },
-              {
-                "value": "icon-cooling-blanket",
-                "label": "cooling blanket"
-              }
-
-            ],
-            "default": "premium-cotton"
-          },
-          {
-            "type": "select",
-            "id": "simple_icons4",
-            "label": "Icon 4",
-            "options": [
-              {
-                "value": "premium-cotton",
-                "label": "premium cotton"
-              },
-              {
-                "value": "icon-zipper",
-                "label": "zipper"
-              },
-              {
-                "value": "icon-icn_metalballs",
-                "label": "metalballs"
-              },
-              {
-                "value": "icon-icn_stability100-1",
-                "label": "stability"
-              },
-              {
-                "value": "icon-cooling-blanket",
-                "label": "cooling blanket"
-              }
-
-            ],
-            "default": "premium-cotton"
-          },
-          {
-            "type": "select",
-            "id": "simple_icons5",
-            "label": "Icon 5",
-            "options": [
-              {
-                "value": "premium-cotton",
-                "label": "premium cotton"
-              },
-              {
-                "value": "icon-zipper",
-                "label": "zipper"
-              },
-              {
-                "value": "icon-icn_metalballs",
-                "label": "metalballs"
-              },
-              {
-                "value": "icon-icn_stability100-1",
-                "label": "stability"
-              },
-              {
-                "value": "icon-cooling-blanket",
-                "label": "cooling blanket"
-              }
-
             ],
             "default": "premium-cotton"
           },
