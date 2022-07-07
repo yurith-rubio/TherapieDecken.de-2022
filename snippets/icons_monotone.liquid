@@ -94,22 +94,19 @@
   <span class="icon-sixty-three-percent"></span>
 {% endif %}
 
-{% if block.settings.simple_icons or block.settings.simple_icons2 == 'premium-cotton'%}
-  <span class="icon-premium-cotton"></span>
-{% endif %}
+{%- case icon_monotone -%}
+  {%- when 'premium-cotton' -%}
+    <span class="icon-premium-cotton"></span>
 
-{% if block.settings.simple_icons or block.settings.simple_icons2 == 'icon-zipper'%}
-  <span class="icon-zipper"></span>
-{% endif %}
+  {%- when 'zipper' -%}
+    <span class="icon-zipper"></span>
 
-{% if block.settings.simple_icons or block.settings.simple_icons2 == 'icon-icn_metalballs'%}
-  <span class="icon-icn_metalballs"></span>
-{% endif %}
+  {%- when 'metalballs' -%}
+    <span class="icon-icn_metalballs"></span>
 
-{% if block.settings.simple_icons or block.settings.simple_icons2 == 'icon-icn_stability100-1'%}
-  <span class="icon-icn_stability100-1"></span>
-{% endif %}
+  {%- when 'stability' -%}
+    <span class="icon-icn_stability100-1"></span>
 
-{% if block.settings.simple_icons or block.settings.simple_icons2 == 'icon-cooling-blanket'%}
-  <span class="icon-cooling-blanket"></span>
-{% endif %}
+  {%- when 'blanket' -%}
+    <span class="icon-cooling-blanket"></span>
+{%- endcase -%}
