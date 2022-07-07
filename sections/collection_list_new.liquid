@@ -34,8 +34,8 @@
                   {% if block.settings.simple_icons %}
                   <div class="ce_container">
                       <div class="icon-30">
-                        {% render 'icons_monotone', selected_icon: {{ block.settings.simple_icons }} %}
-                        selected icon: {{ selected_icon }} block.settings.simple_icons: {{ block.settings.simple_icons }}
+                        {% render 'icons_monotone', selected_icon: {{ block.settings.simple_icons | json }} %}
+                        selected icon: {{ selected_icon }} block.settings.simple_icons: {{ block.settings.simple_icons | json }}
                       </div>
                       <div class="Heading u-h6">
                         {{ block.settings.icon_title | default: collection.icon_title | escape }}
