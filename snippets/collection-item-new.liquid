@@ -14,10 +14,10 @@
           {%- if product.available -%}
             {%- if product.compare_at_price > product.price -%}
                 <span class="ProductItem__Label ProductItem__Label--onSale Heading Text--subdued">{{ 'product.labels.on_sale' | t }}</span>
-              {%- endif -%}
-            {%- else -%}
-              <span class="ProductItem__Label ProductItem__Label--soldOut Heading Text--subdued">{{ 'product.labels.sold_out' | t }}</span>
             {%- endif -%}
+          {%- else -%}
+              <span class="ProductItem__Label ProductItem__Label--soldOut Heading Text--subdued">{{ 'product.labels.sold_out' | t }}</span>
+          {%- endif -%}
           
           <span class="price">229</span>
         </div>
