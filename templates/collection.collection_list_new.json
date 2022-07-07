@@ -40,7 +40,9 @@
             "subheading": "Gewichtsdecke für Erwachsene",
             "button_text": "Mehr Erfahren",
             "button_link": "https:\/\/therapiedecken.de\/collections\/erwachsene\/products\/balance-gewichtsdecke-fur-erwachsene",
-            "apply_overlay": true
+            "apply_overlay": true,
+            "icon_title": "Premium Biobezüge",
+            "icon_subheading": "Sub-heading"
           }
         }
       },
