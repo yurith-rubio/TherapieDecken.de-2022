@@ -49,36 +49,42 @@
           {% if product.metafields.td_field.collection_product_icon3 %}
           <div class="ce_container">
             <div class="icon-30">
-              {% assign collection_selected_icon = block.settings.simple_icons3 | string %}
+              {% assign collection_selected_icon = product.metafields.td_field.collection_product_icon3 | string %}
               {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
             </div>
             <div class="Heading u-h6">
-              {{ block.settings.icon3_title | default: collection.icon3_title | escape }}
-              <span>{{ block.settings.icon3_subheading | default: collection.icon3_subheading | escape }}</span>
+              {% assign collection_icon_title = product.metafields.td_field.collection_icon3_title | escape %}
+              {{ collection_icon_title | default: "icon_title" | escape }}
+              {% assign collection_icon_subheading = product.metafields.td_field.collection_icon3_subheading | escape %}
+              <span>{{ collection_icon_subheading | default: "icon_subheading" | escape }}</span>
             </div>
           </div>
           {% endif %}
           {% if product.metafields.td_field.collection_product_icon4 %}
           <div class="ce_container">
             <div class="icon-30">
-              {% assign collection_selected_icon = block.settings.simple_icons4 | string %}
+              {% assign collection_selected_icon = product.metafields.td_field.collection_product_icon4 | string %}
               {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
             </div>
             <div class="Heading u-h6">
-              {{ block.settings.icon4_title | default: collection.icon4_title | escape }}
-              <span>{{ block.settings.icon4_subheading | default: collection.icon4_subheading | escape }}</span>
+              {% assign collection_icon_title = product.metafields.td_field.collection_icon4_title | escape %}
+              {{ collection_icon_title | default: "icon_title" | escape }}
+              {% assign collection_icon_subheading = product.metafields.td_field.collection_icon4_subheading | escape %}
+              <span>{{ collection_icon_subheading | default: "icon_subheading" | escape }}</span>
             </div>
           </div>
           {% endif %}
           {% if product.metafields.td_field.collection_product_icon5 %}
           <div class="ce_container">
             <div class="icon-30">
-              {% assign collection_selected_icon = block.settings.simple_icons5 | string %}
+              {% assign collection_selected_icon = product.metafields.td_field.collection_product_icon5 | string %}
               {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
             </div>
             <div class="Heading u-h6">
-              {{ block.settings.icon5_title | default: collection.icon5_title | escape }}
-              <span>{{ block.settings.icon5_subheading | default: collection.icon5_subheading | escape }}</span>
+              {% assign collection_icon_title = product.metafields.td_field.collection_icon5_title | escape %}
+              {{ collection_icon_title | default: "icon_title" | escape }}
+              {% assign collection_icon_subheading = product.metafields.td_field.collection_icon5_subheading | escape %}
+              <span>{{ collection_icon_subheading | default: "icon_subheading" | escape }}</span>
             </div>
           </div>
           {% endif %}
