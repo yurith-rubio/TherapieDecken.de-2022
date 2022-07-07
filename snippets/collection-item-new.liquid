@@ -1,88 +1,88 @@
 <div class="collection_new_list">
-          <div class="collection_content_img">
-              <img class="Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/Insurance-lp-image2_256x256.jpg?v=1656500179">
-          </div>
-          <div class="collection_content_block_main">
-            <div class="collection_content_block">
-              <div class="blanket_image">
-                <img class="Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/blanket_image.png?v=1657106987">
-              </div>
-              <div class="blanket_content">
-                <div class="price_div Heading">
-                  <span style="font-size: 10px; color: #5B5B5B; vertical-align: text-bottom;">Ab</span>
-                  <span class="price">229</span>
-                </div>
-                {% if block.settings.title %}
-                  <h2 class="title Heading">
-                    <span>{{ block.settings.title | default: collection.title | escape }}</span>
-                    <span class="title_extra">{{ block.settings.subheading | default: collection.subheading | escape }}</span>
-                  </h2>
-                {% endif %}
-                <hr class="ce_divider">
-                <div class="ce_container_wrapper">
-                  {% if block.settings.simple_icons %}
-                  <div class="ce_container">
-                      <div class="icon-30">
-                        {% assign collection_selected_icon = block.settings.simple_icons | string %}
-                        {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
-                      </div>
-                      <div class="Heading u-h6">
-                        {{ block.settings.icon_title | default: collection.icon_title | escape }}
-                        <span>{{ block.settings.icon_subheading | default: collection.icon_subheading | escape }}</span>
-                      </div>
-                  </div>
-                  {% endif %}
-                  {% if block.settings.simple_icons2 != 'none' %}
-                  <div class="ce_container">
-                      <div class="icon-30">
-                        {% assign collection_selected_icon = block.settings.simple_icons2 | string %}
-                        {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
-                      </div>
-                      <div class="Heading u-h6">
-                        {{ block.settings.icon2_title | default: collection.icon2_title | escape }}
-                        <span>{{ block.settings.icon2_subheading | default: collection.icon2_subheading | escape }}</span>
-                      </div>
-                  </div>
-                  {% endif %}
-                  {% if block.settings.simple_icons3 != 'none' %}
-                  <div class="ce_container">
-                      <div class="icon-30">
-                        {% assign collection_selected_icon = block.settings.simple_icons3 | string %}
-                        {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
-                      </div>
-                      <div class="Heading u-h6">
-                        {{ block.settings.icon3_title | default: collection.icon3_title | escape }}
-                        <span>{{ block.settings.icon3_subheading | default: collection.icon3_subheading | escape }}</span>
-                      </div>
-                  </div>
-                  {% endif %}
-                  {% if block.settings.simple_icons4 != 'none' %}
-                  <div class="ce_container">
-                      <div class="icon-30">
-                        {% assign collection_selected_icon = block.settings.simple_icons4 | string %}
-                        {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
-                      </div>
-                      <div class="Heading u-h6">
-                        {{ block.settings.icon4_title | default: collection.icon4_title | escape }}
-                        <span>{{ block.settings.icon4_subheading | default: collection.icon4_subheading | escape }}</span>
-                      </div>
-                  </div>
-                  {% endif %}
-                  {% if block.settings.simple_icons5 != 'none' %}
-                  <div class="ce_container">
-                    <div class="icon-30">
-                        {% assign collection_selected_icon = block.settings.simple_icons5 | string %}
-                        {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
-                    </div>
-                    <div class="Heading u-h6">
-                      	{{ block.settings.icon5_title | default: collection.icon5_title | escape }}
-                        <span>{{ block.settings.icon5_subheading | default: collection.icon5_subheading | escape }}</span>
-                    </div>
-                  </div>
-                  {% endif %}
-                </div>
-              </div>
-            </div>
-            <a href="https://therapiedecken.de/collections/erwachsene/products/balance-gewichtsdecke-fur-erwachsene" class="Button_Colleciton_small Button Button--primary">Mehr Erfahren</a>
-          </div>
+  <div class="collection_content_img">
+    <img class="Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/Insurance-lp-image2_256x256.jpg?v=1656500179">
+  </div>
+  <div class="collection_content_block_main">
+    <div class="collection_content_block">
+      <div class="blanket_image">
+        <img class="Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/blanket_image.png?v=1657106987">
       </div>
+      <div class="blanket_content">
+        <div class="price_div Heading">
+          <span style="font-size: 10px; color: #5B5B5B; vertical-align: text-bottom;">Ab</span>
+          <span class="price">229</span>
+        </div>
+        {% if section.settings.show_title %}
+        <h2 class="title Heading">
+          <span>{{ block.settings.title | default: collection.title | escape }}</span>
+          <span class="title_extra">{{ block.settings.subheading | default: collection.subheading | escape }}</span>
+        </h2>
+        {% endif %}
+        <hr class="ce_divider">
+        <div class="ce_container_wrapper">
+          {% if block.settings.simple_icons %}
+          <div class="ce_container">
+            <div class="icon-30">
+              {% assign collection_selected_icon = block.settings.simple_icons | string %}
+              {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
+            </div>
+            <div class="Heading u-h6">
+              {{ block.settings.icon_title | default: collection.icon_title | escape }}
+              <span>{{ block.settings.icon_subheading | default: collection.icon_subheading | escape }}</span>
+            </div>
+          </div>
+          {% endif %}
+          {% if block.settings.simple_icons2 != 'none' %}
+          <div class="ce_container">
+            <div class="icon-30">
+              {% assign collection_selected_icon = block.settings.simple_icons2 | string %}
+              {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
+            </div>
+            <div class="Heading u-h6">
+              {{ block.settings.icon2_title | default: collection.icon2_title | escape }}
+              <span>{{ block.settings.icon2_subheading | default: collection.icon2_subheading | escape }}</span>
+            </div>
+          </div>
+          {% endif %}
+          {% if block.settings.simple_icons3 != 'none' %}
+          <div class="ce_container">
+            <div class="icon-30">
+              {% assign collection_selected_icon = block.settings.simple_icons3 | string %}
+              {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
+            </div>
+            <div class="Heading u-h6">
+              {{ block.settings.icon3_title | default: collection.icon3_title | escape }}
+              <span>{{ block.settings.icon3_subheading | default: collection.icon3_subheading | escape }}</span>
+            </div>
+          </div>
+          {% endif %}
+          {% if block.settings.simple_icons4 != 'none' %}
+          <div class="ce_container">
+            <div class="icon-30">
+              {% assign collection_selected_icon = block.settings.simple_icons4 | string %}
+              {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
+            </div>
+            <div class="Heading u-h6">
+              {{ block.settings.icon4_title | default: collection.icon4_title | escape }}
+              <span>{{ block.settings.icon4_subheading | default: collection.icon4_subheading | escape }}</span>
+            </div>
+          </div>
+          {% endif %}
+          {% if block.settings.simple_icons5 != 'none' %}
+          <div class="ce_container">
+            <div class="icon-30">
+              {% assign collection_selected_icon = block.settings.simple_icons5 | string %}
+              {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
+            </div>
+            <div class="Heading u-h6">
+              {{ block.settings.icon5_title | default: collection.icon5_title | escape }}
+              <span>{{ block.settings.icon5_subheading | default: collection.icon5_subheading | escape }}</span>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <a href="https://therapiedecken.de/collections/erwachsene/products/balance-gewichtsdecke-fur-erwachsene" class="Button_Colleciton_small Button Button--primary">Mehr Erfahren</a>
+  </div>
+</div>
