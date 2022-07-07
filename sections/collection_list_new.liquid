@@ -62,6 +62,8 @@
                         {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
                       </div>
                       <div class="Heading u-h6">
+                        {{ block.settings.icon3_title | default: collection.icon3_title | escape }}
+                        <span>{{ block.settings.icon3_subheading | default: collection.icon3_subheading | escape }}</span>
                         Edelstahlperlen<span>Gewichtsmaterial</span>
                       </div>
                   </div>
