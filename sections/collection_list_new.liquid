@@ -57,7 +57,8 @@
                   {% if block.settings.simple_icons3 != 'none' %}
                   <div class="ce_container">
                       <div class="icon-30">
-                        {% render 'icons_monotone' | %}
+                        {% assign collection_selected_icon = block.settings.simple_icons3 | string %}
+                        {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
                       </div>
                       <div class="Heading u-h6">
                         Edelstahlperlen<span>Gewichtsmaterial</span>
@@ -67,7 +68,8 @@
                   {% if block.settings.simple_icons4 != 'none' %}
                   <div class="ce_container">
                       <div class="icon-30">
-                        {% render 'icons_monotone', block:block, settings:settings %}
+                        {% assign collection_selected_icon = block.settings.simple_icons4 | string %}
+                        {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
                       </div>
                       <div class="Heading u-h6">
                         100% fest stabil<span>Gewichtsverteilung</span>
@@ -77,7 +79,8 @@
                   {% if block.settings.simple_icons5 != 'none' %}
                   <div class="ce_container">
                     <div class="icon-30">
-                        {% render 'icons_monotone', block:block, settings:settings %}
+                        {% assign collection_selected_icon = block.settings.simple_icons5 | string %}
+                        {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
                     </div>
                     <div class="Heading u-h6">
                         Kühlmöglichkeit<span>Zusatzfunktion</span>
