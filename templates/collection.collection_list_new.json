@@ -28,7 +28,7 @@
       }
     },
     "1656957502d9b39723": {
-      "type": "collection_erwachsene_list",
+      "type": "collection_list_new",
       "blocks": {
         "56af09d9-c31b-42ba-8977-b6584485276f": {
           "type": "collection",
@@ -36,8 +36,8 @@
             "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
             "image_alignment": "center center",
             "simple_icons": "premium-cotton",
-            "subheading": "Gewichtsdecke für Erwachsene",
             "title": "PREMIUM Balance",
+            "subheading": "Gewichtsdecke für Erwachsene",
             "button_text": "Mehr Erfahren",
             "button_link": "https:\/\/therapiedecken.de\/collections\/erwachsene\/products\/balance-gewichtsdecke-fur-erwachsene",
             "apply_overlay": true
