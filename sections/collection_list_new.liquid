@@ -35,6 +35,7 @@
                   <div class="ce_container">
                       <div class="icon-30">
                         {% render 'icons_monotone', selected_icon: {{ block.settings.simple_icons}} %}
+                        {{ selected_icon }}
                       </div>
                       <div class="Heading u-h6">
                         {{ block.settings.icon_title | default: collection.icon_title | escape }}
