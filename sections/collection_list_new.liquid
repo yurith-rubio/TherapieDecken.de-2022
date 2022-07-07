@@ -12,10 +12,12 @@
     {%- capture collection_inner -%}
     {%- if collection.products_count > 0 -%}
       {%- paginate collection.products by section.settings.grid_items_per_page -%}
-        {% for block in section.blocks %}
-          {%- assign collection = collections[block.settings.collection] -%}
-          {%- render 'collection-item-new', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
-        {% endfor %}
+    	{%- for product in collection.products -%}
+          {% for block in section.blocks %}
+            {%- assign collection = collections[block.settings.collection] -%}
+            {%- render 'collection-item-new', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
+          {% endfor %}
+    	{% endfor %}
       {%- endpaginate -%}
     {% endif %}
   {%- endcapture -%}
