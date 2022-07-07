@@ -45,7 +45,7 @@
                   {% if block.settings.simple_icons2 != 'none' %}
                   <div class="ce_container">
                       <div class="icon-30">
-                        <span class="icon-zipper"></span>
+                        {% render 'icons_monotone', block:block, settings:settings %}
                       </div>
                       <div class="Heading u-h6">
                         Reißverschluss<span>Bezugssystem</span>
@@ -55,7 +55,7 @@
                   {% if block.settings.simple_icons3 != 'none' %}
                   <div class="ce_container">
                       <div class="icon-30">
-                        <span class="icon-icn_metalballs"></span>
+                        {% render 'icons_monotone', block:block, settings:settings %}
                       </div>
                       <div class="Heading u-h6">
                         Edelstahlperlen<span>Gewichtsmaterial</span>
@@ -65,7 +65,7 @@
                   {% if block.settings.simple_icons4 != 'none' %}
                   <div class="ce_container">
                       <div class="icon-30">
-                        <span class="icon-icn_stability100-1"></span>
+                        {% render 'icons_monotone', block:block, settings:settings %}
                       </div>
                       <div class="Heading u-h6">
                         100% fest stabil<span>Gewichtsverteilung</span>
@@ -75,7 +75,7 @@
                   {% if block.settings.simple_icons5 != 'none' %}
                   <div class="ce_container">
                     <div class="icon-30">
-                        <span class="icon-cooling-blanket"></span>
+                        {% render 'icons_monotone', block:block, settings:settings %}
                     </div>
                     <div class="Heading u-h6">
                         Kühlmöglichkeit<span>Zusatzfunktion</span>
