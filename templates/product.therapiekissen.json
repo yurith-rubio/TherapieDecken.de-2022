@@ -172,6 +172,7 @@
     },
     "1630164258a011a266": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
