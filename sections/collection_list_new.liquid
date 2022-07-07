@@ -50,6 +50,8 @@
                         {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
                       </div>
                       <div class="Heading u-h6">
+                        {{ block.settings.icon2_title | default: collection.icon2_title | escape }}
+                        <span>{{ block.settings.icon2_subheading | default: collection.icon2_subheading | escape }}</span>
                         Reißverschluss<span>Bezugssystem</span>
                       </div>
                   </div>
