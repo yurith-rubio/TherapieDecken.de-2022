@@ -42,17 +42,6 @@
                       </div>
                   </div>
                   {% endif %}
-                  {% if block.settings.simple_icons != 'none' %}
-                  <div class="ce_container">
-                      <div class="icon-30">
-                        {% render 'icons_monotone', block:block, settings:settings %}
-                      </div>
-                      <div class="Heading u-h6">
-                        {{ block.settings.icon_title | default: collection.icon_title | escape }}
-                        <span>{{ block.settings.icon_subheading | default: collection.icon_subheading | escape }}</span>
-                      </div>
-                  </div>
-                  {% endif %}
                   {% if block.settings.simple_icons2 != 'none' %}
                   <div class="ce_container">
                       <div class="icon-30">
@@ -243,6 +232,22 @@
               {
                 "value": "premium-cotton",
                 "label": "premium Cotton"
+              },
+              {
+                "value": "icon-zipper",
+                "label": "zipper"
+              },
+              {
+                "value": "icon-icn_metalballs",
+                "label": "metalballs"
+              },
+              {
+                "value": "icon-icn_stability100-1",
+                "label": "stability"
+              },
+              {
+                "value": "icon-cooling-blanket",
+                "label": "cooling blanket"
               }
             ],
             "default": "premium-cotton"
