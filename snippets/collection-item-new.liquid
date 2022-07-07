@@ -11,7 +11,16 @@
         <div class="price_div Heading">
           <span style="font-size: 10px; color: #5B5B5B; vertical-align: text-bottom;">Ab</span>
           
-
+            {%- if product.compare_at_price > product.price -%}
+			 <span style="font-weight: normal!important; font-size: 8px">Ab</span> <span class="ProductItem__Price Price Item_Price--highlight Text--subdued">{{ product.price | money_without_trailing_zeros }}</span>
+              <span class="ProductItem__Price Price Item_Price--compareAt Text--subdued">{{ product.compare_at_price | money_without_trailing_zeros }}</span>
+            {%- elsif product.price_varies -%}
+              {%- capture formatted_min_price -%}{{ product.price_min | money_without_trailing_zeros }}{%- endcapture -%}
+              {%- capture formatted_max_price -%}{{ product.price_max | money_without_trailing_zeros }}{%- endcapture -%}
+              <span class="ProductItem__Price Price Text--subdued">{{ 'collection.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}</span>
+            {%- else -%}
+              <span class="ProductItem__Price Price Text--subdued">{{ product.price | money_without_trailing_zeros }}</span>
+            {%- endif -%}
           
           <span class="price">229</span>
         </div>
