@@ -75,6 +75,8 @@
                         {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
                       </div>
                       <div class="Heading u-h6">
+                        {{ block.settings.icon4_title | default: collection.icon4_title | escape }}
+                        <span>{{ block.settings.icon4_subheading | default: collection.icon4_subheading | escape }}</span>
                         100% fest stabil<span>Gewichtsverteilung</span>
                       </div>
                   </div>
@@ -86,6 +88,8 @@
                         {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
                     </div>
                     <div class="Heading u-h6">
+                      	{{ block.settings.icon5_title | default: collection.icon5_title | escape }}
+                        <span>{{ block.settings.icon5_subheading | default: collection.icon5_subheading | escape }}</span>
                         Kühlmöglichkeit<span>Zusatzfunktion</span>
                     </div>
                   </div>
