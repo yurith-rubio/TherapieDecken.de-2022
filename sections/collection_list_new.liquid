@@ -9,11 +9,13 @@
   
   <div class="collection_new_wrapper">
     
-    {%- capture collection_items -%}    
-    {% for block in section.blocks %}
-      {%- assign collection = collections[block.settings.collection] -%}
-      {%- render 'collection-item-new', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
-    {% endfor %}
+    {%- capture collection_inner -%}
+    {%- if collection.products_count > 0 -%}
+      {% for block in section.blocks %}
+        {%- assign collection = collections[block.settings.collection] -%}
+        {%- render 'collection-item-new', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
+      {% endfor %}
+    {% endif %}
   {%- endcapture -%}
     
   </div>
