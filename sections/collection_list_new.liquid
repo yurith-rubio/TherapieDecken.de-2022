@@ -15,7 +15,7 @@
     	{%- for product in collection.products -%}
           {% for block in section.blocks %}
             {%- assign collection = collections[block.settings.collection] -%}
-            {%- render 'collection-item-new', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
+            {%- render 'collection-item-new', product: product, block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
           {% endfor %}
     	{% endfor %}
       {%- endpaginate -%}
