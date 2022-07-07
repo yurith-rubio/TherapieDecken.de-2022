@@ -6,10 +6,8 @@
     <h1 class="Heading u-h1">Welche Therapiedecken Modelle für Erwachsene gibt es?</h1>
     <a href="/pages/therapiedecken-vergleich" class="ImageHero__BlockLink Link Link--underline">Zum Detailvergleich</a>
   </div>
-  
-  <div class="collection_new_wrapper">
-    
-    {%- capture collection_inner -%}
+
+  {%- capture collection_inner -%}
     {%- if collection.products_count > 0 -%}
       {%- paginate collection.products by section.settings.grid_items_per_page -%}
     	{%- for product in collection.products -%}
@@ -22,7 +20,8 @@
     {% endif %}
   {%- endcapture -%}
   
-  {{ collection_inner }}
+  <div class="collection_new_wrapper">
+  	{{ collection_inner }}
   </div>
 </div>
 
