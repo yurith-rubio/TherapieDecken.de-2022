@@ -1,8 +1,8 @@
 <style>
-  .collection_erwachsene_main{
+  .collection_new_main{
   	padding-top: 100px;
   }
-  .collection_erwachsene_wrapper{
+  .collection_new_wrapper{
   	display: grid;
     grid-template-columns:1fr 1fr;
     margin-top: 80px;
@@ -14,7 +14,7 @@
   .heading_wrapper p{
   	margin-bottom:0;
   }
-  .collection_erwchsene_list{
+  .collection_new_list{
     position: relative;
   }
   .collection_content_img{
@@ -104,14 +104,14 @@
     font-weight: 100;
   }
   @media only screen and (max-width: 767px){
-    .collection_erwachsene_wrapper{
+    .collection_new_wrapper{
     	display: inherit;
       	margin-top: 60px;
     	margin-bottom: 0;
     	margin-left: 0;
     	margin-right: 0;
     }
-    .collection_erwachsene_main .heading_wrapper{
+    .collection_new_main .heading_wrapper{
     	padding: 0 30px;
     }
     .collection_content_block_main{
@@ -147,18 +147,16 @@
   }
 </style>
 
-<div class="collection_erwachsene_main">
+<div class="collection_new_main">
   <div class="heading_wrapper SectionHeader--center">
     <p class="Heading u-h6">Original Therapiedecken</p>
     <h1 class="Heading u-h1">Welche Therapiedecken Modelle für Erwachsene gibt es?</h1>
     <a href="/pages/therapiedecken-vergleich" class="ImageHero__BlockLink Link Link--underline">Zum Detailvergleich</a>
   </div>
   
-  
-  
-  <div class="collection_erwachsene_wrapper">
+  <div class="collection_new_wrapper">
     {% for block in section.blocks %}
-      <div class="collection_erwchsene_list">
+      <div class="collection_new_list">
           <div class="collection_content_img">
               <img class="Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/Insurance-lp-image2_256x256.jpg?v=1656500179">
           </div>
@@ -233,7 +231,7 @@
     
     
     
-    <div class="collection_erwchsene_list">
+    <div class="collection_new_list">
         <div class="collection_content_img">
     		<img class="Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/Insurance-lp-image2_256x256.jpg?v=1656500179">
         </div>
@@ -308,7 +306,7 @@
 
 {% schema %}
   {
-    "name": "Collection Erwachsene",
+    "name": "Collection list new",
     "settings": [],
 	"blocks": [
       {
@@ -426,7 +424,7 @@
 	"presets": [
       {
         "category": "Collection",
-        "name": "Collection list",
+        "name": "Collection list new",
         "settings": {},
         "blocks": [
           {
