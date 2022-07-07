@@ -36,17 +36,25 @@
             "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
             "image_alignment": "center center",
             "simple_icons": "premium-cotton",
+            "icon_title": "Premium Biobezüge",
+            "icon_subheading": "Bezug",
             "simple_icons2": "icon-zipper",
+            "icon2_title": "Reißverschluss",
+            "icon2_subheading": "Bezugssystem",
             "simple_icons3": "icon-icn_metalballs",
+            "icon3_title": "Icon 3 title",
+            "icon3_subheading": "Icon 3 sub-heading",
             "simple_icons4": "icon-icn_stability100-1",
+            "icon4_title": "Icon 4 title",
+            "icon4_subheading": "Icon 4 sub-heading",
             "simple_icons5": "icon-cooling-blanket",
+            "icon5_title": "Icon 5 title",
+            "icon5_subheading": "Icon 5 sub-heading",
             "title": "PREMIUM Balance",
             "subheading": "Gewichtsdecke für Erwachsene",
             "button_text": "Mehr Erfahren",
             "button_link": "https:\/\/therapiedecken.de\/collections\/erwachsene\/products\/balance-gewichtsdecke-fur-erwachsene",
-            "apply_overlay": true,
-            "icon_title": "Premium Biobezüge",
-            "icon_subheading": "Bezug"
+            "apply_overlay": true
           }
         }
       },
