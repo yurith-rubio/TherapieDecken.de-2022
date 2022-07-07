@@ -35,7 +35,7 @@
                   <div class="ce_container">
                       <div class="icon-30">
                         {% assign selected_icon = block.settings.simple_icons | json %}
-                        {% render 'icons_monotone', selected_icon:selected_icon, block:block, settings:settings %}
+                        {% render 'icons_monotone', selected_icon:selected_icon %}
                       </div>
                       <div class="Heading u-h6">
                         {{ block.settings.icon_title | default: collection.icon_title | escape }}
