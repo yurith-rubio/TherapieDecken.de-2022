@@ -33,6 +33,7 @@
         "56af09d9-c31b-42ba-8977-b6584485276f": {
           "type": "collection",
           "settings": {
+            "collection": "erwachsene",
             "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
             "image_alignment": "center center",
             "simple_icons": "premium-cotton",
