@@ -28,7 +28,7 @@
               {% assign collection_icon_title = product.metafields.td_field.collection_icon1_title | escape %}
               {{ collection_icon_title | default: "icon_title" | escape }}
               {% assign collection_icon_subheading = product.metafields.td_field.collection_icon1_subheading | escape %}
-              <span>{{ collection_icon_title | default: "icon_title" | escape }}</span>
+              <span>{{ collection_icon_subheading | default: "icon_subheading" | escape }}</span>
             </div>
           </div>
           {% endif %}
