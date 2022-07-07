@@ -186,7 +186,8 @@
                         {% render 'icons_monotone', block:block, settings:settings %}
                       </div>
                       <div class="Heading u-h6">
-                        Premium Biobezüge<span>Bezug</span>
+                        {{ block.settings.icon_title | default: collection.icon_title | escape }}Premium Biobezüge
+                        <span>{{ block.settings.icon_subheading | default: collection.icon_subheading | escape }}Bezug</span>
                       </div>
                   </div>
                   {% endif %}
