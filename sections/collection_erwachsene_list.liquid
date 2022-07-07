@@ -172,10 +172,12 @@
                   <span style="font-size: 10px; color: #5B5B5B; vertical-align: text-bottom;">Ab</span>
                   <span class="price">229</span>
                 </div>
-                <h2 class="title Heading">
-                  <span>{{ block.settings.title }}PREMIUM Balance</span>
-                  <span class="title_extra">Gewichtsdecke für Erwachsene</span>
-                </h2>
+                {% if block.settings.title %}
+                  <h2 class="title Heading">
+                    <span>{{ block.settings.title }}PREMIUM Balance</span>
+                    <span class="title_extra">Gewichtsdecke für Erwachsene</span>
+                  </h2>
+                {% endif %}
                 <hr class="ce_divider">
                 <div class="ce_container_wrapper">
                   <div class="ce_container">
