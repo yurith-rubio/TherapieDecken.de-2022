@@ -14,8 +14,8 @@
         </div>
         {% if section.settings.show_title %}
         <h2 class="title Heading">
-          <span>{{ product.title }}</span>
-          <span class="title_extra">{{ product.metafields.collection_product_subheading | default: collection.subheading | escape }}</span>
+          <span>{{ product.title | escape }}</span>
+          <span class="title_extra">{{ product.metafields.collection_product_subheading | escape }}</span>
         </h2>
         {% endif %}
         <hr class="ce_divider">
