@@ -27,6 +27,11 @@
   height: 100%;
   object-fit: cover;
 }
+.collection_logo{
+  position: absolute;
+  bottom: 60px;
+  left: 35px;
+}
 .collection_content_block_main{
   position: absolute;
   top: 82px;
