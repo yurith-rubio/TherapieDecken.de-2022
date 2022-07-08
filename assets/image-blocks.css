@@ -36,9 +36,10 @@
 }
 .collection_content_block_main{
   position: absolute;
-  top: 82px;
+  top: 50%;
   right: 25px;
   text-align: center;
+  transform: translateY(-50%);
 }
 .collection_content_block{
   background: #ffffffe0;
