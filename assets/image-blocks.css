@@ -117,7 +117,7 @@
   .collection_content_block_main{
     right: 0;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 10px;
     bottom: 30px;
     top: inherit;
   }
@@ -158,5 +158,8 @@
      margin-bottom: 0;
      margin-left: 0;
      margin-right: 0;
+   }
+   .collection_content_block_main{
+   	padding: 0 20px;
    }
 }
