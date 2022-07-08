@@ -121,6 +121,12 @@
     bottom: 30px;
     top: inherit;
   }
+  .collection_logo{
+  	bottom: inherit;
+    left: inherit;
+    top: 30px;
+    right: 30px;
+  }
   .collection_content_block{
     width: inherit;
     padding: 0 7px 7px;
