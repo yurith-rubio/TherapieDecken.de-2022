@@ -32,6 +32,9 @@
   bottom: 60px;
   left: 35px;
 }
+.collection_logo img{
+	width: 120px;
+}
 .collection_content_block_main{
   position: absolute;
   top: 82px;
