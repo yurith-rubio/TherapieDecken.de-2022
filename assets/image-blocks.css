@@ -120,6 +120,7 @@
     padding: 0 10px;
     bottom: 30px;
     top: inherit;
+    transform: inherit;
   }
   .collection_new_wrapper{
   	gap: 20px;
