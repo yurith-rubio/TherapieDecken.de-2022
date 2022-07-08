@@ -121,6 +121,10 @@
     bottom: 30px;
     top: inherit;
   }
+  .blanket_content .title{
+  	font-size: 16px;
+    padding: 0 10px;
+  }
   .collection_logo{
   	bottom: inherit;
     left: inherit;
