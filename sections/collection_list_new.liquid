@@ -11,7 +11,7 @@
     {%- if collection.products_count > 0 -%}
       {%- paginate collection.products by section.settings.grid_items_per_page -%}
     	{%- for product in collection.products -%}
-          {%- render 'collection-item-new', product: product, block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
+          {%- render 'collection-item-new', product: product, collection: collection -%}
     	{% endfor %}
       {%- endpaginate -%}
     {% endif %}
