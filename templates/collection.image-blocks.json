@@ -2,18 +2,11 @@
   "sections": {
     "main": {
       "type": "main-collection-image-blocks",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "1657276123484f770e": {
-      "type": "main-collection-image-blocks",
       "settings": {
       }
     }
   },
   "order": [
-    "main",
-    "1657276123484f770e"
+    "main"
   ]
 }
