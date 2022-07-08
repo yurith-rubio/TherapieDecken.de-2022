@@ -120,6 +120,12 @@
     bottom: 30px;
     top: inherit;
   }
+  .collection_content_img{
+  	height: 650px;
+  }
+  .collection_content_img img{
+  	object-position: left;
+  }
   .blanket_content .title{
   	font-size: 16px;
     padding: 0 10px;
