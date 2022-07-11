@@ -12,6 +12,8 @@
 }
 .collection_new_list{
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .collection_content_img{
   display: block;
