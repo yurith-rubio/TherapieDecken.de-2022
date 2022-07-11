@@ -117,7 +117,6 @@
     top: inherit;
     max-width: 500px;
     transform: inherit;
-    right: inherit;
   }
   .collection_new_wrapper{
   	gap: 20px;
@@ -147,7 +146,6 @@
   }
   .collection_content_block{
     margin: 0 15px 15px;
-    width: inherit;
   }
   .ce_container{
     padding: 0;
@@ -159,5 +157,13 @@
   }
   .ce_container .icon-30{
     font-size: 25px;
+  }
+}
+@media only screen (max-width: 640px){
+  .collection_content_block_main{
+    right: inherit;
+  }
+  .collection_content_block{
+  	width: inherit;
   }
 }
