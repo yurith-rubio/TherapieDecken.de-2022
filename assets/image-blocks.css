@@ -170,13 +170,7 @@
   }
 }
 @media (max-width: 767px){
-   .collection_new_wrapper{
-     display: inherit;
-     margin-top: 60px;
-     margin-bottom: 0;
-     margin-left: 0;
-     margin-right: 0;
-   }
+
    .collection_content_block_main{
    	padding: 0 20px;
    }
