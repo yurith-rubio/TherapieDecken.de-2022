@@ -117,12 +117,8 @@
     padding: 0 30px;
   }
   .collection_content_block_main{
-    right: 0;
-    width: 100%;
-    padding: 0 10px;
     bottom: 30px;
     top: inherit;
-    transform: inherit;
     max-width: 500px;
   }
   .collection_new_wrapper{
@@ -152,7 +148,6 @@
   	width: 80px;
   }
   .collection_content_block{
-    width: inherit;
     padding: 0 7px 7px;
   }
   .ce_container{
