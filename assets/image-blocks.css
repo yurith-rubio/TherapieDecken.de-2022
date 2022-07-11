@@ -159,7 +159,7 @@
     font-size: 25px;
   }
 }
-@media only screen (max-width: 640px){
+@media only screen and (max-width: 640px){
   .collection_content_block_main{
     right: inherit;
   }
