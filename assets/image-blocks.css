@@ -135,15 +135,6 @@
   	font-size: 16px;
     padding: 0 10px;
   }
-  .collection_logo{
-  	bottom: inherit;
-    left: inherit;
-    top: 25px;
-    right: 25px;
-  }
-  .collection_logo img{
-  	width: 80px;
-  }
   .collection_content_block{
     margin: 0 15px 15px;
   }
@@ -165,5 +156,14 @@
   }
   .collection_content_block{
   	width: inherit;
+  }
+  .collection_logo{
+  	bottom: inherit;
+    left: inherit;
+    top: 25px;
+    right: 25px;
+  }
+  .collection_logo img{
+  	width: 80px;
   }
 }
