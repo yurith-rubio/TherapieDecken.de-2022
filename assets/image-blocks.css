@@ -117,6 +117,7 @@
     top: inherit;
     max-width: 500px;
     transform: inherit;
+    right: inherit;
   }
   .collection_new_wrapper{
   	gap: 20px;
