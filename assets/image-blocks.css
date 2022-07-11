@@ -160,10 +160,10 @@
   .collection_logo{
   	bottom: inherit;
     left: inherit;
-    top: 25px;
+    top: 30px;
     right: 25px;
   }
   .collection_logo img{
-  	width: 80px;
+  	width: 95px;
   }
 }
