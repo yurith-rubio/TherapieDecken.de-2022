@@ -147,6 +147,7 @@
   }
   .collection_content_block{
     margin: 0 7px 7px;
+    width: inherit;
   }
   .ce_container{
     padding: 0;
