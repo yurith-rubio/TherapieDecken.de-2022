@@ -76,14 +76,6 @@
   line-height: 20px;
   color:#5b5b5b;
 }
-.ce_divider{
-  border: 0;
-  display: block;
-  height: 1px;
-  background-color: #ddd;
-  width: 100%;
-  margin: 15px 0 17px;
-}
 .ce_container{
   display: grid;
   align-items: center;
