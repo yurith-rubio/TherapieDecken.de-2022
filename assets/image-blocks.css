@@ -3,7 +3,6 @@
 }
 .collection_new_wrapper{
   display: grid;
-  grid-template-columns:1fr 1fr;
   padding: 80px 30px;
   margin: auto;
   gap: 40px;
@@ -109,6 +108,11 @@
   font-family:"Maven Pro", sans-serif;
   font-size: 12px;
   font-weight: 100;
+}
+@media only screen and (min-width: 1024px){
+  .collection_new_wrapper{
+    grid-template-columns:1fr;
+  }
 }
 @media only screen and (max-width: 1023px){
   .collection_new_main .heading_wrapper{
