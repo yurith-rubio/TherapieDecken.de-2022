@@ -111,7 +111,7 @@
 }
 @media only screen and (min-width: 1024px){
   .collection_new_wrapper{
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr 1fr;
     max-width: 1200px;
   }
 }
