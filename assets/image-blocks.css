@@ -18,7 +18,7 @@
 .collection_content_img{
   display: block;
   position: relative;
-  width: 550px;
+  height: 550px;
 }
 .collection_content_img img{
   width: 100%;
