@@ -18,9 +18,11 @@
               <span class="ProductItem__Price price Price Text--subdued">{{ product.price | money_without_trailing_zeros }}</span>
             {%- endif -%}
         </div>
-        <h2 class="title Heading">
-          <span>{{ product.title | escape }}</span>
-        </h2>
+        <a href="{{ product.url | within: collection }}">
+          <h2 class="title Heading">
+            <span>{{ product.title | escape }}</span>
+          </h2>
+        </a>
         <div class="ce_container_wrapper">
           {% if product.metafields.td_field.collection_product_icon1 %}
           <div class="ce_container">
