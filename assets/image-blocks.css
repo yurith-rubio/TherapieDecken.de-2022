@@ -148,14 +148,12 @@
   }
 }
 @media only screen and (max-width: 640px){
-  .collection_content_block{
-    margin: 0 25px 15px;
-  }
   .collection_content_block_main{
     right: inherit;
   }
   .collection_content_block{
-  	width: inherit;
+  	margin: 0 25px 15px;
+    max-width: 380px;
   }
   .collection_logo{
   	bottom: inherit;
