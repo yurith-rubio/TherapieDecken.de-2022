@@ -1,0 +1,42 @@
+{{ 'image-blocks.css' | asset_url | stylesheet_tag }}
+
+<div class="collection_new_main">
+  <div class="heading_wrapper SectionHeader--center">
+    <p class="Heading u-h6">Original Therapiedecken</p>
+    <h1 class="Heading u-h1">Welche Therapiedecken Modelle für Erwachsene gibt es?</h1>
+    <a href="/pages/therapiedecken-vergleich" class="ImageHero__BlockLink Link Link--underline">Zum Detailvergleich</a>
+  </div>
+
+  {%- capture collection_inner -%}
+    {%- if collection.products_count > 0 -%}
+      {%- paginate collection.products by section.settings.grid_items_per_page -%}
+    	{%- for product in collection.products -%}
+          {%- render 'collection-item-new', product: product, collection: collection -%}
+    	{% endfor %}
+      {%- endpaginate -%}
+    {% endif %}
+  {%- endcapture -%}
+  
+  <div class="collection_new_wrapper">
+  	{{ collection_inner }}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Collection image blocks",
+    "settings": [],
+	"presets": [
+      {
+        "category": "Collection",
+        "name": "Image blocks"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,102 @@
+<div class="collection_new_list">
+  <div class="collection_content_img">
+    <img class="Image--lazyLoad" data-src="{{ product.metafields.td_field.collection_bg_image }}">
+  </div>
+  <div class="collection_logo">
+    <img class="Image--lazyLoad" data-src="{{ product.metafields.td_field.collection_logo }}">
+  </div>
+  <div class="collection_content_block_main">
+    <div class="collection_content_block">
+      <div class="blanket_image">
+        <img class="Image--lazyLoad" data-src="{{ product.metafields.td_field.collection_blanket_image }}">
+      </div>
+      <div class="blanket_content">
+        <div class="price_div Heading">
+            {%- if product.compare_at_price > product.price -%}
+			 <span style="font-weight: normal!important; font-size: 10px">Ab</span> <span class="ProductItem__Price Price Item_Price--highlight Text--subdued">{{ product.price | money_without_trailing_zeros }}</span>
+            {%- else -%}
+              <span class="ProductItem__Price price Price Text--subdued">{{ product.price | money_without_trailing_zeros }}</span>
+            {%- endif -%}
+        </div>
+        <a href="{{ product.url | within: collection }}">
+          <h2 class="title Heading u-h2">
+            <span>{{ product.title | escape }}</span>
+          </h2>
+        </a>
+        <div class="ce_container_wrapper">
+          {% if product.metafields.td_field.collection_product_icon1 %}
+          <div class="ce_container">
+            <div class="icon-30">
+              {% assign collection_selected_icon = product.metafields.td_field.collection_product_icon1 | string %}
+              {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
+            </div>
+            <div class="Heading u-h6">
+              {% assign collection_icon_title = product.metafields.td_field.collection_icon1_title | escape %}
+              {{ collection_icon_title | default: "icon_title" | escape }}
+              {% assign collection_icon_subheading = product.metafields.td_field.collection_icon1_subheading | escape %}
+              <span>{{ collection_icon_subheading | default: "icon_subheading" | escape }}</span>
+            </div>
+          </div>
+          {% endif %}
+          {% if product.metafields.td_field.collection_product_icon2 %}
+          <div class="ce_container">
+            <div class="icon-30">
+              {% assign collection_selected_icon = product.metafields.td_field.collection_product_icon2 | string %}
+              {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
+            </div>
+            <div class="Heading u-h6">
+              {% assign collection_icon_title = product.metafields.td_field.collection_icon2_title | escape %}
+              {{ collection_icon_title | default: "icon_title" | escape }}
+              {% assign collection_icon_subheading = product.metafields.td_field.collection_icon2_subheading | escape %}
+              <span>{{ collection_icon_subheading | default: "icon_subheading" | escape }}</span>
+            </div>
+          </div>
+          {% endif %}
+          {% if product.metafields.td_field.collection_product_icon3 %}
+          <div class="ce_container">
+            <div class="icon-30">
+              {% assign collection_selected_icon = product.metafields.td_field.collection_product_icon3 | string %}
+              {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
+            </div>
+            <div class="Heading u-h6">
+              {% assign collection_icon_title = product.metafields.td_field.collection_icon3_title | escape %}
+              {{ collection_icon_title | default: "icon_title" | escape }}
+              {% assign collection_icon_subheading = product.metafields.td_field.collection_icon3_subheading | escape %}
+              <span>{{ collection_icon_subheading | default: "icon_subheading" | escape }}</span>
+            </div>
+          </div>
+          {% endif %}
+          {% if product.metafields.td_field.collection_product_icon4 %}
+          <div class="ce_container">
+            <div class="icon-30">
+              {% assign collection_selected_icon = product.metafields.td_field.collection_product_icon4 | string %}
+              {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
+            </div>
+            <div class="Heading u-h6">
+              {% assign collection_icon_title = product.metafields.td_field.collection_icon4_title | escape %}
+              {{ collection_icon_title | default: "icon_title" | escape }}
+              {% assign collection_icon_subheading = product.metafields.td_field.collection_icon4_subheading | escape %}
+              <span>{{ collection_icon_subheading | default: "icon_subheading" | escape }}</span>
+            </div>
+          </div>
+          {% endif %}
+          {% if product.metafields.td_field.collection_product_icon5 %}
+          <div class="ce_container">
+            <div class="icon-30">
+              {% assign collection_selected_icon = product.metafields.td_field.collection_product_icon5 | string %}
+              {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
+            </div>
+            <div class="Heading u-h6">
+              {% assign collection_icon_title = product.metafields.td_field.collection_product_icon5_title | escape %}
+              {{ collection_icon_title | default: "icon_title" | escape }}
+              {% assign collection_icon_subheading = product.metafields.td_field.collection_icon5_subheading | escape %}
+              <span>{{ collection_icon_subheading | default: "icon_subheading" | escape }}</span>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <a href="{{ product.url | within: collection }}" class="Button_Colleciton_small Button Button--primary">Mehr Erfahren</a>
+  </div>
+</div>
