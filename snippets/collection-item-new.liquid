@@ -85,7 +85,7 @@
               {% render 'icons_monotone', collection_selected_icon:collection_selected_icon %}
             </div>
             <div class="Heading u-h6">
-              {% assign collection_icon_title = product.metafields.td_field.collection_icon5_title | escape %}
+              {% assign collection_icon_title = product.metafields.td_field.collection_product_icon5_title | escape %}
               {{ collection_icon_title | default: "icon_title" | escape }}
               {% assign collection_icon_subheading = product.metafields.td_field.collection_icon5_subheading | escape %}
               <span>{{ collection_icon_subheading | default: "icon_subheading" | escape }}</span>
