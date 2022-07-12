@@ -9702,6 +9702,10 @@ a.CollectionItemPage {
   text-align: center;
 }
 
+.ProductMeta__MonthlyPriceList{
+  margin-top: -20px;
+}
+
 .ProductMeta__Price.Price--compareAt {
   margin-left: 30px;
 }
