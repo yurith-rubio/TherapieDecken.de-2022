@@ -19,12 +19,12 @@
 .GravityPrint_iconText_wr{
   display: inline-flex;
 }
-#GravityPrint_ColumnsContainer{
-  display: flex;
-  justify-content: center;
-}
-@media only screen and (min-width: 768px){
 
+@media only screen and (min-width: 768px){
+  #GravityPrint_ColumnsContainer{
+    display: flex;
+    justify-content: center;
+  }
   .GravityPrint_steps_wr{
     display: flex;
     flex-direction: column;
