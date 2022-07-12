@@ -9,6 +9,7 @@
   flex-direction: column;
   padding: 25px;
   flex-basis: 50%;
+  max-width: 350px;
 }
 .GravityPrint_text_wr{
   max-width: 200px;
