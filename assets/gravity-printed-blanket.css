@@ -9,6 +9,7 @@
   flex-direction: column;
   padding: 25px;
   flex-basis: 50%;
+  max-width: 350px;
 }
 .GravityPrint_text_wr{
   max-width: 200px;
@@ -18,14 +19,20 @@
 .GravityPrint_iconText_wr{
   display: inline-flex;
 }
-
-@media only screen and (min-width: 768px){
-  #GravityPrint_ColumnsContainer{
-    display: flex;
-  }
+#GravityPrint_ColumnsContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 641px){
   .GravityPrint_steps_wr{
     display: flex;
     flex-direction: column;
     padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 640px){
+  #GravityPrint_ColumnsContainer{
+    flex-direction: column;
   }
 }
