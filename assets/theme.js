@@ -2361,6 +2361,7 @@
           }
 
           productMetaPrices.innerHTML = '';
+          productMonthlyPrices.innerHTML = '';
 
           if (newVariant['compare_at_price'] > newVariant['price']) {
             productMetaPrices.innerHTML += "<span class=\"ProductMeta__Price Price Price--highlight Text--subdued u-h4\" data-money-convertible>".concat(Currency.formatMoney(newVariant['price'], window.theme.moneyFormat), "</span>");
