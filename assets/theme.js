@@ -2364,7 +2364,7 @@
 
           if (newVariant['compare_at_price'] > newVariant['price']) {
             productMetaPrices.innerHTML += "<span class=\"ProductMeta__Price Price Price--highlight Text--subdued u-h4\" data-money-convertible>".concat(Currency.formatMoney(newVariant['price'], window.theme.moneyFormat), "</span>");
-            productMonthlyPrices.innerHTML += "Oder zahlen Sie <span class=\" Price Text--subdued \" data-money-convertible>".concat(Currency.formatMoney(newVariant['price'], window.theme.moneyFormat), "</span>/montl");
+            productMonthlyPrices.innerHTML += "Oder zahlen Sie <span class=\" Price Text--subdued \" data-money-convertible>".concat(Currency.formatMoney(newVariant['price']/12, window.theme.moneyFormat), "</span>/montl");
             console.log(Currency.formatMoney(newVariant['price']));
             productMetaPrices.innerHTML += "<span class=\"ProductMeta__Price Price Price--compareAt Text--subdued u-h4\" data-money-convertible>".concat(Currency.formatMoney(newVariant['compare_at_price'], window.theme.moneyFormat), "</span>");
           } else {
