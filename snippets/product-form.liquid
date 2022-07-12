@@ -373,7 +373,7 @@
       </div>
     </div>
   {%- endif -%}
-  <div>{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros | divided_by: 12 }}</div>
+  <div>Oder zahlen Sie {{ product.selected_or_first_available_variant.price | money_without_trailing_zeros | divided_by: 12 }}</div>
 
   {% render 'countdown-product' %}
 
