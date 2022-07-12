@@ -81,7 +81,7 @@
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 7px;
   padding: 0 20px;
-  margin-bottom: 7px;
+  margin-bottom: 12px;
 }
 .ce_container .icon-30{
   font-size: 30px;
@@ -131,7 +131,7 @@
   }
   .ce_container{
     padding: 0;
-    margin-bottom: 12px;
+    
     grid-column-gap: 3px;
   }
   .ce_container_wrapper{
