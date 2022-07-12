@@ -375,7 +375,7 @@
 
 	<div class="ProductMeta__PriceList Heading">
       Oder zahlen Sie 
-      <span class="ProductItem__Price Price Item_Price--highlight Text--subdued">
+      <span class="ProductItem__Price Price Item_Price--highlight Text--subdued" data-money-convertible="">
         {{ product.selected_or_first_available_variant.price | money_without_trailing_zeros | divided_by: 12 }}€
       </span>
       /montl
