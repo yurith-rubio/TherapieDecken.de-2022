@@ -135,9 +135,6 @@
   	font-size: 16px;
     padding: 0 10px;
   }
-  .collection_content_block{
-    margin: 0 25px 15px;
-  }
   .ce_container{
     padding: 0;
     margin-bottom: 12px;
@@ -151,6 +148,9 @@
   }
 }
 @media only screen and (max-width: 640px){
+  .collection_content_block{
+    margin: 0 25px 15px;
+  }
   .collection_content_block_main{
     right: inherit;
   }
