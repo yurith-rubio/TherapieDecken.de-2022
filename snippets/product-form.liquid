@@ -372,9 +372,11 @@
         <span class="UnitPriceMeasurement__ReferenceUnit">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}</span>
       </div>
     </div>
-  {%- endif -%}
-<div class="ProductMeta__PriceList Heading">Oder zahlen Sie <span class="ProductItem__Price Price Item_Price--highlight Text--subdued">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros | divided_by: 12 }}€</span>/montl</div>
 
+	<div class="ProductMeta__PriceList Heading">Oder zahlen Sie <span class="ProductItem__Price Price Item_Price--highlight Text--subdued">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros | divided_by: 12 }}€</span>/montl</div>
+
+  {%- endif -%}
+  
   {% render 'countdown-product' %}
 
   {% render 'left-inventory', selected_variant:selected_variant %}
