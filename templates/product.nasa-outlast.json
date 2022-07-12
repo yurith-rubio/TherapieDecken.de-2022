@@ -261,8 +261,34 @@
         "button_link": ""
       }
     },
+    "16576295446310d4c5": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "71fe6bfb-c73a-436b-ab3f-842550aec905": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{%render 'slide-info-material'%}"
+          }
+        }
+      },
+      "block_order": [
+        "71fe6bfb-c73a-436b-ab3f-842550aec905"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "center",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/new-outlast-technology-image-tiny_1.jpg",
+        "image_position": "right"
+      }
+    },
     "1629709567bc66549f": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
@@ -443,6 +469,7 @@
     "16294611499d6cacbd",
     "163819282995530f22",
     "1629465806e866cd2d",
+    "16576295446310d4c5",
     "1629709567bc66549f",
     "1629713540ecd6fa17",
     "1629713705b12acbc0",
