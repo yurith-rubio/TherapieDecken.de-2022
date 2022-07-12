@@ -6,7 +6,7 @@
 {%- endcomment -%}
 
 {% comment %} Added 'bezugsart' to the current color_label, in order to have a swatch option for 'Bezugsart' - Yurith {% endcomment %}
-{%- assign color_label = 'color,colour,farbe,bezugsart,design,bezugssystem,setfarbe' | split: ',' -%}
+{%- assign color_label = 'color,colour,farbe,bezugsart,design,bezugssystem,setfarbe,füllung' | split: ',' -%}
 {%- assign size_label = 'size,größe' | split: ',' -%}
 {%- assign gewicht_label = 'gewicht' | split: ',' -%}
 
@@ -342,6 +342,7 @@
 </div>
 
 {% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene' 
+	or product.handle == 'standard-gravity-gewichtsdecke-mit-personalisiertem-hunde-katzen-motiv-fur-erwachsene'
 	or product.handle == 'therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv'
 	or  product.handle == 'standard-gravity-gewichtsdecke-familien-motiv'
 	or  product.handle == 'standard-gravity-gewichtsdecke-mit-personalisiertem-partner-motiv-fur-erwachsene' %}

@@ -1,21 +1,27 @@
 <!-- collection-promotional-badge.liquid -->
 
-<style>
-  .Grid__Cell:nth-child(1) .Collection_SmallBadge, .Grid__Cell:nth-child(1) .Collection_ImgSmallBadge{
-    display: none;
-  }
-  .Grid__Cell:nth-child(3) .Collection_SmallBadge, .Grid__Cell:nth-child(3) .Collection_ImgSmallBadge{
-    display: none;
-  }
-</style>
+{% comment %}
+{% endcomment %}
+
+  {% style %}
+    .Grid__Cell:nth-child(3) .Collection_SmallBadge, .Grid__Cell:nth-child(3) .Collection_ImgSmallBadge{
+      display: none;
+    }
+  {% endstyle %}
+
+
 {% if settings.enable_collection_badge %}
   {%- comment -%}See CSS on badges.css file {%- endcomment -%}
   {{ 'badges.css' | asset_url | stylesheet_tag }}
 
   {% if collection.handle == 'erwachsene' %}
     <div class="CollectionBadge_Mask__Wrapper">
-      <div class="Collection_SmallBadge">Gratis</div>
-      <div class="Collection_ImgSmallBadge"><img class="Collection_ImgSize_SmallBadge Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_Summer_Cooling_art_png.png?v=1654588702" alt="Summer Cooling's day badge" /></div>
+      {% comment %}<div class="Collection_SmallBadge">Gratis</div>{% endcomment %}
+      <div class="Collection_ImgSmallBadge">
+        <img class="Collection_ImgSize_SmallBadge" 
+             src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_Sumer_Promotion_2022_Badge.svg?v=1656941226" 
+             alt="New Summer promotion discount badge" />
+      </div>
     </div>
   {% endif %}
 {% endif %}

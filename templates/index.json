@@ -58,6 +58,7 @@
     },
     "162989184001f20858": {
       "type": "experts-testimonials",
+      "disabled": true,
       "settings": {
         "header": "Was Experten über die Wirkung von Therapiedecken sagen",
         "link1": "shopify:\/\/pages\/diana-zur-lowens-erfahrung-mit-therapiedecken",
@@ -75,6 +76,116 @@
         "tm21_name3": "Dinah Berger",
         "tm21_role3": "Psychologin",
         "tm21_paragraph3": "<p>Der Tiefendruck führt zu einem Gefühl von Sicherheit, das gerade bei Menschen mit Traumata oft fehlt und zu Schlafstörungen führen kann.<\/p>"
+      }
+    },
+    "16571142133c8ad636": {
+      "type": "expert-testimonials-left",
+      "blocks": {
+        "e3cc683d-388c-49e8-bdb7-d68115cbba8c": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/diana-zur-lowens-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/diana_zur_lowen.jpg",
+            "tmex_name": "Diana zur Löwen",
+            "tmex_role": "Unternehmerin & Influencerin",
+            "tmex_paragraph": "<p>Man fühlt sich einfach geborgen und wiein Schutz genommen.  Das hilft mir besonderes, wenn ich wieder sehr nachdenklich und unruhig bin...<\/p>"
+          }
+        },
+        "5ee547d2-4424-4bd3-b0e0-97c6123e1679": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/markus-rupperts-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/markus_ruppert.jpg",
+            "tmex_name": "Markus Ruppert",
+            "tmex_role": "Heilpraktiker & Traumatherapeut",
+            "tmex_paragraph": "<p>Für mich ist die Decke weder privat noch in meiner Arbeit wegzudenken. Es ist ein wichtiges Werkzeug und eine  wertvolle Ressource.<\/p>"
+          }
+        },
+        "0d652213-fded-4246-9d25-5df34d640d14": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/caroline-helmings-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/caroline_helming.jpg",
+            "tmex_name": "Caroline Helming",
+            "tmex_role": "Ergotherapeutin & Schlafberaterin",
+            "tmex_paragraph": "<p>Ich bin ein großer Fan des Konzepts. Ob privat oder beruflich, ich kann sie uneingeschränkt weiterempfehlen.<\/p>"
+          }
+        },
+        "a0f0d4d3-1975-4278-8edd-0ac577433d13": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/dinah-bergers-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/dinah_berger.jpg",
+            "tmex_name": "Dinah Berger",
+            "tmex_role": "Psychologin",
+            "tmex_paragraph": "<p>Während Ängste gemildert werden, führt der Tiefendruck zu einem Gefühl von Sicherheit, das gerade bei Menschen mit Traumata oft fehlt.<\/p>"
+          }
+        },
+        "b8d69d3e-da1d-49e2-8f66-262a663da228": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/michaela-gross-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/Michaela_Gross_10_1_4.jpg",
+            "tmex_name": "Michaela Gross",
+            "tmex_role": "Heilpraktikerin für Psychotherapie",
+            "tmex_paragraph": "<p>Als Traumatherapeutin empfehle ich die Decken bei Schlaf-\/Angst- und Panikstörungen. Es hilft, dass sich die Patienten wieder spüren können.<\/p>"
+          }
+        },
+        "ddc238aa-2bc4-40a1-bc04-6917d83ad695": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/dr-sabine-hoffmanns-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/phsycologist-therapiedecken-img1.jpg",
+            "tmex_name": "Dr. Sabine Hoffmann",
+            "tmex_role": "Leitende Psychologin",
+            "tmex_paragraph": "<p>Diese Decken können ein spontanes Gefühl von Ruhe, kurz gesagt „alles ist gut” auf der körperlichen und damit auch psychischen Ebene auslösen.<\/p>"
+          }
+        },
+        "023cb17f-98ed-4123-b49f-3f783d3ee082": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/katharina-meier-batrakows-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/tm21_pic.jpg",
+            "tmex_name": "Katharina Meier-Batrakow",
+            "tmex_role": "Psychologin für Kinder- und Jugendliche",
+            "tmex_paragraph": "<p>Jemanden zu umarmen, um Trost zu spenden, ein Kind zu halten, um es zu beruhigen – all das sind altbewährte Methoden zur Stressreduktion.<\/p>"
+          }
+        },
+        "38329a8e-b99b-448e-a436-b226f6685c94": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/carolin-weigands-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/tm21_pic_4.jpg",
+            "tmex_name": "Carolin Weigand",
+            "tmex_role": "Sozialpädagogin & Erzieherin",
+            "tmex_paragraph": "<p>Oft wird mir berichtet, dass sich Schüler nur schwer konzentrieren können. Gerne empfehle ich dann die Therapiedecke um runterzufahren.<\/p>"
+          }
+        },
+        "58f85b1f-7a53-413c-a7ad-ba8940e6b171": {
+          "type": "testimonial",
+          "settings": {
+            "link": "https:\/\/therapiedecken.de\/pages\/christine-tuchlers-erfahrung-mit-therapiedecken",
+            "tmex_picture": "shopify:\/\/shop_images\/Tuchler_stehend_1_1.jpg",
+            "tmex_name": "Christine Tuchler",
+            "tmex_role": "Psychotherapeutin für Kinder & Jugendliche",
+            "tmex_paragraph": "<p>Es ist einfach schön mit anzusehen wie nach kurzer Zeit die motorische Unruhe des Patienten zurückgeht.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e3cc683d-388c-49e8-bdb7-d68115cbba8c",
+        "5ee547d2-4424-4bd3-b0e0-97c6123e1679",
+        "0d652213-fded-4246-9d25-5df34d640d14",
+        "a0f0d4d3-1975-4278-8edd-0ac577433d13",
+        "b8d69d3e-da1d-49e2-8f66-262a663da228",
+        "ddc238aa-2bc4-40a1-bc04-6917d83ad695",
+        "023cb17f-98ed-4123-b49f-3f783d3ee082",
+        "38329a8e-b99b-448e-a436-b226f6685c94",
+        "58f85b1f-7a53-413c-a7ad-ba8940e6b171"
+      ],
+      "settings": {
+        "bg-color": "#ffffff",
+        "header": "Was Experten über die Wirkung von Therapiedecken sagen"
       }
     },
     "16297454484267b195": {
@@ -337,6 +448,7 @@
     "16298891291acfefaf",
     "1630318003d3f950bd",
     "162989184001f20858",
+    "16571142133c8ad636",
     "16297454484267b195",
     "1629990205e6dba77d",
     "16299931230028979b",

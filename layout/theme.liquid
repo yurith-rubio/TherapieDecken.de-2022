@@ -40,9 +40,14 @@
 
     <!-- This code is automatically managed by StarApps Studio -->
     <!-- Please contact support@starapps.studio for any help -->
+    
     <script type="text/javascript" src="https://bcdn.starapps.studio/apps/via/therapiedecken/script-1631272472.js?shop={{shop.permanent_domain}}" async></script>
-    <!-- starapps_scripts_end -->
-    {{ content_for_header }}
+<!-- starapps_scripts_end -->
+    <!-- starapps_scripts_start -->
+<!-- This code is automatically managed by StarApps Studio -->
+<!-- Please contact support@starapps.studio for any help -->
+<!-- starapps_scripts_end -->
+{{ content_for_header }}
     
     <script>
       {%- if request.page_type == 'policy' -%}
@@ -138,14 +143,12 @@
     
     {% render 'microdata-schema' %}
 
-
     {% comment %}  Owl carousel library for adding sliders to the theme - Yurith {% endcomment %}
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all">
     
     <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
     {% comment %} ICOMOON link {% endcomment%}
-
     <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/163995/TDTW/style-cf.css?iq46su">
 
     {% comment %} Font added for bold on Headings {% endcomment%}
@@ -156,7 +159,6 @@
 	<!-- This code is automatically managed by StarApps Studio -->
 	<!-- Please contact support@starapps.studio for any help -->
 	{% render "starapps-product-json", product: product, starapps_app: "VIA", starapps_attribute: "sa-product-json" %}
-    
     <!-- starapps_scripts_end -->
 
   </head>
