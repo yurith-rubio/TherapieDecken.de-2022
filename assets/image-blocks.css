@@ -132,14 +132,10 @@
   }
   .ce_container{
     padding: 0;
-    
     grid-column-gap: 3px;
   }
   .ce_container_wrapper{
     display: inline-block;	
-  }
-  .ce_container .icon-30{
-    font-size: 25px;
   }
 }
 @media only screen and (max-width: 640px){
