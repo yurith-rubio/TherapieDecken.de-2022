@@ -293,8 +293,34 @@
         "button_link": ""
       }
     },
+    "16576274981355e8bd": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "4e5e36c5-008b-40f2-bbc9-56e5876a8db3": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{%render 'slide-info-material'%}"
+          }
+        }
+      },
+      "block_order": [
+        "4e5e36c5-008b-40f2-bbc9-56e5876a8db3"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "center",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/NEW_Therapiedecken-Aufbau-Gravity-Balance.jpg",
+        "image_position": "right"
+      }
+    },
     "1629709567bc66549f": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
@@ -472,6 +498,7 @@
     "1642451845af007970",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
+    "16576274981355e8bd",
     "1629709567bc66549f",
     "1629713540ecd6fa17",
     "1629713705b12acbc0",
