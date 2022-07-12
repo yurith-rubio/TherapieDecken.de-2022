@@ -171,8 +171,34 @@
         "button_link": ""
       }
     },
+    "165762917375c54946": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "934fc0ba-e578-4a14-ba9b-d88f6874313d": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{%render 'slide-info-material'%}"
+          }
+        }
+      },
+      "block_order": [
+        "934fc0ba-e578-4a14-ba9b-d88f6874313d"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "center",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/NEW_Aufteilung_Kosmos_Astronauten_Kinder_Gewichtsdecken_Therapiedecke_Schlafstorungen.jpg",
+        "image_position": "right"
+      }
+    },
     "1629709567bc66549f": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
@@ -346,6 +372,7 @@
     "1629451775c72cd56a",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
+    "165762917375c54946",
     "1629709567bc66549f",
     "1629713540ecd6fa17",
     "1629713705b12acbc0",
