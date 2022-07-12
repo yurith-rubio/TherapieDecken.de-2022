@@ -2350,6 +2350,7 @@
       key: "_updateProductPrices",
       value: function _updateProductPrices(newVariant, previousVariant) {
         var productMetaPrices = this.element.querySelector('.ProductMeta__PriceList');
+        var productMonthlyPrices = this.element.querySelector('.ProductMeta__MonthlyPriceList');
 
         if (!newVariant) {
           productMetaPrices.style.display = 'none';
