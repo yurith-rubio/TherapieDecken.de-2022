@@ -253,8 +253,34 @@
         "button_link": ""
       }
     },
+    "1657626530418ab1f6": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "a776c461-f442-4c75-bb3a-25651cd0d43e": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{%render 'slide-info-material'%}"
+          }
+        }
+      },
+      "block_order": [
+        "a776c461-f442-4c75-bb3a-25651cd0d43e"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "center",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/NEW_Aufteilung_Hellgrau_Sterne_Gewichtsdecken_Therapiedecke_Schlafstorungen_1.jpg",
+        "image_position": "right"
+      }
+    },
     "1629709567bc66549f": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": true,
         "spacer_bottom": true,
@@ -430,6 +456,7 @@
     "16294611499d6cacbd",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
+    "1657626530418ab1f6",
     "1629709567bc66549f",
     "1629713540ecd6fa17",
     "1629713705b12acbc0",
