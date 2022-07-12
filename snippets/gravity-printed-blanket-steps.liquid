@@ -1,7 +1,6 @@
 {{ 'gravity-printed-blanket.css' | asset_url | stylesheet_tag }}
 
-{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene'
-	or product.handle == 'therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv' %}
+{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene' or product.handle == 'therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv' %}
 
 <div id="GravityPrint_MainContainer">
     <h2 class="Heading u-h1">Zur Therapiedecke mit eigenem Tiermotiv in 2 Schritten</h2>
@@ -31,7 +30,8 @@
 </div>
 {% endif %}
 
-{% if product.handle == 'standard-gravity-gewichtsdecke-familien-motiv' %}
+{% if product.handle == 'standard-gravity-gewichtsdecke-familien-motiv' or product.handle == '' %}
+
 <div id="GravityPrint_MainContainer">
     <h2 class="Heading u-h1">Zur Therapiedecke mit eigenem Familienmotiv in 2 Schritten</h2>
     <div id="GravityPrint_ColumnsContainer">
@@ -65,7 +65,7 @@
 </div>
 {% endif %}
 
-{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisiertem-partner-motiv-fur-erwachsene' %}
+{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisiertem-partner-motiv-fur-erwachsene' or product.handle == '' %}
 <div id="GravityPrint_MainContainer">
     <h2 class="Heading u-h1">Zur Therapiedecke mit eigenem Pärchenmotiv in 2 Schritten</h2>
     <div id="GravityPrint_ColumnsContainer">
@@ -99,7 +99,7 @@
 </div>
 {% endif %}
 
-{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisiertem-hunde-katzen-motiv-fur-erwachsene' %}
+{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisiertem-hunde-katzen-motiv-fur-erwachsene' or product.handle == 'therapiedecken-baumwollbezug-mit-personalisiertem-tierfoto-kopfdruck' %}
 <div id="GravityPrint_MainContainer">
     <h2 class="Heading u-h1">Zur Therapiedecke mit eigenem Tiermotiv in 2 Schritten</h2>
     <div id="GravityPrint_ColumnsContainer">
