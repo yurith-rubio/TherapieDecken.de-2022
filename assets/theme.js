@@ -2318,7 +2318,8 @@
         
         // 1st: the prices
         this._updateProductPrices(newVariant, previousVariant); // 2nd: update inventory
-
+		console.log(productMetaPrices);
+        console.log(productMonthlyPrices);
 
         this._updateInventory(newVariant, previousVariant); // 3rd: update SKU
 
