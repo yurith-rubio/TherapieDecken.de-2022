@@ -281,34 +281,9 @@
         "bg-color": "",
         "bg-color-text-html": "",
         "text_align": "center",
-        "text_color": "#3A3C3C",
-        "image": "shopify:\/\/shop_images\/NEW_Therapiedecken-Aufbau-Gravity-Balance.jpg",
-        "image_position": "right"
-      }
-    },
-    "1629709567bc66549f": {
-      "type": "html-with-image",
-      "disabled": true,
-      "settings": {
-        "spacer_top": true,
-        "spacer_bottom": true,
-        "bg-color": "",
-        "bg-color-text-html": "",
-        "icon_title": false,
-        "icons_duotone": "none",
-        "subheading": "Glasperlen & Premium Bezug",
-        "title": "Aufbau der Standard Gravity Therapiedecke für Kinder",
         "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/NEW_Therapiedecken-Aufbau-Gravity-Balance.jpg",
-        "image_position": "right",
-        "content_html": "<style>\nli{\nlist-style: none;\n}\nli > span {\nposition: relative;\nleft: -24px;\nmargin-right: -20px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(2) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(3) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(4) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\n<\/style>\n\n\n<ol>\n<li>\n<span class=\"icon-one\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.\n<\/li>\n<li>\n<span class=\"icon-two\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nGravity Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.<\/li>\n<li>\n<span class=\"icon-three\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nDie Füllung besteht aus 32% Polyester und 68% Baumwolle.<\/li>\n<li>\n<span class=\"icon-four\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nIn der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.<\/li>\n<\/ol>",
-        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
-        "button_style": false,
-        "link_text": "",
-        "link_url": "",
-        "button_extra": false,
-        "link_text_extra": "Mehr Erfahren",
-        "link_url_extra": ""
+        "image_position": "right"
       }
     },
     "1629713540ecd6fa17": {
@@ -465,7 +440,6 @@
     "1629462422c7c337fa",
     "1629465806e866cd2d",
     "1657627899c4e060c1",
-    "1629709567bc66549f",
     "1629713540ecd6fa17",
     "1629713705b12acbc0",
     "16293784209ff1ca2b",
