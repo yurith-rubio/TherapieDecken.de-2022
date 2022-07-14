@@ -523,6 +523,9 @@ while for size, we use it to display a size chart (if applicable)
         <span class="UnitPriceMeasurement__ReferenceUnit">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}</span>
       </div>
     </div>
+
+	{% render 'monthly-prices', monthly_price_type: 'upsell-option-covers' %}
+
   {%- endif -%}
 
   {% render 'countdown-product' %}
