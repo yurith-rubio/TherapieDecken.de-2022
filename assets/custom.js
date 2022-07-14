@@ -116,7 +116,7 @@ $(document).ready(function () {
       	// Added for monthly payments
         const adjustedMonthlyPrice = adjustedPrice;
         console.log("adjustedMonthlyPrice");
-      	console.log(adjustedMonthlyPrice);
+      	console.log(typeof adjustedMonthlyPrice);
         $("span.Price--highlight").html(adjustedPrice);
     }
   }
