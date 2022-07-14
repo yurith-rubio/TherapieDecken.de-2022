@@ -47,6 +47,42 @@
         "enable_video_looping": false
       }
     },
+    "1657810560b05c206f": {
+      "type": "text-with-image-new",
+      "disabled": true,
+      "blocks": {
+        "4d601965-5c7f-4406-98fd-a0aa9b5651e8": {
+          "type": "title",
+          "settings": {
+            "subheading": "",
+            "title": "{{ product.metafields.td_field.standard_title3.value }}",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "2e883fde-d424-4b59-997f-3918da1cb091": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>{{ product.metafields.td_field.standard_richtext3 | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "4d601965-5c7f-4406-98fd-a0aa9b5651e8",
+        "2e883fde-d424-4b59-997f-3918da1cb091"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": false,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image": "{{ product.metafields.td_field.standard_image3.value }}",
+        "image_position": "right"
+      }
+    },
     "16303491562dc92348": {
       "type": "html-with-image",
       "settings": {
@@ -58,7 +94,7 @@
         "icons_duotone": "none",
         "subheading": "{{ product.metafields.product[\"standard-subheading-1\"].value }}",
         "title": "{{ product.metafields.product[\"standard-title-1\"].value }}",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "{{ product.metafields.product.standard_image1.value }}",
         "image_position": "right",
         "content_html": "",
@@ -82,7 +118,7 @@
         "icons_duotone": "none",
         "subheading": "{{ product.metafields.product.standard_subheading_2.value }}",
         "title": "{{ product.metafields.product.standard_title_2.value }}",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "{{ product.metafields.product.standard_image2.value }}",
         "image_position": "left",
         "content_html": "",
@@ -129,6 +165,7 @@
   },
   "order": [
     "main",
+    "1657810560b05c206f",
     "16303491562dc92348",
     "16303551163bccecaf",
     "1630795218f4800738",
