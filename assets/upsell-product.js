@@ -71,6 +71,13 @@ $(document).ready(function () {
     
     const adjustedComparePrice = Shopify.formatMoney(totalComparePrice, window.moneyFormat);
     $("span.Price--compareAt").html(adjustedComparePrice);
+    
+    // Added for monthly payments for products with the additional cover - adult sets
+    const adjustedMonthlyPrice = totalPrice/1200;
+    const BalanceMonthlyPrice = $(".ProductItem__CoversMonthlyPrice");
+    if (BalanceMonthlyPrice){
+      $(".ProductItem__CoversMonthlyPrice").html(adjustedMonthlyPrice.toFixed(2));
+    }
   }
   
   function updateGravityInlettPrice(additionalVariantId, mainVariantId) {       
