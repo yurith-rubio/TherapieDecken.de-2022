@@ -2374,11 +2374,15 @@
             productMetaPrices.innerHTML += "<span class=\"ProductMeta__Price Price Price--compareAt Text--subdued u-h4\" data-money-convertible>".concat(Currency.formatMoney(newVariant['compare_at_price'], window.theme.moneyFormat), "</span>");
           } else {
             productMetaPrices.innerHTML += "<span class=\"ProductMeta__Price Price Text--subdued u-h4\" data-money-convertible>".concat(Currency.formatMoney(newVariant['price'], window.theme.moneyFormat), "</span>");
-            productMonthlyPrices.innerHTML += (Currency.formatMoney(newVariant['price']/12, window.theme.moneyFormat));
+            if (productMonthlyPrices){
+            	productMonthlyPrices.innerHTML += (Currency.formatMoney(newVariant['price']/12, window.theme.moneyFormat));
+            }
           }
 
           productMetaPrices.style.display = '';
-          productMonthlyPrices.style.display = '';
+          if (productMonthlyPrices){
+          	productMonthlyPrices.style.display = '';
+          }
         }
       }
       /**
