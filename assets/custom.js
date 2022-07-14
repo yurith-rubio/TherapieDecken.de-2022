@@ -114,6 +114,8 @@ $(document).ready(function () {
     	const adjustedPrice = Shopify.formatMoney(totalPrice, window.moneyFormat);
       
       	// Added for monthly payments
+        console.log("adjustedMonthlyPrice");
+      	console.log(adjustedMonthlyPrice);
         const adjustedMonthlyPrice = adjustedPrice/12;
         console.log("adjustedMonthlyPrice");
       	console.log(adjustedMonthlyPrice);
