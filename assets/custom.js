@@ -118,10 +118,9 @@ $(document).ready(function () {
         console.log("adjustedMonthlyPrice");
       	console.log(adjustedMonthlyPrice);
         $("span.Price--highlight").html(adjustedPrice);
-        const additionalMonthlyPrice = $("span.Price--highlight").html(adjustedPrice);
+        const additionalMonthlyPrice = $(".ProductItem__AdditionalMonthlyPrice");
         if (additionalMonthlyPrice){
-          console.log("additionalMonthlyPrice");
-          console.log(additionalMonthlyPrice);
+          $(".ProductItem__AdditionalMonthlyPrice").html(adjustedPrice);
         }
     }
   }
