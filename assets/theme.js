@@ -2362,12 +2362,15 @@
           }
 
           productMetaPrices.innerHTML = '';
-          productMonthlyPrices.innerHTML = '';
+          if (productMonthlyPrices){
+          	productMonthlyPrices.innerHTML = '';
+          }
 
           if (newVariant['compare_at_price'] > newVariant['price']) {
             productMetaPrices.innerHTML += "<span class=\"ProductMeta__Price Price Price--highlight Text--subdued u-h4\" data-money-convertible>".concat(Currency.formatMoney(newVariant['price'], window.theme.moneyFormat), "</span>");
-            productMonthlyPrices.innerHTML += (Currency.formatMoney(newVariant['price']/12, window.theme.moneyFormat));
-            console.log(Currency.formatMoney(newVariant['price']));
+            if (productMonthlyPrices){
+            	productMonthlyPrices.innerHTML += (Currency.formatMoney(newVariant['price']/12, window.theme.moneyFormat));
+            }
             productMetaPrices.innerHTML += "<span class=\"ProductMeta__Price Price Price--compareAt Text--subdued u-h4\" data-money-convertible>".concat(Currency.formatMoney(newVariant['compare_at_price'], window.theme.moneyFormat), "</span>");
           } else {
             productMetaPrices.innerHTML += "<span class=\"ProductMeta__Price Price Text--subdued u-h4\" data-money-convertible>".concat(Currency.formatMoney(newVariant['price'], window.theme.moneyFormat), "</span>");
