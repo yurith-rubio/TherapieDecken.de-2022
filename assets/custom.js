@@ -111,7 +111,7 @@ $(document).ready(function () {
     	const additionalDiscountPrice = additionalVariant.price * 0.5;
       	const mainProductPrice = getMainProductPrice(id);      
         const totalPrice = mainProductPrice + additionalDiscountPrice;          
-    	const adjustedPrice = Shopify.formatMoney(totalPrice, window.moneyFormat);
+    	const adjustedPrice = "test"//Shopify.formatMoney(totalPrice, window.moneyFormat);
         $("span.Price--highlight").html(adjustedPrice);
     }
   }
