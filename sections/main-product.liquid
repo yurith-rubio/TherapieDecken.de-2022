@@ -121,7 +121,10 @@
               		{% if product.template_suffix == "standard-gravity-test" and settings.seasonal_product_info %}
               		<img class="seasonal_badge" alt="neutral_badge_seasonal_information" src="https://cdn.shopify.com/s/files/1/2451/6611/files/neutral_badge.svg?v=1655883238">
               		{% else %}
-              		<div class="bf-badge">-{{ percentage }}%</div>
+              			{% if product.handle != "balance-gewichtsdecke-fur-erwachsene"
+                        	  and product.handle != "therapiedecken" %}
+              				<div class="bf-badge">-{{ percentage }}%</div>
+              			{% endif %}
               		{% endif %}
                 {% endif %}
               {% endif %}
@@ -412,7 +415,7 @@
                     <button type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" 
                             class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" 
                             {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}
-                            onclick="overlayOn()">
+                            onclick="overlayToggle()">
                       {%- if product.selected_or_first_available_variant.available -%}
                         <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
 

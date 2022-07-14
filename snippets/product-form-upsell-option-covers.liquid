@@ -8,7 +8,7 @@ while for size, we use it to display a size chart (if applicable)
 {%- endcomment -%}
 
 {% comment %} Added 'bezugsart' to the current color_label, in order to have a swatch option for 'Bezugsart' - Yurith {% endcomment %}
-{%- assign color_label = 'color,colour,farbe,bezugsart,design,bezugssystem,setfarbe' | split: ',' -%}
+{%- assign color_label = 'color,colour,farbe,bezugsart,design,bezugssystem,setfarbe,füllung' | split: ',' -%}
 {%- assign size_label = 'size,größe' | split: ',' -%}
 {%- assign gewicht_label = 'gewicht' | split: ',' -%}
 
@@ -29,6 +29,10 @@ while for size, we use it to display a size chart (if applicable)
 <style>
   .hide_option, .blank_option{
     display:none;
+  }
+  .livePreviewApp_coverOptions{
+  	margin-top: 25px;
+	margin-bottom: -20px;
   }
 </style>
 
@@ -121,6 +125,8 @@ while for size, we use it to display a size chart (if applicable)
           {% render 'information-bgd-cover-type', product: product %}
           <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
           
+          <div class="live_preview_app livePreviewApp_coverOptions"></div>
+          
           <style>
             .Inlett__Input:checked > .SizeSwatch {
                 border: #fac637 solid 3px!important;
@@ -132,7 +138,7 @@ while for size, we use it to display a size chart (if applicable)
             	margin-top: 27px;
             }
           </style>
-          
+                    
           <!-- STEP 2.A Duplicate Main Product Form for Additional Product: Balance Inlett -->
           <!-- Yes / No uption Buttons for Balance --> 
           <div class="BalanceInlett__MainContainer AdditionalInlett__MainContainer" style="display: none">
@@ -456,7 +462,7 @@ while for size, we use it to display a size chart (if applicable)
       </select>
     </div>
   </div>
-  
+    
   <!-- STEP 4. Duplicate Main Selector for the Additional Product: Gravity Inlett (Change product object and add '[]' to the name id) -->
   <select id="GravityInlettSelector" class="AdditionalProductSelector GravitySelector no-js" name="id[]" title="GravityInlettVariant">
     {%- for variant in gravity_inlett_product.variants -%}
@@ -491,9 +497,10 @@ while for size, we use it to display a size chart (if applicable)
 
 </div>
 
-{% if product.handle == 'therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv' %}
-	<div class="live_preview_app"></div>
+{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisiertem-hunde-katzen-motiv-fur-erwachsene' %}
+	
 {% endif %}
+	
 
   {%- if product.template_suffix != 'coming-soon' -%}
 
