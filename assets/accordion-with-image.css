@@ -69,7 +69,12 @@ details {
   position:relative;
   top: 13px;
 }
- @media (max-width: 650px){
+@media only screen and (min-width: 768px){
+  .kissen-image{
+    padding: 50px;
+  }
+}
+@media (max-width: 650px){
   .accordion-with-image_IntroPart1 summary{
     padding: 10px 10px !important;
   }
@@ -80,7 +85,8 @@ details {
     padding-left:21px;
   }
   .accordion-with-image_IntroSecContent > div{
-    padding-top: 20px;
+    /*padding-top: 20px;*/
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 481px) and (max-width: 650px){

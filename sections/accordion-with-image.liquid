@@ -7,9 +7,13 @@
       <p class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.sub-heading}}</p>
       <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.heading}}</h2>
       <div class="accordion-with-image_IntroSecContent">
-          <div class="accordion-with-image_IntroPart2">
-			<img class="Image--lazyLoad" data-src="{{ section.settings.image | img_url : '450x300', crop: 'center' }}" alt="{{ section.settings.image.alt | escape }}">
+          {%- capture section_content -%}
+          <div class="accordion-with-image_IntroPart2 {%if template contains 'therapiekissen'%}kissen-image{%endif%}">
+			<img class="Image--lazyLoad" data-src="{{ section.settings.image | img_url : '450x320', crop: 'center' }}" alt="{{ section.settings.image.alt | escape }}">
           </div>
+          {%- endcapture -%}
+       	  {%- capture section_image -%}
+          {%- if section.settings.image != blank -%}
           <div class="accordion-with-image_IntroPart1">
               {% for block in section.blocks %}
                   <details>
@@ -19,7 +23,17 @@
                   </details>
               {% endfor %}
           </div>
-      </div>
+          {%- endif -%}
+          {%- endcapture-%}
+        
+          {%- if section.settings.image_position == 'right' -%}
+          {{- section_image -}}
+          {{- section_content -}}
+          {%- else -%}
+          {{- section_content -}}
+          {{- section_image -}}
+          {%- endif -%}
+     </div>
   </div>
 </div>
 
@@ -43,12 +57,28 @@
             "id": "image",
             "type": "image_picker",
             "label": "Image"
+        },
+		{
+            "type": "select",
+            "id": "image_position",
+            "label": "Image position",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              }
+            ],
+            "default": "left"
         }
     ],
     "blocks": [
         {
             "type": "accordion_simple",
-            "name": "Accordion with Video",
+            "name": "Accordion with Image",
             "settings": [
                 {
                   "type": "select",
