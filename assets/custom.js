@@ -119,8 +119,10 @@ $(document).ready(function () {
       	console.log(adjustedMonthlyPrice);
         $("span.Price--highlight").html(adjustedPrice);
         const additionalMonthlyPrice = $("span.Price--highlight").html(adjustedPrice);
-      	console.log("additionalMonthlyPrice");
-      	console.log(additionalMonthlyPrice);
+        if (additionalMonthlyPrice){
+          console.log("additionalMonthlyPrice");
+          console.log(additionalMonthlyPrice);
+        }
     }
   }
   
