@@ -261,28 +261,29 @@
         "button_link": ""
       }
     },
-    "1629709567bc66549f": {
-      "type": "html-with-image",
+    "1657626924e4ff0de8": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "040d20d1-fdfc-45c6-9b35-0987ac25c869": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{%render 'slide-info-material'%}"
+          }
+        }
+      },
+      "block_order": [
+        "040d20d1-fdfc-45c6-9b35-0987ac25c869"
+      ],
       "settings": {
+        "slide_style": false,
         "spacer_top": true,
         "spacer_bottom": true,
         "bg-color": "",
         "bg-color-text-html": "",
-        "icon_title": false,
-        "icons_duotone": "none",
-        "subheading": "Edelstahlkügelchen & Premium Bezug",
-        "title": "Aufbau der Premium Balance Therapiedecke für Kinder",
+        "text_align": "center",
         "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/Therapiedecken-Aufbau-Balance-gray3_1c68380f-cdec-4b3e-ae02-f73508b520ed.jpg",
-        "image_position": "right",
-        "content_html": "<style>\nli{\nlist-style: none;\n}\nli > span {\nposition: relative;\nleft: -24px;\nmargin-right: -20px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(2) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(3) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(4) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\n<\/style>\n\n\n<ol>\n<li>\n<span class=\"icon-one\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.\n<\/li>\n<li>\n<span class=\"icon-two\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nBalance Gewichtsdecke (Inlett) aus 100% organischer Baumwolle. <\/li>\n<li>\n<span class=\"icon-three\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nDie Füllung besteht aus 32% Polyester und 68% Baumwolle.<\/li>\n<li>\n<span class=\"icon-four\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nDie Gewichtsdecke wird mit rostfreien Edelstahlkügelchen beschwert, die sicher und ohne zu verrutschen im Inneren fixiert werden.<\/li>\n<\/ol>",
-        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
-        "button_style": false,
-        "link_text": "",
-        "link_url": "",
-        "button_extra": false,
-        "link_text_extra": "Mehr Erfahren",
-        "link_url_extra": ""
+        "image_position": "right"
       }
     },
     "1629713540ecd6fa17": {
@@ -438,7 +439,7 @@
     "16294611499d6cacbd",
     "1629462422c7c337fa",
     "1629465806e866cd2d",
-    "1629709567bc66549f",
+    "1657626924e4ff0de8",
     "1629713540ecd6fa17",
     "1629713705b12acbc0",
     "16293784209ff1ca2b",

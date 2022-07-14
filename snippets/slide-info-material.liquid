@@ -29,14 +29,14 @@
   }
 {%endstyle%}
 
-{% if product.handle == 'balance-gewichtsdecke-fur-erwachsene' %}
+{% if template contains 'premium-balance-adults' %}
   <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Edelstahlkügelchen & Premium Bezug</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Premium Balance Therapiedecke</h2>
   <div class="desktop-ol">
      <ol>
         <li class="OwlScript_li">
           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
-           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester
+           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
         </li>
         <li class="OwlScript_li">
            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
@@ -57,7 +57,7 @@
      <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
          <div class="item">
            <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
-           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester
+           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
          </div>
          <div class="item">
             <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
@@ -75,14 +75,14 @@
   </div>
 {% endif %}
 
-{% if product.handle == 'therapiedecken' %}
+{% if product.handle == 'therapiedecken' or product.handle == 'sale-standard-gravity-gewichtsdecke-fur-erwachsene' or product.handle == 'standard-gravity-gewichtsdecke' or product.handle == 'gravity-duo-gewichtsdecke-fur-erwachsene' %}
   <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Glasperlen & Standard Bezug</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Standard Gravity Therapiedecke</h2>
   <div class="desktop-ol">
      <ol>
         <li class="OwlScript_li">
           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
-           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester
+           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
         </li>
         <li class="OwlScript_li">
            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
@@ -103,7 +103,7 @@
      <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
          <div class="item">
            <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
-           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester
+           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
          </div>
          <div class="item">
             <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
@@ -122,24 +122,22 @@
 {% endif %}
 
 
-{% if product.handle == 'basic-gravity-gewichtsdecke-fur-erwachsene' %}
+{% if template contains 'basic-balance-product' %}
   <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Glasperlen &amp; Basic Bezug</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Basic Gravity Therapiedecke</h2>
   <div class="desktop-ol">
      <ol>
         <li class="OwlScript_li">
           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
-          Abnehmbarer Basic Bezug aus Polyester und Baumwolle
+          Abnehmbarer Basic Bezug aus Polyester und Baumwolle.
         </li>
         <li class="OwlScript_li">
            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
-           Gravity Gewichtsdecke (Inlett)
            Das Gravity Inlett besteht aus 100% organischer Baumwolle.
-           Füllung
         </li>
         <li class="OwlScript_li">
            <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
-           Die Füllung ist aus 32% Polyester und 68% Baumwolle
+           Die Füllung ist aus 32% Polyester und 68% Baumwolle.
         </li>
         <li class="OwlScript_li">
            <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
@@ -170,26 +168,24 @@
   </div>
 {% endif %}
 
-{% if product.handle == 'gravity-duo-gewichtsdecke-fur-erwachsene' %}
-  <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Glasperlen &amp; Standard Bezug</p>
-  <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Gravity DUO Therapiedecke</h2>
+
+
+{% if template contains 'therapiekissen' %}
+<p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Gefüllt mit Holzspäne oder Polyester oder nur als Bezug</p>
+  <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau des Therapiekissens</h2>
   <div class="desktop-ol">
      <ol>
         <li class="OwlScript_li">
           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
-          Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
+          Option: Bezug + Inlett, gefüllt mit Zirbenholzspäne.
         </li>
         <li class="OwlScript_li">
            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
-           Gravity Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.
+            Option: Bezug + Inlett, gefüllt mit Polyester.
         </li>
         <li class="OwlScript_li">
            <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
-           Die Füllung besteht aus 32% Polyester und 68% Baumwolle.
-        </li>
-        <li class="OwlScript_li">
-           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
-           In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+ 			Option: Nur der hochwertige, abnehmbare Bezug.
         </li>
      </ol>
   </div>
@@ -198,22 +194,398 @@
      <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
          <div class="item">
            <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
-           Abnehmbarer Basic Bezug aus Polyester und Baumwolle
+           Option: Bezug + Inlett, gefüllt mit Zirbenholzspäne.
          </div>
          <div class="item">
             <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
-            Gravity Gewichtsdecke (Inlett)
-            Das Gravity Inlett besteht aus 100% organischer Baumwolle.
-            Füllung
+            Option: Bezug + Inlett, gefüllt mit Polyester.
          </div>
          <div class="item">
             <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
-            Die Füllung ist aus 32% Polyester und 68% Baumwolle
+            Option: Nur der hochwertige, abnehmbare Bezug.
+         </div>
+      </div>
+  </div>
+{% endif %}
+
+{% if template contains 'gravity-special-edition' %}
+<p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Glasperlen & Premium Bezug</p>
+  <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Standard Gravity Therapiedecke</h2>
+  <div class="desktop-ol">
+     <ol>
+        <li class="OwlScript_li">
+          <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+          Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+            Gravity Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+		   Die Füllung besteht aus 32% Polyester und 68% Baumwolle.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+		    In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+        </li>
+     </ol>
+  </div>
+
+  <div class="mobile-ol">
+     <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
+         <div class="item">
+           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
          </div>
          <div class="item">
-            <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
-            In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+             Gravity Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.
          </div>
+         <div class="item">
+            <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+             Die Füllung besteht aus 32% Polyester und 68% Baumwolle.
+         </div>
+         <div class="item">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+            In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+       	 </div>
+      </div>
+  </div>
+{% endif %}
+
+{% if template contains 'balance-product-set' %}
+<p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Edelstahlkügelchen & Premium Bezug</p>
+  <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Premium Balance Therapiedecke</h2>
+  <div class="desktop-ol">
+     <ol>
+        <li class="OwlScript_li">
+          <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+          Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+             Das Balance Inlett besteht aus 100% organischer Baumwolle.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+		    Die Füllung ist aus 32% Polyester und 68% Baumwolle. Kleine Edelstahlkügelchen.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+		     Die Gewichtsdecke wird mit rostfreien Edelstahlkügelchen beschwert, die sicher und ohne zu verrutschen im Inneren fixiert werden.
+        </li>
+     </ol>
+  </div>
+
+  <div class="mobile-ol">
+     <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
+         <div class="item">
+           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
+         </div>
+         <div class="item">
+            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+              Das Balance Inlett besteht aus 100% organischer Baumwolle.
+         </div>
+         <div class="item">
+            <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+              Die Füllung ist aus 32% Polyester und 68% Baumwolle. Kleine Edelstahlkügelchen.
+         </div>
+         <div class="item">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+             Die Gewichtsdecke wird mit rostfreien Edelstahlkügelchen beschwert, die sicher und ohne zu verrutschen im Inneren fixiert werden.
+       	 </div>
+      </div>
+  </div>
+{% endif %}
+
+{% if template contains 'therapiedecken-erwachsene' %}
+<p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Atmungsaktiv & ohne Bezug</p>
+  <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der medizinischen Therapiedecke</h2>
+  <div class="desktop-ol">
+     <ol>
+        <li class="OwlScript_li">
+          <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+          Atmungsaktiver Stoff. Die Decke besteht aus 100% Baumwolle.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+              Sandfeine Glasperlen. In kleinen Kammern befinden sich hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+        </li>
+     </ol>
+  </div>
+
+  <div class="mobile-ol">
+     <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
+         <div class="item">
+           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+           Atmungsaktiver Stoff. Die Decke besteht aus 100% Baumwolle.
+         </div>
+         <div class="item">
+            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+               Sandfeine Glasperlen. In kleinen Kammern befinden sich hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+         </div>
+      </div>
+  </div>
+{% endif %}
+
+{% if template contains 'premium-balance-kids' %}
+<p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Edelstahlkügelchen & Premium Bezug</p>
+  <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Premium Balance Therapiedecke für Kinder</h2>
+  <div class="desktop-ol">
+     <ol>
+        <li class="OwlScript_li">
+          <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+          Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+             Balance Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+		    Die Füllung besteht aus 32% Polyester und 68% Baumwolle.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+		     Die Gewichtsdecke wird mit rostfreien Edelstahlkügelchen beschwert, die sicher und ohne zu verrutschen im Inneren fixiert werden.
+        </li>
+     </ol>
+  </div>
+
+  <div class="mobile-ol">
+     <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
+         <div class="item">
+           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
+         </div>
+         <div class="item">
+            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+              Balance Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.
+         </div>
+         <div class="item">
+            <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+              Die Füllung besteht aus 32% Polyester und 68% Baumwolle.
+         </div>
+         <div class="item">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+             Die Gewichtsdecke wird mit rostfreien Edelstahlkügelchen beschwert, die sicher und ohne zu verrutschen im Inneren fixiert werden.
+       	 </div>
+      </div>
+  </div>
+{% endif %}
+
+{% if template contains 'gravity-printed-blanket' %}
+<p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Glasperlen & Premium Bezug</p>
+  <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Standard Gravity Therapiedecke</h2>
+  <div class="desktop-ol">
+     <ol>
+        <li class="OwlScript_li">
+          <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+          Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+             Gravity Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+		    Die Füllung besteht aus 32% Polyester und 68% Baumwolle.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+		      In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+        </li>
+     </ol>
+  </div>
+
+  <div class="mobile-ol">
+     <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
+         <div class="item">
+           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
+         </div>
+         <div class="item">
+            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+              Gravity Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.
+         </div>
+         <div class="item">
+            <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+              Die Füllung besteht aus 32% Polyester und 68% Baumwolle.
+         </div>
+         <div class="item">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+              In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+       	 </div>
+      </div>
+  </div>
+{% endif %}
+
+{% if template contains 'gravity-product-set' %}
+<p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Glasperlen & Premium Bezug</p>
+  <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Standard Gravity Therapiedecke</h2>
+  <div class="desktop-ol">
+     <ol>
+        <li class="OwlScript_li">
+          <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+          Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+             Das Balance Inlett besteht aus 100% organischer Baumwolle.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+		    Die Füllung ist aus 32% Polyester und 68% Baumwolle.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+		      In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+        </li>
+     </ol>
+  </div>
+
+  <div class="mobile-ol">
+     <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
+         <div class="item">
+           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
+         </div>
+         <div class="item">
+            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+              Das Balance Inlett besteht aus 100% organischer Baumwolle.
+         </div>
+         <div class="item">
+            <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+              Die Füllung ist aus 32% Polyester und 68% Baumwolle.
+         </div>
+         <div class="item">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+              In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+       	 </div>
+      </div>
+  </div>
+{% endif %}
+
+{% if template contains 'nasa-outlast' %}
+<p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Premium Balance Gewichtsdecke mit Edelstahlkügelchen</p>
+  <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Funktionsweise des Outlast® Dauerkomfort Bezugs</h2>
+  <div class="desktop-ol">
+     <ol>
+        <li class="OwlScript_li">
+          <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+          Wärme oder Kälte aus der Umgebung oder vom Körper wirken auf das Material.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+             Outlast® Bezug mit mikroverkapseltem Wachs verflüssigt sich durch Wärme, wodurch Schweißbildung verhindert wird. (Bei Kälte umgekehrter Effekt)
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+		    Das Mikroklima bleibt durch physikalisches Gesetz (Aggregatwechsel des Wachses fest-flüssig oder flüssig-fest) konstant.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+		      Haut mit stets idealer Temperatur, da Wärme nicht absorbiert wird und keine Feuchtigkeit entsteht.
+        </li>
+     </ol>
+  </div>
+
+  <div class="mobile-ol">
+     <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
+         <div class="item">
+           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+           Wärme oder Kälte aus der Umgebung oder vom Körper wirken auf das Material.
+         </div>
+         <div class="item">
+            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+              Outlast® Bezug mit mikroverkapseltem Wachs verflüssigt sich durch Wärme, wodurch Schweißbildung verhindert wird. (Bei Kälte umgekehrter Effekt)
+         </div>
+         <div class="item">
+            <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+              Das Mikroklima bleibt durch physikalisches Gesetz (Aggregatwechsel des Wachses fest-flüssig oder flüssig-fest) konstant.
+         </div>
+         <div class="item">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+              Haut mit stets idealer Temperatur, da Wärme nicht absorbiert wird und keine Feuchtigkeit entsteht.
+       	 </div>
+      </div>
+  </div>
+{% endif %}
+
+{% if template contains 'therapiedecken-kinder' %}
+<p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Atmungsaktiv & ohne Bezug</p>
+  <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Medizinischen Therapiedecke für Kinder</h2>
+  <div class="desktop-ol">
+     <ol>
+        <li class="OwlScript_li">
+          <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+          Atmungsaktiver Stoff. Die Decke besteht aus 100% Baumwolle.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+             Sandfeine Glasperlen. In kleinen Kammern befinden sich hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+        </li>
+     </ol>
+  </div>
+
+  <div class="mobile-ol">
+     <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
+         <div class="item">
+           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+           Atmungsaktiver Stoff. Die Decke besteht aus 100% Baumwolle.
+         </div>
+         <div class="item">
+            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+              Sandfeine Glasperlen. In kleinen Kammern befinden sich hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+         </div>
+      </div>
+  </div>
+{% endif %}
+
+{% if product.handle == "gravity-gewichtsdecke-fur-kinder" %}
+<p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Glasperlen & Premium Bezug</p>
+  <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Standard Gravity Therapiedecke für Kinder</h2>
+  <div class="desktop-ol">
+     <ol>
+        <li class="OwlScript_li">
+          <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+          Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+             Gravity Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+		    Die Füllung besteht aus 32% Polyester und 68% Baumwolle.
+        </li>
+        <li class="OwlScript_li">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+		      In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+        </li>
+     </ol>
+  </div>
+
+  <div class="mobile-ol">
+     <div class="OwlCarousel_TextWithImage owl-carousel owl-theme">
+         <div class="item">
+           <span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+           Hochwertiger, abnehmbarer Premium 4-Jahreszeiten- oder Baumwollbezug aus Baumwolle und Polyester.
+         </div>
+         <div class="item">
+            <span class="icon-two"><span class="path1"></span><span class="path2"></span></span>
+              Gravity Gewichtsdecke (Inlett) aus 100% organischer Baumwolle.
+         </div>
+         <div class="item">
+            <span class="icon-three"><span class="path1"></span><span class="path2"></span></span>
+              Die Füllung besteht aus 32% Polyester und 68% Baumwolle.
+         </div>
+         <div class="item">
+           <span class="icon-four"><span class="path1"></span><span class="path2"></span></span>
+              In der Füllung befinden sich in kleinen Kammern hochwertige, sandfeine Glasperlen, die der Decke das nötige Gewicht geben.
+       	 </div>
       </div>
   </div>
 {% endif %}
