@@ -167,34 +167,9 @@
         "bg-color": "",
         "bg-color-text-html": "",
         "text_align": "center",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/1200-3_large_a02e33d6-a5b7-4e1a-9e78-794b5a7bd918.jpg",
         "image_position": "right"
-      }
-    },
-    "1630164258a011a266": {
-      "type": "html-with-image",
-      "disabled": true,
-      "settings": {
-        "spacer_top": true,
-        "spacer_bottom": true,
-        "bg-color": "",
-        "bg-color-text-html": "",
-        "icon_title": false,
-        "icons_duotone": "none",
-        "subheading": "Gefüllt mit Holzspäne oder Polyester oder nur als Bezug",
-        "title": "Aufbau des Therapiekissens",
-        "text_color": "#3a3c3c",
-        "image": "shopify:\/\/shop_images\/Pillow-parts.jpg",
-        "image_position": "right",
-        "content_html": "<style>\nli{\nlist-style: none;\n}\nli > span {\nposition: relative;\nleft: -24px;\nmargin-right: -20px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(2) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(3) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\nli:nth-child(4) > span {\nposition: relative;\nleft: -24px;\nmargin-right: -24px;\ntop: 6px;\nfont-size: 20px;\n}\n<\/style>\n\n\n<ol>\n<li>\n<span class=\"icon-one\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>Option: Bezug + Inlett, gefüllt mit Zirbenholzspäne.\n<\/li>\n<li>\n<span class=\"icon-two\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nOption: Bezug + Inlett, gefüllt mit Polyester.\n        <\/li>\n<li>\n<span class=\"icon-three\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span>\nOption: Nur der hochwertige, abnehmbare Bezug.<\/li>\n\n<\/ol>",
-        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
-        "button_style": false,
-        "link_text": "",
-        "link_url": "",
-        "button_extra": false,
-        "link_text_extra": "Mehr Erfahren",
-        "link_url_extra": ""
       }
     },
     "1630164976c586d4e7": {
@@ -349,7 +324,6 @@
     "1657719711b16abed2",
     "163016371339ccc7f2",
     "16577991548ce77d79",
-    "1630164258a011a266",
     "1630164976c586d4e7",
     "1630164720bfaf1c1a",
     "1630163949d1c2cde8",
