@@ -119,7 +119,7 @@ $(document).ready(function () {
       	const adjustedMonthlyPrice = totalPrice/1200;
         const additionalMonthlyPrice = $(".ProductItem__AdditionalMonthlyPrice");
         if (additionalMonthlyPrice){
-          $(".ProductItem__AdditionalMonthlyPrice").html(adjustedMonthlyPrice);
+          $(".ProductItem__AdditionalMonthlyPrice").html(adjustedMonthlyPrice.toFixed(2));
         }
     }
   }
