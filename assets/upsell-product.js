@@ -94,7 +94,7 @@ $(document).ready(function () {
     const adjustedMonthlyPrice = totalPrice/1200;
     const GravityMonthlyPrice = $(".ProductItem__CoversMonthlyPrice");
     if (GravityMonthlyPrice){
-      $(".ProductItem__CoversMonthlyPrice").html(GravityMonthlyPrice.toFixed(2));
+      $(".ProductItem__CoversMonthlyPrice").html(adjustedMonthlyPrice.toFixed(2));
     }
     
   }
