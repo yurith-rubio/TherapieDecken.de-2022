@@ -124,6 +124,7 @@ $(document).ready(function () {
       
         // Added for monthly payments for products with the additional cover - adult sets
         const upsellCoversMonthlyPrice = $(".ProductItem__CoversMonthlyPrice");
+      	console.log("custom js is here");
         if (upsellCoversMonthlyPrice){
           $(".ProductItem__CoversMonthlyPrice").html(adjustedMonthlyPrice.toFixed(2));
         }
