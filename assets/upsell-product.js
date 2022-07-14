@@ -96,7 +96,6 @@ $(document).ready(function () {
     if (GravityMonthlyPrice){
       $(".ProductItem__CoversMonthlyPrice").html(adjustedMonthlyPrice.toFixed(2));
     }
-    
   }
   
   function selectBalanceInlettVariant() {
