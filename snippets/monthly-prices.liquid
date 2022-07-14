@@ -22,7 +22,7 @@
   <div class="ProductMeta__PriceList Heading">
     Oder zahlen Sie 
     <span class="ProductItem__Price ProductItem__CoversMonthlyPrice Price Item_Price--highlight Text--subdued">
-      upsell options covers price here
+      {{ product.selected_or_first_available_variant.price | divided_by: 12 | money }}
     </span>
     / Monat
   </div>
