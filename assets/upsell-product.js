@@ -89,6 +89,14 @@ $(document).ready(function () {
     
     const adjustedComparePrice = Shopify.formatMoney(totalComparePrice, window.moneyFormat);
     $("span.Price--compareAt").html(adjustedComparePrice);
+    
+    // Added for monthly payments for products with the additional cover - adult sets
+    const adjustedMonthlyPrice = totalPrice/1200;
+    const GravityMonthlyPrice = $(".ProductItem__CoversMonthlyPrice");
+    if (GravityMonthlyPrice){
+      $(".ProductItem__CoversMonthlyPrice").html(GravityMonthlyPrice.toFixed(2));
+    }
+    
   }
   
   function selectBalanceInlettVariant() {
