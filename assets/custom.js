@@ -104,6 +104,8 @@ $(document).ready(function () {
     }
   }
   
+  console.log("custom js is here");
+  
   function updatePrice(id) {
     const additionalVariantId = getSelectedAdditionalVariantId();    
     if (additionalVariantId) {
