@@ -2353,7 +2353,9 @@
 
         if (!newVariant) {
           productMetaPrices.style.display = 'none';
-          productMonthlyPrices.style.display = 'none';
+          if (productMonthlyPrices){
+          	productMonthlyPrices.style.display = 'none';
+          }
         } else {
           if (previousVariant && previousVariant['price'] === newVariant['price'] && previousVariant['compare_at_price'] === newVariant['compare_at_price']) {
             return; // The price do not have changed so let's return to avoid changing the DOM for nothing
