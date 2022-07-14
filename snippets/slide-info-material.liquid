@@ -122,7 +122,7 @@
 {% endif %}
 
 
-{% if template contains 'basic-balance-product' %}
+{% if product.template_suffix == 'basic-balance-product' %}
   <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Glasperlen &amp; Basic Bezug</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Basic Gravity Therapiedecke</h2>
   <div class="desktop-ol">
@@ -170,7 +170,7 @@
 
 
 
-{% if template contains 'therapiekissen' %}
+{% if product.template_suffix == 'therapiekissen' %}
 <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Gefüllt mit Holzspäne oder Polyester oder nur als Bezug</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau des Therapiekissens</h2>
   <div class="desktop-ol">
@@ -208,7 +208,7 @@
   </div>
 {% endif %}
 
-{% if template contains 'gravity-special-edition' %}
+{% if product.template_suffix == 'gravity-special-edition' %}
 <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Glasperlen & Premium Bezug</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Standard Gravity Therapiedecke</h2>
   <div class="desktop-ol">
@@ -254,7 +254,7 @@
   </div>
 {% endif %}
 
-{% if template contains 'balance-product-set' %}
+{% if product.template_suffix == 'balance-product-set' %}
 <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Edelstahlkügelchen & Premium Bezug</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Premium Balance Therapiedecke</h2>
   <div class="desktop-ol">
@@ -300,7 +300,7 @@
   </div>
 {% endif %}
 
-{% if template contains 'therapiedecken-erwachsene' %}
+{% if product.template_suffix == 'therapiedecken-erwachsene' %}
 <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Atmungsaktiv & ohne Bezug</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der medizinischen Therapiedecke</h2>
   <div class="desktop-ol">
@@ -330,7 +330,7 @@
   </div>
 {% endif %}
 
-{% if template contains 'premium-balance-kids' %}
+{% if product.template_suffix == 'premium-balance-kids' %}
 <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Edelstahlkügelchen & Premium Bezug</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Premium Balance Therapiedecke für Kinder</h2>
   <div class="desktop-ol">
@@ -376,7 +376,7 @@
   </div>
 {% endif %}
 
-{% if template contains 'gravity-printed-blanket' %}
+{% if product.template_suffix == 'gravity-printed-blanket' %}
 <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Glasperlen & Premium Bezug</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Standard Gravity Therapiedecke</h2>
   <div class="desktop-ol">
@@ -422,7 +422,7 @@
   </div>
 {% endif %}
 
-{% if template contains 'gravity-product-set' %}
+{% if product.template_suffix == 'gravity-product-set' %}
 <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Glasperlen & Premium Bezug</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Standard Gravity Therapiedecke</h2>
   <div class="desktop-ol">
@@ -468,7 +468,7 @@
   </div>
 {% endif %}
 
-{% if template contains 'nasa-outlast' %}
+{% if product.template_suffix == 'nasa-outlast' %}
 <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Premium Balance Gewichtsdecke mit Edelstahlkügelchen</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Funktionsweise des Outlast® Dauerkomfort Bezugs</h2>
   <div class="desktop-ol">
@@ -514,7 +514,7 @@
   </div>
 {% endif %}
 
-{% if template contains 'therapiedecken-kinder' %}
+{% if product.template_suffix == 'therapiedecken-kinder' %}
 <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Atmungsaktiv & ohne Bezug</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Medizinischen Therapiedecke für Kinder</h2>
   <div class="desktop-ol">
@@ -544,7 +544,7 @@
   </div>
 {% endif %}
 
-{% if product.handle == "gravity-gewichtsdecke-fur-kinder" %}
+{% if product.template_suffix == "standard-gravity-kids" %}
 <p class="SectionHeader__SubHeading Heading u-h6" style="color: #3a3c3c;margin-bottom:0;">Glasperlen & Premium Bezug</p>
   <h2 class="SectionHeader__Heading Heading u-h2" style="color: #3a3c3c;margin-top:0;">Aufbau der Standard Gravity Therapiedecke für Kinder</h2>
   <div class="desktop-ol">
