@@ -2350,6 +2350,7 @@
       value: function _updateProductPrices(newVariant, previousVariant) {
         var productMetaPrices = this.element.querySelector('.ProductMeta__PriceList');
         var productMonthlyPrices = this.element.querySelector('.ProductItem__MonthlyPrice');
+        var upsellCoversMonthlyPrices = this.element.querySelector('.ProductItem__CoversMonthlyPrice');
 
         if (!newVariant) {
           productMetaPrices.style.display = 'none';
