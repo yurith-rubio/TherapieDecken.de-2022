@@ -115,7 +115,7 @@ $(document).ready(function () {
       
         $("span.Price--highlight").html(adjustedPrice);
       
-      	// Added for monthly payments
+      	// Added for monthly payments for products with the additional cover - adult sets
       	const adjustedMonthlyPrice = totalPrice /1200;
         const additionalMonthlyPrice = $(".ProductItem__AdditionalMonthlyPrice");
         if (additionalMonthlyPrice){
