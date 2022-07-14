@@ -113,14 +113,13 @@ $(document).ready(function () {
         const totalPrice = mainProductPrice + additionalDiscountPrice;          
     	const adjustedPrice = Shopify.formatMoney(totalPrice, window.moneyFormat);
       
-      	// Added for monthly payments
-        const adjustedMonthlyPrice = totalPrice /1200;
-        console.log("adjustedMonthlyPrice");
-      	console.log(adjustedMonthlyPrice);
         $("span.Price--highlight").html(adjustedPrice);
+      
+      	// Added for monthly payments
+      	const adjustedMonthlyPrice = totalPrice /1200;
         const additionalMonthlyPrice = $(".ProductItem__AdditionalMonthlyPrice");
         if (additionalMonthlyPrice){
-          $(".ProductItem__AdditionalMonthlyPrice").html(adjustedPrice);
+          $(".ProductItem__AdditionalMonthlyPrice").html(adjustedMonthlyPrice);
         }
     }
   }
