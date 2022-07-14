@@ -1,6 +1,5 @@
-{% unless product.template_suffix == '' %}
+{% unless product.template_suffix == 'balance-product-set' or product.template_suffix == 'gravity-product-set' %}
 
-{% else %}
 <div class="ProductMeta__PriceList Heading">
   Oder zahlen Sie 
   <span class="ProductItem__Price ProductItem__MonthlyPrice Price Item_Price--highlight Text--subdued">
@@ -8,4 +7,9 @@
   </span>
   / Monat
 </div>
+
+{% else %}
+
+Test here
+
 {% endunless %}
