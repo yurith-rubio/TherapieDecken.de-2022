@@ -114,9 +114,9 @@ $(document).ready(function () {
     	const adjustedPrice = Shopify.formatMoney(totalPrice, window.moneyFormat);
       
       	// Added for monthly payments
-        const adjustedMonthlyPrice = adjustedPrice;
+        const adjustedMonthlyPrice = Shopify.formatMoney(totalPrice);
         console.log("adjustedMonthlyPrice");
-      	console.log(typeof adjustedMonthlyPrice);
+      	console.log(adjustedMonthlyPrice);
         $("span.Price--highlight").html(adjustedPrice);
     }
   }
