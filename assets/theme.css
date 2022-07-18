@@ -7723,6 +7723,9 @@ a.CollectionItemPage {
 .FaqSummary__Item.is-active .FaqSummary__LinkLabel::after {
   transform: scale(1, 1);
 }
+.balance-schlafmaske-padding{
+	padding: 0 25px;
+}
 
 @media screen and (min-width: 641px) {
 
