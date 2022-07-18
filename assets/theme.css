@@ -9702,7 +9702,7 @@ a.CollectionItemPage {
   text-align: center;
 }
 
-.ProductMeta__MonthlyPriceList{
+.ProductItem__MonthlyPrice, .ProductItem__AdditionalMonthlyPrice, .ProductItem__CoversMonthlyPrice{
   margin-top: -20px;
 }
 
