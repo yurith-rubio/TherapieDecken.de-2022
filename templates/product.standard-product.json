@@ -49,7 +49,6 @@
     },
     "1657810560b05c206f": {
       "type": "text-with-image-new",
-      "disabled": true,
       "blocks": {
         "4d601965-5c7f-4406-98fd-a0aa9b5651e8": {
           "type": "title",
@@ -78,9 +77,9 @@
         "bg-color": "",
         "bg-color-text-html": "",
         "text_align": "left",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "{{ product.metafields.td_field.standard_image3.value }}",
-        "image_position": "right"
+        "image_position": "left"
       }
     },
     "16303491562dc92348": {
