@@ -112,7 +112,15 @@ $(document).ready(function () {
       	const mainProductPrice = getMainProductPrice(id);      
         const totalPrice = mainProductPrice + additionalDiscountPrice;          
     	const adjustedPrice = Shopify.formatMoney(totalPrice, window.moneyFormat);
+      
         $("span.Price--highlight").html(adjustedPrice);
+      
+      	// Added for monthly payments for products with the additional cover - adult sets
+      	const adjustedMonthlyPrice = totalPrice/1200;
+        const additionalMonthlyPrice = $(".ProductItem__AdditionalMonthlyPrice");
+        if (additionalMonthlyPrice){
+          $(".ProductItem__AdditionalMonthlyPrice").html(adjustedMonthlyPrice.toFixed(2));
+        }
     }
   }
   

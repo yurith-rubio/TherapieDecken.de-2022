@@ -1,0 +1,29 @@
+{% if monthly_price_type == 'general' %}
+  <div class="ProductMeta__MonthlyPriceList Heading">
+    Oder zahlen Sie 
+    <span class="ProductItem__Price ProductItem__MonthlyPrice Price Item_Price--highlight Text--subdued">
+      {{ product.selected_or_first_available_variant.price | divided_by: 12 | money }}
+    </span>
+    / Monat
+  </div>
+{% endif %}
+
+{% if monthly_price_type == 'adult-sets' %}
+  <div class="ProductMeta__MonthlyPriceList Heading">
+    Oder zahlen Sie 
+    <span class="ProductItem__Price ProductItem__AdditionalMonthlyPrice Price Item_Price--highlight Text--subdued">
+      adult sets price here
+    </span>
+    / Monat
+  </div>
+{% endif %}
+
+{% if monthly_price_type == 'upsell-option-covers' %}
+  <div class="ProductMeta__MonthlyPriceList Heading">
+    Oder zahlen Sie 
+    <span class="ProductItem__Price ProductItem__CoversMonthlyPrice Price Item_Price--highlight Text--subdued">
+      {{ product.selected_or_first_available_variant.price | divided_by: 12 | money }}
+    </span>
+    / Monat
+  </div>
+{% endif %}

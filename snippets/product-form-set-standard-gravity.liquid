@@ -277,10 +277,10 @@ for size, we use it to display a size chart (if applicable)
   {%- if product.template_suffix != 'coming-soon' -%}
     <div class="ProductMeta__PriceList Heading">
       {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
-        <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
-        <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">{{ product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
+        <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">Test1{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+        <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">Test2{{ product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
       {%- else -%}
-        <span class="ProductMeta__Price Price Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+        <span class="ProductMeta__Price Price Text--subdued u-h4">Test3{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
       {%- endif -%}
     </div>
 
@@ -292,6 +292,9 @@ for size, we use it to display a size chart (if applicable)
         <span class="UnitPriceMeasurement__ReferenceUnit">{{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}</span>
       </div>
     </div>
+
+	{% render 'monthly-prices', monthly_price_type: 'adult-sets' %}
+
   {%- endif -%}
 
   {% render 'countdown-product' %}
