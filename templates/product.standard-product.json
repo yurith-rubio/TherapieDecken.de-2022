@@ -76,7 +76,7 @@
         "spacer_bottom": false,
         "bg-color": "",
         "bg-color-text-html": "",
-        "text_align": "left",
+        "text_align": "center",
         "text_color": "#3a3c3c",
         "image": "{{ product.metafields.td_field.standard_image3.value }}",
         "image_position": "left"
