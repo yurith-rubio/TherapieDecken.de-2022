@@ -37,18 +37,6 @@
             "button_text": "Mehr erfahren"
           }
         },
-        "fe4ad3a3-690b-44a7-a580-b7ee65e6230a": {
-          "type": "collection",
-          "settings": {
-            "collection": "personalisierte-therapiedecken",
-            "image": "shopify:\/\/shop_images\/pet_cover.jpg",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Personalisierte Therapiedecken",
-            "button_text": "Mehr erfahren"
-          }
-        },
         "73b0d1b4-632b-4418-8eda-b5c14820a472": {
           "type": "collection",
           "settings": {
@@ -69,6 +57,30 @@
             "subheading": "",
             "title": "Therapiedecken Bettwäsche Set",
             "button_text": "Mehr Erfahren"
+          }
+        },
+        "fe4ad3a3-690b-44a7-a580-b7ee65e6230a": {
+          "type": "collection",
+          "settings": {
+            "collection": "personalisierte-therapiedecken",
+            "image": "shopify:\/\/shop_images\/pet_cover.jpg",
+            "image_alignment": "bottom center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Personalisierte Therapiedecken",
+            "button_text": "Mehr erfahren"
+          }
+        },
+        "4094853d-d0e7-4acf-89b3-a9e4ff65f36f": {
+          "type": "collection",
+          "settings": {
+            "collection": "personalisierte-ersatzbezuge",
+            "image": "shopify:\/\/shop_images\/CODECBAD_1.jpg",
+            "image_alignment": "bottom right",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "Personalisierte Ersatzbezüge",
+            "button_text": "Mehr erfahren"
           }
         },
         "80fc7849-6f80-4219-88ae-8d858f408eb1": {
@@ -157,9 +169,10 @@
         "57fb5787-f1c6-4b8c-ab63-2ffc38059fbb",
         "caf64738-ad97-4215-ab5b-801cbfc0d6c6",
         "448bd5a6-b739-438e-952d-3a2f4c4782b4",
-        "fe4ad3a3-690b-44a7-a580-b7ee65e6230a",
         "73b0d1b4-632b-4418-8eda-b5c14820a472",
         "2be49438-6887-4f88-bc2b-2747957fbfb6",
+        "fe4ad3a3-690b-44a7-a580-b7ee65e6230a",
+        "4094853d-d0e7-4acf-89b3-a9e4ff65f36f",
         "80fc7849-6f80-4219-88ae-8d858f408eb1",
         "cf9b81ae-2c0c-4372-85ab-bec6ff07de7f",
         "93e23be5-e881-4e31-968b-92e98ceb5d11",
