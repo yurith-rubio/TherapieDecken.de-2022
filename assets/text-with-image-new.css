@@ -29,6 +29,9 @@
   .icon_html_img{
 	margin-bottom: 10px;
   }
+  .gewichtsdecken-im-test-padding .SectionHeader__Heading{
+  	padding: 0 25px;
+  }
 }
 @media only screen and (min-width: 641px){
   .HTMLimg__WithIcon{
@@ -37,6 +40,9 @@
   }
   .HTMLimg__titleWithIcon{
 	padding-left: 8px;
+  }
+  .gewichtsdecken-im-test-padding .SectionHeader__Description{
+	padding: 0!important;
   }
 }
 .icon_html_img{
