@@ -31,8 +31,21 @@
 const colorSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio");
 const checkedSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio:checked");
 
+function removeYellowStyle(){
+  colorSwatchButtons.forEach(button => {
+    if (button.hasAttribute("checked", "checked")){
+    } else {
+      if (button.parentElement.classList.contains("yellow_style")){
+        button.parentElement.classList.remove("yellow_style");
+      }
+    }
+  });
+}
+
 const clickedColorSwatchButton = event => {
   event.originalTarget.parentElement.classList.add("yellow_style");
+  
+  removeYellowStyle();
 }
 
 colorSwatchButtons.forEach(button => {
