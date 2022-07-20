@@ -33,7 +33,7 @@
   margin-top: 27px;
 }
 
-.ColorSwatch--large:before{
-border: #fac637 solid 3px!important;
+.ColorSwatch--large::before{
+  border: #fac637 solid 3px!important;
   background: #fac6371c;
 }
