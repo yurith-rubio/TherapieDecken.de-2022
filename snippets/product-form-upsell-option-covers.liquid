@@ -364,47 +364,43 @@ while for size, we use it to display a size chart (if applicable)
     <!-- End Yes/No -->
 
     {%- for option in gravity_inlett_product.options_with_values -%}
-    {% if option.name == 'Größe' %}
-    {% continue %}
-    {% endif %}
-    <div class="AdditionalProductContainer GravityInlettContainer" style="display: none">
-      <span class="ProductForm__Label AdditionalProductProductForm__Label">
-        {{ option.name }}:
-      </span>
-
-      <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
-      {% render 'options-static-notes', option: option %}
-      <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
-
-      {%- if block.settings.selector_mode == 'block' -%}
-      <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
-        {%- for value in option.values -%}
-        <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
-          <input id="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
-                 class="SizeSwatch__Radio Inlett__Input GravityInlett__Input" type="radio" name="GravityInlett-option-{{ forloop.parentloop.index0 }}"
-                 value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked" {% endif %}
-                 data-inlett-option-position="{{ option.position }}">
-          <label for="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>
-          {% for variant in gravity_inlett_product.variants %}
-          {% if value == variant.option2 %}
-          <div class="GravityInlett__Variant" data-option-1="{{ variant.option1}}" data-option-2="{{ variant.option2}}" data-variant-id="{{ variant.id }}"></div>
-          {% endif %}
-          {% endfor %} 
-        </li>
-        {%- endfor -%}
-      </ul>
+      {% if option.name == 'Größe' %}
+      	{% continue %}
       {% endif %}
+      <div class="AdditionalProductContainer GravityInlettContainer" style="display: none">
+        <span class="ProductForm__Label AdditionalProductProductForm__Label">
+          {{ option.name }}:
+        </span>
 
-      {% render 'dynamic-variant-info', dynamic_info_type: 'weight_info', option: option. product: product, gravity_inlett_product: gravity_inlett_product, %}
+        <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+        {% render 'options-static-notes', option: option %}
+        <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
 
-    </div>
+        {%- if block.settings.selector_mode == 'block' -%}
+          <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
+            {%- for value in option.values -%}
+              <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
+                <input id="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
+                       class="SizeSwatch__Radio Inlett__Input GravityInlett__Input" type="radio" name="GravityInlett-option-{{ forloop.parentloop.index0 }}"
+                       value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked" {% endif %}
+                       data-inlett-option-position="{{ option.position }}">
+                <label for="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>
+                {% for variant in gravity_inlett_product.variants %}
+                  {% if value == variant.option2 %}
+                  	<div class="GravityInlett__Variant" data-option-1="{{ variant.option1}}" data-option-2="{{ variant.option2}}" data-variant-id="{{ variant.id }}"></div>
+                  {% endif %}
+                {% endfor %} 
+              </li>
+            {%- endfor -%}
+          </ul>
+        {% endif %}
+
+        {% render 'dynamic-variant-info', dynamic_info_type: 'weight_info', option: option. product: product, gravity_inlett_product: gravity_inlett_product, %}
+
+      </div>
     {% endfor %}
   </div> 
   <!-- ENDSTEP 2.B --> 
-  
-  
-  
-  
   
   <div class="live_preview_app livePreviewApp_coverOptions"></div>
   
