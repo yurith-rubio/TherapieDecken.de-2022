@@ -27,19 +27,19 @@
   });
 
   // New style for light-yellow background on Color Swatches when selected
-/*
+
 const colorSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio");
 const checkedSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio:checked");
 
 
 const clickedColorSwatchButton = event => {
-  //event.originalTarget.parentElement.classList.add("yellow_style");
+  
 }
 
 colorSwatchButtons.forEach(button => {
   button.addEventListener("click", clickedColorSwatchButton);
 });
-
+/*
   $("input.ColorSwatch__Radio").click(function(){
     $("li.HorizontalList__Item").removeClass("yellow_style");
     $("li.HorizontalList__Item > input.ColorSwatch__Radio:checked+.ColorSwatch").parents("li").addClass("yellow_style");
