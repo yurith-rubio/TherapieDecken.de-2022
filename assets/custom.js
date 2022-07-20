@@ -31,16 +31,10 @@
 const colorSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio");
 const checkedSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio:checked");
 
-function removeYellowStyle(){
-  colorSwatchButtons.forEach(button => {
-
-  });
-}
 
 const clickedColorSwatchButton = event => {
   event.originalTarget.parentElement.classList.add("yellow_style");
-  
-  removeYellowStyle();
+
 }
 
 colorSwatchButtons.forEach(button => {
