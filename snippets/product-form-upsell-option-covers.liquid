@@ -66,7 +66,7 @@ while for size, we use it to display a size chart (if applicable)
           {%- if color_label contains downcase_option and block.settings.show_color_swatch -%}
           
           	<!-- START RENDERING BEZUGSSYSTEM -->
-            {% if option.name == 'Bezugssystem' %}
+            
               <ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
                 {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
                 {%- for value in option.values -%}
@@ -79,7 +79,7 @@ while for size, we use it to display a size chart (if applicable)
                            data-option-position="{{ option.position }}">
                     <div class="ColorSwatch__Style"></div>
                     <label for="option-{{option.name}}-{{ parent_index }}-{{ forloop.index0 }}"
-                           class="ColorSwatch ColorSwatch--simple ColorSwatch--large"
+                           class="ColorSwatch {% if option.name == 'Bezugssystem' %}ColorSwatch--simple{% endif %} ColorSwatch--large"
                            data-tooltip="{{ value | escape }}"
                            style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: value %}">
                       <span class="u-visually-hidden">{{ value }}</span>
@@ -103,7 +103,7 @@ while for size, we use it to display a size chart (if applicable)
           	<!-- END OF RENDERING BEZUGSSYSTEM -->
           
 
-            {% endif %}
+            
             <!-- ENDSTEP 2.B -->
           
 		  <!-- STEP 3. MOVE MAIN PRODUCT FORM UNDER TO AVOID DOUBLE VARIANTS -->
