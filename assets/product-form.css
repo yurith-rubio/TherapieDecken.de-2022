@@ -21,6 +21,7 @@
   margin-bottom: -20px;
 }
 
+<!-- for product-form-upsell-option-covers.liquid -->
 .Inlett__Input:checked > .SizeSwatch {
   border: #fac637 solid 3px!important;
   background: #fac6371c;
