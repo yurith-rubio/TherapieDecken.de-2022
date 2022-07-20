@@ -2,7 +2,7 @@
   display:none;
 }
 
-.yellow_style {
+.ColorSwatch__Radio:checked + .HorizontalList__Item {
   border: #fac637 solid 3px!important;
   background: #fac6371c;
 }
