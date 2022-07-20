@@ -48,13 +48,9 @@ while for size, we use it to display a size chart (if applicable)
           <span class="ProductForm__Label">
             {{ option.position }}. {{ option.name }}:
 
-            <!-- COMMENT WITH FELIX. I am hiding the swatch value -->
-            {% comment %}
             {% if color_label contains downcase_option and block.settings.show_color_swatch %}
-            <span class="ProductForm__SelectedValue">{{ option.selected_value }}</span>
+            	<span class="ProductForm__SelectedValue">{{ option.selected_value }}</span>
             {% endif %}
-            {% endcomment %}
-            <!-- ENDCOMMENT -->
 
             {%- if size_label contains downcase_option and size_chart_page != blank -%}
             <button type="button" class="ProductForm__LabelLink Link Text--subdued" data-action="open-modal"
