@@ -34,7 +34,6 @@ const checkedSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio
 
 const clickedColorSwatchButton = event => {
   event.originalTarget.parentElement.classList.add("yellow_style");
-
 }
 
 colorSwatchButtons.forEach(button => {
