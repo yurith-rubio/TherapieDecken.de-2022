@@ -68,165 +68,170 @@ while for size, we use it to display a size chart (if applicable)
           
           
           {%- if color_label contains downcase_option and block.settings.show_color_swatch -%}
-            <ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
-              {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
-              {%- for value in option.values -%}
-                {%- assign downcase_value = value | downcase -%}
-
-                <li class="HorizontalList__Item MainVariant_container {% if value==option.selected_value %}yellow_style{% endif %}">
-                  <input id="option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
-                         class="ColorSwatch__Radio" type="radio" name="option-{{ parent_index }}"
-                         value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
-                         data-option-position="{{ option.position }}">
-                  <label for="option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
-                         class="ColorSwatch {% if option.name == "Bezugssystem" %}ColorSwatch--simple{% endif %} ColorSwatch--large {% if downcase_value == 'white' %}ColorSwatch--white{% endif %}"
-                         data-tooltip="{{ value | escape }}"
-                         style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: value %}">
-                    <span class="u-visually-hidden">{{ value }}</span>
-                  </label>
-                  {% if option.name == "Bezugssystem" %}
-                    <p class="VariantValue--style">
-                      {% assign simple_value = value %}
-                      {% assign name_variant = simple_value %}            
-                      {{ name_variant | escape }}    
-                    </p>           
-                  {% else %}
-                    <p class="VariantValue--style">
-                      {% assign simple_value = value | split: '(' | last %}
-                      {% assign name_variant = simple_value | split: ')' | first %}
-                      {{ name_variant | escape }}    
-                    </p>
-                  {% endif %}
-
-                  {% render 'information-badges', product: product %}
-                </li>
-              {%- endfor -%}
-            </ul>
-		  
-          	{% render 'information-bgd-cover-type', product: product %}
           
-          	<div class="live_preview_app livePreviewApp_coverOptions"></div>
-                    
-            <!-- STEP 2.A Duplicate Main Product Form for Additional Product: Balance Inlett -->
-            <!-- Yes / No uption Buttons for Balance --> 
-            <div class="BalanceInlett__MainContainer AdditionalInlett__MainContainer" style="display: none">
+            {% if option.name == 'Bezugssystem' %}
+              <ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
+                {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
+                {%- for value in option.values -%}
+                  {%- assign downcase_value = value | downcase -%}
+
+                  <li class="HorizontalList__Item MainVariant_container {% if value==option.selected_value %}yellow_style{% endif %}">
+                    <input id="option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
+                           class="ColorSwatch__Radio" type="radio" name="option-{{ parent_index }}"
+                           value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
+                           data-option-position="{{ option.position }}">
+                    <label for="option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
+                           class="ColorSwatch {% if option.name == "Bezugssystem" %}ColorSwatch--simple{% endif %} ColorSwatch--large {% if downcase_value == 'white' %}ColorSwatch--white{% endif %}"
+                           data-tooltip="{{ value | escape }}"
+                           style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: value %}">
+                      <span class="u-visually-hidden">{{ value }}</span>
+                    </label>
+                    {% if option.name == "Bezugssystem" %}
+                      <p class="VariantValue--style">
+                        {% assign simple_value = value %}
+                        {% assign name_variant = simple_value %}            
+                        {{ name_variant | escape }}    
+                      </p>           
+                    {% else %}
+                      <p class="VariantValue--style">
+                        {% assign simple_value = value | split: '(' | last %}
+                        {% assign name_variant = simple_value | split: ')' | first %}
+                        {{ name_variant | escape }}    
+                      </p>
+                    {% endif %}
+
+                    {% render 'information-badges', product: product %}
+                  </li>
+                {%- endfor -%}
+              </ul>
+
+              {% render 'information-bgd-cover-type', product: product %}
+
+              <div class="live_preview_app livePreviewApp_coverOptions"></div>
+
+              <!-- STEP 2.A Duplicate Main Product Form for Additional Product: Balance Inlett -->
+              <!-- Yes / No uption Buttons for Balance --> 
+              <div class="BalanceInlett__MainContainer AdditionalInlett__MainContainer" style="display: none">
+                  <span class="ProductForm__Label YesNoButtons__Label">
+                      Wollen Sie auch ein Balance Gewichtsdecken Inlett hinzufügen?
+                  </span>
+
+                  <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
+                    <li class="HorizontalList__Item">
+                      <input id="noBalanceInlett__Selector" checked="checked" 
+                             class="SizeSwatch__Radio yesnoBalanceInlett_Selector" type="radio" value="No" name="yesno_balance_inlett">
+                      <label for="noBalanceInlett__Selector" class="SizeSwatch">Nein</label>
+                    </li>
+                    <li class="HorizontalList__Item">
+                      <input id="yesBalanceInlett__Selector"
+                             class="SizeSwatch__Radio yesnoBalanceInlett_Selector" type="radio" value="Yes" name="yesno_balance_inlett">
+                      <label for="yesBalanceInlett__Selector" class="SizeSwatch">Ja</label>
+                    </li>
+                  </ul>
+                <!-- End Yes/No -->
+
+                {%- for option in balance_inlett_product.options_with_values -%}
+                  {% if option.name == 'Größe' %}
+                      {% continue %}
+                  {% endif %}
+                  <div class="AdditionalProductContainer BalanceInlettContainer" style="display: none">
+                      <span class="ProductForm__Label AdditionalProductProductForm__Label">
+                          {{ option.name }}:
+                      </span>
+
+                      <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+                      {% render 'options-static-notes', option: option %}
+                      <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+
+                      {%- if block.settings.selector_mode == 'block' -%}
+                        <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
+                          {%- for value in option.values -%}
+                          <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
+                            <input id="BalanceInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
+                              class="SizeSwatch__Radio Inlett__Input BalanceInlett__Input" type="radio" name="BalanceInlett-option-{{ forloop.parentloop.index0 }}"
+                              value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked" {% endif %}
+                              data-inlett-option-position="{{ option.position }}"
+                              data-inlett-product="BalanceInlett" >
+                            <label for="BalanceInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>                    
+                            {% for variant in balance_inlett_product.variants %}
+                              {% if value == variant.option2 %}
+                              <div class="BalanceInlett__Variant" data-option-1="{{ variant.option1}}" data-option-2="{{ variant.option2}}" data-variant-id="{{ variant.id }}"></div>
+                              {% endif %}
+                            {% endfor %}                      
+                          </li>                                       
+                          {%- endfor -%}                                        
+                        </ul>
+                      {% endif %}
+
+                      {% render 'dynamic-variant-info', dynamic_info_type: 'weight_info', option: option. product: product, balance_inlett_product: balance_inlett_product %}
+
+                  </div>
+                {% endfor %}
+
+                </div>
+              <!-- ENDSTEP 2.A -->
+
+              <!-- STEP 2.B Duplicate Main Product Form for Additional Product: Gravity Inlett -->
+              <!-- Yes / No option Buttons for Gravity -->
+              <div class="GravityInlett__MainContainer AdditionalInlett__MainContainer" style="display: none">
                 <span class="ProductForm__Label YesNoButtons__Label">
-                    Wollen Sie auch ein Balance Gewichtsdecken Inlett hinzufügen?
+                  Wollen Sie auch ein Gravity Gewichtsdecken Inlett hinzufügen?
                 </span>
 
                 <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
                   <li class="HorizontalList__Item">
-                    <input id="noBalanceInlett__Selector" checked="checked" 
-                           class="SizeSwatch__Radio yesnoBalanceInlett_Selector" type="radio" value="No" name="yesno_balance_inlett">
-                    <label for="noBalanceInlett__Selector" class="SizeSwatch">Nein</label>
+                    <input id="noGravityInlett__Selector" checked="checked" 
+                           class="SizeSwatch__Radio yesnoGravityInlett_Selector" type="radio" value="No" name="yesno_gravity_inlett">
+                    <label for="noGravityInlett__Selector" class="SizeSwatch">Nein</label>
                   </li>
                   <li class="HorizontalList__Item">
-                    <input id="yesBalanceInlett__Selector"
-                           class="SizeSwatch__Radio yesnoBalanceInlett_Selector" type="radio" value="Yes" name="yesno_balance_inlett">
-                    <label for="yesBalanceInlett__Selector" class="SizeSwatch">Ja</label>
+                    <input id="yesGravityInlett__Selector"
+                           class="SizeSwatch__Radio yesnoGravityInlett_Selector" type="radio" value="Yes" name="yesno_gravity_inlett">
+                    <label for="yesGravityInlett__Selector" class="SizeSwatch">Ja</label>
                   </li>
                 </ul>
               <!-- End Yes/No -->
 
-              {%- for option in balance_inlett_product.options_with_values -%}
-                {% if option.name == 'Größe' %}
-                    {% continue %}
-                {% endif %}
-                <div class="AdditionalProductContainer BalanceInlettContainer" style="display: none">
-                    <span class="ProductForm__Label AdditionalProductProductForm__Label">
+                {%- for option in gravity_inlett_product.options_with_values -%}
+                  {% if option.name == 'Größe' %}
+                      {% continue %}
+                  {% endif %}
+                    <div class="AdditionalProductContainer GravityInlettContainer" style="display: none">
+                      <span class="ProductForm__Label AdditionalProductProductForm__Label">
                         {{ option.name }}:
-                    </span>
+                      </span>
 
-                    <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
-                    {% render 'options-static-notes', option: option %}
-                    <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+                      <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
+                      {% render 'options-static-notes', option: option %}
+                      <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
 
-                    {%- if block.settings.selector_mode == 'block' -%}
-                      <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
-                        {%- for value in option.values -%}
-                        <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
-                          <input id="BalanceInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
-                            class="SizeSwatch__Radio Inlett__Input BalanceInlett__Input" type="radio" name="BalanceInlett-option-{{ forloop.parentloop.index0 }}"
-                            value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked" {% endif %}
-                            data-inlett-option-position="{{ option.position }}"
-                            data-inlett-product="BalanceInlett" >
-                          <label for="BalanceInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>                    
-                          {% for variant in balance_inlett_product.variants %}
-                            {% if value == variant.option2 %}
-                            <div class="BalanceInlett__Variant" data-option-1="{{ variant.option1}}" data-option-2="{{ variant.option2}}" data-variant-id="{{ variant.id }}"></div>
-                            {% endif %}
-                          {% endfor %}                      
-                        </li>                                       
-                        {%- endfor -%}                                        
-                      </ul>
-                    {% endif %}
+                      {%- if block.settings.selector_mode == 'block' -%}
+                        <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
+                          {%- for value in option.values -%}
+                            <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
+                              <input id="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
+                                     class="SizeSwatch__Radio Inlett__Input GravityInlett__Input" type="radio" name="GravityInlett-option-{{ forloop.parentloop.index0 }}"
+                                     value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked" {% endif %}
+                                     data-inlett-option-position="{{ option.position }}">
+                              <label for="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>
+                              {% for variant in gravity_inlett_product.variants %}
+                                {% if value == variant.option2 %}
+                                  <div class="GravityInlett__Variant" data-option-1="{{ variant.option1}}" data-option-2="{{ variant.option2}}" data-variant-id="{{ variant.id }}"></div>
+                                {% endif %}
+                              {% endfor %} 
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {% endif %}
 
-                    {% render 'dynamic-variant-info', dynamic_info_type: 'weight_info', option: option. product: product, balance_inlett_product: balance_inlett_product %}
+                      {% render 'dynamic-variant-info', dynamic_info_type: 'weight_info', option: option. product: product, gravity_inlett_product: gravity_inlett_product, %}
 
-                </div>
-              {% endfor %}
-
+                    </div>
+                {% endfor %}
               </div>
-            <!-- ENDSTEP 2.A -->
+          	{% else %}
           
-            <!-- STEP 2.B Duplicate Main Product Form for Additional Product: Gravity Inlett -->
-            <!-- Yes / No option Buttons for Gravity -->
-            <div class="GravityInlett__MainContainer AdditionalInlett__MainContainer" style="display: none">
-              <span class="ProductForm__Label YesNoButtons__Label">
-                Wollen Sie auch ein Gravity Gewichtsdecken Inlett hinzufügen?
-              </span>
-
-              <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
-                <li class="HorizontalList__Item">
-                  <input id="noGravityInlett__Selector" checked="checked" 
-                         class="SizeSwatch__Radio yesnoGravityInlett_Selector" type="radio" value="No" name="yesno_gravity_inlett">
-                  <label for="noGravityInlett__Selector" class="SizeSwatch">Nein</label>
-                </li>
-                <li class="HorizontalList__Item">
-                  <input id="yesGravityInlett__Selector"
-                         class="SizeSwatch__Radio yesnoGravityInlett_Selector" type="radio" value="Yes" name="yesno_gravity_inlett">
-                  <label for="yesGravityInlett__Selector" class="SizeSwatch">Ja</label>
-                </li>
-              </ul>
-            <!-- End Yes/No -->
-
-              {%- for option in gravity_inlett_product.options_with_values -%}
-                {% if option.name == 'Größe' %}
-                	{% continue %}
-                {% endif %}
-                  <div class="AdditionalProductContainer GravityInlettContainer" style="display: none">
-                    <span class="ProductForm__Label AdditionalProductProductForm__Label">
-                      {{ option.name }}:
-                    </span>
-
-                    <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
-                    {% render 'options-static-notes', option: option %}
-                    <!-- ENDFORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
-
-                    {%- if block.settings.selector_mode == 'block' -%}
-                      <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
-                        {%- for value in option.values -%}
-                          <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
-                            <input id="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
-                                   class="SizeSwatch__Radio Inlett__Input GravityInlett__Input" type="radio" name="GravityInlett-option-{{ forloop.parentloop.index0 }}"
-                                   value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked" {% endif %}
-                                   data-inlett-option-position="{{ option.position }}">
-                            <label for="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>
-                            {% for variant in gravity_inlett_product.variants %}
-                              {% if value == variant.option2 %}
-                              	<div class="GravityInlett__Variant" data-option-1="{{ variant.option1}}" data-option-2="{{ variant.option2}}" data-variant-id="{{ variant.id }}"></div>
-                              {% endif %}
-                            {% endfor %} 
-                          </li>
-                        {%- endfor -%}
-                      </ul>
-                    {% endif %}
-
-                    {% render 'dynamic-variant-info', dynamic_info_type: 'weight_info', option: option. product: product, gravity_inlett_product: gravity_inlett_product, %}
-
-                  </div>
-              {% endfor %}
-            </div>
+            {% endif %}
             <!-- ENDSTEP 2.B -->
           
           <!-- END OF RENDERING BEZUGSSYSTEM -->
