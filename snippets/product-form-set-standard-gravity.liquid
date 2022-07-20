@@ -1,4 +1,7 @@
 <!-- snnipet: product-form-set.liquid -->
+{{ 'product-form.css' | asset_url | stylesheet_tag }}
+{{ 'additional-product-set.js' | asset_url | script_tag }}
+
 {%- comment -%}
 Those are the option names for which we automatically detect swatch. For the color, we use them to display a swatch,
 while
@@ -15,8 +18,6 @@ for size, we use it to display a size chart (if applicable)
 {%- assign show_option_label = false -%}
 
 {%- assign selected_variant = product.selected_or_first_available_variant -%}
-
-{{ 'product-form.css' | asset_url | stylesheet_tag }}
 
 <!-- EDIT -->
 {% comment %} Extra Variant for Set Products - Yurith {% endcomment %}
