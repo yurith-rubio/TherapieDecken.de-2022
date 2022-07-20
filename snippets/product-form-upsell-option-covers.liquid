@@ -68,9 +68,10 @@ while for size, we use it to display a size chart (if applicable)
           	<!-- START RENDERING BEZUGSSYSTEM -->
             {% if option.name == 'Bezugssystem' %}
               <ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
-                {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br/>' -%}
+                {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
                 {%- for value in option.values -%}
                   {%- assign downcase_value = value | downcase -%}
+
                   <li class="HorizontalList__Item MainVariant_container">
                     <input id="option-{{option.name}}-{{ parent_index }}-{{ forloop.index0 }}"
                            class="ColorSwatch__Radio" type="radio" name="option-{{ parent_index }}"
@@ -83,11 +84,14 @@ while for size, we use it to display a size chart (if applicable)
                            style="{% render 'color-swatch-style', color_swatch_config: color_swatch_config, value: value %}">
                       <span class="u-visually-hidden">{{ value }}</span>
                     </label>
+                    
+
                     <p class="VariantValue--style">
                       {% assign simple_value = value %}
                       {% assign name_variant = simple_value %}            
                       {{ name_variant | escape }}    
-                    </p>
+                    </p>      
+
                     {% render 'information-badges', product: product %}
                   </li>
                 {%- endfor -%}
@@ -485,6 +489,10 @@ while for size, we use it to display a size chart (if applicable)
   {%- endunless -%}
 
 </div>
+
+{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisiertem-hunde-katzen-motiv-fur-erwachsene' %}
+	
+{% endif %}
 	
 
   {%- if product.template_suffix != 'coming-soon' -%}
