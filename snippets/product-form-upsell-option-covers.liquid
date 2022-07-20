@@ -76,7 +76,7 @@ while for size, we use it to display a size chart (if applicable)
             {%- for value in option.values -%}
               	{%- assign downcase_value = value | downcase -%}
 
-                   <li class="HorizontalList__Item MainVariant_container {% if value==option.selected_value %}yellow_style{% endif %}">
+                  <li class="HorizontalList__Item MainVariant_container {% if value==option.selected_value %}yellow_style{% endif %}">
                     <input id="option-{{ section.id }}-{{ parent_index }}-{{ forloop.index0 }}"
                       class="ColorSwatch__Radio" type="radio" name="option-{{ parent_index }}"
                       value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
@@ -102,7 +102,7 @@ while for size, we use it to display a size chart (if applicable)
                 	{% endif %}
 
               		{% render 'information-badges', product: product %}
-            </li>
+            	  </li>
             {%- endfor -%}
           </ul>
 		  
