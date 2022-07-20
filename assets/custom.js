@@ -32,6 +32,8 @@ const colorSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio")
 const checkedSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio:checked");
 
 const clickedColorSwatchButton = event => {
+  event.originalTarget.parentElement.classList.add("yellow_style");
+  
   colorSwatchButtons.forEach(button => {
     if (button.hasAttribute("checked", "checked")){
     } else {
@@ -40,7 +42,6 @@ const clickedColorSwatchButton = event => {
       }
     }
   });
-  event.originalTarget.parentElement.classList.add("yellow_style");
 }
 
 colorSwatchButtons.forEach(button => {
