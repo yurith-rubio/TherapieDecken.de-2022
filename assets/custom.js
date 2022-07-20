@@ -33,9 +33,7 @@ const checkedSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio
 
 function removeYellowStyle(){
   colorSwatchButtons.forEach(button => {
-    if (button.parentElement.classList.contains("yellow_style") && button.hasAttribute("checked", "checked") == false ){
-      button.parentElement.classList.remove("yellow_style");
-    }
+
   });
 }
 
