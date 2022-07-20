@@ -13,7 +13,7 @@
   z-index: -1;
 }
 
-.ColorSwatch__Radio:checked + .ColorSwatch__Style{
+.ColorSwatch__Radio::checked + .ColorSwatch__Style{
   border: #fac637 solid 3px !important;
   background: #fac6371c;
   position: absolute;
