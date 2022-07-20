@@ -112,6 +112,16 @@
         "spacer": "50px",
         "bg-color": ""
       }
+    },
+    "165831150554a4009d": {
+      "type": "button-block",
+      "settings": {
+        "bg-color": "#ffffff",
+        "button_text": "Zu den Therapiedecken",
+        "button_url": "shopify:\/\/pages\/fur-wen-benotigen-sie-eine-therapiedecke",
+        "spacer_top": "0px",
+        "spacer_bottom": "50px"
+      }
     }
   },
   "order": [
@@ -122,6 +132,7 @@
     "16582293760de2aaa0",
     "1658238003d7ee03f6",
     "1658231013d0ac4882",
-    "1658230257857936b7"
+    "1658230257857936b7",
+    "165831150554a4009d"
   ]
 }
