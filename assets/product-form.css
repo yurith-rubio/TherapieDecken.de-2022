@@ -2,7 +2,7 @@
   display:none;
 }
 
-.ColorSwatch__Style{
+.ColorSwatch__Style-1, .ColorSwatch__Style-2. .ColorSwatch__Style-3{
   border: solid 1px #d9d9d9;
   position: absolute;
   top: 0;
