@@ -1,12 +1,12 @@
 .hide_option, .blank_option{
   display:none;
 }
-
+<!--
 .yellow_style {
   border: #fac637 solid 3px!important;
   background: #fac6371c;
 }
-
+-->
 .ColorSwatch.is-active::after, .ColorSwatch__Radio:checked+.ColorSwatch::after {
   border: none !important;
   border-radius: 30px;
@@ -31,4 +31,9 @@
 
 .YesNoButtons__Label{
   margin-top: 27px;
+}
+
+.ColorSwatch--large:before{
+border: #fac637 solid 3px!important;
+  background: #fac6371c;
 }
