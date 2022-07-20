@@ -63,6 +63,10 @@ while for size, we use it to display a size chart (if applicable)
 		  
           {% render 'options-static-notes', option: option %}
 
+          
+          <!-- START RENDERING BEZUGSSYSTEM -->
+          
+          
           {%- if color_label contains downcase_option and block.settings.show_color_swatch -%}
             <ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
               {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
