@@ -2,18 +2,7 @@
   display:none;
 }
 
-.yellow_style {
-  border: #fac637 solid 3px !important;
-  background: #fac6371c;
-  position: absolute;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.no_yellow_style{
+.ColorSwatch__Style{
   border: solid 1px #d9d9d9;
   position: absolute;
   top: 0;
