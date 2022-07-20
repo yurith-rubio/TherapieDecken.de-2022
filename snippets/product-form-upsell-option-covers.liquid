@@ -230,7 +230,6 @@ while for size, we use it to display a size chart (if applicable)
                            value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
                            data-option-position="{{ option.position }}">
                   <li class="HorizontalList__Item MainVariant_container {% if value==option.selected_value %}yellow_style{% endif %}">
-                    <span class="yellowStyle"></span>
                     <label for="option-{{option.name}}-{{ parent_index }}-{{ forloop.index0 }}"
                            class="ColorSwatch ColorSwatch--large"
                            data-tooltip="{{ value | escape }}"
