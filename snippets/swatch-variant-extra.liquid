@@ -17,7 +17,7 @@
 
          <li class="HorizontalList__Item AdditionalVariant_container">
           <input id="AdditionalProductSelect-option-{{option.name}}-{{ forloop.index0 }}"
-            class="ColorSwatch__Radio" type="radio" name="additional_Bezugsart"
+            class="ColorSwatch__Radio" type="radio" name="additional_Bezugsart-{{ option.position }}"
             value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}>
           <div class="ColorSwatch__Style"></div>
           <label for="AdditionalProductSelect-option-{{option.name}}-{{ forloop.index0 }}"
