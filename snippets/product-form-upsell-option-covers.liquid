@@ -174,31 +174,31 @@ while for size, we use it to display a size chart (if applicable)
             <!-- STEP 2.B Duplicate Main Product Form for Additional Product: Gravity Inlett -->
             <!-- Yes / No option Buttons for Gravity -->
             <div class="GravityInlett__MainContainer AdditionalInlett__MainContainer" style="display: none">
-                <span class="ProductForm__Label YesNoButtons__Label">
-                    Wollen Sie auch ein Gravity Gewichtsdecken Inlett hinzufügen?
-                </span>
+              <span class="ProductForm__Label YesNoButtons__Label">
+                Wollen Sie auch ein Gravity Gewichtsdecken Inlett hinzufügen?
+              </span>
 
-                <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
-                  <li class="HorizontalList__Item">
-                    <input id="noGravityInlett__Selector" checked="checked" 
-                           class="SizeSwatch__Radio yesnoGravityInlett_Selector" type="radio" value="No" name="yesno_gravity_inlett">
-                    <label for="noGravityInlett__Selector" class="SizeSwatch">Nein</label>
-                  </li>
-                  <li class="HorizontalList__Item">
-                    <input id="yesGravityInlett__Selector"
-                           class="SizeSwatch__Radio yesnoGravityInlett_Selector" type="radio" value="Yes" name="yesno_gravity_inlett">
-                    <label for="yesGravityInlett__Selector" class="SizeSwatch">Ja</label>
-                  </li>
-                </ul>
+              <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
+                <li class="HorizontalList__Item">
+                  <input id="noGravityInlett__Selector" checked="checked" 
+                         class="SizeSwatch__Radio yesnoGravityInlett_Selector" type="radio" value="No" name="yesno_gravity_inlett">
+                  <label for="noGravityInlett__Selector" class="SizeSwatch">Nein</label>
+                </li>
+                <li class="HorizontalList__Item">
+                  <input id="yesGravityInlett__Selector"
+                         class="SizeSwatch__Radio yesnoGravityInlett_Selector" type="radio" value="Yes" name="yesno_gravity_inlett">
+                  <label for="yesGravityInlett__Selector" class="SizeSwatch">Ja</label>
+                </li>
+              </ul>
             <!-- End Yes/No -->
 
-            {%- for option in gravity_inlett_product.options_with_values -%}
-              {% if option.name == 'Größe' %}
-                  {% continue %}
-              {% endif %}
-                <div class="AdditionalProductContainer GravityInlettContainer" style="display: none">
+              {%- for option in gravity_inlett_product.options_with_values -%}
+                {% if option.name == 'Größe' %}
+                	{% continue %}
+                {% endif %}
+                  <div class="AdditionalProductContainer GravityInlettContainer" style="display: none">
                     <span class="ProductForm__Label AdditionalProductProductForm__Label">
-                        {{ option.name }}:
+                      {{ option.name }}:
                     </span>
 
                     <!-- FORCHECK - SENT INFO TO A SNIPPET TO MAKE CODE SIMPLER; CHECK IF OBJECTS ARE PULLED -->
@@ -208,29 +208,28 @@ while for size, we use it to display a size chart (if applicable)
                     {%- if block.settings.selector_mode == 'block' -%}
                       <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
                         {%- for value in option.values -%}
-
-                        <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
-                          <input id="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
-                            class="SizeSwatch__Radio Inlett__Input GravityInlett__Input" type="radio" name="GravityInlett-option-{{ forloop.parentloop.index0 }}"
-                            value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked" {% endif %}
-                            data-inlett-option-position="{{ option.position }}">
-                          <label for="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>
-                          {% for variant in gravity_inlett_product.variants %}
-                            {% if value == variant.option2 %}
-                              <div class="GravityInlett__Variant" data-option-1="{{ variant.option1}}" data-option-2="{{ variant.option2}}" data-variant-id="{{ variant.id }}"></div>
-                            {% endif %}
-                          {% endfor %} 
-                        </li>
+                          <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
+                            <input id="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
+                                   class="SizeSwatch__Radio Inlett__Input GravityInlett__Input" type="radio" name="GravityInlett-option-{{ forloop.parentloop.index0 }}"
+                                   value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked" {% endif %}
+                                   data-inlett-option-position="{{ option.position }}">
+                            <label for="GravityInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>
+                            {% for variant in gravity_inlett_product.variants %}
+                              {% if value == variant.option2 %}
+                              	<div class="GravityInlett__Variant" data-option-1="{{ variant.option1}}" data-option-2="{{ variant.option2}}" data-variant-id="{{ variant.id }}"></div>
+                              {% endif %}
+                            {% endfor %} 
+                          </li>
                         {%- endfor -%}
                       </ul>
                     {% endif %}
 
                     {% render 'dynamic-variant-info', dynamic_info_type: 'weight_info', option: option. product: product, gravity_inlett_product: gravity_inlett_product, %}
 
-                </div>
-            {% endfor %}
-          </div>
-          <!-- ENDSTEP 2.B -->
+                  </div>
+              {% endfor %}
+            </div>
+            <!-- ENDSTEP 2.B -->
                     
 		  <!-- STEP 3. MOVE MAIN PRODUCT FORM UNDER TO AVOID DOUBLE VARIANTS -->
           {%- elsif block.settings.selector_mode == 'block' -%}
