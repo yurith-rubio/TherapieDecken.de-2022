@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-.ColorSwatch__Radio-1:checked + .ColorSwatch__Style-1{
+.ColorSwatch__Radio-2:checked + .ColorSwatch__Style-2{
   border: #fac637 solid 3px !important;
   background: #fac6371c;
   position: absolute;
