@@ -13,6 +13,7 @@
             class="ColorSwatch__Radio" type="radio" name="Bezugsart"
             value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
             data-option-position="{{ option.position }}">
+          <div class="ColorSwatch__Style"></div>
           <label for="option-{{option.name}}-{{ forloop.index0 }}"
             class="ColorSwatch ColorSwatch--large {% if downcase_value == 'white' %}ColorSwatch--white{% endif %}"
             data-tooltip="{{ value | escape }}"
