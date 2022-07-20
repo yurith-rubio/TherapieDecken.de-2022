@@ -304,39 +304,39 @@ while for size, we use it to display a size chart (if applicable)
     <!-- End Yes/No -->
 
     {%- for option in balance_inlett_product.options_with_values -%}
-    {% if option.name == 'Größe' %}
-    {% continue %}
-    {% endif %}
-    <div class="AdditionalProductContainer BalanceInlettContainer" style="display: none">
-      <span class="ProductForm__Label AdditionalProductProductForm__Label">
-        {{ option.name }}:
-      </span>
-
-      {% render 'options-static-notes', option: option %}
-
-      {%- if block.settings.selector_mode == 'block' -%}
-      <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
-        {%- for value in option.values -%}
-        <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
-          <input id="BalanceInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
-                 class="SizeSwatch__Radio Inlett__Input BalanceInlett__Input" type="radio" name="BalanceInlett-option-{{ forloop.parentloop.index0 }}"
-                 value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked" {% endif %}
-                 data-inlett-option-position="{{ option.position }}"
-                 data-inlett-product="BalanceInlett" >
-          <label for="BalanceInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>                    
-          {% for variant in balance_inlett_product.variants %}
-          {% if value == variant.option2 %}
-          <div class="BalanceInlett__Variant" data-option-1="{{ variant.option1}}" data-option-2="{{ variant.option2}}" data-variant-id="{{ variant.id }}"></div>
-          {% endif %}
-          {% endfor %}                      
-        </li>                                       
-        {%- endfor -%}                                        
-      </ul>
+      {% if option.name == 'Größe' %}
+      	{% continue %}
       {% endif %}
+      <div class="AdditionalProductContainer BalanceInlettContainer" style="display: none">
+        <span class="ProductForm__Label AdditionalProductProductForm__Label">
+          {{ option.name }}:
+        </span>
 
-      {% render 'dynamic-variant-info', dynamic_info_type: 'weight_info', option: option. product: product, balance_inlett_product: balance_inlett_product %}
+        {% render 'options-static-notes', option: option %}
 
-    </div>
+        {%- if block.settings.selector_mode == 'block' -%}
+          <ul class="SizeSwatchList HorizontalList HorizontalList--spacingTight">
+            {%- for value in option.values -%}
+            <li class="HorizontalList__Item {% if value == '-' %} blank_option {% endif %}{% if option.name == 'Gewicht' %} gewicht_option {% endif %}">
+              <input id="BalanceInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
+                     class="SizeSwatch__Radio Inlett__Input BalanceInlett__Input" type="radio" name="BalanceInlett-option-{{ forloop.parentloop.index0 }}"
+                     value="{{ value | escape }}" {% if value == option.selected_value %}checked="checked" {% endif %}
+                     data-inlett-option-position="{{ option.position }}"
+                     data-inlett-product="BalanceInlett" >
+              <label for="BalanceInlett-option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}" class="SizeSwatch">{{ value }}</label>                    
+              {% for variant in balance_inlett_product.variants %}
+              {% if value == variant.option2 %}
+              <div class="BalanceInlett__Variant" data-option-1="{{ variant.option1}}" data-option-2="{{ variant.option2}}" data-variant-id="{{ variant.id }}"></div>
+              {% endif %}
+              {% endfor %}                      
+            </li>                                       
+            {%- endfor -%}                                        
+          </ul>
+        {% endif %}
+
+        {% render 'dynamic-variant-info', dynamic_info_type: 'weight_info', option: option. product: product, balance_inlett_product: balance_inlett_product %}
+
+      </div>
     {% endfor %}
 
   </div>
