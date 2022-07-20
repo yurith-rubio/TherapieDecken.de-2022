@@ -36,10 +36,12 @@ const clickedColorSwatchButton = event => {
     if (button.hasAttribute("checked", "checked")){
       console.log("checked button");
       console.log(button);
-    } else if (button.classList.contains("yellow_style")){
-      console.log("yellow styled button");
-      console.log(button);
-      button.classList.remove("yellow_style");
+    } else {
+      if (button.originalTarget.parentElement.classList.contains("yellow_style")){
+        console.log("yellow styled button");
+        console.log(button);
+        button.classList.remove("yellow_style");
+      }
     }
   });
   event.originalTarget.parentElement.classList.add("yellow_style");
