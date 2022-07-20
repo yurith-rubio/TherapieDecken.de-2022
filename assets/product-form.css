@@ -13,3 +13,8 @@
   .Product__PaymentList {
     text-align: center;
   }
+
+  .livePreviewApp_coverOptions{
+  	margin-top: 25px;
+	margin-bottom: -20px;
+  }
