@@ -230,7 +230,7 @@ while for size, we use it to display a size chart (if applicable)
                            class="ColorSwatch__Radio" type="radio" name="option-{{ parent_index }}"
                            value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
                            data-option-position="{{ option.position }}">
-                    <div class="no_yellow_style {% if value==option.selected_value %}yellow_style {% endif %}"></div>
+                    <div class="colorSwatch__Style no_yellow_style {% if value==option.selected_value %}yellow_style {% endif %}"></div>
                     <label for="option-{{option.name}}-{{ parent_index }}-{{ forloop.index0 }}"
                            class="ColorSwatch ColorSwatch--large"
                            data-tooltip="{{ value | escape }}"

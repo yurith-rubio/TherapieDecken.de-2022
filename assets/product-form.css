@@ -23,6 +23,16 @@
   width: 100%;
   
 }
+.ColorSwatch__Radio:checked + {
+  border: #fac637 solid 3px !important;
+  background: #fac6371c;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
 
 .ColorSwatch.is-active::after, .ColorSwatch__Radio:checked+.ColorSwatch::after {
   border: none !important;
