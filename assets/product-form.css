@@ -2,7 +2,7 @@
   display:none;
 }
 
-.ColorSwatch__Style-1, .ColorSwatch__Style-2. .ColorSwatch__Style-3{
+.ColorSwatch__Style-1, .ColorSwatch__Style-2, .ColorSwatch__Style-3{
   border: solid 1px #d9d9d9;
   position: absolute;
   top: 0;
@@ -10,7 +10,6 @@
   padding: 0;
   height: 100%;
   width: 100%;
-  
 }
 
 .ColorSwatch__Radio-1:checked + .ColorSwatch__Style-1, .ColorSwatch__Radio-2:checked + .ColorSwatch__Style-2, .ColorSwatch__Radio-3:checked + .ColorSwatch__Style-3{
