@@ -33,8 +33,7 @@ const checkedColorSwatchButton = event => {
 }
 
 colorSwatchButtons.forEach(button => {
-  
-  button.addEventListener("click" checkedColorSwatchButton);
+  button.addEventListener("click", checkedColorSwatchButton);
 });
 /*
   $("input.ColorSwatch__Radio").click(function(){
