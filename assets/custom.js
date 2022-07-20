@@ -22,7 +22,6 @@ $(document).ready(function () {
     console.log("variant changed");
 
   });
-  
 
   // New style for light-yellow background on Color Swatches when selected
   $("input.ColorSwatch__Radio").click(function(){
