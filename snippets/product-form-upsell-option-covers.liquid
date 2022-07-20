@@ -74,7 +74,7 @@ while for size, we use it to display a size chart (if applicable)
 
                   <li class="HorizontalList__Item MainVariant_container">
                     <input id="option-{{option.name}}-{{ forloop.index0 }}"
-                           class="ColorSwatch__Radio ColorSwatchBezugssystem" type="radio" name="option-{{ option.position }}"
+                           class="ColorSwatch__Radio" type="radio" name="option-{{ option.position }}"
                            value="{{ value | escape }}" {% if value==option.selected_value %}checked="checked" {% endif %}
                            data-option-position="{{ option.position }}">
                     <div class="ColorSwatch__Style"></div>
