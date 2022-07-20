@@ -25,13 +25,16 @@
 
   // New style for light-yellow background on Color Swatches when selected
 
-  const colorSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio");
+const colorSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio");
 
+const checkedColorSwatchButton = event => {
 
-  colorSwatchButtons.forEach(button => {
-    console.log("button");
-  	button.addEventListener("click" checkedColorSwatchButton);
-  });
+}
+
+colorSwatchButtons.forEach(button => {
+  console.log("button");
+  button.addEventListener("click" checkedColorSwatchButton);
+});
 /*
   $("input.ColorSwatch__Radio").click(function(){
     $("li.HorizontalList__Item").removeClass("yellow_style");
