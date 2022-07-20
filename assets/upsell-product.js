@@ -1,4 +1,3 @@
-/*
 $(document).ready(function () {
   
   function getMainProductVariant(variantId) {
@@ -276,5 +275,3 @@ $(document).ready(function () {
 
   
 });
-
-*/
