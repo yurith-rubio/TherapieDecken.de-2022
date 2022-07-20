@@ -36,4 +36,6 @@
 .ColorSwatch--large::before{
   border: #fac637 solid 3px!important;
   background: #fac6371c;
+  width: 20px;
+  height:50px;
 }
