@@ -3,7 +3,7 @@
 /-----------------------------------------------------------------------------*/
 
 
-$(document).ready(function () {
+//$(document).ready(function () {
 
   function hideOption(selector, selectedVariant) {
     const infoMetafield = document.querySelectorAll("." + selector);
@@ -29,4 +29,4 @@ $(document).ready(function () {
     $("li.HorizontalList__Item > input.ColorSwatch__Radio:checked+.ColorSwatch").parents("li").addClass("yellow_style");
   });
   
-});
+//});
