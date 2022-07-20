@@ -10,6 +10,7 @@
   padding: 0;
   height: 100%;
   width: 100%;
+  z-index: -1;
 }
 
 .ColorSwatch__Radio-2:checked + .ColorSwatch__Style-2{
@@ -21,6 +22,7 @@
   padding: 0;
   height: 100%;
   width: 100%;
+  z-index: -1;
 }
 
 .ColorSwatch.is-active::after, .ColorSwatch__Radio:checked+.ColorSwatch::after {
