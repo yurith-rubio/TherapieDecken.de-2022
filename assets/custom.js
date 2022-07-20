@@ -27,7 +27,7 @@
   });
 
   // New style for light-yellow background on Color Swatches when selected
-
+/*
 const colorSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio");
 const checkedSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio:checked");
 
