@@ -30,6 +30,8 @@ const checkedSwatchButtons = document.querySelectorAll("input.ColorSwatch__Radio
 
 const clickedColorSwatchButton = event => {
   colorSwatchButtons.forEach(button => {
+    console.log("button");
+    console.log(button);
     if (button.hasAttribute("checked", "checked")){
     } else if (button.classList.contains("yellow_style")){
       button.classList.remove("yellow_style");
