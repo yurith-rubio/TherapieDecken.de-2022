@@ -34,8 +34,11 @@
 }
 
 .yellowStyle{
-  border: #fac637 solid 3px!important;
+  border: #fac637 solid 3px !important;
   background: #fac6371c;
   width: 103px;
-  height:50px;
+  height: 50px;
+  display: block;
+  position: relative;
+  top: 0;
 }
