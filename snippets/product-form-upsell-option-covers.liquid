@@ -1,5 +1,5 @@
 <!-- snippet: product-form-upsell-option-covers.liquid -->
-{{ 'upsell-product.js' | asset_url | script_tag }}
+
 {{ 'product-form.css' | asset_url | stylesheet_tag }}
 
 {%- comment -%}
@@ -574,3 +574,5 @@ THE EXACT SAME ATTRIBUTES.
   window.gravityInlettProductJson = {{ gravity_inlett_product | json }};
   window.balanceInlettProductJson = {{ balance_inlett_product | json }};
 </script>
+
+{{ 'upsell-product.js' | asset_url | script_tag }}
