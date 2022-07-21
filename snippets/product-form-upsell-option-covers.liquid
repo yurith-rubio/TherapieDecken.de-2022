@@ -173,7 +173,13 @@ while for size, we use it to display a size chart (if applicable)
 
                 <!-- STEP 2.B Duplicate Main Product Form for Additional Product: Gravity Inlett -->
                 <!-- Yes / No option Buttons for Gravity -->
-                <div class="GravityInlett__MainContainer AdditionalInlett__MainContainer" style="display: none">
+                <div class="GravityInlett__MainContainer AdditionalInlett__MainContainer" 
+                     {%- for value in option.values -%}
+                       {% unless option.selected_value == 'Balance (Reißverschluss)' %}
+                     	 style="display: none"
+                       {% endunless %}
+                     {%- endfor -%}
+                     >
                   <span class="ProductForm__Label YesNoButtons__Label">
                     Wollen Sie auch ein Gravity Gewichtsdecken Inlett hinzufügen?
                   </span>
