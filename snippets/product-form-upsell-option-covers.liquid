@@ -105,6 +105,7 @@ while for size, we use it to display a size chart (if applicable)
               {% render 'information-bgd-cover-type', product: product %}          
           
                      {%- for value in option.values -%}
+          			   value: {{ value }}
                        option.selected_value: {{ option.selected_value }}
                        {% if value != option.selected_value %}
                      	 style="display: none"
