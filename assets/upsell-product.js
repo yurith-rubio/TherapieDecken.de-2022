@@ -1,5 +1,5 @@
 
-$(document).ready(function () {
+//$(document).ready(function () {
   
   function getMainProductVariant(variantId) {
     for (variant of window.mainProductJson.variants) {
@@ -275,5 +275,5 @@ $(document).ready(function () {
 // END --> Bedding Template with added yes/no buttons for two different extra optional products
 
   
-});
+//});
 
