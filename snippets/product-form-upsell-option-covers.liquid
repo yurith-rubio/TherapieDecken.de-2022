@@ -350,7 +350,7 @@ while for size, we use it to display a size chart (if applicable)
   <!-- ENDSTEP 2.A -->
   
   {%- for variant in product.variants -%}
-  	{{ selected_variant }}
+  	{{ selected_variant | json }}
   {% endfor %}
 
   <!-- STEP 2.B Duplicate Main Product Form for Additional Product: Gravity Inlett -->
