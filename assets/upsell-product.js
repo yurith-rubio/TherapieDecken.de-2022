@@ -107,7 +107,7 @@ $(document).ready(function () {
   }
   
   function selectBalanceInlettVariant() {
-	const selectedAdditionalBeddingSize = $("input[name='option-0'][checked='checked']").attr("value");
+	const selectedAdditionalBeddingSize = $("input[name='option-1'][checked='checked']").attr("value");
 	const selectedAdditionalBeddingWeight = $("input[name='BalanceInlett-option-1'][checked='checked']").attr("value");
     
     // Selected Balance Inlett Variant Id
@@ -129,7 +129,7 @@ $(document).ready(function () {
   }
   
   function selectGravityInlettVariant() {
-	const selectedAdditionalBeddingSize = $("input[name='option-0'][checked='checked']").attr("value");
+	const selectedAdditionalBeddingSize = $("input[name='option-1'][checked='checked']").attr("value");
 	const selectedAdditionalBeddingWeight = $("input[name='GravityInlett-option-1'][checked='checked']").attr("value");
     
     // Selected Gravity Inlett Variant Id
@@ -152,8 +152,8 @@ $(document).ready(function () {
   }
 
   // Select same size for the Gravity Inlett as Main Product Size
-  $("input[name='option-0']").click(function (e) {
-	$("input[name='option-0']").removeAttr("checked");
+  $("input[name='option-1']").click(function (e) {
+	$("input[name='option-1']").removeAttr("checked");
     $(e.target).attr("checked", "checked");
     
     const GravityInlettSelected = $("#yesGravityInlett__Selector").attr("checked");
@@ -274,6 +274,8 @@ $(document).ready(function () {
   });
 // END --> Bedding Template with added yes/no buttons for two different extra optional products
 
+  $("#noBalanceInlett__Selector").click();
+  $("#noGravityInlett__Selector").click();
   
 });
 
