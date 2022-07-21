@@ -109,7 +109,7 @@ while for size, we use it to display a size chart (if applicable)
                 <!-- Yes / No uption Buttons for Balance --> 
                 <div class="BalanceInlett__MainContainer AdditionalInlett__MainContainer" 
                      {%- for value in option.values -%}
-                       {% if value != 'Balance (Reißverschluss)' %}
+                       {% if value != option.selected_value %}
                      	 style="display: none"
                        {% endif %}
                      {%- endfor -%}
