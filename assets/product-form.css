@@ -1,15 +1,52 @@
-  .hide_option, .blank_option{
-    display:none;
-  }
-  
-  .yellow_style {
-    border: #fac637 solid 3px!important;
-    background: #fac6371c;
-  }
-  .ColorSwatch.is-active::after, .ColorSwatch__Radio:checked+.ColorSwatch::after {
-    border: none !important;
-    border-radius: 30px;
-  }
-  .Product__PaymentList {
-    text-align: center;
-  }
+.hide_option, .blank_option{
+  display:none;
+}
+
+.ColorSwatch__Style{
+  border: solid 1px #d9d9d9;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.ColorSwatch__Radio:checked + .ColorSwatch__Style{
+  border: #fac637 solid 3px !important;
+  background: #fac6371c;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.ColorSwatch.is-active::after, .ColorSwatch__Radio:checked+.ColorSwatch::after {
+  border: none !important;
+  border-radius: 30px;
+}
+
+.Product__PaymentList {
+  text-align: center;
+}
+
+.livePreviewApp_coverOptions{
+  margin-top: 25px;
+  margin-bottom: -20px;
+}
+
+<!-- for product-form-upsell-option-covers.liquid -->
+.Inlett__Input:checked > .SizeSwatch {
+  border: #fac637 solid 3px!important;
+  background: #fac6371c;
+  background-position: center;
+  background-size: cover;
+}
+
+.YesNoButtons__Label{
+  margin-top: 27px;
+}
