@@ -351,7 +351,7 @@ while for size, we use it to display a size chart (if applicable)
 
   <!-- STEP 2.B Duplicate Main Product Form for Additional Product: Gravity Inlett -->
   <!-- Yes / No option Buttons for Gravity -->
-  <div class="GravityInlett__MainContainer AdditionalInlett__MainContainer" style="display: none">
+  <div class="GravityInlett__MainContainer AdditionalInlett__MainContainer">
     <span class="ProductForm__Label YesNoButtons__Label">
       Wollen Sie auch ein Gravity Gewichtsdecken Inlett hinzufügen?
     </span>
@@ -374,7 +374,7 @@ while for size, we use it to display a size chart (if applicable)
       {% if option.name == 'Größe' %}
       	{% continue %}
       {% endif %}
-      <div class="AdditionalProductContainer GravityInlettContainer" style="display: none">
+      <div class="AdditionalProductContainer GravityInlettContainer">
         <span class="ProductForm__Label AdditionalProductProductForm__Label">
           {{ option.name }}:
         </span>
