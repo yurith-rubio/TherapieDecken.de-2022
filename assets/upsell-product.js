@@ -274,6 +274,8 @@ $(document).ready(function () {
   });
 // END --> Bedding Template with added yes/no buttons for two different extra optional products
 
+  $("#noBalanceInlett__Selector").click();
+  $("#noGravityInlett__Selector").click();
   
 });
 
