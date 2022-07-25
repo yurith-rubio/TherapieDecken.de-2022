@@ -104,21 +104,32 @@ li.reduction-code {
   background: #c6ffc6;
   display: inline-block;
   padding: 3px 7px!important;
-  font-size: 12px;}
+  font-size: 12px;
+}
 .product__description .reduction-code__text {
-  color: #008f2d!important;}
+  color: #008f2d !important;
+}
 .field__additional-info {
-  display: none;}
+  display: none;
+}
 @media only screen and (max-width: 768px) {
   .checkout-cert-con {
-    background: #f8f8f8;}
+    background: #f8f8f8;
+  }
   .sidebar::after{
-    background: #f8f8f8;}
+    background: #f8f8f8;
+  }
   .checkout-icons-desktop {
     display: none;
   }
   .title_area{
     padding-top:15px;}
+    .total-line-table__footer .total-line .total-line__name, .total-line-table__footer .total-line .total-line__price{
+    padding-top: 1rem !important;
+  } 
+  .total-line-table__footer{
+      border-top: 1px solid #d9d9d9;
+  }
 }
 @media only screen and (max-width: 1000px) {
   #order-summary.order-summary--is-expanded {
@@ -167,14 +178,7 @@ button.field__input-btn.btn {
 .order-summary__emphasis, .payment-due__price{
   letter-spacing: .3px !important;
 }
-@media only screen and (max-width: 768px){
-  .total-line-table__footer .total-line .total-line__name, .total-line-table__footer .total-line .total-line__price{
-    padding-top: 1rem !important;
-  } 
-  .total-line-table__footer{
-      border-top: 1px solid #d9d9d9;
-  }
-}
+
 
 @media only screen and (min-width: 769px){
 
