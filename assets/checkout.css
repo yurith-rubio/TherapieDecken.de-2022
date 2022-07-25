@@ -1,11 +1,7 @@
 .order-summary__sections {
   height: auto !important;
   margin-bottom: 30px;}
-div[dynamic-checkout] {
-  display: none !important;}
-div[data-alternative-payments] {
-  display: none !important;}
-div[alternative-payment-separator] {
+div[data-alternative-payments], div[alternative-payment-separator], div[dynamic-checkout] {
   display: none !important;}
 span.slimpay-name-fix {
   position: relative;
