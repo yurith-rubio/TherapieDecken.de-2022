@@ -111,6 +111,7 @@ li.reduction-code {
   display: none;}
 @media only screen and (max-width: 768px) {
   .checkout-cert-con {
+    display: none;
     background: #f8f8f8;}
   .sidebar::after{
     background: #f8f8f8;}
