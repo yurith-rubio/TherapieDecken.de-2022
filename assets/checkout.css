@@ -45,11 +45,11 @@ span#time {
 .point_wrapper div{
   padding-left:10px;
 }
-.icon-css {
+.icon-css:before {
   font-size: 40px;
   line-height: 1.2;
   padding-right: 15px;
-  color: #323232;}
+  color: #323232 !important;}
 .checkout-cert-con {
   margin-top: 20px;
   margin-bottom: 30px;
