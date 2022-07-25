@@ -180,7 +180,7 @@ button.field__input-btn.btn {
 .order-summary__emphasis, .payment-due__price{
   letter-spacing: .3px !important;
 }
-.total-line__price:before{
+.total-line__price:before, .total-line__name:before{
   width: 0 !important;
 }
 
