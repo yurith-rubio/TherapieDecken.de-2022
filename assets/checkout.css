@@ -181,7 +181,7 @@ button.field__input-btn.btn {
   letter-spacing: .3px !important;
 }
 .total-line__price:before{
-  conttent: none;
+  width: 0 !important;
 }
 
 @media only screen and (min-width: 769px){
