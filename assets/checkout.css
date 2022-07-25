@@ -95,10 +95,12 @@ img.checkout-cert {
   text-align: center;
   width: 80%!important;
   margin: auto;
-  padding-top: 10px;}
+  padding-top: 10px;
+}
 .checkout-cert img {
   padding: 0 15px;
-  width: 35%;} 
+  width: 35%;
+} 
 li.reduction-code {
   font-weight: 500;
   background: #c6ffc6;
