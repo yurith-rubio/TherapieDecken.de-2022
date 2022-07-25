@@ -11,7 +11,9 @@
     {{ content_for_header }}
     {{ checkout_stylesheets }}
     {{ checkout_scripts }}
-    
+
+    {% comment %} Countdown - Yurith {% endcomment %}
+    {{ 'checkout.css' | asset_url | stylesheet_tag }}
     {% comment %} ICOMOON link - Yurith {% endcomment %}
     <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/163995/TDTWCheckoutIcons/style-cf.css?pv87nq">
     {% comment %} Countdown - Yurith {% endcomment %}
