@@ -49,7 +49,7 @@ span#time {
 .point_wrapper div{
   padding-left:10px;
 }
-.icon-css::before {
+.icon-css:before {
   font-size: 40px;
   line-height: 1.2;
   padding-right: 15px;
