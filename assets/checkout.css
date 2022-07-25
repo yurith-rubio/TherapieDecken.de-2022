@@ -111,11 +111,12 @@ li.reduction-code {
   display: none;}
 @media only screen and (max-width: 768px) {
   .checkout-cert-con {
-    display: none;
     background: #f8f8f8;}
   .sidebar::after{
     background: #f8f8f8;}
-
+  .checkout-icons-desktop {
+    display: none;
+  }
   .title_area{
     padding-top:15px;}
 }
@@ -186,6 +187,9 @@ button.field__input-btn.btn {
 }
 @media only screen and (min-width: 769px){
   .Summary_Container_mobile{
+    display: none;
+  }
+  .checkout-icons-mobile {
     display: none;
   }
 }
