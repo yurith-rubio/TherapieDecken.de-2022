@@ -50,7 +50,7 @@
     "enable_days_view": true,
     "border_radius_countdown": 4,
     "loop_time": 0,
-    "announcement_countdown_enable": true,
+    "announcement_countdown_enable": false,
     "background_countdown": "#ffffff",
     "text_color_countdown": "#ee5183",
     "product_countdown_enable": false,
@@ -61,7 +61,7 @@
     "checkout_countdown_enable": false,
     "checkout_countdown_text": "⚠️ Auf Grund unseres Weltschlaftag Angebots ist Ihr Warenkorb für nur",
     "left_product_inventory": true,
-    "promotional_hero_hp_cover": true,
+    "promotional_hero_hp_cover": false,
     "promo_image": "shopify:\/\/shop_images\/TD_Summer_Cooling_desktop_image.jpg",
     "promo_image_mobile": "shopify:\/\/shop_images\/TD_Summer_Cooling_mobile_image.jpg",
     "image_position": "right",
@@ -71,8 +71,8 @@
     "text_button_color": "#ffffff",
     "text_button_color_hover": "#ffffff",
     "promotional_collection_cover": false,
-    "enable_collection_badge": true,
-    "enable_product_badge": true,
+    "enable_collection_badge": false,
+    "enable_product_badge": false,
     "hide_discount_general_badge": false,
     "show_product_guarantee_exceptions": false,
     "gift_product": "",
@@ -106,11 +106,11 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": true,
+          "enable_bar": false,
           "home_page_only": false,
           "background": "#ee5183",
           "text_color": "#ffffff",
-          "content": "Entspannt in den Sommer!☀️Alle BALANCE und GRAVITY Decken <u>weitere <b>20€<\/b><\/u> reduziert!🔥 Endet in",
+          "content": "Endet in",
           "link": "shopify:\/\/collections\/erwachsene"
         }
       },
