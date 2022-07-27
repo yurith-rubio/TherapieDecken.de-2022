@@ -19,6 +19,7 @@
   display: block;
   position: relative;
   height: 550px;
+  width: 100%;
 }
 .collection_content_img img{
   width: 100%;
