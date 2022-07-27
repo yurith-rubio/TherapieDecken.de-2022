@@ -241,15 +241,15 @@
       var currentScrollPos = window.pageYOffset;
         
         if (currentScrollPos <= 65){
-          document.querySelector("#header").style.top = "0px";
-          document.querySelector("#header").style.position = "relative";
+          document.getElementById("header").style.top = "0px";
+          document.getElementById("header").style.position = "relative";
           document.getElementById("main").style.padding = "0";
         } else if (prevScrollpos > currentScrollPos) {
-          document.querySelector("#header").style.top = "0px";
-          document.querySelector("#header").style.position = "relative";
+          document.getElementById("header").style.top = "0";
+          document.getElementById("header").style.position = "fixed";
           document.getElementById("main").style.padding = "90px 0 0 0";
         } else if (currentScrollPos >= 170) {
-          document.querySelector("#header").style.top = "-194px";
+          document.getElementById("header").style.top = "-194px";
         }
         prevScrollpos = currentScrollPos;
         
