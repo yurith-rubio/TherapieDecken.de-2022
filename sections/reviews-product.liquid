@@ -60,7 +60,25 @@ $(document).ready(function () {
 {% schema %}
 {
   "name": "Reviews Product Page",
-  "settings": [],
+  "settings": [
+      {
+        "type": "color",
+        "id": "bg-color",
+        "label": "Background Color"
+      },
+      {
+        "type": "text",
+        "id": "subheading_tag1",
+        "label": "Title Section for Baumwolle",
+        "default": "Subheading Example"
+      },
+      {
+        "type": "text",
+        "id": "title_tag1",
+        "label": "Title Section for Baumwolle",
+        "default": "Title Section Example"
+      }
+	],
   "presets": [
     {
       "category": "Product Page",
