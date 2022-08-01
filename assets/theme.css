@@ -11553,7 +11553,7 @@ a.Link-Button-General:hover {
 }
 
 .medium-grid{
-  /*max-width: 900px;*/
+  max-width: 900px;
   margin: auto;
   padding-top: 50px;
   padding-bottom: 50px;
