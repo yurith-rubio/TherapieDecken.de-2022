@@ -289,6 +289,7 @@
     "1630163316a688d6ef": {
       "type": "reviews-product",
       "settings": {
+        "bg-color": "#f8f8f8"
       }
     },
     "product-recommendations": {
