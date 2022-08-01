@@ -1,9 +1,3 @@
-{% style %}
-.full-bg-color{
-  background-color: {{ section.settings.bg-color }};
-}
-{% endstyle %}
-<div class="full-bg-color">
 <div class="medium-grid">
   
 <center><h2 class="SectionHeader__Heading Heading u-h1">Bewertungen über {{product.title}}</h2>
@@ -20,7 +14,6 @@
   
   
 {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
-</div>
 </div>
 
 <style>
