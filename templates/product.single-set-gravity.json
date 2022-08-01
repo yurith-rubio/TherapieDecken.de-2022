@@ -115,7 +115,8 @@
       "settings": {
         "sub-heading": "Drei Produkte für besseren Schlaf",
         "heading": "Eigenschaften des Single Langschläfer Sets",
-        "image": "shopify:\/\/shop_images\/Video-cover-1200x.jpg"
+        "image": "shopify:\/\/shop_images\/Video-cover-1200x.jpg",
+        "image_position": "left"
       }
     },
     "16294611499d6cacbd": {
@@ -437,6 +438,7 @@
     "16294440249ce6f304": {
       "type": "reviews-product",
       "settings": {
+        "bg-color": "#f8f8f8"
       }
     },
     "1630334324a50af4b4": {
