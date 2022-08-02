@@ -30,7 +30,7 @@
   padding: 0 10px;
 }
 
-@media only screen and (min-width: 401px){
+@media only screen and (min-width: 641px){
   .SuggestedUpProd_imageWr{
     max-width: 140px;
   }
@@ -43,7 +43,7 @@
   }
 }
 
-@media only screen and (max-width: 400px){  
+@media only screen and (max-width: 640px){  
   .SuggestedUpProd_Heading{
     top: 40px;
     margin: 0 15px;
