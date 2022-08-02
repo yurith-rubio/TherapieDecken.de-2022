@@ -29,7 +29,23 @@
   margin: auto;
   padding: 0 10px;
 }
-
+.Suggested_Price--highlight{
+  color:#ba2e2e
+}
+.Suggested_Price--compareAt{
+  text-decoration: line-through;
+  font-family: var(--text-font-family);
+  padding-left: 5px;
+  font-size: 14px !important;
+}
+.SuggestedUpPro_variantText{
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+.SuggestedUpProd_buttonWr{
+  padding: 10px 20px;
+  width: fit-content;
+}
 @media only screen and (min-width: 641px){
   .SuggestedUpProd_imageWr{
     max-width: 140px;
@@ -51,22 +67,4 @@
   .SuggestedUpProd_ContentWr{
     padding: 40px 11px 17px;
   }
-}
-
-.Suggested_Price--highlight{
-  color:#ba2e2e
-}
-.Suggested_Price--compareAt{
-  text-decoration: line-through;
-  font-family: var(--text-font-family);
-  padding-left: 5px;
-  font-size: 14px !important;
-}
-.SuggestedUpPro_variantText{
-  margin-bottom: 5px;
-  font-size: 10px;
-}
-.SuggestedUpProd_buttonWr{
-  padding: 10px 20px;
-  width: fit-content;
 }
