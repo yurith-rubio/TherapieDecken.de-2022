@@ -64,6 +64,9 @@
     top: 40px;
     margin: 0 15px;
   }
+  .SuggestedUpProd_Heading > span{
+    display: block;
+  }
   .SuggestedUpProd_ContentWr{
     padding: 40px 11px 17px;
   }
