@@ -45,10 +45,10 @@
 
 @media only screen and (max-width: 400px){  
   .SuggestedUpProd_Heading{
-    top: -161px;
+    top: 20px;
   }
   .SuggestedUpProd_ContentWr{
-    padding: 17px 11px;
+    padding: 30px 11px 17px;
   }
 }
 
