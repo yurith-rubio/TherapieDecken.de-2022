@@ -62,7 +62,7 @@
 @media only screen and (max-width: 640px){  
   .SuggestedUpProd_Heading{
     top: 40px;
-    margin: 0 15px;
+    margin: 0 auto;
   }
   .SuggestedUpProd_Heading > span{
     display: block;
