@@ -46,7 +46,7 @@
   padding: 10px 20px;
   width: fit-content;
 }
-@media only screen and (min-width: 641px){
+@media only screen and (min-width: 421px){
   .SuggestedUpProd_imageWr{
     max-width: 140px;
   }
@@ -59,13 +59,10 @@
   }
 }
 
-@media only screen and (max-width: 640px){  
+@media only screen and (max-width: 420px){  
   .SuggestedUpProd_Heading{
     top: 40px;
-    margin: 0 auto;
-  }
-  .SuggestedUpProd_Heading > span{
-    display: block;
+    margin: 0 15px;
   }
   .SuggestedUpProd_ContentWr{
     padding: 40px 11px 17px;
