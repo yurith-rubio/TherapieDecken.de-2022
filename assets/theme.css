@@ -11559,9 +11559,8 @@ a.Link-Button-General:hover {
   padding-bottom: 50px;
 }
 .reviews-grid{
-  margin: auto;
+  margin: auto auto 100px;
   padding: 50px 0;
-  margin-bottom: 100px;
 }
 .center-text{
   text-align: center;
