@@ -14,7 +14,7 @@
   {% paginate collections['Therapiekissen'].products by 1000 %}
     {% for product in collections['Therapiekissen'].products %}
       {% if product.title contains cover_title_base %}
-        <h2 class="Heading u-h5 "> Bezug + Kissen kombinieren & <span style="color: #ba2e2e">10% sparen!</span> </h2>
+        <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Bezug + Kissen kombinieren & <span style="color: #ba2e2e">10% sparen!</span> </h2>
         {% for variant in product.variants %}
           {% if  variant.option1 == "Normal" and variant.option2 == "40 x 80 cm" %}
             {%- assign image_url = variant.image.src | image_url: width: 300 -%}
@@ -65,6 +65,7 @@
     {% for product in collections['ersatzbezuge-fur-therapiedecken'].products %}
       {% if product.title contains pillow_title_base %}
         {%- assign image_url = product.images[0] | image_url: width: 300 -%}
+        <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Kissen + Bezug kombinieren & <span style="color: #ba2e2e">10% sparen!</span> </h2>
         <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
           <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
           <a href="{{ product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
@@ -90,7 +91,6 @@
             </button>
           </div>
         </form>
-        <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Kissen + Bezug kombinieren & <span style="color: #ba2e2e">10% sparen!</span> </h2>
       {% endif %}
     {% endfor %}
   {% endpaginate %}
@@ -108,6 +108,7 @@
   {% endfor %}
       {% if variant_size and variant_filling %}
         {%- assign image_url = upsell_product.featured_image | image_url: width: 300 -%}
+        <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Gewichtsdecke + Bezug kombinieren & <span style="color: #ba2e2e">5% sparen!</span> </h2>
         <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
           <input type="hidden" name="id" value="39460604838027">
           <a href="{{ upsell_product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
@@ -129,7 +130,6 @@
             </button>
           </div>
         </form>
-        <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Gewichtsdecke + Bezug kombinieren & <span style="color: #ba2e2e">5% sparen!</span> </h2>
       {% endif %}
 {% endif %}
 
@@ -145,6 +145,7 @@
   {% endfor %}
       {% if variant_size and variant_filling %}
         {%- assign image_url = upsell_product.featured_image | image_url: width: 300 -%}
+        <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Gewichtsdecke + Bezug kombinieren & <span style="color: #ba2e2e">5% sparen!</span> </h2>
         <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
           <input type="hidden" name="id" value="39460605034635">
           <a href="{{ upsell_product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
@@ -166,7 +167,6 @@
             </button>
           </div>
         </form>
-        <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Gewichtsdecke + Bezug kombinieren & <span style="color: #ba2e2e">5% sparen!</span> </h2>
       {% endif %}
 {% endif %}
 
@@ -185,6 +185,7 @@
   {% endfor %}
   {% if variant_size and variant_filling %}
   	{%- assign image_url = upsell_product.featured_image | image_url: width: 300 -%}
+    <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Gewichtsdecke + Bezug kombinieren & <span style="color: #ba2e2e">5% sparen!</span> </h2>
     <form class="SuggestedUpProd_ContentWr" method="post" action="/cart/add">
       <input type="hidden" name="id" value="39690333126795">
       <a href="{{ upsell_product.url }}" style="align-self: center;"><img class="SuggestedUpProd_imageWr Image--lazyLoad" data-src="{{ image_url }}"></a>
@@ -206,7 +207,6 @@
         </button>
       </div>
     </form>
-    <h2 class="Heading u-h5 SuggestedUpProd_Heading"> Gewichtsdecke + Bezug kombinieren & <span style="color: #ba2e2e">5% sparen!</span> </h2>
   {% endif %}
 {% endif %}
 
