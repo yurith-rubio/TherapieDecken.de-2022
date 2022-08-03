@@ -10898,7 +10898,7 @@ a.Link-Button-General:hover {
 .SidebarMenu__CurrencySelector .Select {
   display: inline-block;
 }
-.SidebarMenu__Social p.SidebarMenu__Social{
+p.SidebarMenu__Social{
   display: none;
 }
 @supports (padding: max(0px)) {
