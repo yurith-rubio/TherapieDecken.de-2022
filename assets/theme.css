@@ -14,7 +14,7 @@
   box-sizing: border-box !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+}.SidebarMenu__CurrencySelector .Select
 
 html {
   font-family: sans-serif;
@@ -10898,7 +10898,9 @@ a.Link-Button-General:hover {
 .SidebarMenu__CurrencySelector .Select {
   display: inline-block;
 }
-
+p.SidebarMenu__Social{
+  display: none;
+}
 @supports (padding: max(0px)) {
   .SidebarMenu__CurrencySelector,
   .SidebarMenu__Social {
