@@ -111,10 +111,12 @@
             </div>
           
           {% endfor %}
-
-
         </div>
       </div>
+      
+      {% comment %} data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated {% endcomment %}
+      <div data-ajax-cart-static-element class="my-cart__app-container"></div>
+      
       <div>
         <div class="myCart_footerWrapper">
           <div class="myCart_versandWrapper">
@@ -131,9 +133,35 @@
             Zur Kasse
           </button>
         </div>
-
         {% render 'my-cart-payment-icons' %}
+      </div>
+      
+      <div class="myCart_bottomSection">
+        {% comment %}{% render 'my-cart-upsells' %}{% endcomment %}
+        <div class="myCart_footerSection">
+          <div class="myCart_footerWrapper">
+            <div class="myCart_versandWrapper" data-ajax-cart-section>
+              {% assign price_to_compare = cart.total_price | money_without_trailing_zeros | plus: 0 %}
+              {% if price_to_compare > 99 %}
+                <p class="Heading u-h6">Versand</p>
+                <p class="myCart_p myCart_gratis">
+                  Gratis
+                </p>
+              {% endif %}
+            </div>
+            <div class="myCart_totalCartWrapper">
+              <p class="Heading u-h6">Zwischensumme</p>
+              <p class="Cart__Total Heading u-h4 myCart_p" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
+            </div>
+            <button class="my-cart_button bttn" 
+                    type="submit" 
+                    name="checkout">
+              Zur Kasse
+            </button>
+          </div>
 
+          {% render 'my-cart-payment-icons' %}
+        </div>
       </div>
 
       {% comment %}
@@ -144,9 +172,6 @@
         {{ cart.note }}
       </textarea>
       {% endcomment %}
-
-      {% comment %} data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated {% endcomment %}
-      <div data-ajax-cart-static-element class="my-cart__app-container"></div>
     </form>
   </div>
 </div>
