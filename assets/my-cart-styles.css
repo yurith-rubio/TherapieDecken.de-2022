@@ -207,9 +207,11 @@ form[action="cart/add"].js-ajax-cart-request-in-progress [type="submit"] {
 }
 /* payment logos on slide cart */
 .myCart_paymentOptions {
- display:table!important;
- margin:auto;
- text-align:center!important;
+  display:table!important;
+  margin:auto;
+  text-align:center!important;
+  background-color: white;
+  width: 90%;
 }
 
 .myCart_paymentOptions .payment-icons li.icon--payment {
