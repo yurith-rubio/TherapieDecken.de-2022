@@ -1,4 +1,46 @@
-<div class="Container medium-grid">
+{% style %}
+.full-bg-color{
+  background-color: {{ section.settings.bg-color }};
+}
+.jdgm-rev-widg__body{
+  margin-top: 15px !important;
+}
+.jdgm-rev-widg__reviews{
+  max-width: 900px;
+  margin: 0 auto!important;
+  padding: 0px 80px;
+}
+.jdgm-rev{
+  background: #fff;
+  border-top: none!important;
+  border-radius: 5px;
+  padding: 15px;
+}
+.reviews-grid > center{
+  max-width: 900px;
+  margin: 0 auto!important;
+  padding: 0 80px;
+}
+@media only screen and (max-width: 767px){
+  .jdgm-rev-widg{
+    margin-bottom: 0!important;
+  }
+  .jdgm-rev-widg__body{
+    margin: 20px 0 0!important;
+    padding-top: 0;
+  }
+  .jdgm-rev-widg__reviews,
+  .reviews-grid > center{
+    padding: 0;
+  }
+  .reviews-grid{
+    margin-bottom: 0;
+    padding: 50px 20px;
+  }
+}
+{% endstyle %}
+<div class="full-bg-color">
+<div class="reviews-grid">
   
 <center><h2 class="SectionHeader__Heading Heading u-h1">Bewertungen über {{product.title}}</h2>
   
@@ -14,6 +56,7 @@
   
   
 {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
+</div>
 </div>
 
 <style>
@@ -60,7 +103,13 @@ $(document).ready(function () {
 {% schema %}
 {
   "name": "Reviews Product Page",
-  "settings": [],
+  "settings": [
+    {
+        "type": "color",
+        "id": "bg-color",
+        "label": "Background Color"
+      }
+  ],
   "presets": [
     {
       "category": "Product Page",
