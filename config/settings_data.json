@@ -106,11 +106,11 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
-          "background": "#ee5183",
+          "background": "#5b5b5b",
           "text_color": "#ffffff",
-          "content": "Endet in",
+          "content": "Neu! Therapiedecken jetzt <b>100 Tage<\/b> Probeschlafen",
           "link": "shopify:\/\/collections\/erwachsene"
         }
       },
