@@ -35,7 +35,7 @@
   {%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-{{ option.name | handle }}{%- endcapture -%}
 
   {% if product.handle == 'therapiedecken' %}
-    {% render 'product-form-collapsible', product:product, 
+    {% render 'product-form-collapsible', settings: settings, product:product, 
       color_label:color_label, size_label:size_label, gewicht_label:gewicht_label
       size_chart_page:size_chart_page, product_popovers:product_popovers,
       show_option_label:show_option_label, downcase_option: downcase_option, option: option %}
