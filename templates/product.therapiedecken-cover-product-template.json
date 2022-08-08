@@ -112,7 +112,8 @@
       "settings": {
         "sub-heading": "Die Bettdecke mit Gewicht",
         "heading": "Was ist eine Therapiedecke?",
-        "image": "shopify:\/\/shop_images\/1-45_1_1600x_b533335f-905b-4441-a550-25bd778f3dfb.jpg"
+        "image": "shopify:\/\/shop_images\/1-45_1_1600x_b533335f-905b-4441-a550-25bd778f3dfb.jpg",
+        "image_position": "left"
       }
     },
     "1630502279241963c8": {
@@ -271,6 +272,7 @@
     "1631652355e16d57e5": {
       "type": "reviews-product",
       "settings": {
+        "bg-color": "#f8f8f8"
       }
     },
     "product-recommendations": {
