@@ -14,7 +14,7 @@
   box-sizing: border-box !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}.SidebarMenu__CurrencySelector .Select
+}
 
 html {
   font-family: sans-serif;
@@ -9822,6 +9822,19 @@ shopify-payment-terms {
   margin-bottom: 24px;
 }
 
+.ProductForm_CollapsibleOption{
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.ProductForm_CollapsibleSelector{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px 10px 0;
+  cursor: pointer;
+}
+
 .ProductForm__Option {
   position: relative;
   margin-bottom: 10px;
@@ -9875,6 +9888,10 @@ shopify-payment-terms {
   overflow: hidden;
   max-width: 220px;
   vertical-align: top;
+  background-color: #fac6371c;
+  padding: 0 10px;
+  border-radius: 3px;
+  /*border: #fac637 solid 3px !important;*/
 }
 
 .ProductForm__OptionCount {
@@ -10898,9 +10915,7 @@ a.Link-Button-General:hover {
 .SidebarMenu__CurrencySelector .Select {
   display: inline-block;
 }
-p.SidebarMenu__Social{
-  display: none;
-}
+
 @supports (padding: max(0px)) {
   .SidebarMenu__CurrencySelector,
   .SidebarMenu__Social {
@@ -11541,6 +11556,9 @@ p.SidebarMenu__Social{
 }
 
 /* General for TD - Yurith 08-21*/
+.hidden{
+  display: none;
+}
 .td-h3{
   font-size: 18px;
   letter-spacing: .2em;
