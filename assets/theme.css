@@ -12718,3 +12718,33 @@ header.html-text-wr{
 .image-text-simple{
   margin-top: 30px;
 }
+
+/* Collapsible Varants */
+
+@keyframes slideUpLabel {
+  0%{
+    transform: translate(0, 30px);
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.ProductForm_CollapsibleSelector:hover > .arrowRotate{
+  animation: rotateArrow .3s ease 0s normal none;
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation-fill-mode: forwards;
+}
+
+.ProductForm_CollapsibleArrow{
+  color: var(--button-background);
+}
+.ProductForm_CollapsibleArrow{
+  position: relative;
+  top: 4px;
+}
