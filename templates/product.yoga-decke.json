@@ -19,7 +19,7 @@
         "icons_duotone": "none",
         "subheading": "Pure Entspannung",
         "title": "Eigenschaften der Yoga Therapiedecke",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/1-64_1_1.jpg",
         "image_position": "right",
         "content_html": "<ul style=\"text-align:left\">\n<li>Hochwertige Decke aus Baumwolle ohne abnehmbarem Bezug\n<\/li>\n<li>Sanfter Druck sorgt für Entspannung und Wohlbefinden <\/li>\n<li>Vielseitig während der Meditiation und beim Yoga einsetzbar\n<\/li>\n<li> Bei 30 Grad waschbar <\/li>\n<\/ul>",
@@ -43,7 +43,7 @@
         "icons_duotone": "none",
         "subheading": "Original Yoga Therapiedecke",
         "title": "Perfekter Begleiter für Entspannung",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/1-89_1_2.jpg",
         "image_position": "left",
         "content_html": "<p>Die Yoga Therapiedecke ist vielseitig einsetzbar. Beim Zudecken während der Tiefenentspannung hilft sie den Körper und das Nervensystem zu entspannen. Sie kann einfach gefaltet werden, um Übungen im Sitzen durchzuführen oder als Unterlage für Schulter- und Kopfstand verwendet werden.<\/p>",
@@ -120,6 +120,7 @@
     "1631061690cdeac1fb": {
       "type": "reviews-product",
       "settings": {
+        "bg-color": "#f8f8f8"
       }
     },
     "product-recommendations": {
