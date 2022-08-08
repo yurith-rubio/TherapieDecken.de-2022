@@ -34,6 +34,11 @@
   {%- assign downcase_option = option.name | downcase -%}
   {%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-{{ option.name | handle }}{%- endcapture -%}
 
+  {% if product.handle == 'therapiedecken' %}
+
+  {% else %}
+
+  {% endif %}
   <div class="ProductForm__Option {% if show_option_label %}ProductForm__Option--labelled{% endif %}">
     {%- if show_option_label -%}
     {%- assign size_chart_page = block.settings.size_chart -%}
