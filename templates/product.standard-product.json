@@ -133,6 +133,7 @@
     "1630795218f4800738": {
       "type": "reviews-product",
       "settings": {
+        "bg-color": "#f8f8f8"
       }
     },
     "product-recommendations": {
