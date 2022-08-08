@@ -451,7 +451,7 @@
         "682026e0-51c9-4dab-9fa6-5ecf821772bc": {
           "type": "question",
           "settings": {
-            "title": "Warum bekomme ich eine Zahlungsaufforderung von Klarna, obwohl ich 28-Tage Probeschlafen darf?",
+            "title": "Warum bekomme ich eine Zahlungsaufforderung von Klarna, obwohl ich 100-Tage Probeschlafen darf?",
             "answer": "<p>Klarna ist ein Drittanbieter und setzt die Zahlungsziele fest. Unser Angebot 100 Tage Probeschlafen zu können, geht nicht mit den Zahlungszielen, die von einem Drittanbieter festgelegt werden, zusammen. Bitte begleichen Sie die Rechnung. Wenn Sie die Decke retournieren, bekommen Sie Ihre Bestellung erstattet. Das Zahlungsziel kann gegen eine Gebühr vom Kunden selbstständig verlängert werden.<\/p>",
             "answer_html": ""
           }
