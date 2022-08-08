@@ -36,10 +36,9 @@
 
   {% if product.handle == 'therapiedecken' %}
     {% render 'product-form-collapsible', product:product, 
-      downcase_option: downcase_option, option: option, 
       color_label:color_label, size_label:size_label, gewicht_label:gewicht_label
       size_chart_page:size_chart_page, product_popovers:product_popovers,
-      show_option_label:show_option_label %}
+      show_option_label:show_option_label, downcase_option: downcase_option, option: option %}
   {% else %}
     <div class="ProductForm__Option {% if show_option_label %}ProductForm__Option--labelled{% endif %}">
       {%- if show_option_label -%}
