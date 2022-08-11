@@ -56,7 +56,7 @@
         const selectedVariant = event.detail.variant["option" + number];
         label.textContent = selectedVariant;
       } 
-      if (event.detail.variant == "null") {
+      if (event.detail.variant == null) {
         console.log("null");
       }
     });
