@@ -58,56 +58,8 @@
         label.textContent = selectedVariant;
       } 
       if (event.detail.variant == null) {
-        label.textContent = "";
+        label.textContent = "Nicht verfügbar";
       }
-
-      function (clickedButton) {
-      if (clickedButton.target.value === "90 x 120 cm") {
-        $("li.HorizontalList__Item > input[value = '3 kg']").parent().removeAttr('style');
-      	$("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
-        $("li.HorizontalList__Item > input[value = '5 kg']").parent().css("display", "none");
-      	$("li.HorizontalList__Item > input[value = '6 kg']").parent().css("display", "none");
-        $("li.HorizontalList__Item > input[value = '7 kg']").parent().css("display", "none");
-        $(".gewicht_option > input").first().click();
-      } else if (clickedButton.target.value === "100 x 150 cm") {
-        $("li.HorizontalList__Item > input[value = '3 kg']").parent().removeAttr('style');
-      	$("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
-        $("li.HorizontalList__Item > input[value = '5 kg']").parent().removeAttr('style');
-        $("li.HorizontalList__Item > input[value = '6 kg']").parent().removeAttr('style');
-      	$("li.HorizontalList__Item > input[value = '7 kg']").parent().css("display", "none");
-        $(".gewicht_option > input").first().click();
-      } else if (clickedButton.target.value === "110 x 170 cm") {
-        $("li.HorizontalList__Item > input[value = '3 kg']").parent().css("display", "none");
-      	$("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
-        $("li.HorizontalList__Item > input[value = '5 kg']").parent().removeAttr('style');
-        $("li.HorizontalList__Item > input[value = '6 kg']").parent().removeAttr('style');
-      	$("li.HorizontalList__Item > input[value = '7 kg']").parent().removeAttr('style');
-        $(".gewicht_option > input[value = '4 kg']").click();
-      } else if (clickedButton.target.value === "135 x 200 cm") {
-      	$("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
-        $(".gewicht_option > input").first().click();
-      } else if(clickedButton.target.value === "150 x 220 cm") {
-        $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
-        $(".gewicht_option > input[value = '6 kg']").click();
-      }
-    }
-
-    const selectedSize = $("li.HorizontalList__Item > input[checked='checked']").first();
-    if (selectedSize && selectedSize.attr("value") === "90 x 120 cm") {
-      $("li.HorizontalList__Item > input[value = '5 kg']").parent().css("display", "none");
-      $("li.HorizontalList__Item > input[value = '6 kg']").parent().css("display", "none");
-      $("li.HorizontalList__Item > input[value = '7 kg']").parent().css("display", "none");
-  	}
-    if (selectedSize && selectedSize.attr("value") === "100 x 150 cm") {
-      $("li.HorizontalList__Item > input[value = '7 kg']").parent().css("display", "none");
-  	}
-    if (selectedSize && selectedSize.attr("value") === "110 x 170 cm") {
-      $("li.HorizontalList__Item > input[value = '3 kg']").parent().css("display", "none");
-  	}
-    if (selectedSize && selectedSize.attr("value") === "150 x 220 cm") {
-      $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");    
-  	}
-      
     });
   }
 
@@ -123,6 +75,9 @@
       infoToShow.classList.remove("hidden");
     });
   });
+
+
+
 
 
 //});
