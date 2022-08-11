@@ -23,58 +23,10 @@
         "review_starts": false,
         "content": ""
       }
-    },
-    "163637357217765969": {
-      "type": "text-simple",
-      "settings": {
-        "spacer": "50px",
-        "bg-color": "",
-        "bg-color-text": "#ffffff",
-        "text_align": "left",
-        "margin_top": "-150",
-        "margin_bottom": "",
-        "margin_bottom_mobile": "",
-        "subheading": "",
-        "title": "",
-        "content": "<p>Wir werden oft gefragt, ob die Wirksamkeit der Gewichtsdecken wissenschaftlich bewiesen ist. Die Wirksamkeit von Gewichtsdecken wissenschaftlich zu belegen, ist mit komplexen Studien verbunden. Das liegt einmal an den hohen Anforderungen an wissenschaftlichen Studien, zweitens an der Herausforderung das Wohlbefinden einer Person in Tests messen zu können. Der menschliche Organismus mit seinen diversen Gefühlszuständen ist dynamisch und komplex, weswegen Studien nur teilweise\/ansatzweise als Beweis für die Wirksamkeit von Gewichtsdecken verwendet werden können.<\/p><p>Die Gewichtsdecken werden deshalb vor allem aufgrund von guten Erfahrungen sowohl von Therapeuten, als auch von Patienten weiterempfohlen. Außerdem berufen wir uns auf die Rezensionen unserer Kunden, sodass wir stets im Blick behalten, wie wir die Decken optimieren und das Wohlbefinden verbessern können.<\/p><p>Nichtsdestotrotz wächst die Anzahl <strong>an aussagekräftigen Studien<\/strong>, die sich mit dieser Thematik auseinandergesetzt haben und Ergebnisse vorweisen können.<\/p>",
-        "content_html": "<p>ERASE the content of the block ABOVE is you want to use this block<\/p>",
-        "link_text": "",
-        "link_url": "",
-        "content2": "",
-        "content_html2": "",
-        "button_text": "",
-        "button_url": ""
-      }
-    },
-    "1636117119614ccba3": {
-      "type": "html-with-image",
-      "settings": {
-        "spacer_top": true,
-        "spacer_bottom": true,
-        "bg-color": "#f8f8f8",
-        "bg-color-text-html": "#ffffff",
-        "icon_title": true,
-        "icons_duotone": "anxiety",
-        "subheading": "",
-        "title": "Gewichtsdecken mit reinem Gewissen",
-        "text_color": "#3a3c3c",
-        "image": "shopify:\/\/shop_images\/TD-LP-Science-images_insomnia-web.jpg",
-        "image_position": "right",
-        "content_html": "",
-        "content_rich": "<p>Die bisher größte Studie Evaluating the Safety and Effectiveness of the Weighted Blanket With Adults During an Inpatient Mental Health Hospitalisation, die die Sicherheit und Wirksamkeit von Gewichtsdecken bei Erwachsenen unter die Lupe genommen hat, wurde im Jahr 2015 von T. Champagne, B. Mullen, D. Dickson und S. Krishnamurty durchgeführt. Die Studie fand in einer psychiatrischen Einrichtung statt, es wurden 30 Erwachsene getestet und das Gewicht der Gewichtsdecke lag bei 13 kg.<\/p><p><\/p>",
-        "button_style": false,
-        "link_text": "",
-        "link_url": "",
-        "button_extra": false,
-        "link_text_extra": "Mehr Erfahren",
-        "link_url_extra": ""
-      }
     }
   },
   "order": [
     "main",
-    "1636118585f2235ab4",
-    "163637357217765969",
-    "1636117119614ccba3"
+    "1636118585f2235ab4"
   ]
 }
