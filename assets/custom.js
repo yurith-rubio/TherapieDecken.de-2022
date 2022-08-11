@@ -23,8 +23,8 @@
       	hideOption(info, event.detail.variant.id);
       }
     });
-	//console.log("variant changed");
-    //console.log(event.detail.variant?.option1);
+	console.log("variant changed");
+    console.log(event.detail.variant?.option1);
   });
 
   const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
