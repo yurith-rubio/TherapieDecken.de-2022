@@ -15,6 +15,7 @@
       "settings": {
         "custom_title": false,
         "custom_title_text": "Customize Title if needed",
+        "sub_headline": "Customize Title if needed",
         "image": "shopify:\/\/shop_images\/TD-LP-Science-images_heading-web.jpg",
         "mobile_custom": true,
         "image_mobile": "shopify:\/\/shop_images\/TD-LP-Science-images_heading_1200x800_web_2.jpg",
@@ -68,68 +69,12 @@
         "link_text_extra": "Mehr Erfahren",
         "link_url_extra": ""
       }
-    },
-    "16363785189a52b41b": {
-      "type": "icons-custom",
-      "blocks": {
-        "73245bc6-dce1-4e2e-9fa6-6ece40bcd452": {
-          "type": "icons-custom",
-          "settings": {
-            "simple_icons": "sixty-three-percent",
-            "title_icon": "",
-            "content_icon": "<p>der getesteten Erwachsenen konnten eine <strong>Reduzierung der Angstsymptome<\/strong> nach dem Gebrauch der 13 kg Gewichtsdecke feststellen.<\/p>"
-          }
-        },
-        "d2e166b7-310e-4805-86d3-3466428c3a37": {
-          "type": "icons-custom",
-          "settings": {
-            "simple_icons": "fifty-one-percent",
-            "title_icon": "",
-            "content_icon": "<p>der Studienteilnehmer berichteten, dass <strong>das Gefühl der Angst verringert wurde<\/strong>, wenn sie mit der 13 kg Gewichtsdecke zugedeckt waren.<\/p>"
-          }
-        },
-        "5ac71f14-c4ad-474b-bc23-0f5cb8920243": {
-          "type": "icons-custom",
-          "settings": {
-            "simple_icons": "seventy-seven-percent",
-            "title_icon": "",
-            "content_icon": "<p><strong>bevorzugten die Gewichtsdecke<\/strong>, wenn sie selber ihr Gewicht bestimmen konnten.<\/p>"
-          }
-        },
-        "4938169b-14cc-450a-a22b-37b2ed132f38": {
-          "type": "icons-custom",
-          "settings": {
-            "simple_icons": "ninety-one-percent",
-            "title_icon": "",
-            "content_icon": "<p>der Teilnehmer antworteten auf die Frage, wann Sie sich entspannter fühlen mit <strong>“Wenn ich die Gewichtsdecke benutze”<\/strong><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "73245bc6-dce1-4e2e-9fa6-6ece40bcd452",
-        "d2e166b7-310e-4805-86d3-3466428c3a37",
-        "5ac71f14-c4ad-474b-bc23-0f5cb8920243",
-        "4938169b-14cc-450a-a22b-37b2ed132f38"
-      ],
-      "settings": {
-        "bg-color": "#f8f8f8",
-        "margin-top": "-110px",
-        "margin-top-mobile": "inehrit",
-        "bg-color-icons": "#5b5b5b",
-        "icons-size": "40px",
-        "icons-color": "#fac636",
-        "text-color": "#ffffff",
-        "mobile-style-glider": false,
-        "button_label": "Zur Studie",
-        "button_link": "https:\/\/www.tandfonline.com\/doi\/abs\/10.1080\/0164212X.2015.1066220"
-      }
     }
   },
   "order": [
     "main",
     "1636118585f2235ab4",
     "163637357217765969",
-    "1636117119614ccba3",
-    "16363785189a52b41b"
+    "1636117119614ccba3"
   ]
 }
