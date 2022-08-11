@@ -123,78 +123,6 @@
         "button_label": "Zur Studie",
         "button_link": "https:\/\/www.tandfonline.com\/doi\/abs\/10.1080\/0164212X.2015.1066220"
       }
-    },
-    "1636117136d575d1f5": {
-      "type": "html-with-image",
-      "settings": {
-        "spacer_top": true,
-        "spacer_bottom": true,
-        "bg-color": "",
-        "bg-color-text-html": "",
-        "icon_title": true,
-        "icons_duotone": "sleep",
-        "subheading": "",
-        "title": "Gewichtsdecken bei Schlaflosigkeit",
-        "text_color": "#3a3c3c",
-        "image": "shopify:\/\/shop_images\/TD-LP-Science-images_mentalhealth-web.jpg",
-        "image_position": "left",
-        "content_html": "",
-        "content_rich": "<p>Die Gewichtsdecken werden oft Menschen empfohlen, die unter Schlaflosigkeit leiden. Die Studie “Positive Effects of a Weighted Blanket on Insomnia” (siehe Studie 1) von Ackerley, R, Badre, G. und Olausson, H. aus dem Jahr 2015 zeigte die Auswirkungen einer Gewichtsdecke auf Schlaflosigkeit anhand objektiver und subjektiver Messungen. Objektiv stellten die Untersucher fest, dass sich die Einschlafzeit und die Bewegungen der Probanden während der Verwendung der Gewichtsdecke verringerten. Subjektiv schliefen die Teilnehmer gerne mit der Decke, fanden es einfacher, einzuschlafen und hatten einen besseren Schlaf, bei dem sie sich am Morgen erholter fühlten. Insgesamt zeigte sich, dass die Teilnehmer, die die Gewichtsdecke benutzten, nachts ruhiger schlafen. Das Ergebnis der Studie zeigt, dass eine Gewichtsdecke bei der Verringerung von Schlaflosigkeit durch veränderte taktile Reize helfen kann und somit einen innovativen, nicht-pharmakologischen Ansatz und ein ergänzendes Instrument zur Verbesserung der Schlafqualität darstellen. Diesen Ansatz wird von einer weiteren, aktuellen Studie “Weighted Blanket Improves Sleep And Increases Relaxation” (siehe Studie 2) unterstützt. Die Verwendung einer Gewichtsdecke verringert nach Angaben der teilnehmenden Probanden das Stressempfinden, erhöht das Gefühl der Entspannung und kann den Schlaf verbessern und die nächtliche Wachzeit verringern.<\/p>",
-        "button_style": true,
-        "link_text": "Studie 1",
-        "link_url": "https:\/\/www.diva-portal.org\/smash\/record.jsf?pid=diva2%3A1081315&dswid=3819",
-        "button_extra": true,
-        "link_text_extra": "Studie 2",
-        "link_url_extra": "https:\/\/www.proquest.com\/openview\/8516cfd0a2a1bb1d9ad7f1e31a7fa1a9\/1?pq-origsite=gscholar&cbl=2046369"
-      }
-    },
-    "16361171538caeee29": {
-      "type": "html-with-image",
-      "settings": {
-        "spacer_top": true,
-        "spacer_bottom": true,
-        "bg-color": "",
-        "bg-color-text-html": "",
-        "icon_title": true,
-        "icons_duotone": "autism",
-        "subheading": "",
-        "title": "Gewichtsdecken bei Autismus",
-        "text_color": "#3a3c3c",
-        "image": "shopify:\/\/shop_images\/TD-LP-Science-images_autism-web.jpg",
-        "image_position": "right",
-        "content_html": "",
-        "content_rich": "<p>Die erste Studie untersuchte die Auswirkung der Gewichtsdecke auf den Schlaf bei Kindern auf dem Autismus-Spektrum. Das Hauptaugenmerk lag auf der Schlafdauer. Die Studie kam zu dem Ergebnis, dass die Gewichtsdecke keinen Einfluss auf die Schlafdauer habe. Die Wissenschaftler konnten jedoch beobachten, dass die Gewichtsdecke von Kindern und Eltern bevorzugt wurde. Was bei der Studie nicht untersucht wurde, war der Einfluss der Decke auf die Schlafqualität. Die zweite Studie erwies, dass Gewichtsdecken die allgemeine Schlafqualität der Kinder mit einer Autismus-Spektrum-Störung verbesserten, insbesondere die Einschlafzeit, die Anzahl der nächtlichen Aufwachvorgänge, die Dauer des Schlafs und das Verhalten am Morgen. Diese Studie zeigt, dass die Notwendigkeit zusätzlicher Forschungsstudien zur Verbesserung der Schlafqualität bei Kindern mit Autismus-Spektrum-Störung und sensorischer Überempfindlichkeit unter Verwendung robusterer Methoden und objektiverer Messinstrumente ein wichtigen Aspekt in der Forschung einnehmen sollte.<\/p>",
-        "button_style": true,
-        "link_text": "Studie 3",
-        "link_url": "https:\/\/www.researchgate.net\/publication\/263935727_Weighted_Blankets_and_Sleep_in_Autistic_Children--A_Randomized_Controlled_Trial",
-        "button_extra": true,
-        "link_text_extra": "Studie 4",
-        "link_url_extra": "https:\/\/www.magonlinelibrary.com\/doi\/abs\/10.12968\/ijtr.2016.23.4.173"
-      }
-    },
-    "16366500592a8979ac": {
-      "type": "html-with-image",
-      "settings": {
-        "spacer_top": true,
-        "spacer_bottom": true,
-        "bg-color": "",
-        "bg-color-text-html": "",
-        "icon_title": false,
-        "icons_duotone": "sleep",
-        "subheading": "",
-        "title": "Unsere eigene Schlafstudie zur Wirkung von Gewichtsdecken",
-        "text_color": "#3a3c3c",
-        "image": "shopify:\/\/shop_images\/cheap-weighted-blankets-600x400-A.jpg",
-        "image_position": "left",
-        "content_html": "Wir wollten es genauer wissen. Deshalb haben wir eine eigene Studie zur Wirkung von Gewichtsdecken durchgeführt. Mit 100 Probanden haben wir selbst den Test gemacht und einige interessante Erkenntnisse über die Wirkung von Gewichtsdecken gewonnen.",
-        "content_rich": "<p>Use this block if you want to add simple text without complex styling or if you need a dynamic text<\/p>",
-        "button_style": true,
-        "link_text": "Unsere Schlafstudie",
-        "link_url": "https:\/\/therapiedecken.de\/pages\/unsere-schlafstudie-mit-gewichtsdecken",
-        "button_extra": false,
-        "link_text_extra": "",
-        "link_url_extra": "https:\/\/therapiedecken.de\/pages\/unsere-schlafstudie-mit-gewichtsdecken"
-      }
     }
   },
   "order": [
@@ -202,9 +130,6 @@
     "1636118585f2235ab4",
     "163637357217765969",
     "1636117119614ccba3",
-    "16363785189a52b41b",
-    "1636117136d575d1f5",
-    "16361171538caeee29",
-    "16366500592a8979ac"
+    "16363785189a52b41b"
   ]
 }
