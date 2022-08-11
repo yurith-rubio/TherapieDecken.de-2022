@@ -35,7 +35,7 @@ Testing
   {%- assign downcase_option = option.name | downcase -%}
   {%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-{{ option.name | handle }}{%- endcapture -%}
 
-  {% if product.handle == 'therapiedeckens' %}
+  {% if product.handle == 'therapiedecken' %}
     {% render 'product-form-collapsible', settings: settings, block: block, product:product, 
       color_label:color_label, size_label:size_label, gewicht_label:gewicht_label
       size_chart_page:size_chart_page, product_popovers:product_popovers,
