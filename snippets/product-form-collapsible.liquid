@@ -1,32 +1,4 @@
-<div class="ProductForm_CollapsibleOption">
-    <div class="ProductForm_CollapsibleSelector">
-      <div class="ProductForm__Label" style="margin-bottom: 0">
-        {{ option.position }}. {{ option.name }}: <span class="ProductForm__SelectedValue" data-option-position="{{ option.position }}">{{ option.selected_value }}</span>
-      </div>
-      <span class="ProductForm_CollapsibleArrow arrowRotate icon-arrow_forward_ios"></span>
-    </div>
-    <div class="ProductForm__Option hidden {% if show_option_label %}ProductForm__Option--labelled{% endif %}">
-      {%- if show_option_label -%}
-      {%- assign size_chart_page = block.settings.size_chart -%}
-  
-      <span class="ProductForm__Label">
-        {{ option.position }}. {{ option.name }}:
-  
-        {% if color_label contains downcase_option and block.settings.show_color_swatch %}
-        <span class="ProductForm__SelectedValue">{{ option.selected_value }}</span>
-        {% endif %}
-  
-        {%- if size_label contains downcase_option and size_chart_page != blank -%}
-        <button type="button" class="ProductForm__LabelLink Link Text--subdued" data-action="open-modal"
-          aria-controls="modal-{{ size_chart_page.handle }}">
-          {{- 'product.form.size_chart' | t -}}
-        </button>
-        {%- endif -%}
-      </span>
-      {%- endif -%}
-      
-      {% render 'options-static-notes', option: option %}
-      
+
       {%- if color_label contains downcase_option and block.settings.show_color_swatch -%}
   	  <ul class="ColorSwatchList HorizontalList HorizontalList--spacingTight">
         {%- assign color_swatch_config = settings.color_swatch_config | newline_to_br | split: '<br />' -%}
@@ -290,5 +262,3 @@
   
       {%- assign product_popovers = product_popovers | append: popover_html -%}
       {%- endif -%}
-    </div>
-  </div>
