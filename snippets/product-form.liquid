@@ -49,7 +49,7 @@ Testing
         {%- assign size_chart_page = block.settings.size_chart -%}
     
         <span class="ProductForm__Label">
-          {{ option.position }}. {{ option.name }}:
+          {{ option.position }}. {{ option.name }}{{ selected_variant }}:
     
           {% if color_label contains downcase_option and block.settings.show_color_swatch %}
           <span class="ProductForm__SelectedValue">{{ option.selected_value }}</span>
