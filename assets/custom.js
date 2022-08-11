@@ -58,7 +58,7 @@
         label.textContent = selectedVariant;
       } 
       if (event.detail.variant == null) {
-        label.textContent = "";
+        label.textContent = "Nicht verfügbar";
       }
     });
   }
