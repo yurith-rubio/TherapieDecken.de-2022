@@ -23,10 +23,66 @@
         "review_starts": false,
         "content": ""
       }
+    },
+    "1660227878bd9ff0e4": {
+      "type": "icons-custom",
+      "blocks": {
+        "147ad668-f554-4a17-9105-acbd61e864e9": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "none",
+            "title_icon": "Icon Title",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        },
+        "11e5e112-b9aa-46b1-b420-a9758a0a3324": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "none",
+            "title_icon": "Icon Title",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        },
+        "f5a25951-bd00-43b9-a274-1ac0bdbe46f9": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "none",
+            "title_icon": "Icon Title",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        },
+        "86e2d266-98bd-4fad-a0a0-e19df5e24cf9": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "none",
+            "title_icon": "Icon Title",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "147ad668-f554-4a17-9105-acbd61e864e9",
+        "11e5e112-b9aa-46b1-b420-a9758a0a3324",
+        "f5a25951-bd00-43b9-a274-1ac0bdbe46f9",
+        "86e2d266-98bd-4fad-a0a0-e19df5e24cf9"
+      ],
+      "settings": {
+        "bg-color": "",
+        "margin-top": "auto",
+        "margin-top-mobile": "inehrit",
+        "bg-color-icons": "",
+        "icons-size": "40px",
+        "icons-color": "#fac636",
+        "text-color": "",
+        "mobile-style-glider": false,
+        "button_label": "",
+        "button_link": ""
+      }
     }
   },
   "order": [
     "main",
-    "1636118585f2235ab4"
+    "1636118585f2235ab4",
+    "1660227878bd9ff0e4"
   ]
 }
