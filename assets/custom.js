@@ -16,7 +16,7 @@
     });
     selectedInfoMetafield.classList.remove("hide");
   }
-*/
+
   document.addEventListener("variant:changed", function(event) { // (1)  
     ["second_weight_info", "weight_info", "cover_type_info"].forEach(info => {
       if (event.detail.variant) {
@@ -26,7 +26,7 @@
 	//console.log("variant changed");
     //console.log(event.detail.variant?.option1);
   });
-
+*/
   const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
   const collapsibleContent = document.querySelectorAll(".ProductForm__Option");
 
