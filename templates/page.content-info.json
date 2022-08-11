@@ -30,7 +30,7 @@
         "147ad668-f554-4a17-9105-acbd61e864e9": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "none",
+            "simple_icons": "euro",
             "title_icon": "Icon Title",
             "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
           }
@@ -38,7 +38,7 @@
         "11e5e112-b9aa-46b1-b420-a9758a0a3324": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "none",
+            "simple_icons": "10",
             "title_icon": "Icon Title",
             "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
           }
@@ -46,7 +46,7 @@
         "f5a25951-bd00-43b9-a274-1ac0bdbe46f9": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "none",
+            "simple_icons": "21-45",
             "title_icon": "Icon Title",
             "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
           }
@@ -54,7 +54,7 @@
         "86e2d266-98bd-4fad-a0a0-e19df5e24cf9": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "none",
+            "simple_icons": "less-stress-study",
             "title_icon": "Icon Title",
             "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
           }
