@@ -40,7 +40,11 @@ Testing
     <div class="ProductForm_CollapsibleOption">
       <div class="ProductForm_CollapsibleSelector">
         <div class="ProductForm__Label" style="margin-bottom: 0">
-          {{ option.position }}. {{ option.name }}: <span class="ProductForm__SelectedValue" data-option-position="{{ option.position }}">{{ selected_variant.id }}</span>
+          {{ option.position }}. {{ option.name }}: 
+          <span class="ProductForm__SelectedValue" data-option-position="{{ option.position }}">
+          {{ option.selected_value }}
+          {{ selected_variant.id | json }}
+          </span>
         </div>
         <span class="ProductForm_CollapsibleArrow arrowRotate icon-arrow_forward_ios"></span>
       </div>
