@@ -4,7 +4,7 @@
 
 
 //$(document).ready(function () {
-/*--
+
   function hideOption(selector, selectedVariant) {
     const infoMetafield = document.querySelectorAll("." + selector);
     const selectedInfoMetafield = document.getElementById(selector + "_" + selectedVariant);
@@ -26,7 +26,7 @@
 	//console.log("variant changed");
     //console.log(event.detail.variant?.option1);
   });
-*/
+
   const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
   const collapsibleContent = document.querySelectorAll(".ProductForm__Option");
 
