@@ -40,7 +40,7 @@ Testing
     <div class="ProductForm_CollapsibleOption">
       <div class="ProductForm_CollapsibleSelector">
         <div class="ProductForm__Label" style="margin-bottom: 0">
-          {{ option.position }}. {{ option.name }}: <span class="ProductForm__SelectedValue" data-option-position="{{ option.position }}">{{ option.selected_value }}</span>
+          {{ option.position }}. {{ option.name }}: <span class="ProductForm__SelectedValue" data-option-position="{{ option.position }}">{{ option.selected_value }}{{ selected_variant | json }}</span>
         </div>
         <span class="ProductForm_CollapsibleArrow arrowRotate icon-arrow_forward_ios"></span>
       </div>
@@ -49,7 +49,7 @@ Testing
         {%- assign size_chart_page = block.settings.size_chart -%}
     
         <span class="ProductForm__Label">
-          {{ option.position }}. {{ option.name }} z{{ selected_variant | json }}:
+          {{ option.position }}. {{ option.name }}:
     
           {% if color_label contains downcase_option and block.settings.show_color_swatch %}
           <span class="ProductForm__SelectedValue">{{ option.selected_value }}</span>
