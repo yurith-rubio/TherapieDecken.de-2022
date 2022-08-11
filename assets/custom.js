@@ -24,7 +24,7 @@
       }
     });
 	console.log("variant changed");
-    console.log(event.detail.variant?.option);
+    console.log(event.detail.variant);
   });
 
   const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
