@@ -4,7 +4,7 @@
 
 
 //$(document).ready(function () {
-
+/*--
   function hideOption(selector, selectedVariant) {
     const infoMetafield = document.querySelectorAll("." + selector);
     const selectedInfoMetafield = document.getElementById(selector + "_" + selectedVariant);
@@ -16,7 +16,7 @@
     });
     selectedInfoMetafield.classList.remove("hide");
   }
-
+*/
   document.addEventListener("variant:changed", function(event) { // (1)  
     ["second_weight_info", "weight_info", "cover_type_info"].forEach(info => {
       if (event.detail.variant) {
@@ -71,6 +71,7 @@
       infoToShow.classList.remove("hidden");
     });
   });
+
 
 
 
