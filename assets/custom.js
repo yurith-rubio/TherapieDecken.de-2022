@@ -23,8 +23,8 @@
       	hideOption(info, event.detail.variant.id);
       }
     });
-	//console.log("variant changed");
-    //console.log(event.detail.variant?.option1);
+	console.log("variant changed");
+    console.log(event.detail);
   });
 
   const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
@@ -51,10 +51,14 @@
     document.addEventListener("variant:changed", function changeNewValueName(event) { // (1)  
       const selectedOption = `{"option": "${number}"}`;
       
+      const label = document.querySelector(`.ProductForm__SelectedValue[data-option-position="${number}"]`);
+      
       if (event.detail.variant){
-        const label = document.querySelector(`.ProductForm__SelectedValue[data-option-position="${number}"]`);
         const selectedVariant = event.detail.variant["option" + number];
         label.textContent = selectedVariant;
+      } 
+      if (event.detail.variant == null) {
+        label.textContent = "";
       }
     });
   }
@@ -71,6 +75,7 @@
       infoToShow.classList.remove("hidden");
     });
   });
+
 
 
 
