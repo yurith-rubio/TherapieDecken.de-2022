@@ -57,7 +57,8 @@
         label.textContent = selectedVariant;
       } 
       if (event.detail.variant == null) {
-        console.log("null");
+        const label = document.querySelector(`.ProductForm__SelectedValue[data-option-position="${number}"]`);
+        label.textContent = "Nicht verfügbar";
       }
     });
   }
