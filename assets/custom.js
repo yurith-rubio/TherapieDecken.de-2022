@@ -51,13 +51,13 @@
     document.addEventListener("variant:changed", function changeNewValueName(event) { // (1)  
       const selectedOption = `{"option": "${number}"}`;
       
+      const label = document.querySelector(`.ProductForm__SelectedValue[data-option-position="${number}"]`);
+      
       if (event.detail.variant){
-        const label = document.querySelector(`.ProductForm__SelectedValue[data-option-position="${number}"]`);
         const selectedVariant = event.detail.variant["option" + number];
         label.textContent = selectedVariant;
       } 
       if (event.detail.variant == null) {
-        const label = document.querySelector(`.ProductForm__SelectedValue[data-option-position="${number}"]`);
         label.textContent = "Nicht verfügbar";
       }
     });
