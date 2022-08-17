@@ -23,6 +23,11 @@
     console.log("clicked");
   }
 
+  let newPromise = new Promise (
+    function(){
+      document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
+      console.log("4 kg hidden");
+  });
 
 
   function hideValues(event){
