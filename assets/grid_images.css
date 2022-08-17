@@ -1,0 +1,14 @@
+.grid_image_div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid_image{
+  display: block;
+  position: relative;
+  width: auto;
+  height: 300px;
+}
+.grid_image img{
+  width: auto;
+  height: 100%;
+}
