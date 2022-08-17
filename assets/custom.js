@@ -22,7 +22,7 @@
   function hideValues(event){
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
-      const myTimeout = setTimeout(myGreeting, 1000);
+      const myTimeout = setTimeout(myGreeting, 4000);
       collapsibleContent.forEach(collapsible => {
         collapsible.classList.remove("hidden");
       });
