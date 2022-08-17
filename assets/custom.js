@@ -21,9 +21,13 @@
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
       document.querySelector(".gewicht_option > input[value = '6 kg']").click();
-      const rightValue = document.querySelector(".ProductForm__SelectedValue");
-      console.log("rightValue");
-      console.log(rightValue);
+      const values = document.querySelectorAll(".ProductForm__SelectedValue");
+      const selectedValue = values.find(value => {
+        if (value.innerText == '4 kg'){
+          return value
+        }
+      });
+      selectedValue.innerText = "6 kg";
       
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
