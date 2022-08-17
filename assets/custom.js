@@ -44,7 +44,7 @@
     });
 	console.log("variant changed");
     console.log(event.detail);
-    if(event.detail.variant === 'null'){
+    if(event.detail.variant === null){
       console.log("it is null");
     }
     hideValues(event);
