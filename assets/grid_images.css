@@ -1,5 +1,5 @@
 .grid_images_wrapper{
-  padding-top: 100px;
+  padding: 100px 30px 0 30px;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px;
-  padding: 80px 30px;
+  padding: 80px 0;
 }
 .grid_image a{
   display: block;
