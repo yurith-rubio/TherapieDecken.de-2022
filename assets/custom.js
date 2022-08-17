@@ -20,8 +20,6 @@
 
 
   function hideValues(event){
-    
-    
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       const myTimeout = setTimeout(myGreeting, 1000);
       function myGreeting(){
