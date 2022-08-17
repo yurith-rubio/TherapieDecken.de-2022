@@ -82,7 +82,7 @@
     <h2 class="Heading u-h2">{{ section.settings.discount_heading }}</h2>
     <p>{{ section.settings.discount_subheading }}</p>
     <div class="white-rabat"><b>{{ section.settings.discount_code }}</b></div>
-    <a href="https://www.therapiedecken.de/discount/DAK10?redirect=/products/therapiedecken">
+    <a href="{{ section.settings.button_url }}">
       <div class="Button Button--primary">{{ section.settings.button_text }}</div>
     </a>
     <!-- <p style="margin-top: 10px;">Verfällt am <b>2.07.2022</b></p> -->
@@ -118,6 +118,11 @@
         "id": "button_text",
         "label": "Button text",
         "default": "JETZT EINLÖSEN"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button link"
       }
     ],
     "presets": [
