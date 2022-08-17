@@ -94,7 +94,7 @@
           section.settings.image -%}{%- endcapture -%}
 
           {%- assign image_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            <img class="Image--lazyLoad Image--slide{{ section.settings.image_position | capitalize }}"
+            <img class="FeatureText__Image Image--lazyLoad Image--slide{{ section.settings.image_position | capitalize }}"
               data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto"
               alt="{{ section.settings.image.alt | escape }}">
 
