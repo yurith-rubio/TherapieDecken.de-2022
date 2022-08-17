@@ -56,6 +56,7 @@
     });
     collapsibleContent.forEach(collapsible => {
       collapsible.style.visibility = "hidden";
+      collapsible.style.height = "0";
     });
   }
 
@@ -92,6 +93,7 @@
       const number = getCollapsbleOptionNumber(buttonSelected);
       const value = changeNewValueName(number);
       infoToHide.style.visibility = "hidden";
+      infoToHide.style.height = "0";
       infoToShow.removeAttribute('style');
     });
   });
