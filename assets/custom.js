@@ -26,7 +26,7 @@
   function hideValues(event){
     console.log(event.explicitOriginalTarget.innerText);
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
-      document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
+      
       document.querySelector("li.gewicht_option:not(.hidden)").click();
       console.log("bis hier 2");
     }
@@ -37,7 +37,8 @@
   }
 
   let newPromise = new Promise (){
-    
+    document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
+    console.log("4 kg hidden");
   }
 
   document.addEventListener("variant:changed", function(event) { // (1)  
