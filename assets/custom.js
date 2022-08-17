@@ -32,7 +32,7 @@
       const selectedElement = gewichtOptions[0];
       const test = document.querySelector(".Header__LogoLink")
       console.log(selectedElement);
-      test.click();
+      selectedElement.click();
       
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
