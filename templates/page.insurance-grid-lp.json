@@ -41,8 +41,9 @@
         "1d2bd601-7205-4be7-988c-99dbf5e06caf"
       ],
       "settings": {
-        "subheading": "Sub-heading",
-        "title": "Title",
+        "bg-color": "",
+        "subheading": "",
+        "title": "Krankenkassen und Therapiedecken: Wählen Sie jetzt Ihre Krankenkasse aus",
         "text_color": "#3a3c3c"
       }
     }
