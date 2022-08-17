@@ -92,6 +92,8 @@
       hideShowCollapsibles();
       const number = getCollapsbleOptionNumber(buttonSelected);
       const value = changeNewValueName(number);
+      infoToHide.setAttribute("visibility", "hidden");
+      infoToShow.removeAttribute("visibility");
     });
   });
 
