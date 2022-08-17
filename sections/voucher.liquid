@@ -1,3 +1,125 @@
+{% style %}
+
+.FeatureText__ImageWrapper.rabatt-code-page img {
+  width: 38em;
+  max-width: inherit;
+}
+
+.FeatureText__ContentWrapper.rabatt-code-page {
+  background: #5b5b5b;
+  color: white!important;
+  padding: 10% 5%!important;
+}
+
+.FeatureText__ContentWrapper.rabatt-code-page h2 {
+  color: white!important;
+}
+
+.grey-rabat.rabatt-code-page {
+  max-width: 600px;
+  margin-top: -100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overview-rabatt-code-page {
+  display: flex;
+  max-width: 1024px;
+  margin: auto;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+
+.listing-rabatt-code-page {
+  display: inline-block;
+  background: #f1f1f1;
+  margin: auto 5px;
+  padding: 5%;
+  width: 30%;
+  margin-top: 5%;
+  text-align: center;
+}
+  
+.listing-rabatt-code-page .Button--primary {
+  	font-size: 10px!important;
+    padding: 10px 15px;
+  }
+.insuranceSaleVoucher_ul li:before{
+  color: #fac636;
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+.insuranceSaleVoucher_ul li{
+  list-style: none;
+}
+
+@media only screen and (max-width: 640px){  
+  .grey-rabat.rabatt-code-page {
+    margin: -40% auto 5%;
+  }
+  .listing-rabatt-code-page {
+    width: 45%;
+    min-height: 460px;
+  }
+  .FeatureText__ImageWrapper.rabatt-code-page img {
+    width: 100%;
+  }
+  .insuranceSaleVoucher_FeaturedText{
+	text-align: left;
+  }
+}
+  
+
+{% endstyle %}
+
+<div class="FeaturedHtmlImage-container" style="margin-top: 50px">
+  <div class="insuranceSaleVoucher_FeaturedText FeatureText FeatureText--withImage FeatureText--imageRight">
+    <div class="FeatureText__ContentWrapper rabatt-code-page">
+      <div class="FeatureText__Content">
+        <div class="SectionHeader__Description Rte">
+          <h2>
+            <span style="color:#fac636">
+            10€ auf Therapiedecken </span>
+            <br>
+            <span style="color:#fff">
+            für DAK Krankenkasse
+            </span>
+          </h2>
+
+          <ul class="insuranceSaleVoucher_ul" style="color:#fff">
+            <li>Jetzt als Mitglied der DAK Krankenkasse sparen und schon bald besser schlafen.</li>
+            <li>Therapiedecken für weniger Stress und mehr Wohlbefinden.</li>
+            <li>Hilft bei Schlafstörungen, Schlafproblemen, als auch bei Entwicklungsstörungen, Syndromen und progredienten Erkrankungen.</li>
+            <li>28 Tage Probeschlafen.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="FeatureText__ImageWrapper rabatt-code-page">
+      <img src="//cdn.shopify.com/s/files/1/2451/6611/files/Insurance-lp-image2_400x.jpg?v=1656500179 400w">
+    </div>
+  </div>
+</div>
+
+<div id="rabatt_code" style="position: relative; top: -200px;"></div>
+
+<div class="grey-rabat rabatt-code-page">
+  <div class="tresc">
+    <h2 class="Heading u-h2">Jetzt sparen!</h2>
+    <p>Erhalten Sie 10€ Rabatt mit Code:</p>
+    <div class="white-rabat"><b>DAK-10</b></div>
+    <a href="https://www.therapiedecken.de/discount/DAK10?redirect=/products/therapiedecken">
+      <div class="Button Button--primary">JETZT EINLÖSEN</div>
+    </a>
+    <!-- <p style="margin-top: 10px;">Verfällt am <b>2.07.2022</b></p> -->
+
+    <p style="margin: 10px 0">Wir fragen ggf. nach den letzten 4 Ziffern der Versicherungsnummer für Ihre Bestellung. Durch das Klicken der Schaltfläche “Jetzt Einlösen” wird der Rabattcode automatisch zu Ihrem Warenkorb hinzugefügt.</p>
+  </div>
+</div>
+
 {% schema %}
   {
     "name": "Section name",
