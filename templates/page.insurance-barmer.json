@@ -33,6 +33,7 @@
     },
     "165650093635a88658": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "paddings": false,
         "custom_liquid": "{% render 'insurance-sale-voucher' %}"
@@ -63,6 +64,11 @@
         "fit_image_height": true,
         "image_position": "right"
       }
+    },
+    "16607286030f19bafb": {
+      "type": "voucher",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -70,6 +76,7 @@
     "16565000715b05fcb2",
     "main",
     "165650093635a88658",
-    "1660721539d92a4feb"
+    "1660721539d92a4feb",
+    "16607286030f19bafb"
   ]
 }
