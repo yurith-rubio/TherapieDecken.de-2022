@@ -17,12 +17,11 @@
     selectedInfoMetafield.classList.remove("hide");
   }
 
-
-
   function hideValues(event){
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
-      document.querySelector(".gewicht_option > input[value = '6 kg']").click();
+      const firstAvailable = document.querySelector(".gewicht_option > input[value = '6 kg']").click();
+      console.log(firstAvailable);
       
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
