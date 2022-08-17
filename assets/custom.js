@@ -30,8 +30,9 @@
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
       const gewichtOptions = document.querySelectorAll("li.gewicht_option:not(.hidden)");
       const selectedElement = gewichtOptions[0];
+      const test = document.querySelector(".Header__LogoLink")
       console.log(selectedElement);
-      selectedElement.click();
+      test.click();
       
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
