@@ -20,12 +20,13 @@
 
 
   function hideValues(event){
-    const myTimeout = setTimeout(myGreeting, 1000);
+    
+    
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
-      let newPromise = new Promise (
-        function myGreeting(){
-          document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
-      });
+      const myTimeout = setTimeout(myGreeting, 1000);
+      function myGreeting(){
+        document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
+      }
       document.querySelector("li.gewicht_option:not(.hidden)").click();
       console.log("4 kg hidden");     
     }
