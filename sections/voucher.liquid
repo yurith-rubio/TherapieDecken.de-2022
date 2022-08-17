@@ -83,11 +83,9 @@
     <p>{{ section.settings.discount_subheading }}</p>
     <div class="white-rabat"><b>{{ section.settings.discount_code }}</b></div>
     <a href="{{ section.settings.button_url }}">
-      <div class="Button Button--primary">{{ section.settings.button_text }}</div>
+      <div class="Button Button--primary" style="margin-bottom:15px">{{ section.settings.button_text }}</div>
     </a>
-    <span style="margin-top: 10px;">
-      {{ section.settings.content }}
-    </span>
+    {{ section.settings.content }}
   </div>
 </div>
 
