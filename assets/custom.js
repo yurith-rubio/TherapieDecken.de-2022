@@ -24,7 +24,6 @@
       const 150size = document.querySelector("li.HorizontalList__Item > input[value = '4 kg']");
       console.log("150size");
       console.log(150size);
-      document.querySelector(".gewicht_option > input[value = '6 kg']").click();
     }
   }
 
