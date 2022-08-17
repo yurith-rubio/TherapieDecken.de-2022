@@ -19,8 +19,8 @@
 
 
   function clickFirst(firstOption){
-    firstOption.click();
-    console.log("clicked");
+    firstOption.setAttribute("checked", "checked");
+    console.log("checked");
   }
 
   function hideValues(event){
