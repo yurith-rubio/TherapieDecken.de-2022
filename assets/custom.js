@@ -21,6 +21,7 @@
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
       const firstAvailable = document.querySelector(".gewicht_option > input[value = '6 kg']").click();
+      console.log("firstAvailable");
       console.log(firstAvailable);
       
     }
