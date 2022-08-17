@@ -19,7 +19,7 @@
 
   function hideValues(event){
     console.log("hide values");
-    console.log(event.detail.variant);
+    console.log(event.detail);
   }
 
   document.addEventListener("variant:changed", function(event) { // (1)  
