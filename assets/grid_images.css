@@ -15,9 +15,9 @@
   display: block;
   position: relative;
   width: auto;
-  height: 300px;
+  height: auto;
 }
 .grid_image img{
   width: auto;
-  height: 100%;
+  height: auto;
 }
