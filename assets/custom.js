@@ -20,6 +20,9 @@
   function hideValues(event){
     console.log("hide values");
     console.log(event.explicitOriginalTarget.innerText);
+    if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
+      console.log("this is 150 x 220 cm");
+    }
   }
 
   document.addEventListener("variant:changed", function(event) { // (1)  
