@@ -1,3 +1,6 @@
+.grid_images_wrapper{
+  padding: 100px 0;
+}
 .grid_image_div{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
