@@ -30,9 +30,8 @@
       collapsibleContent.forEach(collapsible => {
         collapsible.classList.remove("hidden");
       });
-      console.log("bis hier");
       document.querySelector("li.gewicht_option:not(.hidden)").click();
-      
+      console.log("bis hier 2");
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
       document.querySelector(".gewicht_option > input[value = '6 kg']").click();
