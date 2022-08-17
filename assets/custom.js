@@ -17,7 +17,7 @@
     selectedInfoMetafield.classList.remove("hide");
   }
 
-  const clickEvent = new MouseEvent("click", {
+  var clickEvent = new MouseEvent("click", {
       "view": window,
       "bubbles": true,
       "cancelable": false
