@@ -30,6 +30,7 @@
       collapsibleContent.forEach(collapsible => {
         collapsible.classList.remove("hidden");
       });
+      console.log("bis hier");
       document.querySelector("li.gewicht_option:not(.hidden)").click();
       
     }
