@@ -37,12 +37,38 @@
         "paddings": false,
         "custom_liquid": "{% render 'insurance-sale-voucher' %}"
       }
+    },
+    "1660721539d92a4feb": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "21c7411c-7d08-45ff-9037-9a4ef06de575": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<p>ERASE the content of the block ABOVE is you want to use this block<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "21c7411c-7d08-45ff-9037-9a4ef06de575"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
+        "image_position": "right"
+      }
     }
   },
   "order": [
     "16564895414280962f",
     "16565000715b05fcb2",
     "main",
-    "165650093635a88658"
+    "165650093635a88658",
+    "1660721539d92a4feb"
   ]
 }
