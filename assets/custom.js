@@ -90,7 +90,7 @@
 	console.log("variant changed");
     console.log(event.detail);
     hideValues(event);
-    changeNewValueName();
+    changeNewValueName(2);
   });
 
 
