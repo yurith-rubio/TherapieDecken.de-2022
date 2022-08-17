@@ -7,6 +7,7 @@
         {% if section.settings.bg-color != blank %} style="background-color:{{ section.settings.bg-color }}; {% endif %}">
          
 <div class="grid_images_wrapper">
+  <div class="heading_wrapper SectionHeader--center">
   {%- if section.settings.subheading != blank -%}
     <p class="SectionHeader__SubHeading Heading u-h6"
        style="color: {{ section.settings.text_color }};">{{ section.settings.subheading | escape }}</p>
@@ -16,6 +17,7 @@
     <h2 class="SectionHeader__Heading Heading u-h2"
         style="color: {{ section.settings.text_color }};">{{ section.settings.title | escape }}</h2>
   {%- endif -%}
+  </div>
   <div class="grid_image_div">
     {% for blocks in section.blocks %}
     <div class="grid_image">
