@@ -39,8 +39,8 @@
       	hideOption(info, event.detail.variant.id);
       }
     });
-	//console.log("variant changed");
-    //console.log(event.detail);
+	console.log("variant changed");
+    console.log(event.detail);
     hideValues(event);
   });
 
