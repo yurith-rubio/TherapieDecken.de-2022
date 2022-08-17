@@ -46,7 +46,11 @@
     console.log(event.detail);
     
     if(event.detail.variant === null){
-
+      const weightOptions = document.querySelectorAll("li.gewicht_option");
+      weightOptions.forEach(option => {
+        option.click();
+       
+      });
       console.log("it is null");
     }
     hideValues(event);
