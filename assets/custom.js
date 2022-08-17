@@ -24,7 +24,7 @@
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
       document.querySelector(".ProductForm_CollapsibleSelector:not(.hidden)").click();
       const options = document.querySelectorAll("li.gewicht_option");
-      options[1].click();
+      options[2].click();
       console.log("done");
           
     }
@@ -32,8 +32,7 @@
       document.querySelector(".gewicht_option > input[value = '6 kg']").click();
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.remove("hidden");
     }
-    
-    console.log("4 kg hidden"); 
+
   }
 
 
