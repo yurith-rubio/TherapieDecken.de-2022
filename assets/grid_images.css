@@ -6,8 +6,8 @@
 .grid_image_div{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-  padding: 80px 0;
+  grid-gap: 40px;
+  padding: 80px 30px;
 }
 .grid_image a{
   display: block;
@@ -24,8 +24,8 @@
 }
 @media (max-width: 1023px){
   .grid_images_wrapper{
-    padding-left: 30px;
-    padding-right: 30px;
+    gap: 20;
+    max-width: 700px;
   }
 }
 @media (max-width: 640px){
