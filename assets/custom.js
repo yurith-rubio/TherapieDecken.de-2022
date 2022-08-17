@@ -19,20 +19,15 @@
 
 
 
-  function hideValues(event){  
+  function hideValues(event){
+    const myTimeout = setTimeout(myGreeting, 1000);
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       let newPromise = new Promise (
-        function(){
+        function(myGreeting){
           document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
-          document.querySelector("li.gewicht_option:not(.hidden)").click();
-          console.log("4 kg hidden");
       });
-      newPromise.then(
-        function(){
-          
-          console.log("bis hier 2");
-        }
-      );      
+      document.querySelector("li.gewicht_option:not(.hidden)").click();
+      console.log("4 kg hidden");     
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
       document.querySelector(".gewicht_option > input[value = '6 kg']").click();
