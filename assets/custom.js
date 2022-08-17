@@ -34,16 +34,7 @@
 
 
 
-  document.addEventListener("variant:changed", function(event) { // (1)  
-    ["second_weight_info", "weight_info", "cover_type_info"].forEach(info => {
-      if (event.detail.variant) {
-      	hideOption(info, event.detail.variant.id);
-      }
-    });
-	console.log("variant changed");
-    console.log(event.detail);
-    hideValues(event);
-  });
+
 
   const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
   const collapsibleContent = document.querySelectorAll(".ProductForm__Option");
@@ -66,7 +57,6 @@
   }
 
   function changeNewValueName(number) {
-    document.addEventListener("variant:changed", function changeNewValueName(event) { // (1)  
       const label = document.querySelector(`.ProductForm__SelectedValue[data-option-position="${number}"]`);
       
       if (event.detail.variant){
@@ -76,7 +66,6 @@
       if (event.detail.variant == null) {
         label.textContent = "Nicht verfügbar";
       }
-    });
   }
 
   collapsibleSelectors.forEach(button => {
@@ -92,7 +81,17 @@
     });
   });
 
-
+  document.addEventListener("variant:changed", function(event) { // (1)  
+    ["second_weight_info", "weight_info", "cover_type_info"].forEach(info => {
+      if (event.detail.variant) {
+      	hideOption(info, event.detail.variant.id);
+      }
+    });
+	console.log("variant changed");
+    console.log(event.detail);
+    hideValues(event);
+    changeNewValueName();
+  });
 
 
 
