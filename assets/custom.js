@@ -18,16 +18,17 @@
   }
 
 
+  function clickFirst(firstOption){
+    firstOption.click();
+    console.log("clicked");
+  }
 
   function hideValues(event){
     console.log(event.explicitOriginalTarget.innerText);
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
       const firstOption = document.querySelector("li.gewicht_option:not(.hidden)");
-      firstOption.click();
-      console.log(firstOption);
-      
-      
+      clickFirst(firstOption);
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
       document.querySelector(".gewicht_option > input[value = '6 kg']").click();
