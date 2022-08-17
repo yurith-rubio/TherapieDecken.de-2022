@@ -20,11 +20,6 @@
 
 
   function hideValues(event){
-    const clickEvent = new MouseEvent("click", {
-      "view": window,
-      "bubbles": true,
-      "cancelable": true
-    });
     
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
