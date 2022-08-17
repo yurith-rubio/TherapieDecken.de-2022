@@ -21,7 +21,11 @@
     console.log("hide values");
     console.log(event.explicitOriginalTarget.innerText);
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
-      document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
+      document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.toggle("hidden");
+      $(".gewicht_option > input[value = '6 kg']").click();
+    }
+    if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
+      document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.toggle("hidden");
       $(".gewicht_option > input[value = '6 kg']").click();
     }
   }
