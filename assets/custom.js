@@ -23,12 +23,20 @@
     console.log("clicked");
   }
 
+  let newPromise = new Promise (){
+    document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
+    console.log("4 kg hidden");
+  }
+
   function hideValues(event){
     console.log(event.explicitOriginalTarget.innerText);
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
-      
-      document.querySelector("li.gewicht_option:not(.hidden)").click();
-      console.log("bis hier 2");
+      myPromise.then(
+        function(){
+          document.querySelector("li.gewicht_option:not(.hidden)").click();
+          console.log("bis hier 2");
+        }
+      );      
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
       document.querySelector(".gewicht_option > input[value = '6 kg']").click();
@@ -36,10 +44,7 @@
     }
   }
 
-  let newPromise = new Promise (){
-    document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
-    console.log("4 kg hidden");
-  }
+
 
   document.addEventListener("variant:changed", function(event) { // (1)  
     ["second_weight_info", "weight_info", "cover_type_info"].forEach(info => {
