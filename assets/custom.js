@@ -44,14 +44,9 @@
     });
 	console.log("variant changed");
     console.log(event.detail);
+    
     if(event.detail.variant === null){
-      const weightOptions = document.querySelectorAll("li.gewicht_option");
-      weightOptions.forEach(option => {
-        option.click();
-        if (event.detail.variant != null){
-          break;
-        } 
-      });
+
       console.log("it is null");
     }
     hideValues(event);
