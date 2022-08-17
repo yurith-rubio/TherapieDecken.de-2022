@@ -33,14 +33,6 @@
         "back_link_url": ""
       }
     },
-    "165650093635a88658": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "paddings": false,
-        "custom_liquid": "{% render 'insurance-sale-voucher' %}"
-      }
-    },
     "1660721539d92a4feb": {
       "type": "text-with-image-new",
       "blocks": {
@@ -83,7 +75,6 @@
     "16564895414280962f",
     "16565000715b05fcb2",
     "main",
-    "165650093635a88658",
     "1660721539d92a4feb",
     "16607286030f19bafb"
   ]
