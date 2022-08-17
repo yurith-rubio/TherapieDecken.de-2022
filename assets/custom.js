@@ -33,7 +33,6 @@
         console.log("4 kg hidden");
     });
     
-    console.log(event.explicitOriginalTarget.innerText);
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       myPromise.then(
         function(){
