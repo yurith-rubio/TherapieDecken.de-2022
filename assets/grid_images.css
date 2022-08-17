@@ -1,6 +1,7 @@
 .grid_image_div{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
 }
 .grid_image{
   display: block;

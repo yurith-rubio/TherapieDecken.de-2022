@@ -31,6 +31,7 @@
         "1d2bd601-7205-4be7-988c-99dbf5e06caf": {
           "type": "Image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/ikk_classic.png"
           }
         }
       },
@@ -42,7 +43,7 @@
       "settings": {
         "subheading": "Sub-heading",
         "title": "Title",
-        "text_color": "#3A3C3C"
+        "text_color": "#3a3c3c"
       }
     }
   },
