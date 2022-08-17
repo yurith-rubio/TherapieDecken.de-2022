@@ -28,7 +28,7 @@
       
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
-      $(".gewicht_option > input[value = '6 kg']").click();
+      document.querySelector(".gewicht_option > input[value = '6 kg']").click();
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.remove("hidden");
     }
   }
