@@ -32,10 +32,6 @@
 
   }
 
-
-
-
-
   const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
   const collapsibleContent = document.querySelectorAll(".ProductForm__Option");
 
