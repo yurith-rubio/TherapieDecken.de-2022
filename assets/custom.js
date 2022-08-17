@@ -60,9 +60,6 @@
         const selectedVariant = event.detail.variant["option" + number];
         label.textContent = selectedVariant;
       } 
-      if (event.detail.variant == null) {
-        label.textContent = "Nicht verfügbar";
-      }
   }
 
   collapsibleSelectors.forEach(button => {
