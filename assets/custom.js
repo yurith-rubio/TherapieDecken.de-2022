@@ -26,6 +26,7 @@
       document.querySelector(".ProductForm_CollapsibleSelector:not(.hidden)").click();
       function myGreeting(){
         document.querySelector("li.gewicht_option:not(.hidden)").click();
+        console.log("done");
       }
           
     }
