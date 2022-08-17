@@ -24,7 +24,7 @@
 }
 @media (max-width: 1023px){
   .grid_image_div{
-    gap: 20;
+    grid-gap: 20px;
   }
   .grid_images_wrapper{
     max-width: 700px;
