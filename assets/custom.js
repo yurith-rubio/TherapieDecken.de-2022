@@ -19,15 +19,15 @@
 
 
   function clickFirst(firstOption){
-    firstOption.setAttribute("checked", "checked");
-    console.log("checked");
+    firstOption.click();
+    console.log("clicked");
   }
 
   function hideValues(event){
     console.log(event.explicitOriginalTarget.innerText);
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
-      const firstOption = document.querySelector("li.gewicht_option:not(.hidden) > input");
+      const firstOption = document.querySelector("li.gewicht_option:not(.hidden)");
       clickFirst(firstOption);
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
