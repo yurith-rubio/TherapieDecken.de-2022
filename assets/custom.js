@@ -53,10 +53,10 @@
 
   function hideShowCollapsibles() {
     collapsibleSelectors.forEach(collapsible => {
-      collapsible.classList.remove("hidden");
+      collapsible.removeAttribute("visibility");
     });
     collapsibleContent.forEach(collapsible => {
-      collapsible.classList.add("hidden");
+      collapsible.setAttribute("visibility", "hidden");
     });
   }
 
