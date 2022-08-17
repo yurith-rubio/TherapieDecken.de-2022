@@ -21,7 +21,7 @@
     console.log("hide values");
     console.log(event.explicitOriginalTarget.innerText);
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
-      const bigSize = document.querySelector("li.HorizontalList__Item > input[value = '4 kg']");
+      const bigSize = document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
       console.log("bigSize");
       console.log(bigSize);
     }
