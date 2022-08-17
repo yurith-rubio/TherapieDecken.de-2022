@@ -17,13 +17,14 @@
     selectedInfoMetafield.classList.remove("hide");
   }
 
-  var clickEvent = new MouseEvent("click", {
+
+
+  function hideValues(event){
+    var clickEvent = new MouseEvent("click", {
       "view": window,
       "bubbles": true,
       "cancelable": false
-  });
-
-  function hideValues(event){
+    });
     console.log("hide values");
     console.log(event.explicitOriginalTarget.innerText);
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
