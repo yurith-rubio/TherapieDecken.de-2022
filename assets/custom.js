@@ -23,14 +23,16 @@
     console.log("clicked");
   }
 
-  let newPromise = new Promise (
-    function(){
-      document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
-      console.log("4 kg hidden");
-  });
+
 
 
   function hideValues(event){
+    let newPromise = new Promise (
+      function(){
+        document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
+        console.log("4 kg hidden");
+    });
+    
     console.log(event.explicitOriginalTarget.innerText);
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       myPromise.then(
