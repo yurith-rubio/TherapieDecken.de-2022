@@ -18,17 +18,8 @@
   }
 
 
-  function clickFirst(firstOption){
-    firstOption.click();
-    console.log("clicked");
-  }
 
-
-
-
-  function hideValues(event){
-
-    
+  function hideValues(event){  
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       let newPromise = new Promise (
         function(){
