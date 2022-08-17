@@ -18,16 +18,17 @@
   }
 
   function hideValues(event){
+    const values = document.querySelectorAll(".ProductForm__SelectedValue");
+    
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
       document.querySelector(".gewicht_option > input[value = '6 kg']").click();
-      const values = document.querySelectorAll(".ProductForm__SelectedValue");
       values[1].innerText = "6 kg";
-      
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
-      document.querySelector(".gewicht_option > input[value = '6 kg']").click();
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.remove("hidden");
+      document.querySelector(".gewicht_option > input[value = '4 kg']").click();
+      values[1].innerText = "4 kg";
     }
 
   }
