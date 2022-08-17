@@ -83,7 +83,7 @@
     <p>{{ section.settings.discount_subheading }}</p>
     <div class="white-rabat"><b>{{ section.settings.discount_code }}</b></div>
     <a href="https://www.therapiedecken.de/discount/DAK10?redirect=/products/therapiedecken">
-      <div class="Button Button--primary">JETZT EINLÖSEN</div>
+      <div class="Button Button--primary">{{ section.settings.button_text }}</div>
     </a>
     <!-- <p style="margin-top: 10px;">Verfällt am <b>2.07.2022</b></p> -->
 
@@ -112,6 +112,12 @@
         "id": "discount_code",
         "label": "Discount subheading",
         "default": "DAK-10"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button text",
+        "default": "JETZT EINLÖSEN"
       }
     ],
     "presets": [
