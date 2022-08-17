@@ -7748,10 +7748,6 @@ a.CollectionItemPage {
 .FeatureText__ImageWrapper {
   overflow: hidden;
 }
-.FeatureText__Image{
-  width: 38em;
-  max-width: inherit;
-}
 .FeatureText--withImage .FeatureText__ContentWrapper {
   padding-top: 50px;
   padding-bottom: 20px;
