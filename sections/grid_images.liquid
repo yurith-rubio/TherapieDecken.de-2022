@@ -13,11 +13,13 @@
     <h2 class="SectionHeader__Heading Heading u-h2"
         style="color: {{ section.settings.text_color }};">{{ section.settings.title | escape }}</h2>
   {%- endif -%}
-  {% for blocks in section.blocks %}
-  <div class="grid_image">
-    <img src="{{ blocks.settings.image }}" alt="{{ blocks.settings.image.alt | escape }}">
+  <div class="grid_image_div">
+    {% for blocks in section.blocks %}
+    <div class="grid_image">
+      <img src="{{ blocks.settings.image }}" alt="{{ blocks.settings.image.alt | escape }}">
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
 
 {% schema %}
@@ -52,7 +54,7 @@
                 "type": "image_picker",
                 "id": "image",
                 "label": "Image",
-                "info": "1200 x 1200px .png recommended"
+                "info": "300 x 300px .png recommended"
             }
         ]
       }
