@@ -28,6 +28,7 @@
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
       document.querySelector("li.gewicht_option:not(.hidden)").click();
+      
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
       document.querySelector(".gewicht_option > input[value = '6 kg']").click();
@@ -52,11 +53,10 @@
 
   function hideShowCollapsibles() {
     collapsibleSelectors.forEach(collapsible => {
-      collapsible.removeAttribute('style');
+      collapsible.classList.remove("hidden");
     });
     collapsibleContent.forEach(collapsible => {
-      collapsible.style.visibility = "hidden";
-      collapsible.style.height = "0";
+      collapsible.classList.add("hidden");
     });
   }
 
@@ -92,9 +92,8 @@
       hideShowCollapsibles();
       const number = getCollapsbleOptionNumber(buttonSelected);
       const value = changeNewValueName(number);
-      infoToHide.style.visibility = "hidden";
-      infoToHide.style.height = "0";
-      infoToShow.removeAttribute('style');
+      infoToHide.classList.add("hidden");
+      infoToShow.classList.remove("hidden");
     });
   });
 
