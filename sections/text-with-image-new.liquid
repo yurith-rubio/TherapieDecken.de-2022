@@ -96,7 +96,7 @@
           {%- assign image_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
             <img class="FeatureText__Image Image--lazyLoad Image--slide{{ section.settings.image_position | capitalize }}"
               data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto"
-              {% if section.settings.fit_image_height %}{% endif %}
+              {% if section.settings.fit_image_height %}style="width:38em; max-width:inherit"{% endif %}
               alt="{{ section.settings.image.alt | escape }}">
 
             <noscript>
