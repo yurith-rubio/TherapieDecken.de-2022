@@ -1,7 +1,62 @@
+<!-- section: grid_images.liquid -->
+
+{%- comment -%} CSS Added {%- endcomment -%}
+{{ 'grid_images.css' | asset_url | stylesheet_tag }}
+
+<div class="grid_images_wrapper">
+  {%- if section.settings.subheading != blank -%}
+    <p class="SectionHeader__SubHeading Heading u-h6"
+       style="color: {{ section.settings.text_color }};">{{ section.settings.subheading | escape }}</p>
+  {%- endif -%}
+
+  {%- if section.settings.title != blank -%}
+    <h2 class="SectionHeader__Heading Heading u-h2"
+        style="color: {{ section.settings.text_color }};">{{ section.settings.title | escape }}</h2>
+  {%- endif -%}
+  {% for blocks in section.blocks %}
+  <div class="grid_image">
+    <img src="{{ blocks.settings.image }}" alt="{{ blocks.settings.image.alt | escape }}">
+  </div>
+  {% endfor %}
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Grid Images",
+    "settings": [
+      {
+          "type": "text",
+          "id": "subheading",
+          "label": "Sub-heading",
+          "default": "Sub-heading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color",
+		  "default": "#3A3C3C"
+        }
+    ],
+    "blocks" : [
+      {
+            "type": "Image",
+            "name": "Logo image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image",
+                    "info": "1200 x 1200px .png recommended"
+                }
+            ]
+      }
+    ]
   }
 {% endschema %}
 
