@@ -23,8 +23,10 @@
   height: auto;
 }
 @media (max-width: 1023px){
-  .grid_images_wrapper{
+  .grid_image_div{
     gap: 20;
+  }
+  .grid_images_wrapper{
     max-width: 700px;
   }
 }
