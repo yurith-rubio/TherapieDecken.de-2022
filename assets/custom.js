@@ -21,7 +21,8 @@
     console.log("hide values");
     console.log(event.explicitOriginalTarget.innerText);
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
-      console.log("this is 150 x 220 cm");
+      document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
+      document.querySelector(".gewicht_option > input[value = '6 kg']").click();
     }
   }
 
