@@ -22,3 +22,12 @@
   width: auto;
   height: auto;
 }
+@media (max-width: 640px){
+  .grid_images_wrapper{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .grid_image_div{
+    grid-template-columns: 1fr 1fr;  
+  }
+}
