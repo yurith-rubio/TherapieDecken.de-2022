@@ -72,7 +72,8 @@
         "discount_subheading": "Erhalten Sie 10€ Rabatt mit Code:",
         "discount_code": "DAK-10",
         "button_text": "JETZT EINLÖSEN",
-        "button_url": "https:\/\/www.therapiedecken.de\/discount\/DAK10?redirect=\/products\/therapiedecken"
+        "button_url": "https:\/\/www.therapiedecken.de\/discount\/DAK10?redirect=\/products\/therapiedecken",
+        "content": "<p>Wir fragen ggf. nach den letzten 4 Ziffern der Versicherungsnummer für Ihre Bestellung. Durch das Klicken der Schaltfläche “Jetzt Einlösen” wird der Rabattcode automatisch zu Ihrem Warenkorb hinzugefügt.<\/p>"
       }
     }
   },
