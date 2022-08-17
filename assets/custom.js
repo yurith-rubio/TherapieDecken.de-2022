@@ -24,8 +24,9 @@
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
       const gewichtOptions = document.querySelectorAll("li.gewicht_option:not(.hidden)");
       gewichtOptions.forEach(element => {
-        $(element[0]).click();
-        console.log(element);
+
+        //$(element[0]).click();
+        console.log(gewichtOptions[index]);
       });
       
     }
