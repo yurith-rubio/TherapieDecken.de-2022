@@ -21,14 +21,15 @@
 
   function hideValues(event){
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
-      const myTimeout = setTimeout(myGreeting, 5000);
+      const myTimeout = setTimeout(myGreeting, 1000);
       function myGreeting(){
         document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
-        collapsibleContent.forEach(collapsible => {
-          collapsible.classList.remove("hidden");
-        });
+        document.querySelector("li.gewicht_option:not(.hidden)").click();
+
       }
-      document.querySelector("li.gewicht_option:not(.hidden)").click();
+      collapsibleContent.forEach(collapsible => {
+        collapsible.classList.remove("hidden");
+      });
       console.log("4 kg hidden");     
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
