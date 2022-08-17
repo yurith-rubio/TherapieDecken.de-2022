@@ -23,7 +23,8 @@
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
       document.querySelector(".ProductForm_CollapsibleSelector:not(.hidden)").click();
-      document.querySelectorAll("li.gewicht_option:not(.hidden)").click();
+      const options = document.querySelectorAll("li.gewicht_option");
+      options[1].click();
       console.log("done");
           
     }
