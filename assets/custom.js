@@ -29,9 +29,6 @@
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
       const fistOption = document.querySelector("li.gewicht_option:not(.hidden)");
-      const selectedElement = gewichtOptions[0];
-      const test = document.querySelector(".Header__LogoLink")
-      console.log(selectedElement);
       fistOption.click();
       
     }
