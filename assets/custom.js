@@ -18,7 +18,7 @@
   }
 
   function hideValues(event){
-    console.log("variant changed");
+    console.log("hide values");
     console.log(event.detail);
   }
 
