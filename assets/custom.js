@@ -53,10 +53,10 @@
 
   function hideShowCollapsibles() {
     collapsibleSelectors.forEach(collapsible => {
-      collapsible.removeAttribute("visibility");
+      collapsible.classList.remove("hidden");
     });
     collapsibleContent.forEach(collapsible => {
-      collapsible.setAttribute("visibility", "hidden");
+      collapsible.classList.add("hidden");
     });
   }
 
@@ -92,8 +92,8 @@
       hideShowCollapsibles();
       const number = getCollapsbleOptionNumber(buttonSelected);
       const value = changeNewValueName(number);
-      infoToHide.setAttribute("visibility", "hidden");
-      infoToShow.removeAttribute("visibility");
+      infoToHide.classList.add("hidden");
+      infoToShow.classList.remove("hidden");
     });
   });
 
