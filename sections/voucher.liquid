@@ -79,8 +79,8 @@
 
 <div class="grey-rabat rabatt-code-page">
   <div class="tresc">
-    <h2 class="Heading u-h2">{{ section.settings.discount_heading }}Jetzt sparen!</h2>
-    <p>{{ section.settings.discount_subheading }}Erhalten Sie 10€ Rabatt mit Code:</p>
+    <h2 class="Heading u-h2">{{ section.settings.discount_heading }}</h2>
+    <p>{{ section.settings.discount_subheading }}</p>
     <div class="white-rabat"><b>DAK-10</b></div>
     <a href="https://www.therapiedecken.de/discount/DAK10?redirect=/products/therapiedecken">
       <div class="Button Button--primary">JETZT EINLÖSEN</div>
@@ -98,12 +98,14 @@
       {
         "type": "text",
         "id": "discount_heading",
-        "label": "Discount heading"
+        "label": "Discount heading",
+        "default": "Jetzt sparen!"
       },
       {
         "type": "text",
         "id": "discount_subheading",
-        "label": "Discount subheading"
+        "label": "Discount subheading",
+        "default": "Erhalten Sie 10€ Rabatt mit Code:"
       }
     ],
     "presets": [
