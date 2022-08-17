@@ -56,7 +56,7 @@
         "spacer_top": true,
         "spacer_bottom": true,
         "bg-color": "",
-        "bg-color-text-html": "",
+        "bg-color-text-html": "#5b5b5b",
         "text_align": "left",
         "text_color": "#3A3C3C",
         "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
