@@ -1,5 +1,7 @@
 .grid_images_wrapper{
   padding: 100px 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .grid_image_div{
   display: grid;
