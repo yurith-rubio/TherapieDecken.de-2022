@@ -27,9 +27,6 @@
     console.log(event.explicitOriginalTarget.innerText);
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
-      collapsibleContent.forEach(collapsible => {
-        collapsible.classList.remove("hidden");
-      });
       document.querySelector("li.gewicht_option:not(.hidden)").click();
       console.log("bis hier 2");
     }
@@ -37,6 +34,10 @@
       document.querySelector(".gewicht_option > input[value = '6 kg']").click();
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.remove("hidden");
     }
+  }
+
+  let newPromise = new Promise (){
+    
   }
 
   document.addEventListener("variant:changed", function(event) { // (1)  
