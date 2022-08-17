@@ -28,7 +28,6 @@
       document.querySelector(".gewicht_option > input[value = '4 kg']").click();
       values[1].innerText = "4 kg";
     }
-
   }
 
   const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
@@ -44,10 +43,6 @@
   }
 
   function getCollapsbleOptionNumber(element) {
-    /*const getOptionNumber = document.querySelector(".ProductForm_CollapsibleSelector .ProductForm__SelectedValue[data-option-position]");
-    getOptionNumber.forEach(option => {
-      option.getAttribute("data-option-position");
-    });*/
     return element.firstElementChild.firstElementChild.getAttribute("data-option-position");
   }
 
@@ -79,8 +74,8 @@
       	hideOption(info, event.detail.variant.id);
       }
     });
-	console.log("variant changed");
-    console.log(event.detail);
+	//console.log("variant changed");
+    //console.log(event.detail);
     hideValues(event);
   });
 
