@@ -37,7 +37,7 @@
       });
       newPromise.then(
         function(){
-          document.querySelector("li.gewicht_option:not(.hidden)").click();
+          
           console.log("bis hier 2");
         }
       );      
