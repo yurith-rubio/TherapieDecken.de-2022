@@ -41,7 +41,7 @@
     });
 	//console.log("variant changed");
     //console.log(event.detail);
-    hideValues(event);
+    //hideValues(event);
   });
 
   const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
