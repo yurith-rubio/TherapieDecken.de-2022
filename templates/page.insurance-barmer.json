@@ -44,7 +44,7 @@
         "21c7411c-7d08-45ff-9037-9a4ef06de575": {
           "type": "liquid",
           "settings": {
-            "liquid": "<p>ERASE the content of the block ABOVE is you want to use this block<\/p>"
+            "liquid": "<span style=\"color:#fac636\">\n            10€ auf Therapiedecken <\/span>\n            <br>\n            <span style=\"color:#fff\">\n            für DAK Krankenkasse\n            <\/span>\n          <\/h2>\n\n          <ul class=\"insuranceSaleVoucher_ul\" style=\"color:#fff\">\n            <li>Jetzt als Mitglied der DAK Krankenkasse sparen und schon bald besser schlafen.<\/li>\n            <li>Therapiedecken für weniger Stress und mehr Wohlbefinden.<\/li>\n            <li>Hilft bei Schlafstörungen, Schlafproblemen, als auch bei Entwicklungsstörungen, Syndromen und progredienten Erkrankungen.<\/li>\n            <li>28 Tage Probeschlafen.<\/li>\n          <\/ul>"
           }
         }
       },
