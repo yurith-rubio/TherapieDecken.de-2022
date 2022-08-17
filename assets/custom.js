@@ -17,14 +17,20 @@
     selectedInfoMetafield.classList.remove("hide");
   }
 
+  function hideValues(event){
+    console.log("variant changed");
+    console.log(event.detail);
+  }
+
   document.addEventListener("variant:changed", function(event) { // (1)  
     ["second_weight_info", "weight_info", "cover_type_info"].forEach(info => {
       if (event.detail.variant) {
       	hideOption(info, event.detail.variant.id);
       }
     });
-	console.log("variant changed");
-    console.log(event.detail);
+	//console.log("variant changed");
+    //console.log(event.detail);
+    hideValues(event);
   });
 
   const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
