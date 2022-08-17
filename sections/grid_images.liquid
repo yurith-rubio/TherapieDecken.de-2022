@@ -16,7 +16,7 @@
   <div class="grid_image_div">
     {% for blocks in section.blocks %}
     <div class="grid_image">
-      <img src="{{ blocks.settings.image | img_url:'master' }}" alt="{{ blocks.settings.image.alt | escape }}">
+      <img src="{{ blocks.settings.image | img_url:'800x' }}" alt="{{ blocks.settings.image.alt | escape }}">
     </div>
     {% endfor %}
   </div>
