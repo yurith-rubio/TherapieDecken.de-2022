@@ -19,7 +19,9 @@
     <div class="grid_image_div">
       {% for blocks in section.blocks %}
       <div class="grid_image">
-        <img class="Image--lazyLoad" data-src="{{ blocks.settings.image | img_url:'800x' }}">
+        <a href="{{ blocks.settings.link }}">
+          <img class="Image--lazyLoad" data-src="{{ blocks.settings.image | img_url:'800x' }}">
+        </a>
       </div>
       {% endfor %}
     </div>
@@ -63,6 +65,11 @@
                 "id": "image",
                 "label": "Image",
                 "info": "300 x 300px .png recommended"
+            },
+            {
+              "type": "url",
+              "id": "link",
+              "label": "Image link"
             }
         ]
       }
