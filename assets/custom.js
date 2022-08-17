@@ -24,12 +24,11 @@
       const myTimeout = setTimeout(myGreeting, 4000);
       function myGreeting(){
         document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
-        document.querySelector("li.gewicht_option:not(.hidden)").click();
-
+        collapsibleContent.forEach(collapsible => {
+          collapsible.classList.remove("hidden");
+        });
       }
-      collapsibleContent.forEach(collapsible => {
-        collapsible.classList.remove("hidden");
-      });
+      document.querySelector("li.gewicht_option:not(.hidden)").click();
       console.log("4 kg hidden");     
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
