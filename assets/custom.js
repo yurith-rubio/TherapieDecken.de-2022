@@ -21,6 +21,8 @@
     if(event.explicitOriginalTarget.innerText == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
       document.querySelector(".gewicht_option > input[value = '6 kg']").click();
+      const fourkg = document.querySelectorAll(".gewicht_option.option2");
+      fourkg[1].click();
       values[1].innerText = "6 kg";
     }
     if(event.explicitOriginalTarget.innerText == '135 X 200 CM'){
