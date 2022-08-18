@@ -67,7 +67,7 @@
       }
     });
 	//console.log("variant changed");
-    //console.log(event.detail);
+    console.log(event.detail);
     hideValues(event);
   });
 
