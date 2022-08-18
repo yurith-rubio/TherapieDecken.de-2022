@@ -18,7 +18,7 @@
 
   function hideValues(event){
     const values = document.querySelectorAll(".ProductForm__SelectedValue");
-    console.log(event.currentTarget);
+    console.log(event);
 
   }
 
