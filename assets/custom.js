@@ -2,7 +2,8 @@
 / Metafields JS for variants changing - Yurith
 /-----------------------------------------------------------------------------*/
 
-
+$(document).ready(function () {
+  
   function hideOption(selector, selectedVariant) {
     const infoMetafield = document.querySelectorAll("." + selector);
     const selectedInfoMetafield = document.getElementById(selector + "_" + selectedVariant);
@@ -81,4 +82,4 @@
     //hideValues(event);
   });
 
-
+});
