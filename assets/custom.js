@@ -18,9 +18,10 @@
 
   function hideValues(){
     const values = document.querySelectorAll(".ProductForm__SelectedValue");
-    //$("li.HorizontalList__Item > input").click(function (clickedButton) {
-      //console.log(clickedButton);
-    //});
+    $("li.HorizontalList__Item > input").click(function (clickedButton) {
+      console.log("on custom.js");
+      console.log(clickedButton);
+    });
     //console.log("done");
   }
 
