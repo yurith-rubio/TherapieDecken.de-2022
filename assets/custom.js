@@ -47,7 +47,7 @@
     return element.firstElementChild.firstElementChild.getAttribute("data-option-position");
   }
 
-  function changeNewValueName(number, event) {
+  function changeNewValueName(number) {
       
       console.log("changeNewValueName");
       console.log(event);
