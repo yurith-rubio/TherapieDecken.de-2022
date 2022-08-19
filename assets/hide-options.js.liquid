@@ -4,7 +4,8 @@
 
 $(document).ready(function () {
     $("li.HorizontalList__Item > input").click(function (event) {
-      console.log()
+      console.log("event");
+      console.log(event);
       if (event.target.value === "90 x 120 cm") {
         $("li.HorizontalList__Item > input[value = '3 kg']").parent().removeAttr('style');
       	$("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
