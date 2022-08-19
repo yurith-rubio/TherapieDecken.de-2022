@@ -47,7 +47,7 @@
     return element.firstElementChild.firstElementChild.getAttribute("data-option-position");
   }
 
-  function changeNewValueName(number, event) {
+  function changeNewValueName(number) {
       const element = document.querySelector(`.ProductForm__SelectedValue[data-option-position="${number}"]`);
       console.log("changeNewValueName");
       console.log(event);
