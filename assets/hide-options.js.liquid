@@ -29,8 +29,6 @@ $(document).ready(function () {
       	$("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
         $(".gewicht_option > input").first().click();
       } else if(clickedButton.target.value === "150 x 220 cm") {
-        console.log("on hide-options.js");
-        console.log(clickedButton);
         $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
         $(".gewicht_option > input[value = '6 kg']").click();
       }
