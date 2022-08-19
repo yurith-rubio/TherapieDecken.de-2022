@@ -76,6 +76,6 @@
       }
     });
 	//console.log("variant changed");
-    hideValues();
+    hideValues(event);
   });
 
