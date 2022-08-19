@@ -109,6 +109,7 @@ $(document).ready(function () {
       } else if(clickedButton.target.value === "150 x 220 cm") {
         $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
         $(".gewicht_option > input[value = '6 kg']").click();
+        changeNewValueName(2);
       }
     });
     
