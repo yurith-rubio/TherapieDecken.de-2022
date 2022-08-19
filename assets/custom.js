@@ -48,6 +48,7 @@
   }
 
   function changeNewValueName(number) {
+    console.log("changeNewValueName");
       const label = document.querySelector(`.ProductForm__SelectedValue[data-option-position="${number}"]`);
       
       if (event.detail.variant){
