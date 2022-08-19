@@ -18,10 +18,10 @@
 
   function hideValues(){
     const values = document.querySelectorAll(".ProductForm__SelectedValue");
-    $("li.HorizontalList__Item > input").click(function (clickedButton) {
-      console.log(clickedButton);
-    });
-    console.log("done");
+    //$("li.HorizontalList__Item > input").click(function (clickedButton) {
+      //console.log(clickedButton);
+    //});
+    //console.log("done");
   }
 
   const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
