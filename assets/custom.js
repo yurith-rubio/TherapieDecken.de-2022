@@ -20,11 +20,6 @@
     const values = document.querySelectorAll(".ProductForm__SelectedValue");
     $("li.HorizontalList__Item > input").click(function (clickedButton) {
       console.log(clickedButton);
-      if(clickedButton.target.value === "150 x 220 cm") {
-        document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
-        document.querySelector(".gewicht_option > input[value = '6 kg']").click();
-        values[1].innerText = "6 kg";
-      }
     });
     console.log("done");
   }
