@@ -17,7 +17,8 @@
   }
 
   function hideValues(event){
-    if(event.explicitOriginalTarget == '150 X 220 CM'){
+    console.log(event);
+/*    if(event.explicitOriginalTarget == '150 X 220 CM'){
       document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
       document.querySelector(".gewicht_option > input[value = '6 kg']").click();
       values[1].innerText = "6 kg";
@@ -27,7 +28,7 @@
       document.querySelector(".gewicht_option > input[value = '4 kg']").click();
       values[1].innerText = "4 kg";
     }
-
+*/
   }
 
   const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
