@@ -34,7 +34,7 @@
   const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
   const collapsibleContent = document.querySelectorAll(".ProductForm__Option");
 
-  function hideShowCollapsibles() {
+  function hideShowCollapsibles(event) {
     collapsibleSelectors.forEach(collapsible => {
       collapsible.classList.remove("hidden");
     });
