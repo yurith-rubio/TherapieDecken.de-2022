@@ -47,7 +47,7 @@
     return element.firstElementChild.firstElementChild.getAttribute("data-option-position");
   }
 
-  function changeNewValueName(number) {
+  function changeNewValueName(number, event) {
       const element = document.querySelector(`.ProductForm__SelectedValue[data-option-position="${number}"]`);
       console.log("changeNewValueName");
       console.log(event);
@@ -64,7 +64,7 @@
       const infoToShow = buttonSelected.nextElementSibling;
       hideShowCollapsibles();
       const number = getCollapsbleOptionNumber(buttonSelected);
-      const value = changeNewValueName(number);
+      const value = changeNewValueName(number, event);
       infoToHide.classList.add("hidden");
       infoToShow.classList.remove("hidden");
     });
