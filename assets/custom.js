@@ -48,9 +48,6 @@
   }
 
   function changeNewValueName(event) {
-      
-      console.log("changeNewValueName");
-      console.log(event);
       /*if (event.detail.variant){
         const selectedVariant = event.detail.variant["option" + number];
         label.textContent = selectedVariant;
@@ -74,7 +71,6 @@
     ["second_weight_info", "weight_info", "cover_type_info"].forEach(info => {
       if (event.detail.variant) {
       	hideOption(info, event.detail.variant.id);
-        console.log(event);
       }
     });
 	//console.log("variant changed");
