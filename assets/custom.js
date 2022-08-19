@@ -64,7 +64,7 @@
       const infoToShow = buttonSelected.nextElementSibling;
       hideShowCollapsibles();
       const number = getCollapsbleOptionNumber(buttonSelected);
-      const value = changeNewValueName(event);
+      //const value = changeNewValueName(event);
       infoToHide.classList.add("hidden");
       infoToShow.classList.remove("hidden");
     });
@@ -74,6 +74,7 @@
     ["second_weight_info", "weight_info", "cover_type_info"].forEach(info => {
       if (event.detail.variant) {
       	hideOption(info, event.detail.variant.id);
+        console.log(event);
       }
     });
 	//console.log("variant changed");
