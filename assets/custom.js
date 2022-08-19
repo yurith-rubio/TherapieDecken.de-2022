@@ -64,7 +64,7 @@
       const infoToShow = buttonSelected.nextElementSibling;
       hideShowCollapsibles();
       const number = getCollapsbleOptionNumber(buttonSelected);
-      const value = changeNewValueName(number, event);
+      const value = changeNewValueName(number);
       infoToHide.classList.add("hidden");
       infoToShow.classList.remove("hidden");
     });
