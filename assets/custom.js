@@ -18,7 +18,7 @@
 
   function hideValues(){
     const values = document.querySelectorAll(".ProductForm__SelectedValue");
-    document.querySelector("li.HorizontalList__Item > input").click(function (clickedButton) {
+    $("li.HorizontalList__Item > input").click(function (clickedButton) {
       console.log(clickedButton);
       if(clickedButton.target.value === "150 x 220 cm") {
         document.querySelector("li.HorizontalList__Item > input[value = '4 kg']").parentElement.classList.add("hidden");
