@@ -6,7 +6,7 @@ $(document).ready(function () {
     $("li.HorizontalList__Item > input").click(function (event) {
       console.log("event");
       const input = event.currentTarget.previousSibling.nextSibling;
-      console.log(input.getAttribute("data-option-position"));
+      const optionPosition = input.getAttribute("data-option-position");
       if (event.target.value === "90 x 120 cm") {
         $("li.HorizontalList__Item > input[value = '3 kg']").parent().removeAttr('style');
       	$("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
