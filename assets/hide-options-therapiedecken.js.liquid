@@ -29,10 +29,9 @@ $("li.HorizontalList__Item > input").click(function (event) {
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
     $(".gewicht_option > input").first().click();
   } else if(event.target.value === "150 x 220 cm") {
-    console.log("event");
-    console.log(event.currentTarget.defaultValue);
     const input = event.currentTarget.previousSibling.nextSibling;
     const optionPosition = input.getAttribute("data-option-position");
+    const value = event.currentTarget.defaultValue;
     //values.forEach(value => {
       //console.log("value");
       //console.log(value);
