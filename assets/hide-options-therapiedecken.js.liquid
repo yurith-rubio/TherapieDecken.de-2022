@@ -32,7 +32,7 @@ $("li.HorizontalList__Item > input").click(function (event) {
     const input = event.currentTarget.previousSibling.nextSibling;
     const optionPosition = input.getAttribute("data-option-position");
     const value = event.currentTarget.defaultValue;
-    const parentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption .ProductForm__Label").value;
+    const parentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption");
     console.log("label");
     console.log(parentLabel);
     
