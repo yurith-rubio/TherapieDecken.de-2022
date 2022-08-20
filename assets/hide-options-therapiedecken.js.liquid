@@ -33,6 +33,8 @@ $("li.HorizontalList__Item > input").click(function (event) {
     const input = event.currentTarget.previousSibling.nextSibling;
     const optionPosition = input.getAttribute("data-option-position");
     const value = event.currentTarget.defaultValue;
+    console.log("value");
+    console.log(value);
     const parentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption");
     parentLabel.childNodes[1].childNodes[1].childNodes[1].innerText = `${valueOneFifty}`;
     
