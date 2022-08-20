@@ -32,6 +32,8 @@ $("li.HorizontalList__Item > input").click(function (event) {
     const input = event.currentTarget.previousSibling.nextSibling;
     const optionPosition = input.getAttribute("data-option-position");
     const value = event.currentTarget.defaultValue;
+    console.log("event");
+    console.log(event);
     //values.forEach(value => {
       //console.log("value");
       //console.log(value);
