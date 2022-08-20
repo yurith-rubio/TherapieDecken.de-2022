@@ -35,7 +35,7 @@ $("li.HorizontalList__Item > input").click(function (event) {
     const value = event.currentTarget.defaultValue;
     const parentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption");
     console.log("label");
-    parentLabel.childNodes[1].childNodes[1].childNodes[1].innerText = value150;
+    parentLabel.childNodes[1].childNodes[1].childNodes[1].innerText = `${value150}`;
     
     //values.forEach(value => {
       //console.log("value");
