@@ -14,9 +14,6 @@ $("li.HorizontalList__Item > input").click(function (event) {
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
     $(".gewicht_option > input").first().click();
   } else if(value === valueOneFifty) {
-    const input = event.currentTarget.previousSibling.nextSibling;
-    const optionPosition = input.getAttribute("data-option-position");
-
     const parentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption");
     parentLabel.childNodes[1].childNodes[1].childNodes[1].innerText = `${valueOneFifty}`;
     
