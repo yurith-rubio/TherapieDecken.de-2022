@@ -4,13 +4,6 @@
 const values = document.querySelectorAll(".ProductForm__Label");
 
 $("li.HorizontalList__Item > input").click(function (event) {
-  console.log("event");
-  const input = event.currentTarget.previousSibling.nextSibling;
-  const optionPosition = input.getAttribute("data-option-position");
-  values.forEach(value => {
-    console.log("value");
-    console.log(value);
-  });
   if (event.target.value === "90 x 120 cm") {
     $("li.HorizontalList__Item > input[value = '3 kg']").parent().removeAttr('style');
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
@@ -36,6 +29,13 @@ $("li.HorizontalList__Item > input").click(function (event) {
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
     $(".gewicht_option > input").first().click();
   } else if(event.target.value === "150 x 220 cm") {
+    console.log("event");
+    const input = event.currentTarget.previousSibling.nextSibling;
+    const optionPosition = input.getAttribute("data-option-position");
+    values.forEach(value => {
+      console.log("value");
+      console.log(value);
+    });
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
     $(".gewicht_option > input[value = '6 kg']").click();
   }
