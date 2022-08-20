@@ -32,6 +32,7 @@
 
   function changeNewValueName(event) {
     console.log("change New Value Name function");
+    console.log(event.detail.variant);
       /*if (event.detail.variant){
         const selectedVariant = event.detail.variant["option" + number];
         label.textContent = selectedVariant;
