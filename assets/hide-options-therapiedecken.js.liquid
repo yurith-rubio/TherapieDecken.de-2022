@@ -33,7 +33,7 @@ $("li.HorizontalList__Item > input").click(function (event) {
     const optionPosition = input.getAttribute("data-option-position");
     const value = event.currentTarget.defaultValue;
     console.log("event");
-    console.log(event);
+    console.log(event.currentTarget);
     console.log(event.currentTarget.closest(".ProductForm__SelectedValue"));
     //values.forEach(value => {
       //console.log("value");
