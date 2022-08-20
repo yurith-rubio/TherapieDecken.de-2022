@@ -8,31 +8,10 @@ $("li.HorizontalList__Item > input").click(function (event) {
   console.log("value");
   console.log(value);
   const valueOneFifty = "150 x 220 cm";
-  if (event.target.value === "90 x 120 cm") {
-    $("li.HorizontalList__Item > input[value = '3 kg']").parent().removeAttr('style');
-    $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
-    $("li.HorizontalList__Item > input[value = '5 kg']").parent().css("display", "none");
-    $("li.HorizontalList__Item > input[value = '6 kg']").parent().css("display", "none");
-    $("li.HorizontalList__Item > input[value = '7 kg']").parent().css("display", "none");
-    $(".gewicht_option > input").first().click();
-  } else if (event.target.value === "100 x 150 cm") {
-    $("li.HorizontalList__Item > input[value = '3 kg']").parent().removeAttr('style');
-    $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
-    $("li.HorizontalList__Item > input[value = '5 kg']").parent().removeAttr('style');
-    $("li.HorizontalList__Item > input[value = '6 kg']").parent().removeAttr('style');
-    $("li.HorizontalList__Item > input[value = '7 kg']").parent().css("display", "none");
-    $(".gewicht_option > input").first().click();
-  } else if (event.target.value === "110 x 170 cm") {
-    $("li.HorizontalList__Item > input[value = '3 kg']").parent().css("display", "none");
-    $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
-    $("li.HorizontalList__Item > input[value = '5 kg']").parent().removeAttr('style');
-    $("li.HorizontalList__Item > input[value = '6 kg']").parent().removeAttr('style');
-    $("li.HorizontalList__Item > input[value = '7 kg']").parent().removeAttr('style');
-    $(".gewicht_option > input[value = '4 kg']").click();
-  } else if (event.target.value === "135 x 200 cm") {
+  if (value === "135 x 200 cm") {
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
     $(".gewicht_option > input").first().click();
-  } else if(event.target.value === valueOneFifty) {
+  } else if(value === valueOneFifty) {
     const input = event.currentTarget.previousSibling.nextSibling;
     const optionPosition = input.getAttribute("data-option-position");
 
@@ -43,19 +22,3 @@ $("li.HorizontalList__Item > input").click(function (event) {
     $(".gewicht_option > input[value = '6 kg']").click();
   }
 });
-
-const selectedSize = $("li.HorizontalList__Item > input[checked='checked']").first();
-if (selectedSize && selectedSize.attr("value") === "90 x 120 cm") {
-  $("li.HorizontalList__Item > input[value = '5 kg']").parent().css("display", "none");
-  $("li.HorizontalList__Item > input[value = '6 kg']").parent().css("display", "none");
-  $("li.HorizontalList__Item > input[value = '7 kg']").parent().css("display", "none");
-}
-if (selectedSize && selectedSize.attr("value") === "100 x 150 cm") {
-  $("li.HorizontalList__Item > input[value = '7 kg']").parent().css("display", "none");
-}
-if (selectedSize && selectedSize.attr("value") === "110 x 170 cm") {
-  $("li.HorizontalList__Item > input[value = '3 kg']").parent().css("display", "none");
-}
-if (selectedSize && selectedSize.attr("value") === "150 x 220 cm") {
-  $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");    
-}
