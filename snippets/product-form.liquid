@@ -797,5 +797,10 @@ THE EXACT SAME ATTRIBUTES.
   }
 </script>
 
+
 {% comment %}Hide Options - Yurith{% endcomment %}
-{{ 'hide-options.js' | asset_url | script_tag }}
+{% if product.handle == 'therapiedecken' %}
+  {{ 'hide-options-therapiedecken.js' | asset_url | script_tag }}
+{% else %}
+  {{ 'hide-options.js' | asset_url | script_tag }}
+{% endif %}
