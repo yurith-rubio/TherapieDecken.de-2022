@@ -7,7 +7,7 @@ $("li.HorizontalList__Item > input").click(function (event) {
   const value = event.currentTarget.defaultValue;
   const valueOneThirty = "135 x 200 cm";
   const valueOneFifty = "150 x 220 cm";
-  const currentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption").childNodes[1].childNodes[1].childNodes[1].innerText.trim();
+  let currentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption").childNodes[1].childNodes[1].childNodes[1].innerText.trim();
   console.log("current label");
   console.log(currentLabel);
   if (value === valueOneThirty) {
