@@ -7,7 +7,8 @@ $("li.HorizontalList__Item > input").click(function (event) {
   const value = event.currentTarget.defaultValue;
   const valueOneThirty = "135 x 200 cm";
   const valueOneFifty = "150 x 220 cm";
-  let currentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption").childNodes[1].childNodes[1].childNodes[1].innerText.trim();
+  const currentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption");
+  
   console.log("current label");
   console.log(currentLabel);
   if (value === valueOneThirty) {
@@ -15,7 +16,7 @@ $("li.HorizontalList__Item > input").click(function (event) {
     //$("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
     //$(".gewicht_option > input").first().click();
   } else if(value === valueOneFifty) {
-    currentLabel = "test";
+    currentLabel.childNodes[1].childNodes[1].childNodes[1].innerText = value;
     console.log("150 clicked");
     //$("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
     //$(".gewicht_option > input[value = '6 kg']").click();
