@@ -31,10 +31,10 @@
   }
 
   function changeNewValueName(event) {
-      /*if (event.detail.variant){
-        const selectedVariant = event.detail.variant["option" + number];
-        label.textContent = selectedVariant;
-      } */
+    if (event.detail.variant){
+      const selectedVariant = event.detail.variant["option" + number];
+      label.textContent = selectedVariant;
+    }
   }
 
   collapsibleSelectors.forEach(button => {
@@ -44,7 +44,7 @@
       const infoToShow = buttonSelected.nextElementSibling;
       hideShowCollapsibles();
       const number = getCollapsbleOptionNumber(buttonSelected);
-      //const value = changeNewValueName(event);
+      const value = changeNewValueName(event);
       infoToHide.classList.add("hidden");
       infoToShow.classList.remove("hidden");
     });
