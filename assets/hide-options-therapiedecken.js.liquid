@@ -5,16 +5,14 @@ const values = document.querySelectorAll(".ProductForm__Label");
 
 $("li.HorizontalList__Item > input").click(function (event) {
   const value = event.currentTarget.defaultValue;
-  console.log("value");
-  console.log(value);
   const valueOneThirty = "135 x 200 cm";
   const valueOneFifty = "150 x 220 cm";
+  const parentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption");
   
   if (value === valueOneThirty) {
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
     $(".gewicht_option > input").first().click();
   } else if(value === valueOneFifty) {
-    const parentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption");
     parentLabel.childNodes[1].childNodes[1].childNodes[1].innerText = `${valueOneFifty}`;
     
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
