@@ -4,6 +4,7 @@
 const values = document.querySelectorAll(".ProductForm__Label");
 
 $("li.HorizontalList__Item > input").click(function (event) {
+  const value150 = 150 x 220 cm;
   if (event.target.value === "90 x 120 cm") {
     $("li.HorizontalList__Item > input[value = '3 kg']").parent().removeAttr('style');
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
@@ -28,13 +29,13 @@ $("li.HorizontalList__Item > input").click(function (event) {
   } else if (event.target.value === "135 x 200 cm") {
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
     $(".gewicht_option > input").first().click();
-  } else if(event.target.value === "150 x 220 cm") {
+  } else if(event.target.value === value150) {
     const input = event.currentTarget.previousSibling.nextSibling;
     const optionPosition = input.getAttribute("data-option-position");
     const value = event.currentTarget.defaultValue;
     const parentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption");
     console.log("label");
-    console.log(parentLabel.childNodes[1].childNodes[1].childNodes[1].innerText.trim());
+    parentLabel.childNodes[1].childNodes[1].childNodes[1].innerText = value150;
     
     //values.forEach(value => {
       //console.log("value");
