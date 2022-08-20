@@ -31,6 +31,7 @@
   }
 
   function changeNewValueName(event) {
+    console.log("change New Value Name function");
       /*if (event.detail.variant){
         const selectedVariant = event.detail.variant["option" + number];
         label.textContent = selectedVariant;
@@ -44,7 +45,7 @@
       const infoToShow = buttonSelected.nextElementSibling;
       hideShowCollapsibles();
       const number = getCollapsbleOptionNumber(buttonSelected);
-      //const value = changeNewValueName(event);
+      
       infoToHide.classList.add("hidden");
       infoToShow.classList.remove("hidden");
     });
@@ -57,4 +58,5 @@
       }
     });
 	//console.log("variant changed");
+    const value = changeNewValueName(event);
   });
