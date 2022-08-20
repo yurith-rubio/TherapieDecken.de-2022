@@ -30,7 +30,7 @@ $("li.HorizontalList__Item > input").click(function (event) {
     $(".gewicht_option > input").first().click();
   } else if(event.target.value === "150 x 220 cm") {
     console.log("event");
-    console.log(event);
+    console.log(event.currentTarget.defaultValue);
     const input = event.currentTarget.previousSibling.nextSibling;
     const optionPosition = input.getAttribute("data-option-position");
     //values.forEach(value => {
