@@ -36,10 +36,6 @@ $("li.HorizontalList__Item > input").click(function (event) {
     const parentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption");
     parentLabel.childNodes[1].childNodes[1].childNodes[1].innerText = `${valueOneFifty}`;
     
-    //values.forEach(value => {
-      //console.log("value");
-      //console.log(value);
-    //});
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
     $(".gewicht_option > input[value = '6 kg']").click();
   }
