@@ -7,15 +7,16 @@ $("li.HorizontalList__Item > input").click(function (event) {
   const value = event.currentTarget.defaultValue;
   const valueOneThirty = "135 x 200 cm";
   const valueOneFifty = "150 x 220 cm";
-  const parentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption");
-  
+  const currentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption").childNodes[1].childNodes[1].childNodes[1].innerText;
+  console.log("current label");
+  console.log(currentLabel);
   if (value === valueOneThirty) {
-    $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
-    $(".gewicht_option > input").first().click();
+    //$("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
+    //$(".gewicht_option > input").first().click();
   } else if(value === valueOneFifty) {
-    parentLabel.childNodes[1].childNodes[1].childNodes[1].innerText = `${valueOneFifty}`;
+    currentLabel = `${valueOneFifty}`;
     
-    $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
-    $(".gewicht_option > input[value = '6 kg']").click();
+    //$("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
+    //$(".gewicht_option > input[value = '6 kg']").click();
   }
 });
