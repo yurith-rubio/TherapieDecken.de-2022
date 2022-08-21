@@ -22,7 +22,7 @@ $("li.HorizontalList__Item > input").click(function (event) {
     $(".gewicht_option > input[value = '6 kg']").click();
   }
   
-  const label = event.currentTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild.value;
+  const label = event.currentTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild.textContent;
   console.log(label)
   //label.textContent = value;
   
