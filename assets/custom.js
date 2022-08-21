@@ -32,7 +32,7 @@
 
   function changeNewValueName(event) {
     console.log("change New Value Name function");
-    console.log(event.explicitOriginalTarget.innerText);
+    console.log(event.explicitOriginalTarget.textContent.trim());
     const currentLabel = event.explicitOriginalTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
       /*if (event.detail.variant){
         const selectedVariant = event.detail.variant["option" + number];
