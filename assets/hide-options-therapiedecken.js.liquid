@@ -24,7 +24,7 @@ $("li.HorizontalList__Item > input").click(function (event) {
   
   const value = event.explicitOriginalTarget.textContent.trim();
   const label = event.explicitOriginalTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
-  window.alert(event);
+  console.log(event)
   //label.textContent = value;
   
 });
