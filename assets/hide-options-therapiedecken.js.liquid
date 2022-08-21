@@ -1,19 +1,13 @@
 /*-----------------------------------------------------------------------------/
 / Hide ex - Yurith
 /-----------------------------------------------------------------------------*/
-//const values = document.querySelectorAll(".ProductForm__Label");
 
 $("li.HorizontalList__Item > input").click(function (event) {
   const value = event.currentTarget.defaultValue;
   const valueOneThirty = "135 x 200 cm";
   const valueOneFifty = "150 x 220 cm";
-  //const currentLabel = event.currentTarget.closest(".ProductForm_CollapsibleOption").childNodes[1].childNodes[1].childNodes[1];
-  
-  
-  //console.log("current label");
-  //console.log(currentLabel);
+
   if (value === valueOneThirty) {
-    //currentLabel.innerText = valueOneThirty;
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
     $(".gewicht_option > input").first().click();
   } else if(value === valueOneFifty) {
