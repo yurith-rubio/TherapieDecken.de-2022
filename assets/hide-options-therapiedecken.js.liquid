@@ -21,4 +21,10 @@ $("li.HorizontalList__Item > input").click(function (event) {
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
     $(".gewicht_option > input[value = '6 kg']").click();
   }
+  
+  const value = event.explicitOriginalTarget.textContent.trim();
+  const label = event.explicitOriginalTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
+  window.alert(event);
+  label.textContent = value;
+  
 });
