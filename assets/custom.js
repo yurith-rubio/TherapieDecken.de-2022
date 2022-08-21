@@ -30,14 +30,6 @@
     return element.firstElementChild.firstElementChild.getAttribute("data-option-position");
   }
 
-  function changeNewValueName(event) {
-    
-    const value = event.explicitOriginalTarget.textContent.trim();
-    const label = event.explicitOriginalTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
-    window.alert(event);
-    label.textContent = value;
-  }
-
   collapsibleSelectors.forEach(button => {
     button.addEventListener("click", event => {
       const buttonSelected = event.target.closest(".ProductForm_CollapsibleSelector");
@@ -57,5 +49,4 @@
       }
     });
 	//console.log("variant changed");
-    //const value = changeNewValueName(event);
   });
