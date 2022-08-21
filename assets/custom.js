@@ -31,7 +31,7 @@
   }
 
   function changeNewValueName(event) {
-    const value = event.explicitOriginalTarget.textContent.trim());
+    const value = event.explicitOriginalTarget.textContent.trim();
     const label = event.explicitOriginalTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
     label.textContent = value;
   }
