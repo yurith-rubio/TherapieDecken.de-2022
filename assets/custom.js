@@ -32,7 +32,7 @@
 
   function changeNewValueName(event) {
     console.log("change New Value Name function");
-    console.log(event.detail.variant);
+    console.log(event);
       /*if (event.detail.variant){
         const selectedVariant = event.detail.variant["option" + number];
         label.textContent = selectedVariant;
@@ -45,7 +45,7 @@
       const infoToHide = event.target.closest(".ProductForm_CollapsibleSelector");
       const infoToShow = buttonSelected.nextElementSibling;
       hideShowCollapsibles();
-      const number = getCollapsbleOptionNumber(buttonSelected);
+      //const number = getCollapsbleOptionNumber(buttonSelected);
       infoToHide.classList.add("hidden");
       infoToShow.classList.remove("hidden");
     });
