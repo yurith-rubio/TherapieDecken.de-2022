@@ -31,9 +31,10 @@
   }
 
   function changeNewValueName(event) {
-    window.alert("here mobile as well");
+    
     const value = event.explicitOriginalTarget.textContent.trim();
     const label = event.explicitOriginalTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
+    window.alert(event.explicitOriginalTarget.textContent);
     label.textContent = value;
   }
 
