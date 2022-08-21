@@ -34,7 +34,7 @@
     
     const value = event.explicitOriginalTarget.textContent.trim();
     const label = event.explicitOriginalTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
-    window.alert(event.explicitOriginalTarget.textContent);
+    window.alert(event);
     label.textContent = value;
   }
 
