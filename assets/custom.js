@@ -14,8 +14,6 @@
     selectedInfoMetafield.classList.remove("hide");
   }
 
-
-
   document.addEventListener("variant:changed", function(event) { // (1)  
     ["second_weight_info", "weight_info", "cover_type_info"].forEach(info => {
       if (event.detail.variant) {
