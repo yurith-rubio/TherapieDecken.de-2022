@@ -31,13 +31,9 @@
   }
 
   function changeNewValueName(event) {
-    console.log("change New Value Name function");
-    console.log(event.explicitOriginalTarget.textContent.trim());
-    const currentLabel = event.explicitOriginalTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
-      /*if (event.detail.variant){
-        const selectedVariant = event.detail.variant["option" + number];
-        label.textContent = selectedVariant;
-      } */
+    const value = event.explicitOriginalTarget.textContent.trim());
+    const label = event.explicitOriginalTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
+    label.textContent = value;
   }
 
   collapsibleSelectors.forEach(button => {
