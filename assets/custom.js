@@ -57,5 +57,5 @@
       }
     });
 	//console.log("variant changed");
-    const value = changeNewValueName(event);
+    //const value = changeNewValueName(event);
   });
