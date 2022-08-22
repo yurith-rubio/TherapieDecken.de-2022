@@ -182,6 +182,41 @@
         "image": "shopify:\/\/shop_images\/CODECBAD_bbe301ee-cfca-4c8c-8d3d-1f5370eaa119.jpg",
         "image_position": "left"
       }
+    },
+    "166119334206b76e4e": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "5f4a6653-d244-4c80-a0d1-1a8cc82e1847": {
+          "type": "title",
+          "settings": {
+            "subheading": "Sub-heading",
+            "title": "Title",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "d9123beb-f82a-496b-b9f9-cc48de0545a1": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5f4a6653-d244-4c80-a0d1-1a8cc82e1847",
+        "d9123beb-f82a-496b-b9f9-cc48de0545a1"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/CODECBAD_1.jpg",
+        "image_position": "right"
+      }
     }
   },
   "order": [
@@ -196,6 +231,7 @@
     "1658231013d0ac4882",
     "1658230257857936b7",
     "165831150554a4009d",
-    "1661192117ef55e5ed"
+    "1661192117ef55e5ed",
+    "166119334206b76e4e"
   ]
 }
