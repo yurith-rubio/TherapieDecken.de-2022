@@ -32,14 +32,9 @@
       	{{ page.title }}
       {% endif %}
     </h1>
-    {%- if section.settings.review_starts -%}
-      <div class="review_starts">
-        <img load="lazy" src="https://cdn.shopify.com/s/files/1/2451/6611/files/5-stars_900x.png?v=1604350117">
-      </div>
-    {% endif %}
-    {%- if section.settings.content != blank -%}
+    {%- if section.settings.custom_header != blank -%}
       <div class="SectionHeader__Description Rte">
-        {{ section.settings.content }}
+        {{ section.settings.custom_header }}
       </div>
     {% endif %}
   </div>
@@ -67,15 +62,25 @@
     },
     {
       "type": "text",
+      "id": "sub_headline",
+      "label": "Sub Headline",
+      "default": "Customize Title if needed"
+    },
+    {
+      "type": "text",
       "id": "custom_title_text",
       "label": "Custom Title",
       "default": "Customize Title if needed"
     },
-	  {
-      "type": "text",
-      "id": "sub_headline",
-      "label": "Sub Headline",
-      "default": "Customize Title if needed"
+    {
+      "type": "liquid",
+      "id": "custom_header",
+      "label": "Custom header",
+      "info": "Replace standard headings for custom ones"
+    },
+    {
+      "type": "header",
+      "content": "Image header"
     },
     {
        "type": "image_picker",
@@ -101,18 +106,6 @@
       "label": "Apply overlay on image",
       "info": "This can improve text visibility.",
       "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "review_starts",
-      "label": "Review Stars",
-      "default": false
-    },
-    {
-      "type": "richtext",
-      "id": "content",
-      "label": "Extra Content",
-      "info": "Write extra needed content"
     }
   ],
   "presets": [
