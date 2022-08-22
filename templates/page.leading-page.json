@@ -217,6 +217,41 @@
         "image": "shopify:\/\/shop_images\/CODECBAD_1.jpg",
         "image_position": "right"
       }
+    },
+    "16611933787f518157": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "acafb62d-92b4-47fa-9e67-2494e27946a2": {
+          "type": "title",
+          "settings": {
+            "subheading": "Sub-heading",
+            "title": "Title",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "917f4bdf-8688-462e-8c3c-9f3b946c5110": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "acafb62d-92b4-47fa-9e67-2494e27946a2",
+        "917f4bdf-8688-462e-8c3c-9f3b946c5110"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
+        "image_position": "left"
+      }
     }
   },
   "order": [
@@ -232,6 +267,7 @@
     "1658230257857936b7",
     "165831150554a4009d",
     "1661192117ef55e5ed",
-    "166119334206b76e4e"
+    "166119334206b76e4e",
+    "16611933787f518157"
   ]
 }
