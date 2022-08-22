@@ -318,6 +318,13 @@
         "heading": "Eigenschaften der Balance Gewichtsdecke",
         "video_url": "https:\/\/player.vimeo.com\/video\/399192093"
       }
+    },
+    "166119351696cb3538": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'right-blanket' %}"
+      }
     }
   },
   "order": [
@@ -337,6 +344,7 @@
     "16611933787f518157",
     "166119343031f023ec",
     "1661193449ba39d1f7",
-    "166119345741cae1ab"
+    "166119345741cae1ab",
+    "166119351696cb3538"
   ]
 }
