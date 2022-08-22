@@ -4,14 +4,20 @@
       "type": "leading-page-header",
       "settings": {
         "enable_custom_title": true,
+        "sub_headline": "Original Therapiedecke",
         "custom_title_text": "",
-        "sub_headline": "",
+        "custom_header": "<span class=\"Heading\" style=\"font-size:30px; line-height:1.2\">\n<span>Weighted blankets<\/span>\n<\/br>\n<span style=\"color:#fac636\">for adults<\/span>\n<\/span>",
         "image": "shopify:\/\/shop_images\/header_desktop.jpg",
         "mobile_custom": false,
         "image_mobile": "shopify:\/\/shop_images\/header_mobile.jpg",
-        "apply_overlay": true,
-        "review_starts": false,
-        "content": ""
+        "apply_overlay": true
+      }
+    },
+    "1658226955425b09aa": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'right-blanket' %}"
       }
     },
     "main": {
@@ -46,14 +52,6 @@
       "disabled": true,
       "settings": {
         "bg-color": "#f8f8f8"
-      }
-    },
-    "1658226955425b09aa": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "paddings": false,
-        "custom_liquid": "{% render 'slider-quote-logos' %}"
       }
     },
     "16582293760de2aaa0": {
@@ -148,10 +146,10 @@
   },
   "order": [
     "16611671694142ce6c",
+    "1658226955425b09aa",
     "main",
     "1658224635f6e2e05d",
     "1658225527f1784653",
-    "1658226955425b09aa",
     "16582293760de2aaa0",
     "1658238003d7ee03f6",
     "1658231013d0ac4882",
