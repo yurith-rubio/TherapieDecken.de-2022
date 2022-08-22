@@ -22,11 +22,11 @@
      <div class="PageHeader__ImageWrapper {% if section.settings.apply_overlay %}Image--contrast{% endif %}" style="background-image: url({{ collection.image | img_url: '800x' }})"></div>
   </noscript>
   <div class="SectionHeader SectionHeader--center" style="margin-bottom: 0; padding: 0 25px;">
-    {% if template contains "gewichtsdecken-im-test" %}
-    <p class="Heading u-h6" style="margin: 0;">{{ section.settings.sub_headline }}</p>
+    {% if section.settings.enable_custom_title && section.settings.sub_headline %}
+      <p class="Heading u-h6" style="margin: 0;">{{ section.settings.sub_headline }}</p>
     {% endif %}
     <h1 class=" Heading u-h1">
-      {% if section.settings.custom_title %}
+      {% if section.settings.enable_custom_title %}
       	{{ section.settings.custom_title_text }}
       {% else %}
       	{{ page.title }}
@@ -56,14 +56,14 @@
   "name": "Page Standard Header",
   "settings": [
     {
-      "type": "checkbox",
-      "id": "custom_title",
-      "label": "Enable custom heading",
-      "default": false
-    },
-    {
       "type": "header",
       "content": "Custom heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_custom_title",
+      "label": "Enable custom heading",
+      "default": false
     },
     {
       "type": "text",
