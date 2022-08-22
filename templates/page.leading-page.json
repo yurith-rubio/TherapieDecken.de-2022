@@ -6,7 +6,7 @@
         "enable_custom_title": true,
         "sub_headline": "Original Therapiedecke",
         "custom_title_text": "",
-        "custom_header": "<span style=\"font-size:30px\">\n<span>Weighted blankets<\/span>\n<\/br>\n<span>for adults<\/span>\n<\/span>",
+        "custom_header": "<span class=\"Heading\" style=\"font-size:30px; line-height:1.2\">\n<span>Weighted blankets<\/span>\n<\/br>\n<span style=\"color:#fac636\">for adults<\/span>\n<\/span>",
         "image": "shopify:\/\/shop_images\/header_desktop.jpg",
         "mobile_custom": false,
         "image_mobile": "shopify:\/\/shop_images\/header_mobile.jpg",
