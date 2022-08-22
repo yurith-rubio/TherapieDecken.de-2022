@@ -3,10 +3,12 @@
     "16611671694142ce6c": {
       "type": "leading-page-header",
       "settings": {
-        "enable_custom_title": false,
-        "custom_title_text": "Customize Title if needed",
-        "sub_headline": "Customize Title if needed",
+        "enable_custom_title": true,
+        "custom_title_text": "",
+        "sub_headline": "",
+        "image": "shopify:\/\/shop_images\/header_desktop.jpg",
         "mobile_custom": false,
+        "image_mobile": "shopify:\/\/shop_images\/header_mobile.jpg",
         "apply_overlay": true,
         "review_starts": false,
         "content": ""
