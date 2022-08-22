@@ -20,6 +20,11 @@
         "custom_liquid": "{% render 'right-blanket' %}"
       }
     },
+    "16611740535ba69f3e": {
+      "type": "leading-page-grid",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "disabled": true,
@@ -147,6 +152,7 @@
   "order": [
     "16611671694142ce6c",
     "1658226955425b09aa",
+    "16611740535ba69f3e",
     "main",
     "1658224635f6e2e05d",
     "1658225527f1784653",
