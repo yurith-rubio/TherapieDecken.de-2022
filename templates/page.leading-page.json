@@ -252,6 +252,72 @@
         "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
         "image_position": "left"
       }
+    },
+    "166119343031f023ec": {
+      "type": "main-faq",
+      "blocks": {
+        "d8ac3b5d-5710-4904-970d-8eefd5f3b414": {
+          "type": "separator",
+          "settings": {
+            "title": "Default"
+          }
+        },
+        "4077161a-f03b-4b97-8fd6-43609aabbf92": {
+          "type": "question",
+          "settings": {
+            "title": "",
+            "answer": "",
+            "answer_html": ""
+          }
+        }
+      },
+      "block_order": [
+        "d8ac3b5d-5710-4904-970d-8eefd5f3b414",
+        "4077161a-f03b-4b97-8fd6-43609aabbf92"
+      ],
+      "settings": {
+      }
+    },
+    "1661193449ba39d1f7": {
+      "type": "faq-general",
+      "settings": {
+      }
+    },
+    "166119345741cae1ab": {
+      "type": "faq-homepage",
+      "blocks": {
+        "bb72b1ef-6fec-46e4-8a06-548fd996113f": {
+          "type": "accordion_simple",
+          "settings": {
+            "summary": "Title Example",
+            "content": "Example of text that could be paced with something related to the title above"
+          }
+        },
+        "42af12b0-a540-4ecf-b083-c3e135d15878": {
+          "type": "accordion_simple",
+          "settings": {
+            "summary": "Title Example",
+            "content": "Example of text that could be paced with something related to the title above"
+          }
+        },
+        "da24c1aa-e5a0-40c1-8e7f-092e7981b267": {
+          "type": "accordion_simple",
+          "settings": {
+            "summary": "Title Example",
+            "content": "Example of text that could be paced with something related to the title above"
+          }
+        }
+      },
+      "block_order": [
+        "bb72b1ef-6fec-46e4-8a06-548fd996113f",
+        "42af12b0-a540-4ecf-b083-c3e135d15878",
+        "da24c1aa-e5a0-40c1-8e7f-092e7981b267"
+      ],
+      "settings": {
+        "sub-heading": "Premium Therapiedecke",
+        "heading": "Eigenschaften der Balance Gewichtsdecke",
+        "video_url": "https:\/\/player.vimeo.com\/video\/399192093"
+      }
     }
   },
   "order": [
@@ -268,6 +334,9 @@
     "165831150554a4009d",
     "1661192117ef55e5ed",
     "166119334206b76e4e",
-    "16611933787f518157"
+    "16611933787f518157",
+    "166119343031f023ec",
+    "1661193449ba39d1f7",
+    "166119345741cae1ab"
   ]
 }
