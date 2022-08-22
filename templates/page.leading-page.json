@@ -1,5 +1,17 @@
 {
   "sections": {
+    "16611671694142ce6c": {
+      "type": "leading-page-header",
+      "settings": {
+        "enable_custom_title": false,
+        "custom_title_text": "Customize Title if needed",
+        "sub_headline": "Customize Title if needed",
+        "mobile_custom": false,
+        "apply_overlay": true,
+        "review_starts": false,
+        "content": ""
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "disabled": true,
@@ -15,8 +27,9 @@
     },
     "1658224635f6e2e05d": {
       "type": "page-standard-header",
+      "disabled": true,
       "settings": {
-        "custom_title": true,
+        "enable_custom_title": false,
         "custom_title_text": "Gewichtsdecken im Test",
         "sub_headline": "Gewichtsdecken im Warentest",
         "image": "shopify:\/\/shop_images\/gravity-lifestyle-min.jpg",
@@ -28,12 +41,14 @@
     },
     "1658225527f1784653": {
       "type": "icons-prestige",
+      "disabled": true,
       "settings": {
         "bg-color": "#f8f8f8"
       }
     },
     "1658226955425b09aa": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "paddings": false,
         "custom_liquid": "{% render 'slider-quote-logos' %}"
@@ -41,6 +56,7 @@
     },
     "16582293760de2aaa0": {
       "type": "image-text-block-addons",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Therapiedecken-home-img1.jpg",
         "plain_bg": "#696969",
@@ -56,6 +72,7 @@
     },
     "1658238003d7ee03f6": {
       "type": "text-with-image-new",
+      "disabled": true,
       "blocks": {
         "06d03b33-ad3d-4644-9cf5-8d61da7380ef": {
           "type": "title",
@@ -91,6 +108,7 @@
     },
     "1658231013d0ac4882": {
       "type": "image-with-text-block",
+      "disabled": true,
       "settings": {
         "plain_bg": "#eeeeee",
         "background": "#ffffff",
@@ -105,6 +123,7 @@
     },
     "1658230257857936b7": {
       "type": "banner-custom",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
@@ -115,6 +134,7 @@
     },
     "165831150554a4009d": {
       "type": "button-block",
+      "disabled": true,
       "settings": {
         "bg-color": "#ffffff",
         "button_text": "Zu den Therapiedecken",
@@ -125,6 +145,7 @@
     }
   },
   "order": [
+    "16611671694142ce6c",
     "main",
     "1658224635f6e2e05d",
     "1658225527f1784653",
