@@ -1,0 +1,10 @@
+{% style %}
+    .leadingPageGrid_container{
+        display: grid;
+    }
+{% endstyle %}
+<div class="leadingPageGrid_container">
+<div>
+    
+</div>
+</div>
