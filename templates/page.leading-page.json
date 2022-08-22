@@ -13,6 +13,13 @@
         "apply_overlay": true
       }
     },
+    "1658226955425b09aa": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'right-blanket' %}"
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "disabled": true,
@@ -45,14 +52,6 @@
       "disabled": true,
       "settings": {
         "bg-color": "#f8f8f8"
-      }
-    },
-    "1658226955425b09aa": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "paddings": false,
-        "custom_liquid": "{% render 'slider-quote-logos' %}"
       }
     },
     "16582293760de2aaa0": {
@@ -147,10 +146,10 @@
   },
   "order": [
     "16611671694142ce6c",
+    "1658226955425b09aa",
     "main",
     "1658224635f6e2e05d",
     "1658225527f1784653",
-    "1658226955425b09aa",
     "16582293760de2aaa0",
     "1658238003d7ee03f6",
     "1658231013d0ac4882",
