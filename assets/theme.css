@@ -7739,6 +7739,9 @@ a.CollectionItemPage {
   margin: auto;
 }
 
+.FeatureText__Content {
+  padding: 30px;
+}
 .FeatureText__ContentWrapper {
   padding-left: 24px;
   padding-right: 24px;
@@ -7773,8 +7776,7 @@ a.CollectionItemPage {
 @media screen and (min-width: 641px) {
   .FeatureText__Content {
     max-width: 600px;
-    margin: 0 auto;
-    padding: 0 30px;
+    margin: 0 auto
   }
   
   .FeatureText__Content_addons{
@@ -12771,4 +12773,30 @@ header.html-text-wr{
 .ProductForm_CollapsibleArrow{
   position: relative;
   top: 4px;
+}
+
+/* right-blanket */
+.rightBlanket_container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3c3c;
+  color: white;
+  padding: 10px 0;
+}
+
+.rightBlanket_container p {
+  margin-bottom: 0;
+  padding: 0 20px
+}
+
+.rightBlanket_linkContent span {
+  position: relative;
+  left: 5px
+}
+
+.rightBlanket_linkContent:hover .Button:hover {
+  background-color: #fff !important;
+  color: #3a3c3c !important;
 }
