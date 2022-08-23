@@ -40,8 +40,10 @@ span#time {
 }
 .product__description__property.order-summary__small-text {
   display: none;}
-.h4{
-  font-weight: bold;}
+.point_wrapper .h4 {
+  font-weight: bold;
+  line-height: 1.5em;
+}
 .point_wrapper{
   display: flex;
   padding: 10px 0;}
