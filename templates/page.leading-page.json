@@ -184,7 +184,7 @@
       "settings": {
         "bg-color": "#5b5b5b",
         "margin-top": "auto",
-        "margin-top-mobile": "inehrit",
+        "margin-top-mobile": "inherit",
         "bg-color-icons": "",
         "icons-size": "40px",
         "icons-color": "#fac636",
