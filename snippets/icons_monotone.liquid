@@ -102,6 +102,18 @@
   <span class="icon-sixty-three-percent"></span>
 {% endif %}
 
+{%- if block.settings.simple_icons == "sustainable_world" -%}
+<span class="icon-sustainable-world"></span>
+{% endif %}
+
+{% if block.settings.simple_icons == 'wirkung'%}
+  <span class="icon-relax"></span>
+{% endif %}
+
+
+
+<!-- For collections -->
+
 {%- if collection_selected_icon == "premium-cotton" -%}
 	<span class="icon-premium-cotton"></span>
 {% endif %}
@@ -133,15 +145,6 @@
 {%- if collection_selected_icon == "icon-icn_loopribbon" -%}
 	<span class="icon-icn_loopribbon"></span>
 {% endif %}
-
-{%- if collection_selected_icon == "sustainable_world" -%}
-<span class="icon-sustainable-world"></span>
-{% endif %}
-
 {%- if collection_selected_icon == "stability70" -%}
 	<span class="icon-stability70"></span>
-{% endif %}
-
-{% if block.settings.simple_icons == 'wirkung'%}
-  <span class="icon-relax"></span>
 {% endif %}
