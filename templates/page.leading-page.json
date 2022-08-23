@@ -154,7 +154,7 @@
         "a6bd9e53-05bc-42c0-a554-edec5d9e9e13": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "none",
+            "simple_icons": "5stars",
             "title_icon": "Icon Title",
             "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
           }
@@ -162,7 +162,7 @@
         "9d020ff0-61fe-48b1-8feb-87f62513d5e2": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "none",
+            "simple_icons": "european_union",
             "title_icon": "Icon Title",
             "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
           }
@@ -170,7 +170,7 @@
         "85b13df4-d9a9-4dfd-8773-e9d90d7c40b9": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "none",
+            "simple_icons": "sustainable_world",
             "title_icon": "Icon Title",
             "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
           }
@@ -178,7 +178,7 @@
         "ca02d543-3dd8-4c3e-add6-19f2152582bc": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "none",
+            "simple_icons": "500plus",
             "title_icon": "Icon Title",
             "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
           }
