@@ -148,6 +148,52 @@
         "spacer_bottom": "50px"
       }
     },
+    "166125483786e62d29": {
+      "type": "icons-custom",
+      "blocks": {
+        "a6bd9e53-05bc-42c0-a554-edec5d9e9e13": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "none",
+            "title_icon": "Icon Title",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        },
+        "9d020ff0-61fe-48b1-8feb-87f62513d5e2": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "none",
+            "title_icon": "Icon Title",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        },
+        "85b13df4-d9a9-4dfd-8773-e9d90d7c40b9": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "none",
+            "title_icon": "Icon Title",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a6bd9e53-05bc-42c0-a554-edec5d9e9e13",
+        "9d020ff0-61fe-48b1-8feb-87f62513d5e2",
+        "85b13df4-d9a9-4dfd-8773-e9d90d7c40b9"
+      ],
+      "settings": {
+        "bg-color": "#5b5b5b",
+        "margin-top": "auto",
+        "margin-top-mobile": "inehrit",
+        "bg-color-icons": "",
+        "icons-size": "40px",
+        "icons-color": "#fac636",
+        "text-color": "",
+        "mobile-style-glider": true,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
     "1661192117ef55e5ed": {
       "type": "text-with-image-new",
       "blocks": {
@@ -309,6 +355,7 @@
     "1658231013d0ac4882",
     "1658230257857936b7",
     "165831150554a4009d",
+    "166125483786e62d29",
     "1661192117ef55e5ed",
     "166119334206b76e4e",
     "16611933787f518157",
