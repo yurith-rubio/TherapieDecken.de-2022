@@ -49,6 +49,7 @@
     .icons-container-mobile{
       display: grid;
       grid-template-columns: auto auto;
+      gap: 20px;
     }
   {% endif %}
 	{% if section.settings.margin-top-mobile != blank %}
@@ -94,7 +95,7 @@
         {% endfor %}
       </div>
     {% else %}
-      <div class="Container--standard--medium icons-container-mobile">
+      <div class="icons-container-mobile">
         {% for block in section.blocks %}
         <div class="icons-del-wr item">
           <span class="IconsCustom__IconsWrapper" style="font-size:{{ section.settings.icons-size }}; color: {{ section.settings.icons-color }};">{% render 'icons_monotone' | block:block, settings: settings %}</span>

@@ -190,6 +190,7 @@
         "icons-color": "#fac636",
         "text-color": "#ffffff",
         "mobile-style-glider": false,
+        "icons_two_columns_mobile": true,
         "button_label": "",
         "button_link": ""
       }

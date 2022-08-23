@@ -1,5 +1,25 @@
-{% if block.settings.simple_icons == 'wirkung'%}
-  <span class="icon-relax"></span>
+{% if block.settings.simple_icons == '5stars'%}
+  <span class="icon-5stars"></span>
+{% endif %}
+
+{% if block.settings.simple_icons == '10'%}
+  <span class="icon-questions"></span>
+{% endif %}
+
+{% if block.settings.simple_icons == '21-45'%}
+  <span class="icon-age-group"></span>
+{% endif %}
+
+{% if block.settings.simple_icons == '28'%}
+  <span class="icon-days1"></span>
+{% endif %}
+
+{% if block.settings.simple_icons == '100'%}
+  <span class="icon-100"></span>
+{% endif %}
+
+{% if block.settings.simple_icons == '500plus'%}
+  <span class="icon-500plus"></span>
 {% endif %}
 
 {% if block.settings.simple_icons == 'gewicht'%}
@@ -50,28 +70,16 @@
   <span class="icon-washing-machine"></span>
 {% endif %}
 
-{% if block.settings.simple_icons == '100'%}
-  <span class="icon-100"></span>
-{% endif %}
-
-{% if block.settings.simple_icons == '28'%}
-  <span class="icon-days1"></span>
-{% endif %}
-
-{% if block.settings.simple_icons == '21-45'%}
-  <span class="icon-age-group"></span>
-{% endif %}
-
-{% if block.settings.simple_icons == '10'%}
-  <span class="icon-questions"></span>
-{% endif %}
-
 {% if block.settings.simple_icons == 'better-sleep-study'%}
   <span class="icon-better-sleep-study"></span>
 {% endif %}
 
 {% if block.settings.simple_icons == 'less-stress-study'%}
   <span class="icon-less-stress-study"></span>
+{% endif %}
+
+{%- if collection_selected_icon == "european_union" -%}
+	<span class="icon-In-Europa-hergestellt"></span>
 {% endif %}
 
 {% if block.settings.simple_icons == 'falling-asleep-faster-study'%}
@@ -126,6 +134,14 @@
 	<span class="icon-icn_loopribbon"></span>
 {% endif %}
 
+{%- if collection_selected_icon == "sustainable_world" -%}
+<span class="icon-sustainable-world"></span>
+{% endif %}
+
 {%- if collection_selected_icon == "stability70" -%}
 	<span class="icon-stability70"></span>
+{% endif %}
+
+{% if block.settings.simple_icons == 'wirkung'%}
+  <span class="icon-relax"></span>
 {% endif %}
