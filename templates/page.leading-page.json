@@ -189,7 +189,7 @@
         "icons-size": "40px",
         "icons-color": "#fac636",
         "text-color": "#ffffff",
-        "mobile-style-glider": true,
+        "mobile-style-glider": false,
         "button_label": "",
         "button_link": ""
       }
