@@ -1046,7 +1046,6 @@ body:not(.is-tabbing) textarea:focus {
 .Container--extraNarrow {
   max-width: 700px;
   margin: auto;
-  padding: 0 24px;
 }
 
 .Container--standard{
