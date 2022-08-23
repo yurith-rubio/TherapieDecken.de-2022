@@ -7774,6 +7774,7 @@ a.CollectionItemPage {
   .FeatureText__Content {
     max-width: 600px;
     margin: 0 auto;
+    padding: 0 30px;
   }
   
   .FeatureText__Content_addons{
