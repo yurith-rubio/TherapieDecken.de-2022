@@ -64,7 +64,7 @@
 
                     {% when 'richtext' %}
                         <div class="SectionHeader__Description Rte"
-                             style="color: {{ section.settings.text_color }}; padding: 0 25px;">
+                             style="color: {{ section.settings.text_color }}; {% if section.settings.bg-color != blank %}padding: 0 25px;{% endif %}">
                           {{ block.settings.richtext }}
                         </div>
 
