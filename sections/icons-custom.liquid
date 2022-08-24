@@ -66,6 +66,10 @@
 <div class="full-bg-color-icons section-space-medium IconCustom__Wrapper-{{ section.id }}">
   <div class="bg-color-icons">
     <div class="Container--standard--medium icons-container icons-container-desktop">
+      <p class="adtg-title-sub SectionHeader__SubHeading Heading u-h6">{{ section.settings.title-sub }}</p>
+      <h2 class="adtg-title-main SectionHeader__Heading Heading u-h1">
+        {{ section.settings.title}}
+      </h2>
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'icons-custom' -%}
