@@ -66,7 +66,7 @@
 <div class="full-bg-color-icons section-space-medium IconCustom__Wrapper-{{ section.id }}">
   <div class="bg-color-icons">
     <div class="Container--standard--medium icons-container icons-container-desktop">
-      <p class="adtg-title-sub SectionHeader__SubHeading Heading u-h6">{{ section.settings.title-sub }}</p>
+      <p class="adtg-title-sub SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading }}</p>
       <h2 class="adtg-title-main SectionHeader__Heading Heading u-h1">
         {{ section.settings.title}}
       </h2>
@@ -159,6 +159,12 @@
       "label": "Mobile - Margin Top",
 		  "default": "inehrit",
 		  "info": "Use this function when wanting to overlap the block with other blocks with a minus value. e.g. -130px"
+		},
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "Subheading"
 		},
       	{
           "type": "text",
