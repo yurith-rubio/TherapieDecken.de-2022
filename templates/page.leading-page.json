@@ -8,7 +8,7 @@
         "custom_title_text": "",
         "custom_header": "<span class=\"Heading\" style=\"font-size:30px; line-height:1.2\">\n<span>Gewichtsdecken<\/span>\n<\/br>\n<span>für Erwachsene<\/span>\n<\/span>",
         "image": "shopify:\/\/shop_images\/header_desktop.jpg",
-        "mobile_custom": false,
+        "mobile_custom": true,
         "image_mobile": "shopify:\/\/shop_images\/header_mobile.jpg",
         "apply_overlay": true
       }
