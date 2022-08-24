@@ -14,7 +14,7 @@
         "button_text": "Jetzt Rabatt erhalten",
         "button_link": "#rabatt_code",
         "enable_logo_under_button": true,
-        "logo_file": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/DAK-LOGO_svg_white.svg?v=1656494793"
+        "logo_file": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/Barmer_448440e7-2580-474e-b2d5-5fbd38ed8e60.png?v=1661335003"
       }
     },
     "16565000715b05fcb2": {
@@ -39,7 +39,7 @@
         "21c7411c-7d08-45ff-9037-9a4ef06de575": {
           "type": "liquid",
           "settings": {
-            "liquid": "<style>\n.insuranceSaleVoucher_ul li:before{\n  color: #fac636;\n  content: \"\\2022\";\n  font-weight: bold;\n  display: inline-block; \n  width: 1em;\n  margin-left: -1em;\n}\n.insuranceSaleVoucher_ul li{\n  list-style: none;\n}\n<\/style>\n<span style=\"\nfont-family: var(--heading-font-family);\nfont-weight: var(--heading-font-weight);\nfont-style: var(--heading-font-style);\nfont-size: 18px;\">\n<span style=\"color:#fac636\">\n10€ auf Therapiedecken \n<\/span>\n<br>\n<span style=\"\ncolor:#fff\">\n für DAK Krankenkasse\n<\/span>\n<\/span>\n<\/h2>\n<ul class=\"insuranceSaleVoucher_ul\" style=\"color:#fff\">\n<li>Jetzt als Mitglied der DAK Krankenkasse sparen und schon bald besser schlafen.<\/li>\n<li>Therapiedecken für weniger Stress und mehr Wohlbefinden.<\/li>\n<li>Hilft bei Schlafstörungen, Schlafproblemen, als auch bei Entwicklungsstörungen, Syndromen und progredienten Erkrankungen.<\/li>\n<li>28 Tage Probeschlafen.<\/li>\n<\/ul>"
+            "liquid": "<style>\n.insuranceSaleVoucher_ul li:before{\n  color: #fac636;\n  content: \"\\2022\";\n  font-weight: bold;\n  display: inline-block; \n  width: 1em;\n  margin-left: -1em;\n}\n.insuranceSaleVoucher_ul li{\n  list-style: none;\n}\n<\/style>\n<span style=\"\nfont-family: var(--heading-font-family);\nfont-weight: var(--heading-font-weight);\nfont-style: var(--heading-font-style);\nfont-size: 18px;\">\n<span style=\"color:#fac636\">\n10€ auf Therapiedecken \n<\/span>\n<br>\n<span style=\"\ncolor:#fff\">\n für Barmer Krankenkasse\n<\/span>\n<\/span>\n<\/h2>\n<ul class=\"insuranceSaleVoucher_ul\" style=\"color:#fff\">\n<li>Jetzt als Mitglied der Barmer Krankenkasse sparen und schon bald besser schlafen.<\/li>\n<li>Therapiedecken für weniger Stress und mehr Wohlbefinden.<\/li>\n<li>Hilft bei Schlafstörungen, Schlafproblemen, als auch bei Entwicklungsstörungen, Syndromen und progredienten Erkrankungen.<\/li>\n<li>28 Tage Probeschlafen.<\/li>\n<\/ul>"
           }
         }
       },
