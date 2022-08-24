@@ -68,10 +68,14 @@
 
 <div class="full-bg-color-icons section-space-medium IconCustom__Wrapper-{{ section.id }}">
   <div class="iconsCustom_contentContainer bg-color-icons">
-    <p class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading }}</p>
-    <h2 class="SectionHeader__Heading Heading u-h1">
-      {{ section.settings.title}}
-    </h2>
+    {% if section.settings.subheading != blank %}}
+      <p class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading }}</p>
+    {% endif %}
+    {% if section.settings.title != blank %}}
+      <h2 class="SectionHeader__Heading Heading u-h1">
+        {{ section.settings.title}}
+      </h2>
+    {% endif %}
     <div class="Container--standard--medium icons-container icons-container-desktop">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
