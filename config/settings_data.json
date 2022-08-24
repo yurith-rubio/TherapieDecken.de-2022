@@ -110,7 +110,7 @@
           "home_page_only": false,
           "background": "#5b5b5b",
           "text_color": "#ffffff",
-          "content": "Neu! Therapiedecken jetzt <b>100 Tage<\/b> Probeschlafen",
+          "content": "<style>@media(max-width: 640px){.desktop-view-announcement{display: none;}}<\/style>\n<span class=\"desktop-view-announcement\"><span class=\"icon-star-full\"><\/span><span class=\"icon-star-full\"><\/span><span class=\"icon-star-full\"><\/span><span class=\"icon-star-full\"><\/span><span class=\"icon-star-half1\"><\/span> <b>4.83\/5<\/b> (10.000+ Bewertungen)       <\/span><span class=\"desktop-view-announcement\"><span class=\"icon-checkmark\"><\/span> <b>Original Therapiedecken<\/b>       <\/span><span class=\"icon-calendar-test\"><\/span> <b>100 Tage Probeschlafen<\/b>",
           "link": "shopify:\/\/collections\/erwachsene"
         }
       },
