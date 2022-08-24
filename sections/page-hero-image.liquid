@@ -54,8 +54,8 @@
               </div>
             {%- endif -%}
       
-      		{%- if page.handle == 'dak-kunden-sparen-beim-kauf-einer-therapiedecke' -%}
-			  <img class="dak_logo Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/DAK-LOGO_svg_white.svg?v=1656494793" alt="DAK logo">
+      		{%- if section.settings.enable_logo_under_button -%}
+			  <img class="dak_logo Image--lazyLoad" data-src="{{ section.settings.logo_file }}" alt="DAK logo">
       		{% endif %}
 
           {%- endcapture -%}
@@ -190,6 +190,21 @@
       "type": "url",
       "id": "button_link",
       "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Logo under button"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_logo_under_button",
+      "label": "Enable logo under button",
+      "default": false
+    },
+    {
+      "type": "url",
+      "id": "logo_file",
+      "label": "Logo file link"
     }
   ],
   "presets": [
