@@ -260,32 +260,32 @@
           "type": "icons-custom",
           "settings": {
             "simple_icons": "5stars",
-            "title_icon": "Icon Title",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+            "title_icon": "100.000+ glückliche Kunden",
+            "content_icon": ""
           }
         },
         "9d020ff0-61fe-48b1-8feb-87f62513d5e2": {
           "type": "icons-custom",
           "settings": {
             "simple_icons": "european_union",
-            "title_icon": "Icon Title",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+            "title_icon": "Komplett hergestellt in Europa",
+            "content_icon": ""
           }
         },
         "85b13df4-d9a9-4dfd-8773-e9d90d7c40b9": {
           "type": "icons-custom",
           "settings": {
             "simple_icons": "sustainable_world",
-            "title_icon": "Icon Title",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+            "title_icon": "Die nachhaltigsten Therapiedecken",
+            "content_icon": ""
           }
         },
         "ca02d543-3dd8-4c3e-add6-19f2152582bc": {
           "type": "icons-custom",
           "settings": {
             "simple_icons": "500plus",
-            "title_icon": "Icon Title",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+            "title_icon": "Verschiedene Wchselbezüge",
+            "content_icon": ""
           }
         }
       },
