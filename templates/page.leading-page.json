@@ -299,6 +299,8 @@
         "bg-color": "#5b5b5b",
         "margin-top": "auto",
         "margin-top-mobile": "inherit",
+        "subheading": "",
+        "title": "Wichtige Fakten im Überblick",
         "bg-color-icons": "",
         "icons-size": "40px",
         "icons-color": "#fac636",
