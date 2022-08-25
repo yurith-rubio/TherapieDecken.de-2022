@@ -6,8 +6,10 @@
         "enable_custom_title": true,
         "sub_headline": "Original Therapiedecke",
         "custom_title_text": "",
-        "custom_header": "",
-        "mobile_custom": false,
+        "custom_header": "<span class=\"Heading\" style=\"font-size:30px; line-height:1.2\">\n<span>Gewichtsdecken<\/span>\n<\/br>\n<span>für Erwachsene<\/span>\n<\/span>",
+        "image": "shopify:\/\/shop_images\/header_desktop.jpg",
+        "mobile_custom": true,
+        "image_mobile": "shopify:\/\/shop_images\/header_mobile.jpg",
         "apply_overlay": true
       }
     },
