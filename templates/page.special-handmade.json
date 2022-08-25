@@ -32,8 +32,8 @@
         "fb40686a-9406-40d8-95fa-d81ed03e2967": {
           "type": "title",
           "settings": {
-            "subheading": "Sub-heading",
-            "title": "Title",
+            "subheading": "",
+            "title": "Der 4-Jahreszeiten Bezug",
             "icon_title": false,
             "icons_duotone": "none"
           }
@@ -41,7 +41,7 @@
         "045327d1-0e6e-455a-bb58-de8934ffea2e": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            "richtext": "<p>Der 4-Jahreszeiten Bezug zählt zu unseren Klassikern und ist aus unserem Sortiment gar nicht mehr wegzudenken. Die Besonderheit an diesem Bezug ist, dass dieser aus zwei Seiten besteht: Eine Seite des 4-Jahreszeiten Bezugs besteht aus Samt Verlours, die andere aus kuscheligem Nickistoff. Der Bezug kann je nach Bedarf verwenden. Die meisten Kunden nutzen die Samtseite im Sommer und den kuscheligen Nickistoff für die kälteren Tage.<\/p>"
           }
         }
       },
@@ -56,9 +56,8 @@
         "bg-color": "",
         "bg-color-text-html": "",
         "text_align": "left",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/1_four_seasons.jpg",
-        "fit_image_height": false,
         "image_position": "left"
       }
     },
@@ -68,8 +67,8 @@
         "ecb46539-b0d8-4d5d-834f-01aab604fce5": {
           "type": "title",
           "settings": {
-            "subheading": "Sub-heading",
-            "title": "Title",
+            "subheading": "",
+            "title": "Kühlender Baumwollbezug",
             "icon_title": false,
             "icons_duotone": "none"
           }
@@ -77,7 +76,7 @@
         "d55c758b-a4f2-40d8-9a44-8f259660ea1c": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            "richtext": "<p>Der Baumwollbezug besteht aus 100% zertifizierter Baumwolle. Er eignet sich für alle, die besonders viel Wert auf natürliche Materialien legen oder die schnell zum Schwitzen neigen. Der Stoff ist angenehm und hat einen kühlenden Effekt auf der Haut.<\/p>"
           }
         }
       },
@@ -92,9 +91,24 @@
         "bg-color": "",
         "bg-color-text-html": "",
         "text_align": "left",
-        "text_color": "#3A3C3C",
-        "fit_image_height": false,
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/2_Cooling_Cotton.jpg",
         "image_position": "right"
+      }
+    },
+    "1661422565c6f67ad0": {
+      "type": "image-with-text-block",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_Hero.jpg",
+        "plain_bg": "#696969",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "small",
+        "title": "Your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_parallax": false
       }
     }
   },
@@ -102,6 +116,7 @@
     "1661421556325202ce",
     "main",
     "166142186164b802ac",
-    "16614218671b7fc193"
+    "16614218671b7fc193",
+    "1661422565c6f67ad0"
   ]
 }
