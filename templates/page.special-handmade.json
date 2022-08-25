@@ -159,6 +159,13 @@
         "video_url": "https:\/\/www.youtube.com\/watch?v=27h1UpJKFPQ"
       }
     },
+    "166142356056eaeb2e": {
+      "type": "spacer",
+      "settings": {
+        "spacer": 50,
+        "spacer_mobile": 50
+      }
+    },
     "1661423497a85f5453": {
       "type": "featured-video",
       "settings": {
@@ -169,6 +176,13 @@
         "title": "des Bezugs für die Balance Decke",
         "image": "shopify:\/\/shop_images\/2_Cooling_Cotton.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=2Ma2kwttA-A&t=36s"
+      }
+    },
+    "1661423576164c0550": {
+      "type": "spacer",
+      "settings": {
+        "spacer": 50,
+        "spacer_mobile": 50
       }
     }
   },
@@ -181,6 +195,8 @@
     "1661422801bfa27b85",
     "16614230491eef2e90",
     "1661423193de332b43",
-    "1661423497a85f5453"
+    "166142356056eaeb2e",
+    "1661423497a85f5453",
+    "1661423576164c0550"
   ]
 }
