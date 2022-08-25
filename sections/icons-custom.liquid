@@ -48,7 +48,6 @@
     flex: 0 0 25% !important;
     padding: 20px 0 !important;
   }
-  
   {% if section.settings.icons-columns %}
     .icons-container-mobile{
       display: grid;
@@ -56,7 +55,6 @@
       gap: 20px;
     }
   {% endif %}
-  
 	{% if section.settings.margin-top-mobile != blank %}
     .IconCustom__Wrapper-{{ section.id }}{
       margin-top: {{ section.settings.margin-top-mobile }}
@@ -191,20 +189,20 @@
 		  "default": "40px"
 		},
 		{
-          "type": "color",
-          "id": "icons-color",
-          "label": "Icons Color",
+      "type": "color",
+      "id": "icons-color",
+      "label": "Icons Color",
 		  "default": "#fac636"
 		},
 		{
-          "type": "color",
-          "id": "text-color",
-          "label": "Text Color"
+      "type": "color",
+      "id": "text-color",
+      "label": "Text Color"
 		},
 		{
-          "type": "checkbox",
-          "id": "mobile-style-glider",
-          "label": "Icons shown in a slider for mobile",
+      "type": "checkbox",
+      "id": "mobile-style-glider",
+      "label": "Icons shown in a slider for mobile",
 		  "default": true
 		},
         {
