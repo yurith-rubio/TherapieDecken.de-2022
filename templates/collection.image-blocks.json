@@ -158,9 +158,9 @@
         "3a6b46e5-0c32-4dc3-a0b9-53c153a7cca7": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "none",
-            "title_icon": "Icon Title",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+            "simple_icons": "sustainable_world",
+            "title_icon": "Die nachhaltigsten Therapiedecken",
+            "content_icon": ""
           }
         },
         "2770a464-84e2-4f6c-99c5-0d69f71a4424": {
