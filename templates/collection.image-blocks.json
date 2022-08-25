@@ -29,6 +29,45 @@
       "settings": {
       }
     },
+    "1661417927ad24a253": {
+      "type": "text-with-image-new",
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image_position": "right"
+      }
+    },
+    "1661417934a7f444b4": {
+      "type": "text-with-image-new",
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image_position": "right"
+      }
+    },
+    "1661417939e2a342bb": {
+      "type": "text-with-image-new",
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image_position": "right"
+      }
+    },
     "166141787920f9be4c": {
       "type": "custom-liquid",
       "settings": {
@@ -42,6 +81,9 @@
     "main",
     "16614178598c605f51",
     "166141789446b3e46d",
+    "1661417927ad24a253",
+    "1661417934a7f444b4",
+    "1661417939e2a342bb",
     "166141787920f9be4c"
   ]
 }
