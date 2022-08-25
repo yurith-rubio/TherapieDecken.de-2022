@@ -158,6 +158,17 @@
         "image": "shopify:\/\/shop_images\/1_four_seasons.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=27h1UpJKFPQ"
       }
+    },
+    "1661423497a85f5453": {
+      "type": "featured-video",
+      "settings": {
+        "section_size": "large",
+        "set_width": "1000",
+        "text_color": "#ffffff",
+        "subheading": "",
+        "title": "Your video",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
     }
   },
   "order": [
@@ -168,6 +179,7 @@
     "1661422565c6f67ad0",
     "1661422801bfa27b85",
     "16614230491eef2e90",
-    "1661423193de332b43"
+    "1661423193de332b43",
+    "1661423497a85f5453"
   ]
 }
