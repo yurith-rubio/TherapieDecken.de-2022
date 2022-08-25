@@ -1,12 +1,25 @@
 {
   "sections": {
+    "1661417832849b4d3f": {
+      "type": "leading-page-header",
+      "settings": {
+        "enable_custom_title": false,
+        "sub_headline": "Customize Title if needed",
+        "custom_title_text": "Customize Title if needed",
+        "custom_header": "",
+        "mobile_custom": false,
+        "apply_overlay": true
+      }
+    },
     "main": {
       "type": "main-collection-image-blocks",
+      "disabled": true,
       "settings": {
       }
     }
   },
   "order": [
+    "1661417832849b4d3f",
     "main"
   ]
 }
