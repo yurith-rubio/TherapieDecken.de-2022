@@ -105,8 +105,8 @@
         "85a960fb-c07e-47cc-90dc-bc8de57111bb": {
           "type": "title",
           "settings": {
-            "subheading": "Sub-heading",
-            "title": "Title",
+            "subheading": "",
+            "title": "Die Ersatzbezüge",
             "icon_title": false,
             "icons_duotone": "none"
           }
@@ -114,7 +114,7 @@
         "bae8309d-63e0-4103-a918-58c5528f7d9e": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            "richtext": "<p>Aus über 500 verschiedenen Ersatzbezügen in unterschiedlichen Muster, Farben und Prints können Sie den passenden Bezug für Ihre Gravity oder Balance Decke auswählen! Alle Bezüge sind auch als normale Bettwäsche in verschiedenen Größen verfügbar.<\/p>"
           }
         }
       },
