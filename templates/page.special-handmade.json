@@ -26,6 +26,13 @@
         "button_color": "#363636"
       }
     },
+    "1661424165293fa9f1": {
+      "type": "spacer",
+      "settings": {
+        "spacer": 0,
+        "spacer_mobile": 50
+      }
+    },
     "166142186164b802ac": {
       "type": "text-with-image-new",
       "blocks": {
@@ -204,6 +211,7 @@
   "order": [
     "1661421556325202ce",
     "main",
+    "1661424165293fa9f1",
     "166142186164b802ac",
     "16614218671b7fc193",
     "1661422565c6f67ad0",
