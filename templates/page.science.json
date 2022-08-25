@@ -13,8 +13,9 @@
     "1636118585f2235ab4": {
       "type": "page-standard-header",
       "settings": {
-        "custom_title": false,
+        "enable_custom_title": false,
         "custom_title_text": "Customize Title if needed",
+        "sub_headline": "Customize Title if needed",
         "image": "shopify:\/\/shop_images\/TD-LP-Science-images_heading-web.jpg",
         "mobile_custom": true,
         "image_mobile": "shopify:\/\/shop_images\/TD-LP-Science-images_heading_1200x800_web_2.jpg",
@@ -115,11 +116,14 @@
         "bg-color": "#f8f8f8",
         "margin-top": "-110px",
         "margin-top-mobile": "inehrit",
+        "subheading": "",
+        "title": "",
         "bg-color-icons": "#5b5b5b",
         "icons-size": "40px",
         "icons-color": "#fac636",
         "text-color": "#ffffff",
-        "mobile-style-glider": false,
+        "mobile-style-glider": true,
+        "icons-columns": false,
         "button_label": "Zur Studie",
         "button_link": "https:\/\/www.tandfonline.com\/doi\/abs\/10.1080\/0164212X.2015.1066220"
       }
