@@ -103,9 +103,9 @@
         "plain_bg": "#696969",
         "background": "#ffffff",
         "text_color": "#1c1b1b",
-        "block_size": "small",
-        "title": "Your story",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "block_size": "large",
+        "title": "",
+        "content": "<p>Alle Therapiedecken Bezüge werden in liebevoller Handarbeit hergestellt und werden speziell für unsere Modelle gefertigt. Je nach Modell - Gravity oder Balance - sind diese mit unseren Befestigungssystemen ausgestattet und sorgen so dafür, dass Ihre Decke trotz Gewicht nicht im Bezug verrutscht. So bleibt auch das Inlett einer 12kg Decke immer an Ort und Stelle.<\/p>",
         "button_label": "",
         "button_link": "",
         "show_parallax": false
