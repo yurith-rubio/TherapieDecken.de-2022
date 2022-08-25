@@ -142,9 +142,9 @@
         "8185cf18-fe67-4f48-aced-645965e0a819": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "none",
-            "title_icon": "Icon Title",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+            "simple_icons": "5stars",
+            "title_icon": "100.000+ glückliche Kunden",
+            "content_icon": ""
           }
         },
         "f4cea1cf-775c-45df-a9ca-6ae6df80ebc7": {
