@@ -174,6 +174,13 @@
         "spacer_mobile": 50
       }
     },
+    "1661423816fd003c65": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "<div style=\"padding: 30px; display:flex; justify-content: center;\">\n<img class=\"leadGrid_logo\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/Gravity-black-svg-logo.svg?v=1661176871\" alt=\"gravity-logo\" width=\"100\" height=\"auto\">\n<\/div>"
+      }
+    },
     "1661423497a85f5453": {
       "type": "featured-video",
       "settings": {
@@ -205,6 +212,7 @@
     "166142367409ff6585",
     "1661423193de332b43",
     "166142356056eaeb2e",
+    "1661423816fd003c65",
     "1661423497a85f5453",
     "1661423576164c0550"
   ]
