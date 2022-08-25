@@ -1,3 +1,8 @@
+{% if section.settings.dark_image %}
+  .features--show-image-zooming .Image--lazyLoaded.Image--zoomOut{
+    filter: brightness(70%);
+  }
+{% endif %}
 <section class="Section" id="section-{{ section.id }}">
   <div class="FlexboxIeFix">
     {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
