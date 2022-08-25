@@ -16,10 +16,26 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "16614178598c605f51": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'right-blanket' %}"
+      }
+    },
+    "166141787920f9be4c": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'right-blanket' %}"
+      }
     }
   },
   "order": [
     "1661417832849b4d3f",
-    "main"
+    "main",
+    "16614178598c605f51",
+    "166141787920f9be4c"
   ]
 }
