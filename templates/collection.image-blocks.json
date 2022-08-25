@@ -35,8 +35,8 @@
         "604ddf39-7513-4d5b-a77d-b162b03f46db": {
           "type": "title",
           "settings": {
-            "subheading": "Sub-heading",
-            "title": "Title",
+            "subheading": "",
+            "title": "Die Gravity Gewichtsdecke",
             "icon_title": false,
             "icons_duotone": "none"
           }
@@ -44,7 +44,7 @@
         "50689523-98c0-4026-a70b-6635134a9fae": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            "richtext": "<p>Die Gravity Gewichtsdecke ist unser bekanntestes Modell und gilt schon fast als ein Klassiker unter den Gewichtsdecken. Die Gravity Gewichtsdecke setzt sich aus zwei Teilen zusammen: Inlett und Bezug. Das Gewicht entsteht durch die feinen Mikroglaskügelchen, die in Quadrate im Inlett eingearbeitet wurden. Der Bezug wird über ein Schlaufensystem mit dem Inlett verbunden, sodass der Bezug nicht verrutscht. Die Decke schmiegt sich durch die Bewegung der Perlen an den Körper an und der Druck auf den Körper erfolgt punktuell.<\/p>"
           }
         }
       },
