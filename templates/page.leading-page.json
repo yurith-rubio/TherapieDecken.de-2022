@@ -42,7 +42,6 @@
       "type": "page-standard-header",
       "disabled": true,
       "settings": {
-        "enable_custom_title": false,
         "custom_title_text": "Gewichtsdecken im Test",
         "sub_headline": "Gewichtsdecken im Warentest",
         "image": "shopify:\/\/shop_images\/gravity-lifestyle-min.jpg",
@@ -306,7 +305,6 @@
         "icons-color": "#fac636",
         "text-color": "#ffffff",
         "mobile-style-glider": false,
-        "icons_two_columns_mobile": true,
         "button_label": "",
         "button_link": ""
       }

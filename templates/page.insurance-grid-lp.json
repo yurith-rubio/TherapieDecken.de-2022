@@ -57,6 +57,13 @@
             "image": "shopify:\/\/shop_images\/KKH.png",
             "link": "https:\/\/therapiedecken.de\/pages\/kkh-krankenkassenkunden-sparen-beim-kauf-einer-therapiedecke"
           }
+        },
+        "022b59d6-4baf-4587-bde3-b8b7a3092f66": {
+          "type": "Image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DAK.png",
+            "link": "https:\/\/therapiedecken.de\/pages\/dak-kunden-sparen-beim-kauf-einer-therapiedecke"
+          }
         }
       },
       "block_order": [
@@ -65,7 +72,8 @@
         "1d2bd601-7205-4be7-988c-99dbf5e06caf",
         "4181d0d3-dcad-4ac4-b1a8-15530d14d908",
         "ee8087b7-58f9-40ba-a8d0-3797d63ff13b",
-        "b5676e7a-6f90-44c1-bdf7-d6e665d69f36"
+        "b5676e7a-6f90-44c1-bdf7-d6e665d69f36",
+        "022b59d6-4baf-4587-bde3-b8b7a3092f66"
       ],
       "settings": {
         "bg-color": "#f8f8f8",
