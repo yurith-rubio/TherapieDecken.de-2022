@@ -194,6 +194,42 @@
         "button_link": ""
       }
     },
+    "166141836432e2dcba": {
+      "type": "faq-homepage",
+      "blocks": {
+        "3173620a-4941-497d-9212-c8516a1ff6bd": {
+          "type": "accordion_simple",
+          "settings": {
+            "summary": "Was ist eine Therapiedecke?",
+            "content": "Die handgefertigte Therapiedecke ist eine hochwertig verarbeitete Decke, die bei Schlafstörungen, Unruhe, sowie bei Entwicklungsstörungen, wie ADHD, Down-Syndrom, Asperger-Syndrom oder Autismus helfen kann. Sie wird auch erfolgreich bei Sensorischen Integrationsstörungen eingesetzt.Das Gewicht der Therapiedecke verteilt sich gleichmäßig über den gesamten Körper, wodurch das Gefühl einer sanften, liebevollen Umarmung entsteht. Der Körper entspannt sich, wie von allein. Das Stress- und Angstniveau sinkt und Sie können friedlich einschlafen oder zur Ruhe kommen.Therapiedecken sind mehr als nur ein therapeutisches Mittel – es sind wundervoll gestaltete, weiche Decken, die man bequem jeden Tag des Jahres benutzen kann."
+          }
+        },
+        "0286ffa6-51df-4513-b9a3-4bcde81bbce7": {
+          "type": "accordion_simple",
+          "settings": {
+            "summary": "Wie wirkt eine Therapiedecke?",
+            "content": "Wie der Name bereits verrät, ist eine Gewichtsdecke keine gewöhnliche Bettdecke. Sie wiegt. Dieses Gewicht richtet sich nach dem Körpergewicht und Körpergröße des Kunden. Der Tiefendruck, der von dem Gewicht ausgeübt wird, hat eine entspannende Wirkung auf die Gelenke, Muskeln und Sehnen. Man kommt innerlich und körperlich zur Ruhe."
+          }
+        },
+        "26cde0a7-556d-41e9-8a1f-6a8ba4141931": {
+          "type": "accordion_simple",
+          "settings": {
+            "summary": "Was ist der Unterschied zwischen der Gravity und Balance Gewichtsdecke?",
+            "content": "Alle unsere Decken erfüllen den gleichen Zweck, nur weist jedes Modell einige Besonderheiten auf, mit denen wir die unterschiedlichen Bedürfnisse unserer Kunden erfüllen möchten.\n\nUnsere Modelle Gravity und Balance verfügen über eine sehr praktische Funktion: Für beide Modelle gibt es passende Bezüge aus wärmendem oder kühlendem Stoff - je nach Empfinden und Jahreszeit. Die Bezüge können leicht abgenommen und gewechselt werden. Es empfiehlt sich, die Bezüge aus unserem Sortiment zu verwenden, da Gewichtsdecken über ein Bezugssystem gegen das Verrutschen verfügen.\n\nDie Gravity Therapiedecke wird durch feine Glasperlen im Inneren der Decke beschwert, die in gleich große Quadrate eingenäht werden. Hier entsteht der Druck auf den Körper durch das Sammeln der Perlen in einer Ecke. Der Bezug wird über 12 Schlaufen am Inlett befestigt, sodass nichts verrutscht und das Inlett fest im Bezug sitzt. Durch die Bewegung der Perlen innerhalb der Quadrate ist die Gravity Decke besonders anschmiegsam. \n\nDie Balance Therapiedecke wird durch kleine Edelstahlperlen beschwert, die in gleichmäßigen Abständen in das Innere der Decke eingeklebt und fixiert werden. Der Kleber basiert auf Wasser, ist geruchlos und ungefährlich. Der Bezug wird über vier Reißverschlüsse am Inlett befestigt. Dadurch wird das Ab- und Beziehen besonders leicht, was gerade für ältere Menschen vorteilhaft ist. Die Balance Decke ist etwas stabiler und fester, wodurch sich dieses Modell für Menschen eignet, die sich nachts viel drehen und bewegen."
+          }
+        }
+      },
+      "block_order": [
+        "3173620a-4941-497d-9212-c8516a1ff6bd",
+        "0286ffa6-51df-4513-b9a3-4bcde81bbce7",
+        "26cde0a7-556d-41e9-8a1f-6a8ba4141931"
+      ],
+      "settings": {
+        "sub-heading": "Therapiedecken.de",
+        "heading": "Häufige Fragen zu den Gewichtsdecken",
+        "video_url": ""
+      }
+    },
     "166141787920f9be4c": {
       "type": "custom-liquid",
       "settings": {
@@ -211,6 +247,7 @@
     "1661417934a7f444b4",
     "1661417939e2a342bb",
     "16614181939085f719",
+    "166141836432e2dcba",
     "166141787920f9be4c"
   ]
 }
