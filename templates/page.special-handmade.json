@@ -6,6 +6,7 @@
         "custom_title": true,
         "custom_title_text": "Hochwertige Bezüge speziell und in Handarbeit für Gewichtsdecken entwickelt",
         "sub_headline": "Die Bezüge von Therapiedecken.de",
+        "image": "shopify:\/\/shop_images\/Header_Desktop_54548715-fc39-4744-99dd-ca158b08ea5b.jpg",
         "mobile_custom": false,
         "apply_overlay": true,
         "review_starts": false,
@@ -24,10 +25,83 @@
         "text_color": "#ffffff",
         "button_color": "#363636"
       }
+    },
+    "166142186164b802ac": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "fb40686a-9406-40d8-95fa-d81ed03e2967": {
+          "type": "title",
+          "settings": {
+            "subheading": "Sub-heading",
+            "title": "Title",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "045327d1-0e6e-455a-bb58-de8934ffea2e": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fb40686a-9406-40d8-95fa-d81ed03e2967",
+        "045327d1-0e6e-455a-bb58-de8934ffea2e"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/1_four_seasons.jpg",
+        "fit_image_height": false,
+        "image_position": "left"
+      }
+    },
+    "16614218671b7fc193": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "ecb46539-b0d8-4d5d-834f-01aab604fce5": {
+          "type": "title",
+          "settings": {
+            "subheading": "Sub-heading",
+            "title": "Title",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "d55c758b-a4f2-40d8-9a44-8f259660ea1c": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ecb46539-b0d8-4d5d-834f-01aab604fce5",
+        "d55c758b-a4f2-40d8-9a44-8f259660ea1c"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "fit_image_height": false,
+        "image_position": "right"
+      }
     }
   },
   "order": [
     "1661421556325202ce",
-    "main"
+    "main",
+    "166142186164b802ac",
+    "16614218671b7fc193"
   ]
 }
