@@ -1,7 +1,9 @@
 {% if section.settings.dark_image %}
-  .features--show-image-zooming .Image--lazyLoaded.Image--zoomOut{
-    filter: brightness(70%);
-  }
+  {% style %}
+    .features--show-image-zooming .Image--lazyLoaded.Image--zoomOut{
+      filter: brightness(70%);
+    }
+  {% endstyle %}
 {% endif %}
 <section class="Section" id="section-{{ section.id }}">
   <div class="FlexboxIeFix">
