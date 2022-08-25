@@ -110,6 +110,35 @@
         "button_link": "",
         "show_parallax": false
       }
+    },
+    "1661422801bfa27b85": {
+      "type": "one-column-content",
+      "blocks": {
+        "ebf38176-7c85-42c9-88b1-a4fb1fc8df4e": {
+          "type": "title",
+          "settings": {
+            "title": "Eine Gewichtsdecke beziehen -  Unser Guide für ein einfaches Wechseln der Bezüge"
+          }
+        },
+        "fb5ffe67-98b5-4a06-a15b-22efd5616d6c": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<ul>\n<li><b>Schritt 1:<\/b> Inlett auf dem Bett oder auf dem Boden ausbreiten.\n<\/li>\n<li><b>Schritt 2:<\/b> Den Bezug (auf Links gedreht) über Inlett legen.\n<\/li>\n<li><b>Schritt 3:<\/b> Das Inlett mit den Schlaufen oder dem Reißverschluss mit dem Bezug verbinden.\n<\/li>\n<li><b>Schritt 4:<\/b> Wenden Sie den Bezug mit Inlett auf die Außenseite.\n<\/li>\n<li><b>Schritt 5:<\/b> Die Ecken ggf. Ausbessern und die Decke aufschütteln.\n<\/li>\n<\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "ebf38176-7c85-42c9-88b1-a4fb1fc8df4e",
+        "fb5ffe67-98b5-4a06-a15b-22efd5616d6c"
+      ],
+      "settings": {
+        "bg-color": "#F8F8F8",
+        "section_margin": "50px",
+        "bg-color-text": "#ffffff",
+        "text_align": "left",
+        "content_top_margin": "50px",
+        "content_bottom_margin": "50px"
+      }
     }
   },
   "order": [
@@ -117,6 +146,7 @@
     "main",
     "166142186164b802ac",
     "16614218671b7fc193",
-    "1661422565c6f67ad0"
+    "1661422565c6f67ad0",
+    "1661422801bfa27b85"
   ]
 }
