@@ -130,7 +130,8 @@
         "bg-color-text-html": "",
         "text_align": "left",
         "text_color": "#3A3C3C",
-        "image_position": "right"
+        "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
+        "image_position": "left"
       }
     },
     "166141787920f9be4c": {
