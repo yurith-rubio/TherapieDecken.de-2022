@@ -31,6 +31,27 @@
     },
     "1661417927ad24a253": {
       "type": "text-with-image-new",
+      "blocks": {
+        "604ddf39-7513-4d5b-a77d-b162b03f46db": {
+          "type": "title",
+          "settings": {
+            "subheading": "Sub-heading",
+            "title": "Title",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "50689523-98c0-4026-a70b-6635134a9fae": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "604ddf39-7513-4d5b-a77d-b162b03f46db",
+        "50689523-98c0-4026-a70b-6635134a9fae"
+      ],
       "settings": {
         "slide_style": false,
         "spacer_top": true,
@@ -44,6 +65,27 @@
     },
     "1661417934a7f444b4": {
       "type": "text-with-image-new",
+      "blocks": {
+        "0ff52896-3aa6-4dc7-8d43-423afb62a224": {
+          "type": "title",
+          "settings": {
+            "subheading": "Sub-heading",
+            "title": "Title",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "8f74741a-352c-4cbf-a570-9cc971db73b5": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0ff52896-3aa6-4dc7-8d43-423afb62a224",
+        "8f74741a-352c-4cbf-a570-9cc971db73b5"
+      ],
       "settings": {
         "slide_style": false,
         "spacer_top": true,
@@ -57,6 +99,27 @@
     },
     "1661417939e2a342bb": {
       "type": "text-with-image-new",
+      "blocks": {
+        "85a960fb-c07e-47cc-90dc-bc8de57111bb": {
+          "type": "title",
+          "settings": {
+            "subheading": "Sub-heading",
+            "title": "Title",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "bae8309d-63e0-4103-a918-58c5528f7d9e": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "85a960fb-c07e-47cc-90dc-bc8de57111bb",
+        "bae8309d-63e0-4103-a918-58c5528f7d9e"
+      ],
       "settings": {
         "slide_style": false,
         "spacer_top": true,
