@@ -139,6 +139,13 @@
         "content_top_margin": "50px",
         "content_bottom_margin": "50px"
       }
+    },
+    "16614230491eef2e90": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'special-handmade-videos' %}"
+      }
     }
   },
   "order": [
@@ -147,6 +154,7 @@
     "166142186164b802ac",
     "16614218671b7fc193",
     "1661422565c6f67ad0",
-    "1661422801bfa27b85"
+    "1661422801bfa27b85",
+    "16614230491eef2e90"
   ]
 }
