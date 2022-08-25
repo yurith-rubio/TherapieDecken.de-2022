@@ -60,7 +60,8 @@
         "bg-color-text-html": "",
         "text_align": "left",
         "text_color": "#3A3C3C",
-        "image_position": "right"
+        "image": "shopify:\/\/shop_images\/Basic_desktop.jpg",
+        "image_position": "left"
       }
     },
     "1661417934a7f444b4": {
