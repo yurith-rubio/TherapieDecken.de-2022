@@ -139,7 +139,7 @@
         "fb5ffe67-98b5-4a06-a15b-22efd5616d6c"
       ],
       "settings": {
-        "bg-color": "#F8F8F8",
+        "bg-color": "#f8f8f8",
         "section_margin": "50px",
         "bg-color-text": "#ffffff",
         "text_align": "left",
@@ -170,6 +170,7 @@
         "text_color": "#ffffff",
         "subheading": "",
         "title": "Ein ausführliches Video zum Wechseln des Gravity Bezugs",
+        "dark_image": true,
         "image": "shopify:\/\/shop_images\/1_four_seasons.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=27h1UpJKFPQ"
       }
@@ -196,6 +197,7 @@
         "text_color": "#ffffff",
         "subheading": "",
         "title": "des Bezugs für die Balance Decke",
+        "dark_image": true,
         "image": "shopify:\/\/shop_images\/2_Cooling_Cotton.jpg",
         "video_url": "https:\/\/www.youtube.com\/watch?v=2Ma2kwttA-A&t=36s"
       }
