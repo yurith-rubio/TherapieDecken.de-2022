@@ -166,9 +166,9 @@
         "2770a464-84e2-4f6c-99c5-0d69f71a4424": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "none",
-            "title_icon": "Icon Title",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+            "simple_icons": "500plus",
+            "title_icon": "Verschiedene Wchselbezüge",
+            "content_icon": ""
           }
         }
       },
