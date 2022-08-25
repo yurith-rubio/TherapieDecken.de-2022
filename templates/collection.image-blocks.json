@@ -136,6 +136,24 @@
         "image_position": "left"
       }
     },
+    "16614181939085f719": {
+      "type": "icons-custom",
+      "settings": {
+        "bg-color": "#5b5b5b",
+        "margin-top": "auto",
+        "margin-top-mobile": "inherit",
+        "subheading": "",
+        "title": "",
+        "bg-color-icons": "rgba(0,0,0,0)",
+        "icons-size": "40px",
+        "icons-color": "#fac636",
+        "text-color": "",
+        "mobile-style-glider": true,
+        "icons_two_columns_mobile": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
     "166141787920f9be4c": {
       "type": "custom-liquid",
       "settings": {
@@ -152,6 +170,7 @@
     "1661417927ad24a253",
     "1661417934a7f444b4",
     "1661417939e2a342bb",
+    "16614181939085f719",
     "166141787920f9be4c"
   ]
 }
