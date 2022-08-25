@@ -70,8 +70,8 @@
         "0ff52896-3aa6-4dc7-8d43-423afb62a224": {
           "type": "title",
           "settings": {
-            "subheading": "Sub-heading",
-            "title": "Title",
+            "subheading": "",
+            "title": "Die Balance Gewichtsdecke",
             "icon_title": false,
             "icons_duotone": "none"
           }
@@ -79,7 +79,7 @@
         "8f74741a-352c-4cbf-a570-9cc971db73b5": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            "richtext": "<p>Die Balance Gewichtsdecke ist unser patentiertes Modell und besteht aus abnehmbarem Bezug und Inlett. Durch praktische Reißverschlüsse wird das Abziehen und das Wechseln des Bezugs erleichtert und Bezug und Inlett sind fest verbunden und verrutschen nicht. Das Gewicht der Premium Balance Decke entsteht durch kleine Edelstahlkügelchen, die im Inneren des Inletts aufgeklebt werden. Das Gewicht der Decke verteilt sich so einheitlich in der Decke und der Druck wirkt gleichmäßig auf den Körper.<\/p>"
           }
         }
       },
