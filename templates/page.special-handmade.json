@@ -169,7 +169,7 @@
     "1661423497a85f5453": {
       "type": "featured-video",
       "settings": {
-        "section_size": "large",
+        "section_size": "small",
         "set_width": "1000",
         "text_color": "#ffffff",
         "subheading": "",
