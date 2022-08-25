@@ -55,7 +55,6 @@
         "text_align": "left",
         "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/Insurance-lp-image2.jpg",
-        "fit_image_height": true,
         "image_position": "right"
       }
     },
