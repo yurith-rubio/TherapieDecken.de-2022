@@ -178,7 +178,7 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": false,
-        "custom_liquid": "<div style=\"padding: 30px; display:flex; justify-content: center;\">\n<img class=\"leadGrid_logo\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/Gravity-black-svg-logo.svg?v=1661176871\" alt=\"gravity-logo\" width=\"100\" height=\"auto\">\n<\/div>"
+        "custom_liquid": "<div style=\"padding: 30px; display:flex; justify-content: center;\">\n<img class=\"leadGrid_logo\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/Balance-black-svg-logo.svg?v=1661176871\" alt=\"balance-logo\" width=\"100\" height=\"auto\">\n<\/div>"
       }
     },
     "1661423497a85f5453": {
