@@ -182,11 +182,14 @@
         "bg-color": "#5b5b5b",
         "margin-top": "auto",
         "margin-top-mobile": "inherit",
+        "subheading": "",
+        "title": "",
         "bg-color-icons": "rgba(0,0,0,0)",
         "icons-size": "40px",
         "icons-color": "#fac636",
         "text-color": "#ffffff",
         "mobile-style-glider": false,
+        "icons-columns": true,
         "button_label": "",
         "button_link": ""
       }

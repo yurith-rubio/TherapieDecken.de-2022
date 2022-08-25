@@ -16,6 +16,7 @@
     "1658224635f6e2e05d": {
       "type": "page-standard-header",
       "settings": {
+        "enable_custom_title": true,
         "custom_title_text": "Gewichtsdecken im Test",
         "sub_headline": "Gewichtsdecken im Warentest",
         "image": "shopify:\/\/shop_images\/gravity-lifestyle-min.jpg",

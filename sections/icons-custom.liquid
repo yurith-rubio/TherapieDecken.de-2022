@@ -48,7 +48,7 @@
     flex: 0 0 25% !important;
     padding: 20px 0 !important;
   }
-  {% if section.settings.icons_two_columns_mobile %}
+  {% if section.settings.icons-columns %}
     .icons-container-mobile{
       display: grid;
       grid-template-columns: 50% 50%;
@@ -205,12 +205,12 @@
       "label": "Icons shown in a slider for mobile",
 		  "default": true
 		},
-    {
-      "type": "checkbox",
-      "id": "icons_two_columns_mobile",
-      "label": "Icons on two columns on mobile",
-      "default": false
-    },
+        {
+          "type": "checkbox",
+          "id": "icons-columns",
+          "label": "Icons on two columns on mobile",
+          "default": false
+        },
     {
       "type": "text",
       "id": "button_label",
