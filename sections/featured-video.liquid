@@ -1,6 +1,6 @@
 {% if section.settings.dark_image %}
   {% style %}
-    .features--show-image-zooming .Image--lazyLoaded.Image--zoomOut{
+    .Image--dark-{{ section.id }}{
       filter: brightness(70%);
     }
   {% endstyle %}
@@ -11,7 +11,7 @@
 
     <div class="ImageHero {% if section.settings.set_width != blank %}ImageHeroPage {% endif %}{% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %}" {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1', format: 'jpg' }})"{% endif %}>
       <div class="ImageHero__ImageWrapper">
-        <div class="ImageHero__Image Image--lazyLoad Image--zoomOut"
+        <div class="ImageHero__Image Image--lazyLoad Image--zoomOut Image--dark-{{ section.id }}"
              data-optimumx="1.4"
              data-expand="-150"
              {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: mobile_size, crop: 'center' }} 750w, {{ section.settings.image | img_url: '1000x' }} 1000w, {{ section.settings.image | img_url: '1500x' }} 1500w"{% endif %}>
