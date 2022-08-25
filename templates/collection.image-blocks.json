@@ -189,7 +189,7 @@
         "icons-color": "#fac636",
         "text-color": "#ffffff",
         "mobile-style-glider": false,
-        "icons-2-ln": true,
+        "icons-columns": true,
         "button_label": "",
         "button_link": ""
       }
