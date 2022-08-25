@@ -146,6 +146,18 @@
         "paddings": false,
         "custom_liquid": "{% render 'special-handmade-videos' %}"
       }
+    },
+    "1661423193de332b43": {
+      "type": "featured-video",
+      "settings": {
+        "section_size": "small",
+        "set_width": "500",
+        "text_color": "#ffffff",
+        "subheading": "",
+        "title": "Your video",
+        "image": "shopify:\/\/shop_images\/1_four_seasons.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=27h1UpJKFPQ"
+      }
     }
   },
   "order": [
@@ -155,6 +167,7 @@
     "16614218671b7fc193",
     "1661422565c6f67ad0",
     "1661422801bfa27b85",
-    "16614230491eef2e90"
+    "16614230491eef2e90",
+    "1661423193de332b43"
   ]
 }
