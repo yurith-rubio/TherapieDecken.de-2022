@@ -1,0 +1,229 @@
+{
+  "sections": {
+    "1661421556325202ce": {
+      "type": "page-standard-header",
+      "settings": {
+        "custom_title": true,
+        "custom_title_text": "Hochwertige Bezüge speziell und in Handarbeit für Gewichtsdecken entwickelt",
+        "sub_headline": "Die Bezüge von Therapiedecken.de",
+        "image": "shopify:\/\/shop_images\/Header_Desktop_54548715-fc39-4744-99dd-ca158b08ea5b.jpg",
+        "mobile_custom": false,
+        "apply_overlay": true,
+        "review_starts": false,
+        "content": ""
+      }
+    },
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "collections_to_show": "selected",
+        "image_size": "normal",
+        "add_spacing": true,
+        "expand_collection": false,
+        "apply_overlay": true,
+        "text_color": "#ffffff",
+        "button_color": "#363636"
+      }
+    },
+    "1661424165293fa9f1": {
+      "type": "spacer",
+      "settings": {
+        "spacer": 0,
+        "spacer_mobile": 50
+      }
+    },
+    "166142186164b802ac": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "fb40686a-9406-40d8-95fa-d81ed03e2967": {
+          "type": "title",
+          "settings": {
+            "subheading": "",
+            "title": "Der 4-Jahreszeiten Bezug",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "045327d1-0e6e-455a-bb58-de8934ffea2e": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Der 4-Jahreszeiten Bezug zählt zu unseren Klassikern und ist aus unserem Sortiment gar nicht mehr wegzudenken. Die Besonderheit an diesem Bezug ist, dass dieser aus zwei Seiten besteht: Eine Seite des 4-Jahreszeiten Bezugs besteht aus Samt Verlours, die andere aus kuscheligem Nickistoff. Der Bezug kann je nach Bedarf verwenden. Die meisten Kunden nutzen die Samtseite im Sommer und den kuscheligen Nickistoff für die kälteren Tage.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fb40686a-9406-40d8-95fa-d81ed03e2967",
+        "045327d1-0e6e-455a-bb58-de8934ffea2e"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/1_four_seasons.jpg",
+        "image_position": "left"
+      }
+    },
+    "16614218671b7fc193": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "ecb46539-b0d8-4d5d-834f-01aab604fce5": {
+          "type": "title",
+          "settings": {
+            "subheading": "",
+            "title": "Kühlender Baumwollbezug",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "d55c758b-a4f2-40d8-9a44-8f259660ea1c": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Der Baumwollbezug besteht aus 100% zertifizierter Baumwolle. Er eignet sich für alle, die besonders viel Wert auf natürliche Materialien legen oder die schnell zum Schwitzen neigen. Der Stoff ist angenehm und hat einen kühlenden Effekt auf der Haut.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ecb46539-b0d8-4d5d-834f-01aab604fce5",
+        "d55c758b-a4f2-40d8-9a44-8f259660ea1c"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/2_Cooling_Cotton.jpg",
+        "image_position": "right"
+      }
+    },
+    "1661422565c6f67ad0": {
+      "type": "image-with-text-block",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_Hero.jpg",
+        "plain_bg": "#696969",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "large",
+        "title": "",
+        "content": "<p>Alle Therapiedecken Bezüge werden in liebevoller Handarbeit hergestellt und werden speziell für unsere Modelle gefertigt. Je nach Modell - Gravity oder Balance - sind diese mit unseren Befestigungssystemen ausgestattet und sorgen so dafür, dass Ihre Decke trotz Gewicht nicht im Bezug verrutscht. So bleibt auch das Inlett einer 12kg Decke immer an Ort und Stelle.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_parallax": false
+      }
+    },
+    "1661422801bfa27b85": {
+      "type": "one-column-content",
+      "blocks": {
+        "ebf38176-7c85-42c9-88b1-a4fb1fc8df4e": {
+          "type": "title",
+          "settings": {
+            "title": "Eine Gewichtsdecke beziehen -  Unser Guide für ein einfaches Wechseln der Bezüge"
+          }
+        },
+        "fb5ffe67-98b5-4a06-a15b-22efd5616d6c": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<ul>\n<li><b>Schritt 1:<\/b> Inlett auf dem Bett oder auf dem Boden ausbreiten.\n<\/li>\n<li><b>Schritt 2:<\/b> Den Bezug (auf Links gedreht) über Inlett legen.\n<\/li>\n<li><b>Schritt 3:<\/b> Das Inlett mit den Schlaufen oder dem Reißverschluss mit dem Bezug verbinden.\n<\/li>\n<li><b>Schritt 4:<\/b> Wenden Sie den Bezug mit Inlett auf die Außenseite.\n<\/li>\n<li><b>Schritt 5:<\/b> Die Ecken ggf. Ausbessern und die Decke aufschütteln.\n<\/li>\n<\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "ebf38176-7c85-42c9-88b1-a4fb1fc8df4e",
+        "fb5ffe67-98b5-4a06-a15b-22efd5616d6c"
+      ],
+      "settings": {
+        "bg-color": "#f8f8f8",
+        "section_margin": "50px",
+        "bg-color-text": "#ffffff",
+        "text_align": "left",
+        "content_top_margin": "50px",
+        "content_bottom_margin": "50px"
+      }
+    },
+    "16614230491eef2e90": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'special-handmade-videos' %}"
+      }
+    },
+    "166142367409ff6585": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "<div style=\"padding: 30px; display:flex; justify-content: center;\">\n<img class=\"leadGrid_logo\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/Gravity-black-svg-logo.svg?v=1661176871\" alt=\"gravity-logo\" width=\"100\" height=\"auto\">\n<\/div>"
+      }
+    },
+    "1661423193de332b43": {
+      "type": "featured-video",
+      "settings": {
+        "section_size": "small",
+        "set_width": "500",
+        "text_color": "#ffffff",
+        "subheading": "",
+        "title": "Ein ausführliches Video zum Wechseln des Gravity Bezugs",
+        "dark_image": true,
+        "image": "shopify:\/\/shop_images\/1_four_seasons.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=27h1UpJKFPQ"
+      }
+    },
+    "166142356056eaeb2e": {
+      "type": "spacer",
+      "settings": {
+        "spacer": 50,
+        "spacer_mobile": 50
+      }
+    },
+    "1661423816fd003c65": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "<div style=\"padding: 30px; display:flex; justify-content: center;\">\n<img class=\"leadGrid_logo\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/Balance-black-svg-logo.svg?v=1661176871\" alt=\"balance-logo\" width=\"100\" height=\"auto\">\n<\/div>"
+      }
+    },
+    "1661423497a85f5453": {
+      "type": "featured-video",
+      "settings": {
+        "section_size": "small",
+        "set_width": "1000",
+        "text_color": "#ffffff",
+        "subheading": "",
+        "title": "des Bezugs für die Balance Decke",
+        "dark_image": true,
+        "image": "shopify:\/\/shop_images\/2_Cooling_Cotton.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=2Ma2kwttA-A&t=36s"
+      }
+    },
+    "1661423576164c0550": {
+      "type": "spacer",
+      "settings": {
+        "spacer": 50,
+        "spacer_mobile": 50
+      }
+    }
+  },
+  "order": [
+    "1661421556325202ce",
+    "main",
+    "1661424165293fa9f1",
+    "166142186164b802ac",
+    "16614218671b7fc193",
+    "1661422565c6f67ad0",
+    "1661422801bfa27b85",
+    "16614230491eef2e90",
+    "166142367409ff6585",
+    "1661423193de332b43",
+    "166142356056eaeb2e",
+    "1661423816fd003c65",
+    "1661423497a85f5453",
+    "1661423576164c0550"
+  ]
+}
