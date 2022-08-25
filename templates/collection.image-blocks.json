@@ -24,6 +24,11 @@
         "custom_liquid": "{% render 'right-blanket' %}"
       }
     },
+    "166141789446b3e46d": {
+      "type": "leading-page-grid",
+      "settings": {
+      }
+    },
     "166141787920f9be4c": {
       "type": "custom-liquid",
       "settings": {
@@ -36,6 +41,7 @@
     "1661417832849b4d3f",
     "main",
     "16614178598c605f51",
+    "166141789446b3e46d",
     "166141787920f9be4c"
   ]
 }
