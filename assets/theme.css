@@ -7763,6 +7763,9 @@ a.CollectionItemPage {
 
 
 @media screen and (max-width: 640px) {
+  .FeatureText__ContentWrapper{
+    max-width: 100vw;
+  }
   .FeatureText--imageLeft {
     display: flex;
     flex-direction: column-reverse;
