@@ -151,7 +151,7 @@ ul.wirkung-bullets li:before {
      flex-wrap: wrap;
      justify-content: space-around;
 }
- .wk21_text_wr h3{
+ .wk21_text_wr h2{
      font-family: Montserrat,HelveticaNeue,"Helvetica Neue",sans-serif;
      font-style: normal;
      text-transform: none;
@@ -217,11 +217,11 @@ ul.wirkung-bullets li:before {
      .wk21_wr {
          width: 150px;
     }
-     h3 {
+     h2 {
          font-size: 14px !important;
     }
 }
- h3{
+ h2{
      font-size: 15px !important;
      letter-spacing: inherit !important;
 }
