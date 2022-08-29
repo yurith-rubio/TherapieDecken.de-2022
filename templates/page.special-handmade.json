@@ -3,7 +3,7 @@
     "1661421556325202ce": {
       "type": "page-standard-header",
       "settings": {
-        "custom_title": true,
+        "enable_custom_title": false,
         "custom_title_text": "Hochwertige Bezüge speziell und in Handarbeit für Gewichtsdecken entwickelt",
         "sub_headline": "Die Bezüge von Therapiedecken.de",
         "image": "shopify:\/\/shop_images\/Header_Desktop_54548715-fc39-4744-99dd-ca158b08ea5b.jpg",
@@ -50,11 +50,23 @@
           "settings": {
             "richtext": "<p>Der 4-Jahreszeiten Bezug zählt zu unseren Klassikern und ist aus unserem Sortiment gar nicht mehr wegzudenken. Die Besonderheit an diesem Bezug ist, dass dieser aus zwei Seiten besteht: Eine Seite des 4-Jahreszeiten Bezugs besteht aus Samt Verlours, die andere aus kuscheligem Nickistoff. Der Bezug kann je nach Bedarf verwenden. Die meisten Kunden nutzen die Samtseite im Sommer und den kuscheligen Nickistoff für die kälteren Tage.<\/p>"
           }
+        },
+        "a414b800-092b-4fef-8fe8-7ab54ec48e99": {
+          "type": "button",
+          "settings": {
+            "button_style": true,
+            "button_text": "Zu den Bezügen",
+            "button_url": "https:\/\/therapiedecken.de\/collections\/ersatzbezuge-fur-therapiedecken\/material-Nickistoff",
+            "button_extra": false,
+            "button_text_extra": "Mehr",
+            "button_url_extra": ""
+          }
         }
       },
       "block_order": [
         "fb40686a-9406-40d8-95fa-d81ed03e2967",
-        "045327d1-0e6e-455a-bb58-de8934ffea2e"
+        "045327d1-0e6e-455a-bb58-de8934ffea2e",
+        "a414b800-092b-4fef-8fe8-7ab54ec48e99"
       ],
       "settings": {
         "slide_style": false,
@@ -85,11 +97,23 @@
           "settings": {
             "richtext": "<p>Der Baumwollbezug besteht aus 100% zertifizierter Baumwolle. Er eignet sich für alle, die besonders viel Wert auf natürliche Materialien legen oder die schnell zum Schwitzen neigen. Der Stoff ist angenehm und hat einen kühlenden Effekt auf der Haut.<\/p>"
           }
+        },
+        "a20d0ad1-5b64-4d6f-ba1c-9cd15d5b18cb": {
+          "type": "button",
+          "settings": {
+            "button_style": true,
+            "button_text": "Zu den Bezügen",
+            "button_url": "https:\/\/therapiedecken.de\/collections\/ersatzbezuge-fur-therapiedecken\/material-Baumwolle",
+            "button_extra": false,
+            "button_text_extra": "Mehr",
+            "button_url_extra": ""
+          }
         }
       },
       "block_order": [
         "ecb46539-b0d8-4d5d-834f-01aab604fce5",
-        "d55c758b-a4f2-40d8-9a44-8f259660ea1c"
+        "d55c758b-a4f2-40d8-9a44-8f259660ea1c",
+        "a20d0ad1-5b64-4d6f-ba1c-9cd15d5b18cb"
       ],
       "settings": {
         "slide_style": false,
