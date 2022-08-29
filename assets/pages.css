@@ -217,11 +217,11 @@ ul.wirkung-bullets li:before {
      .wk21_wr {
          width: 150px;
     }
-     h3 {
+     h2 {
          font-size: 14px !important;
     }
 }
- h3{
+ h2{
      font-size: 15px !important;
      letter-spacing: inherit !important;
 }
@@ -259,7 +259,7 @@ ul.wirkung-bullets li:before {
      flex-basis: 100%;
      text-align: center;
      height: 150px;
-     padding-top: 20px;
+     padding-top: 10px;
 }
  .wk_icon_size{
      font-size: 80px 
