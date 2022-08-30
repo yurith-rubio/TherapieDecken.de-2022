@@ -7187,6 +7187,18 @@ a.CollectionItemPage {
   background: #6e6e6e;
   color: #fff;
 }
+.personalisiert-badge{
+  background: #fac636;
+  color: #222323;
+}
+.hero-badge{
+  background: #005ed3;
+  color: #fff;
+}
+.zauberei-badge{
+  background: #7f0f09;
+  color: #ffc500;
+}
 /*test*/
 
 .ProductItem {
