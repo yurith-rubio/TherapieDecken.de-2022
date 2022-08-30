@@ -26,8 +26,10 @@
       {% elsif product.title contains "Kissenbezug" %}
     	<div class="kissenbezug-badge">Nur Kissenbezug</div>
 	  {% endif %}
-
-      {% render 'collection-promotional-badge'%}
+   
+      {% if settings.enable_collection_badge %}
+        {% render 'collection-promotional-badge'%}
+      {% endif %}
       
       {%- if use_horizontal -%}
         {%- assign max_width = 125 -%}
