@@ -881,6 +881,19 @@
         "default": false
       },
       {
+        "type": "checkbox",
+        "id": "enable_product_badge_selected",
+        "label": "Enable badge only on selected collections",
+        "info": "Fill the info below to select the products",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "product_badge_on_products",
+        "label": "Enable Promotional Badge on Collection Pages",
+        "default": "product.handle == 'therapiedecken' or product.handle == 'balance-gewichtsdecke-fur-erwachsene'"
+      },
+      {
         "type": "url",
         "id": "promo_product_badge",
         "label": "Product badge",
