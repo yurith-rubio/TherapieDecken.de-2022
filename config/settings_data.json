@@ -79,6 +79,7 @@
     "collection_badge_max_width_mobile": 100,
     "enable_product_badge": true,
     "hide_discount_general_badge": false,
+    "promo_product_badge": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TD_End_of_summer_badge.svg?v=1661853990",
     "show_product_guarantee_exceptions": false,
     "gift_product": "",
     "trigger_product": "",
