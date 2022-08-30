@@ -7172,8 +7172,13 @@ a.CollectionItemPage {
   color: #000;
   z-index: 1;
 }
+.product-badge{
+  padding: 5px 10px;
+  text-transform:uppercase;
+}
 .summer-badge{
-  
+  background: #fa995f;
+  color: #fff;
 }
 /*test*/
 
