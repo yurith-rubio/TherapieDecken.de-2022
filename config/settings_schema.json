@@ -843,6 +843,16 @@
         "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/collection-promotional-badge.liquid)"
       },
       {
+        "type": "range",
+        "id": "collection_badge_max_width",
+        "label": "Mobile: Vertical position",
+        "min": 50,
+        "max": 150,
+        "step": 10,
+        "unit": "px",
+        "default": 50
+      },
+      {
         "type": "header",
         "content": "Product Pages"
       },
