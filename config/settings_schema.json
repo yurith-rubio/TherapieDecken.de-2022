@@ -747,6 +747,15 @@
       },
       {
         "type": "header",
+        "content": "Promo art"
+      },
+      {
+        "type": "url",
+        "id": "promo_art",
+        "label": "Promo art url"
+      },
+      {
+        "type": "header",
         "content": "Button"
       },
       {
