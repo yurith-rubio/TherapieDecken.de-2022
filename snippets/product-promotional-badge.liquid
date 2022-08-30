@@ -4,6 +4,7 @@
   {{ 'badges.css' | asset_url | stylesheet_tag }}
   {% assign product_handles = settings.product_badge_on_products | prepend: '{%' | append: '%}' %}
   {% assign endif = "{% endif %}" %}
+  
   {{ product_handles }}
     <div class="ProductBadge_Wrapper">
       {% comment %}<div class="Prod_SmallBadge">Gratis</div>{% endcomment %}
@@ -12,6 +13,6 @@
       </div>
     </div>
   {% if product_handles %}
-    
+    {{ endif }}
   {% endif %}
 {% endif %}
