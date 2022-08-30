@@ -4,7 +4,7 @@
   {{ 'badges.css' | asset_url | stylesheet_tag }}
   {% assign product_handles = settings.product_badge_on_products %}
   
-  {% if product_handles != blank %}
+  {% if product_handles %}
     <div class="ProductBadge_Wrapper">
       {% comment %}<div class="Prod_SmallBadge">Gratis</div>{% endcomment %}
       <div class="Prod_ImgSmallBadge">
