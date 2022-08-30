@@ -7176,6 +7176,8 @@ a.CollectionItemPage {
   padding: 5px 10px;
   text-transform:uppercase;
   border-radius: 5px;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
 }
 .summer-badge{
   background: #fa995f;
