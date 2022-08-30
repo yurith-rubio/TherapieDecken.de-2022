@@ -71,7 +71,7 @@
     "button_color": "#ee5183",
     "text_button_color": "#ffffff",
     "text_button_color_hover": "#ffffff",
-    "promotional_collection_cover": true,
+    "promotional_collection_cover": false,
     "enable_collection_badge": true,
     "collection_badge_on_products": "collection.handle == 'gravity-therapiedecken-fur-erwachsene'",
     "enable_product_badge": false,
