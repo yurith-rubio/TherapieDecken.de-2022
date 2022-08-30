@@ -7164,6 +7164,15 @@ a.CollectionItemPage {
  * Product item
  * ----------------------------------------------------------------------------
  */
+/*test*/
+.product-tag{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000;
+  z-index: 1;
+}
+/*test*/
 
 .ProductItem {
   text-align: center;

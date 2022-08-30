@@ -2,7 +2,9 @@
 
 <div class="ProductItem {% if use_horizontal %}ProductItem--horizontal{% endif %}">
   <div class="ProductItem__Wrapper">
-    <span>Hello</span>
+    <div class="product-tag">
+      {% if product.tags == "sommer-badge" %}Sommer{% endif %}
+    </div>
     {%- comment -%}
     We are using LazySizes to efficiently choose the most appropriate image in the set. However, because internally LazySizes uses srcset, we need to make
     sure that the image sizes we offer is not larger than the max size uploaded by the merchants.
