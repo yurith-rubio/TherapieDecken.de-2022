@@ -11,7 +11,7 @@
 
 {% assign collection_handles = settings.collection_badge_on_products %}
 
-{% if settings.enable_collection_badge %}
+
   {%- comment -%}See CSS on badges.css file {%- endcomment -%}
   {{ 'badges.css' | asset_url | stylesheet_tag }}
 
@@ -25,4 +25,3 @@
       </div>
     </div>
   {% endif %}
-{% endif %}
