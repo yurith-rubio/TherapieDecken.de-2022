@@ -2,8 +2,8 @@
 
 <div class="ProductItem {% if use_horizontal %}ProductItem--horizontal{% endif %}">
   <div class="ProductItem__Wrapper">
-    <div class="product-tag">
-      {% if product.tags contains "badge-summer" %}Sommer{% endif %}
+    <div class="product-badge-div">
+      {% if product.tags contains "badge-summer" %}<span class="summer">Sommer</span>{% endif %}
       {% if product.tags contains "badge-classic" %}Classic{% endif %}
       {% if product.tags contains "badge-personalisiert" %}Personalisiert{% endif %}
       {% if product.tags contains "badge-hero" %}Hero{% endif %}
