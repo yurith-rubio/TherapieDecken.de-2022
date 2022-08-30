@@ -887,6 +887,26 @@
         "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/product-promotional-badge.liquid)"
       },
       {
+        "type": "range",
+        "id": "product_badge_max_width",
+        "label": "Desktop: Badge width",
+        "min": 50,
+        "max": 150,
+        "step": 10,
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "product_badge_max_width_mobile",
+        "label": "Mobile: Badge width",
+        "min": 50,
+        "max": 150,
+        "step": 10,
+        "unit": "px",
+        "default": 50
+      },
+      {
         "type": "checkbox",
         "id": "show_product_guarantee_exceptions",
         "label": "Show promotional caption in product form",
