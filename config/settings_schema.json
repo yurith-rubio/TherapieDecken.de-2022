@@ -845,7 +845,7 @@
       {
         "type": "range",
         "id": "collection_badge_max_width",
-        "label": "Mobile: Vertical position",
+        "label": "Desktop: Badge width",
         "min": 50,
         "max": 150,
         "step": 10,
@@ -855,7 +855,7 @@
       {
         "type": "range",
         "id": "collection_badge_max_width_mobile",
-        "label": "Mobile: Vertical position",
+        "label": "Mobile: Badge width",
         "min": 50,
         "max": 150,
         "step": 10,
