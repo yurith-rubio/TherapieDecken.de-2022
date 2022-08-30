@@ -2,7 +2,8 @@
 
 {% if settings.enable_product_badge %}
   {{ 'badges.css' | asset_url | stylesheet_tag }}
-
+  {% assign collection_handles = settings.collection_badge_on_products %}
+  
   {% if product.handle == 'therapiedecken'
   		or product.handle == 'balance-gewichtsdecke-fur-erwachsene' %}
 
