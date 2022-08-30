@@ -853,6 +853,16 @@
         "default": 50
       },
       {
+        "type": "range",
+        "id": "collection_badge_max_width_mobile",
+        "label": "Mobile: Vertical position",
+        "min": 50,
+        "max": 150,
+        "step": 10,
+        "unit": "px",
+        "default": 50
+      },
+      {
         "type": "header",
         "content": "Product Pages"
       },
