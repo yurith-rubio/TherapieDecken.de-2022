@@ -3,7 +3,7 @@
 <div class="ProductItem {% if use_horizontal %}ProductItem--horizontal{% endif %}">
   <div class="ProductItem__Wrapper">
     <div class="product-tag">
-      {% if product.tags contains "sommer-badge" %}Sommer{% endif %}
+      {% if product.tags contains "sommer-badge" %}Sommer <span class="icon-warm-weather-icon"></span>{% endif %}
     </div>
     {%- comment -%}
     We are using LazySizes to efficiently choose the most appropriate image in the set. However, because internally LazySizes uses srcset, we need to make
