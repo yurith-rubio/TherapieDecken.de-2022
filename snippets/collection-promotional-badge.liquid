@@ -1,4 +1,6 @@
 <!-- collection-promotional-badge.liquid -->
+{%- comment -%}See CSS on badges.css file {%- endcomment -%}
+{{ 'badges.css' | asset_url | stylesheet_tag }}
 
 {% comment %}
   {% style %}
@@ -14,8 +16,7 @@
     }
   {% endstyle %}
 
-  {%- comment -%}See CSS on badges.css file {%- endcomment -%}
-  {{ 'badges.css' | asset_url | stylesheet_tag }}
+
 
   {% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' or collection.handle == 'balance-therapiedecken-fur-erwachsene' %}
     <div class="CollectionBadge_Mask__Wrapper">
