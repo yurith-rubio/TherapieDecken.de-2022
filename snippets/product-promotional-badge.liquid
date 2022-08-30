@@ -3,13 +3,15 @@
 {% if settings.enable_product_badge %}
   {{ 'badges.css' | asset_url | stylesheet_tag }}
   {% assign product_handles = settings.product_badge_on_products | prepend: '{%' | append: '%}' %}
-  
-  {% if product_handles %}
+  {% assign endif = "{% endif %}" %}
+  {{ product_handles }}
     <div class="ProductBadge_Wrapper">
       {% comment %}<div class="Prod_SmallBadge">Gratis</div>{% endcomment %}
       <div class="Prod_ImgSmallBadge">
         <img class="Prod_ImgSize-SmallBadge" src="{{ settings.promo_product_badge }}" alt="New Summer 20 euros discount badge" />
       </div>
     </div>
+  {% if product_handles %}
+    
   {% endif %}
 {% endif %}
