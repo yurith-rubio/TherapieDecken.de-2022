@@ -10,7 +10,7 @@
   {% endstyle %}
 
 {% assign collection_handles = settings.collection_badge_on_products %}
-collection.handle == 'erwachsene'
+
 {% if settings.enable_collection_badge %}
   {%- comment -%}See CSS on badges.css file {%- endcomment -%}
   {{ 'badges.css' | asset_url | stylesheet_tag }}

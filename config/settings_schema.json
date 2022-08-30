@@ -824,6 +824,19 @@
         "default": false
       },
       {
+        "type": "checkbox",
+        "id": "enable_collection_badge_selected",
+        "label": "Enable badge only on selected products",
+        "info": "Fill the info below to select the products",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "collection_badge_on_products",
+        "label": "Enable Promotional Badge on Collection Pages",
+        "default": "collection.handle == 'erwachsene'"
+      },
+      {
         "type": "header",
         "content": "Product Pages"
       },
