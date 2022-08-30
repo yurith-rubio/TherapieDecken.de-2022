@@ -7175,6 +7175,7 @@ a.CollectionItemPage {
 .product-badge{
   padding: 5px 10px;
   text-transform:uppercase;
+  border-radius: 5px;
 }
 .summer-badge{
   background: #fa995f;
