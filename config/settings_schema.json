@@ -755,6 +755,26 @@
         "label": "Promo art url"
       },
       {
+        "type": "range",
+        "id": "promo_art_y_content",
+        "label": "Desktop: Vertical position",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "promo_art_y_content_mobile",
+        "label": "Mobile: Vertical position",
+        "min": -150,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "default": 0
+      },
+      {
         "type": "header",
         "content": "Button"
       },
