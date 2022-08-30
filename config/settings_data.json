@@ -75,6 +75,7 @@
     "enable_collection_badge": true,
     "collection_badge_on_products": "collection.handle == 'gravity-therapiedecken-fur-erwachsene'",
     "promo_collection_badge": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TD_End_of_summer_badge.svg?v=1661853990",
+    "collection_badge_max_width": 100,
     "collection_badge_max_width_mobile": 100,
     "enable_product_badge": false,
     "hide_discount_general_badge": false,
