@@ -881,6 +881,12 @@
         "default": false
       },
       {
+        "type": "url",
+        "id": "promo_product_badge",
+        "label": "Collection badge",
+        "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/product-promotional-badge.liquid)"
+      },
+      {
         "type": "checkbox",
         "id": "show_product_guarantee_exceptions",
         "label": "Show promotional caption in product form",
