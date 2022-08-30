@@ -80,6 +80,8 @@
     "enable_product_badge": true,
     "hide_discount_general_badge": false,
     "promo_product_badge": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TD_End_of_summer_badge.svg?v=1661853990",
+    "product_badge_max_width": 150,
+    "product_badge_max_width_mobile": 110,
     "show_product_guarantee_exceptions": false,
     "gift_product": "",
     "trigger_product": "",
