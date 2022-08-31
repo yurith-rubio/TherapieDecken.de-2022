@@ -1,12 +1,12 @@
 name: Scheduled PR Merge
 on:
-  # pull_request:
-    # types:
-      # - opened
-      # - edited
-      # - synchronize
-      # - labeled
-      # - unlabeled
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - labeled
+      - unlabeled
   schedule:
     # https://crontab.guru/every-30th-minute
     - cron: "*/30 * * * *"
