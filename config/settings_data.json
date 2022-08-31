@@ -50,7 +50,7 @@
     "enable_days_view": true,
     "border_radius_countdown": 4,
     "loop_time": 0,
-    "announcement_countdown_enable": true,
+    "announcement_countdown_enable": false,
     "background_countdown": "#ffffff",
     "text_color_countdown": "#e84e1b",
     "product_countdown_enable": false,
