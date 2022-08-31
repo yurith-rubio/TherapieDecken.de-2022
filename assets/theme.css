@@ -7164,6 +7164,60 @@ a.CollectionItemPage {
  * Product item
  * ----------------------------------------------------------------------------
  */
+/*test*/
+.product-badge-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.product-badge{
+  padding: 7px 15px;
+  text-transform:uppercase;
+  border-radius: 4px;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.summer-badge{
+  background: #f3844a;
+  color: #fff;
+}
+.classic-badge{
+  background: #5b5b5b;
+  color: #fff;
+}
+.personalisiert-badge{
+  background: #f5bb2c;
+  color: #2c2e2e;
+}
+.einsteigermodell-badge{
+  background: #afafaf;
+  color: #fff;
+}
+.hero-badge{
+  background: #0649cc;
+  color: #fff;
+}
+.zauberei-badge{
+  background: #7f0f09;
+  color: #fcb800;
+}
+@media (max-width: 1023px){
+  .product-badge-div{
+    top: 3px;
+  }
+}
+@media (max-width: 640px){
+  .product-badge-div{
+    left: -3px; 
+  }
+  .product-badge{
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+}
+/*test*/
 
 .ProductItem {
   text-align: center;
