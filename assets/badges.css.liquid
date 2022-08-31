@@ -28,7 +28,7 @@
   z-index: 2;
 }
 .Collection_ImgSize_SmallBadge{
-    max-width: 50px;
+    max-width: {{ settings.collection_badge_max_width }}px;
     height: auto;
 }
 
@@ -43,10 +43,10 @@
     height: 20px;
   }
   .Collection_ImgSmallBadge {
-    width: 40%;
+    width: 100%;
   }
   .Collection_ImgSize_SmallBadge{
-    max-width: 50px;
+    max-width: {{ settings.collection_badge_max_width_mobile }}px;
     height: auto;
   }
 }
@@ -109,12 +109,12 @@
 
 @media only screen and (min-width: 641px){
   .Prod_ImgSmallBadge {
-    width: 90px;
+    width: {{ settings.product_badge_max_width }}px;
   }
 }
 
 @media only screen and (max-width: 640px){
   .Prod_ImgSmallBadge {
-    width: 70px;
+    width: {{ settings.product_badge_max_width_mobile }}px;
   }
 }

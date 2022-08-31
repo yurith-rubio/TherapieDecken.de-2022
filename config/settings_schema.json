@@ -747,6 +747,35 @@
       },
       {
         "type": "header",
+        "content": "Promo art"
+      },
+      {
+        "type": "url",
+        "id": "promo_art",
+        "label": "Promo art url"
+      },
+      {
+        "type": "range",
+        "id": "promo_art_y_content",
+        "label": "Desktop: Vertical position",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "promo_art_y_content_mobile",
+        "label": "Mobile: Vertical position",
+        "min": -150,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "default": 0
+      },
+      {
+        "type": "header",
         "content": "Button"
       },
       {
@@ -795,6 +824,39 @@
         "default": false
       },
       {
+        "type": "checkbox",
+        "id": "enable_collection_badge_selected",
+        "label": "Enable badge only on selected collections",
+        "info": "Fill the info below to select the products",
+        "default": false
+      },
+      {
+        "type": "url",
+        "id": "promo_collection_badge",
+        "label": "Collection badge",
+        "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/collection-promotional-badge.liquid)"
+      },
+      {
+        "type": "range",
+        "id": "collection_badge_max_width",
+        "label": "Desktop: Badge width",
+        "min": 50,
+        "max": 150,
+        "step": 10,
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "collection_badge_max_width_mobile",
+        "label": "Mobile: Badge width",
+        "min": 50,
+        "max": 150,
+        "step": 10,
+        "unit": "px",
+        "default": 50
+      },
+      {
         "type": "header",
         "content": "Product Pages"
       },
@@ -811,6 +873,39 @@
         "label": "Hide regular badge on product pages",
         "info": "[For design and rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/product-promotional-badge.liquid)",
         "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_product_badge_selected",
+        "label": "Enable badge only on selected collections",
+        "info": "Fill the info below to select the products",
+        "default": false
+      },
+      {
+        "type": "url",
+        "id": "promo_product_badge",
+        "label": "Product badge",
+        "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/product-promotional-badge.liquid)"
+      },
+      {
+        "type": "range",
+        "id": "product_badge_max_width",
+        "label": "Desktop: Badge width",
+        "min": 50,
+        "max": 150,
+        "step": 10,
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "product_badge_max_width_mobile",
+        "label": "Mobile: Badge width",
+        "min": 50,
+        "max": 150,
+        "step": 10,
+        "unit": "px",
+        "default": 100
       },
       {
         "type": "checkbox",
