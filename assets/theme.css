@@ -6556,6 +6556,14 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .CartItem__Discount svg {
   margin-right: 4px;
   vertical-align: text-bottom;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+  vertical-align: middle;
+  stroke-width: 1px;
+  background: none;
+  pointer-events: none;
 }
 
 .CartItem__Discount + .CartItem__Discount {
