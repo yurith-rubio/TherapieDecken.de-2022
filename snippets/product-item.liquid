@@ -3,7 +3,7 @@
 <div class="ProductItem {% if use_horizontal %}ProductItem--horizontal{% endif %}">
   <div class="ProductItem__Wrapper">
     
-    {% if collection.handle == "gravity-therapiedecken-fur-erwachsene" %}
+    {% if collection.handle == "gravity-therapiedecken-fur-erwachsene" or if collection.handle == "balance-therapiedecken-fur-erwachsene" %}
     <div class="product-badge-div">
       {% if product.tags contains "badge-summer" %}<span class="product-badge summer-badge">Sommer</span>{% endif %}
       {% if product.tags contains "badge-classic" %}<span class="product-badge classic-badge">Classic</span>{% endif %}
@@ -12,6 +12,7 @@
       {% if product.tags contains "badge-einsteigermodell" %}<span class="product-badge einsteigermodell-badge">Einsteigermodell</span>{% endif %}
       {% if product.tags contains "badge-hero" %}<span class="product-badge hero-badge">Hero</span>{% endif %}
       {% if product.tags contains "badge-zauberei" %}<span class="product-badge zauberei-badge">Zauberei</span>{% endif %}
+      {% if product.tags contains "badge-ringwelt" %}<span class="product-badge ringwelt-badge">Zauberei</span>{% endif %}
     </div>
     {% endif %}
       
