@@ -75,10 +75,10 @@
                   {% comment %} final price of item {% endcomment %}
                   <div class="Heading myCart_priceContainer">
                     {% if item.original_line_price > item.final_line_price %}
-                      <span class="CartItem__Price Price Price--highlight">a1: {{ item.final_line_price | money }}</span>
+                      <span class="CartItem__Price Price ">a1: {{ item.final_line_price | money }}</span>
                       <span class="CartItem__Price Price Price--highlight">a2: {{ item.variant.compare_at_price | money }}</span>
                     {%- elsif item.variant.compare_at_price > item.final_line_price -%}
-                      <span class="CartItem__Price Price Price--highlight">b1: {{ item.final_line_price | money }}</span>
+                      <span class="CartItem__Price Price ">b1: {{ item.final_line_price | money }}</span>
                       <span class="CartItem__Price Price Price--highlight">b2: {{ item.variant.compare_at_price | money }}</span>
                     {% else %}
                       <span class="CartItem__Price Price Price--highlight">c: {{ item.final_line_price | money }}</span>
