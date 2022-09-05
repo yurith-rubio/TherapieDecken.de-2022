@@ -3,8 +3,9 @@
 {% if settings.enable_product_badge %}
   {{ 'badges.css' | asset_url | stylesheet_tag }}
   
-  {% if product.handle == 'therapiedecken'
-  		or product.handle == 'balance-gewichtsdecke-fur-erwachsene' %}
+  {% if product.handle == 'medizinische-gewichtsdecke-fur-kinder'
+  		or product.handle == 'premium-balance-gewichtsdecke-fur-kinder'
+        or product.handle == 'gravity-gewichtsdecke-fur-kinder' %}
     <div class="ProductBadge_Wrapper">
       {% comment %}<div class="Prod_SmallBadge">Gratis</div>{% endcomment %}
       <div class="Prod_ImgSmallBadge">
