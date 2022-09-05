@@ -77,7 +77,7 @@
                     {% if item.original_line_price > item.final_line_price %}
                       <span class="CartItem__Price Price Price--highlight">{{ item.final_line_price | money }}</span>
                       <span class="CartItem__Price Price" style="text-decoration: line-through">{{ item.variant.compare_at_price | times: item.quantity | money }}</span>
-                    {%- elsif item.variant.compare_at_price > item.original_line_price -%}
+                    {%- elsif item.variant.compare_at_price > item.final_line_price -%}
                       <span class="CartItem__Price Price Price--highlight">{{ item.final_line_price | money }}</span>
                       <span class="CartItem__Price Price" style="text-decoration: line-through">{{ item.variant.compare_at_price | times: item.quantity | money }} </span>
                     {% else %}
