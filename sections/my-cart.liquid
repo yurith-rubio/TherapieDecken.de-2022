@@ -78,10 +78,10 @@
                       <span class="CartItem__Price Price Price--highlight">e: {{ item.final_line_price | money }}</span>
                     {%- endif -%}
                     {%- if item.variant.compare_at_price > item.final_line_price -%}
-                      <span class="CartItem__Price Price Price--highlight">e: {{ item.final_line_price | money }}</span>
-                      <span class="CartItem__Price Price Price--highlight">f: {{ item.variant.compare_at_price | money }}</span>
+                      <span class="CartItem__Price Price Price--highlight">a: {{ item.final_line_price | money }}</span>
+                      <span class="CartItem__Price Price Price--highlight">b: {{ item.variant.compare_at_price | money }}</span>
                     {%- else -%}
-                      <span class="CartItem__Price Price Price--highlight">e: {{ item.final_line_price | money }}</span>
+                      <span class="CartItem__Price Price Price--highlight">c: {{ item.final_line_price | money }}</span>
                     {%- endif -%}
                     
                   </div>
