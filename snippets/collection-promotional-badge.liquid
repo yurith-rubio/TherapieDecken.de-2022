@@ -8,7 +8,7 @@
       display: none;
     }
   {% endstyle %}
-{% endcomment %}
+
 
   {% style %}
     .Grid__Cell:nth-child(n+2) .Collection_ImgSmallBadge{
@@ -16,9 +16,9 @@
     }
   {% endstyle %}
 
+{% endcomment %}
 
-
-  {% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' or collection.handle == 'balance-therapiedecken-fur-erwachsene' %}
+  {% if collection.handle == 'kinder' %}
     <div class="CollectionBadge_Mask__Wrapper">
       {% comment %}<div class="Collection_SmallBadge">Gratis</div>{% endcomment %}
       <div class="Collection_ImgSmallBadge">
