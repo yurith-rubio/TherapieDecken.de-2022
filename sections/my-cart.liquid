@@ -76,7 +76,7 @@
                   <div class="Heading myCart_priceContainer">
                     {% if item.original_line_price > item.final_line_price %}
                       <span class="CartItem__Price Price Price--highlight">{{ item.final_line_price | money }}</span>
-                      <span class="CartItem__Price Price Price--highlight">u: {{ item.product.compare_at_price | money }}</span>
+                      <span class="CartItem__Price Price Price--highlight">u: {{ item.variant | money }}</span>
                     {%- endif -%}
                     {%- if item.compare_at_price > product.item.price -%}
                       <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
