@@ -2,6 +2,12 @@
     {{ cart | json }}
 </script>
 
+<script type="application/json" data-ajax-cart-configuration >
+    {
+      "addToCartCssClass": "js-my-cart-open"
+    }
+</script>
+
 <script type="module">
   import '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
   import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
@@ -24,8 +30,8 @@
   });
 </script>
 
-<script type="application/json" data-ajax-cart-configuration >
-    {
-      "addToCartCssClass": "js-my-cart-open"
-    }
+<script>
+  function overlayToggle() {
+    document.querySelector("#myCart_Overlay").classList.toggle("hide_sideCart");
+  }
 </script>
