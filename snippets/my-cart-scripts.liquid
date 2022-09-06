@@ -10,6 +10,7 @@
     console.log("cart state update");
     const discounts = await document.querySelectorAll(".MyCart_ItemDiscount");
     var sum = 0;
+    console.log("var sum here: " + sum);
     if (discounts){
       console.log("discounts");
       discounts.forEach(element => {
@@ -20,7 +21,7 @@
       return sum;
     }
     const total = await console.log(sum);
-    console.log("sum here: ");
+    console.log("sum here: " + sum);
     
   });
 </script>
