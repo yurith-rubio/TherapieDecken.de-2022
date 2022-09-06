@@ -53,6 +53,7 @@
   object-position: {{ settings.image_position }} !important;
 }
 
+/* Mobile */
 @media screen  and (max-width: 640px) {
   .promotion-home-hero_content_container{
     width: 100%;
@@ -70,8 +71,12 @@
   .Slideshow__ImageContainer{
     background-image: url('{{ settings.promo_image_mobile | img_url: 'master' }}');
   }
+  .promoCover_backgroundPosition{
+    
+  }
 }
 
+/* Tablet and up */
 @media screen and (min-width: 641px) {
   .promotion-home-hero_button{
     right: 8%;
@@ -81,6 +86,7 @@
   }
 }
 
+/* Tablet */
 @media screen and (min-width: 641px) and (max-width: 900px) {
   .promotion-home-hero_content_container{
     width: 70%;
@@ -92,7 +98,7 @@
     width: 50%;
   }
 }
-
+/* Desktop */
 @media screen and (min-width: 1922px) {
   .Slideshow__ImageContainer{
     background-position-y: center;
