@@ -40,7 +40,9 @@
     }
     const totalDiscount = sum;
     const totalDiscountElement = document.querySelector("#MyCart_ItemDiscountTotal");
-    totalDiscountElement.innerText = totalDiscount;
+    if(totalDiscountElement){
+      totalDiscountElement.innerText = totalDiscount;    
+    }
   }
   
   addCartTotalDiscount();
