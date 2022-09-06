@@ -32,7 +32,8 @@
       sum = Intl.NumberFormat("de-DE", {style: "currency", currency: "EUR"}).format(sum);
     } else {
       const discountsWrapper = document.querySelector("#myCart_DiscountWrapper");
-      discountsWrapper
+      discountsWrapper.remove();
+      
     }
     const totalDiscount = sum;
     const totalDiscountElement = document.querySelector("#MyCart_ItemDiscountTotal");
