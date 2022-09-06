@@ -15,8 +15,9 @@
   function addCartTotalDiscount(){
     console.log("cart state update");
     const discounts = document.querySelectorAll(".MyCart_ItemDiscount");
+    const discountsWrapper = document.querySelector("#myCart_DiscountWrapper");
+    discountsWrapper.remove();
     var sum = 0;
-    console.log("var sum here: " + sum);
     if (discounts){
       const totalCartWrapper = document.querySelector("#myCart_totalCartWrapper");
       console.log("discountsWrapper");
