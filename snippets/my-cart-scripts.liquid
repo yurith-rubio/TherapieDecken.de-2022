@@ -11,8 +11,7 @@
     const discounts = await document.querySelectorAll(".MyCart_ItemDiscount");
     if (discounts){
       discounts.forEach(discount => {
-        var discount = discount.innerText.replace("€", "");
-        
+        var discount = discount.innerText.replace("€", "").trim();
         console.log(discount);
       });
     }
