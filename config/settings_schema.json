@@ -765,11 +765,21 @@
         "type": "range",
         "id": "promo_art_y_content",
         "label": "Desktop: Vertical position",
-        "min": 0,
+        "min": -150,
         "max": 150,
-        "step": 5,
-        "unit": "%",
-        "default": 50
+        "step": 10,
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "promo_art_y_content_tablet",
+        "label": "Tablet: Vertical position",
+        "min": -150,
+        "max": 150,
+        "step": 10,
+        "unit": "px",
+        "default": 0
       },
       {
         "type": "range",
@@ -777,8 +787,8 @@
         "label": "Mobile: Vertical position",
         "min": -150,
         "max": 150,
-        "step": 5,
-        "unit": "%",
+        "step": 10,
+        "unit": "px",
         "default": 0
       },
       {
