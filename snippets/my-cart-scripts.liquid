@@ -10,8 +10,9 @@
     console.log("cart state update");
     const discounts = await document.querySelectorAll(".MyCart_ItemDiscount");
     if (discounts){
+      var sum = 0;
       discounts.forEach(discount => {
-        var discount = discount.innerText.replace("€", "").trim();
+        discount.innerText = discount.innerText.replace("€", "").trim();
         console.log(discount);
       });
     }
