@@ -24,7 +24,6 @@
           {%- if settings.promo_image -%}
             <div class="Slideshow__ImageContainer promoCover_backgroundPosition {% if settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}">
             </div>
-      
           {%- else -%}
             <div class="Slideshow__ImageContainer {% if settings.apply_overlay %}Image--contrast{% endif %} {% if section.settings.show_fullscreen %}PlaceholderBackground{% endif %} PlaceholderSvg--dark">
               {%- capture placeholder -%}{% cycle 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
