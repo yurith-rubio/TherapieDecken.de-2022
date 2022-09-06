@@ -33,9 +33,9 @@
     if (countDown === null) {
       document.getElementById("countdown_announcement").innerHTML = "";
       {% if settings.product_countdown_enable %}
-      document.getElementById("countdown_product").innerHTML = "";
+        document.getElementById("countdown_product").innerHTML = "";
+        document.getElementById("countdown_product_wrapper").className = " no-js";
       {% endif %}
-      document.getElementById("countdown_product_wrapper").className = " no-js"; 
       clearInterval(intervallId);
       return;
     }
