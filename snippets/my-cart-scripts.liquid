@@ -12,11 +12,6 @@
   import '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
   import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-  function overlayToggle() {
-    document.querySelector("#myCart_Overlay").classList.toggle("hide_sideCart");
-    addCartTotalDiscount();
-  }
-  
   function addCartTotalDiscount(){
     console.log("cart state update");
     const discounts = document.querySelectorAll(".MyCart_ItemDiscount");
@@ -32,6 +27,11 @@
     const totalDiscount = sum;
     const totalDiscountElement = document.querySelector("#MyCart_ItemDiscountTotal");
     totalDiscountElement.innerText = totalDiscount;
+  }
+  
+  function overlayToggle() {
+    document.querySelector("#myCart_Overlay").classList.toggle("hide_sideCart");
+    addCartTotalDiscount();
   }
   
   subscribeToCartStateUpdate(state => {
