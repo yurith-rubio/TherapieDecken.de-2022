@@ -14,7 +14,7 @@
 
   function overlayToggle() {
     document.querySelector("#myCart_Overlay").classList.toggle("hide_sideCart");
-    subscribeToCartStateUpdate();
+    subscribeToCartStateUpdate(state);
   }
   
   subscribeToCartStateUpdate(state => {
