@@ -15,8 +15,8 @@
         var discount = element.innerText.replace("€", "").trim();
         sum = sum + parseFloat(discount);        
       });
+      Intl.NumberFormat("de-DE", {style: "currency", currency: "EUR"}).format(sum);
       console.log("total sum discounts = " + sum);
-      console.log((sum.toFixed(2) + " €").replace(".", ","));
     }
   });
 </script>
