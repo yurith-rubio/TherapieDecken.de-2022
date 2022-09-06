@@ -139,6 +139,10 @@
               <p class="Heading u-h6">Zwischensumme</p>
               <p class="Cart__Total Heading u-h4 myCart_p" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
             </div>
+            <div class="myCart_totalCartWrapper">
+              <p class="Heading u-h6">Ersparniss</p>
+              <p class="Cart__Total Heading u-h4 myCart_p">{{ cart.total_price | money_with_currency }}</p>
+            </div>
             <button class="Button Button--primary Button--full" 
                     type="submit" 
                     name="checkout">
