@@ -121,8 +121,7 @@
       
       {% comment %} data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated {% endcomment %}
       <div data-ajax-cart-static-element class="my-cart__app-container"></div>
-      {% for item in cart.items %}
-        {% if item.quantity != 0 %}
+
           <div class="myCart_bottomSection">
             {% comment %}{% render 'my-cart-upsells' %}{% endcomment %}
             <div class="myCart_footerSection">
@@ -150,8 +149,7 @@
               {% render 'my-cart-payment-icons' %}
             </div>
           </div>
-        {% endif %}
-      {% endfor %}
+
 
       {% comment %}
       <!-- data-ajax-cart-property-input ajaxifies the cart note textarea -->
