@@ -6,9 +6,9 @@
   import '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
   import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-  subscribeToCartStateUpdate(state => {
+  subscribeToCartStateUpdate(async state => {
     console.log("cart state update");
-    const discounts = document.querySelectorAll(".MyCart_ItemDiscount");
+    const discounts = await document.querySelectorAll(".MyCart_ItemDiscount");
     console.log(discounts);
     discounts
   });
