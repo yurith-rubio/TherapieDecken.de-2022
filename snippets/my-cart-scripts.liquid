@@ -19,16 +19,15 @@
     const discountsWrapper = document.querySelector("#myCart_DiscountWrapper");
     if(discountsWrapper){
       discountsWrapper.remove();
-    } else {
-      if(discounts){
-        totalCartWrapper.insertAdjacentHTML("afterend", 
-                                    `<div id="myCart_DiscountWrapper" class="myCart_totalCartWrapper">
-                                        <p class="Heading u-h6">Ersparniss</p>
-                                        <p id="MyCart_ItemDiscountTotal" class="Heading u-h4 myCart_p"></p>
-                                      </div>`);
-      }
     }
-    
+    if(discounts){
+      totalCartWrapper.insertAdjacentHTML("afterend", 
+                                  `<div id="myCart_DiscountWrapper" class="myCart_totalCartWrapper">
+                                      <p class="Heading u-h6">Ersparniss</p>
+                                      <p id="MyCart_ItemDiscountTotal" class="Heading u-h4 myCart_p"></p>
+                                    </div>`);
+    }
+
     //
     var sum = 0;
     if (discounts){
