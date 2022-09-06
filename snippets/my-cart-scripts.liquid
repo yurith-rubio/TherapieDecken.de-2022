@@ -12,16 +12,16 @@
   import '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
   import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
   
-  async function addCartTotalDiscount(){
+  function addCartTotalDiscount(){
     console.log("cart state update");
-    const discounts = await document.querySelectorAll(".MyCart_ItemDiscount");
-    const totalCartWrapper = await document.querySelector("#myCart_totalCartWrapper");
-    const discountsWrapper = await document.querySelector("#myCart_DiscountWrapper");
+    const discounts = document.querySelectorAll(".MyCart_ItemDiscount");
+    const totalCartWrapper = document.querySelector("#myCart_totalCartWrapper");
+    const discountsWrapper = document.querySelector("#myCart_DiscountWrapper");
     if(discountsWrapper){
       discountsWrapper.remove();
     }
     if(discounts){
-      await totalCartWrapper.insertAdjacentHTML("afterend", 
+      totalCartWrapper.insertAdjacentHTML("afterend", 
                                   `<div id="myCart_DiscountWrapper" class="myCart_totalCartWrapper">
                                       <p class="Heading u-h6">Ersparniss</p>
                                       <p id="MyCart_ItemDiscountTotal" class="Heading u-h4 myCart_p"></p>
