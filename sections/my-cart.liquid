@@ -135,7 +135,7 @@
                 </p>
               {% endif %}
             </div>
-            <div class="myCart_totalCartWrapper">
+            <div id="myCart_totalCartWrapper" class="myCart_totalCartWrapper">
               <p class="Heading u-h6">Zwischensumme</p>
               <p class="Cart__Total Heading u-h4 myCart_p" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
             </div>
@@ -167,11 +167,7 @@
 </div>
 
 
-<script>
-  function overlayToggle() {
-    document.querySelector("#myCart_Overlay").classList.toggle("hide_sideCart");
-  }
-</script>
+
 
 
 {% schema %}
