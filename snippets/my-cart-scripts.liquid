@@ -13,8 +13,9 @@
       var sum = 0;
       discounts.forEach(element => {
         var discount = element.innerText.replace("€", "").trim();
-        console.log(discount);
+        sum = sum + parseFloat(discount);        
       });
+      console.log("total sum discounts = " + sum);
     }
   });
 </script>
