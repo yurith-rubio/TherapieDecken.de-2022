@@ -18,9 +18,9 @@
     var sum = 0;
     console.log("var sum here: " + sum);
     if (discounts){
-      const discountsWrapper = document.querySelector("#myCart_totalCartWrapper");
+      const totalCartWrapper = document.querySelector("#myCart_totalCartWrapper");
       console.log("discountsWrapper");
-      discountsWrapper.insertAdjacentHTML("afterend", 
+      totalCartWrapper.insertAdjacentHTML("afterend", 
                                           `<div id="myCart_DiscountWrapper" class="myCart_totalCartWrapper">
                                               <p class="Heading u-h6">Ersparniss</p>
                                               <p id="MyCart_ItemDiscountTotal" class="Heading u-h4 myCart_p"></p>
@@ -31,7 +31,8 @@
       });
       sum = Intl.NumberFormat("de-DE", {style: "currency", currency: "EUR"}).format(sum);
     } else {
-      discountsWrapper.
+      const discountsWrapper = document.querySelector("#myCart_DiscountWrapper");
+      discountsWrapper
     }
     const totalDiscount = sum;
     const totalDiscountElement = document.querySelector("#MyCart_ItemDiscountTotal");
