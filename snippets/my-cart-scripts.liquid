@@ -9,8 +9,9 @@
   subscribeToCartStateUpdate(async state => {
     console.log("cart state update");
     const discounts = await document.querySelectorAll(".MyCart_ItemDiscount");
-    console.log(discounts);
-    
+    if (discounts){
+      console.log(discounts);
+    }
   });
 </script>
 
