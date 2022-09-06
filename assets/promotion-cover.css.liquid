@@ -44,7 +44,9 @@
 .Slideshow--fullscreen .Slideshow__Image{
   object-position: {{ settings.image_position }} !important;
 }
-
+.Slideshow__ImageContainer{
+  background-size: cover;
+}
 /* Mobile */
 @media screen  and (max-width: 640px) {
   .Promotional_Content{
@@ -63,7 +65,6 @@
   }
   .Slideshow__ImageContainer{
     background-image: url('{{ settings.promo_image_mobile | img_url: 'master' }}');
-    background-size: cover;
   }
   .promoCover_backgroundPosition{
     background-position-x: {{ settings.image_position }};
