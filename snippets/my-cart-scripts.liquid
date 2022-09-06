@@ -12,13 +12,11 @@
     var sum = 0;
     console.log("var sum here: " + sum);
     if (discounts){
-      console.log("discounts");
       discounts.forEach(element => {
         var discount = element.innerText.replace("€", "").trim();
         sum = sum + parseFloat(discount.replace(".", "").replace(",", "."));
       });
       sum = Intl.NumberFormat("de-DE", {style: "currency", currency: "EUR"}).format(sum);
-      return sum;
     }
     console.log("sum here: " + sum);
     
