@@ -10,7 +10,9 @@
     console.log("cart state update");
     const discounts = await document.querySelectorAll(".MyCart_ItemDiscount");
     if (discounts){
-      console.log(discounts);
+      discounts.forEach(discount => {
+        console.log("discount: " + discount);
+      });
     }
   });
 </script>
