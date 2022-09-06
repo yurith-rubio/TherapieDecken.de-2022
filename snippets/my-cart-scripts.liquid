@@ -9,15 +9,17 @@
   subscribeToCartStateUpdate(async state => {
     console.log("cart state update");
     const discounts = await document.querySelectorAll(".MyCart_ItemDiscount");
+    var sum = 0;
     if (discounts){
-      var sum = 0;
+      console.log("discounts");
       discounts.forEach(element => {
         var discount = element.innerText.replace("€", "").trim();
         sum = sum + parseFloat(discount.replace(".", "").replace(",", "."));
       });
       sum = Intl.NumberFormat("de-DE", {style: "currency", currency: "EUR"}).format(sum);
-      console.log("total sum discounts = " + sum);
+      return sum;
     }
+    
   });
 </script>
 
