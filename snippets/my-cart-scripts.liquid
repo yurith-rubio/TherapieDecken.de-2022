@@ -29,9 +29,10 @@
     totalDiscountElement.innerText = totalDiscount;
   }
   
+  addCartTotalDiscount();
+  
   function overlayToggle() {
     document.querySelector("#myCart_Overlay").classList.toggle("hide_sideCart");
-    addCartTotalDiscount();
   }
   
   subscribeToCartStateUpdate(state => {
