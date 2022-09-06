@@ -15,11 +15,11 @@
   function addCartTotalDiscount(){
     console.log("cart state update");
     const discounts = document.querySelectorAll(".MyCart_ItemDiscount");
+    const totalCartWrapper = document.querySelector("#myCart_totalCartWrapper");
     const discountsWrapper = document.querySelector("#myCart_DiscountWrapper");
     discountsWrapper.remove();
     var sum = 0;
     if (discounts){
-      const totalCartWrapper = document.querySelector("#myCart_totalCartWrapper");
       totalCartWrapper.insertAdjacentHTML("afterend", 
                                           `<div id="myCart_DiscountWrapper" class="myCart_totalCartWrapper">
                                               <p class="Heading u-h6">Ersparniss</p>
