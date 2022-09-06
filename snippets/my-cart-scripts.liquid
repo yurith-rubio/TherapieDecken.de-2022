@@ -6,9 +6,9 @@
   import '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
   import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-  subscribeToCartStateUpdate(async state => {
+  subscribeToCartStateUpdate(state => {
     console.log("cart state update");
-    const discounts = await document.querySelectorAll(".MyCart_ItemDiscount");
+    const discounts = document.querySelectorAll(".MyCart_ItemDiscount");
     var sum = 0;
     console.log("var sum here: " + sum);
     if (discounts){
@@ -20,7 +20,6 @@
       sum = Intl.NumberFormat("de-DE", {style: "currency", currency: "EUR"}).format(sum);
       return sum;
     }
-    const total = await console.log(sum);
     console.log("sum here: " + sum);
     
   });
