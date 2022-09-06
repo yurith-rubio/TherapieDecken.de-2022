@@ -9,6 +9,11 @@
 </script>
 
 <script type="module">
+  function overlayToggle() {
+    document.querySelector("#myCart_Overlay").classList.toggle("hide_sideCart");
+    subscribeToCartStateUpdate();
+  }
+  
   import '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
   import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
@@ -31,7 +36,5 @@
 </script>
 
 <script>
-  function overlayToggle() {
-    document.querySelector("#myCart_Overlay").classList.toggle("hide_sideCart");
-  }
+
 </script>
