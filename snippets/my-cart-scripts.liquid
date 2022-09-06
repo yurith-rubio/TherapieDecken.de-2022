@@ -14,9 +14,10 @@
 
   function overlayToggle() {
     document.querySelector("#myCart_Overlay").classList.toggle("hide_sideCart");
+    addCartTotalDiscount()
   }
   
-  subscribeToCartStateUpdate(state => {
+  function addCartTotalDiscount(){
     console.log("cart state update");
     const discounts = document.querySelectorAll(".MyCart_ItemDiscount");
     var sum = 0;
@@ -31,6 +32,10 @@
     const totalDiscount = sum;
     const totalDiscountElement = document.querySelector("#MyCart_ItemDiscountTotal");
     totalDiscountElement.innerText = totalDiscount;
+  }
+  
+  subscribeToCartStateUpdate(state => {
+    addCartTotalDiscount()
   });
 </script>
 
