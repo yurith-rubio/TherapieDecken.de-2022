@@ -813,7 +813,7 @@
       {
         "type": "url",
         "id": "promo_badge",
-        "label": "Collection badge",
+        "label": "Promo badge",
         "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/collection-promotional-badge.liquid)"
       },
       {
@@ -884,12 +884,6 @@
         "label": "Enable badge only on selected collections",
         "info": "Fill the info below to select the products",
         "default": false
-      },
-      {
-        "type": "url",
-        "id": "promo_product_badge",
-        "label": "Product badge",
-        "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/product-promotional-badge.liquid)"
       },
       {
         "type": "range",
