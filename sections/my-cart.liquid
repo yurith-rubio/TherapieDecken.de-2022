@@ -76,7 +76,7 @@
                   <div class="Heading myCart_priceContainer">
                     {% if item.original_line_price > item.final_line_price %}
                       <span class="CartItem__Price Price Price--highlight">{{ item.final_line_price | money }}</span>
-                      <span class="CartItem__Price Price" style="text-decoration: line-through">{{ item.variant.compare_at_price | times: item.quantity | money }}</span>
+                      <span class="CartItem__Price Price MyCart_ItemDiscount" style="text-decoration: line-through">{{ item.variant.compare_at_price | times: item.quantity | money }}</span>
                     {%- elsif item.variant.compare_at_price > item.original_price -%}
                       <span class="CartItem__Price Price Price--highlight">{{ item.final_line_price | money }}</span>
                       <span class="CartItem__Price Price MyCart_ItemDiscount" style="text-decoration: line-through">{{ item.variant.compare_at_price | times: item.quantity | money }} </span>
