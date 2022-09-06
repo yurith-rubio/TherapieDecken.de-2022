@@ -61,7 +61,7 @@
     "checkout_countdown_enable": false,
     "checkout_countdown_text": "⚠️ Auf Grund unseres Weltschlaftag Angebots ist Ihr Warenkorb für nur",
     "left_product_inventory": true,
-    "promotional_hero_hp_cover": true,
+    "promotional_hero_hp_cover": false,
     "promo_image": "shopify:\/\/shop_images\/Desktop.jpg",
     "promo_image_mobile": "shopify:\/\/shop_images\/Grupo_580.jpg",
     "apply_overlay": true,
