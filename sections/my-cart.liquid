@@ -1,7 +1,7 @@
 <!-- sections/my-cart.liquid -->
 
 <div id="myCart_mainContainer" class="myCart_mainContainer myCart_open">
-  <div class="myCart_floating"> 
+  <div class="myCart_floating">
     <form id="myCart_slider" action="{{ routes.cart_url }}" method="post" class="my-cart" >
       {% comment %} data-ajax-cart-section makes the element's HTML update when the cart gets changed {% endcomment %}
       <div data-ajax-cart-section>
@@ -121,34 +121,37 @@
       
       {% comment %} data-ajax-cart-static-element keeps the container unchanged when the cart and the surrounding HTML get updated {% endcomment %}
       <div data-ajax-cart-static-element class="my-cart__app-container"></div>
-      
-      <div class="myCart_bottomSection">
-        {% comment %}{% render 'my-cart-upsells' %}{% endcomment %}
-        <div class="myCart_footerSection">
-          <div class="myCart_footerWrapper">
-            <div class="myCart_versandWrapper" data-ajax-cart-section>
-              {% assign price_to_compare = cart.total_price | money_without_trailing_zeros | plus: 0 %}
-              {% if price_to_compare > 99 %}
-                <p class="Heading u-h6">Versand</p>
-                <p class="myCart_p myCart_gratis">
-                  Gratis
-                </p>
-              {% endif %}
+      {% for item in cart.items %}
+        {% if item.quantity != 0 %}
+          <div class="myCart_bottomSection">
+            {% comment %}{% render 'my-cart-upsells' %}{% endcomment %}
+            <div class="myCart_footerSection">
+              <div class="myCart_footerWrapper">
+                <div class="myCart_versandWrapper" data-ajax-cart-section>
+                  {% assign price_to_compare = cart.total_price | money_without_trailing_zeros | plus: 0 %}
+                  {% if price_to_compare > 99 %}
+                    <p class="Heading u-h6">Versand</p>
+                    <p class="myCart_p myCart_gratis">
+                      Gratis
+                    </p>
+                  {% endif %}
+                </div>
+                <div id="myCart_totalCartWrapper" class="myCart_totalCartWrapper">
+                  <p class="Heading u-h6">Zwischensumme</p>
+                  <p class="Cart__Total Heading u-h4 myCart_p" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
+                </div>
+                <button class="Button Button--primary Button--full" 
+                        type="submit" 
+                        name="checkout">
+                  Zur Kasse
+                </button>
+              </div>
+    
+              {% render 'my-cart-payment-icons' %}
             </div>
-            <div id="myCart_totalCartWrapper" class="myCart_totalCartWrapper">
-              <p class="Heading u-h6">Zwischensumme</p>
-              <p class="Cart__Total Heading u-h4 myCart_p" data-ajax-cart-bind-state="cart.total_price | money_with_currency">{{ cart.total_price | money_with_currency }}</p>
-            </div>
-            <button class="Button Button--primary Button--full" 
-                    type="submit" 
-                    name="checkout">
-              Zur Kasse
-            </button>
           </div>
-
-          {% render 'my-cart-payment-icons' %}
-        </div>
-      </div>
+        {% endif %}
+      {% endfor %}
 
       {% comment %}
       <!-- data-ajax-cart-property-input ajaxifies the cart note textarea -->
