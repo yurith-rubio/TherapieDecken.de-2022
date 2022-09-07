@@ -107,7 +107,7 @@
         <span class="Icon-Wrapper--clickable">{%- render 'icon' with 'rss' -%}</span>
       </a>
     </li>
-
+    
     {% assign social_media_count = social_media_count | plus: 1 %}
   {%- endif -%}
 {%- endcapture -%}
@@ -121,6 +121,6 @@
 {%- if social_media_count > 0 -%}
   <ul class="{{ class }} HorizontalList {% if spacing %}HorizontalList--spacing{{ spacing | capitalize }}{% endif %}">
     {{ social_media }}
-  </ul>
+  </ul>  
   <p class="{{ class }}" style="text-decoration: underline;margin-top: 20px;"><a href="https://www.facebook.com/groups/gewichtsdecken/" target="_blank">Sich mit anderen auf Facebook über Therapiedecken austauschen</a></p>
 {%- endif -%}
