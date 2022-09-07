@@ -1,0 +1,49 @@
+/*-----------------------------------------------------------------------------/
+/ Hide ex - Yurith
+/-----------------------------------------------------------------------------*/
+
+const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
+const collapsibleContent = document.querySelectorAll(".ProductForm__Option");
+
+function hideShowCollapsibles(event) {
+  collapsibleSelectors.forEach(collapsible => {
+    collapsible.classList.remove("hidden");
+  });
+  collapsibleContent.forEach(collapsible => {
+    collapsible.classList.add("hidden");
+  });
+}
+
+function getCollapsbleOptionNumber(element) {
+  return element.firstElementChild.firstElementChild.getAttribute("data-option-position");
+}
+
+collapsibleSelectors.forEach(button => {
+  button.addEventListener("click", event => {
+    const buttonSelected = event.target.closest(".ProductForm_CollapsibleSelector");
+    const infoToHide = event.target.closest(".ProductForm_CollapsibleSelector");
+    const infoToShow = buttonSelected.nextElementSibling;
+    hideShowCollapsibles();
+    infoToHide.classList.add("hidden");
+    infoToShow.classList.remove("hidden");
+  });
+});
+
+$("li.HorizontalList__Item > input").click(function (event) {
+  const value = event.currentTarget.defaultValue;
+  const valueOneThirty = "135 x 200 cm";
+  const valueOneFifty = "150 x 220 cm";
+
+  if (value === valueOneThirty) {
+    $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
+    $(".gewicht_option > input").first().click();
+  } else if(value === valueOneFifty) {
+    //currentLabel.innerText = valueOneFifty;
+    $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
+    $(".gewicht_option > input[value = '6 kg']").click();
+  }
+  
+  const label = event.currentTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
+  label.innerText = value;
+  
+});

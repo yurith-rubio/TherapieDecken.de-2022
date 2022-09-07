@@ -1,0 +1,10 @@
+{% style %}
+    .leadGrid_container{
+        display: grid;
+    }
+{% endstyle %}
+<div class="leadGrid_container">
+<div>
+    
+</div>
+</div>

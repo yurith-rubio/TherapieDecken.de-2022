@@ -8,6 +8,7 @@
 {% endstyle %}
 
 <header class="PageHeader PageHeader--withBackground PageHeader--small PageStandHeader">
+
   <div class="PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn {% if section.settings.apply_overlay %}Image--contrast{% endif %} {% if section.settings.mobile_custom %}hidden-phone{% endif %}"
      data-optimumx="1.2"
      data-bgset="{{ section.settings.image | img_url: 'x600' }} 600w, {{ section.settings.image | img_url: '800x' }} 800w, {{ section.settings.image | img_url: '1200x' }} 1200w, {{ section.settings.image | img_url: '1400x' }} 1400w, {{ section.settings.image | img_url: '1600x' }} 1600w">
@@ -22,11 +23,11 @@
      <div class="PageHeader__ImageWrapper {% if section.settings.apply_overlay %}Image--contrast{% endif %}" style="background-image: url({{ collection.image | img_url: '800x' }})"></div>
   </noscript>
   <div class="SectionHeader SectionHeader--center" style="margin-bottom: 0; padding: 0 25px;">
-    {% if template contains "gewichtsdecken-im-test" %}
-    <p class="Heading u-h6" style="margin: 0;">{{ section.settings.sub_headline }}</p>
+    {% if section.settings.custom_title and section.settings.sub_headline != blank %}
+      <p class="Heading u-h6" style="margin: 0;">{{ section.settings.sub_headline }}</p>
     {% endif %}
     <h1 class=" Heading u-h1">
-      {% if section.settings.custom_title %}
+      {% if section.settings.enable_custom_title %}
       	{{ section.settings.custom_title_text }}
       {% else %}
       	{{ page.title }}
@@ -56,9 +57,13 @@
   "name": "Page Standard Header",
   "settings": [
     {
+      "type": "header",
+      "content": "Custom heading"
+    },
+    {
       "type": "checkbox",
-      "id": "custom_title",
-      "label": "Custom Title",
+      "id": "enable_custom_title",
+      "label": "Enable custom heading",
       "default": false
     },
     {
@@ -67,7 +72,7 @@
       "label": "Custom Title",
       "default": "Customize Title if needed"
     },
-	{
+	  {
       "type": "text",
       "id": "sub_headline",
       "label": "Sub Headline",

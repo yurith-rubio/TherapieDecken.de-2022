@@ -1046,7 +1046,6 @@ body:not(.is-tabbing) textarea:focus {
 .Container--extraNarrow {
   max-width: 700px;
   margin: auto;
-  padding: 0 24px;
 }
 
 .Container--standard{
@@ -7165,6 +7164,64 @@ a.CollectionItemPage {
  * Product item
  * ----------------------------------------------------------------------------
  */
+/*test*/
+.product-badge-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.product-badge{
+  padding: 7px 15px;
+  text-transform:uppercase;
+  border-radius: 4px;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.summer-badge{
+  background: #f3844a;
+  color: #fff;
+}
+.classic-badge{
+  background: #5b5b5b;
+  color: #fff;
+}
+.personalisiert-badge{
+  background: #f5bb2c;
+  color: #2c2e2e;
+}
+.einsteigermodell-badge{
+  background: #afafaf;
+  color: #fff;
+}
+.hero-badge{
+  background: #0649cc;
+  color: #fff;
+}
+.zauberei-badge{
+  background: #7f0f09;
+  color: #fcb800;
+}
+.ringwelt-badge{
+  background: #f4cf00;
+  color: #747474;
+}
+@media (max-width: 1023px){
+  .product-badge-div{
+    top: 3px;
+  }
+}
+@media (max-width: 640px){
+  .product-badge-div{
+    left: -3px; 
+  }
+  .product-badge{
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+}
+/*test*/
 
 .ProductItem {
   text-align: center;
@@ -7740,6 +7797,9 @@ a.CollectionItemPage {
   margin: auto;
 }
 
+.FeatureText__Content {
+  padding: 30px;
+}
 .FeatureText__ContentWrapper {
   padding-left: 24px;
   padding-right: 24px;
@@ -7761,6 +7821,9 @@ a.CollectionItemPage {
 
 
 @media screen and (max-width: 640px) {
+  .FeatureText__ContentWrapper{
+    max-width: 100vw;
+  }
   .FeatureText--imageLeft {
     display: flex;
     flex-direction: column-reverse;
@@ -7774,7 +7837,7 @@ a.CollectionItemPage {
 @media screen and (min-width: 641px) {
   .FeatureText__Content {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto
   }
   
   .FeatureText__Content_addons{
@@ -9822,6 +9885,19 @@ shopify-payment-terms {
   margin-bottom: 24px;
 }
 
+.ProductForm_CollapsibleOption{
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.ProductForm_CollapsibleSelector{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px 10px 0;
+  cursor: pointer;
+}
+
 .ProductForm__Option {
   position: relative;
   margin-bottom: 10px;
@@ -9875,6 +9951,10 @@ shopify-payment-terms {
   overflow: hidden;
   max-width: 220px;
   vertical-align: top;
+  background-color: #fac6371c;
+  padding: 0 10px;
+  border-radius: 3px;
+  /*border: #fac637 solid 3px !important;*/
 }
 
 .ProductForm__OptionCount {
@@ -11541,6 +11621,9 @@ p.SidebarMenu__Social{
 }
 
 /* General for TD - Yurith 08-21*/
+.hidden{
+  display: none;
+}
 .td-h3{
   font-size: 18px;
   letter-spacing: .2em;
@@ -12721,4 +12804,61 @@ header.html-text-wr{
 
 .image-text-simple{
   margin-top: 30px;
+}
+
+/* Collapsible Varants */
+
+@keyframes slideUpLabel {
+  0%{
+    transform: translate(0, 30px);
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.ProductForm_CollapsibleSelector:hover > .arrowRotate{
+  animation: rotateArrow .3s ease 0s normal none;
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation-fill-mode: forwards;
+}
+
+.ProductForm_CollapsibleArrow{
+  color: var(--button-background);
+}
+.ProductForm_CollapsibleArrow{
+  position: relative;
+  top: 4px;
+}
+
+/* right-blanket */
+.rightBlanket_container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3c3c;
+  color: white;
+  padding: 10px 0;
+  text-align: center
+}
+
+.rightBlanket_container p {
+  margin-bottom: 0;
+  padding: 0 20px
+}
+
+.rightBlanket_linkContent span {
+  position: relative;
+  left: 5px
+}
+
+.rightBlanket_linkContent:hover .Button:hover {
+  background-color: #fff !important;
+  color: #3a3c3c !important;
 }

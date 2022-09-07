@@ -21,6 +21,14 @@
       <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
 
+   <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TP3DS7X');</script>
+    <!-- End Google Tag Manager -->
+
     <link rel="canonical" href="{{ canonical_url }}">
 
     {%- if settings.favicon -%}
@@ -41,8 +49,8 @@
     <!-- This code is automatically managed by StarApps Studio -->
     <!-- Please contact support@starapps.studio for any help -->
     
-    <script type="text/javascript" src="https://bcdn.starapps.studio/apps/via/therapiedecken/script-1631272472.js?shop={{shop.permanent_domain}}" async></script>
-    <!-- starapps_scripts_end -->
+        <script type="text/javascript" src="https://bcdn.starapps.studio/apps/via/therapiedecken/script-1631272472.js?shop={{shop.permanent_domain}}" async></script>
+<!-- starapps_scripts_end -->
     <!-- starapps_scripts_start -->
     <!-- This code is automatically managed by StarApps Studio -->
     <!-- Please contact support@starapps.studio for any help -->
@@ -149,7 +157,7 @@
     
     <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
     {% comment %} ICOMOON link {% endcomment %}
-    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/163995/TDTW/style-cf.css?iq46su">
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/163995/TDTW/style-cf.css?742bf2">
 
     {% comment %} Font added for bold on Headings {% endcomment %}
     <link rel="stylesheet" href="https://use.typekit.net/cmk7jcs.css">
@@ -236,7 +244,6 @@
 
       // Show menu when scrolling up and Hide Menu when scrolling down
       var prevScrollpos = window.pageYOffset;
-      console.log({prevScrollpos});
       window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
         
@@ -260,13 +267,7 @@
   	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   	<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></noscript>
     
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TP3DS7X');</script>
-    <!-- End Google Tag Manager -->
+
     
     {% comment %} Reviews Core - Yurith {% endcomment %}
     {% render 'judgeme_core' %} 

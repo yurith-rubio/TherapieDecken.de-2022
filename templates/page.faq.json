@@ -122,8 +122,8 @@
         "9c7e08f6-2381-4679-bf9d-44232082866d": {
           "type": "question",
           "settings": {
-            "title": "Was muss ich beim Angebot des 28- tätigem Probeschlafens beachten?",
-            "answer": "<p>Sie können unsere Decke 28 Nächte nach Erhalt testen. Wenn Sie keine Wirkung spüren oder nicht zufrieden sind, können Sie die Decke retournieren oder umtauschen. Dafür beachten Sie bitte unsere Richtlinien für Rücksendungen.<br\/><br\/>Während des Testzeitraums darf die Decke gewaschen werden. Bitte gehen Sie mit der Gewichtsdecke sorgsam um. Wir nehmen uns das Recht vor, verschmutzte und kaputte Decken nicht zurückzunehmen. <br\/><\/p>",
+            "title": "Was muss ich beim Angebot des 100- tätigem Probeschlafens beachten?",
+            "answer": "<p>Sie können unsere Decke 100 Nächte nach Erhalt testen. Wenn Sie keine Wirkung spüren oder nicht zufrieden sind, können Sie die Decke retournieren oder umtauschen. Dafür beachten Sie bitte unsere Richtlinien für Rücksendungen.<br\/><br\/>Während des Testzeitraums darf die Decke gewaschen werden. Bitte gehen Sie mit der Gewichtsdecke sorgsam um. Wir nehmen uns das Recht vor, verschmutzte und kaputte Decken nicht zurückzunehmen. <br\/><\/p>",
             "answer_html": ""
           }
         },
@@ -243,7 +243,7 @@
           "type": "question",
           "settings": {
             "title": "Retouren",
-            "answer": "<p>Sie können die Decke innerhalb von 28 Tagen ohne Angabe von Gründen zurückschicken. Der Widerruf muss jedoch über das <a href=\"https:\/\/therapiedecken.de\/pages\/retouren-center\" title=\"Retouren Center\">Retouren Center<\/a> angekündigt werden. Die reine Rücksendung der Ware (ohne ausdrückliche Erklärung) innerhalb von 28 Tagen ist nicht ausreichend. Die Rücksendekosten sind vom Kunden zu tragen. <\/p><p><strong>Geöffnetes Duftspray kann nicht zurückgegeben oder umgetauscht werden.<\/strong><\/p><p>In der Regel kann die Bearbeitung einer Retour 7-14 Werktage in Anspruch nehmen. Wir bitten um Ihr Verständnis.<\/p><p>Für Rücksendungen schreiben Sie uns bitte eine Email an <a href=\"mailto:kundenservice@therapiedecken.de\">kundenservice@therapiedecken.de<\/a>.<\/p>",
+            "answer": "<p>Sie können die Decke innerhalb von 100 Tagen ohne Angabe von Gründen zurückschicken. Der Widerruf muss jedoch über das <a href=\"https:\/\/therapiedecken.de\/pages\/retouren-center\" title=\"Retouren Center\">Retouren Center<\/a> angekündigt werden. Die reine Rücksendung der Ware (ohne ausdrückliche Erklärung) innerhalb von 100 Tagen ist nicht ausreichend. Die Rücksendekosten sind vom Kunden zu tragen. <\/p><p><strong>Geöffnetes Duftspray kann nicht zurückgegeben oder umgetauscht werden.<\/strong><\/p><p>In der Regel kann die Bearbeitung einer Retour 7-14 Werktage in Anspruch nehmen. Wir bitten um Ihr Verständnis.<\/p><p>Für Rücksendungen schreiben Sie uns bitte eine Email an <a href=\"mailto:kundenservice@therapiedecken.de\">kundenservice@therapiedecken.de<\/a>.<\/p>",
             "answer_html": ""
           }
         },
@@ -451,8 +451,8 @@
         "682026e0-51c9-4dab-9fa6-5ecf821772bc": {
           "type": "question",
           "settings": {
-            "title": "Warum bekomme ich eine Zahlungsaufforderung von Klarna, obwohl ich 28-Tage Probeschlafen darf?",
-            "answer": "<p>Klarna ist ein Drittanbieter und setzt die Zahlungsziele fest. Unser Angebot 28 Tage Probeschlafen zu können, geht nicht mit den Zahlungszielen, die von einem Drittanbieter festgelegt werden, zusammen. Bitte begleichen Sie die Rechnung. Wenn Sie die Decke retournieren, bekommen Sie Ihre Bestellung erstattet. Das Zahlungsziel kann gegen eine Gebühr vom Kunden selbstständig verlängert werden.<\/p>",
+            "title": "Warum bekomme ich eine Zahlungsaufforderung von Klarna, obwohl ich 100-Tage Probeschlafen darf?",
+            "answer": "<p>Klarna ist ein Drittanbieter und setzt die Zahlungsziele fest. Unser Angebot 100 Tage Probeschlafen zu können, geht nicht mit den Zahlungszielen, die von einem Drittanbieter festgelegt werden, zusammen. Bitte begleichen Sie die Rechnung. Wenn Sie die Decke retournieren, bekommen Sie Ihre Bestellung erstattet. Das Zahlungsziel kann gegen eine Gebühr vom Kunden selbstständig verlängert werden.<\/p>",
             "answer_html": ""
           }
         }

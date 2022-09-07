@@ -1,0 +1,83 @@
+{% style %}
+  .voucher_wrapper{
+    position: relative;
+    max-width: 600px;
+    margin: -100px auto 50px auto;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 640px){  
+    .voucher_wrapper {
+      margin: -50px auto 50px auto;
+    }
+  }
+{% endstyle %}
+
+<div id="rabatt_code" style="position: relative; top: -200px;"></div>
+
+<div class="voucher_wrapper">
+  <div class="tresc">
+    <h2 class="Heading u-h2">{{ section.settings.discount_heading }}</h2>
+    <p>{{ section.settings.discount_subheading }}</p>
+    <div class="white-rabat"><b>{{ section.settings.discount_code }}</b></div>
+    <a href="{{ section.settings.button_url }}">
+      <div class="Button Button--primary" style="margin-bottom:15px">{{ section.settings.button_text }}</div>
+    </a>
+    {{ section.settings.content }}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Voucher",
+    "settings": [
+      {
+        "type": "text",
+        "id": "discount_heading",
+        "label": "Discount heading",
+        "default": "Jetzt sparen!"
+      },
+      {
+        "type": "text",
+        "id": "discount_subheading",
+        "label": "Discount subheading",
+        "default": "Erhalten Sie 10€ Rabatt mit Code:"
+      },
+      {
+        "type": "text",
+        "id": "discount_code",
+        "label": "Discount subheading",
+        "default": "DAK-10"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button text",
+        "default": "JETZT EINLÖSEN"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button link"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content",
+        "default": "<p>Wir fragen ggf. nach den letzten 4 Ziffern der Versicherungsnummer für Ihre Bestellung..</p>"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Voucher"
+      }
+    ],
+    "templates": ["page"]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
