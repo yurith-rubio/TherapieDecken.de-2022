@@ -7796,6 +7796,7 @@ a.CollectionItemPage {
   max-width: 900px;
   margin: auto;
 }
+
 .FeatureText__Content {
   padding: 30px;
 }
@@ -7803,17 +7804,21 @@ a.CollectionItemPage {
   padding-left: 24px;
   padding-right: 24px;
 }
+
 .FeatureText__ImageWrapper {
   overflow: hidden;
 }
+
 .FeatureText--withImage .FeatureText__ContentWrapper {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+
 .FeatureText .SectionHeader__Description {
   margin-top: 25px;
   margin-bottom: 20px;
 }
+
 
 @media screen and (max-width: 640px) {
   .FeatureText__ContentWrapper{
