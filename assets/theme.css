@@ -6056,7 +6056,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 65px;
+    margin-top: 20px;
   }
 
   .Article__ShareButtons {
