@@ -35,6 +35,7 @@ Testing
   {%- assign downcase_option = option.name | downcase -%}
   {%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-{{ option.name | handle }}{%- endcapture -%}
 
+    Product collection {{ product.collections }};
   {% if product.handle == 'therapiedecken' %}
 
     <div class="ProductForm_CollapsibleOption">
