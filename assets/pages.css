@@ -40,6 +40,9 @@
   padding: 30px;
   color: #fff;
 }
+.rte ul.cta-bullets{
+  margin-bottom: 0;
+}
 ul.cta-bullets li {
   list-style: none;
 }
