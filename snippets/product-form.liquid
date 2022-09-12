@@ -21,14 +21,13 @@
 
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
-  {%- for option in product.options_with_values -%}
-  {%- assign downcase_option = option.name | downcase -%}
-
-  {%- if block.settings.selector_mode == 'block' or color_label contains downcase_option and
-  block.settings.show_color_swatch -%}
-  {%- assign show_option_label = true -%}
-  {%- endif -%}
-  {%- endfor -%}
+    {%- for option in product.options_with_values -%}
+      {%- assign downcase_option = option.name | downcase -%}
+      {%- if block.settings.selector_mode == 'block' or color_label contains downcase_option and
+        block.settings.show_color_swatch -%}
+        {%- assign show_option_label = true -%}
+      {%- endif -%}
+    {%- endfor -%}
 
   {%- for option in product.options_with_values -%}
   {%- assign downcase_option = option.name | downcase -%}
