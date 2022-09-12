@@ -29,17 +29,17 @@
       {%- endif -%}
     {%- endfor -%}
 
-  {%- for option in product.options_with_values -%}
-  {%- assign downcase_option = option.name | downcase -%}
-  {%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-{{ option.name | handle }}{%- endcapture -%}
+    {%- for option in product.options_with_values -%}
+      {%- assign downcase_option = option.name | downcase -%}
+      {%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-{{ option.name | handle }}{%- endcapture -%}
 
-  {% for collection in product.collections %}
-
-    {% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' %}
-    Product collection {{ collection.handle }};
-    {% endif %}
-  {% endfor %}
-  {% if product.handle == 'therapiedecken' %}
+      {% for collection in product.collections %}
+    
+        {% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' %}
+        Product collection {{ collection.handle }};
+        {% endif %}
+      {% endfor %}
+      {% if product.handle == 'therapiedecken' %}
 
     <div class="ProductForm_CollapsibleOption">
       <div class="ProductForm_CollapsibleSelector">
