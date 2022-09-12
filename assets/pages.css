@@ -8,7 +8,64 @@
 .grid h1{
   text-align: center;
 }
-@media (max-width: 767px){
+.cta-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 0;
+}
+.cta-wrapper h3{
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  margin: 0 0 18px;
+  text-align: left;
+}
+.cta-wrapper p{
+  margin: 0 0 14px;
+}
+.cta-wrapper a{
+  margin-top: 25px;
+  width: 100%!important;
+  padding: 15px;
+}
+.cta-wrapper .cta-image{
+  height: 100%;
+}
+.cta-wrapper img{
+  height: 100%;
+  object-fit: cover;
+}
+.cta-wrapper .cta-content{
+  background: #5b5b5b;
+  padding: 30px;
+  color: #fff;
+}
+ul.cta-bullets li {
+  list-style: none;
+}
+ul.cta-bullets li:before {
+  font-family: FontAwesome;
+  content: '\f00c';
+  margin: 0 5px 0 -15px;
+  color: #fac636;
+}
+@media only screen and (max-width: 767px){
+  .cta-wrapper{
+    display: block;
+  }
+  .cta-wrapper .cta-image {
+    height: 150px;
+    width: 100%;
+  }
+  .cta-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .cta-wrapper .cta-content{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
   .grid {
     padding: 50px 8px;
   }
