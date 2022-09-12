@@ -12221,6 +12221,7 @@ a.entspannung-topseller-link:hover {
   font-family: Montserrat, sans-serif !important;
   font-size: 11px !important;
   padding: 7px 12px !important;
+  border-color: none !important;
 }
 .cl-po--wrapper input[type="radio"]:checked + .cl-po--swatch{
   box-shadow: unset !important;
