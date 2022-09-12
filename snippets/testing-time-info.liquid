@@ -16,6 +16,15 @@
     padding: 30px;
     color: #fff;
   }
+  ul.cta-bullets li {
+    list-style: none;
+  }
+  ul.cta-bullets li:before {
+    font-family: FontAwesome;
+    content: '\f00c';
+    margin: 0 5px 0 -15px;
+    color: #3da900;
+  }
 </style>
 {% if message_type == 'adults_kids' %}
   <div class="cta-wrapper">
@@ -25,7 +34,7 @@
     <div class="cta-content">
       <h3 class="Heading u-h3">Jetzt 100 Tage Probeschlafen!</h3>
       <p>Die bis zu 12 kg schweren Gewichtsdecken helfen Erwachsenen oder Kindern bei Schlafproblemen, Stress, Angstattacken, Autismus, ADHS und mehr! Testen Sie oder Ihr Kind eine Therapiedecke für 100 Tage.</p>
-      <ul class="wirkung-bullets">
+      <ul class="cta-bullets">
           <li>Kostenloser Versand</li>
           <li>Gratis Umtausch</li>
           <li>100 Tage Probeschlafen</li>
