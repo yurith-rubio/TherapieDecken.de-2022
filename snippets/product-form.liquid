@@ -34,13 +34,12 @@
       {%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-{{ option.name | handle }}{%- endcapture -%}
 
       {% for collection in product.collections %}
-    
         {% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' %}
-        Product collection {{ collection.handle }};
+          {% assign block.settings.selector_mode = 'collapsible' %}
         {% endif %}
       {% endfor %}
-      {% if product.handle == 'therapiedecken' %}
-
+      
+        {% if block.settings.selector_mode = 'collapsible' %}
         <div class="ProductForm_CollapsibleOption">
           <div class="ProductForm_CollapsibleSelector">
             <div class="ProductForm__Label" style="margin-bottom: 0">
@@ -299,7 +298,7 @@
                 data-action="select-variant">{{- 'product.form.select_model' | t -}}</button>
             </div>
           </div>
-  {%- else -%}
+        {%- else -%}
           <div id="{{ popover_id }}" class="OptionSelector Popover Popover--withMinWidth" aria-hidden="true">
             <header class="Popover__Header">
               <button type="button" class="Popover__Close Icon-Wrapper--clickable" data-action="close-popover">{% render
@@ -329,10 +328,13 @@
             </div>
           </div>
         {%- endif -%}
+        
+
         {%- endcapture -%}
     
         {%- assign product_popovers = product_popovers | append: popover_html -%}
     {%- endif -%}
+          
   </div>
 </div>
 
