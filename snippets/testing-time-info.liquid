@@ -25,6 +25,24 @@
     margin: 0 5px 0 -15px;
     color: #fac636;
   }
+  @media only screen and (max-width: 640px){
+    .cta-wrapper{
+      display: block;
+    }
+    .cta-wrapper .cta-image {
+      height: 150px;
+      width: 100%;
+    }
+    .cta-wrapper img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .cta-wrapper .cta-content{
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
 </style>
 {% if message_type == 'adults_kids' %}
   <div class="cta-wrapper">
