@@ -8,65 +8,6 @@
 .grid h1{
   text-align: center;
 }
-.wirkung-container {
-    margin: 20px 0;
-  	padding: 20px;
-    border: 2px solid #333;
-    overflow: auto;
-    background-color: #f1f1f1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.wirkung-container-title.h3, h3.wirkung-container-title {
-    flex: 0 0 100%;
-  	text-align:center;
-  	font-family:Montserrat, sans-serif;
-  	font-weight:600;
-  	letter-spacing: .1em;
-  	margin-bottom:0;
-    font-size:18px;
-}
-.wirkung-container-subcontent {
-    text-align: center;
-    margin: auto;
-    padding: 10px;
-    margin-top: -10px;
-    margin-bottom: 10px;
-}
-.wirkung-container-thumb {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-.wirkung-container .wirkung-container-thumb img{
-	margin: 0 auto !important;
-}
-img.responsive-wirkung {
-    width: 150px;
-    height: auto;
-    padding-right: 10px;
-    margin: auto;
-}
-.wirkung-container-thumb img {
-    display: block;
-}
-.wirkung-container-content {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-.wirkung-container .button-wirkung{
-	width: inherit;
-}
-ul.wirkung-bullets li {
-    list-style: none;
-}
-ul.wirkung-bullets li:before {
-    font-family: FontAwesome;
-    content: '\f00c';
-    margin: 0 5px 0 -15px;
-    color: #3da900;
-}
-
 @media (max-width: 767px){
   .grid {
     padding: 50px 8px;
