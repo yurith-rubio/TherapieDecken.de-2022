@@ -19,6 +19,12 @@
 {{ 'product-form.css' | asset_url | stylesheet_tag }}
 {% render 'druck-option-button-img' %}
 
+{% for collection in product.collections %}
+  {% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' %}
+    {% assign collapsible = true %}
+  {% endif %}
+{% endfor %}
+      
 <div class="ProductForm__Variants">
   {%- unless product.has_only_default_variant -%}
     {%- for option in product.options_with_values -%}
@@ -32,12 +38,6 @@
     {%- for option in product.options_with_values -%}
       {%- assign downcase_option = option.name | downcase -%}
       {%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-{{ option.name | handle }}{%- endcapture -%}
-
-      {% for collection in product.collections %}
-        {% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' %}
-          {% assign collapsible = true %}
-        {% endif %}
-      {% endfor %}
       
         {% if collapsible %}
         <div class="ProductForm_CollapsibleOption">
@@ -802,6 +802,7 @@ THE EXACT SAME ATTRIBUTES.
 
 
 {% comment %}Hide Options - Yurith{% endcomment %}
+    
 {% if product.handle == 'therapiedecken' %}
   {{ 'hide-options-therapiedecken.js' | asset_url | script_tag }}
 {% else %}
