@@ -35,11 +35,11 @@
 
       {% for collection in product.collections %}
         {% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' %}
-          {% assign block.settings.selector_mode = 'collapsible' %}
+          {% assign collapsible = true %}
         {% endif %}
       {% endfor %}
       
-        {% if block.settings.selector_mode = 'collapsible' %}
+        {% if collapsible %}
         <div class="ProductForm_CollapsibleOption">
           <div class="ProductForm_CollapsibleSelector">
             <div class="ProductForm__Label" style="margin-bottom: 0">
