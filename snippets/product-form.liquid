@@ -803,7 +803,7 @@ THE EXACT SAME ATTRIBUTES.
 
 {% comment %}Hide Options - Yurith{% endcomment %}
     
-{% if product.handle == 'therapiedecken' %}
+{% if collapsible %}
   {{ 'hide-options-therapiedecken.js' | asset_url | script_tag }}
 {% else %}
   {{ 'hide-options.js' | asset_url | script_tag }}
