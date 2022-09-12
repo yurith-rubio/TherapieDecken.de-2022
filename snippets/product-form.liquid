@@ -36,7 +36,7 @@ Testing
   {%- capture popover_id -%}popover-{{ product.id }}-{{ section.id }}-{{ option.name | handle }}{%- endcapture -%}
 
   {% for collection in product.collections %}
-    Product collection {{ product.collections.handle }};
+    Product collection {{ collection.handle }};
   {% endfor %}
   {% if product.handle == 'therapiedecken' %}
 
