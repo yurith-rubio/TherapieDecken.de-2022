@@ -23,6 +23,8 @@ collapsibleSelectors.forEach(button => {
     const buttonSelected = event.target.closest(".ProductForm_CollapsibleSelector");
     const infoToHide = event.target.closest(".ProductForm_CollapsibleSelector");
     const infoToShow = buttonSelected.nextElementSibling;
+    console.log("event");
+    console.log(event);
     hideShowCollapsibles();
     infoToHide.classList.add("hidden");
     infoToShow.classList.remove("hidden");
