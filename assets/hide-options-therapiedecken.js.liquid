@@ -33,6 +33,7 @@ $("li.HorizontalList__Item > input").click(function (event) {
   const value = event.currentTarget.defaultValue;
   const valueOneThirty = "135 x 200 cm";
   const valueOneFifty = "150 x 220 cm";
+  const valueSixty = "60x100 cm";
 
   if (value === valueOneThirty) {
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
@@ -41,6 +42,12 @@ $("li.HorizontalList__Item > input").click(function (event) {
     //currentLabel.innerText = valueOneFifty;
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
     $(".gewicht_option > input[value = '6 kg']").click();
+  } else if(value === valueSixty){
+    //currentLabel.innerText = valueOneFifty;
+    $("li.HorizontalList__Item > input[value = '3kg']").parent().css("display", "none");
+    $("li.HorizontalList__Item > input[value = '4kg']").parent().css("display", "none");
+    $("li.HorizontalList__Item > input[value = '5kg']").parent().css("display", "none");
+    $("li.HorizontalList__Item > input[value = '6kg']").parent().css("display", "none");
   }
   
   const label = event.currentTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
