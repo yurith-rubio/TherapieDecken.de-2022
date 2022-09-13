@@ -802,7 +802,11 @@ THE EXACT SAME ATTRIBUTES.
 
 
 {% comment %}Hide Options - Yurith{% endcomment %}
-    
+
+<script type="text/javascript">
+  window.product = {{ product | json }};
+</script>
+
 {% if collapsible %}
   {{ 'hide-options-therapiedecken.js' | asset_url | script_tag }}
 {% else %}
