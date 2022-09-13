@@ -31,14 +31,14 @@ collapsibleSelectors.forEach(button => {
 
 $("li.HorizontalList__Item > input").click(function (event) {
   const value = event.currentTarget.defaultValue;
-
+  hideNonExistingValues(value);
   
   const label = event.currentTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
   label.innerText = value;
   
 });
 
-function hideNonExistingValues(){
+function hideNonExistingValues(value){
   const valueOneThirty = "135 x 200 cm";
   const valueOneFifty = "150 x 220 cm";
   const valueSixty = "60x100 cm";
