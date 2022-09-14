@@ -19,9 +19,10 @@ productVariants.forEach(variant => {
   var option3 = variant.option3;
 
   weightValues.find(weight => {
-    if (option2 != weight){
-      console.log(`${option1} with ${weight} does not exist`);
+    if (option2 === weight){
+      console.log(`${option1} has ${weight}`);
     }
+
   })  
 });
 
