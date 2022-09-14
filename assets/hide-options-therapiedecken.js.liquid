@@ -23,8 +23,10 @@ productVariants.forEach(variant => {
   console.log(`${option1} / ${option2} / ${option3}`);
   console.log(variant);
   weightValues.find(weight => {
-    if(`${option1} / ${option2} / ${option3}` === variantTitle){
-      console.log("this variant exists");
+    if(`${option1} / ${option2} / ${option3}` != variantTitle){
+      console.log("option1 does not have this weight: ")
+      console.log(option1);
+      console.log(weight);
     }
   })  
 });
