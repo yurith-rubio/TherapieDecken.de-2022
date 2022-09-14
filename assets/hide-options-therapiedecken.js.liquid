@@ -78,9 +78,8 @@ collapsibleSelectors.forEach(button => {
 
 $("li.HorizontalList__Item > input").click(function (event) {
   console.log("here clicked ");
-  var value = event.getAttribute("value");
-  console.log(value);
   const value = event.currentTarget.defaultValue;
+  console.log(value);
   //hideNonExistingValues(value);
   hideNotExisting();
   const label = event.currentTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
