@@ -24,7 +24,11 @@ productVariants.forEach(variant => {
   //console.log(variant);
 
   const possibleValues = weightValues.map(weight => {
-    return `${option1} / ${weight} / ${option3}`;
+    const option = `${option1} / ${weight} / ${option3}`;
+    if(option === variantTitle){
+      console.log("option ");
+      console.log(option);
+    };
   });
 
   console.log(possibleValues);
