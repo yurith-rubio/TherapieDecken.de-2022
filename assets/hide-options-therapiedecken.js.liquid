@@ -5,10 +5,19 @@ console.log("product json");
 const producJson = window.product;
 const productVariants = producJson.variants;
 const valueFirstSelected = document.querySelector(".SizeSwatch__Radio[checked=checked]").value;
-console.log(valueFirstSelected);
+const weightSizes = document.querySelectorAll(".gewicht_option .SizeSwatch__Radio").value;
+console.log(weightSizes);
 
 const variantWeightOptions = productVariants.map(variant => {
   console.log(variant.option2);
+});
+
+productVariants.forEach(variant => {
+  var option1 = variant.option1;
+  var option2 = variant.option2;
+  var option3 = variant.option3;
+
+  var
 });
 
 const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
