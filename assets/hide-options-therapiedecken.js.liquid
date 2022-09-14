@@ -7,8 +7,8 @@ const productVariants = producJson.variants;
 const valueFirstSelected = document.querySelector(".SizeSwatch__Radio[checked=checked]").value;
 console.log(valueFirstSelected);
 
-const notAvailableVariants = productVariants.map(variant => {
-  console.log(variant);
+const variantWeightOptions = productVariants.map(variant => {
+  console.log(variant.option2);
 });
 
 const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
