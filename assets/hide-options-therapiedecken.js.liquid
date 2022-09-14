@@ -26,12 +26,14 @@ productVariants.forEach(variant => {
 
   if(option1 === valueFirstSelected){
     weightValues.forEach(weight => {
-    if(option2 === weight){
-      var title = `${option1} / ${option2}`;
-      var existingElement = document.querySelector(`.gewicht_option .SizeSwatch__Radio[value="${option2}"]`);
-      existingElement.parentElement.classList.remove("hidden");
-    };
+      if(option2 === weight){
+        var title = `${option1} / ${option2}`;
+        var existingElement = document.querySelector(`.gewicht_option .SizeSwatch__Radio[value="${option2}"]`);
+        existingElement.parentElement.classList.remove("hidden");
+      }
+    }
   }
+});
   //console.log(variantTitle);
   //console.log("title");
   //console.log(`${option1} / ${option2} / ${option3}`);
@@ -45,8 +47,7 @@ productVariants.forEach(variant => {
     };
   });*/
 
-  
-});
+
 
 const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
 const collapsibleContent = document.querySelectorAll(".ProductForm__Option");
