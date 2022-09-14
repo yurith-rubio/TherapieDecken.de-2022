@@ -17,10 +17,14 @@ productVariants.forEach(variant => {
   var option1 = variant.option1;
   var option2 = variant.option2;
   var option3 = variant.option3;
-
+  var variantTitle = variant.title;
+  console.log(variantTitle);
+  console.log("title");
+  console.log("option1 + "/" + option2 + "/" + option 2");
   console.log(variant);
   weightValues.find(weight => {
-    if (option2 !== weight){
+    
+    if (option1 + "/" + option2 + "/" + option 2){
       console.log(`this variant does not have this weight: ${weight}`);
     }
 
