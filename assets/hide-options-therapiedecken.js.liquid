@@ -3,10 +3,11 @@
 /-----------------------------------------------------------------------------*/
 console.log("product json");
 const producJson = window.product;
-console.log(producJson.variants);
+const productVariants = producJson.variants;
 const valueFirstSelected = document.querySelector(".SizeSwatch__Radio[checked=checked]").value;
-
 console.log(valueFirstSelected);
+
+
 const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
 const collapsibleContent = document.querySelectorAll(".ProductForm__Option");
 
