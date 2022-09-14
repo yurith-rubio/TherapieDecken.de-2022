@@ -8,8 +8,8 @@ const valueFirstSelected = document.querySelector(".SizeSwatch__Radio[checked=ch
 const weightSizes = document.querySelectorAll(".gewicht_option .SizeSwatch__Radio");
 const weightValues = weightSizes.forEach(element => {
   console.log(element.getAttribute("value"));
-  var value = element.getAttribute("value");
-  return value;
+  element = element.getAttribute("value");
+  return element;
 });
 console.log(weightValues);
 
