@@ -6,10 +6,10 @@ const producJson = window.product;
 const productVariants = producJson.variants;
 const valueFirstSelected = document.querySelector(".SizeSwatch__Radio[checked=checked]").value;
 const weightSizes = document.querySelectorAll(".gewicht_option .SizeSwatch__Radio");
-weightSizes.forEach(element => {
-  console.log(element.getAttribute("value"));
+const weightValues = weightSizes.forEach(element => {
+  return element.getAttribute("value");
 });
-
+console.log(weightValues);
 
 const variantWeightOptions = productVariants.map(variant => {
   console.log(variant.option2);
