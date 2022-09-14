@@ -12,9 +12,11 @@ const weightValues = weightSizesArray.map(element => {
 });
 console.log(valueFirstSelected);
 
-weightSizes.forEach(element => {
-  element.parentElement.classList.add("hidden");
-});
+function hideWeights() {
+  weightSizes.forEach(element => {
+    element.parentElement.classList.add("hidden");
+  });
+}
 
 function hideNotExisting(selected) {
   productVariants.forEach(variant => {
