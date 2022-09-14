@@ -18,7 +18,7 @@ function hideWeights() {
   });
 }
 
-function hideNotExisting(selected) {
+function showExistingValues(selected) {
   productVariants.forEach(variant => {
     var option1 = variant.option1;
     var option2 = variant.option2;
@@ -41,7 +41,7 @@ function hideNotExisting(selected) {
 }
 
 hideWeights();
-hideNotExisting(valueFirstSelected);
+showExistingValues(valueFirstSelected);
 
   /*weightValues.forEach(weight => {
     if(option2 === weight){
