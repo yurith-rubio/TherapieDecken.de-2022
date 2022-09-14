@@ -19,6 +19,7 @@ function hideWeights() {
 }
 
 function showExistingValues(selected) {
+  var clicked = false;
   productVariants.forEach(variant => {
     var option1 = variant.option1;
     var option2 = variant.option2;
@@ -27,8 +28,7 @@ function showExistingValues(selected) {
     if(option1 === selected){
       //console.log("option1 equals selected");
       //console.log(option1);
-      //console.log(selected);
-      var clicked = false;
+      //console.log(selected);      
       weightValues.forEach(weight => {
         if(option2 === weight){
           var existingElement = document.querySelector(`.gewicht_option .SizeSwatch__Radio[value="${option2}"]`);
