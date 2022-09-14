@@ -29,13 +29,20 @@ function showExistingValues(selected) {
       //console.log(option1);
       //console.log(selected);
       weightValues.forEach(weight => {
+        var loop = 0;
+        loop = 0 + 1;
         if(option2 === weight){
           var title = `${option1} / ${option2}`;
           var existingElement = document.querySelector(`.gewicht_option .SizeSwatch__Radio[value="${option2}"]`);
           var firstAvailableWeight = document.querySelector(`.gewicht_option .SizeSwatch__Radio`);
-          firstAvailableWeight.click();
+          
           console.log(firstAvailableWeight);
           existingElement.parentElement.classList.remove("hidden");
+          
+          if(loop === 2){
+            console.log("this is the second existing Element")
+            console.log(existingElement);
+          }
         }
       });
     }
