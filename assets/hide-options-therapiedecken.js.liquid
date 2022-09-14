@@ -85,19 +85,16 @@ collapsibleSelectors.forEach(button => {
 });
 
 $("li.HorizontalList__Item > input").click(function (event) {
-  console.log("here clicked ");
   var optionSelected = event.currentTarget.parentElement;
   if(optionSelected.classList.contains("size_option")){
-    console.log("this is a size option ");
+    hideWeights();
   }
 
   const value = event.currentTarget.defaultValue;
   //hideNonExistingValues(value);
-  
   const label = event.currentTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
   label.innerText = value;
 
-  hideWeights();
   showExistingValues(value);
   
 });
