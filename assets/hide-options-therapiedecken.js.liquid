@@ -13,7 +13,7 @@ const weightValues = weightSizesArray.map(element => {
 console.log(valueFirstSelected);
 
 
-productVariants.forEach(variant => {
+productVariants.forEach(option2 => {
   var option1 = variant.option1;
   var option2 = variant.option2;
   var option3 = variant.option3;
@@ -24,8 +24,8 @@ productVariants.forEach(variant => {
 
   const possibleValues = weightValues.find(weight => {
     if(option2 === weight){
-      console.log("option ");
-      console.log(option);
+      console.log("this variant exists ");
+      console.log(option2);
     };
   });
 
