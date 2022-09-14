@@ -17,14 +17,12 @@ productVariants.forEach(variant => {
   var option1 = variant.option1;
   var option2 = variant.option2;
   var option3 = variant.option3;
-  var variantTitle = variant.title;
   //console.log(variantTitle);
   //console.log("title");
   //console.log(`${option1} / ${option2} / ${option3}`);
   //console.log(variant);
 
-  const possibleValues = weightValues.map(weight => {
-    const option = `${option1} / ${weight} / ${option3}`;
+  const possibleValues = weightValues.find(weight => {
     if(option != variantTitle){
       console.log("option ");
       console.log(option);
