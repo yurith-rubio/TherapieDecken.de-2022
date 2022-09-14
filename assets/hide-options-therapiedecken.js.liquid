@@ -86,7 +86,10 @@ collapsibleSelectors.forEach(button => {
 
 $("li.HorizontalList__Item > input").click(function (event) {
   console.log("here clicked ");
-  console.log(event.currentTarget.parentElement);
+  var optionSelected = event.currentTarget.parentElement;
+  if(optionSelected.classList.contains("size_option")){
+    console.log("this is a size option ");
+  }
 
   const value = event.currentTarget.defaultValue;
   //hideNonExistingValues(value);
