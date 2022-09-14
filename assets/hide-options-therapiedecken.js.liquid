@@ -25,6 +25,7 @@ productVariants.forEach(variant => {
   const possibleValues = weightValues.find(weight => {
     if(option2 === weight){
       var title = `${option1} / ${option2}`;
+      var existingElement = document.querySelector(".gewicht_option .SizeSwatch__Radio");
       console.log("this variant exists ");
       console.log(title);
     };
