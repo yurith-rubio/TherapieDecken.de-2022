@@ -40,8 +40,8 @@ function hideNotExisting(selected) {
   });  
 }
 
+hideWeights();
 hideNotExisting(valueFirstSelected);
-
 
   /*weightValues.forEach(weight => {
     if(option2 === weight){
@@ -84,6 +84,7 @@ collapsibleSelectors.forEach(button => {
 
 $("li.HorizontalList__Item > input").click(function (event) {
   console.log("here clicked ");
+  hideWeights();
   const value = event.currentTarget.defaultValue;
   console.log(value);
   //hideNonExistingValues(value);
