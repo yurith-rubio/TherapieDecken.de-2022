@@ -23,14 +23,12 @@ productVariants.forEach(variant => {
   //console.log(`${option1} / ${option2} / ${option3}`);
   //console.log(variant);
 
-  weightValues.find(weight => {
-    var compareVariant = `${option1} / ${weight} / ${option3}`;
-    console.log(compareVariant);
-    if( compareVariant != variantTitle){
-      console.log("this variant does not exist ")
-      console.log(compareVariant);
-    }
-  })  
+  const possibleValues = weightValues.map(weight => {
+    return `${option1} / ${weight} / ${option3}`;
+  });
+
+  console.log(possibleValues);
+  
 });
 
 const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
