@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------/
 / Hide ex - Yurith
 /-----------------------------------------------------------------------------*/
-console.log("product json");
+//console.log("product json");
 const producJson = window.product;
 const productVariants = producJson.variants;
 const valueFirstSelected = document.querySelector(".size_option .SizeSwatch__Radio[checked=checked]").value;
@@ -10,7 +10,7 @@ const weightSizesArray = [...weightSizes];
 const weightValues = weightSizesArray.map(element => {
   return element.getAttribute("value");
 });
-console.log(valueFirstSelected);
+//console.log(valueFirstSelected);
 
 function hideWeights() {
   weightSizes.forEach(element => {
