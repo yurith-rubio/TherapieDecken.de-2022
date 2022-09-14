@@ -80,7 +80,7 @@ $("li.HorizontalList__Item > input").click(function (event) {
   console.log("here clicked ");
   const value = event.currentTarget.defaultValue;
   hideNonExistingValues(value);
-  
+  hideNotExisting();
   const label = event.currentTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
   label.innerText = value;
   
