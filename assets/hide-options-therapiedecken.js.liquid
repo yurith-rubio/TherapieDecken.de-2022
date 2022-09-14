@@ -28,14 +28,17 @@ function showExistingValues(selected) {
       //console.log("option1 equals selected");
       //console.log(option1);
       //console.log(selected);
+      var clicked = false;
       weightValues.forEach(weight => {
         if(option2 === weight){
           var existingElement = document.querySelector(`.gewicht_option .SizeSwatch__Radio[value="${option2}"]`);
           // check it if is good I look the available weight
           //console.log(firstAvailableWeight);
-          existingElement.parentElement.classList.remove("hidden");
-          console.log("existingElement");
-          existingElement.click();
+          existingElement.parentElement.classList.remove("hidden");          
+          if (!clicked) {
+            existingElement.click();
+            clicked = true;
+          }
         }
       });
     }
