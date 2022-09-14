@@ -18,8 +18,10 @@ productVariants.forEach(variant => {
   var option2 = variant.option2;
   var option3 = variant.option3;
 
-  weightValues.forEach(weight => {
-    console.log(weight);
+  weightValues.find(weight => {
+    if (option1){
+      console.log("weight " + weight + "has size " + option1);
+    }
   })  
 });
 
