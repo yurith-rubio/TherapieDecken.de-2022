@@ -11,7 +11,10 @@ const weightValues = weightSizesArray.map(element => {
   return element.getAttribute("value");
 });
 console.log(valueFirstSelected);
-
+weightValues.forEach(weight => {
+  var existingElement = document.querySelector(`.gewicht_option .SizeSwatch__Radio[value="${option2}"]`);
+  existingElement.parentElement.classList.remove("hidden");
+});
 weightSizes.forEach(element => {
   element.parentElement.classList.add("hidden");
 });
