@@ -33,6 +33,8 @@ function showExistingValues(selected) {
         if(option2 === weight){
           var title = `${option1} / ${option2}`;
           var existingElement = document.querySelector(`.gewicht_option .SizeSwatch__Radio[value="${option2}"]`);
+          var firstAvailableWeight = document.querySelector(`.gewicht_option .SizeSwatch__Radio`);
+          console.log(firstAvailableWeight);
           existingElement.parentElement.classList.remove("hidden");
         }
       });
