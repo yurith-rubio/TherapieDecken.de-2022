@@ -78,6 +78,7 @@ collapsibleSelectors.forEach(button => {
 
 $("li.HorizontalList__Item > input").click(function (event) {
   console.log("here clicked ");
+  console.log(event);
   const value = event.currentTarget.defaultValue;
   //hideNonExistingValues(value);
   hideNotExisting();
