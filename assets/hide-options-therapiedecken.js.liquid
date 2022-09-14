@@ -23,6 +23,7 @@ function hideNotExisting(selected) {
     var option3 = variant.option3;
   
     if(option1 === selected){
+      console.log("option1 equals selected")
       weightValues.forEach(weight => {
         if(option2 === weight){
           var title = `${option1} / ${option2}`;
