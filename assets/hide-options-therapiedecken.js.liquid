@@ -21,11 +21,10 @@ weightSizes.forEach(element => {
 
 productVariants.forEach(variant => {
   var option1 = variant.option1;
-  
+  var option2 = variant.option2;
   var option3 = variant.option3;
 
   if(option1 === valueFirstSelected){
-    var option2 = variant.option2;
     weightValues.forEach(weight => {
       if(option2 === weight){
         var title = `${option1} / ${option2}`;
