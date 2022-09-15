@@ -56,7 +56,7 @@
   background-position: {{ settings.promo_image_position }};
 }
 .Image--contrast::after{
-  opacity: {{ settings.promo_image_overlay }}
+  opacity: {{ settings.promo_image_overlay | divided_by: 10 }}
 }
 
 /* Small */
