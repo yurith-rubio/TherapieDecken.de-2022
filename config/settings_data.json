@@ -74,6 +74,8 @@
     "promotional_collection_cover": true,
     "collection_promo_image": "shopify:\/\/shop_images\/158A6497-570x380.jpg",
     "collection_promo_image_mobile": "shopify:\/\/shop_images\/Grupo_580.jpg",
+    "promo_collection_art": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/collection-CM.svg?v=1637849832",
+    "promo_collection_art_mobile": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/Home-VERTICAL-CM.svg?v=1637761049",
     "promo_badge": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/badge.svg?v=1662393859",
     "enable_collection_badge": false,
     "collection_badge_max_width": 130,
