@@ -1,6 +1,52 @@
 /*-----------------------------------------------------------------------------/
 / Hide ex - Yurith
 /-----------------------------------------------------------------------------*/
+console.log("product json");
+const producJson = window.product;
+const productVariants = producJson.variants;
+const valueFirstSelected = document.querySelector(".size_option .SizeSwatch__Radio[checked=checked]").value;
+const weightSizes = document.querySelectorAll(".gewicht_option .SizeSwatch__Radio");
+const weightSizesArray = [...weightSizes];
+const weightValues = weightSizesArray.map(element => {
+  return element.getAttribute("value");
+});
+//console.log(valueFirstSelected);
+
+function hideWeights() {
+  weightSizes.forEach(element => {
+    element.parentElement.classList.add("hidden");
+  });
+}
+
+function showExistingValues(selected) {
+  var clicked = false;
+  productVariants.forEach(variant => {
+    var option1 = variant.option1;
+    var option2 = variant.option2;
+    var option3 = variant.option3;
+
+    if(option1 === selected){
+      //console.log("option1 equals selected");
+      //console.log(option1);
+      //console.log(selected);      
+      weightValues.forEach(weight => {
+        if(option2 === weight){
+          var existingElement = document.querySelector(`.gewicht_option .SizeSwatch__Radio[value="${option2}"]`);
+          // check it if is good I look the available weight
+          //console.log(firstAvailableWeight);
+          existingElement.parentElement.classList.remove("hidden");          
+          if (!clicked) {
+            existingElement.click();
+            clicked = true;
+          }
+        }
+      });
+    }
+  });  
+}
+
+hideWeights();
+showExistingValues(valueFirstSelected);
 
 const collapsibleSelectors = document.querySelectorAll(".ProductForm_CollapsibleSelector");
 const collapsibleContent = document.querySelectorAll(".ProductForm__Option");
@@ -23,6 +69,8 @@ collapsibleSelectors.forEach(button => {
     const buttonSelected = event.target.closest(".ProductForm_CollapsibleSelector");
     const infoToHide = event.target.closest(".ProductForm_CollapsibleSelector");
     const infoToShow = buttonSelected.nextElementSibling;
+    //console.log("event");
+    //console.log(event);
     hideShowCollapsibles();
     infoToHide.classList.add("hidden");
     infoToShow.classList.remove("hidden");
@@ -30,9 +78,25 @@ collapsibleSelectors.forEach(button => {
 });
 
 $("li.HorizontalList__Item > input").click(function (event) {
+  var optionSelected = event.currentTarget.parentElement;
+  if(optionSelected.classList.contains("size_option")){
+    hideWeights();
+  }
+
   const value = event.currentTarget.defaultValue;
+  //hideNonExistingValues(value);
+  const label = event.currentTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
+  label.innerText = value;
+
+  showExistingValues(value);
+  
+});
+
+/*
+function hideNonExistingValues(value){
   const valueOneThirty = "135 x 200 cm";
   const valueOneFifty = "150 x 220 cm";
+  const valueSixty = "60x100 cm";
 
   if (value === valueOneThirty) {
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().removeAttr('style');
@@ -41,9 +105,11 @@ $("li.HorizontalList__Item > input").click(function (event) {
     //currentLabel.innerText = valueOneFifty;
     $("li.HorizontalList__Item > input[value = '4 kg']").parent().css("display", "none");
     $(".gewicht_option > input[value = '6 kg']").click();
+  } else if(value === valueSixty){
+    //currentLabel.innerText = valueOneFifty;
+    $("li.HorizontalList__Item > input[value = '3kg']").parent().css("display", "none");
+    $("li.HorizontalList__Item > input[value = '4kg']").parent().css("display", "none");
+    $("li.HorizontalList__Item > input[value = '5kg']").parent().css("display", "none");
+    $("li.HorizontalList__Item > input[value = '6kg']").parent().css("display", "none");
   }
-  
-  const label = event.currentTarget.closest(".ProductForm_CollapsibleOption").firstElementChild.firstElementChild.firstElementChild;
-  label.innerText = value;
-  
-});
+}*/
