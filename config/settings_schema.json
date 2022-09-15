@@ -843,8 +843,7 @@
       {
         "type": "url",
         "id": "promo_collection_badge",
-        "label": "Badge design",
-        "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/collection-promotional-badge.liquid)"
+        "label": "Badge design"
       },
       {
         "type": "header",
