@@ -818,7 +818,7 @@
       },
       {
         "type": "header",
-        "content": "COLLECTION PAGE"
+        "content": "COLLECTION PAGE. Settings"
       },
       {
         "type": "checkbox",
@@ -878,7 +878,7 @@
       },
       {
         "type": "header",
-        "content": "Product Pages"
+        "content": "PRODUCT PAGE: Settings"
       },
       {
         "type": "checkbox",
