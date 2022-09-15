@@ -727,7 +727,7 @@
       },
       {
         "type": "select",
-        "id": "promo_image_position",
+        "id": "image_position",
         "label": "Mobile: Image position",
         "options": [
           {
@@ -747,11 +747,11 @@
       },
       {
         "type": "range",
-        "id": "promo_image_overlay",
+        "id": "promo_image_overlay_opacity",
         "min": 0,
-        "max": 10,
-        "step": 1,
-        "unit": "op",
+        "max": 100,
+        "step": 10,
+        "unit": "%",
         "label": "Image overlay",
         "default": 0
       },
@@ -766,22 +766,22 @@
       },
       {
         "type": "range",
-        "id": "desktop_promo_art_position_y",
+        "id": "promo_art_y_content",
         "label": "Desktop: Vertical position",
-        "min": -100,
-        "max": 100,
-        "step": 10,
-        "unit": "px",
-        "default": 0
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "default": 50
       },
       {
         "type": "range",
-        "id": "mobile_promo_art_position_y",
+        "id": "promo_art_y_content_mobile",
         "label": "Mobile: Vertical position",
-        "min": -100,
-        "max": 100,
-        "step": 10,
-        "unit": "px",
+        "min": -150,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
         "default": 0
       },
       {
@@ -842,7 +842,7 @@
       },
       {
         "type": "url",
-        "id": "promo_collection_badge",
+        "id": "promo_badge",
         "label": "Badge design"
       },
       {
@@ -892,13 +892,6 @@
         "id": "hide_discount_general_badge",
         "label": "Hide regular badge",
         "info": "[For design and rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/product-promotional-badge.liquid)",
-        "default": false
-      },
-      {
-        "type": "checkbox",
-        "id": "enable_product_badge_selected",
-        "label": "Enable badge only on selected collections",
-        "info": "Fill the info below to select the products",
         "default": false
       },
       {
