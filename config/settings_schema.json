@@ -706,10 +706,6 @@
     "settings": [
       {
         "type": "header",
-        "content": "Homepage"
-      },
-      {
-        "type": "header",
         "content": "Cover image"
       },
       {
