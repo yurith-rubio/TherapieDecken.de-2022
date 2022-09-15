@@ -818,7 +818,7 @@
       },
       {
         "type": "header",
-        "content": "COLLECTION PAGE. Settings"
+        "content": "COLLECTION PAGE. Cover image"
       },
       {
         "type": "checkbox",
@@ -835,6 +835,10 @@
         "type": "image_picker",
         "id": "collection_promo_image_mobile",
         "label": "Mobile image"
+      },
+      {
+        "type": "header",
+        "content": "COLLECTION PAGE. Badge"
       },
       {
         "type": "checkbox",
