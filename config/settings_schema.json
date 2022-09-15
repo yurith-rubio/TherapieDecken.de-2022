@@ -882,7 +882,7 @@
       },
       {
         "type": "header",
-        "content": "PRODUCT PAGE: Settings"
+        "content": "PRODUCT PAGE: Badge"
       },
       {
         "type": "checkbox",
@@ -930,6 +930,10 @@
         "step": 10,
         "unit": "px",
         "default": 100
+      },
+      {
+        "type": "header",
+        "content": "PRODUCT PAGE. Guarantee exception"
       },
       {
         "type": "checkbox",
