@@ -766,7 +766,7 @@
       },
       {
         "type": "range",
-        "id": "promo_art_position_y",
+        "id": "desktop_promo_art_position_y",
         "label": "Desktop: Vertical position",
         "min": -100,
         "max": 100,
@@ -776,7 +776,7 @@
       },
       {
         "type": "range",
-        "id": "promo_art_position_y_mobile",
+        "id": "mobile_promo_art_position_y",
         "label": "Mobile: Vertical position",
         "min": -100,
         "max": 100,
