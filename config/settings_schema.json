@@ -709,26 +709,30 @@
         "content": "Homepage"
       },
       {
+        "type": "header",
+        "content": "Cover image"
+      },
+      {
         "type": "checkbox",
         "id": "promotional_hero_hp_cover",
-        "label": "Enable Promotional Cover on Homepage",
+        "label": "Enable cover",
         "info": "[For editing:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/promotion-home-hero.liquid)",
         "default": false
       },
       {
         "type": "image_picker",
         "id": "promo_image",
-        "label": "Select hero image"
+        "label": "Desktop image"
       },
       {
         "type": "image_picker",
         "id": "promo_image_mobile",
-        "label": "Select hero image"
+        "label": "Mobile image"
       },
       {
         "type": "select",
         "id": "image_position",
-        "label": "Image position on mobile",
+        "label": "Mobile: Image position",
         "options": [
           {
             "value": "center",
@@ -744,6 +748,16 @@
           }
         ],
         "default": "center"
+      },
+      {
+        "type": "range",
+        "id": "promo_image_overlay_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "unit": "%",
+        "label": "t:sections.slideshow.blocks.slide.settings.image_overlay_opacity.label",
+        "default": 0
       },
       {
         "type": "header",
