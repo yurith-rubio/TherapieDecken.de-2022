@@ -1,7 +1,9 @@
 <!-- section: main-collection-icons.liquid -->
 
 {%- comment -%} CSS Added {%- endcomment -%}
-{{ 'cybermonday.css' | asset_url | stylesheet_tag}}
+{% if settings.promotional_collection_cover %}
+  {{ 'cybermonday.css' | asset_url | stylesheet_tag}}
+{% endif %}
 
 {%- if section.settings.show_layout_switch -%}
   {%- assign desktop_items_per_row = cart.attributes.collection_desktop_items_per_row | default: section.settings.grid_desktop_items_per_row | times: 1 -%}
