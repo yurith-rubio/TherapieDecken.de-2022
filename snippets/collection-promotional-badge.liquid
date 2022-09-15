@@ -10,21 +10,19 @@
   {% endstyle %}
 {% endcomment %}
 
-  {% style %}
-    .Grid__Cell:nth-child(n+2) .Collection_ImgSmallBadge{
-      display: none;
-    }
-  {% endstyle %}
+{% style %}
+  .Grid__Cell:nth-child(n+2) .Collection_ImgSmallBadge{
+    display: none;
+  }
+{% endstyle %}
 
-
-
-  {% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' or collection.handle == 'balance-therapiedecken-fur-erwachsene' %}
-    <div class="CollectionBadge_Mask__Wrapper">
-      {% comment %}<div class="Collection_SmallBadge">Gratis</div>{% endcomment %}
-      <div class="Collection_ImgSmallBadge">
-        <img class="Collection_ImgSize_SmallBadge" 
-             src="{{ settings.promo_collection_badge }}" 
-             alt="Collection badge" />
-      </div>
+{% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' or collection.handle == 'balance-therapiedecken-fur-erwachsene' %}
+  <div class="CollectionBadge_Mask__Wrapper">
+    {% comment %}<div class="Collection_SmallBadge">Gratis</div>{% endcomment %}
+    <div class="Collection_ImgSmallBadge">
+      <img class="Collection_ImgSize_SmallBadge" 
+           src="{{ settings.promo_collection_badge }}" 
+           alt="Collection badge" />
     </div>
-  {% endif %}
+  </div>
+{% endif %}
