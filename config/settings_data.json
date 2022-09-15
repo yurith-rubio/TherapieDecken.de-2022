@@ -67,6 +67,7 @@
     "promo_image_position": "left",
     "promo_image_overlay": 4,
     "promo_art": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TD_End_of_summer_art.svg?v=1661851080",
+    "mobile_promo_art_position_y": 80,
     "button_1_text": "Zu den Produkten",
     "button_1_link": "https:\/\/therapiedecken.de\/collections\/erwachsene",
     "button_color": "#e84e1b",
