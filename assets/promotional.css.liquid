@@ -54,6 +54,51 @@
 .SectionHeader{
   position: relative;
 }
+
+/* Collection Cover Pages */
+.vergleich-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: #E6E6E6;
+  color: #3A3C3C;
+  width: 100%;
+  font-weight: bold;
+}
+.collection_CM_horizontal{
+  width: 900px;
+}
+.collection_CM_vertical{
+  width: 400px;
+  margin-bottom: 50px;
+}
+@media screen  and (min-width: 641px) {
+  .collection_CM_horizontal{
+	padding: 0 40px;
+  }
+  .collection_CM_vertical{
+	display: none;
+  }
+}
+
+@media screen  and (max-width: 640px) and (orientation: portrait) {
+  .collection_CM_horizontal{
+	display: none;
+  }
+  .collection_CM_vertical{
+	padding: 0 40px;
+  }
+}
+@media screen  and (max-width: 640px) and (orientation: landscape) {
+  .collection_CM_horizontal{
+	padding: 0 40px;
+  }
+  .collection_CM_vertical{
+	display: none;
+  }
+}
+
 /* Small */
 @media screen  and (max-width: 640px) {
   .promotion-home-hero_content_container{
