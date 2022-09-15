@@ -81,7 +81,10 @@
   {%- if collection.all_products_count >= 0 -%}
     {%- if section.settings.show_collection_image and collection.image and collection.template_suffix != 'no-image' -%}
       <div class="FlexboxIeFix">
-        <header class="Collection_Promotional__HeroContent_Wrapper PageHeader PageHeader--withBackground {% if section.settings.collection_image_size != 'normal' %}PageHeader--{{ section.settings.collection_image_size }}{% endif %}" {% unless settings.promotional_collection_cover != blank %}style="background: url({{ collection.image | img_url: '1x1', format: 'jpg' }})"{% endunless %}>
+        <header class="PromoCollection_Container PageHeader PageHeader--withBackground 
+        {% if section.settings.collection_image_size != 'normal' %}PageHeader--{{ section.settings.collection_image_size }}{% endif %}
+        {% if settings.promotional_collection_cover == blank %}{% endif %}" 
+        {% if settings.promotional_collection_cover == blank %}style="background: url({{ collection.image | img_url: '1x1', format: 'jpg' }})"{% endif %}>
           {% if settings.promotional_collection_cover %}
             <div class="Promotional__HeroContent">
               <img class="collection_CM_horizontal Image--lazyLoad" data-src="https://cdn.shopify.com/s/files/1/2451/6611/files/collection-CM.svg?v=1637849832" alt="Cover-PRE-BF">
