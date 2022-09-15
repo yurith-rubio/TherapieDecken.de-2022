@@ -776,7 +776,7 @@
       },
       {
         "type": "range",
-        "id": "promo_art_y_content_mobile",
+        "id": "promo_art_position_y_mobile",
         "label": "Mobile: Vertical position",
         "min": -100,
         "max": 100,
