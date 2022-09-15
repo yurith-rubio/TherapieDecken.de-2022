@@ -71,7 +71,7 @@
     "button_color": "#e84e1b",
     "text_button_color": "#ffffff",
     "text_button_color_hover": "#ffffff",
-    "promotional_collection_cover": false,
+    "promotional_collection_cover": true,
     "promo_badge": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/badge.svg?v=1662393859",
     "enable_collection_badge": false,
     "collection_badge_max_width": 130,
