@@ -842,6 +842,11 @@
         "label": "Art design"
       },
       {
+        "type": "url",
+        "id": "promo_collection_art_mobile",
+        "label": "Art design"
+      },
+      {
         "type": "header",
         "content": "BADGES. Design"
       },
