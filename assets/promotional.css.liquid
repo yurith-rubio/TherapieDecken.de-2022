@@ -76,7 +76,7 @@
     top: {{ settings.mobile_promo_art_position_y }}px;
   }
   .PromoCollection_Container{
-    background: url({{ collection.image | img_url: '1x1', format: 'jpg' }});
+    background: url({{ settings.promotional_collection_cover | img_url: '1x1', format: 'jpg' }});
   }
 }
 
