@@ -858,13 +858,6 @@
         "default": false
       },
       {
-        "type": "checkbox",
-        "id": "enable_collection_badge_selected",
-        "label": "Enable badge only on selected collections",
-        "info": "Fill the info below to select the products",
-        "default": false
-      },
-      {
         "type": "range",
         "id": "collection_badge_max_width",
         "label": "Desktop: Width",
