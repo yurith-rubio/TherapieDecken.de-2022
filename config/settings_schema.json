@@ -859,7 +859,7 @@
       {
         "type": "range",
         "id": "collection_badge_max_width",
-        "label": "Desktop: Badge width",
+        "label": "Desktop: Width",
         "min": 50,
         "max": 150,
         "step": 10,
@@ -869,7 +869,7 @@
       {
         "type": "range",
         "id": "collection_badge_max_width_mobile",
-        "label": "Mobile: Badge width",
+        "label": "Mobile: Width",
         "min": 50,
         "max": 150,
         "step": 10,
