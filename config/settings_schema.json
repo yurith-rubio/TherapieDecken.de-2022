@@ -706,7 +706,7 @@
     "settings": [
       {
         "type": "header",
-        "content": "Cover image"
+        "content": "HOMEPAGE: Cover image"
       },
       {
         "type": "checkbox",
