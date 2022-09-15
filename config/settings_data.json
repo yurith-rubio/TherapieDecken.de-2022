@@ -77,7 +77,7 @@
     "promotional_collection_cover": false,
     "promo_collection_badge": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/badge.svg?v=1662393859",
     "enable_collection_badge": true,
-    "collection_badge_max_width": 100,
+    "collection_badge_max_width": 130,
     "collection_badge_max_width_mobile": 100,
     "enable_product_badge": false,
     "hide_discount_general_badge": false,
