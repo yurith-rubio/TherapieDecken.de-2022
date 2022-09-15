@@ -756,17 +756,17 @@
         "max": 100,
         "step": 10,
         "unit": "%",
-        "label": "t:sections.slideshow.blocks.slide.settings.image_overlay_opacity.label",
+        "label": "Image overlay",
         "default": 0
       },
       {
         "type": "header",
-        "content": "Promo art"
+        "content": "Art design"
       },
       {
         "type": "url",
         "id": "promo_art",
-        "label": "Promo art url"
+        "label": "Art design"
       },
       {
         "type": "range",
@@ -805,19 +805,19 @@
       {
         "type": "color",
         "id": "button_color",
-        "label": "Color button",
+        "label": "Color",
         "default": "#FAC636"
       },
       {
         "type": "color",
         "id": "text_button_color",
-        "label": "Color of text in button",
+        "label": "Text color",
         "default": "#222323"
       },
       {
         "type": "color",
         "id": "text_button_color_hover",
-        "label": "Color of text in button on hover",
+        "label": "Hover: Text color",
         "default": "#222323"
       },
       {
@@ -827,8 +827,18 @@
       {
         "type": "checkbox",
         "id": "promotional_collection_cover",
-        "label": "Enable Promotional Cover on Collection Pages",
+        "label": "Enable collection cover",
         "default": false
+      },
+      {
+        "type": "image_picker",
+        "id": "collection_promo_image",
+        "label": "Desktop image"
+      },
+      {
+        "type": "image_picker",
+        "id": "collection_promo_image_mobile",
+        "label": "Mobile image"
       },
       {
         "type": "checkbox",
