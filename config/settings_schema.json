@@ -749,8 +749,8 @@
         "type": "range",
         "id": "promo_image_overlay",
         "min": 0,
-        "max": 100,
-        "step": 10,
+        "max": 10,
+        "step": 2,
         "unit": "%",
         "label": "Image overlay",
         "default": 0
