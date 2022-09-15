@@ -138,6 +138,7 @@
     },
     "165590051622c9ff89": {
       "type": "text-with-image-new",
+      "disabled": true,
       "blocks": {
         "b33f486e-5969-4465-874c-863ee6df9ff3": {
           "type": "richtext",

@@ -8,66 +8,67 @@
 .grid h1{
   text-align: center;
 }
-.wirkung-container {
-    margin: 20px 0;
-  	padding: 20px;
-    border: 2px solid #333;
-    overflow: auto;
-    background-color: #f1f1f1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.cta-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 0;
 }
-.wirkung-container-title.h3, h3.wirkung-container-title {
-    flex: 0 0 100%;
-  	text-align:center;
-  	font-family:Montserrat, sans-serif;
-  	font-weight:600;
-  	letter-spacing: .1em;
-  	margin-bottom:0;
-    font-size:18px;
+.rte .cta-wrapper h3{
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  margin: 0 0 18px;
+  text-align: left;
 }
-.wirkung-container-subcontent {
-    text-align: center;
-    margin: auto;
-    padding: 10px;
-    margin-top: -10px;
-    margin-bottom: 10px;
+.rte .cta-wrapper p{
+  margin: 0 0 14px;
 }
-.wirkung-container-thumb {
-    flex: 0 0 50%;
-    max-width: 50%;
+.cta-wrapper a{
+  margin-top: 25px;
+  width: 100%!important;
+  padding: 15px;
 }
-.wirkung-container .wirkung-container-thumb img{
-	margin: 0 auto !important;
+.cta-wrapper .cta-image{
+  height: 100%;
 }
-img.responsive-wirkung {
-    width: 150px;
-    height: auto;
-    padding-right: 10px;
-    margin: auto;
+.cta-wrapper img{
+  height: 100%;
+  object-fit: cover;
 }
-.wirkung-container-thumb img {
+.cta-wrapper .cta-content{
+  background: #5b5b5b;
+  padding: 30px;
+  color: #fff;
+}
+.rte ul.cta-bullets{
+  margin-bottom: 0;
+}
+ul.cta-bullets li {
+  list-style: none;
+}
+ul.cta-bullets li:before {
+  font-family: FontAwesome;
+  content: '\f00c';
+  margin: 0 5px 0 -15px;
+  color: #fac636;
+}
+@media only screen and (max-width: 767px){
+  .cta-wrapper{
     display: block;
-}
-.wirkung-container-content {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-.wirkung-container .button-wirkung{
-	width: inherit;
-}
-ul.wirkung-bullets li {
-    list-style: none;
-}
-ul.wirkung-bullets li:before {
-    font-family: FontAwesome;
-    content: '\f00c';
-    margin: 0 5px 0 -15px;
-    color: #3da900;
-}
-
-@media (max-width: 767px){
+  }
+  .cta-wrapper .cta-image {
+    height: 150px;
+    width: 100%;
+  }
+  .cta-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .cta-wrapper .cta-content{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
   .grid {
     padding: 50px 8px;
   }
@@ -300,7 +301,7 @@ ul.wirkung-bullets li:before {
 .vergleich-item .Heading {
   margin: 20px auto;
   font-size: 12px;
-  padding: 0 15px;
+  padding: 0 25px;
 }
 .vergleich-img{
   display:block;

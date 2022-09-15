@@ -38,18 +38,20 @@
       <p style="font-weight: bold; margin-bottom: 0;">1 Jahr Wachstumgsgarantie</p>
       <p style="color: #f8f8f8;">Flexibilität auch für schnell wachsende Kinder! Für weitere Infos klicken Sie <a href="https://therapiedecken.de/pages/1-jahr-wachstums-garantie"><u>hier</u></a>.</p>
     </div>
-   {% elsif product.template_suffix == "standard-gravity" %} 
+    {% comment %}
+    {% elsif product.template_suffix == "standard-gravity" %} 
     <div class="icons-del-wr">
       <span class="icon-cooling-blanket"></span>
       <p style="font-weight: bold; margin-bottom: 0;">Atmungsaktive Bezüge</p>
       <p style="color: #f8f8f8;">Aus 100% Baumwolle und sind daher besonders kühlend und angenehm bei heißen Sommernächten.</p>
     </div>
-   {% else %}
-    <div class="icons-del-wr">
-      <span class="icon-EU1"></span>
-      <p style="font-weight: bold; margin-bottom: 0;">Hergestellt in Europa</p>
-      <p style="color: #f8f8f8;">Dank europäischer Produktion und kurzen Lieferwegen nachhaltig und mit gutem Gewissen einkaufen.</p>
-    </div>
+    {% endcomment %}
+    {% else %}
+      <div class="icons-del-wr">
+        <span class="icon-EU1"></span>
+        <p style="font-weight: bold; margin-bottom: 0;">Hergestellt in Europa</p>
+        <p style="color: #f8f8f8;">Dank europäischer Produktion und kurzen Lieferwegen nachhaltig und mit gutem Gewissen einkaufen.</p>
+      </div>
     {% endif %}
     
   </div>
