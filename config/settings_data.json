@@ -71,7 +71,7 @@
     "button_color": "#e84e1b",
     "text_button_color": "#ffffff",
     "text_button_color_hover": "#ffffff",
-    "promotional_collection_cover": true,
+    "promotional_collection_cover": false,
     "collection_promo_image": "shopify:\/\/shop_images\/158A6497-570x380.jpg",
     "collection_promo_image_mobile": "shopify:\/\/shop_images\/Grupo_580.jpg",
     "promo_collection_art": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/collection-CM.svg?v=1637849832",
