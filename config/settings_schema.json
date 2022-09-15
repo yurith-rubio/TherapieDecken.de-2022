@@ -778,10 +778,10 @@
         "type": "range",
         "id": "promo_art_y_content_mobile",
         "label": "Mobile: Vertical position",
-        "min": -150,
-        "max": 150,
-        "step": 5,
-        "unit": "%",
+        "min": -100,
+        "max": 100,
+        "step": 10,
+        "unit": "px",
         "default": 0
       },
       {
