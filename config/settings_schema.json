@@ -768,11 +768,11 @@
         "type": "range",
         "id": "promo_art_y_content",
         "label": "Desktop: Vertical position",
-        "min": 0,
-        "max": 150,
-        "step": 5,
-        "unit": "%",
-        "default": 50
+        "min": -100,
+        "max": 100,
+        "step": 10,
+        "unit": "px",
+        "default": 0
       },
       {
         "type": "range",
