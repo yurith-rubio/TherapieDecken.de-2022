@@ -747,7 +747,7 @@
       },
       {
         "type": "range",
-        "id": "promo_image_overlay_opacity",
+        "id": "promo_image_overlay",
         "min": 0,
         "max": 100,
         "step": 10,
