@@ -910,12 +910,6 @@
         "default": false
       },
       {
-        "type": "url",
-        "id": "promo_product_badge",
-        "label": "Badge link",
-        "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/product-promotional-badge.liquid)"
-      },
-      {
         "type": "range",
         "id": "product_badge_max_width",
         "label": "Desktop: Width",
