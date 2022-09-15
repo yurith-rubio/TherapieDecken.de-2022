@@ -22,12 +22,12 @@
         {%- capture slide_content -%}
       
           {%- if settings.promo_image -%}
-            <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}"
+            <div class="Slideshow__ImageContainer {% if settings.promo_image_overlay %}Image--contrast{% endif %} {% unless section.settings.show_fullscreen %}AspectRatio AspectRatio--withFallback{% endunless %} {% comment %}hidden-phone{% endcomment %}"
                  style="background-size: cover;">
             </div>
       
           {%- else -%}
-            <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% if section.settings.show_fullscreen %}PlaceholderBackground{% endif %} PlaceholderSvg--dark">
+            <div class="Slideshow__ImageContainer {% if settings.promo_image_overlay %}Image--contrast{% endif %} {% if section.settings.show_fullscreen %}PlaceholderBackground{% endif %} PlaceholderSvg--dark">
               {%- capture placeholder -%}{% cycle 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
               {{ placeholder | placeholder_svg_tag: 'Slideshow__Image PlaceholderBackground__Svg' }}
             </div>
