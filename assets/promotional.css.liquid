@@ -75,6 +75,11 @@
   .SectionHeader{
     top: {{ settings.mobile_promo_art_position_y }}px;
   }
+  {% if settings.promotional_collection_cover == blank %}
+    .PromoCollection_Container{
+      
+    }
+  {% endif %}
 }
 
 /* Medium and up */
