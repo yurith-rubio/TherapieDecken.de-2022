@@ -55,6 +55,9 @@
 .Slideshow__ImageContainer{
   background-position: {{ settings.promo_image_position }};
 }
+.Image--contrast::after{
+  opacity: {{ settings.promo_image_overlay }}
+}
 
 /* Small */
 @media screen  and (max-width: 640px) {
