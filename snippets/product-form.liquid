@@ -21,7 +21,11 @@
 
 {% for collection in product.collections %}
   {% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' or collection.handle == 'balance-therapiedecken-fur-erwachsene' or collection.handle == 'kinder' %}
-    {% assign collapsible = true %}
+    {% if product.handle == 'gravity-duo-gewichtsdecke-fur-erwachsene' %}
+      {% assign collapsible = false %}
+    {% else %}
+      {% assign collapsible = true %}
+    {% endif %}
   {% endif %}
 {% endfor %}
 
