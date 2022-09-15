@@ -750,8 +750,8 @@
         "id": "promo_image_overlay",
         "min": 0,
         "max": 10,
-        "step": 2,
-        "unit": "%",
+        "step": 1,
+        "unit": "op",
         "label": "Image overlay",
         "default": 0
       },
