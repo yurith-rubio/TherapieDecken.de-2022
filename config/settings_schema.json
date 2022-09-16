@@ -706,7 +706,7 @@
     "settings": [
       {
         "type": "header",
-        "content": "HOMEPAGE. Cover image"
+        "content": "HOMEPAGE'S COVER. Image"
       },
       {
         "type": "checkbox",
@@ -757,7 +757,7 @@
       },
       {
         "type": "header",
-        "content": "HOMEPAGE. Art design"
+        "content": "HOMEPAGE'S COVER. Art design"
       },
       {
         "type": "url",
@@ -786,7 +786,7 @@
       },
       {
         "type": "header",
-        "content": "HOMEPAGE. Button"
+        "content": "HOMEPAGE'S COVER. Button"
       },
       {
         "type": "text",
