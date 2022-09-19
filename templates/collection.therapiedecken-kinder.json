@@ -47,6 +47,11 @@
         "custom_liquid": "{% render 'right-blanket' %}"
       }
     },
+    "1663588351b655627e": {
+      "type": "leading-page-grid-kinder",
+      "settings": {
+      }
+    },
     "1663586516d49c4ca0": {
       "type": "text-with-image-new",
       "blocks": {
@@ -258,6 +263,7 @@
     "main",
     "166358537404f795fc",
     "1663586018f3907dd3",
+    "1663588351b655627e",
     "1663586516d49c4ca0",
     "1663586621544858f0",
     "16635866819791be79",
