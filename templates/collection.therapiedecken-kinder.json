@@ -34,7 +34,9 @@
         "sub_headline": "Original Therapiedecken",
         "custom_title_text": "",
         "custom_header": "<span class=\"Heading\" style=\"font-size:30px; line-height:1.2\">\n<span>Gewichtsdecken<\/span>\n<\/br>\n<span>für Kinder<\/span>\n<\/span>",
+        "image": "shopify:\/\/shop_images\/Header_Desktop_94133bca-34c5-4210-9355-8ee798e8b665.jpg",
         "mobile_custom": true,
+        "image_mobile": "shopify:\/\/shop_images\/Header_Mobile_2b4a9e66-31d7-48aa-9ba6-198924385ae7.jpg",
         "apply_overlay": true
       }
     },
