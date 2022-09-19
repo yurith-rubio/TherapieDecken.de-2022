@@ -1,3 +1,4 @@
+{% if collection.handle == "image-blocks" %}
 <div class="rightBlanket_container">
     <a class="rightBlanket_linkContent" href="/pages/therapiedecken-finder">
         <p class="Heading u-h3"> Welche Gewichtsdecke ist die richtige für mich? 
@@ -6,3 +7,15 @@
         </p>
     </a>
 </div>
+{% endif %}
+
+{% if collection.handle == "therapiedecken-kinder" %}
+<div class="rightBlanket_container">
+    <a class="rightBlanket_linkContent" href="/pages/therapiedecken-finder">
+        <p class="Heading u-h3"> 1-Jahr Wachstums Garantie 
+            <span class="rightBlanket_button hidden-phone Button Button--primary">Mehr Erfahren</span>
+            <span class="rightBlanket_button hidden-tablet-and-up"><span class="icon-arrow-right-button"></span></span>
+        </p>
+    </a>
+</div>
+{% endif %}
