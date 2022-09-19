@@ -1,1 +1,54 @@
-{"sections":{"main":{"type":"main-collection-icons","settings":{"show_collection_info":true,"sub-heading":"Original Therapiedecken","title":"Welche Therapiedecken Modelle für Kinder gibt es?","link-info":"","link-info-text":"See More","show_collection_image":true,"apply_overlay":true,"show_color_swatch":true,"show_vendor":false,"collection_image_size":"small","show_sort_by":false,"show_layout_switch":false,"toolbar_position":"top","show_filters":false,"show_filter_color_swatch":false,"expand_filters":false,"filter_position":"sidebar","filter_menu":"","grid_items_per_page":12,"grid_mobile_items_per_row":"1","grid_desktop_items_per_row":4}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-collection-icons",
+      "disabled": true,
+      "settings": {
+        "show_collection_info": true,
+        "sub-heading": "Original Therapiedecken",
+        "title": "Welche Therapiedecken Modelle für Kinder gibt es?",
+        "link-info": "",
+        "link-info-text": "See More",
+        "show_collection_image": true,
+        "apply_overlay": true,
+        "show_color_swatch": true,
+        "show_vendor": false,
+        "collection_image_size": "small",
+        "show_sort_by": false,
+        "show_layout_switch": false,
+        "toolbar_position": "top",
+        "show_filters": false,
+        "show_filter_color_swatch": false,
+        "expand_filters": false,
+        "filter_position": "sidebar",
+        "filter_menu": "",
+        "grid_items_per_page": 12,
+        "grid_mobile_items_per_row": "1",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "166358537404f795fc": {
+      "type": "leading-page-header",
+      "settings": {
+        "enable_custom_title": true,
+        "sub_headline": "Original Therapiedecken",
+        "custom_title_text": "",
+        "custom_header": "<span class=\"Heading\" style=\"font-size:30px; line-height:1.2\">\n<span>Gewichtsdecken<\/span>\n<\/br>\n<span>für Kinder<\/span>\n<\/span>",
+        "mobile_custom": true,
+        "apply_overlay": true
+      }
+    },
+    "1663586018f3907dd3": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'right-blanket' %}"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166358537404f795fc",
+    "1663586018f3907dd3"
+  ]
+}
