@@ -2,7 +2,6 @@
   "sections": {
     "main": {
       "type": "main-collection-icons",
-      "disabled": true,
       "settings": {
         "show_collection_info": true,
         "sub-heading": "Original Therapiedecken",
@@ -29,6 +28,7 @@
     },
     "166358537404f795fc": {
       "type": "leading-page-header",
+      "disabled": true,
       "settings": {
         "enable_custom_title": true,
         "sub_headline": "Original Therapiedecken",
@@ -42,6 +42,7 @@
     },
     "1663586018f3907dd3": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "paddings": false,
         "custom_liquid": "{% render 'right-blanket' %}"
@@ -49,11 +50,13 @@
     },
     "1663588351b655627e": {
       "type": "leading-page-grid-kinder",
+      "disabled": true,
       "settings": {
       }
     },
     "1663586516d49c4ca0": {
       "type": "text-with-image-new",
+      "disabled": true,
       "blocks": {
         "b14de862-290c-4cd5-9ed0-24dbeb26ea16": {
           "type": "title",
@@ -89,6 +92,7 @@
     },
     "1663586621544858f0": {
       "type": "text-with-image-new",
+      "disabled": true,
       "blocks": {
         "f892a984-3fb3-4f0f-b3c9-a7b4c37830c4": {
           "type": "title",
@@ -124,6 +128,7 @@
     },
     "16635866819791be79": {
       "type": "text-with-image-new",
+      "disabled": true,
       "blocks": {
         "7f59fa3b-8c68-4cc2-adea-85dd95e1d2f6": {
           "type": "title",
@@ -159,6 +164,7 @@
     },
     "16635868021c3c50be": {
       "type": "icons-custom",
+      "disabled": true,
       "blocks": {
         "cab31d45-0567-4806-acdf-45c1959b6693": {
           "type": "icons-custom",
@@ -217,6 +223,7 @@
     },
     "16635871435f4ca21f": {
       "type": "faq-homepage",
+      "disabled": true,
       "blocks": {
         "80c22125-8d8e-4404-b0f0-9f827d2bce7e": {
           "type": "accordion_simple",
@@ -253,6 +260,7 @@
     },
     "1663587267cd51ed26": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "paddings": false,
         "custom_liquid": "{% render 'right-blanket' %}"
