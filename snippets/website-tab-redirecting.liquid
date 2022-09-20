@@ -2,11 +2,14 @@
   .website-tab{
   	background: #ebebeb;
   }
-  .website-tab__Wrapper{
-	display: flex;
+  .website-tab_div{
+    display: flex;
+    justify-content: space-between;
 	max-width: 1200px;
-	padding-left: 15px;
 	margin: auto;
+  }
+  .website-tab__Wrapper{
+	padding-left: 15px;
 	height: 25px;
   }
   .website-tab-img{
@@ -49,23 +52,25 @@
 {% endstyle %}
 
 <div class="website-tab">
-  <div class="website-tab__Wrapper">
-    <div class="website-tab-img active">
-      <img width= "90px" height="auto" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_svg.svg?v=1646927811">
+  <div class="website-tab_div">
+    <div class="website-tab__Wrapper">
+      <div class="website-tab-img active">
+        <img width= "90px" height="auto" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_svg.svg?v=1646927811">
+      </div>
+      <div class="website-tab-img inactive">
+        <a href="https://therapiewelt.de/" target="_blank">
+          <img width= "80px" height="auto" style="margin-top: 5px;" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TW_logo_white_svg.svg?v=1646927890">
+        </a>
+      </div>
     </div>
-    <div class="website-tab-img inactive">
-      <a href="https://therapiewelt.de/" target="_blank">
-        <img width= "80px" height="auto" style="margin-top: 5px;" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TW_logo_white_svg.svg?v=1646927890">
-      </a>
+    <div class="website-tab-reviews">
+      <span class="desktop-view-announcement">
+        <span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-half1"></span> <b>4.83/5</b> (10.000+ Bewertungen)       
+      </span>
+      <span class="desktop-view-announcement">
+        <span class="icon-checkmark"></span> <b>Original Therapiedecken</b>       
+      </span><span class="icon-calendar-test"></span> 
+      <b>100 Tage Probeschlafen</b>
     </div>
-  </div>
-  <div class="website-tab-reviews">
-    <span class="desktop-view-announcement">
-      <span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-half1"></span> <b>4.83/5</b> (10.000+ Bewertungen)       
-    </span>
-    <span class="desktop-view-announcement">
-      <span class="icon-checkmark"></span> <b>Original Therapiedecken</b>       
-    </span><span class="icon-calendar-test"></span> 
-    <b>100 Tage Probeschlafen</b>
   </div>
 </div>
