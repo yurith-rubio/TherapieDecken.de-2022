@@ -1,1 +1,274 @@
-{"sections":{"main":{"type":"main-collection-icons","settings":{"show_collection_info":true,"sub-heading":"Original Therapiedecken","title":"Welche Therapiedecken Modelle für Kinder gibt es?","link-info":"","link-info-text":"See More","show_collection_image":true,"apply_overlay":true,"show_color_swatch":true,"show_vendor":false,"collection_image_size":"small","show_sort_by":false,"show_layout_switch":false,"toolbar_position":"top","show_filters":false,"show_filter_color_swatch":false,"expand_filters":false,"filter_position":"sidebar","filter_menu":"","grid_items_per_page":12,"grid_mobile_items_per_row":"1","grid_desktop_items_per_row":4}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-collection-icons",
+      "disabled": true,
+      "settings": {
+        "show_collection_info": true,
+        "sub-heading": "Original Therapiedecken",
+        "title": "Welche Therapiedecken Modelle für Kinder gibt es?",
+        "link-info": "",
+        "link-info-text": "See More",
+        "show_collection_image": true,
+        "apply_overlay": true,
+        "show_color_swatch": true,
+        "show_vendor": false,
+        "collection_image_size": "small",
+        "show_sort_by": false,
+        "show_layout_switch": false,
+        "toolbar_position": "top",
+        "show_filters": false,
+        "show_filter_color_swatch": false,
+        "expand_filters": false,
+        "filter_position": "sidebar",
+        "filter_menu": "",
+        "grid_items_per_page": 12,
+        "grid_mobile_items_per_row": "1",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "166358537404f795fc": {
+      "type": "leading-page-header",
+      "settings": {
+        "enable_custom_title": true,
+        "sub_headline": "Original Therapiedecken",
+        "custom_title_text": "",
+        "custom_header": "<span class=\"Heading\" style=\"font-size:30px; line-height:1.2\">\n<span>Gewichtsdecken<\/span>\n<\/br>\n<span>für Kinder<\/span>\n<\/span>",
+        "image": "shopify:\/\/shop_images\/Header_Desktop_94133bca-34c5-4210-9355-8ee798e8b665.jpg",
+        "mobile_custom": true,
+        "image_mobile": "shopify:\/\/shop_images\/Header_Mobile_2b4a9e66-31d7-48aa-9ba6-198924385ae7.jpg",
+        "apply_overlay": true
+      }
+    },
+    "1663586018f3907dd3": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'right-blanket' %}"
+      }
+    },
+    "1663588351b655627e": {
+      "type": "leading-page-grid-kinder",
+      "settings": {
+      }
+    },
+    "1663586516d49c4ca0": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "b14de862-290c-4cd5-9ed0-24dbeb26ea16": {
+          "type": "title",
+          "settings": {
+            "subheading": "",
+            "title": "Die Gravity Gewichtsdecke",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "8bfdbb80-25ef-4171-b77b-8facc451d396": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Die Gravity Gewichtsdecke ist unser bekanntestes Modell und gilt schon fast als ein Klassiker unter den Gewichtsdecken. Die Gravity Gewichtsdecke setzt sich aus zwei Teilen zusammen: Inlett und Bezug. Das Gewicht entsteht durch die feinen Mikroglaskügelchen, die in Quadrate im Inlett eingearbeitet wurden. Der Bezug wird über ein Schlaufensystem mit dem Inlett verbunden, sodass der Bezug nicht verrutscht. Die Decke schmiegt sich durch die Bewegung der Perlen an den Körper an und der Druck auf den Körper erfolgt punktuell.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b14de862-290c-4cd5-9ed0-24dbeb26ea16",
+        "8bfdbb80-25ef-4171-b77b-8facc451d396"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/1.jpg",
+        "image_position": "left"
+      }
+    },
+    "1663586621544858f0": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "f892a984-3fb3-4f0f-b3c9-a7b4c37830c4": {
+          "type": "title",
+          "settings": {
+            "subheading": "",
+            "title": "Die Balance Gewichtsdecke",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "506a9068-eca3-4043-91da-8fac7c01b2b2": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Die Balance Gewichtsdecke ist unser patentiertes Modell und besteht aus abnehmbarem Bezug und Inlett. Durch praktische Reißverschlüsse wird das Abziehen und das Wechseln des Bezugs erleichtert und Bezug und Inlett sind fest verbunden und verrutschen nicht. Das Gewicht der Premium Balance Decke entsteht durch kleine Edelstahlkügelchen, die im Inneren des Inletts aufgeklebt werden. Das Gewicht der Decke verteilt sich so einheitlich in der Decke und der Druck wirkt gleichmäßig auf den Körper.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "f892a984-3fb3-4f0f-b3c9-a7b4c37830c4",
+        "506a9068-eca3-4043-91da-8fac7c01b2b2"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/2.jpg",
+        "image_position": "right"
+      }
+    },
+    "16635866819791be79": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "7f59fa3b-8c68-4cc2-adea-85dd95e1d2f6": {
+          "type": "title",
+          "settings": {
+            "subheading": "",
+            "title": "Die Ersatzbezüge",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "5cb86a64-ec83-4511-b820-9adaa81e669a": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Aus über 500 verschiedenen Ersatzbezügen in unterschiedlichen Muster, Farben und Prints können Sie den passenden Bezug für Ihre Gravity oder Balance Decke auswählen! Alle Bezüge sind auch als normale Bettwäsche in verschiedenen Größen verfügbar.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7f59fa3b-8c68-4cc2-adea-85dd95e1d2f6",
+        "5cb86a64-ec83-4511-b820-9adaa81e669a"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/3.jpg",
+        "image_position": "left"
+      }
+    },
+    "16635868021c3c50be": {
+      "type": "icons-custom",
+      "blocks": {
+        "cab31d45-0567-4806-acdf-45c1959b6693": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "5stars",
+            "title_icon": "100.000+ glückliche Kunden",
+            "content_icon": ""
+          }
+        },
+        "1112ec24-2644-4ff9-b1cc-d6d9da2d706d": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "european_union",
+            "title_icon": "Komplett hergestellt in Europa",
+            "content_icon": ""
+          }
+        },
+        "8a4342ff-14fe-4673-8b24-30582cf85847": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "sustainable_world",
+            "title_icon": "Die nachhaltigsten Therapiedecken",
+            "content_icon": ""
+          }
+        },
+        "851379d1-942b-435c-848b-3a7c9480e04b": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "500plus",
+            "title_icon": "Verschiedene Wchselbezüge",
+            "content_icon": ""
+          }
+        }
+      },
+      "block_order": [
+        "cab31d45-0567-4806-acdf-45c1959b6693",
+        "1112ec24-2644-4ff9-b1cc-d6d9da2d706d",
+        "8a4342ff-14fe-4673-8b24-30582cf85847",
+        "851379d1-942b-435c-848b-3a7c9480e04b"
+      ],
+      "settings": {
+        "bg-color": "#5b5b5b",
+        "margin-top": "auto",
+        "margin-top-mobile": "inherit",
+        "subheading": "",
+        "title": "",
+        "bg-color-icons": "",
+        "icons-size": "40px",
+        "icons-color": "#fac636",
+        "text-color": "#ffffff",
+        "mobile-style-glider": false,
+        "icons-columns": true,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "16635871435f4ca21f": {
+      "type": "faq-homepage",
+      "blocks": {
+        "80c22125-8d8e-4404-b0f0-9f827d2bce7e": {
+          "type": "accordion_simple",
+          "settings": {
+            "summary": "Was ist eine Therapiedecke?",
+            "content": "Die handgefertigte Therapiedecke ist eine hochwertig verarbeitete Decke, die bei Schlafstörungen, Unruhe, sowie bei Entwicklungsstörungen, wie ADHD, Down-Syndrom, Asperger-Syndrom oder Autismus helfen kann. Sie wird auch erfolgreich bei Sensorischen Integrationsstörungen eingesetzt.Das Gewicht der Therapiedecke verteilt sich gleichmäßig über den gesamten Körper, wodurch das Gefühl einer sanften, liebevollen Umarmung entsteht. Der Körper entspannt sich, wie von allein. Das Stress- und Angstniveau sinkt und Sie können friedlich einschlafen oder zur Ruhe kommen.Therapiedecken sind mehr als nur ein therapeutisches Mittel – es sind wundervoll gestaltete, weiche Decken, die man bequem jeden Tag des Jahres benutzen kann."
+          }
+        },
+        "ee013c62-f0bc-43e3-b252-c16dfe26b281": {
+          "type": "accordion_simple",
+          "settings": {
+            "summary": "Wie wirkt eine Therapiedecke?",
+            "content": "Wie der Name bereits verrät, ist eine Gewichtsdecke keine gewöhnliche Bettdecke. Sie wiegt. Dieses Gewicht richtet sich nach dem Körpergewicht und Körpergröße des Kunden. Der Tiefendruck, der von dem Gewicht ausgeübt wird, hat eine entspannende Wirkung auf die Gelenke, Muskeln und Sehnen. Man kommt innerlich und körperlich zur Ruhe."
+          }
+        },
+        "7ad78293-2bda-4196-9d38-b6a2096a0969": {
+          "type": "accordion_simple",
+          "settings": {
+            "summary": "Was ist der Unterschied zwischen der Gravity und Balance Gewichtsdecke?",
+            "content": "Alle unsere Decken erfüllen den gleichen Zweck, nur weist jedes Modell einige Besonderheiten auf, mit denen wir die unterschiedlichen Bedürfnisse unserer Kunden erfüllen möchten.\n\nUnsere Modelle Gravity und Balance verfügen über eine sehr praktische Funktion: Für beide Modelle gibt es passende Bezüge aus wärmendem oder kühlendem Stoff - je nach Empfinden und Jahreszeit. Die Bezüge können leicht abgenommen und gewechselt werden. Es empfiehlt sich, die Bezüge aus unserem Sortiment zu verwenden, da Gewichtsdecken über ein Bezugssystem gegen das Verrutschen verfügen.\n\nDie Gravity Therapiedecke wird durch feine Glasperlen im Inneren der Decke beschwert, die in gleich große Quadrate eingenäht werden. Hier entsteht der Druck auf den Körper durch das Sammeln der Perlen in einer Ecke. Der Bezug wird über 12 Schlaufen am Inlett befestigt, sodass nichts verrutscht und das Inlett fest im Bezug sitzt. Durch die Bewegung der Perlen innerhalb der Quadrate ist die Gravity Decke besonders anschmiegsam. \n\nDie Balance Therapiedecke wird durch kleine Edelstahlperlen beschwert, die in gleichmäßigen Abständen in das Innere der Decke eingeklebt und fixiert werden. Der Kleber basiert auf Wasser, ist geruchlos und ungefährlich. Der Bezug wird über vier Reißverschlüsse am Inlett befestigt. Dadurch wird das Ab- und Beziehen besonders leicht, was gerade für ältere Menschen vorteilhaft ist. Die Balance Decke ist etwas stabiler und fester, wodurch sich dieses Modell für Menschen eignet, die sich nachts viel drehen und bewegen."
+          }
+        }
+      },
+      "block_order": [
+        "80c22125-8d8e-4404-b0f0-9f827d2bce7e",
+        "ee013c62-f0bc-43e3-b252-c16dfe26b281",
+        "7ad78293-2bda-4196-9d38-b6a2096a0969"
+      ],
+      "settings": {
+        "sub-heading": "Therapiedecken.de",
+        "heading": "Häufige Fragen zu den Gewichtsdecken",
+        "video_url": ""
+      }
+    },
+    "1663587267cd51ed26": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'right-blanket' %}"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166358537404f795fc",
+    "1663586018f3907dd3",
+    "1663588351b655627e",
+    "1663586516d49c4ca0",
+    "1663586621544858f0",
+    "16635866819791be79",
+    "16635868021c3c50be",
+    "16635871435f4ca21f",
+    "1663587267cd51ed26"
+  ]
+}
