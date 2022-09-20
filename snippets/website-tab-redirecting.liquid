@@ -46,6 +46,11 @@
     padding-left: 15px;
     vertical-align: middle;
   }
+  @media (min-width: 641px){
+    .mobile-icon{
+      display: none;
+    }
+  }
   @media (max-width: 640px){
     .website-tab{
     	text-align: center;
@@ -54,7 +59,8 @@
       display: flex;
       padding: 0 0;
     }
-    .desktop-view-announcement{
+    .desktop-view-announcement,
+    .desktop-icon{
       display: none;
     }
   }
@@ -64,7 +70,8 @@
   <div class="website-tab_div">
     <div class="website-tab__Wrapper">
       <div class="website-tab-img active">
-        <img width= "90px" height="auto" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_svg.svg?v=1646927811">
+        <img class="desktop-icon" width= "90px" height="auto" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_svg.svg?v=1646927811">
+        <img class="mobile-icon" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD-Favicon-32x32.png?v=1663686124">
       </div>
       <div class="website-tab-img inactive">
         <a href="https://therapiewelt.de/" target="_blank">
