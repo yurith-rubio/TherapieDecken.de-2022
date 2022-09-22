@@ -12,6 +12,9 @@
 	width: 100%;
     text-align: left;
 }
+.faq-intro-sec-content summary{
+  cursor: pointer
+}
 .intro-text-wr{
   width: 100%;
 }
