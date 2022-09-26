@@ -83,7 +83,7 @@
     "enable_free_product": "free_for_x_amountset",
     "gift_product": "",
     "gift_product_id": 39327755403403,
-    "gift_product_min_spend": 1,
+    "gift_product_min_spend": 2000,
     "trigger_product": "balance-gewichtsdecken-inlett",
     "seasonal_product_info": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-banner-2.jpg",
