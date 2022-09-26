@@ -200,6 +200,10 @@ input.MyCart_InputItem{
   -webkit-appearance: none !important;
   -moz-appearance:textfield !important;
 }
+input.MyCart_InputItem{
+  -webkit-appearance: none !important;
+  -moz-appearance:textfield !important;
+}
 .MyCart_BodyWrapper {
   flex: 1 1 auto;
 }
