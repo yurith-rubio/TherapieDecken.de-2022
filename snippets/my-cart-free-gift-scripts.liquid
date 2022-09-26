@@ -1,4 +1,6 @@
-{% if settings.enable_free_product == 'enable_free_x_compared' %}
+{% if settings.enable_free_product == 'enable_free_x_compared'
+  and giftProduct != blank and giftProductOption != blank
+  and triggerProduct != blank and triggerProductOption != blank %}
 
 {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
 {% assign giftProduct = settings.gift_product  %}
