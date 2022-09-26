@@ -262,43 +262,6 @@
         "product": "therapiedecken"
       }
     },
-    "16299931230028979b": {
-      "type": "featured-product-addons",
-      "blocks": {
-        "16299931230028979b-0": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_taxes_included": false
-          }
-        },
-        "5c4b40a3-3c53-407a-940a-f0c0a369e2a4": {
-          "type": "html",
-          "settings": {
-            "html": "<ul>\n    <li>Perfekte Einsteiger Therapiedecke für Unentschlossene<\/li>\n    <li>Inklusive wechselbarem Standard Bezug in Weiß oder Hellgrau\n    <\/li>\n    <li>Inklusive Gravity Inlett mit Glasperlen &amp; Schlaufen<\/li>\n<li>80% Gewichtsverteilung<\/li>\n<\/ul>"
-          }
-        },
-        "8fca4fc3-a539-473f-8942-982cadc9b648": {
-          "type": "product_button_link",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "16299931230028979b-0",
-        "5c4b40a3-3c53-407a-940a-f0c0a369e2a4",
-        "8fca4fc3-a539-473f-8942-982cadc9b648"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "more_info": "",
-        "right_image": false,
-        "show_headings_on_mobile": false,
-        "product": "basic-gravity-gewichtsdecke-fur-erwachsene"
-      }
-    },
     "1629994387ef06967d": {
       "type": "custom-html",
       "settings": {
@@ -451,7 +414,6 @@
     "16571142133c8ad636",
     "16297454484267b195",
     "1629990205e6dba77d",
-    "16299931230028979b",
     "1629994387ef06967d",
     "165277572759e6bcfa",
     "1630348738a0496c0e",
