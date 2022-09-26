@@ -944,6 +944,10 @@
             "label": "Enable free x by y"
           },
           {
+            "value": "free_for_x_amountset",
+            "label": "Free for x amount"
+          },
+          {
             "value": "none",
             "label": "None"
           }
