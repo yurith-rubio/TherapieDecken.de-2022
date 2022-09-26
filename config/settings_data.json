@@ -61,7 +61,7 @@
     "checkout_countdown_enable": false,
     "checkout_countdown_text": "⚠️ Auf Grund unseres Weltschlaftag Angebots ist Ihr Warenkorb für nur",
     "left_product_inventory": true,
-    "promotional_hero_hp_cover": true,
+    "promotional_hero_hp_cover": false,
     "promo_image": "shopify:\/\/shop_images\/TD_End_of_summer_desktop.jpg",
     "promo_image_mobile": "shopify:\/\/shop_images\/TD_End_of_summer_mobile_8508c5e3-de7a-48f7-80a2-5726a99135fe.jpg",
     "image_position": "center",
@@ -116,7 +116,7 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": true,
+          "enable_bar": false,
           "home_page_only": false,
           "background": "#e84e1b",
           "text_color": "#ffffff",
@@ -233,7 +233,7 @@
       "popup": {
         "type": "popup",
         "settings": {
-          "show_popup": false,
+          "show_popup": true,
           "show_only_on_index": false,
           "show_only_for_visitors": false,
           "show_only_once": true,
