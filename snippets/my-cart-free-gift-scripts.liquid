@@ -1,10 +1,9 @@
 {% if settings.enable_free_product == 'enable_free_x_compared' %}
-
-{% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
-{% assign giftProduct = settings.gift_product  %}
-{% assign giftProductOption = settings.gift_option  %}
-{% assign triggerProduct = settings.trigger_product  %}
-{% assign triggerProductOption = settings.trigger_option  %}
+  {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
+  {% assign giftProduct = settings.gift_product  %}
+  {% assign giftProductOption = settings.gift_option  %}
+  {% assign triggerProduct = settings.trigger_product  %}
+  {% assign triggerProductOption = settings.trigger_option  %}
 
   {% if giftProduct and triggerProduct %}
     <script type="module">
@@ -60,11 +59,11 @@
   {% endif %}
 {% endif %}
 
-{% if settings.enable_free_product == 'enable_free_x_by_y' %}
 
-{% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
-{% assign giftProductID = settings.gift_product_id  %}
-{% assign triggerProduct = settings.trigger_product  %}
+{% if settings.enable_free_product == 'enable_free_x_by_y' %}
+  {% comment %} Promo variant id - we need the id of one of the variants {% endcomment %}
+  {% assign giftProductID = settings.gift_product_id  %}
+  {% assign triggerProduct = settings.trigger_product  %}
 
   {% if giftProductID and triggerProduct %}
     <script type="module">
