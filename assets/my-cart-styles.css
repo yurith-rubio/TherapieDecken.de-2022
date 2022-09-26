@@ -40,7 +40,7 @@ body.js-ajax-cart-request-in-progress .MyCart_ItemsContainer {
 body.js-ajax-cart-empty .icon-MyCart_Header {
   display: none !important;
 }
-body.js-my-cart-open #MyCart_Slider /*body.js-my-cart-open .MyCartUpsells_SuggestedContainer*/{
+body.js-my-cart-open #MyCart_Slider{
   transition: transform .5s;
   transform: translateX(0%);
 }
