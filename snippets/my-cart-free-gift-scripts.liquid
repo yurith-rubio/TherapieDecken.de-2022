@@ -126,7 +126,7 @@
           ]
           
           subscribeToCartStateUpdate( state => {            
-              let promoVariant = '39353564233792';
+              let promoVariant = settings.gift_product_id;
               
               state.cart.items.forEach(item => {
               	if ( variants135.indexOf("" + item.id) >= 0 ) {
