@@ -997,6 +997,7 @@
         "type": "select",
         "id": "trigger_option",
         "label": "Trigger option to compare",
+        "info": "Use when: enable_free_x_compared",
         "options": [
           {
             "value": "option1",
