@@ -147,6 +147,7 @@ body.js-my-cart-open .MyCartUpsells_SuggestedContainer{
 .MyCart_ContentItem{
   width: fit-content;
   padding-right: 30px;
+  flex-grow: 1;
 }
 .MyCart_QuantityItemWrapper{
   display: flex;
