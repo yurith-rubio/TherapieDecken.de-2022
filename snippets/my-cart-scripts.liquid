@@ -132,12 +132,13 @@
     const upsellOverlay = document.querySelector("#MyCart_UpsellOverlay");
     upsellOverlay.style.display = "none";
   }
-  function closeUpsell(event) {
+  function closeUpsell() {
+    
     const cartUpsellWrapper = document.querySelectorAll(".MyCartUpsells_MainContainer");
     cartUpsellWrapper.forEach(element => {
         element.style.display = "none";
     });
-    console.log(event);
+    console.log(window.event);
     //mainUpsellContainer.style.animation = "myUpsellDown .5s";
     UpsellOverlayOff();
   }
