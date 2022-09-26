@@ -200,9 +200,9 @@ input.MyCart_InputItem{
   -webkit-appearance: none !important;
   -moz-appearance:textfield !important;
 }
-input.MyCart_InputItem{
+input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webkit-outer-spin-button {
   -webkit-appearance: none !important;
-  -moz-appearance:textfield !important;
+  margin: 0 !important;
 }
 .MyCart_BodyWrapper {
   flex: 1 1 auto;
