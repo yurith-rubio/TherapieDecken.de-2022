@@ -151,8 +151,8 @@
     const cartUpsellWrapper = document.querySelector("#cartUpsellWrapper_" + id);
     cartUpsellWrapper.style.display = "block";
     cartUpsellWrapper.setAttribute("data-status", "active");
-    mainContainer.style.transition = "transform .5s";
-    mainContainer.style.transform = "translateY(0)";
+    //mainContainer.style.transition = "transform .5s";
+    //mainContainer.style.transform = "translateY(0)";
     const priceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_UpsellPrice");
     const comparedPriceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_ComparedPrice");
     priceElement.textContent = firstPrice;
