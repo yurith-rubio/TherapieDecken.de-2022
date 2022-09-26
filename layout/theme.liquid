@@ -25,6 +25,9 @@
     {% comment %}  Add FREE GIFT to slide cart code - Yurith {% endcomment %}
     {% render 'my-cart-scripts', settings: settings %}
     {% render 'my-cart-free-gift-scripts', settings: settings %}
+    {% comment %}  Owl carousel library for adding sliders to the theme - Yurith {% endcomment %}
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all">
     
     {% comment %}
     {% if product.handle == 'premium-balance-gewichtsdecke-fur-erwachsene' %}
@@ -65,16 +68,17 @@
 
     {% render 'social-meta-tags' %}
     {% render 'css-variables' %}
+
+    <!-- Font-Awesome ================================================== -->
+  	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  	<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></noscript>
     
-    <!-- This code is automatically managed by StarApps Studio -->
-    <!-- Please contact support@starapps.studio for any help -->
-    
-        <script type="text/javascript" src="https://bcdn.starapps.studio/apps/via/therapiedecken/script-1631272472.js?shop={{shop.permanent_domain}}" async></script>
-<!-- starapps_scripts_end -->
     <!-- starapps_scripts_start -->
     <!-- This code is automatically managed by StarApps Studio -->
     <!-- Please contact support@starapps.studio for any help -->
+    <script type="text/javascript" src="https://bcdn.starapps.studio/apps/via/therapiedecken/script-1631272472.js?shop={{shop.permanent_domain}}" async></script>
     <!-- starapps_scripts_end -->
+    
     {{ content_for_header }}
     
     <script>
@@ -171,12 +175,6 @@
     
     {% render 'microdata-schema' %}
 
-    {% comment %}  Owl carousel library for adding sliders to the theme - Yurith {% endcomment %}
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all">
-    
-    
-
     {% comment %} Font added for bold on Headings {% endcomment %}
     <link rel="stylesheet" href="https://use.typekit.net/cmk7jcs.css">
     {{ 'countdown.js' | asset_url | script_tag }}
@@ -186,7 +184,7 @@
 	<!-- Please contact support@starapps.studio for any help -->
 	{% render "starapps-product-json", product: product, starapps_app: "VIA", starapps_attribute: "sa-product-json" %}
     <!-- starapps_scripts_end -->
-
+    
   </head>
 
   {%- capture classes -%}features--heading-{{ settings.heading_size }}{%- endcapture -%}
@@ -281,15 +279,7 @@
       }
 	</script>
     
-    <!-- Font-Awesome ================================================== -->
-  	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  	<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"></noscript>
     
-
-    
-     
-
-
 
     
   </body>
