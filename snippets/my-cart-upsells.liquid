@@ -1,6 +1,6 @@
 {% if upsell_product_1 != blank %}
   {% assign upsell = upsell_product_1 %}
-  <div class="MyCartUpsells_MainContainer" id="cartUpsellWrapper_{{ upsell.id }}" style="display:none">
+  <div class="MyCartUpsells_MainContainer" id="cartUpsellWrapper_{{ upsell.id }}">
     
     <form action="/cart/add" method="post" id="formUpsell_{{ upsell.id }}">
       <input name="id" type="hidden" value="{{ upsell.variants.first.id }}" id="product-select-{{ upsell.id }}" data-available="{{ upsell.selected_or_first_available_variant }}">
