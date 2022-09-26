@@ -218,7 +218,7 @@
   {% comment %} Theme modified to add our own SLIDE CART - div wrappers added plus the my-cart section - Yurith {% endcomment %}
 
     <div class="my-container" data-drawer-push>
-      <div class="my-container__content">
+      <div class="MyCart_BodyWrapper">
         <a class="PageSkipLink u-visually-hidden" href="#main">{{ 'header.navigation.skip_to_content' | t }}</a>
         <span class="LoadingBar"></span>
         <div class="PageOverlay"></div>
@@ -236,7 +236,10 @@
 		{% endcomment %}
         
         {% render 'top-styling' %}
-		{% section 'my-cart' %}
+        <div id="MyCart_SectionsWrapper" class="MyCart_SectionsWrapper open-cart">
+          {% section 'my-cart-upsells' %}
+          {% section 'my-cart' %}
+        </div>
         
         <div class="PageContainer">
           <div id="tabs-redirecting" style="relative: fixed; top: 0px">
