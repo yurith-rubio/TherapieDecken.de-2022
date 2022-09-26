@@ -414,7 +414,7 @@ input.MyCart_InputItem{
   bottom: 0;
   right: 0;
   transition: transform .5s;
-  transform: translateY(100%);
+  transform: translateX(100%);
 }
 .MyCartUpsells_MainContainer > form{
   background-color: #fff;
