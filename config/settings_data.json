@@ -271,10 +271,28 @@
               "enable_upsell_4": false,
               "upsell_product_4": ""
             }
+          },
+          "a799bb06-336d-48a8-930a-e300fb9c2e89": {
+            "type": "Trigger",
+            "settings": {
+              "product_list": [
+                "premium-balance-gewichtsdecke-fur-kinder",
+                "gravity-gewichtsdecke-fur-kinder"
+              ],
+              "enable_upsell_1": true,
+              "upsell_product_1": "gesundheitskissen-gelb-mit-dino",
+              "enable_upsell_2": false,
+              "upsell_product_2": "",
+              "enable_upsell_3": false,
+              "upsell_product_3": "",
+              "enable_upsell_4": false,
+              "upsell_product_4": ""
+            }
           }
         },
         "block_order": [
-          "d0c1641a-dbab-4d18-a415-4ebd87166ced"
+          "d0c1641a-dbab-4d18-a415-4ebd87166ced",
+          "a799bb06-336d-48a8-930a-e300fb9c2e89"
         ],
         "settings": {
         }
