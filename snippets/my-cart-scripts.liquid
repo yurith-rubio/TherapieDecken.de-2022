@@ -133,7 +133,7 @@
     upsellOverlay.style.display = "none";
   }
   function closeUpsell() {
-    console.log(event);
+    console.log(event.closest(".MyCartUpsells_MainContainer"));
     const cartUpsellWrapper = document.querySelectorAll(".MyCartUpsells_MainContainer");
     cartUpsellWrapper.forEach(element => {
         element.style.display = "none";
