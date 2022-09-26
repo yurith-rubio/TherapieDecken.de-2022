@@ -942,28 +942,46 @@
           {
             "value": "enable_free_x_by_y",
             "label": "Enable free x by y"
+          },
+          {
+            "value": "free_for_x_amountset",
+            "label": "Free for x amount"
+          },
+          {
+            "value": "none",
+            "label": "None"
           }
         ],
-        "default": "enable_free_x_compared"
+        "default": "none"
       },
       {
         "type": "header",
-        "content": "Gift Product"
+        "content": "Gift Product",
+        "info": "Set the minimum amount to spend to get the free item and add again the amount in here [discounts tab](https:\/\/therapiewelt.myshopify.com\/admin\/discounts\/automatic\/932332732480)"
       },
       {
         "type": "product",
         "id": "gift_product",
-        "label": "Gift product"
+        "label": "Gift product",
+        "info": "Use when: enable_free_x_compared"
       },
       {
         "type": "number",
         "id": "gift_product_id",
-        "label": "Gift product variant ID"
+        "label": "Gift product variant ID",
+        "info": "Use when: enable_free_x_by_y"
+      },
+      {
+        "type": "number",
+        "id": "gift_product_min_spend",
+        "label": "Minimum to spend to get the free product",
+        "info": "free_for_x_amountset "
       },
       {
         "type": "select",
         "id": "gift_option",
         "label": "Gift option to compare",
+        "info": "Use when: enable_free_x_compared",
         "options": [
           {
             "value": "0",
@@ -979,12 +997,14 @@
       {
         "type": "product",
         "id": "trigger_product",
-        "label": "Trigger product"
+        "label": "Trigger product",
+        "info": "Use when: enable_free_x_compared and enable_free_x_by_y"
       },
       {
         "type": "select",
         "id": "trigger_option",
         "label": "Trigger option to compare",
+        "info": "Use when: enable_free_x_compared",
         "options": [
           {
             "value": "option1",
