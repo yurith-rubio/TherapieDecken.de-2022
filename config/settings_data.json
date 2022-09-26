@@ -80,8 +80,10 @@
     "product_badge_max_width": 150,
     "product_badge_max_width_mobile": 110,
     "show_product_guarantee_exceptions": false,
-    "gift_product": "",
-    "trigger_product": "",
+    "enable_free_product": "enable_free_x_by_y",
+    "gift_product": "balance-schlafmaske",
+    "gift_product_id": 0,
+    "trigger_product": "balance-gewichtsdecken-inlett",
     "seasonal_product_info": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-banner-2.jpg",
     "checkout_logo_position": "center",
@@ -294,6 +296,11 @@
           "d0c1641a-dbab-4d18-a415-4ebd87166ced",
           "a799bb06-336d-48a8-930a-e300fb9c2e89"
         ],
+        "settings": {
+        }
+      },
+      "my-cart-upsells": {
+        "type": "my-cart-upsells",
         "settings": {
         }
       }
