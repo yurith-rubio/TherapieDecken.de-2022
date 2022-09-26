@@ -134,10 +134,10 @@
   }
   function closeUpsell() {
     const mainUpsellContainer = event.target.closest(".MyCartUpsells_MainContainer");
-    const cartUpsellWrapper = document.querySelectorAll(".MyCartUpsells_MainContainer");
-    cartUpsellWrapper.forEach(element => {
-        element.style.display = "none";
-    });
+    //const cartUpsellWrapper = document.querySelectorAll(".MyCartUpsells_MainContainer");
+    //cartUpsellWrapper.forEach(element => {
+        //element.style.display = "none";
+    //});
     mainUpsellContainer.style.animation = "myUpsellDown .5s";
     UpsellOverlayOff();
   }
