@@ -956,7 +956,8 @@
       },
       {
         "type": "header",
-        "content": "Gift Product"
+        "content": "Gift Product",
+        "info": "Set the minimum amount to spend to get the free item and add again the amount in here [discounts tab](https:\/\/therapiewelt.myshopify.com\/admin\/discounts\/automatic\/932332732480)"
       },
       {
         "type": "product",
@@ -974,7 +975,7 @@
         "type": "number",
         "id": "gift_product_min_spend",
         "label": "Minimum to spend to get the free product",
-        "info": "Set the minimum amount to spend to get the free item and add again the amount in here [discounts tab](https:\/\/therapiewelt.myshopify.com\/admin\/discounts\/automatic\/932332732480)"
+        "info": "free_for_x_amountset"
       },
       {
         "type": "select",
