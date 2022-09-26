@@ -149,11 +149,11 @@
     const firstPriceNumber = firstPrice.substr(0, 2);
     const comparedPriceNumber = comparedPrice.substr(0, 2);
     const cartUpsellWrapper = document.querySelector("#cartUpsellWrapper_" + id);
-    const priceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_UpsellPrice");
-    const comparedPriceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_ComparedPrice");
     cartUpsellWrapper.style.display = "block";
     cartUpsellWrapper.setAttribute("data-status", "active");
     mainUpsellContainer.style.animation = "myUpsellUp .5s";
+    const priceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_UpsellPrice");
+    const comparedPriceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_ComparedPrice");
     priceElement.textContent = firstPrice;
     if(firstPriceNumber < comparedPriceNumber){
       comparedPriceElement.textContent = comparedPrice;    
