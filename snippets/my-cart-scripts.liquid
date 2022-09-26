@@ -151,7 +151,7 @@
     const cartUpsellWrapper = document.querySelector("#cartUpsellWrapper_" + id);
     cartUpsellWrapper.style.display = "block";
     cartUpsellWrapper.setAttribute("data-status", "active");
-    mainContainer.style.animation = "myUpsellUp";
+    mainContainer.style.animation = "myUpsellUp .5s";
     const priceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_UpsellPrice");
     const comparedPriceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_ComparedPrice");
     priceElement.textContent = firstPrice;
