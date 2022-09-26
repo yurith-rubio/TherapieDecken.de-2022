@@ -122,8 +122,6 @@
 
         subscribeToCartStateUpdate( state => {       
       
-          
-      
           // get items from the cart
           let items = state.cart.items;
           const totalItemsInCart = state.cart.item_count;
@@ -149,26 +147,28 @@
                 // If there is no a giftProductID product with an applied discount
                 // lets add one with _autoadded property
                 if ( autoAddedLineItem === -1 ) {
-                    setTimeout(function(){
-                      cartRequestAdd({ 
-                          items: [{
-                              id: {{ giftProductID }},
-                              quantity: 1,
-                              properties: { "_autoadded": "Yes" }
-                          }]  
-                      });
+                  console.log("adding gift product");
+                  setTimeout(function(){
+                    cartRequestAdd({ 
+                        items: [{
+                            id: {{ giftProductID }},
+                            quantity: 1,
+                            properties: { "_autoadded": "Yes" }
+                        }]  
+                    });
 
-                    },100);
+                  },100);
                 }
               } else {
                 // If current cart subtotal is less than $100
                 // and an autoadded product is still in the cart —
                 // lets remove it
                 if ( autoAddedLineItem > -1 ) {
-                    cartRequestChange({ 
-                        "line": autoAddedLineItem + 1,
-                        "quantity": 0
-                    });
+                  console.log("removing gift product");
+                  cartRequestChange({ 
+                      "line": autoAddedLineItem + 1,
+                      "quantity": 0
+                  });
                 }
               }
           }
