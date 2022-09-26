@@ -975,7 +975,7 @@
         "type": "number",
         "id": "gift_product_min_spend",
         "label": "Minimum to spend to get the free product",
-        "info": "free_for_x_amountset"
+        "info": "free_for_x_amountset "
       },
       {
         "type": "select",
