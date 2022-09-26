@@ -201,7 +201,7 @@ input.MyCart_InputItem{
   -moz-appearance:textfield !important;
 }
 input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webkit-outer-spin-button {
-  -webkit-appearance: none !important;
+  /*-webkit-appearance: none !important;*/
   margin: 0 !important;
 }
 .MyCart_BodyWrapper {
