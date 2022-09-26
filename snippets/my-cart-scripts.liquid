@@ -115,7 +115,9 @@
   addCartTotalDiscount();
 </script>
 
-<script> 
+<script>
+  const mainUpsellContainer = document.querySelector(".MyCartUpsells_MainContainer");
+  
   function overlayOn() {
     document.getElementById("MyCart_Overlay").style.display = "block";
   }
@@ -137,13 +139,11 @@
     cartUpsellWrapper.forEach(element => {
         element.style.display = "none";
     });
+    mainUpsellContainer.style.animation = "myUpsellDown .5s";
     UpsellOverlayOff();
   }
   function openCartUpsell() {
-    //console.log("openCartUpsell");
-    const mainContainer = document.querySelector(".MyCartUpsells_MainContainer");
     const id = event.target.dataset.upsellId;
-    //console.log(id);
     const firstPrice = event.target.dataset.firstPriceAvailable;
     const comparedPrice = event.target.dataset.firstComparedPrice;
     const firstPriceNumber = firstPrice.substr(0, 2);
@@ -151,7 +151,7 @@
     const cartUpsellWrapper = document.querySelector("#cartUpsellWrapper_" + id);
     cartUpsellWrapper.style.display = "block";
     cartUpsellWrapper.setAttribute("data-status", "active");
-    mainContainer.style.animation = "myUpsellUp .5s";
+    mainUpsellContainer.style.animation = "myUpsellUp .5s";
     const priceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_UpsellPrice");
     const comparedPriceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_ComparedPrice");
     priceElement.textContent = firstPrice;
