@@ -123,9 +123,11 @@ body.js-my-cart-open .MyCartUpsells_SuggestedContainer{
   z-index: 1;
 }
 .MyCart_H2, .MyCart_PriceItem{
-  font-weight: 400;
   line-height: 1.2 !important;
   margin: 0 0 5px;
+}
+.MyCart_PriceItem{
+  font-weight: 400;
 }
 .MyCart_Heading.Heading{
   text-align: center;
