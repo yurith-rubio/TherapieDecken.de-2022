@@ -259,9 +259,9 @@
       document.documentElement.style.setProperty('--header-height', document.getElementById('shopify-section-header').offsetHeight + 'px');
 
       // Show menu when scrolling up and Hide Menu when scrolling down
-      var prevScrollpos = window.pageYOffset;
+      let prevScrollpos = window.pageYOffset;
       window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
+      let currentScrollPos = window.pageYOffset;
         
         if (currentScrollPos <= 65){
           document.getElementById("header").style.top = "0px";
