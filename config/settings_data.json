@@ -245,6 +245,37 @@
       },
       "my-cart": {
         "type": "my-cart",
+        "blocks": {
+          "d0c1641a-dbab-4d18-a415-4ebd87166ced": {
+            "type": "Trigger",
+            "settings": {
+              "product_list": [
+                "standard-gravity-gewichtsdecke",
+                "standard-gravity-gewichtsdecke-familien-motiv",
+                "standard-gravity-gewichtsdecke-mit-personalisiertem-partner-motiv-fur-erwachsene",
+                "standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene",
+                "standard-gravity-gewichtsdecke-mit-personalisiertem-hunde-katzen-motiv-fur-erwachsene",
+                "standard-gravity-hero-gewichtsdecke-fur-kinder-erwachsene",
+                "gravity-ringwelt-gewichtsdecke-fur-kinder-erwachsene",
+                "gravity-throne-gewichtsdecke-fur-kinder-erwachsene",
+                "gravity-sommer-gewichtsdecke-fur-erwachsene",
+                "basic-gravity-gewichtsdecke-fur-erwachsene",
+                "therapiedecken"
+              ],
+              "enable_upsell_1": true,
+              "upsell_product_1": "balance-schlafmaske",
+              "enable_upsell_2": true,
+              "upsell_product_2": "beauty-queen-anti-falten-kissen",
+              "enable_upsell_3": false,
+              "upsell_product_3": "",
+              "enable_upsell_4": false,
+              "upsell_product_4": ""
+            }
+          }
+        },
+        "block_order": [
+          "d0c1641a-dbab-4d18-a415-4ebd87166ced"
+        ],
         "settings": {
         }
       }
