@@ -2,21 +2,26 @@
   .website-tab{
   	background: #ebebeb;
   }
-  .website-tab__Wrapper{
-	display: flex;
+  .website-tab_div{
+    display: flex;
+    justify-content: space-between;
 	max-width: 1200px;
-	padding-left: 15fipx;
 	margin: auto;
+    padding: 0 50px;
+  }
+  .website-tab__Wrapper{
 	height: 25px;
+    margin-top: -1px;
   }
   .website-tab-img{
   	display: inline-flex;
 	justify-content:center;
 	align-items: center;
 	height: 100%;
-	padding: 8px 10px 5px 10px;
+	padding: 8px 10px 5px;
   }
   .website-tab-img img{
+    vertical-align: inherit;
   }
   .website-tab-img.active{
   	background: #fff;
@@ -32,31 +37,80 @@
   .website-tab-img.inactive:focus{
   	background: #3a3c3c;
   }
+  .website-tab-reviews b{
+    font-family: Montserrat, sans-serif;
+    font-size: 11px;
+    vertical-align: text-top;
+    font-weight: 600;
+  }
+  .website-tab-reviews .desktop-icons{
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  @media (max-width: 991px){
+    .desktop-view-announcement{
+      display: none;
+    }
+  }
   @media (min-width: 641px){
-    .website-tab-img.active{
-      margin-left: 30px;
+    .mobile-icon{
+      display: none;
     }
   }
   @media (max-width: 640px){
     .website-tab{
-    	text-align: center;
+      text-align: center;
+      height: 25px;
     }
     .website-tab__Wrapper{
       display: flex;
       padding: 0 0;
+      height: 26px;
+    }
+    .website-tab-img.inactive{
+      margin-left: 0;
+    }
+    .desktop-icon{
+      display: none;
+    }
+    .website-tab_div{
+      padding: 0 18px 0 0;
+    }
+    .website-tab-img{
+      padding-left: 7px;
+      padding-right: 7px;
     }
   }
 {% endstyle %}
 
 <div class="website-tab">
-  <div class="website-tab__Wrapper">
-    <div class="website-tab-img active">
-      <img width= "90px" height="auto" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_svg.svg?v=1646927811">
+  <div class="website-tab_div">
+    <div class="website-tab__Wrapper">
+      <div class="website-tab-img active">
+        <img class="desktop-icon" width= "90px" height="auto" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD_svg.svg?v=1646927811">
+        <img class="mobile-icon" width= "24px" height="24px" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TD-Favicon-32x32.png?v=1663686124">
+      </div>
+      <div class="website-tab-img inactive">
+        <a href="https://therapiewelt.de/" target="_blank">
+          <img width= "80px" height="auto" style="margin-top: 7px;" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TW_logo_white_svg.svg?v=1646927890">
+        </a>
+      </div>
     </div>
-    <div class="website-tab-img inactive">
-      <a href="https://therapiewelt.de/" target="_blank">
-        <img width= "80px" height="auto" style="margin-top: 5px;" src="https://cdn.shopify.com/s/files/1/2451/6611/files/TW_logo_white_svg.svg?v=1646927890">
-      </a>
+    <div class="website-tab-reviews">
+      <span class="desktop-view-announcement">
+        <span class="desktop-icons">
+          <span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-full"></span><span class="icon-star-half1"></span> 
+          <b>4.83/5 (10.000+ Bewertungen)</b>
+        </span>
+        <span class="desktop-icons">
+          <span class="icon-checkmark"></span> 
+          <b>Original Therapiedecken</b>
+        </span>
+      </span>
+      <span class="desktop-icons">
+        <span class="icon-calendar-test"></span> 
+        <b>100 Tage Probeschlafen</b>
+      </span>
     </div>
   </div>
 </div>
