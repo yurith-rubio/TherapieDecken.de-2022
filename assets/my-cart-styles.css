@@ -413,6 +413,7 @@ input.MyCart_InputItem{
   z-index: 10000;
   bottom: 0;
   right: 0;
+  transition: transform .5s;
   transform: translateY(100%);
 }
 .MyCartUpsells_MainContainer > form{
