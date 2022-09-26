@@ -131,17 +131,17 @@
               return lineItem.properties?._autoadded === 'Yes' ;
           });
           
-          // If there is the automaticaly added product —
-          // lets calculate the currentSubtotal without the product
-          if ( autoAddedLineItem > -1 ) {
-              currentSubtotal -= state.cart.items[autoAddedLineItem].final_line_price;
-          }
-      
         const promoSubtotal = {{ promoSubtotal }}00;
 
           // If cart state exists and there is no Ajax Cart API request in progress
           if ( state.status.cartStateSet && !state.status.requestInProgress ) {
               let currentSubtotal = state.cart.items_subtotal_price;
+            
+              // If there is the automaticaly added product —
+              // lets calculate the currentSubtotal without the product
+              if ( autoAddedLineItem > -1 ) {
+                  currentSubtotal -= state.cart.items[autoAddedLineItem].final_line_price;
+              }
 
               if ( currentSubtotal >= promoSubtotal ) {
                 // If there is no a giftProductID product with an applied discount
