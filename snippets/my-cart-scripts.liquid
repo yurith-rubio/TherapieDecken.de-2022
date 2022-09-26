@@ -116,8 +116,6 @@
 </script>
 
 <script>
-  const mainUpsellContainer = document.querySelector(".MyCartUpsells_MainContainer");
-  
   function overlayOn() {
     document.getElementById("MyCart_Overlay").style.display = "block";
   }
@@ -152,7 +150,7 @@
     const cartUpsellWrapper = document.querySelector("#cartUpsellWrapper_" + id);
     cartUpsellWrapper.style.display = "block";
     cartUpsellWrapper.setAttribute("data-status", "active");
-    mainUpsellContainer.style.animation = "myUpsellUp .5s";
+    cartUpsellWrapper.style.animation = "myUpsellUp .5s";
     const priceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_UpsellPrice");
     const comparedPriceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_ComparedPrice");
     priceElement.textContent = firstPrice;
