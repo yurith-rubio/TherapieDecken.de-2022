@@ -400,6 +400,14 @@ input.MyCart_InputItem{
     transform: translateY(0%);
   }
 }
+@keyframes myUpsellDown {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
 .MyCartUpsells_MainContainer{
   position: fixed;
   z-index: 10000;
