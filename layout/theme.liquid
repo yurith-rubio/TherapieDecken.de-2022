@@ -20,6 +20,11 @@
       <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
       {{ 'option_selection.js' | shopify_asset_url | script_tag }}
     {% endif %}
+    {% comment %}  Gift item styles - with slidecart styles - Yurith {% endcomment %}
+    {{ 'my-cart-styles.css' | asset_url | stylesheet_tag }}
+    {% comment %}  Add FREE GIFT to slide cart code - Yurith {% endcomment %}
+    {% render 'my-cart-scripts', settings: settings %}
+    {% render 'my-cart-free-gift-scripts', settings: settings %}
     
     {% comment %}
     {% if product.handle == 'premium-balance-gewichtsdecke-fur-erwachsene' %}
@@ -35,7 +40,7 @@
       <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
 
-   <!-- Google Tag Manager -->
+    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -43,15 +48,14 @@
     })(window,document,'script','dataLayer','GTM-TP3DS7X');</script>
     <!-- End Google Tag Manager -->
 
-  <!-- Global site tag (gtag.js) - Google Ads: AW-828326467 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-828326467"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'AW-828326467');
-  </script>
+    <!-- Global site tag (gtag.js) - Google Ads: AW-828326467 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-828326467"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-828326467');
+    </script>
 
     <link rel="canonical" href="{{ canonical_url }}">
 
@@ -62,13 +66,6 @@
     {% render 'social-meta-tags' %}
     {% render 'css-variables' %}
     
-    {% comment %}  Gift item styles - with slidecart styles - Yurith {% endcomment %}
-    {{ 'my-cart-styles.css' | asset_url | stylesheet_tag }}
-    
-    {% comment %}  Add FREE GIFT to slide cart code - Yurith {% endcomment %}
-    {% render 'my-cart-scripts', settings: settings %}
-    {% render 'my-cart-free-gift-scripts', settings: settings %}
-
     <!-- This code is automatically managed by StarApps Studio -->
     <!-- Please contact support@starapps.studio for any help -->
     
