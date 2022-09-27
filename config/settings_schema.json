@@ -726,24 +726,14 @@
         "label": "Mobile image"
       },
       {
-        "type": "select",
-        "id": "image_position",
-        "label": "Mobile: Image position",
-        "options": [
-          {
-            "value": "center",
-            "label": "center"
-          },
-          {
-            "value": "left",
-            "label": "left"
-          },
-          {
-            "value": "right",
-            "label": "right"
-          }
-        ],
-        "default": "center"
+        "type": "range",
+        "id": "promo_tablet_image_position",
+        "label": "Tablet: Image position",
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "unit": "%",
+        "default": 50
       },
       {
         "type": "range",
