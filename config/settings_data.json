@@ -119,11 +119,11 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
-          "background": "#e84e1b",
+          "background": "#f982ad",
           "text_color": "#ffffff",
-          "content": "GOODBYE SOMMER! ☀️🕶️ <b>20€ Rabatt<\/b> auf Gravity &amp; Balance Decken, ohne Code! | Endet in",
+          "content": "Zum Brustkrebsmonat Oktober <b>5% Spende an Brustkrebs Deutschland<\/b> | Endet in",
           "link": "shopify:\/\/collections\/erwachsene"
         }
       },
