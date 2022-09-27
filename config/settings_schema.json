@@ -770,7 +770,7 @@
         "label": "Desktop: Vertical position",
         "min": -150,
         "max": 150,
-        "step": 5,
+        "step": 10,
         "unit": "px",
         "default": 0
       },
@@ -780,7 +780,7 @@
         "label": "Mobile: Vertical position",
         "min": -150,
         "max": 150,
-        "step": 5,
+        "step": 10,
         "unit": "px",
         "default": 0
       },
