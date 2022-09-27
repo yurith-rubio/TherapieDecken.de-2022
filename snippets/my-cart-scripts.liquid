@@ -94,9 +94,12 @@
     let sum = 0;
     let totalPrice = 0;
     if (discounts) {
-      totalPrice = document.querySelector(".MyCart_FinalPrice").innerText;
-      totalPrice = totalPrice.replace("€", "").trim();
-      totalPrice = 0 + parseFloat(totalPrice.replace(".", "").replace(",", "."));
+      totalPrice = document.querySelector(".MyCart_FinalPrice");
+      if (totalPrice){
+        totalPrice = totalPrice.innerText;
+        totalPrice = totalPrice.replace("€", "").trim();
+        totalPrice = 0 + parseFloat(totalPrice.replace(".", "").replace(",", "."));
+      }
       
       discounts.forEach(element => {
         let discount = element.innerText.replace("€", "").trim();
