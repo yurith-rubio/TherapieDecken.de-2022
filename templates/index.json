@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Header-image-sleep-study-1200x800px.jpg",
             "mobile_image": "shopify:\/\/shop_images\/2-Well-being-450x430px.jpg",
-            "apply_overlay": true,
+            "apply_overlay": false,
             "content_position": "middleLeft",
             "subheading": "Dank Gewichtsdecke",
             "title": "Schlaf <span style=\"color:#fac636\">verbessern<\/span>, \n<br>\nStress <span style=\"color:#fac636\">abbauen<\/span> & <br>\nWohlbefinden <span style=\"color:#fac636\">steigern<\/span>",
