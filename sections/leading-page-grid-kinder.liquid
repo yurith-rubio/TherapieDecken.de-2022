@@ -49,7 +49,9 @@
         flex-wrap: wrap;
         align-items: end;
     }
-    .leadGrid_productImageBadge{
+    .leadGrid_productImageBadge,
+    .leadGrid_productImageBadge2,
+    .leadGrid_productImageBadge3{
         position: relative;
         top: -20%;
     }
@@ -63,6 +65,12 @@
         .leadGrid_productImageBadge{
           width: {{ section.settings.badge1_width_mobile }}%;
         }
+        .leadGrid_productImageBadge2{
+          width: {{ section.settings.badge2_width_mobile }}%;
+        }
+        .leadGrid_productImageBadge3{
+          width: {{ section.settings.badge3_width_mobile }}%;
+        }
     }
     @media only screen and (min-width: 641px){
         .leadGrid_container{
@@ -73,6 +81,12 @@
         }
         .leadGrid_productImageBadge{
           width: {{ section.settings.badge1_width }}%;
+        }
+        .leadGrid_productImageBadge{
+          width: {{ section.settings.badge2_width }}%;
+        }
+        .leadGrid_productImageBadge{
+          width: {{ section.settings.badge3_width }}%;
         }
     }
 {% endstyle %}
@@ -119,7 +133,7 @@
         <div class="leadGrid_productImageContent">
           <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/gravity_kids.png?v=1663601123" alt="gravity-product" width="" height="auto">
           {% if settings.enable_leading_collection_badge and section.settings.promo_badge_2 %}
-            <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-gravity-product" width="" height="auto">
+            <img class="leadGrid_productImageBadge2" src="{{ settings.promo_badge }}" alt="badge-gravity-product" width="" height="auto">
           {% endif %}
         </div>
         <h2 class="Heading u-h1">Gravity</h2>
@@ -157,7 +171,7 @@
         <div class="leadGrid_productImageContent">
           <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/balance_kids.png?v=1663601123" alt="balance-product" width="" height="auto">
           {% if settings.enable_leading_collection_badge and section.settings.promo_badge_3 %}
-            <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-balance-product" width="" height="auto">
+            <img class="leadGrid_productImageBadge3" src="{{ settings.promo_badge }}" alt="badge-balance-product" width="" height="auto">
           {% endif %}
         </div>
         <h2 class="Heading u-h1">Balance</h2>
