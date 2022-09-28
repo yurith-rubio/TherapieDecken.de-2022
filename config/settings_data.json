@@ -74,6 +74,7 @@
     "text_button_color_hover": "#ffffff",
     "promotional_collection_cover": false,
     "promo_badge": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/Breast_cancer_Breast_Cancer_Awareness_Month_2022_badge.svg?v=1664356701",
+    "enable_leading_collection_badge": true,
     "enable_collection_badge": true,
     "collection_badge_max_width": 150,
     "collection_badge_max_width_mobile": 110,
