@@ -60,6 +60,9 @@
         .leadGrid_productBlockWrapper{
             margin: 0 30px;
         }
+        .leadGrid_productImageBadge{
+          width: {{ section.settings.badge1_width_mobile }}%;
+        }
     }
     @media only screen and (min-width: 641px){
         .leadGrid_container{
@@ -67,6 +70,9 @@
         }
         .leadGrid_productBlockWrapper{
             width: 100%;
+        }
+        .leadGrid_productImageBadge{
+          width: {{ section.settings.badge1_width }}%;
         }
     }
 {% endstyle %}
