@@ -923,7 +923,7 @@
       {
         "type": "select",
         "id": "enable_free_product",
-        "label": "Enable free x for y with matching values",
+        "label": "Select how you give a free item",
         "options": [
           {
             "value": "enable_free_x_compared",
