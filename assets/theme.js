@@ -2348,6 +2348,7 @@
     }, {
       key: "_updateProductPrices",
       value: function _updateProductPrices(newVariant, previousVariant) {
+        console.log("_updateProductPrices");
         var productMetaPrices = this.element.querySelector('.ProductMeta__PriceList');
         var productMonthlyPrices = this.element.querySelector('.ProductItem__MonthlyPrice');
         var upsellCoversMonthlyPrices = this.element.querySelector('.ProductItem__CoversMonthlyPrice');
