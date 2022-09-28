@@ -29,6 +29,8 @@
     "166141789446b3e46d": {
       "type": "leading-page-grid",
       "settings": {
+        "promo_badge_1": true,
+        "promo_badge_2": false
       }
     },
     "1661417927ad24a253": {
