@@ -841,8 +841,15 @@
       },
       {
         "type": "checkbox",
+        "id": "enable_leading_collection_badge",
+        "label": "Enable badge on LEADING COLLECTION PAGE",
+        "info": "[For exception rules:]",
+        "default": false
+      },
+      {
+        "type": "checkbox",
         "id": "enable_collection_badge",
-        "label": "Enable badge",
+        "label": "Enable badge on GRID COLLECTION PAGE",
         "info": "[For exception rules:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/collection-promotional-badge.liquid)",
         "default": false
       },
