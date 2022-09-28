@@ -947,7 +947,7 @@
       {
         "type": "header",
         "content": "Gift Product",
-        "info": "Set the minimum amount to spend to get the free item and add again the amount in here [discounts tab](https:\/\/therapiewelt.myshopify.com\/admin\/discounts\/automatic\/932332732480)"
+        "info": "For any option, we need to set the discount with a script or in here [discounts tab](https:\/\/therapiewelt.myshopify.com\/admin\/discounts\/automatic\/932332732480)"
       },
       {
         "type": "product",
