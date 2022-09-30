@@ -86,7 +86,7 @@
     "enable_free_product": "free_for_x_amountset",
     "gift_product": "schosskissen-kalte-oder-heisse-kompresse",
     "gift_product_id": 43705747112204,
-    "gift_product_min_spend": 2000,
+    "gift_product_min_spend": 100,
     "trigger_product": "",
     "seasonal_product_info": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-banner-2.jpg",
