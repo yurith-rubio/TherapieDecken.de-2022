@@ -46,12 +46,30 @@
     .leadGrid_lowestPrice{
         font-size: 24px;
     }
+    .leadGrid_productImageContent{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: end;
+    }
+    .leadGrid_productImageBadge,
+    .leadGrid_productImageBadge2{
+      position: relative;
+      margin-top: -50px;
+      margin-bottom: 10px;
+    }
     @media only screen and (max-width: 640px){
         .leadGrid_container{
             grid-template-columns: auto;
         }
         .leadGrid_productBlockWrapper{
             margin: 0 30px;
+        }
+        .leadGrid_productImageBadge{
+          width: {{ section.settings.badge1_width_mobile }}%;
+        }
+        .leadGrid_productImageBadge2{
+          width: {{ section.settings.badge2_width_mobile }}%;
         }
     }
     @media only screen and (min-width: 641px){
@@ -60,6 +78,12 @@
         }
         .leadGrid_productBlockWrapper{
             width: 100%;
+        }
+        .leadGrid_productImageBadge{
+          width: {{ section.settings.badge1_width }}%;
+        }
+        .leadGrid_productImageBadge2{
+          width: {{ section.settings.badge2_width }}%;
         }
     }
 {% endstyle %}
@@ -73,7 +97,12 @@
     <div class="leadGrid_productBlockWrapper">
       <a href="/collections/gravity-therapiedecken-fur-erwachsene">
         <img class="leadGrid_logo" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Gravity-black-svg-logo.svg?v=1661176871" alt="gravity-logo" width="100" height="auto">
-        <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Gravity_new.png?v=1661511818" alt="gravity-product" width="" height="auto">
+        <div class="leadGrid_productImageContent">
+          <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Gravity_new.png?v=1661511818" alt="gravity-product" width="" height="auto">
+          {% if settings.enable_leading_collection_badge and section.settings.promo_badge_1 %}
+            <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-gravity-product" width="" height="auto">
+          {% endif %}
+        </div>
         <h2 class="Heading u-h1">Gravity</h2>
         <p class="Heading">Gewichtsdecke für Erwachsene</p>
         <div style='{{ jm_style }}; margin-bottom: 20px;' class='jdgm-widget jdgm-preview-badge' data-id='{{ gravity_most_reviews.id }}'
@@ -108,7 +137,12 @@
     <div class="leadGrid_productBlockWrapper">
       <a href="/collections/balance-therapiedecken-fur-erwachsene">
         <img class="leadGrid_logo" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Balance-black-svg-logo.svg?v=1661176871" alt="balance-logo" width="100" height="auto">
-        <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Balance_new.png?v=1661511817" alt="balance-product" width="" height="auto">
+        <div class="leadGrid_productImageContent">
+          <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Balance_new.png?v=1661511817" alt="balance-product" width="" height="auto">
+          {% if settings.enable_leading_collection_badge and section.settings.promo_badge_2 %}
+            <img class="leadGrid_productImageBadge2" src="{{ settings.promo_badge }}" alt="badge-balance-product" width="" height="auto">
+          {% endif %}
+        </div>
         <h2 class="Heading u-h1">Balance</h2>
         <p class="Heading">Gewichtsdecke für Erwachsene</p>
         <div style='{{ jm_style }}; margin-bottom: 20px;' class='jdgm-widget jdgm-preview-badge' data-id='{{ balance.id }}'
@@ -166,7 +200,60 @@
 {% schema %}
 {
   "name": "Grid",
-  "settings": [],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "promo_badge_1",
+      "label": "Enable badge on block 1",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "badge1_width",
+      "label": "Desktop: Width",
+      "min": 30,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "badge1_width_mobile",
+      "label": "Mobile: Width",
+      "min": 30,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "checkbox",
+      "id": "promo_badge_2",
+      "label": "Enable badge on block 2",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "badge2_width",
+      "label": "Desktop: Width",
+      "min": 30,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "badge2_width_mobile",
+      "label": "Mobile: Width",
+      "min": 30,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "default": 50
+    }
+  ],
   "presets": [
 	{
       "category": "Pages",

@@ -29,6 +29,12 @@
     "166141789446b3e46d": {
       "type": "leading-page-grid",
       "settings": {
+        "promo_badge_1": true,
+        "badge1_width": 50,
+        "badge1_width_mobile": 50,
+        "promo_badge_2": true,
+        "leading_collection_badge2_max_width": 50,
+        "leading_collection_badge2_max_width_mobile": 50
       }
     },
     "1661417927ad24a253": {
