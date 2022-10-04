@@ -40,6 +40,7 @@
     },
     "16311982087b0ba39d": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": false,
         "spacer_bottom": false,
@@ -64,6 +65,7 @@
     },
     "163119834907877962": {
       "type": "html-with-image",
+      "disabled": true,
       "settings": {
         "spacer_top": false,
         "spacer_bottom": false,
@@ -86,6 +88,76 @@
         "link_url_extra": ""
       }
     },
+    "1664888903ba3e54d9": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "45f19c4a-048e-49ce-a600-e977b8aaf6b7": {
+          "type": "title",
+          "settings": {
+            "subheading": "",
+            "title": "Sie leiden unter Schlafproblemen während der Wechseljahre?",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "b9d36988-6ef2-4821-9e8c-57e5b530cacd": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Über die Hälfte aller Frauen leider während der Wechseljahre unter anhaltenden Schlafstörungen, die eng mit Konzentrationsschwierigkeiten, Stress, Gereiztheit und Übermüdung am nächsten Tag einhergehen.<br\/><br\/>Eine Ursache für die auftretenden Schlafschwierigkeiten ist vor allem die Umstellung der Hormone. Dabei hat vor allem das Hormon Östrogen Auswirkungen auf den Schlaf, da es für die Stoffwechselvorgänge im Gehirn verantwortlich ist und so die Tiefschlaf- und REM-Phase beeinflusst. Ein sinkender Östrogenspiegel hat daher negative Auswirkungen auf das Ein- und Durchschlafen. Die hormonellen Veränderungen führen außerdem zu Hitzewallungen und Schweißausbrüchen, die vermehrt nachts auftreten und so die Nachtruhe stören.<br\/><br\/>Viele Frauen wachen vermehrt nachts durch auftretende Hitzewellen auf und finden anschließend nur schwer in den Schlaf zurück. Die nächtlichen Hitzewallungen sind häufig begleitet von innerer Unruhe und starkem Schwitzen.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "45f19c4a-048e-49ce-a600-e977b8aaf6b7",
+        "b9d36988-6ef2-4821-9e8c-57e5b530cacd"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/gewichtsdecke-wechseljahre-1_600x_4fbcca59-25c1-42b3-aeb6-e1a7fd9035ce.webp",
+        "image_position": "right"
+      }
+    },
+    "166488865243f2d15a": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "1f3bd783-08d4-4ae8-8d01-d754685dbf38": {
+          "type": "title",
+          "settings": {
+            "subheading": "",
+            "title": "Besser schlafen mit Therapiedecke",
+            "icon_title": false,
+            "icons_duotone": "none"
+          }
+        },
+        "dcf9de65-708f-4297-bd37-9e0615330347": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Die richtige Wahl der Bettdecke, kann dabei schon eine erhebliche Veränderung der Schlafqualität bringen und das Schlafverhalten verbessern.<br\/><br\/>Die bis zu 12kg schwere Therapiedecke fördert durch ihr Gewicht die Ausschüttung der Hormone Serotonin (Glückshormon) und Melatonin (Schlafhormon) und reduziert gleichzeitig den Cortisolspiegel (Stresshormon). Der Körper kann sich leichter entspannen und die Tiefschlafphase kann schneller erreicht werden.<br\/><br\/>Die Therapiedecke ist in verschiedenen Modellen und Bezügen verfügbar. Besonders unsere Baumwollbezüge sind für nächtliche Hitzewallungen besonders gut geeignet. Durch die Therapiedecken wird das Ein- und Durchschlafen auf natürliche Weise und ohne Einsatz von Medikamenten wie Schlaftabletten erleichtert.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1f3bd783-08d4-4ae8-8d01-d754685dbf38",
+        "dcf9de65-708f-4297-bd37-9e0615330347"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/gewichtsdecke-wechseljahre-2_600x_163add43-8687-4a7d-ae94-b90d7ab4a969.webp",
+        "image_position": "left"
+      }
+    },
     "16311984775c5a83b3": {
       "type": "custom-html",
       "disabled": true,
@@ -101,7 +173,7 @@
         "bg-color": "#ffffff",
         "button_text": "Jetzt Testen",
         "button_url": "\/collections\/erwachsene\/products\/therapiedecken",
-        "spacer_top": "30px",
+        "spacer_top": "0px",
         "spacer_bottom": "30px"
       }
     },
@@ -129,6 +201,8 @@
     "166488843815b02764",
     "16311982087b0ba39d",
     "163119834907877962",
+    "1664888903ba3e54d9",
+    "166488865243f2d15a",
     "16311984775c5a83b3",
     "16648885783cdb92b3",
     "1631198513175848d9",
