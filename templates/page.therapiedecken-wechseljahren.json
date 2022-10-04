@@ -149,7 +149,7 @@
       "settings": {
         "slide_style": false,
         "spacer_top": false,
-        "spacer_bottom": false,
+        "spacer_bottom": true,
         "bg-color": "",
         "bg-color-text-html": "",
         "text_align": "left",
