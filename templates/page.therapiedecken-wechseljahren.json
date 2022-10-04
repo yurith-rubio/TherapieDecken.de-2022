@@ -3,8 +3,9 @@
     "1654022924d7c7c4b7": {
       "type": "page-standard-header",
       "settings": {
-        "custom_title": false,
+        "enable_custom_title": false,
         "custom_title_text": "Customize Title if needed",
+        "sub_headline": "Customize Title if needed",
         "image": "shopify:\/\/shop_images\/wechseljahre-gewichtsdecke-therapiedecke-800x535px_b475323a-d578-4183-82d2-6884795612f0.jpg",
         "mobile_custom": false,
         "apply_overlay": true,
@@ -22,22 +23,22 @@
       "type": "custom-html",
       "settings": {
         "html": "<div style=\"margin: 10px 0 60px;\"><a class=\"Button Button--primary\" href=\"\/collections\/erwachsene\/products\/therapiedecken\">Jetzt Testen<\/a><\/div>",
-        "spacer": "50px",
+        "spacer": "0",
         "bg-color": ""
       }
     },
     "16311982087b0ba39d": {
       "type": "html-with-image",
       "settings": {
-        "spacer_top": true,
-        "spacer_bottom": true,
+        "spacer_top": false,
+        "spacer_bottom": false,
         "bg-color": "",
         "bg-color-text-html": "",
         "icon_title": false,
         "icons_duotone": "none",
         "subheading": "",
         "title": "Sie leiden unter Schlafproblemen während der Wechseljahre?",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/gewichtsdecke-wechseljahre-1.jpg",
         "image_position": "right",
         "content_html": "<p>Über die Hälfte aller Frauen leider während der Wechseljahre unter anhaltenden Schlafstörungen, die eng mit Konzentrationsschwierigkeiten, Stress, Gereiztheit und Übermüdung am nächsten Tag einhergehen.\n<br><br>Eine Ursache für die auftretenden Schlafschwierigkeiten ist vor allem die Umstellung der Hormone. Dabei hat vor allem das Hormon Östrogen Auswirkungen auf den Schlaf, da es für die Stoffwechselvorgänge im Gehirn verantwortlich ist und so die Tiefschlaf- und REM-Phase beeinflusst. Ein sinkender Östrogenspiegel hat daher negative Auswirkungen auf das Ein- und Durchschlafen. Die hormonellen Veränderungen führen außerdem zu Hitzewallungen und Schweißausbrüchen, die vermehrt nachts auftreten und so die Nachtruhe stören.\n<br><br>Viele Frauen wachen vermehrt nachts durch auftretende Hitzewellen auf und finden anschließend nur schwer in den Schlaf zurück. Die nächtlichen Hitzewallungen sind häufig begleitet von innerer Unruhe und starkem Schwitzen.\n<\/p>",
@@ -53,15 +54,15 @@
     "163119834907877962": {
       "type": "html-with-image",
       "settings": {
-        "spacer_top": true,
-        "spacer_bottom": true,
+        "spacer_top": false,
+        "spacer_bottom": false,
         "bg-color": "",
         "bg-color-text-html": "",
         "icon_title": false,
         "icons_duotone": "none",
         "subheading": "",
         "title": "Besser schlafen mit Therapiedecke",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/gewichtsdecke-wechseljahre-2.jpg",
         "image_position": "left",
         "content_html": "<p>Die richtige Wahl der Bettdecke, kann dabei schon eine erhebliche Veränderung der Schlafqualität bringen und das Schlafverhalten verbessern.\n<br><br>\nDie bis zu 12kg schwere Therapiedecke fördert durch ihr Gewicht die Ausschüttung der Hormone Serotonin (Glückshormon) und Melatonin (Schlafhormon) und reduziert gleichzeitig den Cortisolspiegel (Stresshormon). Der Körper kann sich leichter entspannen und die Tiefschlafphase kann schneller erreicht werden.\n<br><br>\nDie Therapiedecke ist in verschiedenen Modellen und Bezügen verfügbar. Besonders unsere Baumwollbezüge sind für nächtliche Hitzewallungen besonders gut geeignet. Durch die Therapiedecken wird das Ein- und Durchschlafen auf natürliche Weise und ohne Einsatz von Medikamenten wie Schlaftabletten erleichtert.\n<\/p>",
