@@ -1,10 +1,10 @@
-{% if product.title contains 'Premium Balance Outlast' %}
+{% if product.handle == 'premium-balance-outlast-gewichtsdecke-fur-erwachsene' %}
   {% render 'outlast-badge' %}
 {% endif %}
-{% if product.handle contains 'gravity-zauberei-gewichtsdecke' %}
+{% if product.handle == 'gravity-zauberei-gewichtsdecke' %}
   {% render 'zauberei-badge' %}
 {% endif %}
-{% if product.handle contains 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene' or product.handle contains 'therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv' %}
+{% if product.handle == 'standard-gravity-gewichtsdecke-mit-personalisierten-hunde-katzen-motiv-fur-erwachsene' or product.handle == 'therapiedecken-baumwollbezug-mit-personalisiertem-hunde-katzen-motiv' %}
   {% render 'tier-edition' %}
 {% endif %}
 {% if product.handle == 'standard-gravity-gewichtsdecke-familien-motiv' %}
