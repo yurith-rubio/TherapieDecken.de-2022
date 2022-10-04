@@ -113,8 +113,8 @@
       ],
       "settings": {
         "slide_style": false,
-        "spacer_top": true,
-        "spacer_bottom": true,
+        "spacer_top": false,
+        "spacer_bottom": false,
         "bg-color": "",
         "bg-color-text-html": "",
         "text_align": "left",
@@ -148,8 +148,8 @@
       ],
       "settings": {
         "slide_style": false,
-        "spacer_top": true,
-        "spacer_bottom": true,
+        "spacer_top": false,
+        "spacer_bottom": false,
         "bg-color": "",
         "bg-color-text-html": "",
         "text_align": "left",
