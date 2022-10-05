@@ -1,7 +1,4 @@
 <!-- section: main-collection.liquid -->
-{% if settings.enable_collection_badge %}
-  
-{% endif %}
   
 {%- if section.settings.show_layout_switch -%}
   {%- assign desktop_items_per_row = cart.attributes.collection_desktop_items_per_row | default: section.settings.grid_desktop_items_per_row | times: 1 -%}
