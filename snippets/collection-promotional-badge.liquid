@@ -1,6 +1,4 @@
 <!-- collection-promotional-badge.liquid -->
-{%- comment -%}See CSS on badges.css file {%- endcomment -%}
-{{ 'badges.css' | asset_url | stylesheet_tag }}
 
 {% comment %}
   {% style %}
@@ -18,13 +16,18 @@
 {% endstyle %}
 {% endcomment %}
 
-{% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' or collection.handle == 'balance-therapiedecken-fur-erwachsene' %}
-  <div class="CollectionBadge_Mask__Wrapper">
-    {% comment %}<div class="Collection_SmallBadge">Gratis</div>{% endcomment %}
-    <div class="Collection_ImgSmallBadge">
-      <img class="Collection_ImgSize_SmallBadge" 
-           src="{{ settings.promo_badge }}" 
-           alt="Collection promotional badge" />
+{% if settings.enable_collection_badge %}
+  {%- comment -%}See CSS on badges.css file {%- endcomment -%}
+  {{ 'badges.css' | asset_url | stylesheet_tag }}
+
+  {% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' or collection.handle == 'balance-therapiedecken-fur-erwachsene' %}
+    <div class="CollectionBadge_Mask__Wrapper">
+      {% comment %}<div class="Collection_SmallBadge">Gratis</div>{% endcomment %}
+      <div class="Collection_ImgSmallBadge">
+        <img class="Collection_ImgSize_SmallBadge" 
+             src="{{ settings.promo_badge }}" 
+             alt="Collection promotional badge" />
+      </div>
     </div>
-  </div>
+  {% endif %}
 {% endif %}
