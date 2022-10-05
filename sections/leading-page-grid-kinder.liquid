@@ -90,7 +90,7 @@
 <div class="leadGrid_container">
     <div class="leadGrid_productBlockWrapper">
       <a href="/products/medizinische-gewichtsdecke-fur-kinder">
-        <span style="height: 42px;"></span>
+        <span style="height: 42px; display:block"></span>
         <div class="leadGrid_productImageContent">
           <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/medical.png?v=1663601123" alt="medical-product" width="" height="auto">
           {% if settings.enable_leading_collection_badge and section.settings.promo_badge_1 %}
@@ -128,7 +128,7 @@
         <div class="leadGrid_productImageContent">
           <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/gravity_kids.png?v=1663601123" alt="gravity-product" width="" height="auto">
           {% if settings.enable_leading_collection_badge and section.settings.promo_badge_2 %}
-            <img class="leadGrid_productImageBadge2" src="{{ settings.promo_badge }}" alt="badge-gravity-product" width="" height="auto">
+            <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-gravity-product" width="" height="auto">
           {% endif %}
         </div>
         <h2 class="Heading u-h1">Gravity</h2>
@@ -168,7 +168,7 @@
         <div class="leadGrid_productImageContent">
           <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/balance_kids.png?v=1663601123" alt="balance-product" width="" height="auto">
           {% if settings.enable_leading_collection_badge and section.settings.promo_badge_3 %}
-            <img class="leadGrid_productImageBadge3" src="{{ settings.promo_badge }}" alt="badge-balance-product" width="" height="auto">
+            <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-balance-product" width="" height="auto">
           {% endif %}
         </div>
         <h2 class="Heading u-h1">Balance</h2>
@@ -216,50 +216,10 @@
       "default": false
     },
     {
-      "type": "range",
-      "id": "badge1_width",
-      "label": "Desktop: Width",
-      "min": 30,
-      "max": 100,
-      "step": 10,
-      "unit": "%",
-      "default": 50
-    },
-    {
-      "type": "range",
-      "id": "badge1_width_mobile",
-      "label": "Mobile: Width",
-      "min": 30,
-      "max": 100,
-      "step": 10,
-      "unit": "%",
-      "default": 50
-    },
-    {
       "type": "checkbox",
       "id": "promo_badge_2",
       "label": "Enable badge on block 2",
       "default": false
-    },
-    {
-      "type": "range",
-      "id": "badge2_width",
-      "label": "Desktop: Width",
-      "min": 30,
-      "max": 100,
-      "step": 10,
-      "unit": "%",
-      "default": 50
-    },
-    {
-      "type": "range",
-      "id": "badge2_width_mobile",
-      "label": "Mobile: Width",
-      "min": 30,
-      "max": 100,
-      "step": 10,
-      "unit": "%",
-      "default": 50
     },
     {
       "type": "checkbox",
@@ -269,7 +229,7 @@
     },
     {
       "type": "range",
-      "id": "badge3_width",
+      "id": "badge_width",
       "label": "Desktop: Width",
       "min": 30,
       "max": 100,
@@ -279,7 +239,7 @@
     },
     {
       "type": "range",
-      "id": "badge3_width_mobile",
+      "id": "badge_width_mobile",
       "label": "Mobile: Width",
       "min": 30,
       "max": 100,
