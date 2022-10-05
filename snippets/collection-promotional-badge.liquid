@@ -1,22 +1,21 @@
 <!-- collection-promotional-badge.liquid -->
-
-{% comment %}
+{% if settings.enable_collection_badge %}
+  {% comment %}
+    {% style %}
+      .Grid__Cell:nth-child(3) .Collection_SmallBadge, .Grid__Cell:nth-child(3) .Collection_ImgSmallBadge{
+        display: none;
+      }
+    {% endstyle %}
+  {% endcomment %}
+  
+  {% comment %}
   {% style %}
-    .Grid__Cell:nth-child(3) .Collection_SmallBadge, .Grid__Cell:nth-child(3) .Collection_ImgSmallBadge{
+    .Grid__Cell:nth-child(n+2) .Collection_ImgSmallBadge{
       display: none;
     }
   {% endstyle %}
-{% endcomment %}
+  {% endcomment %}
 
-{% comment %}
-{% style %}
-  .Grid__Cell:nth-child(n+2) .Collection_ImgSmallBadge{
-    display: none;
-  }
-{% endstyle %}
-{% endcomment %}
-
-{% if settings.enable_collection_badge %}
   {%- comment -%}See CSS on promotional-badges.css file {%- endcomment -%}
   {{ 'promotional-badges.css' | asset_url | stylesheet_tag }}
 
