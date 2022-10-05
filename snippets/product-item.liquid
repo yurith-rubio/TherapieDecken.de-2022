@@ -41,9 +41,7 @@
     	<div class="kissenbezug-badge">Nur Kissenbezug</div>
 	  {% endif %}
    
-      {% if settings.enable_collection_badge %}
-        {% render 'collection-promotional-badge'%}
-      {% endif %}
+      {% render 'collection-promotional-badge'%}
       
       {%- if use_horizontal -%}
         {%- assign max_width = 125 -%}
