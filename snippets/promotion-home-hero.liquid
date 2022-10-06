@@ -14,7 +14,7 @@
   "pageDots": {% if section.blocks.size > 1 %}true{% else %}false{% endif %}
 }
 {%- endcapture -%}
-<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="slideshow">
+<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="slideshow" class="hi">
   <div class="Slideshow Slideshow--fullscreen">
     <div class="Slideshow__Carousel Carousel Carousel--fadeIn Carousel--fixed Carousel--insideDots"
          data-flickity-config='{{ flickity_options }}'>
