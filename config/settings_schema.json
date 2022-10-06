@@ -712,7 +712,6 @@
         "type": "checkbox",
         "id": "promotional_hero_hp_cover",
         "label": "Enable cover",
-        "info": "[For editing:](https:\/\/therapiedecken.myshopify.com\/admin\/themes\/122250559627?key=snippets\/promotion-home-hero.liquid)",
         "default": false
       },
       {
