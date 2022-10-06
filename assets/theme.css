@@ -7208,6 +7208,10 @@ a.CollectionItemPage {
   background: #f4cf00;
   color: #747474;
 }
+.sale-badge{
+  background: #ba2e2e;
+  color: #fff;
+}
 @media (max-width: 1023px){
   .product-badge-div{
     top: 3px;
