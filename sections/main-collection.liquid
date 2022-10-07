@@ -78,7 +78,7 @@
         }
         @media only screen and (max-width: 600px){
           .PromoCollection_Image{
-            background-image: url("{{ settings.collection_promo_image_mobile }}") !important;
+            background-image: url("{{ settings.collection_promo_image_mobile_art }}") !important;
           }
         }
         @media only screen and (min-width: 1000px){
@@ -91,11 +91,11 @@
               style="background: {{ settings.collection_promo_bg_color }}">
         <div class="PromoCollection_Image PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn"
              data-optimumx="1.2"
-             data-bgset="{{ settings.collection_promo_image_mobile }} 600w, {{ settings.collection_promo_image }} 800w, {{ settings.collection_promo_image }} 1200w, {{ settings.collection_promo_image }} 1400w, {{ settings.collection_promo_image }} 1600w">
+             data-bgset="{{ settings.collection_promo_image_mobile_art }} 600w, {{ settings.collection_promo_image_art }} 800w, {{ settings.collection_promo_image_art }} 1200w, {{ settings.collection_promo_image_art }} 1400w, {{ settings.collection_promo_image_art }} 1600w">
         </div>
 
         <noscript>
-          <div class="PageHeader__ImageWrapper {% if section.settings.apply_overlay %}Image--contrast{% endif %}" style="background-image: url({{ settings.collection_promo_image }})"></div>
+          <div class="PageHeader__ImageWrapper {% if section.settings.apply_overlay %}Image--contrast{% endif %}" style="background-image: url({{ settings.collection_promo_image_art }})"></div>
         </noscript>
 
         {% comment %}
