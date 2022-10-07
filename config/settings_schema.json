@@ -735,11 +735,14 @@
         "default": 50
       },
       {
-        "type": "checkbox",
-        "id": "apply_overlay",
-        "label": "Apply overlay on image",
-        "info": "This can improve text visibility.",
-        "default": true
+        "type": "range",
+        "id": "promo_image_overlay_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 10,
+        "unit": "%",
+        "label": "Image overlay",
+        "default": 0
       },
       {
         "type": "header",
