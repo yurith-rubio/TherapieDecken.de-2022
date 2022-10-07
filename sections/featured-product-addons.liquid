@@ -192,7 +192,7 @@
           
                 {%- when 'product_button_link' -%}
                   <div class="ProductMeta__ShareButtons">
-                  	<a href="{{ product.url }}" class="Button Button--primary">Mehr Erfahren</a>
+                  	<a href="{{ block.settings.button_link }}" class="Button Button--primary">Mehr Erfahren</a>
           		  </div>
                 
                 {%- when 'store_pickup' -%}
@@ -424,7 +424,14 @@
     {
       "type": "product_button_link",
       "name": "Product Button Link",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+      ]
     },
 
     {
