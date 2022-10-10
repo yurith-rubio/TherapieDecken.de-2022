@@ -12413,6 +12413,7 @@ h2.product-details-infomation-title,
 }
 .product-details-infomation-section summary {
     outline: none !important;
+    cursor: pointer;
 }
 .product-details-infomation-section {
     background-color: white;
