@@ -7208,6 +7208,10 @@ a.CollectionItemPage {
   background: #f4cf00;
   color: #747474;
 }
+.sale-badge{
+  background: #ba2e2e;
+  color: #fff;
+}
 @media (max-width: 1023px){
   .product-badge-div{
     top: 3px;
@@ -12275,6 +12279,9 @@ a.entspannung-topseller-link:hover {
  .intro-part-1 {
      padding-right: 20px;
 }
+.intro-part-1 summary{
+  cursor: pointer;
+}
  details{
      width: 100%;
 }
@@ -12409,6 +12416,7 @@ h2.product-details-infomation-title,
 }
 .product-details-infomation-section summary {
     outline: none !important;
+    cursor: pointer;
 }
 .product-details-infomation-section {
     background-color: white;
