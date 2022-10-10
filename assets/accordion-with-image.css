@@ -22,6 +22,9 @@
 .accordion-with-image_IntroPart1 {
   padding-left: 20px;
 }
+.accordion-with-image_IntroPart1 summary{
+  cursor: pointer;
+}
 details{
   width: 100%;
 }
