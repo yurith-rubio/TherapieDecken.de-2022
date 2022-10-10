@@ -4897,7 +4897,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 @supports (--css: variables) {
   .PageHeader__ImageWrapper {
-    top: calc(-1 * 0px - 0px * 0);
+    top: calc(-1 * 0px - 0px * 0)!important;
     top: calc(-1 * var(--announcement-bar-height, 0px) - var(--header-height, 0px) * var(--use-unsticky-header, 0));
     height: calc(100% + 0px + 0px * 0);
     height: calc(100% + var(--announcement-bar-height, 0px) + var(--header-height, 0px) * var(--use-unsticky-header, 0));
