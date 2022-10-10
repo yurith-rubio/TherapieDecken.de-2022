@@ -841,16 +841,6 @@
         "default": 70
       },
       {
-        "type": "image_picker",
-        "id": "collection_promo_image",
-        "label": "Desktop image"
-      },
-      {
-        "type": "image_picker",
-        "id": "collection_promo_image_mobile",
-        "label": "Mobile image"
-      },
-      {
         "type": "header",
         "content": "BADGES. Design"
       },
