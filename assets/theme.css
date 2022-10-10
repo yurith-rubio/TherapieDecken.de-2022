@@ -12279,6 +12279,9 @@ a.entspannung-topseller-link:hover {
  .intro-part-1 {
      padding-right: 20px;
 }
+.intro-part-1 summary{
+  cursor: pointer;
+}
  details{
      width: 100%;
 }
