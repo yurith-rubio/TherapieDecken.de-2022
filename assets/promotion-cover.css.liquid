@@ -49,7 +49,16 @@
   width: 100%;
   max-width: 471px;
 } 
-
+.PromoImage--contrast:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(to top,rgba(4,4,4,.45),rgba(54,54,54,.4));
+  opacity: {{ settings.promo_image_overlay_opacity | divided_by: 100.0 }} !important;
+}
 @media screen  and (max-width: 640px) {
   .promotion-home-hero_content_container{
     width: 100%;

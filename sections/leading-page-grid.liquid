@@ -66,10 +66,7 @@
             margin: 0 30px;
         }
         .leadGrid_productImageBadge{
-          width: {{ section.settings.badge1_width_mobile }}%;
-        }
-        .leadGrid_productImageBadge2{
-          width: {{ section.settings.badge2_width_mobile }}%;
+          width: {{ section.settings.badge_width_mobile }}%;
         }
     }
     @media only screen and (min-width: 641px){
@@ -80,10 +77,7 @@
             width: 100%;
         }
         .leadGrid_productImageBadge{
-          width: {{ section.settings.badge1_width }}%;
-        }
-        .leadGrid_productImageBadge2{
-          width: {{ section.settings.badge2_width }}%;
+          width: {{ section.settings.badge_width }}%;
         }
     }
 {% endstyle %}
@@ -140,7 +134,7 @@
         <div class="leadGrid_productImageContent">
           <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Balance_new.png?v=1661511817" alt="balance-product" width="" height="auto">
           {% if settings.enable_leading_collection_badge and section.settings.promo_badge_2 %}
-            <img class="leadGrid_productImageBadge2" src="{{ settings.promo_badge }}" alt="badge-balance-product" width="" height="auto">
+            <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-balance-product" width="" height="auto">
           {% endif %}
         </div>
         <h2 class="Heading u-h1">Balance</h2>
@@ -208,26 +202,6 @@
       "default": false
     },
     {
-      "type": "range",
-      "id": "badge1_width",
-      "label": "Desktop: Width",
-      "min": 30,
-      "max": 100,
-      "step": 10,
-      "unit": "%",
-      "default": 50
-    },
-    {
-      "type": "range",
-      "id": "badge1_width_mobile",
-      "label": "Mobile: Width",
-      "min": 30,
-      "max": 100,
-      "step": 10,
-      "unit": "%",
-      "default": 50
-    },
-    {
       "type": "checkbox",
       "id": "promo_badge_2",
       "label": "Enable badge on block 2",
@@ -235,7 +209,7 @@
     },
     {
       "type": "range",
-      "id": "badge2_width",
+      "id": "badge_width",
       "label": "Desktop: Width",
       "min": 30,
       "max": 100,
@@ -245,7 +219,7 @@
     },
     {
       "type": "range",
-      "id": "badge2_width_mobile",
+      "id": "badge_width_mobile",
       "label": "Mobile: Width",
       "min": 30,
       "max": 100,

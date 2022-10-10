@@ -811,19 +811,34 @@
       },
       {
         "type": "checkbox",
-        "id": "promotional_collection_cover",
+        "id": "promo_collection_cover",
         "label": "Enable collection cover",
         "default": false
       },
       {
-        "type": "image_picker",
-        "id": "collection_promo_image",
-        "label": "Desktop image"
+        "type": "color_background",
+        "id": "collection_promo_bg_color",
+        "label": "Background color"
       },
       {
-        "type": "image_picker",
-        "id": "collection_promo_image_mobile",
-        "label": "Mobile image"
+        "type": "url",
+        "id": "collection_promo_image_art",
+        "label": "Desktop art design"
+      },
+      {
+        "type": "url",
+        "id": "collection_promo_image_mobile_art",
+        "label": "Mobile art design"
+      },
+      {
+        "type": "range",
+        "id": "collection_promo_image_width",
+        "label": "Collection image width",
+        "min": 50,
+        "max": 100,
+        "step": 10,
+        "unit": "%",
+        "default": 70
       },
       {
         "type": "header",
