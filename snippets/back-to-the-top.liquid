@@ -62,6 +62,7 @@ window.onload = function() {
    $(window).scroll(function() {
      console.log("scrolling ");
      if ($(this).scrollTop() > offset) {
+       console.log("scrollTop() > offset");
        $('.back-to-top').fadeIn(duration);
        const chatraButton = $('#chatra.chatra--side-bottom');
        console.log("chatra button");
