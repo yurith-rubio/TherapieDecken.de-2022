@@ -8632,7 +8632,7 @@ a.CollectionItemPage {
   flex-shrink: 0;
 }
 
-.MegaMenu__Title {
+.MegaMenu__Title.u-h7 {
   display: block;
   margin-bottom: 20px;
   font-weight: var(--heading-font-weight);
