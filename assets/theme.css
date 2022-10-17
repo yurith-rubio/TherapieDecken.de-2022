@@ -8635,8 +8635,8 @@ a.CollectionItemPage {
 .MegaMenu__Title {
   display: block;
   margin-bottom: 20px;
-  font-weight: 700;
-  text-decoration: underline;
+  font-weight: var(--heading-font-weight);
+  font-size: 12px;
 }
 
 .MegaMenu__Title:hover {
