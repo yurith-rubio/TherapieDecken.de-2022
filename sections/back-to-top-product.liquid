@@ -69,18 +69,18 @@ window.onload = function() {
  jQuery(function($) {
    let offset = {{ vertical_offset_for_trigger }};
    let duration = 500;
-   let chatraButton = $('#chatra.chatra--side-bottom');
+   const chatraButton = $('#chatra.chatra--side-bottom');
    $(window).scroll(function() {
      if ($(this).scrollTop() > offset) {
        $('.back-to-top').fadeIn(duration);
        if(chatraButton){
-         chatraButton.attr("style","bottom:70px !important; width: 96px; height: 40px; transform: none; z-index: 9999;");
+         chatraButton.attr("style","bottom:70px; width: 96px; height: 40px; transform: none; z-index: 9999;");
        }
      } 
      else {
        $('.back-to-top').fadeOut(duration);
        if(chatraButton){
-         chatraButton.attr("style","bottom:20px !important; width: 96px; height: 40px; transform: none; z-index: 9999;");
+         chatraButton.attr("style","bottom:20px; width: 96px; height: 40px; transform: none; z-index: 9999;");
        }
      }
    });
