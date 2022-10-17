@@ -12881,5 +12881,5 @@ header.html-text-wr{
 
 /* Chatra chat bubble CSS adjustments - Yurith */
 #chatra.chatra--side-bottom{
-  top: 70px !important;
+  bottom: 70px !important;
 }
