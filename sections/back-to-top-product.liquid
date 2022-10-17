@@ -67,9 +67,8 @@
 <script>
 window.onload = function() {
  jQuery(function($) {
-   var offset = {{ vertical_offset_for_trigger }};
-   var duration = 500;
-   
+   let offset = {{ vertical_offset_for_trigger }};
+   let duration = 500;
    $(window).scroll(function() {
      const chatraButton = $('#chatra.chatra--side-bottom');
      if ($(this).scrollTop() > offset) {
