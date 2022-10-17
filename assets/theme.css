@@ -11668,6 +11668,11 @@ p.SidebarMenu__Social{
 .upp-to-title{
   margin-top: -50px;
 }
+@media only screen and (max-width: 640px){
+  .upp-to-title{
+    padding: 0 24px;
+  }
+}
 .section-space-medium{
   padding-top: 50px;
   padding-bottom: 50px;
