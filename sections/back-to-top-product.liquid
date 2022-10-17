@@ -71,16 +71,15 @@ window.onload = function() {
    var duration = 500;
    
    $(window).scroll(function() {
+     const chatraButton = $('#chatra.chatra--side-bottom');
      if ($(this).scrollTop() > offset) {
        $('.back-to-top').fadeIn(duration);
-       const chatraButton = $('#chatra.chatra--side-bottom');
        if(chatraButton){
          chatraButton.attr("style","bottom:65px; width: 96px; height: 40px; transform: none; z-index: 9999;");
        }
      } 
      else {
        $('.back-to-top').fadeOut(duration);
-       const chatraButton = $('#chatra.chatra--side-bottom');
        if(chatraButton){
          chatraButton.attr("style","bottom:20px; width: 96px; height: 40px; transform: none; z-index: 9999;");
        }
