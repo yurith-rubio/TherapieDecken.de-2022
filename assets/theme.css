@@ -12878,8 +12878,3 @@ header.html-text-wr{
   background-color: #fff !important;
   color: #3a3c3c !important;
 }
-
-/* Chatra chat bubble CSS adjustments - Yurith */
-#chatra.chatra--side-bottom{
-  bottom: 70px !important;
-}
