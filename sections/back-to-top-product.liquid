@@ -79,7 +79,9 @@ window.onload = function() {
      } 
      else {
        $('.back-to-top').fadeOut(duration);
-       chatraButton.attr("style","bottom:20px !important; width: 96px; height: 40px; transform: none; z-index: 9999;");
+       if(chatraButton){
+         chatraButton.attr("style","bottom:20px !important; width: 96px; height: 40px; transform: none; z-index: 9999;");
+       }
      }
    });
    $('.back-to-top').unbind('click.smoothscroll').bind('click', function(e) {
