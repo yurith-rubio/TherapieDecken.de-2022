@@ -73,9 +73,11 @@ window.onload = function() {
      if ($(this).scrollTop() > offset) {
        $('.back-to-top').fadeIn(duration);
        const chatraButton = $('#chatra.chatra--side-bottom');
-       console.log("chatra button");
-       console.log(chatraButton);
-       chatraButton.style.bottom = "70px !important";
+       if(chatraButton){
+         console.log("chatra button");
+         console.log(chatraButton);
+         chatraButton.style.bottom = "70px !important";
+       }
      } 
      else {
        $('.back-to-top').fadeOut(duration);
