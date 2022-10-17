@@ -74,13 +74,12 @@ window.onload = function() {
        $('.back-to-top').fadeIn(duration);
        const chatraButton = $('#chatra.chatra--side-bottom');
        if(chatraButton){
-         console.log("chatra button");
-         console.log(chatraButton);
          chatraButton.attr("style","bottom:70px !important; width: 96px; height: 40px; transform: none; z-index: 9999;");
        }
      } 
      else {
        $('.back-to-top').fadeOut(duration);
+       chatraButton.attr("style","bottom:20px !important; width: 96px; height: 40px; transform: none; z-index: 9999;");
      }
    });
    $('.back-to-top').unbind('click.smoothscroll').bind('click', function(e) {
