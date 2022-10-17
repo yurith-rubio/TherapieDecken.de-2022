@@ -60,6 +60,7 @@ window.onload = function() {
    var offset = {{ vertical_offset_for_trigger }};
    var duration = 500;
    $(window).scroll(function() {
+     console.log("scrolling ");
      if ($(this).scrollTop() > offset) {
        $('.back-to-top').fadeIn(duration);
        const chatraButton = $('#chatra.chatra--side-bottom');
