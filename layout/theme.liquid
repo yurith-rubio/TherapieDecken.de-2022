@@ -258,6 +258,9 @@
           </main>
           {% section 'footer' %}
         </div>
+        {% if template == "product" %}
+          {% section 'back-to-top-product' %}
+        {% endif %}
         {% render 'my-cart-overlay' %}
       </div>
     </div>
