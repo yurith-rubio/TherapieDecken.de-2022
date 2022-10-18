@@ -219,11 +219,6 @@
         "show_vendor": false,
         "show_color_swatch": false
       }
-    },
-    "16346816958726f66c": {
-      "type": "back-to-top-product",
-      "settings": {
-      }
     }
   },
   "order": [
@@ -234,7 +229,6 @@
     "1630604392d268efb9",
     "16305044894f9cd936",
     "1631652355e16d57e5",
-    "product-recommendations",
-    "16346816958726f66c"
+    "product-recommendations"
   ]
 }
