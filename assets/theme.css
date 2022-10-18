@@ -7050,7 +7050,7 @@ a.CollectionItemPage {
 
 .CollectionToolbar {
   position: sticky;
-  display: flex;
+  display: block;
   justify-content: space-between;
   width: 100%;
   background: var(--background);
