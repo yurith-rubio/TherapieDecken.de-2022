@@ -3974,6 +3974,18 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   height: 11px;
 }
 
+.QuantitySelector .myCart_button{
+  border: 1px solid var(--border-color);
+  padding: 0 10px;
+}
+
+.QuantitySelector .myCart_input{
+  border: 1px solid var(--border-color);
+  height: 25px;
+  width: 80px;
+  padding: 0 10px;
+}
+
 @media screen and (min-width: 641px) {
   .QuantitySelector__Button {
     padding: 7px 14px 8px 14px;
