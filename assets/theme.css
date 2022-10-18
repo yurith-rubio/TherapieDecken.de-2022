@@ -2350,7 +2350,7 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   width: calc(100vw - 65px); /* Interestingly, 100% does not work on iOS 9 and lower */
   height: 100vh;
   max-height: none;
-  z-index: 9999;
+  z-index: 20;
   transition: transform 0.5s var(--drawer-transition-timing), visibility 0.5s var(--drawer-transition-timing);
   background: var(--background);
   box-shadow: none;
@@ -4844,7 +4844,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 9999;
+  z-index: 10;
   visibility: hidden;
   opacity: 0;
   background: #363636;
@@ -12183,7 +12183,7 @@ a.entspannung-topseller-link:hover {
   position: fixed;
   transition: top 0.5s;
   width: 100%;
-  z-index: 9999;
+  z-index: 19;
   top: 30px;
   display: block;
 }
