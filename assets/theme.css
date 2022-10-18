@@ -9821,6 +9821,12 @@ shopify-payment-terms {
   margin: 24px 0;
 }
 
+@media only screen and (max-width: 640px){
+  .ProductMeta__ShareButtons {
+    justify-content: center;
+  }
+}
+
 .ProductMeta__ShareTitle {
   margin-right: 6px;
 }
