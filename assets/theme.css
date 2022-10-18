@@ -7054,12 +7054,17 @@ a.CollectionItemPage {
   justify-content: space-between;
   width: 100%;
   background: var(--background);
-  box-shadow: 1px 1px var(--border-color), -1px -1px var(--border-color);
   z-index: 2;
 }
 
 .CollectionToolbar--top {
   top: var(--header-base-height);
+}
+
+.CollectionToolbar button.CollectionToolbar__Item{
+  color: var(--button-text-color);
+  text-transform: uppercase;
+  background: #fac636;
 }
 
 @supports (--css: variables) {
