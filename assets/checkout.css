@@ -6,6 +6,7 @@ button.field__input-btn.btn {
   margin-bottom: 30px;}
 .order-summary__section .product__image{
   vertical-align:top;
+  padding-top: 0;
 }
 .order-summary__section .product__description{
   padding-bottom: 20px;
