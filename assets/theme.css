@@ -562,7 +562,7 @@ th {
   }
 }
 
-@media only screen and (max-width: 1007px) {
+@media only screen and (max-width: 1008px) {
   .hidden-pocket {
     display: none !important;
   }
