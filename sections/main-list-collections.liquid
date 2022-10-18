@@ -76,6 +76,7 @@
   #section-{{ section.id }} .CollectionItem__Link {
     color: {{ section.settings.button_color }};
     border-color: {{ section.settings.text_color }};
+    background-color: {{ section.settings.background_color }};
   }
 
   #section-{{ section.id }} .CollectionItem__Link::before {
@@ -163,6 +164,12 @@
       "id": "button_color",
       "label": "Button text",
       "default": "#363636"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Button color",
+      "default": "#fac636"
     }
   ],
   "blocks": [
