@@ -253,7 +253,7 @@
             {% section 'header' %}
             {% section 'announcement' %}
           </div>
-          <main id="main" role="main" class="{% if settings.announcement_countdown_enable %}main-padding{% endif %}">
+          <main id="main" role="main" class="{% if section.settings.enable_bar %}main-padding{% endif %}">
             {{ content_for_layout }}
           </main>
           {% section 'footer' %}
