@@ -8018,6 +8018,9 @@ a.CollectionItemPage {
   width: 38px;
   height: 24px;
 }
+.footer-back-to-top{
+  margin-bottom: 53px;
+}
 
 @media screen and (min-width: 641px) {
   .Footer {

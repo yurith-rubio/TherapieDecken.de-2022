@@ -80,16 +80,10 @@
         "show_vendor": false,
         "show_color_swatch": false
       }
-    },
-    "1634681722b1269893": {
-      "type": "back-to-top-product",
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
-    "product-recommendations",
-    "1634681722b1269893"
+    "product-recommendations"
   ]
 }
