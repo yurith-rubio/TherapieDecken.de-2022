@@ -12884,7 +12884,7 @@ header.html-text-wr{
   z-index: 9 !important;
 }
 @media only screen and (max-width:640px){
-  #chatra.chatra--side-bottom{
+  #chatra{
     height: 400px !important;
   }
 }
