@@ -12883,3 +12883,8 @@ header.html-text-wr{
 #chatra.chatra--side-bottom{
   z-index: 9 !important;
 }
+@media only screen and (max-width:640px){
+  #chatra.chatra--side-bottom{
+    height: 400px !important;
+  }
+}
