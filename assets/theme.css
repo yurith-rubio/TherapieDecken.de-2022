@@ -12914,3 +12914,8 @@ header.html-text-wr{
   background-color: #fff !important;
   color: #3a3c3c !important;
 }
+
+/*quiz css*/
+.PageContent iframe.whai-embed{
+  height: 950px;
+}
