@@ -122,6 +122,7 @@ body.js-my-cart-open .MyCartUpsells_SuggestedContainer{
   background-color: var(--color-light-shadow);
   border-bottom: 1px solid var(--color-light-border);
   z-index: 1;
+  padding-top: 5px;
 }
 .MyCart_H2, .MyCart_PriceItem{
   line-height: 1.2 !important;
