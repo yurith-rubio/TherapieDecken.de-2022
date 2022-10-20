@@ -426,6 +426,11 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   padding: 20px 30px;
   border-top: var(--color-light-border) 1px solid;
 }
+
+.MyCartUpsells_MainContainer>form a:link {
+    text-decoration: none!important;
+}
+
 .MyCartUpsells_Select{
   border-radius: 3px;
   cursor: pointer;
