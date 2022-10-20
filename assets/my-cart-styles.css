@@ -323,7 +323,7 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   text-align:center;
   background-color: white;
   width: 90%;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .MyCart_PaymentOptions .inline-list {
  padding:0;
