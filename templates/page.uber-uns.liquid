@@ -405,7 +405,7 @@
 </div>
 
 <script>
-function openCity(evt, tab-name) {
+function openCity(evt, tabname) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabName");
   for (i = 0; i < tabcontent.length; i++) {
@@ -415,7 +415,7 @@ function openCity(evt, tab-name) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(tab-name).style.display = "block";
+  document.getElementById(tabname).style.display = "block";
   evt.currentTarget.className += " active";
 }
 </script>
