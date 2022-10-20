@@ -5117,6 +5117,9 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
     margin-left: 0;
     width: 100%;
   }
+  .PageLayout__Section.PageLayout__Section--secondary{
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1008px) {
   .PageLayout__Section--secondary {
