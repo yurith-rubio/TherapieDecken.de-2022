@@ -405,24 +405,7 @@
 </div>
 
 <script>
-function openTab(tabfunction) {
-  var i;
-  var x = document.getElementsByClassName("tabName");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  document.getElementById(tabfunction).style.display = "block";  
-}
-$(".about-us-menu-sub > a").click(function(){
-  $(".active").removeClass("active");
-  $(this).addClass("active");
-});
-</script>
-
-
-
-<script>
-function openCity(evt, cityName) {
+function openCity(evt, tab-name) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabName");
   for (i = 0; i < tabcontent.length; i++) {
@@ -432,7 +415,7 @@ function openCity(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tab-name).style.display = "block";
   evt.currentTarget.className += " active";
 }
 </script>
