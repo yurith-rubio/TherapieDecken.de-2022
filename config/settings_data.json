@@ -46,11 +46,11 @@
     "social_youtube": "https:\/\/www.youtube.com\/channel\/UCzoQFn6SP0y-YTgCNnrLIfA?view_as=subscriber",
     "social_fancy": "https:\/\/therapiedecken.de\/blogs\/news?nopreview",
     "favicon": "shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png",
-    "countdown_date": "October 31, 2022 00:00 GMT+0100",
-    "enable_days_view": true,
+    "countdown_date": "October 27, 2022 00:00 GMT+0100",
+    "enable_days_view": false,
     "border_radius_countdown": 4,
     "loop_time": 0,
-    "announcement_countdown_enable": false,
+    "announcement_countdown_enable": true,
     "background_countdown": "#ffffff",
     "text_color_countdown": "#f982ad",
     "product_countdown_enable": false,
@@ -132,7 +132,7 @@
           "home_page_only": false,
           "background": "#f982ad",
           "text_color": "#ffffff",
-          "content": "🤍 <span style=\"line-height:20px\">Zum <span style=\"background-color:#FFFFFF;padding: 2px 5px;color:#F982AD;border-radius:4px;font-weight:700\">BRUSTKREBSMONAT OKTOBER<\/span> gehen <b>5%  der Gravity Umsätze an die Brustkrebsvorsorge + GRATIS Schoßkissen<\/b><\/span>",
+          "content": "🤍 <span style=\"line-height:20px\">Zum <span style=\"background-color:#FFFFFF;padding: 2px 5px;color:#F982AD;border-radius:4px;font-weight:700\">BRUSTKREBSMONAT OKTOBER<\/span> <b>5%  Spende aller Umsätze + GRATIS Schoßkissen<\/b><\/span>. Endet in",
           "link": "https:\/\/therapiedecken.de\/collections\/gravity-therapiedecken-fur-erwachsene"
         }
       },
