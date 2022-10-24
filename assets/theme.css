@@ -8038,6 +8038,9 @@ a.CollectionItemPage {
   width: 38px;
   height: 24px;
 }
+.footer-back-to-top{
+  margin-bottom: 53px;
+}
 
 @media screen and (min-width: 641px) {
   .Footer {
@@ -9778,7 +9781,7 @@ a.CollectionItemPage {
 }
 
 .ProductMeta__Vendor {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .ProductMeta__Title {
@@ -12565,7 +12568,7 @@ ul.zahlungsarten-auflistung {
 
 .deckengewicht-tg .tg-c6of {
     background-color: #ffffff;
-    border-color: inherit;
+    border-color: #ccc;
     text-align: left;
     vertical-align: middle;
     text-transform: none !important;
@@ -12918,4 +12921,9 @@ header.html-text-wr{
 /*quiz css*/
 .PageContent iframe.whai-embed{
   height: 950px;
+}
+
+/* Chatra chat bubble CSS adjustments - Yurith */
+#chatra.chatra--side-bottom{
+  z-index: 19 !important;
 }

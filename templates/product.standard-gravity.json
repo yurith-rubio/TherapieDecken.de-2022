@@ -118,7 +118,7 @@
           "settings": {
             "simple_icons": "washing_machine",
             "summary": "Pflegehinweise",
-            "content": "Die 4-Jahreszeiten Bezüge können bei 30°, die Baumwollbezüge bei 30° gewaschen werden. Das Gravity Inlett kann bei 30° schonend gewaschen werden. Beachten Sie das erlaubte Maximalgewicht Ihrer Waschmaschine."
+            "content": "Die 4-Jahreszeiten Bezüge und Baumwollbezüge können bei 30° gewaschen werden. Das Gravity Inlett kann bei 30° schonend gewaschen werden. Bitte nutzen Sie keinen Trockner. Beachten Sie das erlaubte Maximalgewicht Ihrer Waschmaschine."
           }
         }
       },
@@ -574,11 +574,6 @@
         "show_vendor": false,
         "show_color_swatch": false
       }
-    },
-    "1634681963f7b71bb2": {
-      "type": "back-to-top-product",
-      "settings": {
-      }
     }
   },
   "order": [
@@ -599,7 +594,6 @@
     "16293784209ff1ca2b",
     "1629467370a1305632",
     "16294440249ce6f304",
-    "1630334324a50af4b4",
-    "1634681963f7b71bb2"
+    "1630334324a50af4b4"
   ]
 }

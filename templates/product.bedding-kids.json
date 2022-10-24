@@ -121,11 +121,6 @@
         "show_vendor": false,
         "show_color_swatch": false
       }
-    },
-    "1634680362a04de941": {
-      "type": "back-to-top-product",
-      "settings": {
-      }
     }
   },
   "order": [
@@ -133,7 +128,6 @@
     "16329258760d95ba98",
     "16329262155f215ad4",
     "1631727606922dc094",
-    "product-recommendations",
-    "1634680362a04de941"
+    "product-recommendations"
   ]
 }

@@ -20,7 +20,7 @@
   }
 {% endstyle %}
 
-<footer id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="footer" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %}" role="contentinfo">
+<footer id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="footer" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %} {% if template.name == 'product' %}footer-back-to-top{% endif %}" role="contentinfo">
   <div class="Container Container--narrow">
     {%- if section.blocks.size > 0 -%}
       <div class="Footer__Inner">

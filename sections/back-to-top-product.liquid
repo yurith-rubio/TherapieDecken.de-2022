@@ -18,7 +18,7 @@
   position: fixed;
   text-decoration: none;
   display: none;
-  z-index: 60000;
+  z-index: 9;
   transition: border 0.3s;
   text-align: center;
   width: 100%;
@@ -37,8 +37,8 @@
 }
 
 @media screen and (min-width: 800px){
-    .back-to-top {
-      display:none!important;
+  .back-to-top {
+    display:none!important;
   }
 }
 .back-to-top i {
@@ -67,14 +67,21 @@
 <script>
 window.onload = function() {
  jQuery(function($) {
-   var offset = {{ vertical_offset_for_trigger }};
-   var duration = 500;
+   let offset = {{ vertical_offset_for_trigger }};
+   let duration = 500;
    $(window).scroll(function() {
+     const chatraButton = $('#chatra.chatra--side-bottom');
      if ($(this).scrollTop() > offset) {
        $('.back-to-top').fadeIn(duration);
+       if(chatraButton){
+         chatraButton.attr("style","bottom:65px; width: 96px; height: 40px; transform: none; z-index: 9999;");
+       }
      } 
      else {
        $('.back-to-top').fadeOut(duration);
+       if(chatraButton){
+         chatraButton.attr("style","bottom:20px; width: 96px; height: 40px; transform: none; z-index: 9999;");
+       }
      }
    });
    $('.back-to-top').unbind('click.smoothscroll').bind('click', function(e) {
