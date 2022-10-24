@@ -562,7 +562,7 @@ th {
   }
 }
 
-@media screen and (max-width: 1007px) {
+@media only screen and (max-width: 1007px) {
   .hidden-pocket {
     display: none !important;
   }
@@ -3928,7 +3928,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .QuantitySelector {
   display: inline-flex;
   align-items: center;
-  border: 1px solid var(--border-color);
   white-space: nowrap;
 }
 
@@ -3972,6 +3971,19 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .QuantitySelector--large svg {
   width: 11px;
   height: 11px;
+}
+
+.QuantitySelector .myCart_button{
+  border: 1px solid var(--border-color);
+  padding: 0 10px;
+  height: 25px;
+}
+
+.QuantitySelector .myCart_input{
+  border: 1px solid var(--border-color);
+  height: 25px;
+  width: 80px;
+  padding: 0 10px;
 }
 
 @media screen and (min-width: 641px) {
@@ -5104,6 +5116,9 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   .PageLayout--breakLap .PageLayout__Section + .PageLayout__Section {
     margin-left: 0;
     width: 100%;
+  }
+  .PageLayout__Section.PageLayout__Section--secondary{
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 1008px) {
@@ -7039,16 +7054,21 @@ a.CollectionItemPage {
 
 .CollectionToolbar {
   position: sticky;
-  display: flex;
+  display: block;
   justify-content: space-between;
   width: 100%;
   background: var(--background);
-  box-shadow: 1px 1px var(--border-color), -1px -1px var(--border-color);
   z-index: 2;
 }
 
 .CollectionToolbar--top {
   top: var(--header-base-height);
+}
+
+.CollectionToolbar button.CollectionToolbar__Item{
+  color: var(--button-text-color);
+  text-transform: uppercase;
+  background: #fac636;
 }
 
 @supports (--css: variables) {
@@ -7168,7 +7188,7 @@ a.CollectionItemPage {
 /*test*/
 .product-badge-div{
   position: absolute;
-  top: 0;
+  top: 3px;
   left: 0;
   z-index: 1;
 }
@@ -7449,7 +7469,7 @@ a.CollectionItemPage {
   }
 }
 
-@media screen and (min-width: 1008px) {
+@media only screen and (min-width: 1007px) {
   .CollectionInner {
     display: flex;
     text-align: left;
@@ -8635,11 +8655,11 @@ a.CollectionItemPage {
   flex-shrink: 0;
 }
 
-.MegaMenu__Title {
+.MegaMenu__Title.u-h7 {
   display: block;
   margin-bottom: 20px;
-  font-weight: 700;
-  text-decoration: underline;
+  font-weight: var(--heading-font-weight);
+  font-size: 12px;
 }
 
 .MegaMenu__Title:hover {
@@ -9806,6 +9826,12 @@ shopify-payment-terms {
   display: flex;
   align-items: center;
   margin: 24px 0;
+}
+
+@media only screen and (max-width: 640px){
+  .ProductMeta__ShareButtons {
+    justify-content: center;
+  }
 }
 
 .ProductMeta__ShareTitle {
@@ -11671,6 +11697,16 @@ p.SidebarMenu__Social{
 .upp-to-title{
   margin-top: -50px;
 }
+@media (min-width: 641px) and (max-width: 991px){
+  .upp-to-title{
+    padding: 0 60px;
+  }
+}
+@media only screen and (max-width: 640px){
+  .upp-to-title{
+    padding: 0 34px;
+  }
+}
 .section-space-medium{
   padding-top: 50px;
   padding-bottom: 50px;
@@ -12880,6 +12916,11 @@ header.html-text-wr{
 .rightBlanket_linkContent:hover .Button:hover {
   background-color: #fff !important;
   color: #3a3c3c !important;
+}
+
+/*quiz css*/
+.PageContent iframe.whai-embed{
+  height: 950px;
 }
 
 /* Chatra chat bubble CSS adjustments - Yurith */

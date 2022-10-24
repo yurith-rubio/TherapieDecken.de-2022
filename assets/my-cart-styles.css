@@ -466,6 +466,7 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
 }
 button.MyCart_CheckoutButton{
   font-size: 16px;
+  width: 100%!important;
 }
 /* Tablet and up */
 @media only screen and (min-width: 441px){
