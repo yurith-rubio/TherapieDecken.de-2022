@@ -291,8 +291,8 @@
               "upsell_product_1": "balance-schlafmaske",
               "enable_upsell_2": true,
               "upsell_product_2": "schosskissen-kalte-oder-heisse-kompresse",
-              "enable_upsell_3": false,
-              "upsell_product_3": "",
+              "enable_upsell_3": true,
+              "upsell_product_3": "gift-card",
               "enable_upsell_4": false,
               "upsell_product_4": ""
             }
