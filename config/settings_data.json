@@ -296,10 +296,65 @@
               "enable_upsell_4": false,
               "upsell_product_4": ""
             }
+          },
+          "74270d88-da5c-42fe-8de2-ae7b01519a48": {
+            "type": "Trigger",
+            "settings": {
+              "product_list": [
+                "beauty-queen-anti-falten-kissen"
+              ],
+              "enable_upsell_1": true,
+              "upsell_product_1": "schosskissen-kalte-oder-heisse-kompresse",
+              "enable_upsell_2": true,
+              "upsell_product_2": "yoga-therapiedecke",
+              "enable_upsell_3": false,
+              "upsell_product_3": "",
+              "enable_upsell_4": false,
+              "upsell_product_4": ""
+            }
+          },
+          "2a6133f9-f8ca-4d1e-bdaa-68f62b75f04d": {
+            "type": "Trigger",
+            "settings": {
+              "product_list": [
+                "premium-balance-gewichtsdecke-fur-kinder",
+                "gravity-gewichtsdecke-fur-kinder"
+              ],
+              "enable_upsell_1": true,
+              "upsell_product_1": "therapiedecken-baumwollbezug-braun-hedwig",
+              "enable_upsell_2": true,
+              "upsell_product_2": "gesundheitskissen-braun-hedwig",
+              "enable_upsell_3": false,
+              "upsell_product_3": "",
+              "enable_upsell_4": false,
+              "upsell_product_4": ""
+            }
+          },
+          "ad694668-5393-4d48-bd91-b488807cd99a": {
+            "type": "Trigger",
+            "settings": {
+              "product_list": [
+                "blaues-gesundheitskissen-fur-erwachsene",
+                "graues-gesundheitskissen-fur-erwachsene",
+                "hellgraues-therapiekissen-fur-erwachsene",
+                "poseidon-blaues-therapiekissen-fur-erwachsene"
+              ],
+              "enable_upsell_1": true,
+              "upsell_product_1": "duftspray-jetzt-das-therapiekissen-auffrischen",
+              "enable_upsell_2": true,
+              "upsell_product_2": "balance-schlafmaske",
+              "enable_upsell_3": false,
+              "upsell_product_3": "",
+              "enable_upsell_4": false,
+              "upsell_product_4": ""
+            }
           }
         },
         "block_order": [
-          "a799bb06-336d-48a8-930a-e300fb9c2e89"
+          "a799bb06-336d-48a8-930a-e300fb9c2e89",
+          "74270d88-da5c-42fe-8de2-ae7b01519a48",
+          "2a6133f9-f8ca-4d1e-bdaa-68f62b75f04d",
+          "ad694668-5393-4d48-bd91-b488807cd99a"
         ],
         "settings": {
         }
