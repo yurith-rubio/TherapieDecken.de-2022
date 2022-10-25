@@ -50,7 +50,7 @@
     "enable_days_view": false,
     "border_radius_countdown": 4,
     "loop_time": 0,
-    "announcement_countdown_enable": true,
+    "announcement_countdown_enable": false,
     "background_countdown": "#ffffff",
     "text_color_countdown": "#f982ad",
     "product_countdown_enable": false,
@@ -61,7 +61,7 @@
     "checkout_countdown_enable": false,
     "checkout_countdown_text": "⚠️ Auf Grund unseres Weltschlaftag Angebots ist Ihr Warenkorb für nur",
     "left_product_inventory": true,
-    "promotional_hero_hp_cover": true,
+    "promotional_hero_hp_cover": false,
     "promo_image": "shopify:\/\/shop_images\/TD_-_Breast_Cancer_Awareness_Month_Promotion_desktop.jpg",
     "promo_image_mobile": "shopify:\/\/shop_images\/TD_-_Breast_Cancer_Awareness_Month_Promotion_mobile-1.webp",
     "promo_tablet_image_position": 30,
@@ -78,8 +78,8 @@
     "collection_promo_image_mobile_art": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/Cover-BF-mobile-B-500X.png?v=1637867069",
     "collection_promo_image_width": 70,
     "promo_badge": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/Breast_cancer_Breast_Cancer_Awareness_Month_2022_badge.svg?v=1664356701",
-    "enable_leading_collection_badge": true,
-    "enable_collection_badge": true,
+    "enable_leading_collection_badge": false,
+    "enable_collection_badge": false,
     "collection_badge_max_width": 150,
     "collection_badge_max_width_mobile": 110,
     "enable_product_badge": false,
@@ -128,11 +128,11 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": true,
+          "enable_bar": false,
           "home_page_only": false,
           "background": "#f982ad",
           "text_color": "#ffffff",
-          "content": "🤍 <b>5%  Spende aller Gravity Umsätze zur Brustkrebsvorsorge + GRATIS Schoßkissen<\/b>. Endet in",
+          "content": "",
           "link": "https:\/\/therapiedecken.de\/collections\/gravity-therapiedecken-fur-erwachsene"
         }
       },
