@@ -348,13 +348,81 @@
               "enable_upsell_4": false,
               "upsell_product_4": ""
             }
+          },
+          "0d2854b2-c973-4094-8084-6baf96cdfe24": {
+            "type": "Trigger",
+            "settings": {
+              "product_list": [
+                "yoga-therapiedecke"
+              ],
+              "enable_upsell_1": true,
+              "upsell_product_1": "schosskissen-kalte-oder-heisse-kompresse",
+              "enable_upsell_2": true,
+              "upsell_product_2": "balance-schlafmaske",
+              "enable_upsell_3": false,
+              "upsell_product_3": "",
+              "enable_upsell_4": false,
+              "upsell_product_4": ""
+            }
+          },
+          "3455c08c-5e1f-4951-a4e8-da6a287ba8d3": {
+            "type": "Trigger",
+            "settings": {
+              "product_list": [
+                "medizinische-gewichtsdecke-fur-kinder"
+              ],
+              "enable_upsell_1": true,
+              "upsell_product_1": "gesundheitskissen-braun-hedwig",
+              "enable_upsell_2": false,
+              "upsell_product_2": "",
+              "enable_upsell_3": false,
+              "upsell_product_3": "",
+              "enable_upsell_4": false,
+              "upsell_product_4": ""
+            }
+          },
+          "230cbe1a-6e8f-45d0-b931-a2ac9c5f3bf0": {
+            "type": "Trigger",
+            "settings": {
+              "product_list": [
+                "eco-gewichtsdecke-fur-erwachsene"
+              ],
+              "enable_upsell_1": true,
+              "upsell_product_1": "beauty-queen-anti-falten-kissen",
+              "enable_upsell_2": false,
+              "upsell_product_2": "",
+              "enable_upsell_3": false,
+              "upsell_product_3": "",
+              "enable_upsell_4": false,
+              "upsell_product_4": ""
+            }
+          },
+          "76a2f3b9-ac6f-468a-bd1e-71d30e533e2c": {
+            "type": "Trigger",
+            "settings": {
+              "product_list": [
+
+              ],
+              "enable_upsell_1": false,
+              "upsell_product_1": "",
+              "enable_upsell_2": false,
+              "upsell_product_2": "",
+              "enable_upsell_3": false,
+              "upsell_product_3": "",
+              "enable_upsell_4": false,
+              "upsell_product_4": ""
+            }
           }
         },
         "block_order": [
           "a799bb06-336d-48a8-930a-e300fb9c2e89",
           "74270d88-da5c-42fe-8de2-ae7b01519a48",
           "2a6133f9-f8ca-4d1e-bdaa-68f62b75f04d",
-          "ad694668-5393-4d48-bd91-b488807cd99a"
+          "ad694668-5393-4d48-bd91-b488807cd99a",
+          "0d2854b2-c973-4094-8084-6baf96cdfe24",
+          "3455c08c-5e1f-4951-a4e8-da6a287ba8d3",
+          "230cbe1a-6e8f-45d0-b931-a2ac9c5f3bf0",
+          "76a2f3b9-ac6f-468a-bd1e-71d30e533e2c"
         ],
         "settings": {
         }
