@@ -800,7 +800,7 @@
         "default": "#222323"
       },
       {
-        "type": "color_background",
+        "type": "color",
         "id": "text_button_color_hover",
         "label": "Hover: Text color",
         "default": "#222323"
