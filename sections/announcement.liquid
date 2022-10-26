@@ -21,12 +21,17 @@
       display:none;
     }
   {% endif %}
-  {% if section.settings.enable_bar %}
-    .HeaderAdjusted{
-      padding-top: 110px !important;
-    }
-  {% endif %}
 {% endstyle %}
+
+{% if section.settings.enable_bar %}
+  <script>
+    const announcementBar = document.querySelector(".AnnouncementBar");
+    const announcentBarHeight = announcementBar.clientHeight;
+    const headerAdj = document.querySelector(".HeaderAdjusted");
+    headerAdj.style.padding-top: "110px !important";
+  </script>
+{% endif %}
+
 
 {%- if section.settings.enable_bar -%}
 
