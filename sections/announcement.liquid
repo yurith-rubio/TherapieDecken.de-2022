@@ -21,6 +21,11 @@
       display:none;
     }
   {% endif %}
+  {% if section.settings.enable_bar %}
+    .HeaderAdjusted{
+      padding-top: 135px !important;
+    }
+  {% endif %}
 {% endstyle %}
 
 {%- if section.settings.enable_bar -%}
