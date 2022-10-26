@@ -281,10 +281,12 @@
         prevScrollpos = currentScrollPos;
       }
       
-      if (announcentBarHeight){
+      const announcementBar = document.querySelector(".AnnouncementBar");
+      if (announcementBar){
         console.log("yes Bar Height");
+        const announcentBarHeight = announcementBar.clientHeight;
         const headerAdj = document.querySelector(".HeaderAdjusted");
-        headerAdj?.style.paddingTop = `${headerAdj}px !important`;
+        headerAdj?.style.paddingTop = `${announcentBarHeight}px !important`;
       }
       
 	</script>
