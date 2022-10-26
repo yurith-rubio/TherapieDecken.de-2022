@@ -23,16 +23,6 @@
   {% endif %}
 {% endstyle %}
 
-{% if section.settings.enable_bar %}
-  <script>
-    const announcementBar = document.querySelector(".AnnouncementBar");
-    const announcentBarHeight = announcementBar.clientHeight;
-    const headerAdj = document.querySelector(".HeaderAdjusted");
-    headerAdj.style.paddingTop = `${headerAdj}px !important`;
-  </script>
-{% endif %}
-
-
 {%- if section.settings.enable_bar -%}
 
   {%- unless section.settings.home_page_only and template != 'index' -%}
