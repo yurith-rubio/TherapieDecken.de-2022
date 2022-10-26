@@ -245,14 +245,14 @@
         </div>
         
         <div class="PageContainer">
-          <div id="header">
+          <div id="header" style="top:0px">
             <div id="tabs-redirecting">
               {% render 'website-tab-redirecting' %}
             </div>
             {% section 'header' %}
             {% section 'announcement' %}
           </div>
-          <main id="main" role="main" class="">
+          <main id="main" class="HeaderAdjusted" role="main">
             {{ content_for_layout }}
           </main>
           {% section 'footer' %}
