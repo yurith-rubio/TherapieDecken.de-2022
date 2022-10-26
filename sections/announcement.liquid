@@ -53,13 +53,6 @@
   document.documentElement.style.setProperty('--announcement-bar-height', document.getElementById('shopify-section-announcement').offsetHeight + 'px');
 </script>
 
-{% if section.settings.enable_bar %}
-  <script>
-    const announcementBar = document.querySelector(".AnnouncementBar");
-    const announcentBarHeight = announcementBar.clientHeight;
-  </script>
-{% endif %}
-
 {% schema %}
 {
   "name": "Announcement bar",
