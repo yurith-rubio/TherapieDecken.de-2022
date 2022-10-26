@@ -4875,7 +4875,7 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
  */
 .PageHeader {
   position: relative;
-  margin: 35px 0;
+  margin: 55px 0 35px 0;
 }
 
 .PageHeader--withBackground {
