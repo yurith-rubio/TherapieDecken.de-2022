@@ -271,23 +271,15 @@
       // Show menu when scrolling up and Hide Menu when scrolling down
       let prevScrollpos = window.pageYOffset;
       window.onscroll = function() {
-      let currentScrollPos = window.pageYOffset;
-      const header = document.querySelector("#header");
-      const mainContainer = document.querySelector("#main");
-        
+        let currentScrollPos = window.pageYOffset;
         if (currentScrollPos <= 65){
-          header.style.top = "0px";
-          header.style.position = "relative";
-          mainContainer.style.padding = "0";
+          document.querySelector("#header").style.top = "0px";
         } else if (prevScrollpos > currentScrollPos) {
-          header.style.top = "0";
-          header.style.position = "fixed";
-          mainContainer.style.padding = "90px 0 0 0";
+          document.querySelector("#header").style.top = "-25px";
         } else if (currentScrollPos >= 170) {
-          header.style.top = "-194px";
+          document.querySelector("#header").style.top = "-194px";
         }
         prevScrollpos = currentScrollPos;
-        
       }
 	</script>
     
