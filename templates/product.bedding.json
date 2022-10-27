@@ -31,13 +31,20 @@
           "type": "payment_methods",
           "settings": {
           }
+        },
+        "47516387-5807-47e6-9f40-2077fdf80977": {
+          "type": "inventory",
+          "settings": {
+            "inventory_quantity_threshold": 15
+          }
         }
       },
       "block_order": [
         "product_meta",
         "variant_selector",
         "buy_buttons",
-        "fc03c899-1839-4e5f-a21c-e96401ed6023"
+        "fc03c899-1839-4e5f-a21c-e96401ed6023",
+        "47516387-5807-47e6-9f40-2077fdf80977"
       ],
       "settings": {
         "image_size": "large",
