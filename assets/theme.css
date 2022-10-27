@@ -12927,3 +12927,14 @@ header.html-text-wr{
 #chatra.chatra--side-bottom{
   z-index: 19 !important;
 }
+
+/* more-cover-options.liquid */
+.MoreOpt_Link{
+  width: 90px;
+  min-height: 100px;
+  display: inline-block;
+  border: unset !important;
+}
+.MoreOpt_plusIcon{
+  font-size: 50px;
+}
