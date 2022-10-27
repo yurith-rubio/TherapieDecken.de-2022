@@ -37,12 +37,6 @@
           "disabled": true,
           "settings": {
           }
-        },
-        "5bc9d707-9c9a-4110-a6f9-a55130c187ba": {
-          "type": "inventory",
-          "settings": {
-            "inventory_quantity_threshold": 15
-          }
         }
       },
       "block_order": [
@@ -50,8 +44,7 @@
         "variant_selector",
         "buy_buttons",
         "description",
-        "share_buttons",
-        "5bc9d707-9c9a-4110-a6f9-a55130c187ba"
+        "share_buttons"
       ],
       "settings": {
         "image_size": "large",
