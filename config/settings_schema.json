@@ -754,6 +754,12 @@
         "label": "Art design"
       },
       {
+        "type": "url",
+        "id": "promo_art_mobile",
+        "label": "Art design mobile",
+        "info": "Add only if needed"
+      },
+      {
         "type": "range",
         "id": "promo_art_y_content",
         "label": "Desktop: Vertical position",
