@@ -770,7 +770,7 @@
         "min": 30,
         "max": 50,
         "step": 10,
-        "unit": "px",
+        "unit": "%",
         "default": 50
       },
       {
@@ -787,10 +787,10 @@
         "type": "range",
         "id": "promo_art_tablet_width",
         "label": "Desktop: Width",
-        "min": 30,
-        "max": 50,
+        "min": 40,
+        "max": 70,
         "step": 10,
-        "unit": "px",
+        "unit": "%",
         "default": 50
       },
       {
