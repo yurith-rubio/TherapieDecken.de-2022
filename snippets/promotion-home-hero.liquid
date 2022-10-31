@@ -37,7 +37,7 @@
           {%- capture slideshow_content -%}
 			<div class="promotion-home-hero_content_container">
   	          <div class="home_promotional_content_wrapper">
-                <img class="homePromotional_art_desktop" src="{{ settings.promo_art }}" alt="Promo art desktop">
+                <img class="homePromotional_art_desktop {% if settings.promo_art_mobile %}hidden-phone{% endif %}" src="{{ settings.promo_art }}" alt="Promo art desktop">
                 {% if settings.promo_art_mobile %}
                   <img class="homePromotional_art_mobile" src="{{ settings.promo_art_mobile }}" alt="Promo art mobile">
                 {% endif %}
