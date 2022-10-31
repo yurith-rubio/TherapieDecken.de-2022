@@ -54,7 +54,7 @@
                     <p class="MyCart_ValueItem">{{ option.value }}</p>
                   {% endfor %}
                   {%- for property in item.properties -%}
-                         {%- if property.first.first == '_' -%}{% continue %}{%- endif -%}
+                         {% if property.first.first == '_' or property.first == 'total_inventory_quantity' %}{% continue %}{%- endif -%}
                           <p class="MyCart_ValueItem">
                             {% if property.first == 'upload button' %}
                               Datei:
