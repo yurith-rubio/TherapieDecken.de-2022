@@ -56,7 +56,7 @@
                   {%- for property in item.properties -%}
                          {%- if property.first.first == '_' -%}{% continue %}{%- endif -%}
                           <p class="MyCart_ValueItem">
-                            {% if property.first == 'upload' %}
+                            {% if property.first == 'upload button' %}
                               Datei:
                             {% else %}
                               <b>{{ property.first }}: </b>
