@@ -46,13 +46,13 @@
     "social_youtube": "https:\/\/www.youtube.com\/channel\/UCzoQFn6SP0y-YTgCNnrLIfA?view_as=subscriber",
     "social_fancy": "https:\/\/therapiedecken.de\/blogs\/news?nopreview",
     "favicon": "shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png",
-    "countdown_date": "October 31, 2022 00:00 GMT+0100",
+    "countdown_date": "November 25, 2022 00:00 GMT+0100",
     "enable_days_view": true,
     "border_radius_countdown": 4,
     "loop_time": 0,
     "announcement_countdown_enable": true,
-    "background_countdown": "#ffffff",
-    "text_color_countdown": "#f982ad",
+    "background_countdown": "#000000",
+    "text_color_countdown": "#ffffff",
     "product_countdown_enable": false,
     "icon_countdown_product": "",
     "countdown_product_text": "💝 Muttertag Angebot! 10% Rabatt + Gratis Gewichtsmaske | Endet in",
@@ -130,9 +130,9 @@
         "settings": {
           "enable_bar": true,
           "home_page_only": false,
-          "background": "#f982ad",
+          "background": "#c91530",
           "text_color": "#ffffff",
-          "content": "🤍 <span style=\"line-height:20px\">Zum <span style=\"background-color:#FFFFFF;padding: 2px 5px;color:#F982AD;border-radius:4px;font-weight:700\">BRUSTKREBSMONAT OKTOBER<\/span> gehen <b>5%  der Gravity Umsätze an die Brustkrebsvorsorge + GRATIS Schoßkissen<\/b><\/span>",
+          "content": "<span style=\"background-color:#C91530; border: 1px solid black;padding:3px 5px;color:white\"><b> BLACK <span style=\"color:black\">WEEK!<\/span><\/b><\/span> hat begonnen! <span style=\"background-color:#000;padding:3px 5px;color:white\"><b> 50% Rabatt<\/b><\/span> · Endet in",
           "link": "https:\/\/therapiedecken.de\/collections\/gravity-therapiedecken-fur-erwachsene"
         }
       },
