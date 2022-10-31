@@ -765,7 +765,7 @@
       },
       {
         "type": "range",
-        "id": "promo_art_desktoptt_width",
+        "id": "promo_art_desktop_width",
         "label": "Desktop: Width",
         "min": 30,
         "max": 50,
@@ -782,6 +782,16 @@
         "step": 10,
         "unit": "px",
         "default": 0
+      },
+      {
+        "type": "range",
+        "id": "promo_art_tablet_width",
+        "label": "Desktop: Width",
+        "min": 30,
+        "max": 50,
+        "step": 10,
+        "unit": "px",
+        "default": 50
       },
       {
         "type": "header",
