@@ -68,6 +68,7 @@
     "promo_image_overlay_opacity": 0,
     "promo_art": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TD_-_Black_Week_Promotion_-_art_desktop.svg?v=1667218527",
     "promo_art_y_content": 20,
+    "promo_art_tablet_width": 40,
     "promo_art_y_content_mobile": 120,
     "button_1_text": "Zu den Produkten",
     "button_1_link": "https:\/\/therapiedecken.de\/collections\/erwachsene",
