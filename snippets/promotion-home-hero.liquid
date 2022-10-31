@@ -39,7 +39,7 @@
   	          <div class="home_promotional_content_wrapper">
                 <img class="homePromotional_art_desktop {% if settings.promo_art_mobile %}hidden-phone{% endif %}" src="{{ settings.promo_art }}" alt="Promo art desktop">
                 {% if settings.promo_art_mobile %}
-                  <img class="homePromotional_art_mobile" src="{{ settings.promo_art_mobile }}" alt="Promo art mobile">
+                  <img class="homePromotional_art_mobile hidden-tablet-and-up" src="{{ settings.promo_art_mobile }}" alt="Promo art mobile">
                 {% endif %}
                 {%- if settings.button_1_text != blank -%}
                   <div class="home_promotional_bottom_part">
