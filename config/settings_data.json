@@ -134,7 +134,7 @@
           "home_page_only": false,
           "background": "#c91530",
           "text_color": "#ffffff",
-          "content": "<span style=\"background-color:#C91530; border: 1px solid black;padding:3px 5px;color:white\"><b> BLACK <span style=\"color:black\">WEEK!<\/span><\/b><\/span> hat begonnen! <span style=\"background-color:#000;padding:3px 5px;color:white\"><b> 50% Rabatt<\/b><\/span> · Endet in",
+          "content": "<span style=\"line-height:26px;background-color:#C91530; border: 1px solid black;padding:3px 5px;color:white\"><b> BLACK <span style=\"color:black\">WEEK!<\/span><\/b><\/span> hat begonnen! <span style=\"background-color:#000;padding:3px 5px;color:white\"><b> 50% Rabatt<\/b><\/span> · Endet in",
           "link": "https:\/\/therapiedecken.de\/collections\/gravity-therapiedecken-fur-erwachsene"
         }
       },
