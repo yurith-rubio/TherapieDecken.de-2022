@@ -50,7 +50,7 @@
     "enable_days_view": false,
     "border_radius_countdown": 4,
     "loop_time": 0,
-    "announcement_countdown_enable": true,
+    "announcement_countdown_enable": false,
     "background_countdown": "#ffffff",
     "text_color_countdown": "#1c1b1b",
     "product_countdown_enable": false,
@@ -61,7 +61,7 @@
     "checkout_countdown_enable": false,
     "checkout_countdown_text": "⚠️ Auf Grund unseres Weltschlaftag Angebots ist Ihr Warenkorb für nur",
     "left_product_inventory": true,
-    "promotional_hero_hp_cover": true,
+    "promotional_hero_hp_cover": false,
     "promo_image": "shopify:\/\/shop_images\/Halloween_Promotion_Desktop5.jpg",
     "promo_image_mobile": "shopify:\/\/shop_images\/Halloween_Promotion_Mobile2.jpg",
     "promo_tablet_image_position": 60,
@@ -128,7 +128,7 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": true,
+          "enable_bar": false,
           "home_page_only": false,
           "background": "#FE8825",
           "text_color": "#ffffff",
