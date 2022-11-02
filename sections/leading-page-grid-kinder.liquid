@@ -13,7 +13,9 @@
 <div class="leadGrid_container">
     <div class="leadGrid_productBlockWrapper">
       {% if settings.enable_leading_collection_badge and section.settings.promo_badge_1 %}
-        <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-medical-product" width="" height="auto">
+        <div class="leadGrid_badgeWrapper">
+          <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-medical-product" width="" height="auto">
+        </div>
       {% endif %}
       <a href="/products/medizinische-gewichtsdecke-fur-kinder">
         <span style="height: 42px; display:block"></span>
