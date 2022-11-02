@@ -12,13 +12,13 @@
 
 <div class="leadGrid_container">
     <div class="leadGrid_productBlockWrapper">
+      {% if settings.enable_leading_collection_badge and section.settings.promo_badge_1 %}
+        <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-medical-product" width="" height="auto">
+      {% endif %}
       <a href="/products/medizinische-gewichtsdecke-fur-kinder">
         <span style="height: 42px; display:block"></span>
         <div class="leadGrid_productImageContent">
           <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/medical.png?v=1663601123" alt="medical-product" width="" height="auto">
-          {% if settings.enable_leading_collection_badge and section.settings.promo_badge_1 %}
-            <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-medical-product" width="" height="auto">
-          {% endif %}
         </div>
         <h2 class="Heading u-h1">Medizinische</h2>
         <p class="Heading">Gewichtsdecke für Kinder</p>
