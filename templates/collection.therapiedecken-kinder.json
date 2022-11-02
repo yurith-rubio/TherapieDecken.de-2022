@@ -51,14 +51,11 @@
       "type": "leading-page-grid-kinder",
       "settings": {
         "promo_badge_1": true,
-        "leading_collection_badge_max_width": 50,
-        "leading_collection_badge_max_width_mobile": 50,
         "promo_badge_2": true,
-        "leading_collection_badge2_max_width": 50,
-        "leading_collection_badge2_max_width_mobile": 50,
         "promo_badge_3": true,
-        "leading_collection_badge3_max_width": 50,
-        "leading_collection_badge3_max_width_mobile": 50
+        "badge_width": 180,
+        "badge_top": 0,
+        "badge_right": 0
       }
     },
     "1663586516d49c4ca0": {
