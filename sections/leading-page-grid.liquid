@@ -90,12 +90,12 @@
 <div class="leadGrid_container">
     <div class="leadGrid_productBlockWrapper">
       <a href="/collections/gravity-therapiedecken-fur-erwachsene">
+        {% if settings.enable_leading_collection_badge and section.settings.promo_badge_1 %}
+          <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-gravity-product" width="" height="auto">
+        {% endif %}
         <img class="leadGrid_logo" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Gravity-black-svg-logo.svg?v=1661176871" alt="gravity-logo" width="100" height="auto">
         <div class="leadGrid_productImageContent">
           <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/gravity-product-pink.png?v=1664632779"" alt="gravity-product" width="" height="auto">
-          {% if settings.enable_leading_collection_badge and section.settings.promo_badge_1 %}
-            <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-gravity-product" width="" height="auto">
-          {% endif %}
         </div>
         <h2 class="Heading u-h1">Gravity</h2>
         <p class="Heading">Gewichtsdecke für Erwachsene</p>
