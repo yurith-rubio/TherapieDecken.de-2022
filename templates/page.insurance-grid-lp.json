@@ -10,7 +10,8 @@
         "expand_collection": false,
         "apply_overlay": true,
         "text_color": "#ffffff",
-        "button_color": "#363636"
+        "button_color": "#363636",
+        "background_color": "#fac636"
       }
     },
     "1660725886bd8443d7": {
@@ -60,6 +61,7 @@
         },
         "022b59d6-4baf-4587-bde3-b8b7a3092f66": {
           "type": "Image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/DAK.png",
             "link": "https:\/\/therapiedecken.de\/pages\/dak-kunden-sparen-beim-kauf-einer-therapiedecke"
