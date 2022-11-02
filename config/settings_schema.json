@@ -696,7 +696,7 @@
       {
         "type": "checkbox",
         "id": "left_product_inventory",
-        "label": "Enable Countdown on Product Pages",
+        "label": "Show product inventory when > 0 and < 15",
         "default": false
       }
     ]
