@@ -32,7 +32,8 @@
         "promo_badge_1": true,
         "promo_badge_2": true,
         "badge_width": 140,
-        "badge_width_mobile": 50
+        "badge_top": 0,
+        "badge_right": 0
       }
     },
     "1661417927ad24a253": {
