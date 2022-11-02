@@ -8,6 +8,12 @@
     <meta name="theme-color" content="{{ settings.accent_color }}">
 
     <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+    {%- if template.name == 'product' -%}
+      <link rel="stylesheet" href="{{ 'theme-product.css' | asset_url }}">
+    {% endif %}
+    {%- if template.name == 'collection' -%}
+      <link rel="stylesheet" href="{{ 'theme-collection.css' | asset_url }}">
+    {% endif %}
     
     {% comment %} ICOMOON link {% endcomment %}
     <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/163995/TDTW/style-cf.css?742bf2">
