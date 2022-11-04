@@ -396,7 +396,7 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   color: var(--color-text);
 }
 .MyCartUpsells_ItemWrapper{
-  padding: 10px 20px 0 35px;
+  padding: 10px 20px 10px 35px;
 }
 .MyCartUpsells_HeaderWrapper{
   display: flex;
