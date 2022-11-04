@@ -356,9 +356,6 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   justify-content: space-between;
   margin-top: -30px;
 }
-.MyCartUpsells_SuggestedContainer .owl-prev{
-  margin-right:5px;
-}
 .MyCartUpsells_SubmitButton{
   width: 100%;
 }
