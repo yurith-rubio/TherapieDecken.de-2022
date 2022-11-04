@@ -143,7 +143,8 @@ body.js-my-cart-open .MyCartUpsells_SuggestedContainer{
 .MyCart_ItemWrapper{
   display: inline-flex;
   border-top: 1px solid var(--color-light-border);
-  width: 100%
+  width: 100%;
+  padding: 15px 30px;
 }
 .MyCart_ContentItem{
   width: fit-content;
