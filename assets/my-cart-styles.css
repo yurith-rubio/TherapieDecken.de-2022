@@ -532,7 +532,7 @@ button.MyCart_CheckoutButton{
     padding: 23px 11px 17px 11px;
   }
   .MyCart_ItemWrapper{
-    padding: 15px 20px;
+    padding: 15px 30px;
   }
   .MyCart_ValueItem, .MyCartUpsells_MainTitle, .MyCartUpsells_OptionLabel[for]{
     font-size: 12px;
