@@ -25,15 +25,6 @@
 
 {%- if section.settings.enable_bar -%}
 
-{% comment %} Added style for the space above on pages with the block: page-standard-header that moved up when the Show/Hide Header was modified - Yurith {% endcomment %}
-{% style %}
-  {%- if template.name == 'page' -%}
-    .PageStandHeader{
-      margin-top: unset !important;
-    }
-  {% endif %}
-{%- endstyle -%}
-
   {%- unless section.settings.home_page_only and template != 'index' -%}
     <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="announcement-bar">
       <div class="AnnouncementBar">
@@ -83,7 +74,7 @@
       "default": false
     },
     {
-      "type": "color",
+      "type": "color_background",
       "id": "background",
       "label": "Background",
       "default": "#000000"
