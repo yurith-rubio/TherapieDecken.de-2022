@@ -481,7 +481,6 @@ button.MyCart_CheckoutButton{
   }
   .MyCartUpsells_SuggestedContainer{
     width: 440px;
-    padding-right: 20px;
   }
   .MyCartUpsells_Select{
     width: 350px;
@@ -516,7 +515,6 @@ button.MyCart_CheckoutButton{
   }
   .MyCartUpsells_SuggestedContainer{
     bottom: 191px;
-    padding-right: 5px;
   }
   .MyCartUpsells_SuggestedContainer, .MyCartUpsells_MainContainer, .MyCartUpsells_MainContainer > form {
     width: 100%;
