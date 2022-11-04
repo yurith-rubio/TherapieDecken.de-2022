@@ -5,39 +5,22 @@
 
 
 {% style %}
-.back-to-top {
-  position: fixed;
-  z-index: 9;
-  text-align: center;
-  width: 100%;
-  background-color: #fac636;
-  bottom: 0px;
-  letter-spacing: 0.2em;
-  font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));  
-  font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
-  padding: 15px 28px;
-  display: none;
-}
-
-@media screen and (min-width: 800px){
+@media screen and (max-width: 640px){
   .back-to-top {
-    display:none!important;
+    position: fixed;
+    z-index: 9;
+    text-align: center;
+    width: 100%;
+    background-color: #fac636;
+    bottom: 0px;
+    letter-spacing: 0.2em;
+    font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));  
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    padding: 15px 28px;
+    display: none;
   }
 }
-.back-to-top span {
-  padding-left: 0em;
-}
-.back-to-top:hover {
-  text-decoration: none;
-  color: #555;
-}
-.icon-keyboard_arrow_up{
-  font-size: 18px;
-  top: 2px;
-  position: relative;
-}
-
 {% endstyle %}
 
 <script>
