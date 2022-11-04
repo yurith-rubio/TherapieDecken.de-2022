@@ -381,9 +381,14 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   background-color: white;
   line-height: 0px;
   text-align: center;
-  margin: 0 20px;
   position: relative;
   top: -50px;
+}
+.MyCartUpsells_SuggestedContainer .owl-carousel .owl-nav button.owl-prev{
+  margin-left: 20px;
+}
+.MyCartUpsells_SuggestedContainer .owl-carousel .owl-nav button.owl-next{
+  margin-right: 20px;
 }
 .MyCartUpsells_SuggestedContainer .owl-carousel .owl-nav button.owl-prev span,
 .MyCartUpsells_SuggestedContainer .owl-carousel .owl-nav button.owl-next span{
