@@ -163,6 +163,7 @@ body.js-my-cart-open .MyCartUpsells_SuggestedContainer{
 }
 .MyCart_ImageItem{
   width: 70px !important;
+  max-width: 70px;
 }
 .MyCart_QuantityItem{
   display: inline-flex;
