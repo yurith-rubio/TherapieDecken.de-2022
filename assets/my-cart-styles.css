@@ -144,7 +144,7 @@ body.js-my-cart-open .MyCartUpsells_SuggestedContainer{
   display: inline-flex;
   border-top: 1px solid var(--color-light-border);
   width: 100%;
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 .MyCart_ContentItem{
   width: fit-content;
