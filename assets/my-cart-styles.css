@@ -138,7 +138,7 @@ body.js-my-cart-open .MyCartUpsells_SuggestedContainer{
 }
 .MyCart_CloseSlideCart{
   position: absolute;
-  right: 20px;
+  right: 25px;
 }
 .MyCart_ItemWrapper{
   display: inline-flex;
