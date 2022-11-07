@@ -49,8 +49,9 @@
       minutes = minutes < 10 ? "0" + minutes : minutes;
       seconds = seconds < 10 ? "0" + seconds : seconds;
       display.textContent = minutes + ":" + seconds;
-      if (!countdownMain) {
+      if (diff <= 0 || !countdownMain) {
         console.log("diff <= 0 ");
+        console.log(inti);
         clearInterval(inti);
         if (countdownMain){
           countdownMain.innerHTML = "{{ settings.checkout_countdown_text_over }}";
