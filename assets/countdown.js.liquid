@@ -30,6 +30,7 @@
 
   const intervallId = setInterval(function () {
     const countdownAnnouncement = document.querySelector("#countdown_announcement");
+    const countdownProduct = document.querySelector("#countdown_product");
     let countDown = getNextDate();
     if (countDown === null) {
       countdownAnnouncement.innerHTML = "";
@@ -57,7 +58,7 @@
       + `<span class="countdown_text">${minutes}</span>` + "MIN " + `<span class="countdown_text">${seconds}</span>` + "S ";
     {% endif %}
     {% if settings.product_countdown_enable %}
-      document.getElementById("countdown_product").innerHTML = `<span>{{ settings.countdown_product_text }} </span><span class="countdown_days"><span class="countdown_product_text">${days}</span> T </span> <span class="countdown_product_text">${hours}</span> STD <span class="countdown_product_text">${minutes}</span> MIN <span class="countdown_product_text">${seconds}</span> S`;
+      countdownProduct.innerHTML = `<span>{{ settings.countdown_product_text }} </span><span class="countdown_days"><span class="countdown_product_text">${days}</span> T </span> <span class="countdown_product_text">${hours}</span> STD <span class="countdown_product_text">${minutes}</span> MIN <span class="countdown_product_text">${seconds}</span> S`;
     {% endif %}
 
   }, 1000);
