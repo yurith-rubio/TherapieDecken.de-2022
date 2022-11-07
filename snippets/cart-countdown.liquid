@@ -49,7 +49,7 @@
       minutes = minutes < 10 ? "0" + minutes : minutes;
       seconds = seconds < 10 ? "0" + seconds : seconds;
       display.textContent = minutes + ":" + seconds;
-      if (diff <= 0 || !countdownMain) {
+      if (diff <= 0) {
         console.log("diff <= 0 ");
         console.log(inti);
         clearInterval(inti);
