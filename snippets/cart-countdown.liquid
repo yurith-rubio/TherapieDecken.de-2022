@@ -1,6 +1,6 @@
 <script type="module">
   
-  import { requestState, subscribeToResult, subscribeToCartAjaxRequests, cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+  import { subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
   let countdownMain = document.querySelector("#countdown-main");
 
@@ -102,12 +102,5 @@
     }
     
   });
-
-  function myRequestCallback ( requestState, subscribeToResult ) {
-    // callback code
-    console.log("testing");
-    console.log(requestState);
-    console.log(subscribeToResult);
-  }
 
 </script>
