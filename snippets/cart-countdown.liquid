@@ -73,7 +73,6 @@
   subscribeToCartStateUpdate(state => {
     const itemsQuantity = state.cart.items.length;
     const cartCountdown = document.querySelector("#cart_countdown");
-    cartCountdown.innerHTML = "";
 
     console.log("quantity: " + itemsQuantity);
     if (!countdownMain && itemsQuantity >= 1){
