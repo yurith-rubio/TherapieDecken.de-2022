@@ -78,10 +78,12 @@
   subscribeToCartStateUpdate(state => {
     const itemsQuantity = state.cart.items.length;
     const cartCountdown = document.querySelector("#cart_countdown");
+    let itemCount = itemCount = state.cart.item_count;
+    
     console.log("state");
     if (!countdownMain && itemsQuantity >= 1){
       console.log("setting timer here ");
-      itemCount = state.cart.item_count;
+      
       cartCountdown.innerHTML = countdownWrapper;
 
       let minutes = 1;
