@@ -68,7 +68,7 @@
     const cartCountdown = document.querySelector("#cart_countdown");
     console.log("pdm ");
     console.log(pdm);
-    cartCountdown.appendChild(pdm);
+    cartCountdown.insertAdjacentHTML("beforeend", pdm);
     var minutes = 10;
     var ten = 60 * minutes;
     var starttime = Date.now();
