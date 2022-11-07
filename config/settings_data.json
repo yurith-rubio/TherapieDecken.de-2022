@@ -59,7 +59,7 @@
     "countdown_container_bg_color": "#8a1855",
     "countdown_product_numbers_color": "#8a1855",
     "checkout_countdown_enable": true,
-    "checkout_countdown_text": "⚠️ Auf Grund unseres Weltschlaftag Angebots ist Ihr Warenkorb für nur",
+    "checkout_countdown_text": "⚠️ AAAuf Grund unseres Weltschlaftag Angebots ist Ihr Warenkorb für nur",
     "checkout_countdown_text_over": "Wir können nicht länger die Verfügbarkeit der Produkte im Warenkorb garantieren",
     "left_product_inventory": true,
     "promotional_hero_hp_cover": false,
