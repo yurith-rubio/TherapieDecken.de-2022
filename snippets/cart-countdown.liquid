@@ -106,6 +106,9 @@
     
   });
 
-  subscribeToCartAjaxRequests( myRequestCallback );
+  subscribeToCartAjaxRequests( myRequestCallback => {
+    console.log("Requests "):
+    console.log(myRequestCallback);
+  } );
 
 </script>
