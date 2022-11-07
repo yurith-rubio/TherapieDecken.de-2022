@@ -2,7 +2,7 @@
   
   import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-  const countdownMain = document.querySelector("#countdown-main");
+  let countdownMain = document.querySelector("#countdown-main");
 
   function createCookie(a, b, c) {
     console.log("function createCookie");
@@ -38,6 +38,7 @@
   }
   
   function startTimer(start, duration, display) {
+    let countdownMain = document.querySelector("#countdown-main");
     console.log("startTimer");
     var diff, minutes, seconds;
   
