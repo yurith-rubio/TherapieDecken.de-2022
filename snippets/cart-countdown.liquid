@@ -53,9 +53,9 @@
       }
     };
     timer();
-    var inti = setInterval(timer, 1000);
+    const inti = setInterval(timer, 1000);
   }
-  var pdm = `
+  const pdm = `
     <div class="countdown-holder">
         <div id="countdown-main" class="countdown-main">
           {% if settings.checkout_countdown_text != blank %} 
@@ -77,10 +77,10 @@
     if (!countdownMain){
       cartCountdown.insertAdjacentHTML("beforeend", pdm);
     }
-    var minutes = 10;
-    var ten = 60 * minutes;
-    var starttime = Date.now();
-    var xcnt = readCookie('prtcntdwn');
+    const minutes = 10;
+    const ten = 60 * minutes;
+    const starttime = Date.now();
+    const xcnt = readCookie('prtcntdwn');
     if (xcnt) {
       if (starttime < xcnt) {
         ten = (xcnt - starttime) / 1000;
