@@ -73,8 +73,10 @@
     console.log("pdm ");
     console.log(pdm);
     const countdownMain = document.querySelector("#countdown-main");
-    if (!countdownMain and ){
+    if (!countdownMain and itemsQuantity => 1){
       cartCountdown.innerHTML = pdm;
+    } else {
+      eraseCookie('ptcntdwn');
     }
     let minutes = 1;
     let ten = 60 * minutes;
