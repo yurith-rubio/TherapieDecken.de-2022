@@ -15,7 +15,6 @@
   }
   
   function readCookie(a) {
-    console.log("readCookie");
     for (var b = a + "=", c = document.cookie.split(";"), d = 0; d < c.length; d++) {
       for (var e = c[d];
         " " == e.charAt(0);) e = e.substring(1, e.length);
@@ -25,12 +24,10 @@
   }
   
   function eraseCookie(a) {
-    console.log("eraseCookie");
     createCookie(a, "", -1)
   }
   
   function crtmedir(a) {
-    console.log("crtmedir");
     var b = document.createDocumentFragment(),
       c = document.createElement("div");
     for (c.innerHTML = a; c.firstChild;) b.appendChild(c.firstChild);
