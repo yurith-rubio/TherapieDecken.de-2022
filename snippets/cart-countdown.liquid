@@ -93,11 +93,12 @@
       } else {
         createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
       }
-      const display = document.querySelector('#time');
-      startTimer(starttime, ten, display);
+      
 
       let cartCountdown = document.querySelector("#cart_countdown");
       cartCountdown.innerHTML = countdownWrapper;
+      const display = document.querySelector('#time');
+      startTimer(starttime, ten, display);
     }
     
     if (requestState.requestType === "change"){
