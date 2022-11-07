@@ -667,6 +667,24 @@
         "default": false
       },
       {
+        "type": "text",
+        "id": "cart_countdown_text",
+        "label": "Countdown Pre-Content",
+        "default": "⚠️ Auf Grund unserer Black Friday Angebote ist Ihr Warenkorb für nur"
+      },
+      {
+        "type": "text",
+        "id": "cart_countdown_text_after",
+        "label": "Countdown Post-Content",
+        "default": "Minuten reserviert!"
+      },
+      {
+        "type": "text",
+        "id": "cart_countdown_text_over",
+        "label": "Content after Countdown is Over",
+        "default": "⚠️ Ihr Warenkorb Reservierung ist abgelaufen."
+      },
+      {
         "type": "header",
         "content": "Checkout countdown"
       },
