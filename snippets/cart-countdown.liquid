@@ -43,8 +43,6 @@
     var diff, minutes, seconds;
   
     function timer() {
-      console.log("timmer running ");
-      console.log(countdownMain);
       diff = duration - (((Date.now() - start) / 1000) | 0);
       minutes = (diff / 60) | 0;
       seconds = (diff % 60) | 0;
