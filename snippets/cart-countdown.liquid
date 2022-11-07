@@ -1,4 +1,8 @@
 <script type="module">
+
+  import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+
+  
 function createCookie(a, b, c) {
   console.log("function createCookie");
   if (c) {
@@ -60,29 +64,31 @@ var pdm = crtmedir(`
   </div>
 `);
 
-
-if (1 === 1) {
-  window.onload = function () {
-    //document.getElementsByClassName('countdown-placeholder')[0].appendChild(pdm);
-    const cartCountdown = document.querySelector("#cart_countdown").appendChild(pdm);
-    console.log("cart countdown element ");
-    console.log(cartCountdown);
-    var minutes = 10;
-    var ten = 60 * minutes;
-    var starttime = Date.now();
-    var xcnt = readCookie('prtcntdwn');
-    if (xcnt) {
-      if (starttime < xcnt) {
-        ten = (xcnt - starttime) / 1000;
-      } else {
-        eraseCookie('ptcntdwn');
-        createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+    subscribeToCartStateUpdate(state => {
+      if (1 === 1) {
+        window.onload = function () {
+          //document.getElementsByClassName('countdown-placeholder')[0].appendChild(pdm);
+          const cartCountdown = document.querySelector("#cart_countdown").appendChild(pdm);
+          console.log("cart countdown element ");
+          console.log(cartCountdown);
+          var minutes = 10;
+          var ten = 60 * minutes;
+          var starttime = Date.now();
+          var xcnt = readCookie('prtcntdwn');
+          if (xcnt) {
+            if (starttime < xcnt) {
+              ten = (xcnt - starttime) / 1000;
+            } else {
+              eraseCookie('ptcntdwn');
+              createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+            }
+          } else {
+            createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+          }
+          display = document.querySelector('#time');
+          startTimer(starttime, ten, display);
+        };
       }
-    } else {
-      createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
-    }
-    display = document.querySelector('#time');
-    startTimer(starttime, ten, display);
-  };
-}
+    });
+  
 </script>
