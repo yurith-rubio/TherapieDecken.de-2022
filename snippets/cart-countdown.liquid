@@ -74,6 +74,7 @@
     if (!countdownMain && itemsQuantity >= 1){
       cartCountdown.innerHTML = countdownWrapper;
     } else {
+      console.log("less than 1 item");
       eraseCookie('ptcntdwn');
     }
     let minutes = 1;
