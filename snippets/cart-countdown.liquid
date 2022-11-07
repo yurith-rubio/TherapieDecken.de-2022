@@ -75,9 +75,9 @@
       </div>`;
 
   subscribeToCartAjaxRequests(( requestState ) => {
-    let cartCountdown = document.querySelector("#cart_countdown");
 
     if (requestState.requestType === "add"){
+      let cartCountdown = document.querySelector("#cart_countdown");
       cartCountdown.innerHTML = countdownWrapper;
 
       let minutes = 1;
