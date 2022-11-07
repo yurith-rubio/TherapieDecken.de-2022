@@ -1,7 +1,11 @@
 <script type="module">
   
-  import { subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+  import { subscribeToCartAjaxRequests , subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
+  subscribeToCartAjaxRequests(( requestState, subscribeToResult ) => {
+    console.log("this is logging ");
+  });
+  
   let countdownMain = document.querySelector("#countdown-main");
 
   function createCookie(a, b, c) {
