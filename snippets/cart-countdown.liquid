@@ -77,8 +77,7 @@
   subscribeToCartAjaxRequests(( requestState ) => {
 
     if (requestState.requestType === "add"){
-      let cartCountdown = document.querySelector("#cart_countdown");
-      cartCountdown.innerHTML = countdownWrapper;
+      
 
       let minutes = 1;
       let ten = 60 * minutes;
@@ -96,6 +95,9 @@
       }
       const display = document.querySelector('#time');
       startTimer(starttime, ten, display);
+
+      let cartCountdown = document.querySelector("#cart_countdown");
+      cartCountdown.innerHTML = countdownWrapper;
     }
     
     if (requestState.requestType === "change"){
