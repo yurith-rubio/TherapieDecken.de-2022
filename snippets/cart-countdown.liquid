@@ -2,10 +2,9 @@
   
   import { subscribeToCartAjaxRequests , subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-  subscribeToCartAjaxRequests(( requestState, subscribeToResult ) => {
+  subscribeToCartAjaxRequests(( requestState ) => {
     console.log("this is logging ");
-    console.log(requestState);
-    console.log(subscribeToResult);
+    console.log(requestState.requestType === "change");
   });
   
   let countdownMain = document.querySelector("#countdown-main");
