@@ -15,11 +15,6 @@
     {% render 'judgeme_core' %}
     {% comment %} jQuery library - Yurith {% endcomment %}
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    {%- if template.name == 'product' -%}
-      {% comment %} Scripts for metafield variants - Yurith {% endcomment %}
-      <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script> 
-      <script src="{{ 'cart-countdown.js' | asset_url }}" defer="defer"></script>
-    {% endif %}
     {% comment %}  Gift item styles - with slidecart styles - Yurith {% endcomment %}
     {{ 'my-cart-styles.css' | asset_url | stylesheet_tag }}
     {% comment %}  Add FREE GIFT to slide cart code - Yurith {% endcomment %}
@@ -269,6 +264,11 @@
 	</script>
 
     <script src="{{ 'hide-show-menu.js' | asset_url }}" defer="defer"></script>
+    {%- if template.name == 'product' -%}
+      {% comment %} Scripts for metafield variants - Yurith {% endcomment %}
+      <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script> 
+      <script src="{{ 'cart-countdown.js' | asset_url }}" defer="defer"></script>
+    {% endif %}
     
   </body>
 </html>
