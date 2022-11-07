@@ -102,7 +102,7 @@
   
   subscribeToCartAjaxRequests(( requestState ) => {
     
-    if (requestState.requestType === "change"){
+    if (requestState.requestType === "change" || requestState.requestType === "add"){
       console.log("less than 1 item");
       eraseCookie('prtcntdwn');
     }
