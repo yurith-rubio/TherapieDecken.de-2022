@@ -64,7 +64,9 @@ if (
 ) {
   window.onload = function () {
     //document.getElementsByClassName('countdown-placeholder')[0].appendChild(pdm);
-    const cartCountdown = document.querySelector("#cart_countdown").appendChild(pdm);;
+    const cartCountdown = document.querySelector("#cart_countdown").appendChild(pdm);
+    console.log("cart countdown element ");
+    console.log(cartCountdown)
     var minutes = 20;
     var ten = 60 * minutes;
     var starttime = Date.now();
