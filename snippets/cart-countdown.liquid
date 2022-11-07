@@ -50,6 +50,7 @@
       seconds = seconds < 10 ? "0" + seconds : seconds;
       display.textContent = minutes + ":" + seconds;
       if (diff <= 0) {
+        console.log("diff <= 0 ");
         clearInterval(inti);
         if (countdownMain){
           countdownMain.innerHTML = "{{ settings.checkout_countdown_text_over }}";
