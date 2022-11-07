@@ -70,8 +70,6 @@
     const itemsQuantity = state.cart.items.length;
 
     const cartCountdown = document.querySelector("#cart_countdown");
-    console.log("pdm ");
-    console.log(countdownWrapper);
     const countdownMain = document.querySelector("#countdown-main");
     if (!countdownMain && itemsQuantity >= 1){
       cartCountdown.innerHTML = countdownWrapper;
