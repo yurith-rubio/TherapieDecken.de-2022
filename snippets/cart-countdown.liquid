@@ -55,13 +55,13 @@
     timer();
     var inti = setInterval(timer, 1000);
   }
-  var pdm = crtmedir(`
+  var pdm = `
     <div class="countdown-holder">
         <div id="countdown-main" class="countdown-main">
 
         </div>
     </div>
-  `);
+  `;
   
 
   subscribeToCartStateUpdate(state => {
