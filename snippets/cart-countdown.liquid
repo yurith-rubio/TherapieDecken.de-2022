@@ -1,6 +1,6 @@
 <script type="module">
   
-  import { subscribeToCartAjaxRequests , subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+  import { subscribeToCartAjaxRequests } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
 
   
@@ -74,16 +74,6 @@
         {% endif %}
       </div>`;
 
-  subscribeToCartStateUpdate(state => {
-    
-
-     else {
-      console.log("less than 1 item");
-      eraseCookie('prtcntdwn');
-    }
-    
-  });
-
   subscribeToCartAjaxRequests(( requestState ) => {
     const itemsQuantity = state.cart.items.length;
     const cartCountdown = document.querySelector("#cart_countdown");
@@ -111,7 +101,8 @@
     }
     
     if (requestState.requestType === "change"){
-      
+      console.log("less than 1 item");
+      eraseCookie('prtcntdwn');
     }
   });
 
