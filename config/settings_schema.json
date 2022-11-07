@@ -658,7 +658,17 @@
       },
       {
         "type": "header",
-        "content": "Checkout Countdown"
+        "content": "Cart countdown"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_countdown_enable",
+        "label": "Enable Countdown on Checkout Page",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Checkout countdown"
       },
       {
         "type": "checkbox",
