@@ -47,6 +47,7 @@
         },
         "ee8087b7-58f9-40ba-a8d0-3797d63ff13b": {
           "type": "Image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/TK_Die_Techniker.png",
             "link": "https:\/\/therapiedecken.de\/pages\/techniker-krankenkassenkunden-sparen-beim-kauf-einer-therapiedecke"
