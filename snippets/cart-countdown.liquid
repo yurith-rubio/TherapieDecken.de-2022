@@ -79,8 +79,7 @@
     const itemsQuantity = state.cart.items.length;
     const cartCountdown = document.querySelector("#cart_countdown");
     console.log("state");
-    let itemCount = "";
-    if (!countdownMain && itemsQuantity >= 1 && itemCount == itemCount){
+    if (!countdownMain && itemsQuantity >= 1){
       console.log("setting timer here ");
       itemCount = state.cart.item_count;
       cartCountdown.innerHTML = countdownWrapper;
@@ -101,9 +100,6 @@
       }
       const display = document.querySelector('#time');
       startTimer(starttime, ten, display);
-    } else if (itemCount != itemCount) {
-      console.log("itemCount != itemCount");
-      eraseCookie('prtcntdwn');
     } else {
       console.log("less than 1 item");
       eraseCookie('prtcntdwn');
