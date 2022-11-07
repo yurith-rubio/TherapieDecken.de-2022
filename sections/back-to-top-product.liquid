@@ -1,36 +1,35 @@
-{% assign position_from_bottom = '5.8em' %}
 <a href="#" title="Back to the top" class="back-to-top">
   <span>ZUR AUSWAHL <span class="icon-keyboard_arrow_up"></span></span>
 </a>
 
-
-{% style %}
-.back-to-top {
-  position: fixed;
-  z-index: 9;
-  text-align: center;
-  width: 100%;
-  background-color: #fac636;
-  bottom: 0px;
-  letter-spacing: 0.2em;
-  font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));  
-  font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
-  padding: 15px 28px;
-  display: none;
+<style>
+@media screen and (max-width: 640px){
+  .back-to-top {
+    position: fixed;
+    z-index: 9;
+    text-align: center;
+    width: 100%;
+    background-color: #fac636;
+    bottom: 0px;
+    letter-spacing: .2em;
+    font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));
+    font-family: var(--heading-font-family);
+    padding: 15px 28px;
+    display: none;
+  }
 }
 @media screen and (min-width: 641px){
   .back-to-top {
     display:none!important;
   }
 }
-{% endstyle %}
+</style>
 
 <script>
 window.onload = function() {
  jQuery(function($) {
-   let offset = 3400;
-   let duration = 500;
+   var offset = 3400;
+   var duration = 500;
    $(window).scroll(function() {
      const chatraButton = $('#chatra.chatra--side-bottom');
      if ($(this).scrollTop() > offset) {
@@ -54,22 +53,3 @@ window.onload = function() {
  });
 }
 </script>
-
-{% schema %}
-  {
-    "name": "Back top product",
-    "settings": [],
-	"presets": [
-      {
-        "category": "Product",
-        "name": "Back top product"
-      }
-  	]
-  }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
