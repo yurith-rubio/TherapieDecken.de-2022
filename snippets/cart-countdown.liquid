@@ -76,6 +76,8 @@
 
     console.log("quantity: " + itemsQuantity);
     if (!countdownMain && itemsQuantity >= 1){
+      console.log("cartCountdown");
+      console.log(cartCountdown);
       cartCountdown.innerHTML = countdownWrapper;
 
       let minutes = 1;
