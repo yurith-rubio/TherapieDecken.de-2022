@@ -70,14 +70,10 @@
     const cartCountdown = document.querySelector("#cart_countdown");
     const countdownMain = document.querySelector("#countdown-main");
 
-    function setCountdown(){
-      if (!countdownMain && itemsQuantity >= 1){
-        cartCountdown.innerHTML = countdownWrapper;
-      } else {
-        eraseCookie('ptcntdwn');
-      }
+    
+    if (!countdownMain && itemsQuantity >= 1){
+      cartCountdown.innerHTML = countdownWrapper;
     }
-
     let minutes = 1;
     let ten = 60 * minutes;
     let starttime = Date.now();
