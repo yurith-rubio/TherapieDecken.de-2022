@@ -73,6 +73,8 @@
     
     if (!countdownMain && itemsQuantity >= 1){
       cartCountdown.innerHTML = countdownWrapper;
+    } else {
+      eraseCookie('ptcntdwn');
     }
     let minutes = 1;
     let ten = 60 * minutes;
