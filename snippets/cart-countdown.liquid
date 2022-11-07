@@ -79,12 +79,6 @@
     
     if (!countdownMain ){
       cartCountdown.innerHTML = countdownWrapper;
-    }     
-  });
-  
-  subscribeToCartAjaxRequests(( requestState ) => {
-
-    if (requestState.requestType === "add"){
 
       let minutes = 1;
       let ten = 60 * minutes;
@@ -102,7 +96,11 @@
       }
       const display = document.querySelector('#time');
       startTimer(starttime, ten, display);
-    }
+      
+    }     
+  });
+  
+  subscribeToCartAjaxRequests(( requestState ) => {
     
     if (requestState.requestType === "change"){
       console.log("less than 1 item");
