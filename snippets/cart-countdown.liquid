@@ -2,6 +2,8 @@
   
   import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
+  const countdownMain = document.querySelector("#countdown-main");
+
   function createCookie(a, b, c) {
     console.log("function createCookie");
     if (c) {
@@ -48,7 +50,9 @@
       display.textContent = minutes + ":" + seconds;
       if (diff <= 0) {
         clearInterval(inti);
-        document.getElementById("countdown-main").innerHTML = "{{ settings.checkout_countdown_text_over }}";
+        if (countdownMain){
+          countdownMain.innerHTML = "{{ settings.checkout_countdown_text_over }}";
+        }
         start = Date.now() + 1000;
       }
     };
@@ -68,7 +72,6 @@
   subscribeToCartStateUpdate(state => {
     const itemsQuantity = state.cart.items.length;
     const cartCountdown = document.querySelector("#cart_countdown");
-    const countdownMain = document.querySelector("#countdown-main");
 
     console.log("quantity: " + itemsQuantity);
     if (!countdownMain && itemsQuantity >= 1){
