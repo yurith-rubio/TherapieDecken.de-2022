@@ -73,6 +73,7 @@
   subscribeToCartStateUpdate(state => {
     const itemsQuantity = state.cart.items.length;
     const cartCountdown = document.querySelector("#cart_countdown");
+    cartCountdown.innerHTML = "";
 
     console.log("quantity: " + itemsQuantity);
     if (!countdownMain && itemsQuantity >= 1){
@@ -96,7 +97,6 @@
       startTimer(starttime, ten, display);
     } else {
       console.log("less than 1 item");
-      countdownMain.innerHTML = "";
       eraseCookie('ptcntdwn');
     }
     
