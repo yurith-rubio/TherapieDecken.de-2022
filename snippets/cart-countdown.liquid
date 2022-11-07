@@ -62,10 +62,11 @@
   let countdownWrapper = `
       <div id="countdown-main" class="countdown-main">
         {% if settings.checkout_countdown_text != blank %} 
-          text: {{ settings.checkout_countdown_text }} 
-        {% endif %} <span id="time"></span> 
+          {{ settings.checkout_countdown_text }} 
+        {% endif %} 
+        <span id="time"></span> 
         {% if settings.checkout_countdown_text != blank %} 
-          after: {{ settings.checkout_countdown_text_after }} 
+          {{ settings.checkout_countdown_text_after }} 
         {% endif %}
       </div>`;
 
