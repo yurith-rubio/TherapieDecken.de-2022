@@ -67,13 +67,13 @@
 
   subscribeToCartStateUpdate(state => {
     console.log("state ");
-    console.log(state.cart.items.length);
+    const itemsQuantity = state.cart.items.length;
 
     const cartCountdown = document.querySelector("#cart_countdown");
     console.log("pdm ");
     console.log(pdm);
     const countdownMain = document.querySelector("#countdown-main");
-    if (!countdownMain){
+    if (!countdownMain and ){
       cartCountdown.innerHTML = pdm;
     }
     let minutes = 1;
