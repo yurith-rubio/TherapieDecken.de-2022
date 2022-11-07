@@ -55,7 +55,7 @@
     timer();
     let inti = setInterval(timer, 1000);
   }
-  let pdm = `
+  let countdownWrapper = `
       <div id="countdown-main" class="countdown-main">
         {% if settings.checkout_countdown_text != blank %} 
           {{ settings.checkout_countdown_text }} 
@@ -71,10 +71,10 @@
 
     const cartCountdown = document.querySelector("#cart_countdown");
     console.log("pdm ");
-    console.log(pdm);
+    console.log(countdownWrapper);
     const countdownMain = document.querySelector("#countdown-main");
     if (!countdownMain && itemsQuantity >= 1){
-      cartCountdown.innerHTML = pdm;
+      cartCountdown.innerHTML = countdownWrapper;
     } else {
       eraseCookie('ptcntdwn');
     }
