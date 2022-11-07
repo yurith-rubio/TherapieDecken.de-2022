@@ -79,8 +79,9 @@
     const itemsQuantity = state.cart.items.length;
     const cartCountdown = document.querySelector("#cart_countdown");
     console.log("state");
-    let itemCount = state.cart.item_count;
+    let itemCount = "";
     if (!countdownMain && itemsQuantity >= 1 && itemCount == itemCount){
+      itemCount = state.cart.item_count;
       cartCountdown.innerHTML = countdownWrapper;
 
       let minutes = 1;
