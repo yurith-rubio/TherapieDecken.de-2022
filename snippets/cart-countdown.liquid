@@ -56,16 +56,14 @@
     let inti = setInterval(timer, 1000);
   }
   let pdm = `
-    <div class="countdown-holder">
-        <div id="countdown-main" class="countdown-main">
-          {% if settings.checkout_countdown_text != blank %} 
-            {{ settings.checkout_countdown_text }} 
-          {% endif %} <span id="time"></span> 
-          {% if settings.checkout_countdown_text != blank %} 
-            {{ settings.checkout_countdown_text_after }} 
-          {% endif %}
-        </div>
-    </div>`;
+      <div id="countdown-main" class="countdown-main">
+        {% if settings.checkout_countdown_text != blank %} 
+          {{ settings.checkout_countdown_text }} 
+        {% endif %} <span id="time"></span> 
+        {% if settings.checkout_countdown_text != blank %} 
+          {{ settings.checkout_countdown_text_after }} 
+        {% endif %}
+      </div>`;
 
   subscribeToCartStateUpdate(state => {
     console.log("here here here ");
