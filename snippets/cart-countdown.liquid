@@ -75,7 +75,7 @@
       </div>`;
 
   subscribeToCartAjaxRequests(( requestState ) => {
-    const cartCountdown = document.querySelector("#cart_countdown");
+    let cartCountdown = document.querySelector("#cart_countdown");
 
     if (requestState.requestType === "add"){
       cartCountdown.innerHTML = countdownWrapper;
