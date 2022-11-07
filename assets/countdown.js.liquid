@@ -49,6 +49,9 @@
     console.log("seconds");
     console.log(seconds);
 
+    console.log("countdownAnnouncement");
+    console.log(countdownAnnouncement);
+
     {% if settings.announcement_countdown_enable %}
       countdownAnnouncement.innerHTML = `<span class="countdown_days"><span class="countdown_text">${days}</span>` + "T " + `</span>` + `<span class="countdown_text">${hours}</span>` + "STD "
       + `<span class="countdown_text">${minutes}</span>` + "MIN " + `<span class="countdown_text">${seconds}</span>` + "S ";
