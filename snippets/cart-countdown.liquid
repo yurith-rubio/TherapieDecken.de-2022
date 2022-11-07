@@ -58,10 +58,11 @@
   var pdm = crtmedir(`
     <div class="countdown-holder">
         <div id="countdown-main" class="countdown-main">
-            {% if settings.checkout_countdown_text != blank %} {{ settings.checkout_countdown_text }} {% endif %} <span id="time"></span> {% if settings.checkout_countdown_text != blank %} {{ settings.checkout_countdown_text_after }} {% endif %}
+
         </div>
     </div>
   `);
+  
 
   subscribeToCartStateUpdate(state => {
     console.log("here here here ");
