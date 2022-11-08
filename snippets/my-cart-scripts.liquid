@@ -121,6 +121,7 @@
 <script>
   function overlayOn() {
     document.getElementById("MyCart_Overlay").style.display = "block";
+    document.getElementById("MyCart_Overlay").dispatchEvent(new Event("cart_open"));
   }
   function overlayOff() {
     document.getElementById("MyCart_Overlay").style.display = "none";
