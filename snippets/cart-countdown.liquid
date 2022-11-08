@@ -1,6 +1,13 @@
 <script type="module">
   
   import { subscribeToCartAjaxRequests, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+
+  const cartOverlay = document.getElementById("MyCart_Overlay");
+  if (cartOverlay) {
+    cartOverlay.addEventListener("cart_open", () => {
+      console.log("--- cart open event");
+    });
+  }
   
   function createCookie(a, b, c) {
     console.log("function createCookie");
