@@ -46,9 +46,9 @@
       if (diff <= 0) {
         clearInterval(inti);
         if (countdownMainElement){
-          //let countdownMainElementWrapper = document.querySelector("#cart_countdown");
+          let countdownMainElementWrapper = document.querySelector("#cart_countdown");
           countdownMainElement.innerHTML = "{{ settings.cart_countdown_text_over }}";
-          //countdownMainElementWrapper.setAttribute("data-ajax-cart-static-element", "");
+          countdownMainElementWrapper.setAttribute("data-ajax-cart-static-element", "");
           start = Date.now() + 1000;
         }
       }
@@ -97,12 +97,13 @@
   subscribeToCartStateUpdate(state => {
     console.log("new state ");
     timingRunning();
+    
   });
   
   subscribeToCartAjaxRequests(( requestState ) => {
     if (requestState.requestType === "change" ){
       console.log("cart changed");
-      //eraseCookie('ptcntdwn');
+      //eraseCookie('prtcntdwn');
       //createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
     }
     if (requestState.requestType === "update" ){
@@ -110,7 +111,6 @@
     }
     if (requestState.requestType === "add" ){
       console.log("product added");
-      eraseCookie('ptcntdwn');
       //createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
     }
   });
