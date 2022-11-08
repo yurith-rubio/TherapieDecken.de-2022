@@ -70,6 +70,10 @@
       </div>`;
 
   function timingRunning(){
+    if (!countdownMain ){
+      cartCountdown.innerHTML = countdownWrapper; 
+    }
+    
     let minutes = 1;
     let ten = 60 * minutes;
     let starttime = Date.now();
@@ -95,11 +99,8 @@
     if(document.cookie.includes("prtcntdwn")){
       console.log("cookie prtcntdwn is there");
     }
+    timingRunning();
     
-    if (!countdownMain ){
-      cartCountdown.innerHTML = countdownWrapper;
-      timingRunning();
-    }
   });
   
   subscribeToCartAjaxRequests(( requestState ) => {
