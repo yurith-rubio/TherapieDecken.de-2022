@@ -79,7 +79,11 @@
       cartCountdown.innerHTML = countdownWrapper;
     }
 
-    let minutes = 1;
+    
+    
+  });
+
+  let minutes = 1;
     let ten = 60 * minutes;
     let starttime = Date.now();
     let xcnt = readCookie('prtcntdwn');
@@ -95,8 +99,7 @@
     }
     const display = document.querySelector('#time');
     startTimer(starttime, ten, display);
-    
-  });
+  
   
   subscribeToCartAjaxRequests(( requestState ) => {
     if (requestState.requestType === "change" ){
