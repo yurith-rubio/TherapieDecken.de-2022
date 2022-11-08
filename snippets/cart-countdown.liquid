@@ -47,9 +47,9 @@
       if (diff <= 0) {
         clearInterval(inti);
         if (countdownMain){
-          let cartCountdown = document.querySelector("#cart_countdown");
+          let countdownMainWrapper = document.querySelector("#cart_countdown");
           countdownMain.innerHTML = "{{ settings.cart_countdown_text_over }}";
-          cartCountdown.classList.add("countdown_over");
+          countdownMainWrapper.classList.add("countdown_over");
           start = Date.now() + 1000;
         }
       }
@@ -70,10 +70,10 @@
       </div>`;
 
   function timingRunning(){
-    let cartCountdown = document.querySelector("#cart_countdown");
+    let countdownMainWrapper = document.querySelector("#cart_countdown");
     let countdownMain = document.querySelector("#countdown-main");
     if (!countdownMain ){
-      cartCountdown.innerHTML = countdownWrapper; 
+      countdownMainWrapper.innerHTML = countdownWrapper; 
     }
     
     let minutes = 1;
@@ -120,7 +120,7 @@
   if (cartOverlay) {
     cartOverlay.addEventListener("slidecart:open", () => {
       console.log("cart overlay and cart open ")
-      //createCartCountdown();
+      //createcountdownMainWrapper();
       timingRunning();
     });
   }
