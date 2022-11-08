@@ -69,6 +69,7 @@
       </div>`;
 
   subscribeToCartStateUpdate(state => {
+    console.log("new state ");
     let cartCountdown = document.querySelector("#cart_countdown");
     if(document.cookie.includes("prtcntdwn")){
       console.log("cookie prtcntdwn is there");
@@ -76,7 +77,6 @@
     
     if (!countdownMain ){
       cartCountdown.innerHTML = countdownWrapper;
-
       let minutes = 1;
       let ten = 60 * minutes;
       let starttime = Date.now();
@@ -98,11 +98,14 @@
   
   subscribeToCartAjaxRequests(( requestState ) => {
     if (requestState.requestType === "change" ){
-      console.log(requestState.requestType === "change" );
+      console.log("cart changed");
       eraseCookie('prtcntdwn');
     }
     if (requestState.requestType === "update" ){
       console.log("cart updated");
+    }
+    if (requestState.requestType === "add" ){
+      console.log("product added");
     }
   });
 
