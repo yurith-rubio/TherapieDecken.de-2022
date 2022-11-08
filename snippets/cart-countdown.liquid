@@ -65,20 +65,8 @@
     let inti = setInterval(timer, 1000);
   }
 
-
-  subscribeToCartAjaxRequests(( requestState ) => {
-    let countdownMain = document.querySelector("#countdown-main");
-    let cartCountdown = document.querySelector("#cart_countdown");
-    if (!cartCountdown) return;
-    
-    if (requestState.requestType === "change" ){
-      console.log("cart changed ");
-      console.log(requestState.requestType === "change" );
-      eraseCookie('prtcntdwn');
-    }
-    if(requestState.requestType === "update"){
-      console.log("cart updated ");
-      let minutes = 1;
+  function runningTiming(){
+    let minutes = 1;
       let ten = 60 * minutes;
       let starttime = Date.now();
       let xcnt = readCookie('prtcntdwn');
@@ -94,7 +82,22 @@
       }
       const display = document.querySelector('#time');
       startTimer(starttime, ten, display);
+  }
+
+
+  subscribeToCartAjaxRequests(( requestState ) => {
+    let countdownMain = document.querySelector("#countdown-main");
+    let cartCountdown = document.querySelector("#cart_countdown");
+    if (!cartCountdown) return;
     
+    if (requestState.requestType === "change" ){
+      console.log("cart changed ");
+      console.log(requestState.requestType === "change" );
+      eraseCookie('prtcntdwn');
+    }
+    if(requestState.requestType === "update"){
+      console.log("cart updated ");
+      runningTiming();
     }
     if(requestState.requestType === "add"){
       console.log("product added ");
