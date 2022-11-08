@@ -75,18 +75,16 @@
         {% endif %}
       </div>`;
 
-  function createCartCountdown() {
+  subscribeToCartAjaxRequests(( requestState ) => {
     let countdownMain = document.querySelector("#countdown-main");
     let cartCountdown = document.querySelector("#cart_countdown");
     if (!cartCountdown) return;
     
-    if(document.cookie.includes("prtcntdwn")){
-      console.log("cookie prtcntdwn is there");
+    if (requestState.requestType === "change" ){
+      console.log(requestState.requestType === "change" );
+      eraseCookie('prtcntdwn');
     }
-  
-    if (!countdownMain){
-      cartCountdown.innerHTML = countdownWrapper;
-  
+    if(requestState.requestType === "update"){
       let minutes = 1;
       let ten = 60 * minutes;
       let starttime = Date.now();
@@ -104,17 +102,23 @@
       const display = document.querySelector('#time');
       startTimer(starttime, ten, display);
     }
+    if(requestState.requestType === "add"){
+      if (!countdownMain){
+        cartCountdown.innerHTML = countdownWrapper;
+      }
+    }
+  });
+  function createCartCountdown() {
+
+    if(document.cookie.includes("prtcntdwn")){
+      console.log("cookie prtcntdwn is there");
+    }
   }
   
   subscribeToCartStateUpdate(state => {
-    createCartCountdown();
+    //createCartCountdown();
   });
   
-  subscribeToCartAjaxRequests(( requestState ) => {
-    if (requestState.requestType === "change" ){
-      console.log(requestState.requestType === "change" );
-      eraseCookie('prtcntdwn');
-    }
-  });
+
 
 </script>
