@@ -266,10 +266,10 @@
     <script src="{{ 'hide-show-menu.js' | asset_url }}" defer="defer"></script>
     {%- if template.name == 'product' -%}
       {% comment %} Scripts for metafield variants - Yurith {% endcomment %}
-      <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script> 
-      {% render 'cart-countdown' %}
+      <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
       <script src="{{ 'cart-countdown.js' | asset_url }}" defer="defer"></script>
     {% endif %}
+    {% render 'cart-countdown' %}
     
   </body>
 </html>
