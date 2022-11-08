@@ -83,7 +83,7 @@
       if (starttime < xcnt) {
         ten = (xcnt - starttime) / 1000;
       } else {
-        eraseCookie('ptcntdwn');
+        //eraseCookie('ptcntdwn');
         createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
       }
     } else {
