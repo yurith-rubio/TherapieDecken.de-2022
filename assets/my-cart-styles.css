@@ -320,7 +320,8 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   font-size: 14px;
 }
 .MyCart_Message{
-  
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightgray;
 }
 #MyCart_Countdown{
   
