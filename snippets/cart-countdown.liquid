@@ -1,14 +1,9 @@
 <script type="module">
   
   import { subscribeToCartAjaxRequests, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
-
-  const cartOverlay = document.getElementById("MyCart_Overlay");
-  if (cartOverlay) {
-    cartOverlay.addEventListener("cart_open", () => {
-      createCartCountdown();
-    });
-  }
   
+  let countdownMain = document.querySelector("#countdown-main");
+
   function createCookie(a, b, c) {
     console.log("function createCookie");
     if (c) {
@@ -21,12 +16,9 @@
   
   function readCookie(a) {
     for (var b = a + "=", c = document.cookie.split(";"), d = 0; d < c.length; d++) {
-      for (var e = c[d]; " " == e.charAt(0);) e = e.substring(1, e.length);
-      if (0 == e.indexOf(b)){
-        console.log("readCookie result ");
-        console.log(e.substring(b.length, e.length));
-        return e.substring(b.length, e.length);
-      } 
+      for (var e = c[d];
+        " " == e.charAt(0);) e = e.substring(1, e.length);
+      if (0 == e.indexOf(b)) return e.substring(b.length, e.length)
     }
     return null
   }
@@ -44,6 +36,7 @@
   
   function startTimer(start, duration, display) {
     let countdownMain = document.querySelector("#countdown-main");
+    console.log("startTimer");
     var diff, minutes, seconds;
   
     function timer() {
@@ -57,16 +50,14 @@
         clearInterval(inti);
         if (countdownMain){
           countdownMain.innerHTML = "{{ settings.cart_countdown_text_over }}";
-          //start = Date.now() + 1000;
+          start = Date.now() + 1000;
         }
       }
     };
     timer();
     let inti = setInterval(timer, 1000);
   }
-
-  function runningTiming(){
-    let countdownWrapper = `
+  let countdownWrapper = `
       <div id="countdown-main" class="countdown-main">
         {% if settings.cart_countdown_text != blank %} 
           {{ settings.cart_countdown_text }} 
@@ -76,75 +67,14 @@
           {{ settings.cart_countdown_text_after }} 
         {% endif %}
       </div>`;
-    
-    let minutes = 1;
-      let ten = 60 * minutes;
-      let starttime = Date.now();
-      let xcnt = readCookie('prtcntdwn');
-      if (xcnt) {
-        if (starttime < xcnt) {
-          ten = (xcnt - starttime) / 1000;
-        } else {
-          eraseCookie('ptcntdwn');
-          createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
-        }
-      } else {
-        createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
-      }
-      const display = document.querySelector('#time');
-      startTimer(starttime, ten, display);
-  }
 
-
-  subscribeToCartAjaxRequests(( requestState ) => {
-    let countdownMain = document.querySelector("#countdown-main");
+  subscribeToCartStateUpdate(state => {
     let cartCountdown = document.querySelector("#cart_countdown");
-    if (!cartCountdown) return;
-    
-    if (requestState.requestType === "change" ){
-      console.log("cart changed ");
-      console.log(requestState.requestType === "change" );
-      eraseCookie('prtcntdwn');
-    }
-    if(requestState.requestType === "update"){
-      console.log("cart updated ");
-      runningTiming();
-    }
-    if(requestState.requestType === "add"){
-      console.log("product added ");
-      let countdownMain = document.querySelector("#countdown-main");
-      let cartCountdown = document.querySelector("#cart_countdown");
-      if (!cartCountdown) return;
-     
-      if (!countdownMain){
-        cartCountdown.innerHTML = countdownWrapper;
-        runningTiming();
-      }
-    }
-  });
-  function createCartCountdown() {
-    let countdownMain = document.querySelector("#countdown-main");
-    let cartCountdown = document.querySelector("#cart_countdown");
-    if (!cartCountdown) return;
-
-    /*
     if(document.cookie.includes("prtcntdwn")){
       console.log("cookie prtcntdwn is there");
-    }*/
+    }
     
-    console.log("state changed ");
-    let countdownWrapper = `
-    <div id="countdown-main" class="countdown-main">
-      {% if settings.cart_countdown_text != blank %} 
-        {{ settings.cart_countdown_text }} 
-      {% endif %} 
-      <span id="time"></span> 
-      {% if settings.cart_countdown_text != blank %} 
-        {{ settings.cart_countdown_text_after }} 
-      {% endif %}
-    </div>`;
-    
-    if (!countdownMain){
+    if (!countdownMain ){
       cartCountdown.innerHTML = countdownWrapper;
 
       let minutes = 1;
@@ -164,12 +94,13 @@
       const display = document.querySelector('#time');
       startTimer(starttime, ten, display);
     }
-  }
-  
-  subscribeToCartStateUpdate(state => {
-    createCartCountdown();
   });
   
-
+  subscribeToCartAjaxRequests(( requestState ) => {
+    if (requestState.requestType === "change" ){
+      console.log(requestState.requestType === "change" );
+      eraseCookie('prtcntdwn');
+    }
+  });
 
 </script>
