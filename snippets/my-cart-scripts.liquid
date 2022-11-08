@@ -122,7 +122,7 @@
   function overlayOn() {
     const element = document.getElementById("MyCart_Overlay");
     element.style.display = "block";
-    element.dispatchEvent(new Event("cart_open"));
+    element.dispatchEvent(new Event("slidecart:open"));
   }
   function overlayOff() {
     document.getElementById("MyCart_Overlay").style.display = "none";
