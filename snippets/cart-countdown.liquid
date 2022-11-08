@@ -67,26 +67,24 @@
           {{ settings.cart_countdown_text_after }} 
         {% endif %}
       </div>`;
-  
-  function timing(){
-    let minutes = 1;
-    let ten = 60 * minutes;
-    let starttime = Date.now();
-    let xcnt = readCookie('prtcntdwn');
-    if (xcnt) {
-      if (starttime < xcnt) {
-        ten = (xcnt - starttime) / 1000;
-      } else {
-        eraseCookie('ptcntdwn');
-        createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
-      }
+
+  let minutes = 1;
+  let ten = 60 * minutes;
+  let starttime = Date.now();
+  let xcnt = readCookie('prtcntdwn');
+  if (xcnt) {
+    if (starttime < xcnt) {
+      ten = (xcnt - starttime) / 1000;
     } else {
+      eraseCookie('ptcntdwn');
       createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
     }
-    const display = document.querySelector('#time');
-    startTimer(starttime, ten, display);
+  } else {
+    createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
   }
-  
+  const display = document.querySelector('#time');
+  startTimer(starttime, ten, display);
+
   subscribeToCartStateUpdate(state => {
     let cartCountdown = document.querySelector("#cart_countdown");
     //console.log("cookie");
