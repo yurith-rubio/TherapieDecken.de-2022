@@ -86,7 +86,9 @@
     createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
   }
   const display = document.querySelector('#time');
-  startTimer(starttime, ten, display);
+  if(display){
+    startTimer(starttime, ten, display);  
+  }
 
   subscribeToCartStateUpdate(state => {
     let cartCountdown = document.querySelector("#cart_countdown");
