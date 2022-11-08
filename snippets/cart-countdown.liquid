@@ -75,10 +75,10 @@
     if(document.cookie.includes("prtcntdwn")){
       console.log("cookie prtcntdwn is there");
     }
-    
     if (!countdownMain ){
       cartCountdown.innerHTML = countdownWrapper;
-
+    }
+    if (!countdownMain ){
       let minutes = 1;
       let ten = 60 * minutes;
       let starttime = Date.now();
