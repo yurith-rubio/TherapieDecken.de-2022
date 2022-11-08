@@ -92,11 +92,10 @@
       }
       const display = document.querySelector('#time');
       startTimer(starttime, ten, display);
-    }     
+    }
   });
   
   subscribeToCartAjaxRequests(( requestState ) => {
-    
     if (requestState.requestType === "change" ){
       console.log(requestState.requestType === "change" );
       eraseCookie('prtcntdwn');
