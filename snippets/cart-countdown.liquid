@@ -24,7 +24,7 @@
   }
   
   function eraseCookie(a) {
-    createCookie(a, "", -1);
+    createCookie(a, "", -1)
   }
   
   function crtmedir(a) {
@@ -53,9 +53,6 @@
           start = Date.now() + 1000;
         }
       }
-      if(!countdownMain){
-        start = Date.now() + 1000;
-      }
     };
     timer();
     let inti = setInterval(timer, 1000);
@@ -71,25 +68,6 @@
         {% endif %}
       </div>`;
 
-  let minutes = 1;
-  let ten = 60 * minutes;
-  let starttime = Date.now();
-  let xcnt = readCookie('prtcntdwn');
-  if (xcnt) {
-    if (starttime < xcnt) {
-      ten = (xcnt - starttime) / 1000;
-    } else {
-      eraseCookie('ptcntdwn');
-      createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
-    }
-  } else {
-    createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
-  }
-  const display = document.querySelector('#time');
-  if(display){
-    startTimer(starttime, ten, display);  
-  }
-
   subscribeToCartStateUpdate(state => {
     let cartCountdown = document.querySelector("#cart_countdown");
     //console.log("cookie");
@@ -97,15 +75,33 @@
     if(document.cookie.includes("prtcntdwn")){
       console.log("cookie prtcntdwn is there");
     }
+    
     if (!countdownMain ){
       cartCountdown.innerHTML = countdownWrapper;
+
+      let minutes = 1;
+      let ten = 60 * minutes;
+      let starttime = Date.now();
+      let xcnt = readCookie('prtcntdwn');
+      if (xcnt) {
+        if (starttime < xcnt) {
+          ten = (xcnt - starttime) / 1000;
+        } else {
+          eraseCookie('ptcntdwn');
+          createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+        }
+      } else {
+        createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+      }
+      const display = document.querySelector('#time');
+      startTimer(starttime, ten, display);
     }
   });
   
   subscribeToCartAjaxRequests(( requestState ) => {
     if (requestState.requestType === "change" ){
       console.log(requestState.requestType === "change" );
-      eraseCookie('ptcntdwn');
+      eraseCookie('prtcntdwn');
     }
   });
 
