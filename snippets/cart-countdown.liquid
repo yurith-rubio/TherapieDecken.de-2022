@@ -78,16 +78,14 @@
     let cartCountdown = document.querySelector("#cart_countdown");
     if (!cartCountdown) return;
     
-    //console.log("cookie");
-    //console.log(document.cookie);
+    
     if(document.cookie.includes("prtcntdwn")){
       console.log("cookie prtcntdwn is there");
     }
-    console.log("--- check if counter needs to be added");
-    if (!countdownMain ){
+  
+    if (!countdownMain){
       cartCountdown.innerHTML = countdownWrapper;
-      console.log("--- adding counter");
-
+  
       let minutes = 1;
       let ten = 60 * minutes;
       let starttime = Date.now();
@@ -96,8 +94,8 @@
         if (starttime < xcnt) {
           ten = (xcnt - starttime) / 1000;
         } else {
-          eraseCookie('ptcntdwn');
-          createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+          // eraseCookie('ptcntdwn');
+          // createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
         }
       } else {
         createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
