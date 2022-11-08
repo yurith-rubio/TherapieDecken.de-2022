@@ -1,7 +1,7 @@
 <script type="module">
   
-  import { subscribeToCartAjaxRequests, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
-  
+  import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+
   let countdownMain = document.querySelector("#countdown-main");
 
   function createCookie(a, b, c) {
@@ -15,6 +15,7 @@
   }
   
   function readCookie(a) {
+    console.log("readCookie");
     for (var b = a + "=", c = document.cookie.split(";"), d = 0; d < c.length; d++) {
       for (var e = c[d];
         " " == e.charAt(0);) e = e.substring(1, e.length);
@@ -24,10 +25,12 @@
   }
   
   function eraseCookie(a) {
+    console.log("eraseCookie");
     createCookie(a, "", -1)
   }
   
   function crtmedir(a) {
+    console.log("crtmedir");
     var b = document.createDocumentFragment(),
       c = document.createElement("div");
     for (c.innerHTML = a; c.firstChild;) b.appendChild(c.firstChild);
@@ -49,9 +52,13 @@
       if (diff <= 0) {
         clearInterval(inti);
         if (countdownMain){
-          countdownMain.innerHTML = "{{ settings.cart_countdown_text_over }}";
+          countdownMain.innerHTML = "{{ settings.checkout_countdown_text_over }}";
           start = Date.now() + 1000;
         }
+      }
+      if (countdownMain === null){
+        clearInterval(inti);
+        start = Date.now() + 1000;
       }
     };
     timer();
@@ -59,24 +66,22 @@
   }
   let countdownWrapper = `
       <div id="countdown-main" class="countdown-main">
-        {% if settings.cart_countdown_text != blank %} 
-          {{ settings.cart_countdown_text }} 
+        {% if settings.checkout_countdown_text != blank %} 
+          {{ settings.checkout_countdown_text }} 
         {% endif %} 
         <span id="time"></span> 
-        {% if settings.cart_countdown_text != blank %} 
-          {{ settings.cart_countdown_text_after }} 
+        {% if settings.checkout_countdown_text != blank %} 
+          {{ settings.checkout_countdown_text_after }} 
         {% endif %}
       </div>`;
 
   subscribeToCartStateUpdate(state => {
-    let cartCountdown = document.querySelector("#cart_countdown");
-    //console.log("cookie");
-    //console.log(document.cookie);
-    if(document.cookie.includes("prtcntdwn")){
-      console.log("cookie prtcntdwn is there");
-    }
+    const itemsQuantity = state.cart.items.length;
+    const cartCountdown = document.querySelector("#cart_countdown");
+    let itemCount = state.cart.item_count;
+
     
-    if (!countdownMain ){
+    if (!countdownMain && itemsQuantity >= 1){
       cartCountdown.innerHTML = countdownWrapper;
 
       let minutes = 1;
@@ -95,17 +100,9 @@
       }
       const display = document.querySelector('#time');
       startTimer(starttime, ten, display);
-    }
+    } else if (state.cart.item_count != state.previousCart.item_count) {
+      eraseCookie('ptcntdwn');
+    }    
   });
   
-  subscribeToCartAjaxRequests(( requestState ) => {
-    if (requestState.requestType === "change" ){
-      console.log(requestState.requestType === "change" );
-      eraseCookie('prtcntdwn');
-    }
-  });
-
-
-
-
 </script>
