@@ -98,6 +98,10 @@
     }
     if(requestState.requestType === "add"){
       console.log("product added ");
+      let countdownMain = document.querySelector("#countdown-main");
+      let cartCountdown = document.querySelector("#cart_countdown");
+      if (!cartCountdown) return;
+      
       let countdownWrapper = `
       <div id="countdown-main" class="countdown-main">
         {% if settings.cart_countdown_text != blank %} 
