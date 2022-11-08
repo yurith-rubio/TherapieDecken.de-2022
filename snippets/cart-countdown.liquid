@@ -83,22 +83,25 @@
     
   });
 
-  let minutes = 1;
-  let ten = 60 * minutes;
-  let starttime = Date.now();
-  let xcnt = readCookie('prtcntdwn');
-  if (xcnt) {
-    if (starttime < xcnt) {
-      ten = (xcnt - starttime) / 1000;
+  function timing(){
+    let minutes = 1;
+    let ten = 60 * minutes;
+    let starttime = Date.now();
+    let xcnt = readCookie('prtcntdwn');
+    if (xcnt) {
+      if (starttime < xcnt) {
+        ten = (xcnt - starttime) / 1000;
+      } else {
+        eraseCookie('ptcntdwn');
+        createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+      }
     } else {
-      eraseCookie('ptcntdwn');
       createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
     }
-  } else {
-    createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+    const display = document.querySelector('#time');
+    startTimer(starttime, ten, display);
   }
-  const display = document.querySelector('#time');
-  startTimer(starttime, ten, display);
+  
   
   
   subscribeToCartAjaxRequests(( requestState ) => {
