@@ -322,6 +322,9 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
 .MyCart_Message{
   
 }
+#MyCart_Countdown{
+  
+}
 /* Payment logos on slide cart */
 .MyCart_PaymentOptions {
   display:table;
