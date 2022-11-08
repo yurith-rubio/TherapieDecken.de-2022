@@ -72,6 +72,8 @@
 
   subscribeToCartStateUpdate(state => {
     let cartCountdown = document.querySelector("#cart_countdown");
+    console.log("cookie");
+    console.log(document.cookie);
     
     if (!countdownMain ){
       cartCountdown.innerHTML = countdownWrapper;
