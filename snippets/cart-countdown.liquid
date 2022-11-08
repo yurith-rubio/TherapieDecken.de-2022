@@ -117,8 +117,11 @@
   
   timingRunning();
   
-  document.addEventListener("slidecart:open", function(event) {  
-    console.log("slidecart is opened ");
-  });
+  const cartOverlay = document.getElementById("MyCart_Overlay");
+  if (cartOverlay) {
+    cartOverlay.addEventListener("slidecart:open", () => {
+      createCartCountdown();
+    });
+  }
 
 </script>
