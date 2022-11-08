@@ -22,159 +22,54 @@
 
 
 <script type="module">
-  import { subscribeToCartAjaxRequests, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+    import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
 
-  let countdownMain = document.querySelector("#countdown-main");
+    function suggestedUpsells() {
+        // Slider for suggested upsell products
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true,
+                    dots: false
+                }
+            }
+        });
 
-  function createCookie(a, b, c) {
-    console.log("function createCookie");
-    if (c) {
-      var d = new Date;
-      d.setTime(d.getTime() + c * 60 * 1e3);
-      var e = "; expires=" + d.toUTCString()
-    } else var e = "";
-    document.cookie = a + "=" + b + e + "; path=/"
-  }
-  
-  function readCookie(a) {
-    for (var b = a + "=", c = document.cookie.split(";"), d = 0; d < c.length; d++) {
-      for (var e = c[d];
-        " " == e.charAt(0);) e = e.substring(1, e.length);
-      if (0 == e.indexOf(b)) return e.substring(b.length, e.length)
-    }
-    return null
-  }
-  
-  function eraseCookie(a) {
-    createCookie(a, "", -1)
-  }
-  
-  function crtmedir(a) {
-    var b = document.createDocumentFragment(),
-      c = document.createElement("div");
-    for (c.innerHTML = a; c.firstChild;) b.appendChild(c.firstChild);
-    return b
-  }
-  
-  function startTimer(start, duration, display) {
-    let countdownMain = document.querySelector("#countdown-main");
-    console.log("startTimer");
-    var diff, minutes, seconds;
-  
-    function timer() {
-      diff = duration - (((Date.now() - start) / 1000) | 0);
-      minutes = (diff / 60) | 0;
-      seconds = (diff % 60) | 0;
-      minutes = minutes < 10 ? "0" + minutes : minutes;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-      display.textContent = minutes + ":" + seconds;
-      if (diff <= 0) {
-        clearInterval(inti);
-        if (countdownMain){
-          countdownMain.innerHTML = "{{ settings.cart_countdown_text_over }}";
-          start = Date.now() + 1000;
-        }
-      }
-    };
-    timer();
-    let inti = setInterval(timer, 1000);
-  }
-  let countdownWrapper = `
-      <div id="countdown-main" class="countdown-main">
-        {% if settings.cart_countdown_text != blank %} 
-          {{ settings.cart_countdown_text }} 
-        {% endif %} 
-        <span id="time"></span> 
-        {% if settings.cart_countdown_text != blank %} 
-          {{ settings.cart_countdown_text_after }} 
-        {% endif %}
-      </div>`;
-  
-  function timing(){
-    let minutes = 1;
-    let ten = 60 * minutes;
-    let starttime = Date.now();
-    let xcnt = readCookie('prtcntdwn');
-    if (xcnt) {
-      if (starttime < xcnt) {
-        ten = (xcnt - starttime) / 1000;
-      } else {
-        eraseCookie('ptcntdwn');
-        createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
-      }
-    } else {
-      createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
-    }
-    const display = document.querySelector('#time');
-    startTimer(starttime, ten, display);
-  }
-  
-  subscribeToCartStateUpdate(state => {
-    let cartCountdown = document.querySelector("#cart_countdown");
-    if(document.cookie.includes("prtcntdwn")){
-      console.log("cookie prtcntdwn is there");
-    }
-    if (!countdownMain ){
-      cartCountdown.innerHTML = countdownWrapper;
-    }
-    timing();
+        // Heading for upsells
+        const upsellActive = document.querySelectorAll(".MyCartUpsells_ItemWrapper");
+        const upsellsWrapper = document.querySelector(".MyCartUpsells_SuggestedContainer");
+        const suggestionsTitle = document.querySelector("#MyCartUpsells_MainTitle");
 
-  });
-  
-  subscribeToCartAjaxRequests(( requestState ) => {
-    if (requestState.requestType === "change" ){
-      console.log(requestState.requestType === "change" );
-      eraseCookie('prtcntdwn');
-    }
-  });
-
-  // Suggested upsell products
-  function suggestedUpsells() {
-    // Slider for suggested upsell products
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true,
-                dots: false
+        if (upsellActive.length > 0) {
+            if (!suggestionsTitle) {
+                upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 id="MyCartUpsells_MainTitle" class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
+            } else {
+                //console.log("title already added");
             }
         }
-    });
 
-    // Heading for upsells
-    const upsellActive = document.querySelectorAll(".MyCartUpsells_ItemWrapper");
-    const upsellsWrapper = document.querySelector(".MyCartUpsells_SuggestedContainer");
-    const suggestionsTitle = document.querySelector("#MyCartUpsells_MainTitle");
-
-    if (upsellActive.length > 0) {
-        if (!suggestionsTitle) {
-            upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 id="MyCartUpsells_MainTitle" class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
-        } else {
-            //console.log("title already added");
-        }
-    }
-
-    const submitButtons = document.querySelectorAll(".MyCartUpsells_SubmitButton");
-    submitButtons.forEach(button => {
-        button.addEventListener("click", event => {
-            closeUpsell();
+        const submitButtons = document.querySelectorAll(".MyCartUpsells_SubmitButton");
+        submitButtons.forEach(button => {
+            button.addEventListener("click", event => {
+                closeUpsell();
+            });
         });
-    });
-  }
-  suggestedUpsells();
-
-  subscribeToCartStateUpdate(state => {
+    }
     suggestedUpsells();
-  });
+
+    subscribeToCartStateUpdate(state => {
+      suggestedUpsells();
+    });
 
 </script>
 
 
 <script type="module">
-  import { subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+  import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
   
   subscribeToCartStateUpdate(state => {
     addCartTotalDiscount();
