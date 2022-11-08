@@ -104,6 +104,7 @@
   });
   
   subscribeToCartAjaxRequests(( requestState ) => {
+    console.log("type ");
     if (requestState.requestType === "change" ){
       console.log(requestState.requestType === "change" );
       eraseCookie('prtcntdwn');
