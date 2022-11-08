@@ -102,7 +102,7 @@
   subscribeToCartAjaxRequests(( requestState ) => {
     if (requestState.requestType === "change" ){
       console.log("cart changed");
-      eraseCookie('ptcntdwn');
+      //eraseCookie('ptcntdwn');
       //createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
     }
     if (requestState.requestType === "update" ){
