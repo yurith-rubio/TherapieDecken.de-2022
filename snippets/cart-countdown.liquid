@@ -21,8 +21,7 @@
   
   function readCookie(a) {
     for (var b = a + "=", c = document.cookie.split(";"), d = 0; d < c.length; d++) {
-      for (var e = c[d];
-        " " == e.charAt(0);) e = e.substring(1, e.length);
+      for (var e = c[d]; " " == e.charAt(0);) e = e.substring(1, e.length);
       if (0 == e.indexOf(b)){
         console.log("readCookie result ");
         console.log(e.substring(b.length, e.length));
@@ -81,7 +80,6 @@
     let countdownMain = document.querySelector("#countdown-main");
     let cartCountdown = document.querySelector("#cart_countdown");
     if (!cartCountdown) return;
-    
     
     if(document.cookie.includes("prtcntdwn")){
       console.log("cookie prtcntdwn is there");
