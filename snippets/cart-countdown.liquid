@@ -75,10 +75,10 @@
     if(document.cookie.includes("prtcntdwn")){
       console.log("cookie prtcntdwn is there");
     }
-    
+    console.log("--- check if counter needs to be added");
     if (!countdownMain ){
       cartCountdown.innerHTML = countdownWrapper;
-      console.log("timiing info ");
+      console.log("--- adding counter");
 
       let minutes = 1;
       let ten = 60 * minutes;
