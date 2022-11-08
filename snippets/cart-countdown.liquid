@@ -102,7 +102,7 @@
   subscribeToCartAjaxRequests(( requestState ) => {
     if (requestState.requestType === "change" ){
       console.log("cart changed");
-      eraseCookie('prtcntdwn');
+      eraseCookie('ptcntdwn');
       //createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
     }
     if (requestState.requestType === "update" ){
@@ -110,7 +110,7 @@
     }
     if (requestState.requestType === "add" ){
       console.log("product added");
-      eraseCookie('prtcntdwn');
+      eraseCookie('ptcntdwn');
       //createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
     }
   });
