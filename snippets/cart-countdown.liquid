@@ -67,7 +67,11 @@
           {{ settings.cart_countdown_text_after }} 
         {% endif %}
       </div>`;
-
+  
+  window.addEventListener('load', (event) => {
+    subscribeToCartStateUpdate();
+  });
+  
   subscribeToCartStateUpdate(state => {
     console.log("new state ");
     let cartCountdown = document.querySelector("#cart_countdown");
