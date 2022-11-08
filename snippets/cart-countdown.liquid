@@ -67,22 +67,7 @@
           {{ settings.cart_countdown_text_after }} 
         {% endif %}
       </div>`;
-
-  subscribeToCartStateUpdate(state => {
-    let cartCountdown = document.querySelector("#cart_countdown");
-    //console.log("cookie");
-    //console.log(document.cookie);
-    if(document.cookie.includes("prtcntdwn")){
-      console.log("cookie prtcntdwn is there");
-    }
-    if (!countdownMain ){
-      cartCountdown.innerHTML = countdownWrapper;
-    }
-
-    
-    
-  });
-
+  
   function timing(){
     let minutes = 1;
     let ten = 60 * minutes;
@@ -101,6 +86,23 @@
     const display = document.querySelector('#time');
     startTimer(starttime, ten, display);
   }
+  
+  subscribeToCartStateUpdate(state => {
+    let cartCountdown = document.querySelector("#cart_countdown");
+    //console.log("cookie");
+    //console.log(document.cookie);
+    if(document.cookie.includes("prtcntdwn")){
+      console.log("cookie prtcntdwn is there");
+    }
+    if (!countdownMain ){
+      cartCountdown.innerHTML = countdownWrapper;
+    }
+    timing();
+    
+    
+  });
+
+  
   
   
   
