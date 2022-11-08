@@ -115,13 +115,12 @@
     }
   });
   
-  timingRunning();
-  
   const cartOverlay = document.getElementById("MyCart_Overlay");
   if (cartOverlay) {
     cartOverlay.addEventListener("slidecart:open", () => {
       console.log("cart overlay and cart open ")
       //createCartCountdown();
+      timingRunning();
     });
   }
 
