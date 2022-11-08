@@ -16,7 +16,7 @@
         </div>
         {% if cart.item_count > 0 %}
           {% assign total_price_number = cart.total_price | plus: 0 %}
-          <div>
+          <div id="MyCart_MessageContainer">
             {% if total_price_number < 10000 %}
               {% assign add_for_free_shipping = 10000 | minus: total_price_number %}
               <div class="MyCart_Message">
