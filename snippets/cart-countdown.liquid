@@ -34,7 +34,6 @@
   
   function startTimer(start, duration, display) {
     let countdownMainElement = document.querySelector("#countdown-main");
-    console.log("startTimer");
     var diff, minutes, seconds;
   
     function timer() {
@@ -115,7 +114,7 @@
       //createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
     }
   });
-  
+
   const cartOverlay = document.getElementById("MyCart_Overlay");
   if (cartOverlay) {
     cartOverlay.addEventListener("slidecart:open", () => {
