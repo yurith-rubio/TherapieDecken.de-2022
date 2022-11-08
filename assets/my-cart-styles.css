@@ -210,7 +210,9 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
 .MyCart_BodyWrapper {
   flex: 1 1 auto;
 }
-
+.MyCart_Countdown{
+  padding: 3px 20px;
+}
 /* Free gift item - Discount message */
 .MyCartItem__DiscountList{
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 11px));
