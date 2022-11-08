@@ -79,9 +79,12 @@
     let starttime = Date.now();
     let xcnt = readCookie('prtcntdwn');
     if (xcnt) {
+      console.log("--- cookie exists");
       if (starttime < xcnt) {
+        console.log("--- starttime is < cookie time");
         ten = (xcnt - starttime) / 1000;
       } else {
+        console.log("--- creating new cookie");
         eraseCookie('ptcntdwn');
         createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
       }
