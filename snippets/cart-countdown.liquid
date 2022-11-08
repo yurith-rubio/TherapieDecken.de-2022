@@ -64,16 +64,7 @@
     timer();
     let inti = setInterval(timer, 1000);
   }
-  let countdownWrapper = `
-      <div id="countdown-main" class="countdown-main">
-        {% if settings.cart_countdown_text != blank %} 
-          {{ settings.cart_countdown_text }} 
-        {% endif %} 
-        <span id="time"></span> 
-        {% if settings.cart_countdown_text != blank %} 
-          {{ settings.cart_countdown_text_after }} 
-        {% endif %}
-      </div>`;
+
 
   subscribeToCartAjaxRequests(( requestState ) => {
     let countdownMain = document.querySelector("#countdown-main");
@@ -88,6 +79,17 @@
       
     }
     if(requestState.requestType === "add"){
+      let countdownWrapper = `
+      <div id="countdown-main" class="countdown-main">
+        {% if settings.cart_countdown_text != blank %} 
+          {{ settings.cart_countdown_text }} 
+        {% endif %} 
+        <span id="time"></span> 
+        {% if settings.cart_countdown_text != blank %} 
+          {{ settings.cart_countdown_text_after }} 
+        {% endif %}
+      </div>`;
+      
       if (!countdownMain){
         cartCountdown.innerHTML = countdownWrapper;
 
