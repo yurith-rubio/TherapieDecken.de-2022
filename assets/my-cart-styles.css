@@ -314,7 +314,10 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   text-align: right;
   padding-left: 10px;
 }
-/* Shipping message */
+/* Cart messages */
+.MyCart_MessageContainer{
+  
+}
 .MyCart_Message{
   text-align: center;
   padding: 3px 20px 0;
