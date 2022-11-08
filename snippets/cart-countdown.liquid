@@ -112,6 +112,7 @@
     }
     if (requestState.requestType === "add" ){
       console.log("product added");
+      eraseCookie('prtcntdwn');
       //createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
     }
   });
