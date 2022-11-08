@@ -2,8 +2,6 @@
   
   import { subscribeToCartAjaxRequests, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
   
-  let countdownMain = document.querySelector("#countdown-main");
-
   function createCookie(a, b, c) {
     console.log("function createCookie");
     if (c) {
@@ -69,7 +67,10 @@
       </div>`;
 
   subscribeToCartStateUpdate(state => {
+    let countdownMain = document.querySelector("#countdown-main");
     let cartCountdown = document.querySelector("#cart_countdown");
+    if (!cartCountdown) return;
+    
     //console.log("cookie");
     //console.log(document.cookie);
     if(document.cookie.includes("prtcntdwn")){
