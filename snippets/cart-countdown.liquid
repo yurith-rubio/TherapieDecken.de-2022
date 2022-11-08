@@ -83,11 +83,11 @@
       if (starttime < xcnt) {
         ten = (xcnt - starttime) / 1000;
       } else {
-        //eraseCookie('ptcntdwn');
-        //createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+        eraseCookie('ptcntdwn');
+        createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
       }
     } else {
-      createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+      //createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
     }
     const display = document.querySelector('#time');
     if(display){
