@@ -58,7 +58,7 @@
     let inti = setInterval(timer, 1000);
   }
   
-  let countdownWrapper = `
+  let countdownMainInner = `
       <div id="countdown-main" class="countdown-main">
         {% if settings.cart_countdown_text != blank %} 
           {{ settings.cart_countdown_text }} 
@@ -73,7 +73,7 @@
     let countdownMainWrapper = document.querySelector("#cart_countdown");
     let countdownMain = document.querySelector("#countdown-main");
     if (!countdownMain ){
-      countdownMainWrapper.innerHTML = countdownWrapper; 
+      countdownMainWrapper.innerHTML = countdownMainInner; 
     }
     
     let minutes = 1;
