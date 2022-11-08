@@ -70,6 +70,7 @@
       </div>`;
 
   function timingRunning(){
+    let cartCountdown = document.querySelector("#cart_countdown");
     if (!countdownMain ){
       cartCountdown.innerHTML = countdownWrapper; 
     }
@@ -95,7 +96,6 @@
   }
   subscribeToCartStateUpdate(state => {
     console.log("new state ");
-    let cartCountdown = document.querySelector("#cart_countdown");
     if(document.cookie.includes("prtcntdwn")){
       console.log("cookie prtcntdwn is there");
     }
