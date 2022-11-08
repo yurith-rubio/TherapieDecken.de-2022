@@ -49,7 +49,7 @@
         if (countdownMainElement){
           let countdownMainElementWrapper = document.querySelector("#cart_countdown");
           countdownMainElement.innerHTML = "{{ settings.cart_countdown_text_over }}";
-          countdownMainElementWrapper.classList.add("countdown_over");
+          countdownMainElementWrapper.setAttribute("data-ajax-cart-static-element", "");
           start = Date.now() + 1000;
         }
       }
