@@ -53,6 +53,9 @@
           start = Date.now() + 1000;
         }
       }
+      if(!countdownMain){
+        start = Date.now() + 1000;
+      }
     };
     timer();
     let inti = setInterval(timer, 1000);
