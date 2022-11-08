@@ -76,9 +76,10 @@
       eraseCookie('prtcntdwn');
     }
     if(requestState.requestType === "update"){
-      
+      console.log("cart updated ");
     }
     if(requestState.requestType === "add"){
+      console.log("product added ");
       let countdownWrapper = `
       <div id="countdown-main" class="countdown-main">
         {% if settings.cart_countdown_text != blank %} 
