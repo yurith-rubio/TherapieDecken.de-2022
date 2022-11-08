@@ -328,7 +328,8 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   
 }
 .countdown-main{
-  line-height: 1.2;
+  line-height: 1.4;
+  padding-top: 5px;
 }
 /* Payment logos on slide cart */
 .MyCart_PaymentOptions {
