@@ -33,7 +33,8 @@
   }
   
   function startTimer(start, duration, display) {
-    let countdownMainElement = document.querySelector("#countdown-main");
+    let countdownMain = document.querySelector("#countdown-main");
+    console.log("startTimer");
     var diff, minutes, seconds;
   
     function timer() {
@@ -45,10 +46,10 @@
       display.textContent = minutes + ":" + seconds;
       if (diff <= 0) {
         clearInterval(inti);
-        if (countdownMainElement){
-          let countdownMainElementWrapper = document.querySelector("#cart_countdown");
-          countdownMainElement.innerHTML = "{{ settings.cart_countdown_text_over }}";
-          countdownMainElementWrapper.setAttribute("data-ajax-cart-static-element", "");
+        if (countdownMain){
+          let cartCountdown = document.querySelector("#cart_countdown");
+          countdownMain.innerHTML = "{{ settings.cart_countdown_text_over }}";
+          cartCountdown.classList.add("countdown_over");
           start = Date.now() + 1000;
         }
       }
@@ -57,7 +58,7 @@
     let inti = setInterval(timer, 1000);
   }
   
-  let countdownMain = `
+  let countdownWrapper = `
       <div id="countdown-main" class="countdown-main">
         {% if settings.cart_countdown_text != blank %} 
           {{ settings.cart_countdown_text }} 
@@ -69,10 +70,10 @@
       </div>`;
 
   function timingRunning(){
-    let countdownMainElementWrapper = document.querySelector("#cart_countdown");
-    let countdownMainElement = document.querySelector("#countdown-main");
-    if (!countdownMainElement ){
-      countdownMainElementWrapper.innerHTML = countdownMain; 
+    let countdownMain = document.querySelector("#countdown-main");
+    let cartCountdown = document.querySelector("#cart_countdown");
+    if (!countdownMain ){
+      cartCountdown.innerHTML = countdownWrapper; 
     }
     
     let minutes = 1;
@@ -114,12 +115,12 @@
       //createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
     }
   });
-
+  
   const cartOverlay = document.getElementById("MyCart_Overlay");
   if (cartOverlay) {
     cartOverlay.addEventListener("slidecart:open", () => {
       console.log("cart overlay and cart open ")
-      //createcountdownMainElementWrapper();
+      //createCartCountdown();
       timingRunning();
     });
   }
