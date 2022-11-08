@@ -111,8 +111,6 @@
   
   subscribeToCartStateUpdate(state => {
     let cartCountdown = document.querySelector("#cart_countdown");
-    //console.log("cookie");
-    //console.log(document.cookie);
     if(document.cookie.includes("prtcntdwn")){
       console.log("cookie prtcntdwn is there");
     }
@@ -130,6 +128,7 @@
     }
   });
 
+  // Suggested upsell products
   function suggestedUpsells() {
     // Slider for suggested upsell products
     $('.owl-carousel').owlCarousel({
