@@ -22,7 +22,7 @@
                   Nur noch <span class="MyCart_HighlightedText">{{ add_for_free_shipping | money_with_currency }}</span> für gratis Versand!  
                 </div>
               {% endif %}
-              <div id="MyCart_Countdown" {% if total_price_number < 10000 %}style="border-top: 1px solid lightgray"{% endif %}></div>
+              <div id="MyCart_Countdown" {% if total_price_number < 10000 %}style="border-top: 1px solid lightgray; margin-left:-20px; margin-right:-20px"{% endif %}></div>
             </div>
           {% endif %}
         </div>
