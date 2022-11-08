@@ -316,13 +316,13 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
 }
 /* Cart messages */
 .MyCart_MessageContainer{
-  
-}
-.MyCart_Message{
   text-align: center;
-  padding: 3px 20px 0;
+  padding: 5px 20px;
   background-color: var(--color-light-background1);
   font-size: 14px;
+}
+.MyCart_Message{
+  
 }
 /* Payment logos on slide cart */
 .MyCart_PaymentOptions {
