@@ -211,7 +211,7 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   flex: 1 1 auto;
 }
 #MyCart_Countdown{
-  padding: 3px 20px;
+  padding: 0 20px 3px;
 }
 /* Free gift item - Discount message */
 .MyCartItem__DiscountList{
