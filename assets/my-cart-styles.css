@@ -319,7 +319,7 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   text-align: center;
   padding: 0 20px 5px;
   background-color: var(--color-light-background1);
-  font-size: 14px;
+  font-size: 12px;
 }
 .MyCart_Message{
   
