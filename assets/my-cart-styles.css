@@ -317,15 +317,13 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
 /* Cart messages */
 .MyCart_MessageContainer{
   text-align: center;
-  padding: 0 20px;
   background-color: var(--color-light-background1);
   font-size: 12px;
 }
 #MyCart_Countdown{
   background-color: #fac6371c;
   line-height: 1.4;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding: 5px 20px;
 }
 /* Payment logos on slide cart */
 .MyCart_PaymentOptions {
