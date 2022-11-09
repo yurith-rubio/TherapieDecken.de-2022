@@ -608,13 +608,13 @@
       {
         "type": "color",
         "id": "background_countdown",
-        "label": "Background for Annoouncement Countdown Numbers",
+        "label": "Numbers' background",
         "default": "#ffffff"
       },
       {
         "type": "color",
         "id": "text_color_countdown",
-        "label": "Numbers' Color",
+        "label": "Numbers' color",
         "default": "#3A3C3C"
       },
       {
