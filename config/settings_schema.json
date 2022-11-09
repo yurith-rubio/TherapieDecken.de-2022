@@ -635,7 +635,7 @@
       {
         "type": "text",
         "id": "countdown_product_text",
-        "label": "Product Countdown Content",
+        "label": "Content",
         "default": "Grey Friday Preis endet"
       },
       {
@@ -669,19 +669,19 @@
       {
         "type": "text",
         "id": "cart_countdown_text",
-        "label": "Countdown Pre-Content",
+        "label": "Countdown pre-content",
         "default": "⚠️ Auf Grund unserer Black Friday Angebote ist Ihr Warenkorb für nur"
       },
       {
         "type": "text",
         "id": "cart_countdown_text_after",
-        "label": "Countdown Post-Content",
+        "label": "Countdown post-content",
         "default": "Minuten reserviert!"
       },
       {
         "type": "text",
         "id": "cart_countdown_text_over",
-        "label": "Content after Countdown is Over",
+        "label": "Content after countdown is over",
         "default": "⚠️ Ihr Warenkorb Reservierung ist abgelaufen."
       },
       {
@@ -697,19 +697,19 @@
       {
         "type": "text",
         "id": "checkout_countdown_text",
-        "label": "Countdown Pre-Content",
+        "label": "Countdown pre-content",
         "default": "⚠️ Auf Grund unserer Black Friday Angebote ist Ihr Warenkorb für nur"
       },
       {
         "type": "text",
         "id": "checkout_countdown_text_after",
-        "label": "Countdown Post-Content",
+        "label": "Countdown post-content",
         "default": "Minuten reserviert!"
       },
       {
         "type": "text",
         "id": "checkout_countdown_text_over",
-        "label": "Content after Countdown is Over",
+        "label": "Content after countdown is over",
         "default": "⚠️ Ihr Warenkorb Reservierung ist abgelaufen."
       }
     ]
