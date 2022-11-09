@@ -325,7 +325,7 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   
 }
 #MyCart_Countdown{
-  
+  background-color: #fac6371c;
 }
 .countdown-main{
   line-height: 1.4;
