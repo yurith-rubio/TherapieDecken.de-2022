@@ -663,7 +663,7 @@
       {
         "type": "checkbox",
         "id": "cart_countdown_enable",
-        "label": "Enable Countdown on Checkout Page",
+        "label": "Enable",
         "default": false
       },
       {
@@ -691,7 +691,7 @@
       {
         "type": "checkbox",
         "id": "checkout_countdown_enable",
-        "label": "Enable Countdown on Checkout Page",
+        "label": "Enable",
         "default": false
       },
       {
