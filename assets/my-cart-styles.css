@@ -317,7 +317,7 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
 /* Cart messages */
 .MyCart_MessageContainer{
   text-align: center;
-  padding: 0 20px 5px;
+  padding: 0 20px;
   background-color: var(--color-light-background1);
   font-size: 12px;
 }
