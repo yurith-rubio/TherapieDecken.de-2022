@@ -1,0 +1,131 @@
+{% if settings.cart_countdown_enable %}
+  <script type="module">
+    
+    import { subscribeToCartAjaxRequests, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+  
+    function createCookie(a, b, c) {
+      console.log("function createCookie");
+      if (c) {
+        var d = new Date;
+        d.setTime(d.getTime() + c * 60 * 1e3);
+        var e = "; expires=" + d.toUTCString()
+      } else var e = "";
+      document.cookie = a + "=" + b + e + "; path=/"
+    }
+    
+    function readCookie(a) {
+      for (var b = a + "=", c = document.cookie.split(";"), d = 0; d < c.length; d++) {
+        for (var e = c[d];
+          " " == e.charAt(0);) e = e.substring(1, e.length);
+        if (0 == e.indexOf(b)) return e.substring(b.length, e.length)
+      }
+      return null
+    }
+    
+    function eraseCookie(a) {
+      createCookie(a, "", -1)
+    }
+    
+    function crtmedir(a) {
+      var b = document.createDocumentFragment(),
+        c = document.createElement("div");
+      for (c.innerHTML = a; c.firstChild;) b.appendChild(c.firstChild);
+      return b
+    }
+    
+    function startTimer(start, duration, display) {
+      let countdownMain = document.querySelector("#countdown-main");
+      console.log("startTimer");
+      var diff, minutes, seconds;
+    
+      function timer() {
+        diff = duration - (((Date.now() - start) / 1000) | 0);
+        minutes = (diff / 60) | 0;
+        seconds = (diff % 60) | 0;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        display.textContent = minutes + ":" + seconds;
+        if (diff <= 0) {
+          clearInterval(inti);
+          if (countdownMain){
+            countdownMain.innerHTML = "{{ settings.cart_countdown_text_over }}";
+            start = Date.now() + 1000;
+          }
+        }
+      };
+      timer();
+      let inti = setInterval(timer, 1000);
+    }
+    
+    let countdownWrapper = `
+        <div id="countdown-main" class="countdown-main">
+          {% if settings.cart_countdown_text != blank %} 
+            {{ settings.cart_countdown_text }} 
+          {% endif %} 
+          <span id="time"></span> 
+          {% if settings.cart_countdown_text != blank %} 
+            {{ settings.cart_countdown_text_after }} 
+          {% endif %}
+        </div>`;
+  
+    function timingRunning(){
+      let countdownMain = document.querySelector("#countdown-main");
+      let cartCountdown = document.querySelector("#MyCart_Countdown");
+      if (!countdownMain ){
+        cartCountdown.innerHTML = countdownWrapper; 
+      }
+      
+      let minutes = 1;
+      let ten = 60 * minutes;
+      let starttime = Date.now();
+      let xcnt = readCookie('prtcntdwn');
+      if (xcnt) {
+        console.log("--- cookie exists");
+        if (starttime < xcnt) {
+          console.log("--- starttime is < cookie time");
+          ten = (xcnt - starttime) / 1000;
+        } else {
+          console.log("--- creating new cookie");
+          eraseCookie('ptcntdwn');
+          createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+        }
+      } else {
+        createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+      }
+      const display = document.querySelector('#time');
+      if(display){
+        startTimer(starttime, ten, display);    
+      }
+    }
+    subscribeToCartStateUpdate(state => {
+      console.log("new state ");
+      timingRunning();
+    });
+    
+    subscribeToCartAjaxRequests(( requestState ) => {
+      if (requestState.requestType === "change" ){
+        console.log("cart changed");
+        eraseCookie('prtcntdwn');
+        //createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+      }
+      if (requestState.requestType === "update" ){
+        console.log("cart updated");
+      }
+      if (requestState.requestType === "add" ){
+        console.log("product added");
+        eraseCookie('prtcntdwn');
+        //createCookie('prtcntdwn', Date.now() + (ten * 1000), ten + 1);
+      }
+    });
+    
+    const cartOverlay = document.getElementById("MyCart_Overlay");
+    if (cartOverlay) {
+      cartOverlay.addEventListener("slidecart:open", () => {
+        console.log("cart overlay and cart open ")
+        //createCartCountdown();
+        timingRunning();
+      });
+    }
+  
+  </script>
+{% endif %}
