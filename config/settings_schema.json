@@ -597,12 +597,12 @@
       },
       {
         "type": "header",
-        "content": "Announcement Bar Countdown"
+        "content": "Announcement bar countdown"
       },
       {
         "type": "checkbox",
         "id": "announcement_countdown_enable",
-        "label": "Enable Countdown on Announcement Bar",
+        "label": "Enable",
         "default": false
       },
       {
@@ -724,7 +724,7 @@
       {
         "type": "checkbox",
         "id": "left_product_inventory",
-        "label": "Enable Countdown on Product Pages",
+        "label": "Show product inventory when > 0 and < 15",
         "default": false
       }
     ]
