@@ -22,7 +22,11 @@
                 {% if total_price_number < 10000 %}
                 {% assign add_for_free_shipping = 10000 | minus: total_price_number %}
                 <div class="MyCart_Message">
-                  Nur noch <span class="MyCart_HighlightedText">{{ add_for_free_shipping | money_with_currency }}</span> für gratis Versand!  
+                  Nur noch 
+                  <span class="MyCart_HighlightedText">
+                    {{ add_for_free_shipping | money_with_currency }}
+                  </span> 
+                  für gratis Versand!  
                 </div>
               {% endif %}
             </div>
