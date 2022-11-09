@@ -619,12 +619,12 @@
       },
       {
         "type": "header",
-        "content": "Product Countdown"
+        "content": "Product page countdown"
       },
       {
         "type": "checkbox",
         "id": "product_countdown_enable",
-        "label": "Enable Countdown on Product Pages",
+        "label": "Enable",
         "default": false
       },
       {
