@@ -18,7 +18,7 @@
             
             <div class="MyCart_MessageContainer">
               {% if settings.cart_countdown_enable %}
-                <div id="MyCart_Countdown" {% if total_price_number < 10000 %}style="border-bottom: 1px solid lightgray; margin-left:-20px; margin-right:-20px; padding-right:20px; padding-left:20px"{% endif %}></div>
+                <div id="MyCart_Countdown" {% if total_price_number < 10000 %}style="border-bottom: 1px solid lightgray"{% endif %}></div>
               {% endif %}
               {% if total_price_number < 10000 %}
                 {% assign add_for_free_shipping = 10000 | minus: total_price_number %}
