@@ -315,14 +315,17 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   padding-left: 10px;
 }
 /* Cart messages */
+.MyCart_Message{
+  padding: 5px 20px;
+}
 .MyCart_MessageContainer{
   text-align: center;
   background-color: var(--color-light-background1);
   font-size: 12px;
+  line-height: 1.4;
 }
 #MyCart_Countdown{
   background-color: #fac6371c;
-  line-height: 1.4;
   padding: 5px 20px;
 }
 /* Payment logos on slide cart */
