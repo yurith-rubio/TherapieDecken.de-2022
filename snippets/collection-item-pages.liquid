@@ -1,3 +1,10 @@
+{% style %}
+  .CollectionBadge_ListCollection .Collection_ImgSize_SmallBadge{
+    max-width: {{ section.settings.list_collection_badge_max_width }}px;
+    width: {{ section.settings.list_collection_badge_max_width }}px;
+  }
+{% endstyle %}
+
 {%- assign collection_image = block.settings.image | default: collection.image | default: collection.products.first.featured_image -%}
 
 <a href="{{ block.settings.button_link | default: collection.url }}" {{ block.shopify_attributes }} class="CollectionItemPage {% if section.settings.expand_collection %}CollectionItem--expand{% endif %} {% if template == 'index' %}Carousel__Cell {% if forloop.first %}is-selected{% endif %}{% endif %}" data-slide-index="{{ forloop.index0 }}">
