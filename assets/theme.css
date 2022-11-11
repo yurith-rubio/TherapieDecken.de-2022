@@ -7189,8 +7189,8 @@ a.CollectionItemPage {
 .product-badge-div{
   position: absolute;
   bottom: 3px;
-  left: 0;
   z-index: 1;
+  width: 100%;
 }
 .product-badge{
   padding: 7px 15px;
