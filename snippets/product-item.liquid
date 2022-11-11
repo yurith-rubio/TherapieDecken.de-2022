@@ -16,6 +16,8 @@
       {% if product.tags contains "badge-sale" %}<span class="product-badge sale-badge">Sale</span>{% endif %}
     </div>
     {% endif %}
+
+    {% render 'collection-promotional-badge' %}
       
     {%- comment -%}
     We are using LazySizes to efficiently choose the most appropriate image in the set. However, because internally LazySizes uses srcset, we need to make
@@ -41,8 +43,6 @@
       {% elsif product.title contains "Kissenbezug" %}
     	<div class="kissenbezug-badge">Nur Kissenbezug</div>
 	  {% endif %}
-   
-      {% render 'collection-promotional-badge' %}
       
       {%- if use_horizontal -%}
         {%- assign max_width = 125 -%}
