@@ -7188,7 +7188,7 @@ a.CollectionItemPage {
 /*test*/
 .product-badge-div{
   position: absolute;
-  top: 3px;
+  bottom: 3px;
   left: 0;
   z-index: 1;
 }
@@ -7231,11 +7231,6 @@ a.CollectionItemPage {
 .sale-badge{
   background: #ba2e2e;
   color: #fff;
-}
-@media (max-width: 1023px){
-  .product-badge-div{
-    top: 3px;
-  }
 }
 @media (max-width: 640px){
   .product-badge-div{
