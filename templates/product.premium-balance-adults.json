@@ -118,7 +118,7 @@
           "settings": {
             "simple_icons": "washing_machine",
             "summary": "Pflegehinweise",
-            "content": "Die 4-Jahreszeiten Bezüge können bei 30°, die Baumwollbezüge bei 30° gewaschen werden. Das Balance Inlett ist nicht waschbar. Regelmäßiges Auslüften und Abwischen ist ausreichend."
+            "content": "Die 4-Jahreszeiten Bezüge und die Baumwollbezüge können bei 30° gewaschen werden. Das Balance Inlett ist nicht waschbar. Bitte nutzen Sie keinen Trockner. Regelmäßiges Auslüften und Abwischen ist ausreichend."
           }
         }
       },
@@ -574,16 +574,6 @@
         "show_vendor": false,
         "show_color_swatch": false
       }
-    },
-    "1634663235f2643922": {
-      "type": "back-to-top-product",
-      "settings": {
-      }
-    },
-    "16346824644d8e2b78": {
-      "type": "back-to-top-product",
-      "settings": {
-      }
     }
   },
   "order": [
@@ -604,8 +594,6 @@
     "16293784209ff1ca2b",
     "1629467370a1305632",
     "16294440249ce6f304",
-    "163061824983a1c03c",
-    "1634663235f2643922",
-    "16346824644d8e2b78"
+    "163061824983a1c03c"
   ]
 }

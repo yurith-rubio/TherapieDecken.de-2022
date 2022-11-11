@@ -422,11 +422,6 @@
         "show_color_swatch": false
       }
     },
-    "1634681963f7b71bb2": {
-      "type": "back-to-top-product",
-      "settings": {
-      }
-    },
     "1647521535e1944306": {
       "type": "text-with-image-new",
       "settings": {
@@ -458,7 +453,6 @@
     "1629467370a1305632",
     "16294440249ce6f304",
     "1630334324a50af4b4",
-    "1634681963f7b71bb2",
     "1647521535e1944306"
   ]
 }

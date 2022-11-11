@@ -597,34 +597,34 @@
       },
       {
         "type": "header",
-        "content": "Announcement Bar Countdown"
+        "content": "Announcement bar countdown"
       },
       {
         "type": "checkbox",
         "id": "announcement_countdown_enable",
-        "label": "Enable Countdown on Announcement Bar",
+        "label": "Enable",
         "default": false
       },
       {
         "type": "color",
         "id": "background_countdown",
-        "label": "Background for Annoouncement Countdown Numbers",
+        "label": "Numbers' background",
         "default": "#ffffff"
       },
       {
         "type": "color",
         "id": "text_color_countdown",
-        "label": "Numbers' Color",
+        "label": "Numbers' color",
         "default": "#3A3C3C"
       },
       {
         "type": "header",
-        "content": "Product Countdown"
+        "content": "Product page countdown"
       },
       {
         "type": "checkbox",
         "id": "product_countdown_enable",
-        "label": "Enable Countdown on Product Pages",
+        "label": "Enable",
         "default": false
       },
       {
@@ -635,7 +635,7 @@
       {
         "type": "text",
         "id": "countdown_product_text",
-        "label": "Product Countdown Content",
+        "label": "Content",
         "default": "Grey Friday Preis endet"
       },
       {
@@ -658,30 +658,58 @@
       },
       {
         "type": "header",
-        "content": "Checkout Countdown"
+        "content": "Cart countdown"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_countdown_enable",
+        "label": "Enable",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "cart_countdown_text",
+        "label": "Countdown pre-content",
+        "default": "⚠️ Auf Grund unserer Black Friday Angebote ist Ihr Warenkorb für nur"
+      },
+      {
+        "type": "text",
+        "id": "cart_countdown_text_after",
+        "label": "Countdown post-content",
+        "default": "Minuten reserviert!"
+      },
+      {
+        "type": "text",
+        "id": "cart_countdown_text_over",
+        "label": "Content after countdown is over",
+        "default": "⚠️ Ihr Warenkorb Reservierung ist abgelaufen."
+      },
+      {
+        "type": "header",
+        "content": "Checkout countdown"
       },
       {
         "type": "checkbox",
         "id": "checkout_countdown_enable",
-        "label": "Enable Countdown on Checkout Page",
+        "label": "Enable",
         "default": false
       },
       {
         "type": "text",
         "id": "checkout_countdown_text",
-        "label": "Countdown Pre-Content",
+        "label": "Countdown pre-content",
         "default": "⚠️ Auf Grund unserer Black Friday Angebote ist Ihr Warenkorb für nur"
       },
       {
         "type": "text",
         "id": "checkout_countdown_text_after",
-        "label": "Countdown Post-Content",
+        "label": "Countdown post-content",
         "default": "Minuten reserviert!"
       },
       {
         "type": "text",
         "id": "checkout_countdown_text_over",
-        "label": "Content after Countdown is Over",
+        "label": "Content after countdown is over",
         "default": "⚠️ Ihr Warenkorb Reservierung ist abgelaufen."
       }
     ]
@@ -814,7 +842,7 @@
         "label": "Link"
       },
       {
-        "type": "color",
+        "type": "color_background",
         "id": "button_color",
         "label": "Color",
         "default": "#FAC636"
@@ -965,7 +993,7 @@
     ]
   },
   {
-    "name": "Gift Product",
+    "name": "GIFT PRODUCT",
     "settings": [
       {
         "type": "select",
@@ -993,7 +1021,7 @@
       },
       {
         "type": "header",
-        "content": "Gift Product",
+        "content": "GIFT PRODUCT",
         "info": "For any option, we need to set the discount with a script or in here [discounts tab](https:\/\/therapiewelt.myshopify.com\/admin\/discounts\/automatic\/932332732480)"
       },
       {

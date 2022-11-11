@@ -245,54 +245,41 @@
           {%- endif -%}
 		{% endcomment %}
         
-        {% render 'top-styling' %}
         <div id="MyCart_SectionsWrapper" class="MyCart_SectionsWrapper open-cart">
           {% section 'my-cart-upsells' %}
           {% section 'my-cart' %}
         </div>
         
         <div class="PageContainer">
-          <div id="tabs-redirecting" style="relative: fixed; top: 0px">
-            {% render 'website-tab-redirecting' %}
-          </div>
-          <div id="header">
+          <div id="header" style="top:0px">
+            <div id="tabs-redirecting">
+              {% render 'website-tab-redirecting' %}
+            </div>
             {% section 'header' %}
             {% section 'announcement' %}
           </div>
-          <main id="main" role="main">
+          <main id="main" class="HeaderAdjusted" role="main">
             {{ content_for_layout }}
           </main>
           {% section 'footer' %}
         </div>
+        {% if template.name == "product" %}
+          {% section 'back-to-top-product' %}
+        {% endif %}
         {% render 'my-cart-overlay' %}
       </div>
     </div>
     
     <script>
       document.documentElement.style.setProperty('--header-height', document.getElementById('shopify-section-header').offsetHeight + 'px');
-
-      // Show menu when scrolling up and Hide Menu when scrolling down
-      let prevScrollpos = window.pageYOffset;
-      window.onscroll = function() {
-      let currentScrollPos = window.pageYOffset;
-      const header = document.querySelector("#header");
-      const mainContainer = document.querySelector("#main");
-        
-        if (currentScrollPos <= 65){
-          header.style.top = "0px";
-          header.style.position = "relative";
-          mainContainer.style.padding = "0";
-        } else if (prevScrollpos > currentScrollPos) {
-          header.style.top = "0";
-          header.style.position = "fixed";
-          mainContainer.style.padding = "90px 0 0 0";
-        } else if (currentScrollPos >= 170) {
-          header.style.top = "-194px";
-        }
-        prevScrollpos = currentScrollPos;
-        
-      }
 	</script>
+
+    <script src="{{ 'hide-show-menu.js' | asset_url }}" defer="defer"></script>
+    {%- if template.name == 'product' -%}
+      {% comment %} Scripts for metafield variants - Yurith {% endcomment %}
+      <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
+    {% endif %}
+    {% render 'cart-countdown' %}
     
   </body>
 </html>

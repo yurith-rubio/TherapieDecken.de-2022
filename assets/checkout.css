@@ -4,6 +4,13 @@ button.field__input-btn.btn {
 .order-summary__sections {
   height: auto !important;
   margin-bottom: 30px;}
+.order-summary__section .product__image{
+  vertical-align:top;
+  padding-top: 0;
+}
+.order-summary__section .product__description{
+  padding-bottom: 20px;
+}
 div[data-alternative-payments], div[alternative-payment-separator], div[dynamic-checkout] {
   display: none !important;}
 span.slimpay-name-fix {

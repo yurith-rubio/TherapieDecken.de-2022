@@ -122,6 +122,8 @@ body.js-my-cart-open .MyCartUpsells_SuggestedContainer{
   background-color: var(--color-light-shadow);
   border-bottom: 1px solid var(--color-light-border);
   z-index: 1;
+  padding-top: 5px;
+  flex-direction: column;
 }
 .MyCart_H2, .MyCart_PriceItem{
   line-height: 1.2 !important;
@@ -137,12 +139,14 @@ body.js-my-cart-open .MyCartUpsells_SuggestedContainer{
 }
 .MyCart_CloseSlideCart{
   position: absolute;
-  right: 20px;
+  right: 27px;
+  top: 8px;
 }
 .MyCart_ItemWrapper{
   display: inline-flex;
   border-top: 1px solid var(--color-light-border);
-  width: 100%
+  width: 100%;
+  padding: 15px 20px;
 }
 .MyCart_ContentItem{
   width: fit-content;
@@ -161,6 +165,7 @@ body.js-my-cart-open .MyCartUpsells_SuggestedContainer{
 }
 .MyCart_ImageItem{
   width: 70px !important;
+  max-width: 70px;
 }
 .MyCart_QuantityItem{
   display: inline-flex;
@@ -309,12 +314,19 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   text-align: right;
   padding-left: 10px;
 }
-/* Shipping message */
+/* Cart messages */
 .MyCart_Message{
+  padding: 5px 20px;
+}
+.MyCart_MessageContainer{
   text-align: center;
-  padding: 10px 0;
   background-color: var(--color-light-background1);
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+#MyCart_Countdown{
+  background-color: #fac6371c;
+  padding: 5px 20px;
 }
 /* Payment logos on slide cart */
 .MyCart_PaymentOptions {
@@ -323,7 +335,7 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   text-align:center;
   background-color: white;
   width: 90%;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .MyCart_PaymentOptions .inline-list {
  padding:0;
@@ -354,9 +366,6 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   justify-content: space-between;
   margin-top: -30px;
 }
-.MyCartUpsells_SuggestedContainer .owl-prev{
-  margin-right:5px;
-}
 .MyCartUpsells_SubmitButton{
   width: 100%;
 }
@@ -379,9 +388,14 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   background-color: white;
   line-height: 0px;
   text-align: center;
-  margin: 0 10px;
   position: relative;
   top: -50px;
+}
+.MyCartUpsells_SuggestedContainer .owl-carousel .owl-nav button.owl-prev{
+  margin-left: 20px;
+}
+.MyCartUpsells_SuggestedContainer .owl-carousel .owl-nav button.owl-next{
+  margin-right: 20px;
 }
 .MyCartUpsells_SuggestedContainer .owl-carousel .owl-nav button.owl-prev span,
 .MyCartUpsells_SuggestedContainer .owl-carousel .owl-nav button.owl-next span{
@@ -391,7 +405,7 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   color: var(--color-text);
 }
 .MyCartUpsells_ItemWrapper{
-  padding: 10px 30px 20px;
+  padding: 10px 20px 10px 35px;
 }
 .MyCartUpsells_HeaderWrapper{
   display: flex;
@@ -425,6 +439,11 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   padding: 20px 30px;
   border-top: var(--color-light-border) 1px solid;
 }
+
+.MyCartUpsells_MainContainer>form a:link {
+    text-decoration: none!important;
+}
+
 .MyCartUpsells_Select{
   border-radius: 3px;
   cursor: pointer;
@@ -460,6 +479,7 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
 }
 button.MyCart_CheckoutButton{
   font-size: 16px;
+  width: 100%!important;
 }
 /* Tablet and up */
 @media only screen and (min-width: 441px){
@@ -474,7 +494,6 @@ button.MyCart_CheckoutButton{
   }
   .MyCartUpsells_SuggestedContainer{
     width: 440px;
-    padding-right: 20px;
   }
   .MyCartUpsells_Select{
     width: 350px;
@@ -483,11 +502,8 @@ button.MyCart_CheckoutButton{
     max-width: 70px;
     margin: 0 15px;
   }
-  .MyCart_ItemWrapper{
-    padding: 25px 20px;
-  }
   .MyCartUpsells_MainTitle{
-    padding: 7px 15px;
+    padding: 7px 20px;
   }
   button.MyCart_CheckoutButton{
     margin-top: 10px;
@@ -509,13 +525,9 @@ button.MyCart_CheckoutButton{
   }
   .MyCartUpsells_SuggestedContainer{
     bottom: 191px;
-    padding-right: 5px;
   }
   .MyCartUpsells_SuggestedContainer, .MyCartUpsells_MainContainer, .MyCartUpsells_MainContainer > form {
     width: 100%;
-  }
-  .MyCart_Message{
-    padding: 3px 0;
   }
   .MyCartUpsells_Select{
     width: 100%;
@@ -525,9 +537,6 @@ button.MyCart_CheckoutButton{
   }
   .SuggestedUpProd_ContentWr{
     padding: 23px 11px 17px 11px;
-  }
-  .MyCart_ItemWrapper{
-    padding: 15px 20px;
   }
   .MyCart_ValueItem, .MyCartUpsells_MainTitle, .MyCartUpsells_OptionLabel[for]{
     font-size: 12px;
