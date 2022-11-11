@@ -16,7 +16,7 @@
   {% endstyle %}
   {% endcomment %}
 
-  <div class="CollectionBadge_Mask__Wrapper">
+  <div class="CollectionBadge_Mask__Wrapper {% if template.name == 'list-collections' %}CollectionBadge_ListCollection{% endif %}">
     {% comment %}<div class="Collection_SmallBadge">Gratis</div>{% endcomment %}
     <div class="Collection_ImgSmallBadge">
       <img class="Collection_ImgSize_SmallBadge" 
