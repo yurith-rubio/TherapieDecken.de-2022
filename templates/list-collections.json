@@ -190,7 +190,7 @@
         "text_color": "#ffffff",
         "button_color": "#363636",
         "background_color": "#fac636",
-        "list_collection_badge_max_width": 110
+        "list_collection_badge_max_width": 150
       }
     }
   },
