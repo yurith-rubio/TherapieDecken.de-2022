@@ -45,17 +45,17 @@
               {%- continue -%}
             {%- endif -%}
 
-            {%- render 'collection-item', collection: link.object, apply_overlay: section.settings.apply_overlay -%}
+            {%- render 'collection-item', section: section, collection: link.object, apply_overlay: section.settings.apply_overlay -%}
           {%- endfor -%}
         {%- else -%}
           {%- if section.settings.collections_to_show == 'all' -%}
             {%- for collection in collections -%}
-              {%- render 'collection-item', collection: collection, apply_overlay: section.settings.apply_overlay -%}
+              {%- render 'collection-item', section: section, collection: collection, apply_overlay: section.settings.apply_overlay -%}
             {%- endfor -%}
           {%- else -%}
             {%- for block in section.blocks -%}
               {%- assign collection = collections[block.settings.collection] -%}
-              {%- render 'collection-item', collection: collection, apply_overlay: section.settings.apply_overlay, block: block -%}
+              {%- render 'collection-item', section: section, collection: collection, apply_overlay: section.settings.apply_overlay, block: block -%}
             {%- endfor -%}
           {%- endif -%}
         {%- endif -%}
