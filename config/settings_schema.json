@@ -560,6 +560,29 @@
     ]
   },
   {
+    "name": "Settings",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_sale_badge",
+        "label": "Enable sale badge on list items",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "sale_badge_text",
+        "label": "Text",
+        "default": "50% off"
+      },
+      {
+        "type": "color",
+        "id": "sale_badge_button_color",
+        "label": "Badge's color",
+        "default": "#000"
+      }
+    ]
+  },
+  {
     "name": "Countdown",
     "settings": [
       {
