@@ -77,7 +77,7 @@
     "promo_art_tablet_width": 50,
     "promo_art_y_content_mobile": 120,
     "button_1_text": "Zu den Produkten",
-    "button_1_link": "https:\/\/therapiedecken.de\/collections\/erwachsene",
+    "button_1_link": "https:\/\/therapiedecken.de\/pages\/therapiedecken",
     "button_color": "#c91530",
     "text_button_color": "#ffffff",
     "text_button_color_hover": "#ffffff",
@@ -142,7 +142,7 @@
           "background": "#c91530",
           "text_color": "#ffffff",
           "content": "<span style=\"line-height:26px;background-color:#C91530; border: 2px solid black;padding:2px 4px;color:white\"><b> BLACK <span style=\"color:black\">WEEK!<\/span><\/b><\/span> hat begonnen! <span style=\"background-color:#000;padding:3px 5px;color:white\"><b> 50% Rabatt<\/b><\/span> · Endet in",
-          "link": "https:\/\/therapiedecken.de\/collections\/gravity-therapiedecken-fur-erwachsene"
+          "link": "https:\/\/therapiedecken.de\/pages\/therapiedecken"
         }
       },
       "header": {
