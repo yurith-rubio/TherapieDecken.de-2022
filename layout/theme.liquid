@@ -34,7 +34,7 @@
     {% comment %}  Owl carousel library for adding sliders to the theme - Yurith {% endcomment %}
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" media="all">
-    {%- if template.name == 'collection' or template.name == 'list-colections' and settings.enable_collection_badge -%}
+    {%- if template.name == 'collection' or template.name == 'list-collections' and settings.enable_collection_badge -%}
       {%- comment -%}See CSS on promotional-badges.css file {%- endcomment -%}
       {{ 'promotional-badges.css' | asset_url | stylesheet_tag }}
     {% endif %}
