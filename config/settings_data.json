@@ -82,7 +82,7 @@
     "button_color": "#c91530",
     "text_button_color": "#ffffff",
     "text_button_color_hover": "#ffffff",
-    "promo_collection_cover": false,
+    "promo_collection_cover": true,
     "collection_promo_bg_color": "linear-gradient(136deg, rgba(10, 234, 237, 1) 11%, rgba(250, 13, 253, 1) 84%)",
     "collection_promo_image_art": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/Cover-BF-desktop-A-900X.png?v=1637867019",
     "collection_promo_image_mobile_art": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/Cover-BF-mobile-B-500X.png?v=1637867069",
