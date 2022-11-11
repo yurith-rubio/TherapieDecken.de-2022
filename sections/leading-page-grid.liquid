@@ -1,5 +1,9 @@
 {% style %}
-
+  .leadGrid_productImageBadge{
+    max-height: {{ section.settings.badge_width }}px;
+    top: {{ section.settings.badge_top }}px;
+    right: {{ section.settings.badge_right }}px;
+  }
 {% endstyle %}
 
 {% assign gravity_cheapest = all_products ['basic-gravity-gewichtsdecke-fur-erwachsene'] %}
