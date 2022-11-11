@@ -15,6 +15,7 @@
            data-expand="-150"
            {% if collection_image %}data-bgset="{{ collection_image | img_url: mobile_size, crop: image_crop }} 750w, {{ collection_image | img_url: '1000x' }} 1000w, {{ collection_image | img_url: '1500x' }} 1500w"{% endif %}>
 
+        template.name: {{ template.name | json }}
         {% render 'collection-promotional-badge' %}
         
         {%- if collection_image == nil -%}
