@@ -119,11 +119,9 @@
               		{% if product.template_suffix == "standard-gravity-test" and settings.seasonal_product_info %}
               		<img class="seasonal_badge" alt="neutral_badge_seasonal_information" src="https://cdn.shopify.com/s/files/1/2451/6611/files/neutral_badge.svg?v=1655883238">
               		{% else %}
-              			
-                          
-              				<div class="bf-badge">-{{ percentage }}%</div>
-                          
-              			
+                      {% if settings.enable_percentage_off_badge %}
+                        <div class="bf-badge">-{{ percentage }}%</div>
+                      {% endif %}
               		{% endif %}
                 {% endif %}
               {% endif %}
