@@ -89,7 +89,7 @@
     "promo_badge": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TD_-_Black_Week_Promotion_-_product_badge.svg?v=1667232038",
     "enable_leading_collection_badge": true,
     "enable_collection_badge": true,
-    "collection_badge_max_width": 80,
+    "collection_badge_max_width": 90,
     "collection_badge_max_width_mobile": 80,
     "enable_product_badge": false,
     "hide_discount_general_badge": false,
