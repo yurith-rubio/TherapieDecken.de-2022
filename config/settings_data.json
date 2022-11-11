@@ -90,7 +90,7 @@
     "enable_leading_collection_badge": true,
     "enable_collection_badge": true,
     "collection_badge_max_width": 80,
-    "collection_badge_max_width_mobile": 110,
+    "collection_badge_max_width_mobile": 80,
     "enable_product_badge": false,
     "hide_discount_general_badge": false,
     "product_badge_max_width": 150,
