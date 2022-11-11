@@ -16,8 +16,6 @@
 }
 {%- endcapture -%}
 
-template name: {{ template.name }}
-
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-list">
   {%- capture collection_items -%}
     {%- for block in section.blocks -%}
