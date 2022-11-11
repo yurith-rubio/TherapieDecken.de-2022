@@ -1,4 +1,4 @@
-.leadGrid_container{
+.leadGrid_container, .leadGrid_container_kinder {
   display: grid;
   gap: 30px;
   max-width: 1000px;
