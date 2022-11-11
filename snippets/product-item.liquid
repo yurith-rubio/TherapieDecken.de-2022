@@ -17,7 +17,7 @@
     </div>
     {% endif %}
 
-    {% render 'collection-promotional-badge' %}
+    
       
     {%- comment -%}
     We are using LazySizes to efficiently choose the most appropriate image in the set. However, because internally LazySizes uses srcset, we need to make
@@ -37,6 +37,8 @@
     {%- endif -%}
 
     <a href="{{ product.url | within: collection }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}">
+
+      {% render 'collection-promotional-badge' %}
       
       {% if product.tags contains "limitiert" %}
     	<div class="badge-new">Limitiert</div>
