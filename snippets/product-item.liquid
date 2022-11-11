@@ -2,20 +2,6 @@
 
 <div class="ProductItem {% if use_horizontal %}ProductItem--horizontal{% endif %}">
   <div class="ProductItem__Wrapper">
-    
-    {% if collection.handle == "gravity-therapiedecken-fur-erwachsene" or "balance-therapiedecken-fur-erwachsene" %}
-      <div class="product-badge-div">
-        {% if product.tags contains "badge-summer" %}<span class="product-badge summer-badge">Sommer</span>{% endif %}
-        {% if product.tags contains "badge-classic" %}<span class="product-badge classic-badge">Classic</span>{% endif %}
-        {% if product.tags contains "badge-personalisiert-tiere" %}<span class="product-badge personalisiert-badge">Personalisiert Tiere</span>{% endif %}
-        {% if product.tags contains "badge-personalisiert" %}<span class="product-badge personalisiert-badge">Personalisiert</span>{% endif %}
-        {% if product.tags contains "badge-einsteigermodell" %}<span class="product-badge einsteigermodell-badge">Einsteigermodell</span>{% endif %}
-        {% if product.tags contains "badge-hero" %}<span class="product-badge hero-badge">Hero</span>{% endif %}
-        {% if product.tags contains "badge-zauberei" %}<span class="product-badge zauberei-badge">Zauberei</span>{% endif %}
-        {% if product.tags contains "badge-ringwelt" %}<span class="product-badge ringwelt-badge">Ringwelt</span>{% endif %}
-        {% if product.tags contains "badge-sale" %}<span class="product-badge sale-badge">Sale</span>{% endif %}
-      </div>
-    {% endif %}
      
     {%- comment -%}
     We are using LazySizes to efficiently choose the most appropriate image in the set. However, because internally LazySizes uses srcset, we need to make
@@ -37,6 +23,20 @@
     <a href="{{ product.url | within: collection }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}">
 
       {% render 'collection-promotional-badge' %}
+
+      {% if collection.handle == "gravity-therapiedecken-fur-erwachsene" or "balance-therapiedecken-fur-erwachsene" %}
+        <div class="product-badge-div">
+          {% if product.tags contains "badge-summer" %}<span class="product-badge summer-badge">Sommer</span>{% endif %}
+          {% if product.tags contains "badge-classic" %}<span class="product-badge classic-badge">Classic</span>{% endif %}
+          {% if product.tags contains "badge-personalisiert-tiere" %}<span class="product-badge personalisiert-badge">Personalisiert Tiere</span>{% endif %}
+          {% if product.tags contains "badge-personalisiert" %}<span class="product-badge personalisiert-badge">Personalisiert</span>{% endif %}
+          {% if product.tags contains "badge-einsteigermodell" %}<span class="product-badge einsteigermodell-badge">Einsteigermodell</span>{% endif %}
+          {% if product.tags contains "badge-hero" %}<span class="product-badge hero-badge">Hero</span>{% endif %}
+          {% if product.tags contains "badge-zauberei" %}<span class="product-badge zauberei-badge">Zauberei</span>{% endif %}
+          {% if product.tags contains "badge-ringwelt" %}<span class="product-badge ringwelt-badge">Ringwelt</span>{% endif %}
+          {% if product.tags contains "badge-sale" %}<span class="product-badge sale-badge">Sale</span>{% endif %}
+        </div>
+      {% endif %}
       
       {% if product.tags contains "limitiert" %}
     	<div class="badge-new">Limitiert</div>
