@@ -422,12 +422,11 @@
                   <div class="ProductMeta__StoreAvailabilityContainer" {{ block.shopify_attributes }}></div>
           
 				{% when 'payment_methods' %}
+                  {% render 'guarantee-exceptions' %}
                   {% render 'product_payment_methods' %}
           
               {%- endcase -%}
             {%- endfor -%}
-          
-            {% render 'guarantee-exceptions' %}
           
           {%- endform -%}
 
