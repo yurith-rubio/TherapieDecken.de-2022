@@ -1,7 +1,8 @@
-{% if product.collections == 'gravity-therapiedecken-fur-erwachsene' or product.collections == 'balance-therapiedecken-fur-erwachsene' %}
-  <div class="blankets-sold-wrapper" style="margin-top: 30px;">
-    <img src="https://cdn.shopify.com/s/files/1/2451/6611/files/500000_sold_blankets.svg?v=1654079913">
-  </div>
-{% endif %}
-
+{% for collection in product.collections %}
+  {% if product.collections == 'gravity-therapiedecken-fur-erwachsene' or product.collections == 'balance-therapiedecken-fur-erwachsene' %}
+    <div class="blankets-sold-wrapper" style="margin-top: 30px;">
+      <img src="https://cdn.shopify.com/s/files/1/2451/6611/files/500000_sold_blankets.svg?v=1654079913">
+    </div>
+  {% endif %}
+{% endfor %}
 product collections {{ product.collections | json }}
