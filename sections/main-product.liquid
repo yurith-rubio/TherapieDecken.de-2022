@@ -451,18 +451,14 @@
                   <div class="ProductMeta__StoreAvailabilityContainer" {{ block.shopify_attributes }}></div>
           
           		{% when 'payment_methods' %}
-
                   {% render 'guarantee-exceptions' %}
-                
                   {% render 'product_payment_methods' %}
-               
                   {% render 'blankets-sold' %}
 
-          
-              {%- when 'liquid' -%}
-                <div>
-                  {{ block.settings.liquid }}
-                </div>
+                {%- when 'liquid' -%}
+                  <div>
+                    {{ block.settings.liquid }}
+                  </div>
           			  
               {%- endcase -%}
             {%- endfor -%}
