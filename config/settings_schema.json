@@ -735,7 +735,7 @@
       {
         "type": "checkbox",
         "id": "left_product_inventory",
-        "label": "Show product inventory when > 0 and < 15",
+        "label": "Show product inventory when > 0 and < 30",
         "default": false
       }
     ]
