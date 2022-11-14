@@ -86,13 +86,7 @@
     background-image: url('{{ settings.promo_image | img_url: 'master' }}');
   }
 }
-
-@media screen and (min-width: 641px) and (max-width: 900px) {
-  .promotion-home-hero_content_container{
-    width: {{ settings.promo_art_tablet_width }}%;
-  }
-}
-
+/* Medium and up */
 @media screen and (min-width: 901px) {
   .promotion-home-hero_content_container{
     width: {{ settings.promo_art_desktop_width }}%;
@@ -109,8 +103,12 @@
     width: 100%;
     max-width: 471px;
   } 
+  .promotion-home-hero_content_container{
+    width: {{ settings.promo_art_tablet_width }}%;
+  }
 }
 
+/* Large screens */
 @media screen and (min-width: 1922px) {
   .Slideshow__ImageContainer{
     background-position-y: center;
