@@ -452,10 +452,11 @@
           
           		{% when 'payment_methods' %}
                   {% render 'product_payment_methods' %}
-                  
+                
+                  {% render 'guarantee-exceptions' %}
+                
                   {% render 'blankets-sold' %}
 
-                  {% render 'guarantee-exceptions' %}
           
               {%- when 'liquid' -%}
                 <div>
