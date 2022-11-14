@@ -54,7 +54,7 @@
 
     if (countdownProduct){
       {% if settings.product_countdown_enable %}
-        countdownProduct.innerHTML = `<span>{{ settings.countdown_product_text }} </span><span class="countdown_product_text">${days} T : ${hours} S : ${minutes} M : ${seconds} S</span>`;
+        countdownProduct.innerHTML = `<span>{{ settings.countdown_product_text }} </span><span class="countdown_product_text">${days} T - ${hours} : ${minutes} : ${seconds}</span>`;
       {% endif %}
     }
 
