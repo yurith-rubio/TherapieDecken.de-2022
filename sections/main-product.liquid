@@ -408,8 +408,6 @@
                     {%- endif -%}
                     
 					<div id="twtd-shipping-time"></div>
-
-                    {% render 'guarantee-exceptions' %}
                     
                     <button type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" 
                             class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" 
@@ -456,6 +454,8 @@
                   {% render 'product_payment_methods' %}
                   
                   {% render 'blankets-sold' %}
+
+                  {% render 'guarantee-exceptions' %}
           
               {%- when 'liquid' -%}
                 <div>
