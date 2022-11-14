@@ -86,14 +86,14 @@
     background-image: url('{{ settings.promo_image | img_url: 'master' }}');
   }
 }
-/* Medium and up */
+/* Medium and up screens */
 @media screen and (min-width: 901px) {
   .promotion-home-hero_content_container{
     width: {{ settings.promo_art_desktop_width }}%;
   }
 }
 
-/* Medium */
+/* Medium screens */
 @media only screen and (min-width: 641px) and (max-width: 1080px){
   .Slideshow__ImageContainer{
     background-position-x: {{ settings.promo_tablet_image_position }}%;
