@@ -68,9 +68,10 @@
   COLLECTION INFO
   --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
-Testing
+
   
   {%- if collection.all_products_count > 0 -%}
+    Testing 2
     {% for collection in product.collections  %}
       Collection handle: {{ collection.handle }}
       {% if settings.promo_collection_cover and collection.handle == '' %}
