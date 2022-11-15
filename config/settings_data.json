@@ -142,7 +142,7 @@
           "home_page_only": false,
           "background": "#c91530",
           "text_color": "#ffffff",
-          "content": "<span style=\"line-height:26px;background-color:#C91530; border: 2px solid black;padding:2px 4px;color:white\"><b> BLACK <span style=\"color:black\">WEEK!<\/span><\/b><\/span> hat begonnen! <span style=\"background-color:#000;padding:3px 5px;color:white\"><b> 50% Rabatt<\/b><\/span> · Endet in",
+          "content": "<span style=\"line-height:26px;background-color:#C91530; border: 2px solid black;padding:2px 4px;color:white\"><b> BLACK <span style=\"color:black\">WEEK<\/span><\/b><\/span><b><span style=\"line-height:26px;background-color:black; border: 2px solid black;padding:2px 4px;color:white\">SALE!<\/span><\/b> Niedrigste Preise aller Zeiten + <b>100 Tage testen<\/b> · Endet in",
           "link": "\/pages\/therapiedecken"
         }
       },
