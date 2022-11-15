@@ -71,7 +71,7 @@
 
   
   {%- if collection.all_products_count > 0 -%}
-    product collections: {{ product.collections }}
+    product collections: {{ collection.handle | json }}
     {% for collection in product.collections  %}
       Testing 3
       Collection handle: {{ collection.handle }}
