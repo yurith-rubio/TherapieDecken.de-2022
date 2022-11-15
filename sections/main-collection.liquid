@@ -71,8 +71,8 @@
 
   
   {%- if collection.all_products_count > 0 -%}
-    {% if settings.promo_collection_cover %}
-      {% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' or collection.handle == 'balance-therapiedecken-fur-erwachsene' %}
+    {% if collection.handle == 'gravity-therapiedecken-fur-erwachsene' or collection.handle == 'balance-therapiedecken-fur-erwachsene' %}
+      {% if settings.promo_collection_cover %}
         {% style %}
           .PromoCollection_Image{
             background-repeat: no-repeat;
