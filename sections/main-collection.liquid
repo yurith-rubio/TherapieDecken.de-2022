@@ -71,8 +71,9 @@
 
   
   {%- if collection.all_products_count > 0 -%}
-    Testing 2
+    
     {% for collection in product.collections  %}
+      Testing 3
       Collection handle: {{ collection.handle }}
       {% if settings.promo_collection_cover and collection.handle == '' %}
         {% style %}
