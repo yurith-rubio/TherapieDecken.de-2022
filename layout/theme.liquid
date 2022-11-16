@@ -11,7 +11,7 @@
     {%- if template.name == 'product' -%}
       <link rel="stylesheet" href="{{ 'theme-product.css' | asset_url }}">
     {% endif %}
-    {%- if template.name == 'collection' or template.name == 'page' -%}
+    {%- if template.name == 'collection' or template.name == 'list-collections' or template.name == 'page' -%}
       <link rel="stylesheet" href="{{ 'theme-collection.css' | asset_url }}">
     {% endif %}
     
