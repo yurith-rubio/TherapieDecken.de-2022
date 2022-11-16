@@ -6,6 +6,7 @@
 
   <div class="CollectionItem__Wrapper CollectionItem__Wrapper--{{ section.settings.image_size }}" {% if collection_image %}style="background-image: url({{ collection_image | img_url: '1x1' }})"{% endif %}>
 
+    <!-- collection-item -->
     {% render 'collection-promotional-badge' %}
 
     <div class="CollectionItem__ImageWrapper">
