@@ -69,47 +69,53 @@
   --------------------------------------------------------------------------------------------------------------------
   {%- endcomment -%}
 
-  {%- if collection.all_products_count > 0 -%}
-    {% if settings.promo_collection_cover %}
-      {% style %}
-        .PromoCollection_Image{
-          background-repeat: no-repeat;
-          background-size: 100% 60%;
-          background-position-y: 70%;
-        }
-        @media only screen and (max-width: 600px){
-          .PromoCollection_Image{
-            background-image: url("{{ settings.collection_promo_image_mobile_art }}") !important;
-          }
-        }
-      {% endstyle %}
-      <header class="PageHeader PageHeader--withBackground {% if section.settings.collection_image_size != 'normal' %}PageHeader--{{ section.settings.collection_image_size }}{% endif %}" 
-              style="background: {{ settings.collection_promo_bg_color }}">
-        <div class="PromoCollection_Image PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn"
-             data-optimumx="1.2"
-             data-bgset="{{ settings.collection_promo_image_mobile_art }} 600w, {{ settings.collection_promo_image_art }} 800w, {{ settings.collection_promo_image_art }} 1200w, {{ settings.collection_promo_image_art }} 1400w, {{ settings.collection_promo_image_art }} 1600w">
-        </div>
-
-        <noscript>
-          <div class="PageHeader__ImageWrapper {% if section.settings.apply_overlay %}Image--contrast{% endif %}" style="background-image: url({{ settings.collection_promo_image_art }})"></div>
-        </noscript>
-
-        {% comment %}
-          {%- if section.settings.show_collection_info -%}
-            <div class="Container">
-              <div class="SectionHeader SectionHeader--center">
-                <h1 class="SectionHeader__Heading Heading u-h1">{{ collection.title }}</h1>
   
-                {%- if collection.description != blank -%}
-                  <div class="SectionHeader__Description Rte">
-                    {{- collection.description -}}
-                  </div>
-                {%- endif -%}
+  {%- if collection.all_products_count > 0 -%}
+    {% if collection.handle == 'gravity-therapiedecken-fur-kinder' 
+      or collection.handle == 'balance-therapiedecken-fur-kinder'
+      or collection.handle == 'medizinische-therapiedecken-fur-kinder' 
+      or collection.handle == 'gravity-therapiedecken-fur-erwachsene' 
+      or collection.handle == 'balance-therapiedecken-fur-erwachsene' 
+      and settings.promo_collection_cover %}
+        {% style %}
+          .PromoCollection_Image{
+            background-repeat: no-repeat;
+            background-size: 100% 60%;
+            background-position-y: 70%;
+          }
+          @media only screen and (max-width: 600px){
+            .PromoCollection_Image{
+              background-image: url("{{ settings.collection_promo_image_mobile_art }}") !important;
+            }
+          }
+        {% endstyle %}
+        <header class="PageHeader PageHeader--withBackground {% if section.settings.collection_image_size != 'normal' %}PageHeader--{{ section.settings.collection_image_size }}{% endif %}" 
+                style="background: {{ settings.collection_promo_bg_color }}">
+          <div class="PromoCollection_Image PageHeader__ImageWrapper Image--lazyLoad Image--fadeIn"
+               data-optimumx="1.2"
+               data-bgset="{{ settings.collection_promo_image_mobile_art }} 600w, {{ settings.collection_promo_image_art }} 800w, {{ settings.collection_promo_image_art }} 1200w, {{ settings.collection_promo_image_art }} 1400w, {{ settings.collection_promo_image_art }} 1600w">
+          </div>
+  
+          <noscript>
+            <div class="PageHeader__ImageWrapper {% if section.settings.apply_overlay %}Image--contrast{% endif %}" style="background-image: url({{ settings.collection_promo_image_art }})"></div>
+          </noscript>
+  
+          {% comment %}
+            {%- if section.settings.show_collection_info -%}
+              <div class="Container">
+                <div class="SectionHeader SectionHeader--center">
+                  <h1 class="SectionHeader__Heading Heading u-h1">{{ collection.title }}</h1>
+    
+                  {%- if collection.description != blank -%}
+                    <div class="SectionHeader__Description Rte">
+                      {{- collection.description -}}
+                    </div>
+                  {%- endif -%}
+                </div>
               </div>
-            </div>
-          {%- endif -%}
-        {% endcomment %}
-      </header>
+            {%- endif -%}
+          {% endcomment %}
+        </header>
     {%- elsif section.settings.show_collection_image and collection.image and collection.template_suffix != 'no-image' -%}
       <div class="FlexboxIeFix">
         <header class="PageHeader PageHeader--withBackground {% if section.settings.collection_image_size != 'normal' %}PageHeader--{{ section.settings.collection_image_size }}{% endif %}" style="background: url({{ collection.image | img_url: '1x1', format: 'jpg' }})">
