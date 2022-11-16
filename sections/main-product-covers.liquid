@@ -107,6 +107,16 @@
         {%- case media.media_type -%}
           {%- when 'image' -%}
             <div id="Media{{ media.id }}" tabindex="0" class="Product__SlideItem Product__SlideItem--image Carousel__Cell {% if initial_media_id == media.id %}is-selected{% endif %}" data-media-type="image" data-media-id="{{ media.id }}" data-media-position="{{ media.position }}" data-image-media-position="{% increment image_position %}">
+              {% assign percentage = 0 %}
+              {% for variant in product.variants %}
+                {% assign saving = variant.compare_at_price | minus: variant.price | times: 100 | divided_by: variant.compare_at_price | round %}
+                {% assign percentage = saving | at_least: percentage %}
+              {% endfor %}
+              {% if settings.hide_discount_general_badge != true %}
+                {% if settings.enable_percentage_off_badge %}
+                  <div class="bf-badge">-{{ percentage }}%</div>
+                {% endif %}
+              {% endif %}
               <div class="AspectRatio AspectRatio--withFallback" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }};">
                 {% assign image_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
 
