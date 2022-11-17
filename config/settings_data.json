@@ -61,7 +61,7 @@
     "countdown_product_bg_color": "#000000",
     "countdown_product_numbers_color": "#ffffff",
     "cart_countdown_enable": true,
-    "cart_countdown_text": "⚠️ Auf Grund unseres Black Week Angebote ist Ihr Warenkorb für nur",
+    "cart_countdown_text": "⚠️ Auf Grund unserer Black Friday Angebote ist Ihr Warenkorb für nur",
     "cart_countdown_text_over": "Wir können nicht länger die Verfügbarkeit der Produkte im Warenkorb garantieren",
     "checkout_countdown_enable": false,
     "checkout_countdown_text": "⚠️ Auf Grund unseres Weltschlaftag Angebots ist Ihr Warenkorb für nur",
