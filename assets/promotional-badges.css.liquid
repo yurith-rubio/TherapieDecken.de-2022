@@ -1,13 +1,9 @@
 /* FreeMask badge on Collection Pages */
 .CollectionBadge_Mask__Wrapper{
-  position: relative;
+  position: absolute;
   display: flex;
-  justify-content: end;
-  align-items: center;
-  z-index: 1;
-  height: 80px;
-  margin-bottom: -50px;
-  bottom: -225px;
+  right: 0;
+  top: 0;
 }
 .Collection_SmallBadge {
   position: relative;
@@ -31,23 +27,16 @@
     max-width: {{ settings.collection_badge_max_width }}px;
     height: auto;
 }
-@media (min-width: 768px) and (max-width: 991px){
-  .CollectionBadge_Mask__Wrapper{
-    bottom: -160px;
-    align-items: end;
-  }
+
+@media (min-width: 641px) and (max-width: 991px){
   .Collection_ImgSmallBadge{
     text-align: right;
   }
   .Collection_ImgSize_SmallBadge{
-    max-width: {{ settings.collection_badge_max_width_mobile }}px;
     height: auto;
   }
 }
-@media only screen and (max-width: 767px){
-  .CollectionBadge_Mask__Wrapper{
-    bottom: -100px;
-  }
+@media only screen and (max-width: 640px){
   .Collection_SmallBadge {
     left: 10px;
     padding: 0 10px 0 5px;
@@ -60,6 +49,12 @@
   .Collection_ImgSize_SmallBadge{
     max-width: {{ settings.collection_badge_max_width_mobile }}px;
     height: auto;
+  }
+  .CollectionBadge_Mask__Wrapper{
+    max-width: 100px;
+  }
+  .CollectionBadge_Mask__Wrapper.CollectionBadge_ListCollection{
+    max-width: 150px;
   }
 }
 
@@ -111,7 +106,6 @@
 .padding-left{
 	padding-left: 30px;
 }
-
 
 @media only screen and (max-width: 640px) and (orientation: portrait){
   .Prod_SmallBadge {
