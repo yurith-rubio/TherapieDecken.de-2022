@@ -37,6 +37,7 @@
       {%- assign media_aspect_ratio = product.featured_media.aspect_ratio | default: product.featured_media.preview_image.aspect_ratio -%}
 
       <div class="AspectRatio AspectRatio--{% if use_natural_size %}withFallback{% else %}{{ settings.product_image_size }}{% endif %}" style="max-width: {{ max_width }}px; {% if use_natural_size %}padding-bottom: {{ 100.0 | divided_by: media_aspect_ratio }}%;{% endif %} --aspect-ratio: {{ media_aspect_ratio }}">
+
         {% render 'collection-promotional-badge' %}
         
         {% if collection.handle == "gravity-therapiedecken-fur-erwachsene" or "balance-therapiedecken-fur-erwachsene" %}
