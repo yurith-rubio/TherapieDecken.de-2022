@@ -37,6 +37,11 @@
           "disabled": true,
           "settings": {
           }
+        },
+        "7be88b2a-ae3e-487e-9756-08f838132754": {
+          "type": "payment_methods",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -44,7 +49,8 @@
         "variant_selector",
         "buy_buttons",
         "description",
-        "share_buttons"
+        "share_buttons",
+        "7be88b2a-ae3e-487e-9756-08f838132754"
       ],
       "settings": {
         "image_size": "large",

@@ -1,86 +1,9 @@
 {% style %}
-    .leadGrid_container{
-        display: grid;
-        gap: 30px;
-        max-width: 1000px;
-        margin: 30px auto;
-        justify-content: center;
-    }
-    .leadGrid_productBlockWrapper{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        max-width: 400px;
-        background-color: #f8f8f8;
-    }
-    .leadGrid_productBlockWrapper a{
-        display: block;
-        padding: 30px;
-        text-align: center;
-        width: 100%;
-    }
-    .leadGrid_productBlockWrapper .Heading{
-        margin-bottom: 0;
-        text-align: center;
-    }
-    .leadGrid_iconTextWrapper{
-        display: flex;
-        align-items: center;
-        padding: 5px 0px;
-        max-width: 142px;
-        margin: auto;
-    }
-    .leadGrid_iconTextWrapper .icon-30{
-        font-size: 30px;
-    }
-    .leadGrid_iconTextWrapper .icon-30:before{
-        color: #3C3A3A;
-    }
-    .leadGrid_iconTextWrapper .Heading{
-        line-height: 16px;
-        font-weight: 700;
-        padding-left: 10px;
-    }
-    .leadGrid_buttonBlock{
-        margin-top: 10px;
-    }
-    .leadGrid_lowestPrice{
-        font-size: 24px;
-    }
-    .leadGrid_productImageContent{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: end;
-    }
-    .leadGrid_productImageBadge,
-    .leadGrid_productImageBadge2{
-      position: relative;
-      margin-top: -50px;
-      margin-bottom: 10px;
-    }
-    @media only screen and (max-width: 640px){
-        .leadGrid_container{
-            grid-template-columns: auto;
-        }
-        .leadGrid_productBlockWrapper{
-            margin: 0 30px;
-        }
-        .leadGrid_productImageBadge{
-          width: {{ section.settings.badge_width_mobile }}%;
-        }
-    }
-    @media only screen and (min-width: 641px){
-        .leadGrid_container{
-            grid-template-columns: auto auto;
-        }
-        .leadGrid_productBlockWrapper{
-            width: 100%;
-        }
-        .leadGrid_productImageBadge{
-          width: {{ section.settings.badge_width }}%;
-        }
-    }
+  .leadGrid_productImageBadge{
+    max-height: {{ section.settings.badge_width }}px;
+    top: {{ section.settings.badge_top }}px;
+    right: {{ section.settings.badge_right }}px;
+  }
 {% endstyle %}
 
 {% assign gravity_cheapest = all_products ['basic-gravity-gewichtsdecke-fur-erwachsene'] %}
@@ -90,13 +13,15 @@
 
 <div class="leadGrid_container">
     <div class="leadGrid_productBlockWrapper">
+      {% if settings.enable_leading_collection_badge and section.settings.promo_badge_1 %}
+        <div class="leadGrid_badgeWrapper">
+          <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-gravity-product" width="" height="auto">
+        </div>
+      {% endif %}
       <a href="/collections/gravity-therapiedecken-fur-erwachsene">
         <img class="leadGrid_logo" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Gravity-black-svg-logo.svg?v=1661176871" alt="gravity-logo" width="100" height="auto">
         <div class="leadGrid_productImageContent">
           <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Gravity_new.png?v=1661511818"" alt="gravity-product" width="" height="auto">
-          {% if settings.enable_leading_collection_badge and section.settings.promo_badge_1 %}
-            <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-gravity-product" width="" height="auto">
-          {% endif %}
         </div>
         <h2 class="Heading u-h1">Gravity</h2>
         <p class="Heading">Gewichtsdecke für Erwachsene</p>
@@ -130,13 +55,15 @@
       </a>
     </div>
     <div class="leadGrid_productBlockWrapper">
+      {% if settings.enable_leading_collection_badge and section.settings.promo_badge_2 %}
+        <div class="leadGrid_badgeWrapper">
+          <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-balance-product" width="" height="auto">
+        </div>
+      {% endif %}
       <a href="/collections/balance-therapiedecken-fur-erwachsene">
         <img class="leadGrid_logo" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Balance-black-svg-logo.svg?v=1661176871" alt="balance-logo" width="100" height="auto">
         <div class="leadGrid_productImageContent">
           <img class="leadGrid_productImage" src="https://cdn.shopify.com/s/files/1/2451/6611/files/Balance_new.png?v=1661511817" alt="balance-product" width="" height="auto">
-          {% if settings.enable_leading_collection_badge and section.settings.promo_badge_2 %}
-            <img class="leadGrid_productImageBadge" src="{{ settings.promo_badge }}" alt="badge-balance-product" width="" height="auto">
-          {% endif %}
         </div>
         <h2 class="Heading u-h1">Balance</h2>
         <p class="Heading">Gewichtsdecke für Erwachsene</p>
@@ -212,21 +139,31 @@
       "type": "range",
       "id": "badge_width",
       "label": "Desktop: Width",
-      "min": 30,
-      "max": 100,
+      "min": 50,
+      "max": 200,
       "step": 10,
-      "unit": "%",
+      "unit": "px",
       "default": 50
     },
     {
       "type": "range",
-      "id": "badge_width_mobile",
-      "label": "Mobile: Width",
-      "min": 30,
-      "max": 100,
+      "id": "badge_top",
+      "label": "Top space",
+      "min": 0,
+      "max": 200,
       "step": 10,
-      "unit": "%",
-      "default": 50
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "badge_right",
+      "label": "Right space",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 30
     }
   ],
   "presets": [

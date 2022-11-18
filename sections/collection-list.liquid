@@ -1,3 +1,10 @@
+{% style %}
+  .CollectionBadge_ListCollection .Collection_ImgSize_SmallBadge{
+    max-width: {{ section.settings.list_collection_badge_max_width }}px;
+    width: {{ section.settings.list_collection_badge_max_width }}px;
+  }
+{% endstyle %}
+
 {%- capture flickity_options -%}
 {
   "prevNextButtons": false,
@@ -104,6 +111,16 @@
       "id": "button_color",
       "label": "Button text",
       "default": "#363636"
+    },
+    {
+      "type": "range",
+      "id": "list_collection_badge_max_width",
+      "label": "Desktop: Width",
+      "min": 50,
+      "max": 150,
+      "step": 10,
+      "unit": "px",
+      "default": 50
     }
   ],
   "blocks": [

@@ -560,6 +560,17 @@
     ]
   },
   {
+    "name": "Settings",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_percentage_off_badge",
+        "label": "Enable sale badge on list items",
+        "default": false
+      }
+    ]
+  },
+  {
     "name": "Countdown",
     "settings": [
       {
@@ -724,7 +735,7 @@
       {
         "type": "checkbox",
         "id": "left_product_inventory",
-        "label": "Show product inventory when > 0 and < 15",
+        "label": "Show product inventory when > 0 and < 30",
         "default": false
       }
     ]
@@ -782,6 +793,12 @@
         "label": "Art design"
       },
       {
+        "type": "url",
+        "id": "promo_art_mobile",
+        "label": "Art design mobile",
+        "info": "Add only if needed"
+      },
+      {
         "type": "range",
         "id": "promo_art_y_content",
         "label": "Desktop: Vertical position",
@@ -790,6 +807,26 @@
         "step": 10,
         "unit": "px",
         "default": 0
+      },
+      {
+        "type": "range",
+        "id": "promo_art_desktop_width",
+        "label": "Desktop: Width",
+        "min": 30,
+        "max": 50,
+        "step": 10,
+        "unit": "%",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "promo_art_tablet_width",
+        "label": "Tablet: Width",
+        "min": 40,
+        "max": 70,
+        "step": 10,
+        "unit": "%",
+        "default": 50
       },
       {
         "type": "range",
