@@ -47,8 +47,8 @@
     "social_fancy": "https:\/\/therapiedecken.de\/blogs\/news?nopreview",
     "favicon": "shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png",
     "enable_percentage_off_badge": true,
-    "countdown_date": "November 27, 2022 23:59 GMT+0100",
-    "enable_days_view": false,
+    "countdown_date": "November 28, 2022 23:59 GMT+0100",
+    "enable_days_view": true,
     "border_radius_countdown": 4,
     "loop_time": 0,
     "announcement_countdown_enable": true,
@@ -141,9 +141,9 @@
         "settings": {
           "enable_bar": true,
           "home_page_only": false,
-          "background": "#c91530",
+          "background": "#fa558c",
           "text_color": "#ffffff",
-          "content": "<span style=\"line-height:26px;background-color:#C91530; border: 2px solid black;padding:2px 4px;color:white\"><b> BLACK <span style=\"color:black\">FRIDAY<\/span><\/b><\/span><b><span style=\"line-height:26px;background-color:black; border: 2px solid black;padding:2px 4px;color:white\">SALE!<\/span><\/b> Niedrigste Preise aller Zeiten + <b>100 Tage testen<\/b> · Endet in",
+          "content": "<span style=\"line-height:26px;background-color:#060D17; border-radius:6px;border: 2px solid black;padding:2px 4px;color:#41c0c8;margin-right:10px\"><b>CYBER <span style=\"color:white\">MONDAY <\/span><\/b><b><span style=\"line-height:26px;color:#fa558c\">SALE!<\/span> <\/b><\/span><b> 30% reduziert + weitere 20% sparen<\/b> + 100 Tage Probeschlafen · Endet in",
           "link": "https:\/\/therapiedecken.de\/pages\/therapiedecken"
         }
       },
