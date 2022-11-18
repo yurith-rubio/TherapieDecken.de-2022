@@ -7232,6 +7232,10 @@ a.CollectionItemPage {
   background: #ba2e2e;
   color: #fff;
 }
+.winter-badge{
+  background: #00b9eb;
+  color: #fff;
+}
 @media (max-width: 640px){
   .product-badge-div{
     left: -3px; 
