@@ -50,7 +50,7 @@
     "countdown_date": "November 27, 2022 23:59 GMT+0100",
     "enable_days_view": true,
     "border_radius_countdown": 4,
-    "loop_time": 0,
+    "loop_time": 3,
     "announcement_countdown_enable": true,
     "background_countdown": "#000000",
     "text_color_countdown": "#ffffff",
