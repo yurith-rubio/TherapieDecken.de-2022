@@ -46,11 +46,11 @@
     "social_youtube": "https:\/\/www.youtube.com\/channel\/UCzoQFn6SP0y-YTgCNnrLIfA?view_as=subscriber",
     "social_fancy": "https:\/\/therapiedecken.de\/blogs\/news?nopreview",
     "favicon": "shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png",
-    "enable_percentage_off_badge": true,
+    "enable_percentage_off_badge": false,
     "countdown_date": "November 27, 2022 23:59 GMT+0100",
-    "enable_days_view": false,
+    "enable_days_view": true,
     "border_radius_countdown": 4,
-    "loop_time": 0,
+    "loop_time": 3,
     "announcement_countdown_enable": true,
     "background_countdown": "#000000",
     "text_color_countdown": "#ffffff",
@@ -61,7 +61,7 @@
     "countdown_product_bg_color": "#000000",
     "countdown_product_numbers_color": "#ffffff",
     "cart_countdown_enable": true,
-    "cart_countdown_text": "⚠️ Auf Grund unserer Black Friday Angebote ist Ihr Warenkorb für nur",
+    "cart_countdown_text": "⚠️ Auf Grund der aktuellen Rabattaktion ist Ihr Warenkorb für nur",
     "cart_countdown_text_over": "Wir können nicht länger die Verfügbarkeit der Produkte im Warenkorb garantieren",
     "checkout_countdown_enable": false,
     "checkout_countdown_text": "⚠️ Auf Grund unseres Weltschlaftag Angebots ist Ihr Warenkorb für nur",
@@ -341,41 +341,6 @@
               "upsell_product_4": ""
             }
           },
-          "ad694668-5393-4d48-bd91-b488807cd99a": {
-            "type": "Trigger",
-            "settings": {
-              "product_list": [
-                "blaues-gesundheitskissen-fur-erwachsene",
-                "graues-gesundheitskissen-fur-erwachsene",
-                "hellgraues-therapiekissen-fur-erwachsene",
-                "poseidon-blaues-therapiekissen-fur-erwachsene"
-              ],
-              "enable_upsell_1": true,
-              "upsell_product_1": "duftspray-jetzt-das-therapiekissen-auffrischen",
-              "enable_upsell_2": true,
-              "upsell_product_2": "balance-schlafmaske",
-              "enable_upsell_3": false,
-              "upsell_product_3": "",
-              "enable_upsell_4": false,
-              "upsell_product_4": ""
-            }
-          },
-          "0d2854b2-c973-4094-8084-6baf96cdfe24": {
-            "type": "Trigger",
-            "settings": {
-              "product_list": [
-                "yoga-therapiedecke"
-              ],
-              "enable_upsell_1": true,
-              "upsell_product_1": "schosskissen-kalte-oder-heisse-kompresse",
-              "enable_upsell_2": true,
-              "upsell_product_2": "balance-schlafmaske",
-              "enable_upsell_3": false,
-              "upsell_product_3": "",
-              "enable_upsell_4": false,
-              "upsell_product_4": ""
-            }
-          },
           "3455c08c-5e1f-4951-a4e8-da6a287ba8d3": {
             "type": "Trigger",
             "settings": {
@@ -384,22 +349,6 @@
               ],
               "enable_upsell_1": true,
               "upsell_product_1": "gesundheitskissen-braun-hedwig",
-              "enable_upsell_2": false,
-              "upsell_product_2": "",
-              "enable_upsell_3": false,
-              "upsell_product_3": "",
-              "enable_upsell_4": false,
-              "upsell_product_4": ""
-            }
-          },
-          "230cbe1a-6e8f-45d0-b931-a2ac9c5f3bf0": {
-            "type": "Trigger",
-            "settings": {
-              "product_list": [
-                "eco-gewichtsdecke-fur-erwachsene"
-              ],
-              "enable_upsell_1": true,
-              "upsell_product_1": "beauty-queen-anti-falten-kissen",
               "enable_upsell_2": false,
               "upsell_product_2": "",
               "enable_upsell_3": false,
@@ -429,10 +378,7 @@
           "a799bb06-336d-48a8-930a-e300fb9c2e89",
           "74270d88-da5c-42fe-8de2-ae7b01519a48",
           "2a6133f9-f8ca-4d1e-bdaa-68f62b75f04d",
-          "ad694668-5393-4d48-bd91-b488807cd99a",
-          "0d2854b2-c973-4094-8084-6baf96cdfe24",
           "3455c08c-5e1f-4951-a4e8-da6a287ba8d3",
-          "230cbe1a-6e8f-45d0-b931-a2ac9c5f3bf0",
           "76a2f3b9-ac6f-468a-bd1e-71d30e533e2c"
         ],
         "settings": {
