@@ -48,7 +48,7 @@
     "favicon": "shopify:\/\/shop_images\/TD-Favicon-32x32-inversed.png",
     "enable_percentage_off_badge": true,
     "countdown_date": "November 24, 2022 23:59 GMT+0100",
-    "enable_days_view": false,
+    "enable_days_view": true,
     "border_radius_countdown": 4,
     "loop_time": 0,
     "announcement_countdown_enable": true,
