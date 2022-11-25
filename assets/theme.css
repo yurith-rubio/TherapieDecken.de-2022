@@ -5599,7 +5599,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .Rte h6:last-child {
   margin-bottom: 0;
 }
-
+/*geschaftskunden*/
+.Rte a.box_300w_content_wr:not(.Button,.noLink__Style):before{
+  content: none;
+}
 /**
  * ----------------------------------------------------------------------------
  * POLICY PAGES
