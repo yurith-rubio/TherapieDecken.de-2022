@@ -79,7 +79,7 @@
     "promo_art_tablet_width": 50,
     "promo_art_y_content_mobile": 120,
     "button_1_text": "Zu den Produkten",
-    "button_1_link": "https:\/\/therapiedecken.de\/pages\/therapiedecken",
+    "button_1_link": "\/pages\/therapiedecken",
     "button_color": "#41c0c8",
     "text_button_color": "#2b235c",
     "text_button_color_hover": "#ffffff",
@@ -144,7 +144,7 @@
           "background": "#fa558c",
           "text_color": "#ffffff",
           "content": "<span style=\"line-height:26px;background-color:#060D17; border-radius:6px;border: 2px solid black;padding:2px 4px;color:#41c0c8;margin-right:10px\"><b>CYBER <span style=\"color:white\">MONDAY <\/span><\/b><b><span style=\"line-height:26px;color:#fa558c\">SALE!<\/span> <\/b><\/span><b> Letztmalig 50% Rabatt<\/b> · Endet in",
-          "link": "https:\/\/therapiedecken.de\/pages\/therapiedecken"
+          "link": "\/pages\/therapiedecken"
         }
       },
       "header": {
