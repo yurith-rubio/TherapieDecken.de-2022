@@ -12943,3 +12943,14 @@ header.html-text-wr{
 .MoreOpt_plusIcon{
   font-size: 50px;
 }
+
+/*kontakt recaptcha*/
+.shopify-challenge__container{
+  margin: 60px auto!important;
+}
+.shopify-challenge__button{
+  margin-top: 30px!important;
+}
+.shopify-challenge__message{
+  margin-bottom: 30px!important;
+}
