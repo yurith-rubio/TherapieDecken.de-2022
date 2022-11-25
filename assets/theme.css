@@ -5599,7 +5599,10 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .Rte h6:last-child {
   margin-bottom: 0;
 }
-
+/*geschaftskunden*/
+.Rte a.box_300w_content_wr:not(.Button,.noLink__Style):before{
+  content: none;
+}
 /**
  * ----------------------------------------------------------------------------
  * POLICY PAGES
@@ -7234,6 +7237,46 @@ a.CollectionItemPage {
 }
 .winter-badge{
   background: #00b9eb;
+  color: #fff;
+}
+.throne-badge{
+  background: #000;
+  color: #c91530;
+}
+.sternenkrieg-badge{
+  background: #000;
+  color: #f4cf00;
+}
+.superhelden-badge{
+  background: #c91530;
+  color: #fff;
+}
+.minecraft-badge{
+  background: #648459;
+  color: #fff;
+}
+.mario-badge{
+  background: #232e83;
+  color: #f0da37;
+}
+.tiere-badge{
+  background: #7a3a3c;
+  color: #fff;
+}
+.natur-badge{
+  background: #099d0b;
+  color: #fff;
+}
+.meerestiere-badge{
+  background: #f78449;
+  color: #ffec80;
+}
+.kunterbunt-badge{
+  background: #5f6e8a;
+  color: #ffec80;
+}
+.pawpatrol-badge{
+  background: #cd1727;
   color: #fff;
 }
 @media (max-width: 640px){
@@ -12939,4 +12982,15 @@ header.html-text-wr{
 }
 .MoreOpt_plusIcon{
   font-size: 50px;
+}
+
+/*kontakt recaptcha*/
+.shopify-challenge__container{
+  margin: 60px auto!important;
+}
+.shopify-challenge__button{
+  margin-top: 30px!important;
+}
+.shopify-challenge__message{
+  margin-bottom: 30px!important;
 }
