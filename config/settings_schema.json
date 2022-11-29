@@ -814,7 +814,7 @@
         "label": "Desktop: Width",
         "min": 30,
         "max": 50,
-        "step": 10,
+        "step": 5,
         "unit": "%",
         "default": 50
       },
