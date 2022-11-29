@@ -121,7 +121,7 @@
       {% style %}
         {% assign cover_position = collection.metafields.td_field.header_img_y_position | default: 'center' %}
         .PageHeader__ImageWrapper{
-          background-position: {{ cover_position }};
+          background-position: "{{ collection.metafields.td_field.header_img_y_position | default: 'center' }}";
         }
       {% endstyle %}
       <div class="FlexboxIeFix">
