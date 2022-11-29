@@ -119,8 +119,9 @@
       {% endif %}
     {%- elsif section.settings.show_collection_image and collection.image and collection.template_suffix != 'no-image' -%}
       {% style %}
+        {% assign cover_position = collection.metafields.td_field.header_img_y_position | default: 'center' %}
         .PageHeader__ImageWrapper{
-          background-position: {{ collection.metafields.td_field.header_img_y_position | default: 'center' }}
+          background-position: {{ cover_position }};
         }
       {% endstyle %}
       <div class="FlexboxIeFix">
