@@ -120,7 +120,7 @@
     {%- elsif section.settings.show_collection_image and collection.image and collection.template_suffix != 'no-image' -%}
       {% style %}
         .PageHeader__ImageWrapper{
-          background-position-y: {{ collection.metafields.td_field.header_img_y_position }}
+          background-position-y: {{ collection.metafields.td_field.header_img_y_position | json }}
         }
       {% endstyle %}
       <div class="FlexboxIeFix">
