@@ -104,13 +104,13 @@
                     {% endcomment %}
                     <div class="MyCart_PriceContainer">
                       {% if item.original_line_price > item.final_line_price %}
-                        <span class="Heading MyCart_Price MyCart_HighlightedText">{{ item.final_line_price | money }}</span>
+                        <span class="Heading MyCart_Price MyCart_HighlightedText">{{ item.line_price | money }}</span>
                         <span class="MyCart_Price MyCart_ItemDiscount" style="text-decoration: line-through">{{ item.variant.compare_at_price | times: item.quantity | money }}</span>
                       {%- elsif item.variant.compare_at_price > item.original_price -%}
-                        <span class="Heading MyCart_Price MyCart_HighlightedText">{{ item.final_line_price | money }}</span>
+                        <span class="Heading MyCart_Price MyCart_HighlightedText">{{ item.line_price | money }}</span>
                         <span class="MyCart_Price MyCart_ItemDiscount" style="text-decoration: line-through">{{ item.variant.compare_at_price | times: item.quantity | money }} </span>
                       {% else %}
-                        <span class="MyCart_Price">{{ item.final_line_price | money }}</span>
+                        <span class="MyCart_Price">{{ item.line_price | money }}</span>
                       {%- endif -%}
                     </div>
                   </div>
