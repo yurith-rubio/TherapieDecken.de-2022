@@ -71,13 +71,13 @@
 
   
   {%- if collection.all_products_count > 0 -%}
-    <div style="background-color: red; height:100px"></div>
     {% if collection.handle == 'gravity-therapiedecken-fur-kinder' 
       or collection.handle == 'balance-therapiedecken-fur-kinder'
       or collection.handle == 'medizinische-therapiedecken-fur-kinder' 
       or collection.handle == 'gravity-therapiedecken-fur-erwachsene' 
       or collection.handle == 'balance-therapiedecken-fur-erwachsene' 
       and settings.promo_collection_cover %}
+      <div style="background-color: red; height:100px"></div>
         {% style %}
           .PromoCollection_Image{
             background-repeat: no-repeat;
