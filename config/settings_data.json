@@ -87,7 +87,7 @@
     "collection_promo_bg_color": "linear-gradient(180deg, rgba(100, 153, 181, 1) 2%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 1) 100%)",
     "collection_promo_image_art": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TD_Winter_Promo_Art3.svg?v=1669887393",
     "collection_promo_image_mobile_art": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TD_Winter_Promo_Art_mobile2.svg?v=1669889113",
-    "collection_promo_image_width": 90,
+    "collection_promo_image_width": 100,
     "promo_badge": "",
     "enable_leading_collection_badge": false,
     "enable_collection_badge": false,
