@@ -139,11 +139,11 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enable_bar": false,
+          "enable_bar": true,
           "home_page_only": false,
-          "background": "#fa558c",
+          "background": "#d61021",
           "text_color": "#ffffff",
-          "content": "<span style=\"font-style:italic;line-height:24px;background-color:#060D17; border-radius:6px;border: 2px solid black;padding:2px 4px;color:#41c0c8;margin-right:5px\"><b>CYBER <span style=\"color:white\">WOCHE!<\/span><\/b><\/span><b>10% Rabatt auf alle Therapiedecken! <span style=\"line-height:24px;background-color:#2b235c; border-radius:6px;padding:3px 6px;margin-right:5px\">Code: <span style=\"color:#41c0c8\">CW10<\/span><\/span><\/b> · Endet in",
+          "content": "<span style=\"line-height:22px;background-color:#0E2A3F; padding:4px 8px;;margin-right:5px\"><b>WINTER <span style=\"color:#6499b5\">SALE<\/span><\/b><\/span><span style=\"text-transform: uppercase\"><b>Bis zu 30% reduziert · 100 Tage testen · Garantierte Weihnachtszustellung 🎄<\/b><\/span>  Endet in",
           "link": "https:\/\/therapiedecken.de\/pages\/therapiedecken"
         }
       },
