@@ -56,7 +56,7 @@
     "text_color_countdown": "#ffffff",
     "product_countdown_enable": true,
     "icon_countdown_product": "",
-    "countdown_product_text": "Angebot endet in",
+    "countdown_product_text": "Garantierte Weihnachtszustellung endet in",
     "countdown_container_bg_color": "#d61021",
     "countdown_product_bg_color": "#0e2a3f",
     "countdown_product_numbers_color": "#ffffff",
@@ -143,7 +143,7 @@
           "home_page_only": false,
           "background": "#d61021",
           "text_color": "#ffffff",
-          "content": "<span style=\"line-height:24px;background-color:#0E2A3F; padding:4px 8px;;margin-right:5px\"><b>WINTER <span style=\"color:#6499b5\">SALE<\/span><\/b><\/span><b>Bis zu 30% reduziert · 100 Tage testen · Garantierte Weihnachtszustellung 🎄<\/b> Endet in",
+          "content": "<span style=\"line-height:24px;background-color:#0E2A3F; padding:4px 8px;;margin-right:5px\"><b>WINTER <span style=\"color:#6499b5\">SALE<\/span><\/b><\/span><b>30% Rabatt · 100 Testtage · Garantierte Weihnachtszustellung 🎄<\/b> Endet in",
           "link": "\/pages\/therapiedecken"
         }
       },
