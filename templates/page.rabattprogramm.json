@@ -89,16 +89,6 @@
         "link_text_extra": "Mehr Erfahren",
         "link_url_extra": ""
       }
-    },
-    "1636562629a5c0533d": {
-      "type": "button-block",
-      "settings": {
-        "bg-color": "#ffffff",
-        "button_text": "Jetzt 100 Tage Probeschlafen",
-        "button_url": "shopify:\/\/pages\/fur-wen-benotigen-sie-eine-therapiedecke",
-        "spacer_top": "0px",
-        "spacer_bottom": "50px"
-      }
     }
   },
   "order": [
@@ -106,7 +96,6 @@
     "1634848927f18760e6",
     "1631197109b2759aaf",
     "163654850371310cac",
-    "1631197250ed5d793f",
-    "1636562629a5c0533d"
+    "1631197250ed5d793f"
   ]
 }
