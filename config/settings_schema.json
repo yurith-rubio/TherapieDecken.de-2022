@@ -813,7 +813,7 @@
         "id": "promo_art_desktop_width",
         "label": "Desktop: Width",
         "min": 30,
-        "max": 50,
+        "max": 60,
         "step": 5,
         "unit": "%",
         "default": 50
