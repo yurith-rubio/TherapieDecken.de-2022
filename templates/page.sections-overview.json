@@ -63,6 +63,16 @@
         "link_url": ""
       }
     },
+    "29dbe7e0-1136-4735-a999-66d7af7e73dc": {
+      "type": "banner-custom",
+      "settings": {
+        "subheading": "",
+        "title": "🔻 Blog posts 🔻",
+        "html": "",
+        "spacer": "0",
+        "bg-color": "#fac636"
+      }
+    },
     "07d26888-66c3-495f-9ea3-8fecb4d1b8bb": {
       "type": "blog-posts",
       "blocks": {
@@ -271,6 +281,7 @@
     "f5f76e92-93dc-48b8-8d1a-807050d6dad0",
     "2731364f-d891-4c4b-9583-9e6198062568",
     "8c277cfc-1c2b-4cd4-bf56-ee87ab4ab813",
+    "29dbe7e0-1136-4735-a999-66d7af7e73dc",
     "07d26888-66c3-495f-9ea3-8fecb4d1b8bb",
     "f8599b70-e05a-4dd6-9cc3-89a1ceb53d28",
     "f9e1c08e-c9ec-442f-89a2-f3c009a1a371",
