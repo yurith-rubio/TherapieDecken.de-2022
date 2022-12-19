@@ -251,6 +251,28 @@
         "list_collection_badge_max_width": 50
       }
     },
+    "b428fd5b-108b-43fd-a696-3d2cdbcd5f19": {
+      "type": "spacer",
+      "settings": {
+        "spacer": 50,
+        "spacer_mobile": 50
+      }
+    },
+    "36df9468-a2e3-41e2-b731-cb931d536b6f": {
+      "type": "banner-custom",
+      "settings": {
+        "subheading": "",
+        "title": "🔻 Collection Image blocks 🔻",
+        "html": "",
+        "spacer": "",
+        "bg-color": "#fac636"
+      }
+    },
+    "24edc879-eeef-44be-8b52-335fdd428aae": {
+      "type": "main-collection-image-blocks",
+      "settings": {
+      }
+    },
     "4b3623f0-31ea-448e-81a8-d5b7178f65ad": {
       "type": "banner-custom",
       "settings": {
@@ -267,7 +289,7 @@
         "template--16656291725580__d419789f-0511-4877-946d-4562a40ded89-16714467390fee73cc-0": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "balance-therapiedecken-fur-erwachsene",
             "title": "",
             "grid_items_count": 8,
             "button_text": "View all products"
@@ -279,7 +301,7 @@
       ],
       "settings": {
         "title": "Featured collection",
-        "layout_mode": "grid",
+        "layout_mode": "carousel",
         "show_product_info": true,
         "show_vendor": false,
         "show_color_swatch": false,
@@ -287,33 +309,24 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "ad7c462a-d2f9-4b97-922f-41f7c5f4e6d0": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--16656291725580__ad7c462a-d2f9-4b97-922f-41f7c5f4e6d0-16714467390fee73cc-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "",
-            "grid_items_count": 8,
-            "button_text": "View all products"
-          }
-        }
-      },
-      "block_order": [
-        "template--16656291725580__ad7c462a-d2f9-4b97-922f-41f7c5f4e6d0-16714467390fee73cc-0"
-      ],
+    "0e0e6265-4f13-40a0-94f8-6a39936eeefe": {
+      "type": "spacer",
       "settings": {
-        "title": "Featured collection",
-        "layout_mode": "grid",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false,
-        "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
+        "spacer": 50,
+        "spacer_mobile": 50
       }
     },
-    "24edc879-eeef-44be-8b52-335fdd428aae": {
+    "03f51e5f-fabb-4a29-a99e-122d9391302a": {
+      "type": "banner-custom",
+      "settings": {
+        "subheading": "",
+        "title": "🔻 Image blocks 🔻",
+        "html": "",
+        "spacer": "",
+        "bg-color": "#fac636"
+      }
+    },
+    "18328f38-162f-4e69-95db-746d01cc4ee0": {
       "type": "main-collection-image-blocks",
       "settings": {
       }
@@ -340,10 +353,14 @@
     "f8599b70-e05a-4dd6-9cc3-89a1ceb53d28",
     "c672c9c6-a97d-4859-a158-0fc3743ed47b",
     "f9e1c08e-c9ec-442f-89a2-f3c009a1a371",
+    "b428fd5b-108b-43fd-a696-3d2cdbcd5f19",
+    "36df9468-a2e3-41e2-b731-cb931d536b6f",
+    "24edc879-eeef-44be-8b52-335fdd428aae",
     "4b3623f0-31ea-448e-81a8-d5b7178f65ad",
     "d419789f-0511-4877-946d-4562a40ded89",
-    "ad7c462a-d2f9-4b97-922f-41f7c5f4e6d0",
-    "24edc879-eeef-44be-8b52-335fdd428aae",
+    "0e0e6265-4f13-40a0-94f8-6a39936eeefe",
+    "03f51e5f-fabb-4a29-a99e-122d9391302a",
+    "18328f38-162f-4e69-95db-746d01cc4ee0",
     "main"
   ]
 }
