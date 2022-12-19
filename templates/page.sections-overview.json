@@ -36,7 +36,7 @@
       "type": "banner-custom",
       "settings": {
         "subheading": "Sub-heading",
-        "title": "Your HTML",
+        "title": "Banner Custom HTML",
         "html": "<p>Write your own custom HTML content.<\/p>",
         "spacer": "50px",
         "bg-color": "#ffffff"
@@ -54,9 +54,24 @@
     },
     "8c277cfc-1c2b-4cd4-bf56-ee87ab4ab813": {
       "type": "banner-call2action",
+      "blocks": {
+        "38bf89aa-b907-44fa-a587-19e90f0b9b64": {
+          "type": "background",
+          "disabled": true,
+          "settings": {
+            "spacer": "50px",
+            "bg-color": "#e6e6e6",
+            "bg-color-text-html": "#222323"
+          }
+        }
+      },
+      "block_order": [
+        "38bf89aa-b907-44fa-a587-19e90f0b9b64"
+      ],
       "settings": {
         "subheading": "Sub-heading",
         "title": "Title",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
         "image_position": "right",
         "content_html": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
         "link_text": "",
@@ -92,6 +107,23 @@
         "show_category": false,
         "button_link": "",
         "button_text": "View all articles"
+      }
+    },
+    "3a9241b3-6040-483e-a22e-10c4647d76c6": {
+      "type": "spacer",
+      "settings": {
+        "spacer": 50,
+        "spacer_mobile": 50
+      }
+    },
+    "a097cf81-b3d3-40bf-982b-f1cec1eb6fab": {
+      "type": "banner-custom",
+      "settings": {
+        "subheading": "",
+        "title": "🔻 Collection list 🔻",
+        "html": "",
+        "spacer": "0",
+        "bg-color": "#fac636"
       }
     },
     "f8599b70-e05a-4dd6-9cc3-89a1ceb53d28": {
@@ -152,13 +184,23 @@
         "list_collection_badge_max_width": 50
       }
     },
+    "c672c9c6-a97d-4859-a158-0fc3743ed47b": {
+      "type": "banner-custom",
+      "settings": {
+        "subheading": "",
+        "title": "🔻 Collection list Pages 🔻",
+        "html": "",
+        "spacer": "",
+        "bg-color": "#fac636"
+      }
+    },
     "f9e1c08e-c9ec-442f-89a2-f3c009a1a371": {
       "type": "collection-list-pages",
       "blocks": {
         "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-0": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "balance-therapiedecken-fur-erwachsene",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
@@ -171,7 +213,7 @@
         "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "gravity-therapiedecken-fur-kinder",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
@@ -184,7 +226,7 @@
         "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "andere-therapiedecken",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
@@ -207,6 +249,16 @@
         "text_color": "#ffffff",
         "button_color": "#363636",
         "list_collection_badge_max_width": 50
+      }
+    },
+    "4b3623f0-31ea-448e-81a8-d5b7178f65ad": {
+      "type": "banner-custom",
+      "settings": {
+        "subheading": "",
+        "title": "🔻 Featured collections 🔻",
+        "html": "",
+        "spacer": "0",
+        "bg-color": "#fac636"
       }
     },
     "d419789f-0511-4877-946d-4562a40ded89": {
@@ -283,8 +335,12 @@
     "8c277cfc-1c2b-4cd4-bf56-ee87ab4ab813",
     "29dbe7e0-1136-4735-a999-66d7af7e73dc",
     "07d26888-66c3-495f-9ea3-8fecb4d1b8bb",
+    "3a9241b3-6040-483e-a22e-10c4647d76c6",
+    "a097cf81-b3d3-40bf-982b-f1cec1eb6fab",
     "f8599b70-e05a-4dd6-9cc3-89a1ceb53d28",
+    "c672c9c6-a97d-4859-a158-0fc3743ed47b",
     "f9e1c08e-c9ec-442f-89a2-f3c009a1a371",
+    "4b3623f0-31ea-448e-81a8-d5b7178f65ad",
     "d419789f-0511-4877-946d-4562a40ded89",
     "ad7c462a-d2f9-4b97-922f-41f7c5f4e6d0",
     "24edc879-eeef-44be-8b52-335fdd428aae",
