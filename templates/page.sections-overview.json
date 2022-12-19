@@ -1,11 +1,17 @@
 {
   "sections": {
+    "2c2b83f7-bc6c-41a8-b18f-d8b8aa0360c9": {
+      "type": "spacer",
+      "settings": {
+        "spacer": 20,
+        "spacer_mobile": 50
+      }
+    },
     "44cea4bc-d6af-405e-9e8d-91b43043edd7": {
       "type": "banner-custom",
-      "disabled": true,
       "settings": {
         "subheading": "",
-        "title": "🔻 Banner Custom HTML 🔻",
+        "title": "🔻 Banner Promotion 🔻",
         "html": "",
         "spacer": "0",
         "bg-color": "#fac636"
@@ -13,7 +19,6 @@
     },
     "7b5d5b5c-cde6-4114-aa30-26a795cfa302": {
       "type": "banner-promotion",
-      "disabled": true,
       "settings": {
       }
     },
@@ -34,7 +39,17 @@
         "title": "Your HTML",
         "html": "<p>Write your own custom HTML content.<\/p>",
         "spacer": "50px",
-        "bg-color": ""
+        "bg-color": "#ffffff"
+      }
+    },
+    "2731364f-d891-4c4b-9583-9e6198062568": {
+      "type": "banner-custom",
+      "settings": {
+        "subheading": "",
+        "title": "🔻 Banner Call 2 Action 🔻",
+        "html": "",
+        "spacer": "0",
+        "bg-color": "#fac636"
       }
     },
     "8c277cfc-1c2b-4cd4-bf56-ee87ab4ab813": {
@@ -249,10 +264,12 @@
     }
   },
   "order": [
+    "2c2b83f7-bc6c-41a8-b18f-d8b8aa0360c9",
     "44cea4bc-d6af-405e-9e8d-91b43043edd7",
     "7b5d5b5c-cde6-4114-aa30-26a795cfa302",
     "4e96bbe1-1e43-4aad-a747-2a57c8009005",
     "f5f76e92-93dc-48b8-8d1a-807050d6dad0",
+    "2731364f-d891-4c4b-9583-9e6198062568",
     "8c277cfc-1c2b-4cd4-bf56-ee87ab4ab813",
     "07d26888-66c3-495f-9ea3-8fecb4d1b8bb",
     "f8599b70-e05a-4dd6-9cc3-89a1ceb53d28",
