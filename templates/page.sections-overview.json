@@ -1,80 +1,265 @@
 {
   "sections": {
-    "1650028399a480a700": {
-      "type": "one-column-content",
+    "44cea4bc-d6af-405e-9e8d-91b43043edd7": {
+      "type": "banner-custom",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "🔻 Banner Custom HTML 🔻",
+        "html": "",
+        "spacer": "0",
+        "bg-color": "#fac636"
+      }
+    },
+    "7b5d5b5c-cde6-4114-aa30-26a795cfa302": {
+      "type": "banner-promotion",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "4e96bbe1-1e43-4aad-a747-2a57c8009005": {
+      "type": "banner-custom",
+      "settings": {
+        "subheading": "",
+        "title": "🔻 Banner Custom HTML 🔻",
+        "html": "",
+        "spacer": "0",
+        "bg-color": "#fac636"
+      }
+    },
+    "f5f76e92-93dc-48b8-8d1a-807050d6dad0": {
+      "type": "banner-custom",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "Your HTML",
+        "html": "<p>Write your own custom HTML content.<\/p>",
+        "spacer": "50px",
+        "bg-color": ""
+      }
+    },
+    "8c277cfc-1c2b-4cd4-bf56-ee87ab4ab813": {
+      "type": "banner-call2action",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "Title",
+        "image_position": "right",
+        "content_html": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "07d26888-66c3-495f-9ea3-8fecb4d1b8bb": {
+      "type": "blog-posts",
       "blocks": {
-        "7b84027a-4fca-4bd6-9ff0-b40005578d7b": {
-          "type": "title",
+        "template--16656291725580__07d26888-66c3-495f-9ea3-8fecb4d1b8bb-1671446739d1be232b-0": {
+          "type": "blog",
           "settings": {
-            "title": "Kontakt & Rückrufservice"
-          }
-        },
-        "c9ba7edb-9f3b-4f99-b2a1-189754b94b7e": {
-          "type": "richtext",
-          "settings": {
-            "richtext": "<p>Bei Fragen oder Anregungen schreiben Sie uns bitte eine E-Mail an <strong>kundenservice@therapiedecken.de<\/strong> oder<br\/> hinterlassen Sie uns eine Nachricht auf unserer Facebook Seite: <br\/>fb.com\/therapiedecken.<\/p><p>Gerne rufen wir Sie auch zurück und beraten Sie zum Thema Therapiedecken. <br\/>Unser Rückrufservice ist verfügbar von 10:00 und 17:00 Uhr Montags bis Freitags.<br\/><\/p><p>Bei weiteren Fragen besuchen Sie bitte unsere <a href=\"https:\/\/therapiedecken.de\/pages\/faq\" title=\"FAQ Seite\">FAQ<\/a> Seite.<\/p>"
+            "blog": "news"
           }
         }
       },
       "block_order": [
-        "7b84027a-4fca-4bd6-9ff0-b40005578d7b",
-        "c9ba7edb-9f3b-4f99-b2a1-189754b94b7e"
+        "template--16656291725580__07d26888-66c3-495f-9ea3-8fecb4d1b8bb-1671446739d1be232b-0"
       ],
       "settings": {
-        "bg-color": "#f8f8f8",
-        "section_margin": "50px",
-        "bg-color-text": "#ffffff",
-        "text_align": "left",
-        "content_top_margin": "50px",
-        "content_bottom_margin": "50px"
+        "subheading": "",
+        "title": "Blog posts",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "View all articles"
+      }
+    },
+    "f8599b70-e05a-4dd6-9cc3-89a1ceb53d28": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16656291725580__f8599b70-e05a-4dd6-9cc3-89a1ceb53d28-16714467398bf64829-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "template--16656291725580__f8599b70-e05a-4dd6-9cc3-89a1ceb53d28-16714467398bf64829-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "template--16656291725580__f8599b70-e05a-4dd6-9cc3-89a1ceb53d28-16714467398bf64829-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16656291725580__f8599b70-e05a-4dd6-9cc3-89a1ceb53d28-16714467398bf64829-0",
+        "template--16656291725580__f8599b70-e05a-4dd6-9cc3-89a1ceb53d28-16714467398bf64829-1",
+        "template--16656291725580__f8599b70-e05a-4dd6-9cc3-89a1ceb53d28-16714467398bf64829-2"
+      ],
+      "settings": {
+        "image_size": "normal",
+        "add_spacing": true,
+        "expand_collection": false,
+        "stack_on_mobile": true,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "list_collection_badge_max_width": 50
+      }
+    },
+    "f9e1c08e-c9ec-442f-89a2-f3c009a1a371": {
+      "type": "collection-list-pages",
+      "blocks": {
+        "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-0",
+        "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-1",
+        "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-2"
+      ],
+      "settings": {
+        "image_size": "normal",
+        "set_width": "1000",
+        "stack_on_mobile": true,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "list_collection_badge_max_width": 50
+      }
+    },
+    "d419789f-0511-4877-946d-4562a40ded89": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16656291725580__d419789f-0511-4877-946d-4562a40ded89-16714467390fee73cc-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        }
+      },
+      "block_order": [
+        "template--16656291725580__d419789f-0511-4877-946d-4562a40ded89-16714467390fee73cc-0"
+      ],
+      "settings": {
+        "title": "Featured collection",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "ad7c462a-d2f9-4b97-922f-41f7c5f4e6d0": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16656291725580__ad7c462a-d2f9-4b97-922f-41f7c5f4e6d0-16714467390fee73cc-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        }
+      },
+      "block_order": [
+        "template--16656291725580__ad7c462a-d2f9-4b97-922f-41f7c5f4e6d0-16714467390fee73cc-0"
+      ],
+      "settings": {
+        "title": "Featured collection",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "24edc879-eeef-44be-8b52-335fdd428aae": {
+      "type": "main-collection-image-blocks",
+      "settings": {
       }
     },
     "main": {
       "type": "main-contact",
-      "blocks": {
-        "a0226aa0-98d4-421e-a72e-2d8c618029f7": {
-          "type": "dropdown",
-          "settings": {
-            "title": "Wählen Sie den Grund Ihres Rückrufs",
-            "values": "Beratung, Fragen zu Produkten, Umtausch"
-          }
-        },
-        "8932c208-ab14-41ad-a839-960125834622": {
-          "type": "dropdown",
-          "settings": {
-            "title": "Uhrzeit",
-            "values": "Zwischen 10-12 Uhr, Zwischen 12-15 Uhr, Zwischen 15-17 Uhr"
-          }
-        },
-        "375e5b10-e3c7-402e-bf7d-5cb1e193539d": {
-          "type": "text",
-          "settings": {
-            "title": "Ihre Bestellnummer",
-            "use_long_text": false,
-            "is_required": false
-          }
-        },
-        "4d797457-a136-4c7b-8956-432bc3ee0682": {
-          "type": "text",
-          "settings": {
-            "title": "Ihre Telefonnummer",
-            "use_long_text": false,
-            "is_required": true
-          }
-        }
-      },
-      "block_order": [
-        "a0226aa0-98d4-421e-a72e-2d8c618029f7",
-        "8932c208-ab14-41ad-a839-960125834622",
-        "375e5b10-e3c7-402e-bf7d-5cb1e193539d",
-        "4d797457-a136-4c7b-8956-432bc3ee0682"
-      ],
+      "disabled": true,
       "settings": {
       }
     }
   },
   "order": [
-    "1650028399a480a700",
+    "44cea4bc-d6af-405e-9e8d-91b43043edd7",
+    "7b5d5b5c-cde6-4114-aa30-26a795cfa302",
+    "4e96bbe1-1e43-4aad-a747-2a57c8009005",
+    "f5f76e92-93dc-48b8-8d1a-807050d6dad0",
+    "8c277cfc-1c2b-4cd4-bf56-ee87ab4ab813",
+    "07d26888-66c3-495f-9ea3-8fecb4d1b8bb",
+    "f8599b70-e05a-4dd6-9cc3-89a1ceb53d28",
+    "f9e1c08e-c9ec-442f-89a2-f3c009a1a371",
+    "d419789f-0511-4877-946d-4562a40ded89",
+    "ad7c462a-d2f9-4b97-922f-41f7c5f4e6d0",
+    "24edc879-eeef-44be-8b52-335fdd428aae",
     "main"
   ]
 }
