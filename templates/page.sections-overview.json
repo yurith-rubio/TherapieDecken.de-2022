@@ -492,54 +492,6 @@
         "image_position": "left"
       }
     },
-    "49a82af1-bd54-46ee-9155-daeb68eeca23": {
-      "type": "featured-product-addons",
-      "blocks": {
-        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-0": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": true,
-            "show_sku": false,
-            "show_taxes_included": false
-          }
-        },
-        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-1": {
-          "type": "share_buttons",
-          "settings": {
-          }
-        },
-        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-2": {
-          "type": "variant_selector",
-          "settings": {
-            "selector_mode": "dropdown",
-            "show_color_swatch": false,
-            "show_color_carousel": false,
-            "size_chart": ""
-          }
-        },
-        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-3": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_price_in_button": false,
-            "show_payment_button": true
-          }
-        }
-      },
-      "block_order": [
-        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-0",
-        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-1",
-        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-2",
-        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-3"
-      ],
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "SEC_Featured product Addons",
-        "more_info": "<p>More info<\/p>",
-        "right_image": false,
-        "show_headings_on_mobile": true,
-        "product": "balance-gewichtsdecke-fur-erwachsene"
-      }
-    },
     "448e3b67-4647-411e-b18a-0cf04e85ed82": {
       "type": "icons-prestige",
       "settings": {
@@ -634,6 +586,53 @@
         "spacer_top": "30px",
         "spacer_bottom": "30px"
       }
+    },
+    "90dc2a76-9c1d-4237-a7fc-9926c2855712": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "9a131f13-a842-4a23-ade4-1ed08a36c186": {
+          "type": "title",
+          "settings": {
+            "subheading": "Sub-heading",
+            "title": "SEC_Text with image",
+            "icon_title": true,
+            "icons_duotone": "cotton"
+          }
+        },
+        "a500271a-a489-470e-a79f-b108f44c2626": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        },
+        "ebbdb66e-8795-4a98-aa9a-1f05b98f9e3c": {
+          "type": "button",
+          "settings": {
+            "button_style": false,
+            "button_text": "Mehr Erfahren",
+            "button_url": "",
+            "button_extra": false,
+            "button_text_extra": "Mehr",
+            "button_url_extra": ""
+          }
+        }
+      },
+      "block_order": [
+        "9a131f13-a842-4a23-ade4-1ed08a36c186",
+        "a500271a-a489-470e-a79f-b108f44c2626",
+        "ebbdb66e-8795-4a98-aa9a-1f05b98f9e3c"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "#f8f8f8",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "image_position": "right"
+      }
     }
   },
   "order": [
@@ -657,10 +656,10 @@
     "2248c1da-7ba5-486c-a78a-ed36d27a18b6",
     "467cdaff-9afa-4631-810a-0f2b4d2e1bb3",
     "d267ecf2-d187-4c7a-868b-5b73e7978137",
-    "49a82af1-bd54-46ee-9155-daeb68eeca23",
     "448e3b67-4647-411e-b18a-0cf04e85ed82",
     "1f533ba9-ca5e-427a-b8e9-701af4fcc60a",
     "8921b837-7f13-4288-afd7-be81bb1b27db",
-    "2f870cb1-5cd6-4c0e-9556-63aca81665a7"
+    "2f870cb1-5cd6-4c0e-9556-63aca81665a7",
+    "90dc2a76-9c1d-4237-a7fc-9926c2855712"
   ]
 }
