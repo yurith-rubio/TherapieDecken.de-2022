@@ -1,55 +1,13 @@
 {
   "sections": {
-    "2c2b83f7-bc6c-41a8-b18f-d8b8aa0360c9": {
-      "type": "spacer",
-      "settings": {
-        "spacer": 20,
-        "spacer_mobile": 50
-      }
-    },
-    "44cea4bc-d6af-405e-9e8d-91b43043edd7": {
-      "type": "banner-custom",
-      "settings": {
-        "subheading": "",
-        "title": "🔻 Banner Promotion 🔻",
-        "html": "",
-        "spacer": "0",
-        "bg-color": "#fac636"
-      }
-    },
-    "7b5d5b5c-cde6-4114-aa30-26a795cfa302": {
-      "type": "banner-promotion",
-      "settings": {
-      }
-    },
-    "4e96bbe1-1e43-4aad-a747-2a57c8009005": {
-      "type": "banner-custom",
-      "settings": {
-        "subheading": "",
-        "title": "🔻 Banner Custom HTML 🔻",
-        "html": "",
-        "spacer": "0",
-        "bg-color": "#fac636"
-      }
-    },
     "f5f76e92-93dc-48b8-8d1a-807050d6dad0": {
       "type": "banner-custom",
       "settings": {
         "subheading": "Sub-heading",
-        "title": "Banner Custom HTML",
+        "title": "SEC_Banner Custom HTML",
         "html": "<p>Write your own custom HTML content.<\/p>",
         "spacer": "50px",
         "bg-color": "#ffffff"
-      }
-    },
-    "2731364f-d891-4c4b-9583-9e6198062568": {
-      "type": "banner-custom",
-      "settings": {
-        "subheading": "",
-        "title": "🔻 Banner Call 2 Action 🔻",
-        "html": "",
-        "spacer": "0",
-        "bg-color": "#fac636"
       }
     },
     "8c277cfc-1c2b-4cd4-bf56-ee87ab4ab813": {
@@ -70,22 +28,12 @@
       ],
       "settings": {
         "subheading": "Sub-heading",
-        "title": "Title",
+        "title": "SEC_Banner Call 2 Action",
         "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
         "image_position": "right",
         "content_html": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
         "link_text": "",
         "link_url": ""
-      }
-    },
-    "29dbe7e0-1136-4735-a999-66d7af7e73dc": {
-      "type": "banner-custom",
-      "settings": {
-        "subheading": "",
-        "title": "🔻 Blog posts 🔻",
-        "html": "",
-        "spacer": "0",
-        "bg-color": "#fac636"
       }
     },
     "07d26888-66c3-495f-9ea3-8fecb4d1b8bb": {
@@ -103,184 +51,10 @@
       ],
       "settings": {
         "subheading": "",
-        "title": "Blog posts",
+        "title": "SEC_Blog posts",
         "show_category": false,
         "button_link": "",
         "button_text": "View all articles"
-      }
-    },
-    "3a9241b3-6040-483e-a22e-10c4647d76c6": {
-      "type": "spacer",
-      "settings": {
-        "spacer": 50,
-        "spacer_mobile": 50
-      }
-    },
-    "a097cf81-b3d3-40bf-982b-f1cec1eb6fab": {
-      "type": "banner-custom",
-      "settings": {
-        "subheading": "",
-        "title": "🔻 Collection list 🔻",
-        "html": "",
-        "spacer": "0",
-        "bg-color": "#fac636"
-      }
-    },
-    "f8599b70-e05a-4dd6-9cc3-89a1ceb53d28": {
-      "type": "collection-list",
-      "blocks": {
-        "template--16656291725580__f8599b70-e05a-4dd6-9cc3-89a1ceb53d28-16714467398bf64829-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        },
-        "template--16656291725580__f8599b70-e05a-4dd6-9cc3-89a1ceb53d28-16714467398bf64829-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        },
-        "template--16656291725580__f8599b70-e05a-4dd6-9cc3-89a1ceb53d28-16714467398bf64829-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        }
-      },
-      "block_order": [
-        "template--16656291725580__f8599b70-e05a-4dd6-9cc3-89a1ceb53d28-16714467398bf64829-0",
-        "template--16656291725580__f8599b70-e05a-4dd6-9cc3-89a1ceb53d28-16714467398bf64829-1",
-        "template--16656291725580__f8599b70-e05a-4dd6-9cc3-89a1ceb53d28-16714467398bf64829-2"
-      ],
-      "settings": {
-        "image_size": "normal",
-        "add_spacing": true,
-        "expand_collection": false,
-        "stack_on_mobile": true,
-        "text_color": "#ffffff",
-        "button_color": "#363636",
-        "list_collection_badge_max_width": 50
-      }
-    },
-    "c672c9c6-a97d-4859-a158-0fc3743ed47b": {
-      "type": "banner-custom",
-      "settings": {
-        "subheading": "",
-        "title": "🔻 Collection list Pages 🔻",
-        "html": "",
-        "spacer": "",
-        "bg-color": "#fac636"
-      }
-    },
-    "f9e1c08e-c9ec-442f-89a2-f3c009a1a371": {
-      "type": "collection-list-pages",
-      "blocks": {
-        "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "balance-therapiedecken-fur-erwachsene",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        },
-        "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "gravity-therapiedecken-fur-kinder",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        },
-        "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "andere-therapiedecken",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        }
-      },
-      "block_order": [
-        "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-0",
-        "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-1",
-        "template--16656291725580__f9e1c08e-c9ec-442f-89a2-f3c009a1a371-1671446739e2491f23-2"
-      ],
-      "settings": {
-        "image_size": "normal",
-        "set_width": "1000",
-        "stack_on_mobile": true,
-        "text_color": "#ffffff",
-        "button_color": "#363636",
-        "list_collection_badge_max_width": 50
-      }
-    },
-    "b428fd5b-108b-43fd-a696-3d2cdbcd5f19": {
-      "type": "spacer",
-      "settings": {
-        "spacer": 50,
-        "spacer_mobile": 50
-      }
-    },
-    "36df9468-a2e3-41e2-b731-cb931d536b6f": {
-      "type": "banner-custom",
-      "settings": {
-        "subheading": "",
-        "title": "🔻 Collection Image blocks 🔻",
-        "html": "",
-        "spacer": "",
-        "bg-color": "#fac636"
-      }
-    },
-    "24edc879-eeef-44be-8b52-335fdd428aae": {
-      "type": "main-collection-image-blocks",
-      "settings": {
-      }
-    },
-    "4b3623f0-31ea-448e-81a8-d5b7178f65ad": {
-      "type": "banner-custom",
-      "settings": {
-        "subheading": "",
-        "title": "🔻 Featured collections 🔻",
-        "html": "",
-        "spacer": "0",
-        "bg-color": "#fac636"
       }
     },
     "d419789f-0511-4877-946d-4562a40ded89": {
@@ -300,7 +74,7 @@
         "template--16656291725580__d419789f-0511-4877-946d-4562a40ded89-16714467390fee73cc-0"
       ],
       "settings": {
-        "title": "Featured collection",
+        "title": "SEC_Featured collections",
         "layout_mode": "carousel",
         "show_product_info": true,
         "show_vendor": false,
@@ -309,81 +83,110 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "0e0e6265-4f13-40a0-94f8-6a39936eeefe": {
-      "type": "spacer",
-      "settings": {
-        "spacer": 50,
-        "spacer_mobile": 50
-      }
-    },
-    "03f51e5f-fabb-4a29-a99e-122d9391302a": {
-      "type": "banner-custom",
-      "settings": {
-        "subheading": "",
-        "title": "🔻 Image blocks 🔻",
-        "html": "",
-        "spacer": "",
-        "bg-color": "#fac636"
-      }
-    },
-    "18328f38-162f-4e69-95db-746d01cc4ee0": {
-      "type": "main-collection-image-blocks",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-contact",
       "disabled": true,
       "settings": {
       }
     },
-    "52642190-aebd-4653-a720-a62d99b4101e": {
-      "type": "one-column-content",
+    "25776cd6-8182-43f4-b890-6dfdf5254316": {
+      "type": "main-faq",
+      "blocks": {
+        "81fd009e-e028-48ed-a602-04c7b2f9da5e": {
+          "type": "separator",
+          "settings": {
+            "title": "SEC_FAQ"
+          }
+        },
+        "4d9dc813-657b-4827-8892-30953646a300": {
+          "type": "question",
+          "settings": {
+            "title": "Question",
+            "answer": "",
+            "answer_html": "AnswerAnswerAnswer"
+          }
+        },
+        "770e5f6a-a6a2-4774-9471-e888501c27cb": {
+          "type": "question",
+          "settings": {
+            "title": "Question",
+            "answer": "",
+            "answer_html": "Answer Answer Answer Answer"
+          }
+        }
+      },
+      "block_order": [
+        "81fd009e-e028-48ed-a602-04c7b2f9da5e",
+        "4d9dc813-657b-4827-8892-30953646a300",
+        "770e5f6a-a6a2-4774-9471-e888501c27cb"
+      ],
       "settings": {
-        "bg-color": "#F8F8F8",
-        "section_margin": "50px",
-        "bg-color-text": "#ffffff",
-        "text_align": "left",
-        "content_top_margin": "50px",
-        "content_bottom_margin": "50px"
       }
     },
-    "8885ee7a-f64c-4149-af34-24dd39257402": {
-      "type": "button-block",
+    "a172dcff-6d22-4ff1-b74a-f15886059f60": {
+      "type": "experts-testimonials",
       "settings": {
-        "bg-color": "#ffffff",
-        "button_text": "Mehr Erfharen",
-        "button_url": "",
-        "spacer_top": "0px",
-        "spacer_bottom": "0px"
+        "header": "SEC_Experts Testimonials",
+        "link1": "",
+        "tm21_name1": "Joe Doe",
+        "tm21_role1": "Psychologin",
+        "tm21_paragraph1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>",
+        "link2": "",
+        "tm21_name2": "Joe Doe",
+        "tm21_role2": "Psychologin",
+        "tm21_paragraph2": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>",
+        "link3": "",
+        "tm21_name3": "Joe Doe",
+        "tm21_role3": "Psychologin",
+        "tm21_paragraph3": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+      }
+    },
+    "63fcb33c-fe08-4004-9be4-f3e9882d8940": {
+      "type": "experts-testimonials-custom",
+      "blocks": {
+        "0374db97-9403-4975-a7b7-77fed9f75faa": {
+          "type": "testimonial",
+          "settings": {
+            "link": "",
+            "tm21_name": "Joe Doe",
+            "tm21_role": "Psychologin",
+            "tm21_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0374db97-9403-4975-a7b7-77fed9f75faa"
+      ],
+      "settings": {
+        "bg-color": "",
+        "header": "SEC_Testimonials Custom"
+      }
+    },
+    "bbce474b-aa7f-4f03-8fba-4db864c07aa4": {
+      "type": "image-text-block-addons",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Lifestyle_Schosskissen_5.jpg",
+        "plain_bg": "#696969",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "large",
+        "title": "Your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_parallax": true
       }
     }
   },
   "order": [
-    "2c2b83f7-bc6c-41a8-b18f-d8b8aa0360c9",
-    "44cea4bc-d6af-405e-9e8d-91b43043edd7",
-    "7b5d5b5c-cde6-4114-aa30-26a795cfa302",
-    "4e96bbe1-1e43-4aad-a747-2a57c8009005",
     "f5f76e92-93dc-48b8-8d1a-807050d6dad0",
-    "2731364f-d891-4c4b-9583-9e6198062568",
     "8c277cfc-1c2b-4cd4-bf56-ee87ab4ab813",
-    "29dbe7e0-1136-4735-a999-66d7af7e73dc",
     "07d26888-66c3-495f-9ea3-8fecb4d1b8bb",
-    "3a9241b3-6040-483e-a22e-10c4647d76c6",
-    "a097cf81-b3d3-40bf-982b-f1cec1eb6fab",
-    "f8599b70-e05a-4dd6-9cc3-89a1ceb53d28",
-    "c672c9c6-a97d-4859-a158-0fc3743ed47b",
-    "f9e1c08e-c9ec-442f-89a2-f3c009a1a371",
-    "b428fd5b-108b-43fd-a696-3d2cdbcd5f19",
-    "36df9468-a2e3-41e2-b731-cb931d536b6f",
-    "24edc879-eeef-44be-8b52-335fdd428aae",
-    "4b3623f0-31ea-448e-81a8-d5b7178f65ad",
     "d419789f-0511-4877-946d-4562a40ded89",
-    "0e0e6265-4f13-40a0-94f8-6a39936eeefe",
-    "03f51e5f-fabb-4a29-a99e-122d9391302a",
-    "18328f38-162f-4e69-95db-746d01cc4ee0",
     "main",
-    "52642190-aebd-4653-a720-a62d99b4101e",
-    "8885ee7a-f64c-4149-af34-24dd39257402"
+    "25776cd6-8182-43f4-b890-6dfdf5254316",
+    "a172dcff-6d22-4ff1-b74a-f15886059f60",
+    "63fcb33c-fe08-4004-9be4-f3e9882d8940",
+    "bbce474b-aa7f-4f03-8fba-4db864c07aa4"
   ]
 }
