@@ -141,27 +141,6 @@
         "tm21_paragraph3": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
       }
     },
-    "63fcb33c-fe08-4004-9be4-f3e9882d8940": {
-      "type": "experts-testimonials-custom",
-      "blocks": {
-        "0374db97-9403-4975-a7b7-77fed9f75faa": {
-          "type": "testimonial",
-          "settings": {
-            "link": "",
-            "tm21_name": "Joe Doe",
-            "tm21_role": "Psychologin",
-            "tm21_paragraph": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "0374db97-9403-4975-a7b7-77fed9f75faa"
-      ],
-      "settings": {
-        "bg-color": "",
-        "header": "SEC_Testimonials Custom"
-      }
-    },
     "bbce474b-aa7f-4f03-8fba-4db864c07aa4": {
       "type": "image-text-block-addons",
       "settings": {
@@ -544,6 +523,7 @@
     },
     "90dc2a76-9c1d-4237-a7fc-9926c2855712": {
       "type": "text-with-image-new",
+      "disabled": true,
       "blocks": {
         "9a131f13-a842-4a23-ade4-1ed08a36c186": {
           "type": "title",
@@ -634,6 +614,19 @@
       "settings": {
         "text_color": "#ffffff"
       }
+    },
+    "23164940-ca8a-43c0-99a3-5ba0e54099b7": {
+      "type": "featured-video",
+      "settings": {
+        "section_size": "normal",
+        "set_width": "1000",
+        "text_color": "#ffffff",
+        "subheading": "Sub-heading",
+        "title": "SEC_Featured video",
+        "dark_image": true,
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
     }
   },
   "order": [
@@ -644,7 +637,6 @@
     "main",
     "25776cd6-8182-43f4-b890-6dfdf5254316",
     "a172dcff-6d22-4ff1-b74a-f15886059f60",
-    "63fcb33c-fe08-4004-9be4-f3e9882d8940",
     "bbce474b-aa7f-4f03-8fba-4db864c07aa4",
     "f9457bbd-90dd-4d7d-b149-4e312c50db59",
     "4ef125f8-589f-4714-b41e-e8e5ffb15d72",
@@ -661,6 +653,7 @@
     "8921b837-7f13-4288-afd7-be81bb1b27db",
     "2f870cb1-5cd6-4c0e-9556-63aca81665a7",
     "90dc2a76-9c1d-4237-a7fc-9926c2855712",
-    "e301b809-9069-4e2b-a511-7c8615c847d7"
+    "e301b809-9069-4e2b-a511-7c8615c847d7",
+    "23164940-ca8a-43c0-99a3-5ba0e54099b7"
   ]
 }
