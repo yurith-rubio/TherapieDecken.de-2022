@@ -253,7 +253,7 @@
         "2f18b8d5-7c6a-4778-8362-8e8296a33ff2"
       ],
       "settings": {
-        "bg-color": "",
+        "bg-color": "#f8f8f8",
         "subheading": "Sub-heading",
         "title": "SEC_Grid Images",
         "text_color": "#3A3C3C"
@@ -352,7 +352,7 @@
         "2961f2d0-09f3-4991-9c2d-43be1d417eaa"
       ],
       "settings": {
-        "bg-color": "",
+        "bg-color": "#f8f8f8",
         "margin-top": "auto",
         "margin-top-mobile": "inehrit",
         "subheading": "Sbh-heading",
