@@ -170,11 +170,11 @@
         "background": "#ffffff",
         "text_color": "#1c1b1b",
         "block_size": "large",
-        "title": "Your story",
+        "title": "SEC_Image text block addons",
         "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "button_label": "",
+        "button_label": "Button",
         "button_link": "",
-        "show_parallax": true
+        "show_parallax": false
       }
     }
   },
