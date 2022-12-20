@@ -223,51 +223,6 @@
         "logo_file": ""
       }
     },
-    "c787a05e-0515-4422-a51b-044e2486f2c2": {
-      "type": "slideshow",
-      "blocks": {
-        "template--16656291725580__c787a05e-0515-4422-a51b-044e2486f2c2-16715572365250dd21-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
-            "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "Tell your story",
-            "button_1_text": "Button 1",
-            "button_1_link": "",
-            "button_2_text": "Button 2",
-            "button_2_link": ""
-          }
-        },
-        "template--16656291725580__c787a05e-0515-4422-a51b-044e2486f2c2-16715572365250dd21-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/TD_CW_desktop.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/TD_CW_mobile2.jpg",
-            "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "Tell your story",
-            "button_1_text": "Button 1",
-            "button_1_link": "",
-            "button_2_text": "Button 2",
-            "button_2_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16656291725580__c787a05e-0515-4422-a51b-044e2486f2c2-16715572365250dd21-0",
-        "template--16656291725580__c787a05e-0515-4422-a51b-044e2486f2c2-16715572365250dd21-1"
-      ],
-      "settings": {
-        "show_fullscreen": false,
-        "show_arrow": false,
-        "autoplay": true,
-        "cycle_speed": 5,
-        "text_color": "#ffffff"
-      }
-    },
     "6b8dee33-80ec-47ce-a1c3-73f5f7202cc3": {
       "type": "one-column-content",
       "blocks": {
@@ -633,6 +588,52 @@
         "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
         "image_position": "right"
       }
+    },
+    "e301b809-9069-4e2b-a511-7c8615c847d7": {
+      "type": "timeline",
+      "blocks": {
+        "template--16656291725580__e301b809-9069-4e2b-a511-7c8615c847d7-1671559033715ee034-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Mobile.jpg",
+            "apply_overlay": true,
+            "title": "Label 1",
+            "subheading": "Sub-heading",
+            "heading": "SEC_Timeline",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        },
+        "template--16656291725580__e301b809-9069-4e2b-a511-7c8615c847d7-1671559033715ee034-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TD_CW_mobile.jpg",
+            "apply_overlay": true,
+            "title": "Label 2",
+            "subheading": "Sub-heading",
+            "heading": "Heading",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        },
+        "template--16656291725580__e301b809-9069-4e2b-a511-7c8615c847d7-1671559033715ee034-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TD_-_Black_Week_Promotion_-_desktop_4.jpg",
+            "apply_overlay": true,
+            "title": "Label 3",
+            "subheading": "Sub-heading",
+            "heading": "Heading",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16656291725580__e301b809-9069-4e2b-a511-7c8615c847d7-1671559033715ee034-0",
+        "template--16656291725580__e301b809-9069-4e2b-a511-7c8615c847d7-1671559033715ee034-1",
+        "template--16656291725580__e301b809-9069-4e2b-a511-7c8615c847d7-1671559033715ee034-2"
+      ],
+      "settings": {
+        "text_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -648,7 +649,6 @@
     "f9457bbd-90dd-4d7d-b149-4e312c50db59",
     "4ef125f8-589f-4714-b41e-e8e5ffb15d72",
     "f21b4ea6-704a-412f-b53d-79b414bcca68",
-    "c787a05e-0515-4422-a51b-044e2486f2c2",
     "6b8dee33-80ec-47ce-a1c3-73f5f7202cc3",
     "616107cf-eb89-44b6-96a9-2b45c20b6196",
     "676a35a3-1426-40ac-9aa5-62a1f89ac8d1",
@@ -660,6 +660,7 @@
     "1f533ba9-ca5e-427a-b8e9-701af4fcc60a",
     "8921b837-7f13-4288-afd7-be81bb1b27db",
     "2f870cb1-5cd6-4c0e-9556-63aca81665a7",
-    "90dc2a76-9c1d-4237-a7fc-9926c2855712"
+    "90dc2a76-9c1d-4237-a7fc-9926c2855712",
+    "e301b809-9069-4e2b-a511-7c8615c847d7"
   ]
 }
