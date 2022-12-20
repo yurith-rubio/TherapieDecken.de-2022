@@ -176,6 +176,19 @@
         "button_link": "",
         "show_parallax": false
       }
+    },
+    "f9457bbd-90dd-4d7d-b149-4e312c50db59": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "normal",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "Sub-heading",
+        "title": "SEC_Image with text overlay",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
     }
   },
   "order": [
@@ -187,6 +200,7 @@
     "25776cd6-8182-43f4-b890-6dfdf5254316",
     "a172dcff-6d22-4ff1-b74a-f15886059f60",
     "63fcb33c-fe08-4004-9be4-f3e9882d8940",
-    "bbce474b-aa7f-4f03-8fba-4db864c07aa4"
+    "bbce474b-aa7f-4f03-8fba-4db864c07aa4",
+    "f9457bbd-90dd-4d7d-b149-4e312c50db59"
   ]
 }
