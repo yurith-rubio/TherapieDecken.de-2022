@@ -323,6 +323,7 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   background-color: var(--color-light-background1);
   font-size: 12px;
   line-height: 1.4;
+  width: 100%;
 }
 #MyCart_Countdown{
   background-color: #fac6371c;
