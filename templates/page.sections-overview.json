@@ -189,6 +189,268 @@
         "title": "SEC_Image with text overlay",
         "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
       }
+    },
+    "4ef125f8-589f-4714-b41e-e8e5ffb15d72": {
+      "type": "image-with-text-block",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "plain_bg": "#696969",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "normal",
+        "title": "SEC_Image with text block",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "Button",
+        "button_link": "",
+        "show_parallax": false
+      }
+    },
+    "f21b4ea6-704a-412f-b53d-79b414bcca68": {
+      "type": "page-hero-image",
+      "settings": {
+        "show_fullscreen": false,
+        "text_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/TD_Winter_Promo_Mobile.jpg",
+        "bg_position_x": "",
+        "apply_overlay": true,
+        "content_position": "middleCenter",
+        "subheading": "SEC_Page Hero Image",
+        "title": "Tell your story",
+        "button_text": "Button",
+        "button_link": "",
+        "enable_logo_under_button": false,
+        "logo_file": ""
+      }
+    },
+    "c787a05e-0515-4422-a51b-044e2486f2c2": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16656291725580__c787a05e-0515-4422-a51b-044e2486f2c2-16715572365250dd21-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "button_1_text": "Button 1",
+            "button_1_link": "",
+            "button_2_text": "Button 2",
+            "button_2_link": ""
+          }
+        },
+        "template--16656291725580__c787a05e-0515-4422-a51b-044e2486f2c2-16715572365250dd21-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TD_CW_desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/TD_CW_mobile2.jpg",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "button_1_text": "Button 1",
+            "button_1_link": "",
+            "button_2_text": "Button 2",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16656291725580__c787a05e-0515-4422-a51b-044e2486f2c2-16715572365250dd21-0",
+        "template--16656291725580__c787a05e-0515-4422-a51b-044e2486f2c2-16715572365250dd21-1"
+      ],
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff"
+      }
+    },
+    "6b8dee33-80ec-47ce-a1c3-73f5f7202cc3": {
+      "type": "one-column-content",
+      "blocks": {
+        "1473d718-ffda-4c52-9b56-8cebaa52f164": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Sub-heading"
+          }
+        },
+        "06414f52-c0a8-42ed-9135-421af11403e9": {
+          "type": "title",
+          "settings": {
+            "title": "SEC_One Column Content"
+          }
+        },
+        "d464bd6e-dd69-4c76-9e9f-fed25c86f6dd": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        },
+        "ecf8f625-df6e-48d1-9966-ea846d0cc319": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg"
+          }
+        },
+        "d5fcc679-2d95-4f33-8ddf-c6a17d50b25c": {
+          "type": "button",
+          "settings": {
+            "button_text": "Button",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1473d718-ffda-4c52-9b56-8cebaa52f164",
+        "06414f52-c0a8-42ed-9135-421af11403e9",
+        "d464bd6e-dd69-4c76-9e9f-fed25c86f6dd",
+        "ecf8f625-df6e-48d1-9966-ea846d0cc319",
+        "d5fcc679-2d95-4f33-8ddf-c6a17d50b25c"
+      ],
+      "settings": {
+        "bg-color": "#F8F8F8",
+        "section_margin": "50px",
+        "bg-color-text": "#ffffff",
+        "text_align": "left",
+        "content_top_margin": "50px",
+        "content_bottom_margin": "120px"
+      }
+    },
+    "616107cf-eb89-44b6-96a9-2b45c20b6196": {
+      "type": "voucher",
+      "settings": {
+        "discount_heading": "SEC_Voucher",
+        "discount_subheading": "Erhalten Sie 10€ Rabatt mit Code:",
+        "discount_code": "DAK-10",
+        "button_text": "JETZT EINLÖSEN",
+        "button_url": "",
+        "content": "<p>Wir fragen ggf. nach den letzten 4 Ziffern der Versicherungsnummer für Ihre Bestellung..<\/p>"
+      }
+    },
+    "676a35a3-1426-40ac-9aa5-62a1f89ac8d1": {
+      "type": "grid_images",
+      "blocks": {
+        "a0ff4868-51b7-4923-a5ec-06d3e5d1c293": {
+          "type": "Image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TD_CW_desktop.jpg",
+            "link": ""
+          }
+        },
+        "39259fbd-4153-4060-85d1-c7036afdef5e": {
+          "type": "Image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+            "link": ""
+          }
+        },
+        "2f18b8d5-7c6a-4778-8362-8e8296a33ff2": {
+          "type": "Image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TD_-_Promotion_Cyber_Monday_desktop2.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a0ff4868-51b7-4923-a5ec-06d3e5d1c293",
+        "39259fbd-4153-4060-85d1-c7036afdef5e",
+        "2f18b8d5-7c6a-4778-8362-8e8296a33ff2"
+      ],
+      "settings": {
+        "bg-color": "",
+        "subheading": "Sub-heading",
+        "title": "SEC_Grid Images",
+        "text_color": "#3A3C3C"
+      }
+    },
+    "4f1e4052-01fe-4d69-94f8-c0f954010e86": {
+      "type": "leading-page-header",
+      "settings": {
+        "enable_custom_title": false,
+        "sub_headline": "Customize Title if needed",
+        "custom_title_text": "SEC_Header",
+        "custom_header": "",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "mobile_custom": true,
+        "image_mobile": "shopify:\/\/shop_images\/TD_Winter_Promo_Mobile.jpg",
+        "apply_overlay": true
+      }
+    },
+    "2248c1da-7ba5-486c-a78a-ed36d27a18b6": {
+      "type": "icons-custom",
+      "blocks": {
+        "a48ad636-9012-4285-b746-29e6797be658": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "euro",
+            "title_icon": "Icon Monotone",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        },
+        "41bf9171-17d9-4ebf-8f70-48ca54451b97": {
+          "type": "icons-duotone",
+          "settings": {
+            "icons_duotone": "allergy",
+            "title_icon": "Icon Duotone",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        },
+        "b53895bd-441a-4050-8e39-461964d9badb": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "sustainable_world",
+            "title_icon": "Icon Monotone",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        },
+        "2961f2d0-09f3-4991-9c2d-43be1d417eaa": {
+          "type": "icons-duotone",
+          "settings": {
+            "icons_duotone": "energy",
+            "title_icon": "Icon Duotone",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a48ad636-9012-4285-b746-29e6797be658",
+        "41bf9171-17d9-4ebf-8f70-48ca54451b97",
+        "b53895bd-441a-4050-8e39-461964d9badb",
+        "2961f2d0-09f3-4991-9c2d-43be1d417eaa"
+      ],
+      "settings": {
+        "bg-color": "",
+        "margin-top": "auto",
+        "margin-top-mobile": "inehrit",
+        "subheading": "Sbh-heading",
+        "title": "SEC_Icons Custom",
+        "bg-color-icons": "",
+        "icons-size": "40px",
+        "icons-color": "#fac636",
+        "text-color": "",
+        "mobile-style-glider": true,
+        "icons-columns": false,
+        "button_label": "Button",
+        "button_link": ""
+      }
+    },
+    "467cdaff-9afa-4631-810a-0f2b4d2e1bb3": {
+      "type": "page-standard-header",
+      "settings": {
+        "enable_custom_title": true,
+        "custom_title_text": "SEC_Page Standard Header",
+        "sub_headline": "Sub headline",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "mobile_custom": true,
+        "image_mobile": "shopify:\/\/shop_images\/TD_Winter_Promo_Mobile.jpg",
+        "apply_overlay": true,
+        "review_starts": true,
+        "content": "<p>Extra content<\/p>"
+      }
     }
   },
   "order": [
@@ -201,6 +463,15 @@
     "a172dcff-6d22-4ff1-b74a-f15886059f60",
     "63fcb33c-fe08-4004-9be4-f3e9882d8940",
     "bbce474b-aa7f-4f03-8fba-4db864c07aa4",
-    "f9457bbd-90dd-4d7d-b149-4e312c50db59"
+    "f9457bbd-90dd-4d7d-b149-4e312c50db59",
+    "4ef125f8-589f-4714-b41e-e8e5ffb15d72",
+    "f21b4ea6-704a-412f-b53d-79b414bcca68",
+    "c787a05e-0515-4422-a51b-044e2486f2c2",
+    "6b8dee33-80ec-47ce-a1c3-73f5f7202cc3",
+    "616107cf-eb89-44b6-96a9-2b45c20b6196",
+    "676a35a3-1426-40ac-9aa5-62a1f89ac8d1",
+    "4f1e4052-01fe-4d69-94f8-c0f954010e86",
+    "2248c1da-7ba5-486c-a78a-ed36d27a18b6",
+    "467cdaff-9afa-4631-810a-0f2b4d2e1bb3"
   ]
 }
