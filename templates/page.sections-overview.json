@@ -1,13 +1,95 @@
 {
   "sections": {
-    "f5f76e92-93dc-48b8-8d1a-807050d6dad0": {
-      "type": "banner-custom",
+    "4f1e4052-01fe-4d69-94f8-c0f954010e86": {
+      "type": "leading-page-header",
       "settings": {
-        "subheading": "Sub-heading",
-        "title": "SEC_Banner Custom HTML",
-        "html": "<p>Write your own custom HTML content.<\/p>",
-        "spacer": "50px",
-        "bg-color": "#ffffff"
+        "enable_custom_title": false,
+        "sub_headline": "Customize Title if needed",
+        "custom_title_text": "SEC_Header",
+        "custom_header": "",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "mobile_custom": true,
+        "image_mobile": "shopify:\/\/shop_images\/TD_Winter_Promo_Mobile.jpg",
+        "apply_overlay": true
+      }
+    },
+    "467cdaff-9afa-4631-810a-0f2b4d2e1bb3": {
+      "type": "page-standard-header",
+      "settings": {
+        "enable_custom_title": true,
+        "custom_title_text": "SEC_Page Standard Header",
+        "sub_headline": "Sub headline",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "mobile_custom": true,
+        "image_mobile": "shopify:\/\/shop_images\/TD_Winter_Promo_Mobile.jpg",
+        "apply_overlay": true,
+        "review_starts": true,
+        "content": "<p>Extra content<\/p>"
+      }
+    },
+    "f21b4ea6-704a-412f-b53d-79b414bcca68": {
+      "type": "page-hero-image",
+      "settings": {
+        "show_fullscreen": false,
+        "text_color": "#ffffff",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/TD_Winter_Promo_Mobile.jpg",
+        "bg_position_x": "",
+        "apply_overlay": true,
+        "content_position": "middleCenter",
+        "subheading": "SEC_Page Hero Image",
+        "title": "Tell your story",
+        "button_text": "Button",
+        "button_link": "",
+        "enable_logo_under_button": false,
+        "logo_file": ""
+      }
+    },
+    "90dc2a76-9c1d-4237-a7fc-9926c2855712": {
+      "type": "text-with-image-new",
+      "blocks": {
+        "9a131f13-a842-4a23-ade4-1ed08a36c186": {
+          "type": "title",
+          "settings": {
+            "subheading": "Sub-heading",
+            "title": "SEC_Text with image",
+            "icon_title": true,
+            "icons_duotone": "cotton"
+          }
+        },
+        "a500271a-a489-470e-a79f-b108f44c2626": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        },
+        "ebbdb66e-8795-4a98-aa9a-1f05b98f9e3c": {
+          "type": "button",
+          "settings": {
+            "button_style": false,
+            "button_text": "Mehr Erfahren",
+            "button_url": "",
+            "button_extra": false,
+            "button_text_extra": "Mehr",
+            "button_url_extra": ""
+          }
+        }
+      },
+      "block_order": [
+        "9a131f13-a842-4a23-ade4-1ed08a36c186",
+        "a500271a-a489-470e-a79f-b108f44c2626",
+        "ebbdb66e-8795-4a98-aa9a-1f05b98f9e3c"
+      ],
+      "settings": {
+        "slide_style": false,
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "#f8f8f8",
+        "bg-color-text-html": "",
+        "text_align": "left",
+        "text_color": "#3A3C3C",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "image_position": "right"
       }
     },
     "8c277cfc-1c2b-4cd4-bf56-ee87ab4ab813": {
@@ -34,6 +116,255 @@
         "content_html": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
         "link_text": "",
         "link_url": ""
+      }
+    },
+    "f5f76e92-93dc-48b8-8d1a-807050d6dad0": {
+      "type": "banner-custom",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "SEC_Banner Custom HTML",
+        "html": "<p>Write your own custom HTML content.<\/p>",
+        "spacer": "50px",
+        "bg-color": "#ffffff"
+      }
+    },
+    "6b8dee33-80ec-47ce-a1c3-73f5f7202cc3": {
+      "type": "one-column-content",
+      "blocks": {
+        "1473d718-ffda-4c52-9b56-8cebaa52f164": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Sub-heading"
+          }
+        },
+        "06414f52-c0a8-42ed-9135-421af11403e9": {
+          "type": "title",
+          "settings": {
+            "title": "SEC_One Column Content"
+          }
+        },
+        "d464bd6e-dd69-4c76-9e9f-fed25c86f6dd": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        },
+        "ecf8f625-df6e-48d1-9966-ea846d0cc319": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg"
+          }
+        },
+        "d5fcc679-2d95-4f33-8ddf-c6a17d50b25c": {
+          "type": "button",
+          "settings": {
+            "button_text": "Button",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1473d718-ffda-4c52-9b56-8cebaa52f164",
+        "06414f52-c0a8-42ed-9135-421af11403e9",
+        "d464bd6e-dd69-4c76-9e9f-fed25c86f6dd",
+        "ecf8f625-df6e-48d1-9966-ea846d0cc319",
+        "d5fcc679-2d95-4f33-8ddf-c6a17d50b25c"
+      ],
+      "settings": {
+        "bg-color": "#F8F8F8",
+        "section_margin": "50px",
+        "bg-color-text": "#ffffff",
+        "text_align": "left",
+        "content_top_margin": "50px",
+        "content_bottom_margin": "120px"
+      }
+    },
+    "bbce474b-aa7f-4f03-8fba-4db864c07aa4": {
+      "type": "image-text-block-addons",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Lifestyle_Schosskissen_5.jpg",
+        "plain_bg": "#696969",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "large",
+        "title": "SEC_Image text block addons",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "Button",
+        "button_link": "",
+        "show_parallax": false
+      }
+    },
+    "f9457bbd-90dd-4d7d-b149-4e312c50db59": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "normal",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "Sub-heading",
+        "title": "SEC_Image with text overlay",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
+    },
+    "4ef125f8-589f-4714-b41e-e8e5ffb15d72": {
+      "type": "image-with-text-block",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "plain_bg": "#696969",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "normal",
+        "title": "SEC_Image with text block",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "Button",
+        "button_link": "",
+        "show_parallax": false
+      }
+    },
+    "676a35a3-1426-40ac-9aa5-62a1f89ac8d1": {
+      "type": "grid_images",
+      "blocks": {
+        "a0ff4868-51b7-4923-a5ec-06d3e5d1c293": {
+          "type": "Image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TD_CW_desktop.jpg",
+            "link": ""
+          }
+        },
+        "39259fbd-4153-4060-85d1-c7036afdef5e": {
+          "type": "Image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+            "link": ""
+          }
+        },
+        "2f18b8d5-7c6a-4778-8362-8e8296a33ff2": {
+          "type": "Image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TD_-_Promotion_Cyber_Monday_desktop2.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a0ff4868-51b7-4923-a5ec-06d3e5d1c293",
+        "39259fbd-4153-4060-85d1-c7036afdef5e",
+        "2f18b8d5-7c6a-4778-8362-8e8296a33ff2"
+      ],
+      "settings": {
+        "bg-color": "",
+        "subheading": "Sub-heading",
+        "title": "SEC_Grid Images",
+        "text_color": "#3A3C3C"
+      }
+    },
+    "2f870cb1-5cd6-4c0e-9556-63aca81665a7": {
+      "type": "button-block",
+      "settings": {
+        "bg-color": "#ffffff",
+        "button_text": "SEC_Button",
+        "button_url": "",
+        "spacer_top": "30px",
+        "spacer_bottom": "30px"
+      }
+    },
+    "d267ecf2-d187-4c7a-868b-5b73e7978137": {
+      "type": "accordion-with-image",
+      "blocks": {
+        "b9b01739-c914-4caf-8a75-4a9a8a3f3dc7": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "none",
+            "summary": "Title Example",
+            "content": "Example of text that could be paced with something related to the title above"
+          }
+        },
+        "b556e2f3-c4c8-40d1-bc3f-74f7f6d9cc10": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "none",
+            "summary": "Title Example",
+            "content": "Example of text that could be paced with something related to the title above"
+          }
+        },
+        "06131324-e190-4a96-a692-8397facbae1a": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "none",
+            "summary": "Title Example",
+            "content": "Example of text that could be paced with something related to the title above"
+          }
+        }
+      },
+      "block_order": [
+        "b9b01739-c914-4caf-8a75-4a9a8a3f3dc7",
+        "b556e2f3-c4c8-40d1-bc3f-74f7f6d9cc10",
+        "06131324-e190-4a96-a692-8397facbae1a"
+      ],
+      "settings": {
+        "sub-heading": "Premium Therapiedecke",
+        "heading": "SEC_Accordion with Image",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "image_position": "left"
+      }
+    },
+    "2248c1da-7ba5-486c-a78a-ed36d27a18b6": {
+      "type": "icons-custom",
+      "blocks": {
+        "a48ad636-9012-4285-b746-29e6797be658": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "euro",
+            "title_icon": "Icon Monotone",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        },
+        "41bf9171-17d9-4ebf-8f70-48ca54451b97": {
+          "type": "icons-duotone",
+          "settings": {
+            "icons_duotone": "allergy",
+            "title_icon": "Icon Duotone",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        },
+        "b53895bd-441a-4050-8e39-461964d9badb": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "sustainable_world",
+            "title_icon": "Icon Monotone",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        },
+        "2961f2d0-09f3-4991-9c2d-43be1d417eaa": {
+          "type": "icons-duotone",
+          "settings": {
+            "icons_duotone": "energy",
+            "title_icon": "Icon Duotone",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a48ad636-9012-4285-b746-29e6797be658",
+        "41bf9171-17d9-4ebf-8f70-48ca54451b97",
+        "b53895bd-441a-4050-8e39-461964d9badb",
+        "2961f2d0-09f3-4991-9c2d-43be1d417eaa"
+      ],
+      "settings": {
+        "bg-color": "",
+        "margin-top": "auto",
+        "margin-top-mobile": "inehrit",
+        "subheading": "Sbh-heading",
+        "title": "SEC_Icons Custom",
+        "bg-color-icons": "",
+        "icons-size": "40px",
+        "icons-color": "#fac636",
+        "text-color": "",
+        "mobile-style-glider": true,
+        "icons-columns": false,
+        "button_label": "Button",
+        "button_link": ""
       }
     },
     "07d26888-66c3-495f-9ea3-8fecb4d1b8bb": {
@@ -141,118 +472,6 @@
         "tm21_paragraph3": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<\/p>"
       }
     },
-    "bbce474b-aa7f-4f03-8fba-4db864c07aa4": {
-      "type": "image-text-block-addons",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Lifestyle_Schosskissen_5.jpg",
-        "plain_bg": "#696969",
-        "background": "#ffffff",
-        "text_color": "#1c1b1b",
-        "block_size": "large",
-        "title": "SEC_Image text block addons",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "button_label": "Button",
-        "button_link": "",
-        "show_parallax": false
-      }
-    },
-    "f9457bbd-90dd-4d7d-b149-4e312c50db59": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "section_size": "normal",
-        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30,
-        "subheading": "Sub-heading",
-        "title": "SEC_Image with text overlay",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
-      }
-    },
-    "4ef125f8-589f-4714-b41e-e8e5ffb15d72": {
-      "type": "image-with-text-block",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
-        "plain_bg": "#696969",
-        "background": "#ffffff",
-        "text_color": "#1c1b1b",
-        "block_size": "normal",
-        "title": "SEC_Image with text block",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "button_label": "Button",
-        "button_link": "",
-        "show_parallax": false
-      }
-    },
-    "f21b4ea6-704a-412f-b53d-79b414bcca68": {
-      "type": "page-hero-image",
-      "settings": {
-        "show_fullscreen": false,
-        "text_color": "#ffffff",
-        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/TD_Winter_Promo_Mobile.jpg",
-        "bg_position_x": "",
-        "apply_overlay": true,
-        "content_position": "middleCenter",
-        "subheading": "SEC_Page Hero Image",
-        "title": "Tell your story",
-        "button_text": "Button",
-        "button_link": "",
-        "enable_logo_under_button": false,
-        "logo_file": ""
-      }
-    },
-    "6b8dee33-80ec-47ce-a1c3-73f5f7202cc3": {
-      "type": "one-column-content",
-      "blocks": {
-        "1473d718-ffda-4c52-9b56-8cebaa52f164": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Sub-heading"
-          }
-        },
-        "06414f52-c0a8-42ed-9135-421af11403e9": {
-          "type": "title",
-          "settings": {
-            "title": "SEC_One Column Content"
-          }
-        },
-        "d464bd6e-dd69-4c76-9e9f-fed25c86f6dd": {
-          "type": "richtext",
-          "settings": {
-            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
-          }
-        },
-        "ecf8f625-df6e-48d1-9966-ea846d0cc319": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg"
-          }
-        },
-        "d5fcc679-2d95-4f33-8ddf-c6a17d50b25c": {
-          "type": "button",
-          "settings": {
-            "button_text": "Button",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "1473d718-ffda-4c52-9b56-8cebaa52f164",
-        "06414f52-c0a8-42ed-9135-421af11403e9",
-        "d464bd6e-dd69-4c76-9e9f-fed25c86f6dd",
-        "ecf8f625-df6e-48d1-9966-ea846d0cc319",
-        "d5fcc679-2d95-4f33-8ddf-c6a17d50b25c"
-      ],
-      "settings": {
-        "bg-color": "#F8F8F8",
-        "section_margin": "50px",
-        "bg-color-text": "#ffffff",
-        "text_align": "left",
-        "content_top_margin": "50px",
-        "content_bottom_margin": "120px"
-      }
-    },
     "616107cf-eb89-44b6-96a9-2b45c20b6196": {
       "type": "voucher",
       "settings": {
@@ -262,174 +481,6 @@
         "button_text": "JETZT EINLÖSEN",
         "button_url": "",
         "content": "<p>Wir fragen ggf. nach den letzten 4 Ziffern der Versicherungsnummer für Ihre Bestellung..<\/p>"
-      }
-    },
-    "676a35a3-1426-40ac-9aa5-62a1f89ac8d1": {
-      "type": "grid_images",
-      "blocks": {
-        "a0ff4868-51b7-4923-a5ec-06d3e5d1c293": {
-          "type": "Image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/TD_CW_desktop.jpg",
-            "link": ""
-          }
-        },
-        "39259fbd-4153-4060-85d1-c7036afdef5e": {
-          "type": "Image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
-            "link": ""
-          }
-        },
-        "2f18b8d5-7c6a-4778-8362-8e8296a33ff2": {
-          "type": "Image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/TD_-_Promotion_Cyber_Monday_desktop2.jpg",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "a0ff4868-51b7-4923-a5ec-06d3e5d1c293",
-        "39259fbd-4153-4060-85d1-c7036afdef5e",
-        "2f18b8d5-7c6a-4778-8362-8e8296a33ff2"
-      ],
-      "settings": {
-        "bg-color": "",
-        "subheading": "Sub-heading",
-        "title": "SEC_Grid Images",
-        "text_color": "#3A3C3C"
-      }
-    },
-    "4f1e4052-01fe-4d69-94f8-c0f954010e86": {
-      "type": "leading-page-header",
-      "settings": {
-        "enable_custom_title": false,
-        "sub_headline": "Customize Title if needed",
-        "custom_title_text": "SEC_Header",
-        "custom_header": "",
-        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
-        "mobile_custom": true,
-        "image_mobile": "shopify:\/\/shop_images\/TD_Winter_Promo_Mobile.jpg",
-        "apply_overlay": true
-      }
-    },
-    "2248c1da-7ba5-486c-a78a-ed36d27a18b6": {
-      "type": "icons-custom",
-      "blocks": {
-        "a48ad636-9012-4285-b746-29e6797be658": {
-          "type": "icons-custom",
-          "settings": {
-            "simple_icons": "euro",
-            "title_icon": "Icon Monotone",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
-          }
-        },
-        "41bf9171-17d9-4ebf-8f70-48ca54451b97": {
-          "type": "icons-duotone",
-          "settings": {
-            "icons_duotone": "allergy",
-            "title_icon": "Icon Duotone",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
-          }
-        },
-        "b53895bd-441a-4050-8e39-461964d9badb": {
-          "type": "icons-custom",
-          "settings": {
-            "simple_icons": "sustainable_world",
-            "title_icon": "Icon Monotone",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
-          }
-        },
-        "2961f2d0-09f3-4991-9c2d-43be1d417eaa": {
-          "type": "icons-duotone",
-          "settings": {
-            "icons_duotone": "energy",
-            "title_icon": "Icon Duotone",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "a48ad636-9012-4285-b746-29e6797be658",
-        "41bf9171-17d9-4ebf-8f70-48ca54451b97",
-        "b53895bd-441a-4050-8e39-461964d9badb",
-        "2961f2d0-09f3-4991-9c2d-43be1d417eaa"
-      ],
-      "settings": {
-        "bg-color": "",
-        "margin-top": "auto",
-        "margin-top-mobile": "inehrit",
-        "subheading": "Sbh-heading",
-        "title": "SEC_Icons Custom",
-        "bg-color-icons": "",
-        "icons-size": "40px",
-        "icons-color": "#fac636",
-        "text-color": "",
-        "mobile-style-glider": true,
-        "icons-columns": false,
-        "button_label": "Button",
-        "button_link": ""
-      }
-    },
-    "467cdaff-9afa-4631-810a-0f2b4d2e1bb3": {
-      "type": "page-standard-header",
-      "settings": {
-        "enable_custom_title": true,
-        "custom_title_text": "SEC_Page Standard Header",
-        "sub_headline": "Sub headline",
-        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
-        "mobile_custom": true,
-        "image_mobile": "shopify:\/\/shop_images\/TD_Winter_Promo_Mobile.jpg",
-        "apply_overlay": true,
-        "review_starts": true,
-        "content": "<p>Extra content<\/p>"
-      }
-    },
-    "d267ecf2-d187-4c7a-868b-5b73e7978137": {
-      "type": "accordion-with-image",
-      "blocks": {
-        "b9b01739-c914-4caf-8a75-4a9a8a3f3dc7": {
-          "type": "accordion_simple",
-          "settings": {
-            "simple_icons": "none",
-            "summary": "Title Example",
-            "content": "Example of text that could be paced with something related to the title above"
-          }
-        },
-        "b556e2f3-c4c8-40d1-bc3f-74f7f6d9cc10": {
-          "type": "accordion_simple",
-          "settings": {
-            "simple_icons": "none",
-            "summary": "Title Example",
-            "content": "Example of text that could be paced with something related to the title above"
-          }
-        },
-        "06131324-e190-4a96-a692-8397facbae1a": {
-          "type": "accordion_simple",
-          "settings": {
-            "simple_icons": "none",
-            "summary": "Title Example",
-            "content": "Example of text that could be paced with something related to the title above"
-          }
-        }
-      },
-      "block_order": [
-        "b9b01739-c914-4caf-8a75-4a9a8a3f3dc7",
-        "b556e2f3-c4c8-40d1-bc3f-74f7f6d9cc10",
-        "06131324-e190-4a96-a692-8397facbae1a"
-      ],
-      "settings": {
-        "sub-heading": "Premium Therapiedecke",
-        "heading": "SEC_Accordion with Image",
-        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
-        "image_position": "left"
-      }
-    },
-    "448e3b67-4647-411e-b18a-0cf04e85ed82": {
-      "type": "icons-prestige",
-      "settings": {
-        "bg-color": ""
       }
     },
     "1f533ba9-ca5e-427a-b8e9-701af4fcc60a": {
@@ -511,64 +562,6 @@
         "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
       }
     },
-    "2f870cb1-5cd6-4c0e-9556-63aca81665a7": {
-      "type": "button-block",
-      "settings": {
-        "bg-color": "#ffffff",
-        "button_text": "SEC_Button",
-        "button_url": "",
-        "spacer_top": "30px",
-        "spacer_bottom": "30px"
-      }
-    },
-    "90dc2a76-9c1d-4237-a7fc-9926c2855712": {
-      "type": "text-with-image-new",
-      "disabled": true,
-      "blocks": {
-        "9a131f13-a842-4a23-ade4-1ed08a36c186": {
-          "type": "title",
-          "settings": {
-            "subheading": "Sub-heading",
-            "title": "SEC_Text with image",
-            "icon_title": true,
-            "icons_duotone": "cotton"
-          }
-        },
-        "a500271a-a489-470e-a79f-b108f44c2626": {
-          "type": "richtext",
-          "settings": {
-            "richtext": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
-          }
-        },
-        "ebbdb66e-8795-4a98-aa9a-1f05b98f9e3c": {
-          "type": "button",
-          "settings": {
-            "button_style": false,
-            "button_text": "Mehr Erfahren",
-            "button_url": "",
-            "button_extra": false,
-            "button_text_extra": "Mehr",
-            "button_url_extra": ""
-          }
-        }
-      },
-      "block_order": [
-        "9a131f13-a842-4a23-ade4-1ed08a36c186",
-        "a500271a-a489-470e-a79f-b108f44c2626",
-        "ebbdb66e-8795-4a98-aa9a-1f05b98f9e3c"
-      ],
-      "settings": {
-        "slide_style": false,
-        "spacer_top": true,
-        "spacer_bottom": true,
-        "bg-color": "#f8f8f8",
-        "bg-color-text-html": "",
-        "text_align": "left",
-        "text_color": "#3A3C3C",
-        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
-        "image_position": "right"
-      }
-    },
     "e301b809-9069-4e2b-a511-7c8615c847d7": {
       "type": "timeline",
       "blocks": {
@@ -630,29 +623,28 @@
     }
   },
   "order": [
-    "f5f76e92-93dc-48b8-8d1a-807050d6dad0",
+    "4f1e4052-01fe-4d69-94f8-c0f954010e86",
+    "467cdaff-9afa-4631-810a-0f2b4d2e1bb3",
+    "f21b4ea6-704a-412f-b53d-79b414bcca68",
+    "90dc2a76-9c1d-4237-a7fc-9926c2855712",
     "8c277cfc-1c2b-4cd4-bf56-ee87ab4ab813",
+    "f5f76e92-93dc-48b8-8d1a-807050d6dad0",
+    "6b8dee33-80ec-47ce-a1c3-73f5f7202cc3",
+    "bbce474b-aa7f-4f03-8fba-4db864c07aa4",
+    "f9457bbd-90dd-4d7d-b149-4e312c50db59",
+    "4ef125f8-589f-4714-b41e-e8e5ffb15d72",
+    "676a35a3-1426-40ac-9aa5-62a1f89ac8d1",
+    "2f870cb1-5cd6-4c0e-9556-63aca81665a7",
+    "d267ecf2-d187-4c7a-868b-5b73e7978137",
+    "2248c1da-7ba5-486c-a78a-ed36d27a18b6",
     "07d26888-66c3-495f-9ea3-8fecb4d1b8bb",
     "d419789f-0511-4877-946d-4562a40ded89",
     "main",
     "25776cd6-8182-43f4-b890-6dfdf5254316",
     "a172dcff-6d22-4ff1-b74a-f15886059f60",
-    "bbce474b-aa7f-4f03-8fba-4db864c07aa4",
-    "f9457bbd-90dd-4d7d-b149-4e312c50db59",
-    "4ef125f8-589f-4714-b41e-e8e5ffb15d72",
-    "f21b4ea6-704a-412f-b53d-79b414bcca68",
-    "6b8dee33-80ec-47ce-a1c3-73f5f7202cc3",
     "616107cf-eb89-44b6-96a9-2b45c20b6196",
-    "676a35a3-1426-40ac-9aa5-62a1f89ac8d1",
-    "4f1e4052-01fe-4d69-94f8-c0f954010e86",
-    "2248c1da-7ba5-486c-a78a-ed36d27a18b6",
-    "467cdaff-9afa-4631-810a-0f2b4d2e1bb3",
-    "d267ecf2-d187-4c7a-868b-5b73e7978137",
-    "448e3b67-4647-411e-b18a-0cf04e85ed82",
     "1f533ba9-ca5e-427a-b8e9-701af4fcc60a",
     "8921b837-7f13-4288-afd7-be81bb1b27db",
-    "2f870cb1-5cd6-4c0e-9556-63aca81665a7",
-    "90dc2a76-9c1d-4237-a7fc-9926c2855712",
     "e301b809-9069-4e2b-a511-7c8615c847d7",
     "23164940-ca8a-43c0-99a3-5ba0e54099b7"
   ]
