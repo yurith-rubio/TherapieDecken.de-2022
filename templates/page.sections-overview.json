@@ -336,6 +336,27 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "52642190-aebd-4653-a720-a62d99b4101e": {
+      "type": "one-column-content",
+      "settings": {
+        "bg-color": "#F8F8F8",
+        "section_margin": "50px",
+        "bg-color-text": "#ffffff",
+        "text_align": "left",
+        "content_top_margin": "50px",
+        "content_bottom_margin": "50px"
+      }
+    },
+    "8885ee7a-f64c-4149-af34-24dd39257402": {
+      "type": "button-block",
+      "settings": {
+        "bg-color": "#ffffff",
+        "button_text": "Mehr Erfharen",
+        "button_url": "",
+        "spacer_top": "0px",
+        "spacer_bottom": "0px"
+      }
     }
   },
   "order": [
@@ -361,6 +382,8 @@
     "0e0e6265-4f13-40a0-94f8-6a39936eeefe",
     "03f51e5f-fabb-4a29-a99e-122d9391302a",
     "18328f38-162f-4e69-95db-746d01cc4ee0",
-    "main"
+    "main",
+    "52642190-aebd-4653-a720-a62d99b4101e",
+    "8885ee7a-f64c-4149-af34-24dd39257402"
   ]
 }
