@@ -355,14 +355,14 @@
         "bg-color": "#f8f8f8",
         "margin-top": "auto",
         "margin-top-mobile": "inehrit",
-        "subheading": "Sbh-heading",
+        "subheading": "Sub-heading",
         "title": "SEC_Icons Custom",
         "bg-color-icons": "",
         "icons-size": "40px",
         "icons-color": "#fac636",
         "text-color": "",
         "mobile-style-glider": true,
-        "icons-columns": false,
+        "icons-columns": true,
         "button_label": "Button",
         "button_link": ""
       }
