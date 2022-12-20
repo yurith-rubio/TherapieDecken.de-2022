@@ -451,6 +451,189 @@
         "review_starts": true,
         "content": "<p>Extra content<\/p>"
       }
+    },
+    "d267ecf2-d187-4c7a-868b-5b73e7978137": {
+      "type": "accordion-with-image",
+      "blocks": {
+        "b9b01739-c914-4caf-8a75-4a9a8a3f3dc7": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "none",
+            "summary": "Title Example",
+            "content": "Example of text that could be paced with something related to the title above"
+          }
+        },
+        "b556e2f3-c4c8-40d1-bc3f-74f7f6d9cc10": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "none",
+            "summary": "Title Example",
+            "content": "Example of text that could be paced with something related to the title above"
+          }
+        },
+        "06131324-e190-4a96-a692-8397facbae1a": {
+          "type": "accordion_simple",
+          "settings": {
+            "simple_icons": "none",
+            "summary": "Title Example",
+            "content": "Example of text that could be paced with something related to the title above"
+          }
+        }
+      },
+      "block_order": [
+        "b9b01739-c914-4caf-8a75-4a9a8a3f3dc7",
+        "b556e2f3-c4c8-40d1-bc3f-74f7f6d9cc10",
+        "06131324-e190-4a96-a692-8397facbae1a"
+      ],
+      "settings": {
+        "sub-heading": "Premium Therapiedecke",
+        "heading": "SEC_Accordion with Image",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "image_position": "left"
+      }
+    },
+    "49a82af1-bd54-46ee-9155-daeb68eeca23": {
+      "type": "featured-product-addons",
+      "blocks": {
+        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-0": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_taxes_included": false
+          }
+        },
+        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-1": {
+          "type": "share_buttons",
+          "settings": {
+          }
+        },
+        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-2": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-0",
+        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-1",
+        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-2",
+        "template--16656291725580__49a82af1-bd54-46ee-9155-daeb68eeca23-1671558357739a875f-3"
+      ],
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "SEC_Featured product Addons",
+        "more_info": "<p>More info<\/p>",
+        "right_image": false,
+        "show_headings_on_mobile": true,
+        "product": "balance-gewichtsdecke-fur-erwachsene"
+      }
+    },
+    "448e3b67-4647-411e-b18a-0cf04e85ed82": {
+      "type": "icons-prestige",
+      "settings": {
+        "bg-color": ""
+      }
+    },
+    "1f533ba9-ca5e-427a-b8e9-701af4fcc60a": {
+      "type": "product-details",
+      "blocks": {
+        "14982ed6-a3a8-4e8e-940b-e4a62a8de55b": {
+          "type": "info-product-details",
+          "settings": {
+            "title_block": "Place your title",
+            "html_content": "Place here your content",
+            "extra_block": false,
+            "subtitle_block": "Place your title",
+            "html_content_extra": "ONLY IF Extra content 1 - Place here your content",
+            "extra_block2": false,
+            "subtitle_block2": "Place your title",
+            "html_content_extra2": "ONLY IF Extra content 2 - Place here your content",
+            "extra_block3": false,
+            "subtitle_block3": "Place your title",
+            "html_content_extra3": "ONLY IF Extra content 3 - Place here your content",
+            "richtext_content2": ""
+          }
+        },
+        "ce8bae8e-0c2b-4a4d-b2b2-9c0755aa0beb": {
+          "type": "info-product-details",
+          "settings": {
+            "title_block": "Place your title",
+            "html_content": "Place here your content",
+            "extra_block": false,
+            "subtitle_block": "Place your title",
+            "html_content_extra": "ONLY IF Extra content 1 - Place here your content",
+            "extra_block2": false,
+            "subtitle_block2": "Place your title",
+            "html_content_extra2": "ONLY IF Extra content 2 - Place here your content",
+            "extra_block3": false,
+            "subtitle_block3": "Place your title",
+            "html_content_extra3": "ONLY IF Extra content 3 - Place here your content",
+            "richtext_content2": ""
+          }
+        },
+        "39338dbf-68fc-406c-a4b1-d06bd130d158": {
+          "type": "info-product-details",
+          "settings": {
+            "title_block": "Place your title",
+            "html_content": "Place here your content",
+            "extra_block": false,
+            "subtitle_block": "Place your title",
+            "html_content_extra": "ONLY IF Extra content 1 - Place here your content",
+            "extra_block2": false,
+            "subtitle_block2": "Place your title",
+            "html_content_extra2": "ONLY IF Extra content 2 - Place here your content",
+            "extra_block3": false,
+            "subtitle_block3": "Place your title",
+            "html_content_extra3": "ONLY IF Extra content 3 - Place here your content",
+            "richtext_content2": ""
+          }
+        }
+      },
+      "block_order": [
+        "14982ed6-a3a8-4e8e-940b-e4a62a8de55b",
+        "ce8bae8e-0c2b-4a4d-b2b2-9c0755aa0beb",
+        "39338dbf-68fc-406c-a4b1-d06bd130d158"
+      ],
+      "settings": {
+        "bg-color": "",
+        "subheading_tag1": "Subheading Example",
+        "title_tag1": "SEC_Product Details"
+      }
+    },
+    "8921b837-7f13-4288-afd7-be81bb1b27db": {
+      "type": "newsletter",
+      "settings": {
+        "section_size": "small",
+        "image": "shopify:\/\/shop_images\/TD_Winter_Promo_Desktop.jpg",
+        "plain_bg": "#696969",
+        "text_color": "#ffffff",
+        "button_color": "#000000",
+        "subheading": "Keep updated",
+        "title": "SEC_Newsletter",
+        "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+      }
+    },
+    "2f870cb1-5cd6-4c0e-9556-63aca81665a7": {
+      "type": "button-block",
+      "settings": {
+        "bg-color": "#ffffff",
+        "button_text": "SEC_Button",
+        "button_url": "",
+        "spacer_top": "30px",
+        "spacer_bottom": "30px"
+      }
     }
   },
   "order": [
@@ -472,6 +655,12 @@
     "676a35a3-1426-40ac-9aa5-62a1f89ac8d1",
     "4f1e4052-01fe-4d69-94f8-c0f954010e86",
     "2248c1da-7ba5-486c-a78a-ed36d27a18b6",
-    "467cdaff-9afa-4631-810a-0f2b4d2e1bb3"
+    "467cdaff-9afa-4631-810a-0f2b4d2e1bb3",
+    "d267ecf2-d187-4c7a-868b-5b73e7978137",
+    "49a82af1-bd54-46ee-9155-daeb68eeca23",
+    "448e3b67-4647-411e-b18a-0cf04e85ed82",
+    "1f533ba9-ca5e-427a-b8e9-701af4fcc60a",
+    "8921b837-7f13-4288-afd7-be81bb1b27db",
+    "2f870cb1-5cd6-4c0e-9556-63aca81665a7"
   ]
 }
