@@ -119,6 +119,55 @@
         "link_text_extra": "Mehr Erfahren",
         "link_url_extra": ""
       }
+    },
+    "d045cbd0-3711-4818-b2b3-bc439b590e17": {
+      "type": "icons-custom",
+      "blocks": {
+        "98a55804-5308-46bd-83f0-f4c968a09743": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "none",
+            "title_icon": "Icon Title",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        },
+        "24c0a36b-9a02-4270-8dd8-eb33fcbdf66f": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "none",
+            "title_icon": "Icon Title",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        },
+        "a7547db6-a0cd-4ce8-9296-aa6608d3dff1": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "none",
+            "title_icon": "Icon Title",
+            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "98a55804-5308-46bd-83f0-f4c968a09743",
+        "24c0a36b-9a02-4270-8dd8-eb33fcbdf66f",
+        "a7547db6-a0cd-4ce8-9296-aa6608d3dff1"
+      ],
+      "settings": {
+        "bg-color": "",
+        "margin-top": "auto",
+        "margin-top-mobile": "inehrit",
+        "subheading": "",
+        "title": "",
+        "bg-color-icons": "",
+        "icons-size": "40px",
+        "icons-color": "#fac636",
+        "text-color": "",
+        "mobile-style-glider": true,
+        "icons-columns": false,
+        "button_label": "",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -127,6 +176,7 @@
     "1631197109b2759aaf",
     "163654850371310cac",
     "8eb98755-a1b6-4d3d-9616-3deea67df1be",
-    "1631197250ed5d793f"
+    "1631197250ed5d793f",
+    "d045cbd0-3711-4818-b2b3-bc439b590e17"
   ]
 }
