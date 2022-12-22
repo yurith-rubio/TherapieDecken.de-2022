@@ -72,7 +72,7 @@
         "98a55804-5308-46bd-83f0-f4c968a09743": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "sustainable_world",
+            "simple_icons": "shaking_hands_discount",
             "title_icon": "Willkommensrabatt",
             "content_icon": "<p>Erhalten Sie einen besonderen Rabatt auf Ihre erste Therapiedecke Ihrer Wahl um diese ausgiebig zu testen!<\/p>"
           }
@@ -80,7 +80,7 @@
         "24c0a36b-9a02-4270-8dd8-eb33fcbdf66f": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "500plus",
+            "simple_icons": "volume_discount",
             "title_icon": "Mengenrabatt",
             "content_icon": "<p>Profitieren Sie jetzt von unserem Mengenrabatt für Bestellungen von über 10+ Therapiedecken.<\/p>"
           }
@@ -88,7 +88,7 @@
         "a7547db6-a0cd-4ce8-9296-aa6608d3dff1": {
           "type": "icons-custom",
           "settings": {
-            "simple_icons": "object-group",
+            "simple_icons": "badge_discount",
             "title_icon": "Rabatt zum Teilen",
             "content_icon": "<p>Ihre Patienten oder Kunden profitieren durch einen Rabatt, den Sie mit diesen teilen können, auch von Ihrer Mitgliedschaft.<\/p>"
           }
@@ -136,7 +136,7 @@
         "4e998e1c-c3c0-4e9c-9ccb-519ea24ce10a"
       ],
       "settings": {
-        "bg-color": "#F8F8F8",
+        "bg-color": "#f8f8f8",
         "section_margin": "50px",
         "bg-color-text": "#ffffff",
         "text_align": "center",
