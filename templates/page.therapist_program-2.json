@@ -168,16 +168,6 @@
         "link_text_extra": "Mehr Erfahren",
         "link_url_extra": ""
       }
-    },
-    "9658e5a9-0b14-4866-a189-eef22e5a6e25": {
-      "type": "banner-custom",
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "Your HTML",
-        "html": "<p>Write your own custom HTML content.<\/p>",
-        "spacer": "50px",
-        "bg-color": ""
-      }
     }
   },
   "order": [
@@ -187,7 +177,6 @@
     "163654850371310cac",
     "d045cbd0-3711-4818-b2b3-bc439b590e17",
     "8eb98755-a1b6-4d3d-9616-3deea67df1be",
-    "1631197250ed5d793f",
-    "9658e5a9-0b14-4866-a189-eef22e5a6e25"
+    "1631197250ed5d793f"
   ]
 }
