@@ -141,7 +141,7 @@
         "settings": {
           "enable_bar": true,
           "home_page_only": false,
-          "background": "#d61021",
+          "background": "#6499b5",
           "text_color": "#ffffff",
           "content": "<span style=\"line-height:24px;background-color:#0E2A3F; padding:4px 8px;;margin-right:5px\"><b>WINTER <span style=\"color:#6499b5\">SALE<\/span><\/b><\/span><b> Bis zu 30% reduziert · Gratis 50€ Geschenkgutschein · Endet in <\/b>",
           "link": "\/pages\/therapiedecken"
