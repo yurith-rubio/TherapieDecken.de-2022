@@ -70,7 +70,7 @@
   <span class="icon-washing-machine"></span>
 {% endif %}
 
-{% if block.settings.simple_icons == 'badge-discount'%}
+{% if block.settings.simple_icons == 'badge_discount'%}
   <span class="icon-badge-discount"></span>
 {% endif %}
 
@@ -107,7 +107,11 @@
 {% endif %}
 
 {%- if block.settings.simple_icons == "sustainable_world" -%}
-<span class="icon-sustainable-world"></span>
+  <span class="icon-sustainable-world"></span>
+{% endif %}
+
+{%- if block.settings.simple_icons == "volume_discount" -%}
+  <span class="icon-volume-discount"></span>
 {% endif %}
 
 {% if block.settings.simple_icons == 'wirkung'%}
