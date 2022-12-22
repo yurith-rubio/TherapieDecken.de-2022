@@ -127,7 +127,7 @@
         "4e998e1c-c3c0-4e9c-9ccb-519ea24ce10a": {
           "type": "liquid",
           "settings": {
-            "liquid": "<p>Alle Therapeuten oder Entscheidungsträger bei medizinischen Einrichtungen, die an unserem Rabattprogramm teilnehmen wollen, müssen einen amtlichen Nachweis über Ihre Berufstätigkeit einreichen, um zugelassen zu werden. Den Nachweis schicken Sie bitte per E-Mail an nachweis@therapiedecken.de<\/p>"
+            "liquid": "<p>Alle Therapeuten oder Entscheidungsträger bei medizinischen Einrichtungen, die an unserem Rabattprogramm teilnehmen wollen, müssen einen amtlichen Nachweis über Ihre Berufstätigkeit einreichen, um zugelassen zu werden. Den Nachweis schicken Sie bitte per E-Mail an <strong>nachweis@therapiedecken.de<\/strong><\/p>"
           }
         }
       },
@@ -168,6 +168,17 @@
         "link_text_extra": "Mehr Erfahren",
         "link_url_extra": ""
       }
+    },
+    "9658e5a9-0b14-4866-a189-eef22e5a6e25": {
+      "type": "banner-custom",
+      "disabled": true,
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "Your HTML",
+        "html": "<p>Write your own custom HTML content.<\/p>",
+        "spacer": "50px",
+        "bg-color": ""
+      }
     }
   },
   "order": [
@@ -177,6 +188,7 @@
     "163654850371310cac",
     "d045cbd0-3711-4818-b2b3-bc439b590e17",
     "8eb98755-a1b6-4d3d-9616-3deea67df1be",
-    "1631197250ed5d793f"
+    "1631197250ed5d793f",
+    "9658e5a9-0b14-4866-a189-eef22e5a6e25"
   ]
 }
