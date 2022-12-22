@@ -66,6 +66,55 @@
         "link_url": ""
       }
     },
+    "d045cbd0-3711-4818-b2b3-bc439b590e17": {
+      "type": "icons-custom",
+      "blocks": {
+        "98a55804-5308-46bd-83f0-f4c968a09743": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "object-group",
+            "title_icon": "Willkommensrabatt",
+            "content_icon": "<p>Erhalten Sie einen besonderen Rabatt auf Ihre erste Therapiedecke Ihrer Wahl um diese ausgiebig zu testen!<\/p>"
+          }
+        },
+        "24c0a36b-9a02-4270-8dd8-eb33fcbdf66f": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "500plus",
+            "title_icon": "Mengenrabatt",
+            "content_icon": "<p>Profitieren Sie jetzt von unserem Mengenrabatt fúr Bestellungen von über 10+ Therapiedecken.<\/p>"
+          }
+        },
+        "a7547db6-a0cd-4ce8-9296-aa6608d3dff1": {
+          "type": "icons-custom",
+          "settings": {
+            "simple_icons": "object-group",
+            "title_icon": "Rabatt zum Teilen",
+            "content_icon": "<p>Ihre Patienten oder Kunden profitieren durch einen Rabatt, den Sie mit diesen teilen kónnen, auch von Ihrer Mitgliedschaft.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "98a55804-5308-46bd-83f0-f4c968a09743",
+        "24c0a36b-9a02-4270-8dd8-eb33fcbdf66f",
+        "a7547db6-a0cd-4ce8-9296-aa6608d3dff1"
+      ],
+      "settings": {
+        "bg-color": "",
+        "margin-top": "auto",
+        "margin-top-mobile": "inehrit",
+        "subheading": "",
+        "title": "",
+        "bg-color-icons": "",
+        "icons-size": "40px",
+        "icons-color": "#fac636",
+        "text-color": "",
+        "mobile-style-glider": true,
+        "icons-columns": false,
+        "button_label": "",
+        "button_link": ""
+      }
+    },
     "8eb98755-a1b6-4d3d-9616-3deea67df1be": {
       "type": "one-column-content",
       "blocks": {
@@ -119,55 +168,6 @@
         "link_text_extra": "Mehr Erfahren",
         "link_url_extra": ""
       }
-    },
-    "d045cbd0-3711-4818-b2b3-bc439b590e17": {
-      "type": "icons-custom",
-      "blocks": {
-        "98a55804-5308-46bd-83f0-f4c968a09743": {
-          "type": "icons-custom",
-          "settings": {
-            "simple_icons": "none",
-            "title_icon": "Icon Title",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
-          }
-        },
-        "24c0a36b-9a02-4270-8dd8-eb33fcbdf66f": {
-          "type": "icons-custom",
-          "settings": {
-            "simple_icons": "none",
-            "title_icon": "Icon Title",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
-          }
-        },
-        "a7547db6-a0cd-4ce8-9296-aa6608d3dff1": {
-          "type": "icons-custom",
-          "settings": {
-            "simple_icons": "none",
-            "title_icon": "Icon Title",
-            "content_icon": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "98a55804-5308-46bd-83f0-f4c968a09743",
-        "24c0a36b-9a02-4270-8dd8-eb33fcbdf66f",
-        "a7547db6-a0cd-4ce8-9296-aa6608d3dff1"
-      ],
-      "settings": {
-        "bg-color": "",
-        "margin-top": "auto",
-        "margin-top-mobile": "inehrit",
-        "subheading": "",
-        "title": "",
-        "bg-color-icons": "",
-        "icons-size": "40px",
-        "icons-color": "#fac636",
-        "text-color": "",
-        "mobile-style-glider": true,
-        "icons-columns": false,
-        "button_label": "",
-        "button_link": ""
-      }
     }
   },
   "order": [
@@ -175,8 +175,8 @@
     "1634848927f18760e6",
     "1631197109b2759aaf",
     "163654850371310cac",
+    "d045cbd0-3711-4818-b2b3-bc439b590e17",
     "8eb98755-a1b6-4d3d-9616-3deea67df1be",
-    "1631197250ed5d793f",
-    "d045cbd0-3711-4818-b2b3-bc439b590e17"
+    "1631197250ed5d793f"
   ]
 }
