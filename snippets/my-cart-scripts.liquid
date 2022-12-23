@@ -3,7 +3,7 @@
 </script>
 
 <script type="module">
-    import '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+    import '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
 </script>
 
 <script type="application/json" data-ajax-cart-configuration>
@@ -20,102 +20,105 @@
   {% assign promoSubtotal = settings.gift_product_min_spend %}
 {% endif %}
 
-
 <script type="module">
-    import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
+  import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.3.js" | asset_url }}';
 
-    function suggestedUpsells() {
-        // Slider for suggested upsell products
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: true,
-                    dots: false
-                }
-            }
-        });
-
-        // Heading for upsells
-        const upsellActive = document.querySelectorAll(".MyCartUpsells_ItemWrapper");
-        const upsellsWrapper = document.querySelector(".MyCartUpsells_SuggestedContainer");
-        const suggestionsTitle = document.querySelector("#MyCartUpsells_MainTitle");
-
-        if (upsellActive.length > 0) {
-            if (!suggestionsTitle) {
-                upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 id="MyCartUpsells_MainTitle" class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
-            } else {
-                //console.log("title already added");
-            }
-        }
-
-        const submitButtons = document.querySelectorAll(".MyCartUpsells_SubmitButton");
-        submitButtons.forEach(button => {
-            button.addEventListener("click", event => {
-                closeUpsell();
-            });
-        });
-    }
-    suggestedUpsells();
-
-    subscribeToCartStateUpdate(state => {
-      suggestedUpsells();
+  function suggestedUpsells() {
+    // Slider for suggested upsell products
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+          0: {
+              items: 1,
+              nav: true,
+              dots: false
+          }
+      }
     });
 
-</script>
+    // Heading for upsells
+    const upsellActive = document.querySelectorAll(".MyCartUpsells_ItemWrapper");
+    const upsellsWrapper = document.querySelector(".MyCartUpsells_SuggestedContainer");
+    const suggestionsTitle = document.querySelector("#MyCartUpsells_MainTitle");
 
+    if (upsellActive.length > 0) {
+      if (!suggestionsTitle) {
+          upsellsWrapper.insertAdjacentHTML("afterbegin", `<h2 id="MyCartUpsells_MainTitle" class="MyCart_H2 MyCartUpsells_MainTitle">Diese Produkte könnten Ihnen auch gefallen</h2>`)
+      }
+    }
 
-<script type="module">
-  import { cartRequestAdd, cartRequestChange, subscribeToCartStateUpdate } from '{{ "liquid-ajax-cart-v1.10.0.js" | asset_url }}';
-  
-  subscribeToCartStateUpdate(state => {
-    addCartTotalDiscount();
-  });
-  
-  export function addCartTotalDiscount() {   
-    const discountsWrapper = document.querySelector("#MyCart_DiscountWrapper");
-    const discounts = document.querySelectorAll(".MyCart_ItemDiscount");
-    if (discountsWrapper) {
-        discountsWrapper.remove();
-    }
+    const submitButtons = document.querySelectorAll(".MyCartUpsells_SubmitButton");
+    submitButtons.forEach(button => {
+        button.addEventListener("click", event => {
+            closeUpsell();
+        });
+    });
+  }
+
+  function addCartTotalDiscount() {
+    const priceContainers = document.querySelectorAll(".MyCart_PriceContainer");
     
-    const totalCartWrapper = document.querySelector("#MyCart_TotalFinalWrapper");
-    if (totalCartWrapper) {
-      totalCartWrapper.insertAdjacentHTML("afterend",
-        `<div id="MyCart_DiscountWrapper" class="MyCart_DiscountInfo MyCart_FooterText MyCart_HighlightedText">
-            <span>Sie sparen  </span>
-            <p id="MyCart_ItemDiscountTotal"></p>
-        </div>`);
-    }
-    
-    let sum = 0;
-    let totalPrice = 0;
-    if (discounts) {
-      totalPrice = document.querySelector(".MyCart_FinalPrice");
-      if (totalPrice){
-        totalPrice = totalPrice.innerText;
-        totalPrice = totalPrice.replace("€", "").trim();
-        totalPrice = 0 + parseFloat(totalPrice.replace(".", "").replace(",", "."));
+    if (priceContainers.length > 0){
+      let totalItemDiscounted = 0;
+      let totalDiscounted = 0;
+      priceContainers.forEach(item => {
+        
+        let discountElement = item.children[1];
+        if (discountElement){
+          let total = item.children[0].innerText;
+          let discount = item.children[1].innerText;
+          
+
+          total = total.replace("€", "").trim();
+          total = 0 + parseFloat(total.replace(".", "").replace(",", "."));
+
+          discount = discount.replace("€", "").trim();
+          discount = 0 + parseFloat(discount.replace(".", "").replace(",", "."));
+
+          totalItemDiscounted = discount - total;
+          totalDiscounted = totalDiscounted + totalItemDiscounted;
+        }
+      });
+
+      totalDiscounted = Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR" }).format(totalDiscounted);
+      
+      const discountsWrapper = document.querySelector("#MyCart_DiscountWrapper");
+      const discounts = document.querySelectorAll(".MyCart_ItemDiscount");
+      if (discountsWrapper) {
+          discountsWrapper.remove();
       }
       
-      discounts.forEach(element => {
-        let discount = element.innerText.replace("€", "").trim();
-        sum = sum + parseFloat(discount.replace(".", "").replace(",", "."));
-      });
-      sum = sum - totalPrice;
-      sum = Intl.NumberFormat("de-DE", { style: "currency", currency: "EUR" }).format(sum);
-    }
-    
-    const totalDiscountElement = document.querySelector("#MyCart_ItemDiscountTotal");
-    if (totalDiscountElement) {
-      totalDiscountElement.innerText = sum;
+      const totalCartWrapper = document.querySelector("#MyCart_TotalFinalWrapper");
+      if (totalCartWrapper) {
+        totalCartWrapper.insertAdjacentHTML("afterend",
+          `<div id="MyCart_DiscountWrapper" class="MyCart_DiscountInfo MyCart_FooterText MyCart_HighlightedText">
+              <span>Sie sparen  </span>
+              <p id="MyCart_ItemDiscountTotal"></p>
+          </div>`);
+      }
+      
+      const totalDiscountElement = document.querySelector("#MyCart_ItemDiscountTotal");
+      if (totalDiscountElement && totalDiscounted != '0,00 €') {
+        totalDiscountElement.innerText = totalDiscounted;
+      } else {
+        if (discountsWrapper){
+          console.log("no discounts!");
+          document.querySelector("#MyCart_DiscountWrapper").innerHTML = '';       
+        }
+      }
     }
   }
   
+  suggestedUpsells();
   addCartTotalDiscount();
+
+  subscribeToCartStateUpdate(state => {
+    suggestedUpsells();
+    addCartTotalDiscount();
+  });
+
 </script>
 
 <script>
@@ -138,227 +141,371 @@
     upsellOverlay.style.display = "none";
   }
   function closeUpsell() {
-    //const mainUpsellContainer = event.target.closest(".MyCartUpsells_MainContainer");
-    const cartUpsellWrapper = document.querySelectorAll(".MyCartUpsells_MainContainer");
-    cartUpsellWrapper.forEach(element => {
-        element.style.transform = "translateX(100%)";
-    });
-    //mainUpsellContainer.style.transform = "translateY(100%)";
+    const cartUpsellWrapper = document.querySelector(".MyCartUpsells_MainContainer");
+    if (cartUpsellWrapper){
+      cartUpsellWrapper.style.transform = "translateX(100%)";      
+    }
     UpsellOverlayOff();
   }
-  function openCartUpsell() {
-    const id = event.target.dataset.upsellId;
-    const firstPrice = event.target.dataset.firstPriceAvailable;
-    const comparedPrice = event.target.dataset.firstComparedPrice;
-    const firstPriceNumber = firstPrice.substr(0, 2);
-    const comparedPriceNumber = comparedPrice.substr(0, 2);
-    const cartUpsellWrapper = document.querySelector("#cartUpsellWrapper_" + id);
-    //cartUpsellWrapper.style.display = "block";
-    cartUpsellWrapper.setAttribute("data-status", "active");
-    cartUpsellWrapper.style.transform = "translateX(0%)";
-    const priceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_UpsellPrice");
-    const comparedPriceElement = document.querySelector("#cartUpsellWrapper_" + id + " .MyCart_ComparedPrice");
-    priceElement.textContent = firstPrice;
-    if(firstPriceNumber < comparedPriceNumber){
-      comparedPriceElement.textContent = comparedPrice;    
-    } else if (firstPriceNumber === comparedPriceNumber) {
-      priceElement.classList.remove("MyCart_HighlightedText");
+
+  // Change to have more usells - Yurith
+  function openCartUpsell(position, block) {
+
+    // CHANGE const depending on the theme's submit buttons styling
+    const themeSubmitStyle = 'Button Button--primary Button--full';
+    // Find the right upsell Json file and take the info from there
+    const upsellOverlay = document.querySelector("#MyCart_UpsellOverlay");
+    upsellOverlay.style.display = 'block';
+    const upsell = window["upsell" + position + "_block" + block];
+    const livePrevJsonScriptAll = document.querySelectorAll(".ProductJson-liveOptions");
+    livePrevJsonScriptAll.forEach(element => {
+      element.innerText = '';
+    })
+    const livePrevJsonScriptSelected = document.querySelector(`#ProductJson-liveOptions${position}_${block}`);
+    let scriptTextLivePrev = '';
+    if (!upsell){
+      const scriptTag = document.querySelector(".MyCart_UpsellJson_" + position + "_" + block);
+      const scriptParent = scriptTag.parentNode;
+      const scriptCode = scriptTag.innerText;
+      scriptParent.removeChild(scriptTag);
+      const newScript = document.createElement("script");
+      newScript.className = scriptTag.className;
+      newScript.innerText = scriptCode;
+      scriptParent.appendChild(newScript);
+      upsell = window["upsell" + position + "_block" + block];
     }
-    UpsellOverlayOn();
+    if (upsell){
+      scriptTextLivePrev = JSON.stringify(upsell);
+      livePrevJsonScriptSelected.innerText = scriptTextLivePrev;
+    }
+
+    let upsellInfo = '';
+    const upsellVariantsLength = upsell.variants.length;
+    const upsellsContainer = document.querySelector("#MyCart_UpsellsContainer");
+    let minPrice = upsell.variants[0].price / 100;
+    let comparedPrice = upsell.variants[0].compare_at_price / 100;
+    let newMinPrice = minPrice.toFixed(2).replace(".", ",") + " €";
+    let newComparedPrice = comparedPrice.toFixed(2).replace(".", ",") + " €";
+    console.log(upsell)
+    upsellsContainer.textContent = '';
+    let submitUpsellText = '';
+    let availability = '';
+    let image_url = '';
+
+    if (upsell.variants[0].available){
+      submitUpsellText = 'Hinzufügen';
+      if (upsell.variants[0].featured_image){
+        let firstVariantImage = upsell.variants[0].featured_image.position;
+        image_url = upsell.images[firstVariantImage - 1];
+      } else {
+        image_url = upsell.featured_image;
+      }
+    } else {
+      submitUpsellText = 'Ausverkauf';
+      availability = 'disabled';
+      image_url = upsell.featured_image;
+    }
+    
+    // ------------ Options selection info based on the number of found options -------------
+    const productHasOneOption = upsell.variants[0].option1;
+    const productHasTwoOptions = upsell.variants[0].option2;
+    const productHasThreeOptions = upsell.variants[0].option3;
+
+    // ------------ Live preview app div CHANGE const depending on the options of the app -------------
+    const livePrevDiv = `<div data-live-options="${upsell.id}" class="MyCartUpsells_ImageUploadButton" style="margin-top:3px"></div>`
+      
+    // ------------ Options selection info based on the number of found options -------------
+    let used = '';
+    upsellInfo = `
+        <div class="MyCartUpsells_MainContainer" id="cartUpsellWrapper_${upsell.id}">
+          <form action="/cart/add" method="post" id="formUpsell_${upsell.id}" novalidate="">
+            <input name="id" type="hidden" value="${upsell.variants[0].id}" id="product-select-${upsell.id}" data-available="${upsell.variants[0].id}">
+            <div class="MyCartUpsells_HeaderWrapper">
+              <a class="MyCartUpsells_ProductHeader" href="/products/${upsell.handle}">
+                <img class="MyCartUpsells_SuggestedImageWrapper" data-rimg="lazy" data-rimg-template="${image_url }" src="${image_url}">
+                <div class="MyCartUpsells_TitleInfoWr">
+                  <h2 class="Heading MyCart_H2">${upsell.title}</h2>
+                  <div class="Heading MyCart_UpsellPrice MyCart_Price MyCart_HighlightedText">${newMinPrice}</div>
+                  <div class="MyCart_ComparedPrice MyCart_Price">${newComparedPrice}</div>
+                </div>
+              </a>
+              <div onclick="closeUpsell()" class="MyCartUpsells_Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12">
+                  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10.714 1.286l-9.428 9.428M1.286 1.286l9.428 9.428" stroke-width=".85714"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+            <div class="UpProdOpt_infoWr MyCartUpsells_infoWr">
+              <div class="MyCartUpsells_SelectorsWrapper">
+              </div>
+              ${livePrevDiv}
+              <button type="submit"
+                      name="formUpsell_${upsell.id}"
+                      class="MyCartUpsells_SubmitButton ${themeSubmitStyle}"
+                      onClick="closeUpsell()"
+                      ${availability}>
+                <span>${submitUpsellText}</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      `;
+ 
+    upsellsContainer.insertAdjacentHTML('beforeend', upsellInfo);
+    const upsellWrapper = document.querySelector(".MyCartUpsells_MainContainer");
+    upsellWrapper.style.animation = 'myupsellshows .5s';
+    const selectOptionsWrapper = document.querySelector('.MyCartUpsells_SelectorsWrapper');
+    
+    if (productHasThreeOptions){
+      const selectOptions = `
+      <div class="MyCartUpsells_OptionWrapper">
+        <label class="MyCartUpsells_OptionLabel option-name" for="select-one-${upsell.id}">1. ${upsell.options[0]}</label>
+        <select id="select-one-${upsell.id}" class="MyCartUpsells_Select" 
+          onchange="selectVariable(${position}, ${block})"
+          data-block-index="${block}"
+          data-product-id="${upsell.id}">
+        </select>
+      </div>
+      <div class="MyCartUpsells_OptionWrapper"> 
+        <label class="MyCartUpsells_OptionLabel option-name" for="select-two-${upsell.id}">2. ${upsell.options[1]}</label>
+        <select id="select-two-${upsell.id}" class="MyCartUpsells_Select" 
+          onchange="selectVariable(${position}, ${block})"
+          data-block-index="${block}"
+          data-product-id="${upsell.id}">
+        </select>
+      </div>
+      <div class="MyCartUpsells_OptionWrapper">
+        <label class="MyCartUpsells_OptionLabel option-name" for="select-three-${upsell.id}">3. ${upsell.options[2]}</label>
+        <select id="select-three-${upsell.id}" class="MyCartUpsells_Select" 
+          onchange="selectVariable(${position}, ${block})"
+          data-block-index="${block}"
+          data-product-id="${upsell.id}">
+        </select>
+      </div>
+      `;
+      
+      // ------------ Get the variants for each option -------------
+      let optionsOneArr = upsell.variants.map(variant => {
+        return variant.option1;
+      });
+      let optionsTwoArr = upsell.variants.map(variant => {
+        return variant.option2;
+      });
+      let optionsThreeArr = upsell.variants.map(variant => {
+        return variant.option3;
+      });
+    
+      let optionsOneArrUnique = [...new Set(optionsOneArr)];
+      let optionsTwoArrUnique = [...new Set(optionsTwoArr)];
+      let optionsThreeArrUnique = [...new Set(optionsThreeArr)];
+      
+      selectOptionsWrapper.insertAdjacentHTML('beforeend', selectOptions);
+      const selectElementOne = document.querySelector(`#select-one-${upsell.id}`);
+      const selectElementTwo = document.querySelector(`#select-two-${upsell.id}`);
+      const selectElementThree = document.querySelector(`#select-three-${upsell.id}`);
+      
+      optionsOneArrUnique.forEach(option => {
+        selectElementOne.insertAdjacentHTML('beforeend', `<option value="${option}">${option}</option>`);
+      });
+      optionsTwoArrUnique.forEach(option => {
+        selectElementTwo.insertAdjacentHTML('beforeend', `<option value="${option}">${option}</option>`);
+      });
+      optionsThreeArrUnique.forEach(option => {
+        selectElementThree.insertAdjacentHTML('beforeend', `<option value="${option}">${option}</option>`);
+      });
+    } else if (productHasTwoOptions){
+      const selectOptions = `
+      <div class="MyCartUpsells_OptionWrapper">
+        <label class="MyCartUpsells_OptionLabel option-name" for="select-one-${upsell.id}">1. ${upsell.options[0]}</label>
+        <select id="select-one-${upsell.id}" class="MyCartUpsells_Select" 
+          onchange="selectVariable(${position}, ${block})"
+          data-block-index="${block}"
+          data-product-id="${upsell.id}">
+        </select>
+      </div>
+      <div class="MyCartUpsells_OptionWrapper"> 
+        <label class="MyCartUpsells_OptionLabel option-name" for="select-two-${upsell.id}">2. ${upsell.options[1]}</label>
+        <select id="select-two-${upsell.id}" class="MyCartUpsells_Select" 
+          onchange="selectVariable(${position}, ${block})"
+          data-block-index="${block}"
+          data-product-id="${upsell.id}">
+        </select>
+      </div>
+      `;
+      
+      // ------------ Get the variants for each option -------------
+      let optionsOneArr = upsell.variants.map(variant => {
+        return variant.option1;
+      });
+      let optionsTwoArr = upsell.variants.map(variant => {
+        return variant.option2;
+      });
+    
+      let optionsOneArrUnique = [...new Set(optionsOneArr)];
+      let optionsTwoArrUnique = [...new Set(optionsTwoArr)];
+      
+      selectOptionsWrapper.insertAdjacentHTML('beforeend', selectOptions);
+      const selectElementOne = document.querySelector(`#select-one-${upsell.id}`);
+      const selectElementTwo = document.querySelector(`#select-two-${upsell.id}`);
+      
+      optionsOneArrUnique.forEach(option => {
+        selectElementOne.insertAdjacentHTML('beforeend', `<option value="${option}">${option}</option>`);
+      });
+      optionsTwoArrUnique.forEach(option => {
+        selectElementTwo.insertAdjacentHTML('beforeend', `<option value="${option}">${option}</option>`);
+      });
+    } else if (productHasOneOption){
+      if(upsell.variants.length > 1){
+        const selectOptions = `
+        <div class="MyCartUpsells_OptionWrapper">
+          <label class="MyCartUpsells_OptionLabel option-name" for="select-one-${upsell.id}">1. ${upsell.options[0]}</label>
+          <select id="select-one-${upsell.id}" class="MyCartUpsells_Select" 
+            onchange="selectVariable(${position}, ${block})"
+            data-block-index="${block}"
+            data-product-id="${upsell.id}">
+          </select>
+        </div>
+        `;
+        
+        // ------------ Get the variants for each option -------------
+        let optionsOneArr = upsell.variants.map(variant => {
+          return variant.option1;
+        });
+        let optionsOneArrUnique = [...new Set(optionsOneArr)];
+        
+        selectOptionsWrapper.insertAdjacentHTML('beforeend', selectOptions);
+        
+        const selectElementOne = document.querySelector(`#select-one-${upsell.id}`);
+        optionsOneArrUnique.forEach(option => {
+          selectElementOne.insertAdjacentHTML('beforeend', `<option value="${option}">${option}</option>`);
+        });
+      }
+    }
+    // ------------ Added to make the upload button work from the live-preview app  -------------
+    window.Cloudlift.options.App.setup();
   }
 
-  function selectVariable() {
-    console.log("function select Variable");
+  function selectVariable(position, block) {
     const productId = event.target.dataset.productId;
-    //console.log("productId " + productId);
     let blockIndex = parseInt(event.target.dataset.blockIndex, 10);
-    //console.log("blockIndex " + blockIndex);
-    let selectedUpsell = null;
-
-    if (blockIndex == 1) {
-        let upsellsBlock1 = [window.upsell1_block1, window.upsell2_block1, window.upsell3_block1, window.upsell4_block1];
-
-        upsellsBlock1 = upsellsBlock1.filter(upsell => {
-            if (upsell.id) {
-                return upsell;
-            }
-        });
-
-        upsellsBlock1.find(upsell => {
-            if (productId == upsell.id) {
-                selectedUpsell = upsell;
-            }
-        });
-    } else if (blockIndex == 2) {
-        let upsellsBlock2 = [window.upsell1_block2, window.upsell2_block2, window.upsell3_block2, window.upsell4_block2];
-
-        upsellsBlock2 = upsellsBlock2.filter(upsell => {
-            if (upsell.id) {
-                return upsell;
-            }
-        });
-
-        upsellsBlock2.find(upsell => {
-            if (productId == upsell.id) {
-                selectedUpsell = upsell;
-            }
-        });
-    } else if (blockIndex == 3) {
-        let upsellsBlock3 = [window.upsell1_block3, window.upsell2_block3, window.upsell3_block3, window.upsell4_block3];
-
-        upsellsBlock3 = upsellsBlock3.filter(upsell => {
-            if (upsell.id) {
-                return upsell;
-            }
-        });
-
-        upsellsBlock3.find(upsell => {
-            if (productId == upsell.id) {
-                selectedUpsell = upsell;
-            }
-        });
-    } else if (blockIndex == 4) {
-        let upsellsBlock4 = [window.upsell1_block4, window.upsell2_block4, window.upsell3_block4, window.upsell4_block4];
-
-        upsellsBlock4 = upsellsBlock4.filter(upsell => {
-            if (upsell.id) {
-                return upsell;
-            }
-        });
-
-        upsellsBlock4.find(upsell => {
-            if (productId == upsell.id) {
-                selectedUpsell = upsell;
-            }
-        });
-    }
-
-    //console.log("selectedUpsell ");
-    //console.log(selectedUpsell);
+    let selectedUpsell = window[`upsell${position}_block${block}`];
     let available = false;
     let variantId = '';
     const opt1 = document.getElementById('select-one-' + productId)?.value;
     const opt2 = document.getElementById('select-two-' + productId)?.value;
     const opt3 = document.getElementById('select-three-' + productId)?.value;
 
-    for (var i = 0; i < selectedUpsell.variants.length; i++) {
-        let variant = selectedUpsell.variants[i];
-        variantId = variant.id;
-        let variantPrice = variant.price;
-        let variantComparePrice = variant.compare_at_price;
-        let priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_UpsellPrice`);
-        let comparePriceElement = document.querySelector(`#formUpsell_${productId} .MyCart_ComparedPrice`);
-        let variantAvailability = variant.available;
-      
-        variantPrice = variantPrice / 100;
-        variantComparePrice = variantComparePrice / 100;
-      
-        if (opt3 && opt2) {
-          //console.log("opt3 && opt2");
-          if (variantAvailability) {
-            //console.log("available");
-            if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3 && variant.available) {
-              priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
-              if (variantPrice < variantComparePrice){
-                comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
-              } else {
-                priceElement.classList.remove("MyCart_HighlightedText");
-              }
-              available = true;
-              break;
-            }
-          } else {
-            //console.log("not available");
-            if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3) {
-              priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
-              if (variantPrice < variantComparePrice){
-                comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
-              } else {
-                priceElement.classList.remove("MyCart_HighlightedText");
-              }
-              available = false;
-              break;
-            }
-          }
-        }
-        if (!opt3 && opt2) {
-          //console.log("!opt3 && opt2");
-          if (variantAvailability) {
-            //console.log("available");
-            if (variant.option1 == opt1 && variant.option2 == opt2) {
-              priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
-              if (variantPrice < variantComparePrice){
-                comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
-              } else {
-                priceElement.classList.remove("MyCart_HighlightedText");
-              }
-              available = true;
-              break;
-            }
-          } else {
-            //console.log("not available");
-            if (variant.option1 == opt1 && variant.option2) {
-              priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
-              if (variantPrice < variantComparePrice){
-                comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
-              } else {
-                priceElement.classList.remove("MyCart_HighlightedText");
-              }
-              available = false;
-              break;
-            }
-          }
-        }
+    const productHasOneOption = selectedUpsell.variants[0].option1;
+    const productHasTwoOptions = selectedUpsell.variants[0].option2;
+    const productHasThreeOptions = selectedUpsell.variants[0].option3;
 
-        if (!opt3 && !opt2) {
-          //console.log("!opt3 && !opt2");
-          if (variantAvailability) {
-            //console.log("available");
-            if (variant.option1 == opt1) {
-              priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
-              if (variantPrice < variantComparePrice){
-                comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
-              } else {
-                priceElement.classList.remove("MyCart_HighlightedText");
-              }
-              available = true;
-              break;
+    for (var i = 0; i < selectedUpsell.variants.length; i++) {
+      let variant = selectedUpsell.variants[i];
+      variantId = variant.id;
+      let variantPrice = variant.price;
+      let variantComparePrice = variant.compare_at_price;
+      let priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_UpsellPrice`);
+      let comparePriceElement = document.querySelector(`#formUpsell_${productId} .MyCart_ComparedPrice`);
+      let variantAvailability = variant.available;
+      let variantImagePosition = variant.featured_image.position;
+      let variantImage = selectedUpsell.images[variantImagePosition - 1];
+      
+      variantPrice = variantPrice / 100;
+      variantComparePrice = variantComparePrice / 100;
+
+      let variantElement = document.querySelector("img.MyCartUpsells_SuggestedImageWrapper");
+      variantElement.removeAttribute("src");
+      variantElement.setAttribute("src", `${variantImage}`);
+      
+      if (productHasThreeOptions) {
+        if (variantAvailability) {
+          if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3 && variant.available) {
+            priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            if (variantPrice < variantComparePrice){
+              comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
+            } else {
+              priceElement.classList.remove("MyCart_HighlightedText");
             }
-          } else {
-            //console.log("not available");
-            if (variant.option1 == opt1) {
-              priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
-              if (variantPrice < variantComparePrice){
-                comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
-              } else {
-                priceElement.classList.remove("MyCart_HighlightedText");
-              }
-              available = false;
-              break;
+            available = true;
+            break;
+          }
+        } else {
+          if (variant.option1 == opt1 && variant.option2 == opt2 && variant.option3 == opt3) {
+            priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            if (variantPrice < variantComparePrice){
+              comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
+            } else {
+              priceElement.classList.remove("MyCart_HighlightedText");
             }
+            available = false;
+            break;
           }
         }
+      } else if (productHasTwoOptions) {
+        if (variantAvailability) {
+          if (variant.option1 == opt1 && variant.option2 == opt2 && variant.available) {
+            priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            if (variantPrice < variantComparePrice){
+              comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
+            } else {
+              priceElement.classList.remove("MyCart_HighlightedText");
+            }
+            available = true;
+            break;
+          }
+        } else {
+          if (variant.option1 == opt1 && variant.option2 == opt2) {
+            priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            if (variantPrice < variantComparePrice){
+              comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
+            } else {
+              priceElement.classList.remove("MyCart_HighlightedText");
+            }
+            available = false;
+            break;
+          }
+        }
+      } else if (productHasOneOption) {
+        if (variantAvailability) {
+          if (variant.option1 == opt1 && variant.available) {
+            priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            if (variantPrice < variantComparePrice){
+              comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
+            } else {
+              priceElement.classList.remove("MyCart_HighlightedText");
+            }
+            available = true;
+            break;
+          }
+        } else {
+          if (variant.option1 == opt1) {
+            priceElement.textContent = variantPrice.toFixed(2).replace(".", ",") + " €";
+            if (variantPrice < variantComparePrice){
+              comparePriceElement.textContent = variantComparePrice.toFixed(2).replace(".", ",") + " €";
+            } else {
+              priceElement.classList.remove("MyCart_HighlightedText");
+            }
+            available = false;
+            break;
+          }
+        }
+      }
     }
-    //console.log("variantId" + variantId);
+    
     if (variantId != '') {
         document.getElementById('product-select-' + productId).value = variantId;
     } else {
         document.getElementById('product-select-' + productId).value = '';
     }
-    console.log("available");
-    console.log(available);
+    
     if (available === true) {
-      console.log("Hinzufügen");
-      document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton span').innerHTML = 'Hinzufügen';
-      document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton').removeAttribute("disabled");
-      document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton').classList.remove("Button--secondary");
-      document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton').classList.add("Button--primary");
+      document.querySelector(`button.MyCartUpsells_SubmitButton[name="formUpsell_${productId}"] span`).innerHTML = 'Hinzufügen';
+      document.querySelector(`button.MyCartUpsells_SubmitButton[name="formUpsell_${productId}"]`).removeAttribute("disabled");
     } else {
-      console.log("Ausverkauft");
-      document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton span').innerHTML = 'Ausverkauft';
-      document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton').setAttribute("disabled", "disabled");
-      document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton').classList.remove("Button--primary");
-      document.querySelector('.MyCartUpsells_MainContainer[data-status=active] button.MyCartUpsells_SubmitButton').classList.add("Button--secondary");
+      document.querySelector(`button.MyCartUpsells_SubmitButton[name="formUpsell_${productId}"] span`).innerHTML = 'Ausverkauft';
+      document.querySelector(`button.MyCartUpsells_SubmitButton[name="formUpsell_${productId}"]`).setAttribute("disabled", "disabled");
     }
   }
 </script>
