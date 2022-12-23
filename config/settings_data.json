@@ -356,19 +356,31 @@
               "enable_upsell_4": false,
               "upsell_product_4": ""
             }
+          },
+          "703f0eb9-6de8-43eb-ac6e-7f2c38385df1": {
+            "type": "Trigger",
+            "settings": {
+              "product_list": [
+                "therapiedecken"
+              ],
+              "enable_upsell_1": true,
+              "upsell_product_1": "standard-gravity-gewichtsdecke-familien-motiv",
+              "enable_upsell_2": false,
+              "upsell_product_2": "",
+              "enable_upsell_3": false,
+              "upsell_product_3": "",
+              "enable_upsell_4": false,
+              "upsell_product_4": ""
+            }
           }
         },
         "block_order": [
           "a799bb06-336d-48a8-930a-e300fb9c2e89",
           "74270d88-da5c-42fe-8de2-ae7b01519a48",
           "2a6133f9-f8ca-4d1e-bdaa-68f62b75f04d",
-          "3455c08c-5e1f-4951-a4e8-da6a287ba8d3"
+          "3455c08c-5e1f-4951-a4e8-da6a287ba8d3",
+          "703f0eb9-6de8-43eb-ac6e-7f2c38385df1"
         ],
-        "settings": {
-        }
-      },
-      "my-cart-upsells": {
-        "type": "my-cart-upsells",
         "settings": {
         }
       },
