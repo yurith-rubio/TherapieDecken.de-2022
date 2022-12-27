@@ -72,8 +72,8 @@
     "promo_image_mobile": "shopify:\/\/shop_images\/TD_Winter_Promo_Mobile.jpg",
     "promo_tablet_image_position": 80,
     "promo_image_overlay_opacity": 0,
-    "promo_art": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TD_Winter_Promo_Art_After_Xmas.svg?v=1670326417",
-    "promo_art_mobile": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TD_Winter_Promo_Art_Mobile_After_Xmas.svg?v=1670326417",
+    "promo_art": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TD_Winter_Promo_Art_No_gift.svg?v=1671703230",
+    "promo_art_mobile": "https:\/\/cdn.shopify.com\/s\/files\/1\/2451\/6611\/files\/TD_Winter_Promo_Art_No_gift.svg?v=1671703230",
     "promo_art_y_content": 20,
     "promo_art_desktop_width": 55,
     "promo_art_tablet_width": 70,
@@ -143,7 +143,7 @@
           "home_page_only": false,
           "background": "#6499b5",
           "text_color": "#ffffff",
-          "content": "<span style=\"line-height:24px;background-color:#0E2A3F; padding:4px 8px;;margin-right:5px\"><b>WINTER <span style=\"color:#6499b5\">SALE<\/span><\/b><\/span><b> Bis zu 30% reduziert · Gratis 50€ Geschenkgutschein · Endet in <\/b>",
+          "content": "<span style=\"line-height:24px;background-color:#0E2A3F; padding:4px 8px;;margin-right:5px\"><b>WINTER <span style=\"color:#6499b5\">SALE<\/span><\/b><\/span><b> Bis zu 30% reduziert · Endet in <\/b>",
           "link": "\/pages\/therapiedecken"
         }
       },
