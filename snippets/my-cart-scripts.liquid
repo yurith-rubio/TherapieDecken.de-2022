@@ -157,12 +157,6 @@
     const upsellOverlay = document.querySelector("#MyCart_UpsellOverlay");
     upsellOverlay.style.display = 'block';
     const upsell = window["upsell" + position + "_block" + block];
-    const livePrevJsonScriptAll = document.querySelectorAll(".ProductJson-liveOptions");
-    livePrevJsonScriptAll.forEach(element => {
-      element.innerText = '';
-    })
-    const livePrevJsonScriptSelected = document.querySelector(`#ProductJson-liveOptions${position}_${block}`);
-    let scriptTextLivePrev = '';
     if (!upsell){
       const scriptTag = document.querySelector(".MyCart_UpsellJson_" + position + "_" + block);
       const scriptParent = scriptTag.parentNode;
