@@ -96,6 +96,7 @@
   {% endpaginate %}
 {% endif %}
 
+{% comment %}
 {% if product.handle == 'balance-gewichtsdecke-fur-erwachsene' or product.handle == 'therapiedecken' %}
   {% assign upsell_product = all_products['graues-gesundheitskissen-fur-erwachsene'] %}
   {% for variant in upsell_product.variants %}
@@ -132,6 +133,7 @@
         </form>
       {% endif %}
 {% endif %}
+{% endcomment %}
 
 {% if product.handle == 'basic-gravity-gewichtsdecke-fur-erwachsene' %}
   {% assign upsell_product = all_products['hellgraues-therapiekissen-fur-erwachsene'] %}
