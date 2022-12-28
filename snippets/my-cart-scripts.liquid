@@ -104,7 +104,6 @@
         totalDiscountElement.innerText = totalDiscounted;
       } else {
         if (discountsWrapper){
-          console.log("no discounts!");
           document.querySelector("#MyCart_DiscountWrapper").innerHTML = '';       
         }
       }
@@ -185,7 +184,6 @@
     let comparedPrice = upsell.variants[0].compare_at_price / 100;
     let newMinPrice = minPrice.toFixed(2).replace(".", ",") + " €";
     let newComparedPrice = comparedPrice.toFixed(2).replace(".", ",") + " €";
-    console.log(upsell)
     upsellsContainer.textContent = '';
     let submitUpsellText = '';
     let availability = '';
@@ -410,7 +408,7 @@
       let priceElement = document.querySelector(`#formUpsell_${productId} .MyCart_UpsellPrice`);
       let comparePriceElement = document.querySelector(`#formUpsell_${productId} .MyCart_ComparedPrice`);
       let variantAvailability = variant.available;
-      let variantImagePosition = variant.featured_image.position;
+      let variantImagePosition = variant.featured_image?.position;
       let variantImage = selectedUpsell.images[variantImagePosition - 1];
       
       variantPrice = variantPrice / 100;
