@@ -150,7 +150,7 @@
 
   // Change to have more usells - Yurith
   function openCartUpsell(position, block) {
-    Window.Cloudlift.options.App.shopifyStore.constructor.products = {};
+    
     // CHANGE const depending on the theme's submit buttons styling
     const themeSubmitStyle = 'Button Button--primary Button--full';
     // Find the right upsell Json file and take the info from there
@@ -385,7 +385,7 @@
     }
     // ------------ Added to make the upload button work from the live-preview app  -------------
     window.Cloudlift.options.App.setup();
-    
+    window.Cloudlift.options.App.shopifyStore.constructor.products = {};
   }
 
   function selectVariable(position, block) {
