@@ -540,9 +540,6 @@ button.MyCart_CheckoutButton{
   .MyCart_Message{
     padding: 5px 0;
   }
-  .MyCartUpsells_Select{
-    width: 100%;
-  }
   .MyCartUpsells_SuggestedImageWrapper{
     max-width: 70px;
   }
