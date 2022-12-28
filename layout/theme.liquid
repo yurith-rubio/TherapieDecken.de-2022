@@ -243,7 +243,6 @@
 		{% endcomment %}
         
         <div id="MyCart_SectionsWrapper" class="MyCart_SectionsWrapper open-cart">
-          {% section 'my-cart-upsells' %}
           {% section 'my-cart' %}
         </div>
         
@@ -276,7 +275,7 @@
       {% comment %} Scripts for metafield variants - Yurith {% endcomment %}
       <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
     {% endif %}
-    {% render 'cart-countdown' %}
+    {% render 'my-cart-countdown' %}
     
   </body>
 </html>
