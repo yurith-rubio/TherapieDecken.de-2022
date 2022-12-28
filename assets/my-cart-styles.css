@@ -374,10 +374,6 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   list-style: none;
 }
 /* Upsells */
-.MyCartUpsells_Select{
-  border: 1px solid var(--color-border);
-  width: 100%;
-}
 .MyCartUpsells_MainTitle{
   text-align: center;
   background-color: var(--color-light-shadow);
@@ -471,6 +467,8 @@ input.MyCart_InputItem::-webkit-inner-spin-button, input.MyCart_InputItem::-webk
   background-color: #fff;
   padding: 0 10px;
   height: 34px;
+  border: 1px solid var(--color-border);
+  width: 100%;
 }
 .MyCartUpsells_OptionWrapper{
   display: flex;
