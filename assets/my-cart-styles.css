@@ -9,8 +9,8 @@
   --color-light-border: rgba(0,0,0,0.1);
 
   /* Must change those variables upon theme styles */
-  --color-tw-yellow: #FAC636;
-  --color-tw-text: #3A3C3C;
+  --color-td-yellow: #FAC636;
+  --color-td-yellow: #3A3C3C;
   --color-td-border: rgba(0,0,0,0.1);
 }
 /* Animation when cart opens */
