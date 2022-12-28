@@ -11,6 +11,7 @@
   /* Must change those variables upon theme styles */
   --color-tw-yellow: #FAC636;
   --color-tw-text: #3A3C3C;
+  --color-bett-border: rgba(0,0,0,0.1);
 }
 /* Animation when cart opens */
 @keyframes mycartmove {
