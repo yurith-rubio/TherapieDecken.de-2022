@@ -51,7 +51,7 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": false,
-        "custom_liquid": "Testing metafield\n{{ variant.metafields.is_limited }}"
+        "custom_liquid": "Testing metafield\n{{ variant.metafields.bgd.is_limited }}"
       }
     },
     "163145566685d0e395": {
