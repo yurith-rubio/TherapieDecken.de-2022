@@ -47,6 +47,13 @@
         "enable_video_looping": false
       }
     },
+    "a18d4710-99f5-4fe1-999d-79c33fb2698e": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "Testing metafield\n{{ variant.metafields.td_field.test}}"
+      }
+    },
     "163145566685d0e395": {
       "type": "banner-promotion",
       "settings": {
@@ -578,6 +585,7 @@
   },
   "order": [
     "main",
+    "a18d4710-99f5-4fe1-999d-79c33fb2698e",
     "163145566685d0e395",
     "16291424324bdf770a",
     "1629459987d4cac0a9",
