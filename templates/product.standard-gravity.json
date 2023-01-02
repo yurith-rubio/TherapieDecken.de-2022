@@ -51,7 +51,7 @@
       "type": "custom-liquid",
       "settings": {
         "paddings": false,
-        "custom_liquid": "Testing metafield\n{{ variant.metafields.bgd.yurith_testing }}"
+        "custom_liquid": "Testing metafield\n{% for variant in product.variants %}\n{{ variant.metafields.bgd.yurith_testing }}\n{% endfor %}"
       }
     },
     "163145566685d0e395": {
