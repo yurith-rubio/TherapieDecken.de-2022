@@ -94,6 +94,13 @@
         "link_url_extra": ""
       }
     },
+    "ec0eeaee-32ed-4af8-9f9a-c2c5a70ca2b4": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'wirkung_grid' %}"
+      }
+    },
     "16361171538caeee29": {
       "type": "html-with-image",
       "disabled": true,
@@ -159,6 +166,7 @@
     "1636118773d02efc72",
     "1636117119614ccba3",
     "1636117136d575d1f5",
+    "ec0eeaee-32ed-4af8-9f9a-c2c5a70ca2b4",
     "16361171538caeee29",
     "163612443839d8b984",
     "16383755904f18fa4a",
