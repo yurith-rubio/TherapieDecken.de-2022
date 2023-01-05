@@ -153,7 +153,6 @@ ul.cta-bullets li:before {
      justify-content: space-around;
 }
  .wk21_text_wr h2{
-     font-family: Montserrat,HelveticaNeue,"Helvetica Neue",sans-serif;
      font-style: normal;
      text-transform: none;
      text-align: center;
@@ -231,8 +230,7 @@ ul.cta-bullets li:before {
      flex-wrap: wrap;
      margin-bottom: 30px;
      align-items: center;
-     background: linear-gradient(0deg, rgba(244,244,244,1) 120px, rgba(255,255,255,1) 120px, rgba(255,255,255,1) 120px);
-     border: 1px solid #dcdcdc;
+     background: #fff;
      border-radius: 10px;
      text-align: left;
      height: 220px;
