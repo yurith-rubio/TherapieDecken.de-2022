@@ -233,7 +233,7 @@ ul.cta-bullets li:before {
      background: #fff;
      border-radius: 10px;
      text-align: left;
-     height: 220px;
+     height: 200px;
      justify-content: center;
      max-width: 165px;
      min-width: 165px;
@@ -257,8 +257,7 @@ ul.cta-bullets li:before {
      align-items: center;
      flex-basis: 100%;
      text-align: center;
-     height: 150px;
-     padding-top: 10px;
+     height: 100px;
 }
  .wk_icon_size{
      font-size: 80px 
