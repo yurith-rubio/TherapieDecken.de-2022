@@ -239,7 +239,6 @@ ul.cta-bullets li:before {
      min-width: 165px;
 }
  .wk21_widget_wr:hover{
-     background: linear-gradient(0deg, #fac636 120px, rgba(255,255,255,1) 120px, rgba(255,255,255,1) 120px);
      cursor: pointer;
 }
  .wk21_wr a {
