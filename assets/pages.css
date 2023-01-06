@@ -153,7 +153,6 @@ ul.cta-bullets li:before {
      justify-content: space-around;
 }
  .wk21_text_wr h2{
-     font-family: Montserrat,HelveticaNeue,"Helvetica Neue",sans-serif;
      font-style: normal;
      text-transform: none;
      text-align: center;
@@ -180,6 +179,15 @@ ul.cta-bullets li:before {
 }
  .wk21_wr {
      width: 180px;
+}
+.wirkung-description{
+  margin: 0 -30px;
+}
+@media (max-width: 1024px){
+  .wirkung-description{
+       padding: 0 15px;
+       margin: 0;
+     }
 }
  @media (max-width:767px){
      .grid{
@@ -210,9 +218,13 @@ ul.cta-bullets li:before {
     }
 }
  @media (max-width:567px){
+     .wirkung-grid{
+       padding: 50px 10px;
+     }
      .wk_wr_all{
-         grid-gap:10px;
-    }
+         grid-gap:0;
+     }
+     
 }
  @media only screen and (max-width: 450px){
      .wk21_wr {
@@ -231,17 +243,15 @@ ul.cta-bullets li:before {
      flex-wrap: wrap;
      margin-bottom: 30px;
      align-items: center;
-     background: linear-gradient(0deg, rgba(244,244,244,1) 120px, rgba(255,255,255,1) 120px, rgba(255,255,255,1) 120px);
-     border: 1px solid #dcdcdc;
+     background: #fff;
      border-radius: 10px;
      text-align: left;
-     height: 220px;
+     height: 200px;
      justify-content: center;
      max-width: 165px;
      min-width: 165px;
 }
  .wk21_widget_wr:hover{
-     background: linear-gradient(0deg, #fac636 120px, rgba(255,255,255,1) 120px, rgba(255,255,255,1) 120px);
      cursor: pointer;
 }
  .wk21_wr a {
@@ -259,8 +269,7 @@ ul.cta-bullets li:before {
      align-items: center;
      flex-basis: 100%;
      text-align: center;
-     height: 150px;
-     padding-top: 10px;
+     height: 100px;
 }
  .wk_icon_size{
      font-size: 80px 

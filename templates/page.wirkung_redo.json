@@ -1,0 +1,139 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": false,
+        "back_link_checkbox": false,
+        "back_link_text": "Zurück zur...",
+        "back_link_url": ""
+      }
+    },
+    "1636118585f2235ab4": {
+      "type": "page-standard-header",
+      "settings": {
+        "enable_custom_title": false,
+        "custom_title_text": "Wirkung von Therapiedecken",
+        "sub_headline": "Customize Title if needed",
+        "image": "shopify:\/\/shop_images\/Effect-of-therapy-blankets-header-desktop.jpg",
+        "mobile_custom": true,
+        "image_mobile": "shopify:\/\/shop_images\/Effect-of-therapy-blankets-header-mobile.jpg",
+        "apply_overlay": true,
+        "review_starts": false,
+        "content": ""
+      }
+    },
+    "1636118773d02efc72": {
+      "type": "text-simple",
+      "settings": {
+        "spacer": "50px",
+        "bg-color": "#e6e6e6",
+        "bg-color-text": "#ffffff",
+        "text_align": "left",
+        "margin_top": "0",
+        "margin_bottom": "0",
+        "margin_bottom_mobile": "0",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "content_html": "<style>.text-simple-wrapper{display: flex; flex: 1;align-items: start;}.wirkung-icon{font-size: 60px;margin-right: 25px;margin-top: -10px;}@media(max-width: 567px){.text-simple-wrapper{display:block;text-align: center;}.wirkung-icon{margin-top:0;margin-right:0;}\n}<\/style>\n<div class=\"text-simple-wrapper\">\n<div class=\"wirkung-icon\"><span class=\"icon-hug\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span><\/div>\n<p>Therapiedecken bewirken mit dem gefüllten Gewicht eine Schwere, die sich beim Auflegen auf den Körper durch Entspannung bemerkbar macht. Der Tiefendruck, der dabei entsteht, vermittelt dem Gehirn das gleiche Signal, das bei einer liebevollen Umarmung entsteht.<\/p>\n<\/div>",
+        "link_text": "",
+        "link_url": "",
+        "content2": "",
+        "content_html2": "",
+        "button_text": "",
+        "button_url": ""
+      }
+    },
+    "1636117119614ccba3": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "europe",
+        "subheading": "",
+        "title": "",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/Effect-adult-img1.jpg",
+        "image_position": "left",
+        "content_html": "",
+        "content_rich": "<p>Die Decken sind bis zu 12 kg schwer und angepasst an das Körpergewicht und persönliche Empfinden individuell wählbar.<br\/><br\/>Bei angemessenem Gewicht wird die Ausschüttung des Glückshormons Serotonin und des Schlafhormons Melatonin gefördert und gleichzeitig der Cortisolspiegel (sog. Stresshormon) gesenkt.<br\/><br\/>Das Ergebnis ist ein euphorisches Gefühl der völligen Entspannung des Körpers und des Nervensystems.<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "1636117136d575d1f5": {
+      "type": "html-with-image",
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": false,
+        "icons_duotone": "cotton",
+        "subheading": "",
+        "title": "",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/Effect-kinder-img2.jpg",
+        "image_position": "right",
+        "content_html": "",
+        "content_rich": "<p>Das Gewicht wirkt sich nicht nur positiv auf den Schlaf aus, indem Tiefschlafphasen schneller erreicht werden können, sondern auch beim Entspannen auf der Couch, beim Lesen und Fernsehen. Ausreichende Erholung des Körpers und Geistes, die durch Steigerung der Schlafqualität und intensive Entspannung erreicht werden kann, hat zweifellos Einfluss auf den Gesundheitszustand und das Berufsleben.<br\/><br\/>Durch Nutzung der Decke kann das Stresslevel sinken, Schlafprobleme gelöst und die Produktivität gesteigert werden. Gelassenheit und Ausgeglichenheit stehen anstelle von Reizbarkeit und innerer Unruhe.<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    },
+    "ec0eeaee-32ed-4af8-9f9a-c2c5a70ca2b4": {
+      "type": "custom-liquid",
+      "settings": {
+        "paddings": false,
+        "custom_liquid": "{% render 'wirkung_grid' %}"
+      }
+    },
+    "16361171538caeee29": {
+      "type": "html-with-image",
+      "disabled": true,
+      "settings": {
+        "spacer_top": true,
+        "spacer_bottom": true,
+        "bg-color": "",
+        "bg-color-text-html": "",
+        "icon_title": true,
+        "icons_duotone": "our-engagement",
+        "subheading": "",
+        "title": "Die Menschen hinter dem Herstellungsprozess",
+        "text_color": "#3a3c3c",
+        "image": "shopify:\/\/shop_images\/people_of_production.jpg",
+        "image_position": "right",
+        "content_html": "",
+        "content_rich": "<p>Neben Nachhaltigkeit und wirtschaftlicher Leistungsfähigkeit ist es uns ein großes Anliegen Arbeitsplätze und angemessene Arbeitsbedingungen dort zu schaffen, wo die Unternehmensgeschichte von SensoRex und Therapiedecken.de beginnt. Deshalb findet der gesamte Herstellungsprozess in unserer eigenen Produktionsstätte statt, die wir stetig erweitern und optimieren.<\/p><p>Wir sorgen dafür, dass jeder unserer Mitarbeiter das notwendige Arbeitsumfeld erhält, um sich wohl zu fühlen. Denn wir möchten, dass bei uns jeder gerne zur Arbeit geht. Auch Menschen mit geistigen und körperlichen Beeinträchtigungen werden von Beginn an in unsere Arbeitsprozesse fest integriert.<\/p>",
+        "button_style": false,
+        "link_text": "",
+        "link_url": "",
+        "button_extra": false,
+        "link_text_extra": "Mehr Erfahren",
+        "link_url_extra": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1636118585f2235ab4",
+    "1636118773d02efc72",
+    "1636117119614ccba3",
+    "1636117136d575d1f5",
+    "ec0eeaee-32ed-4af8-9f9a-c2c5a70ca2b4",
+    "16361171538caeee29"
+  ]
+}
