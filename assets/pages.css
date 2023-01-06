@@ -220,6 +220,7 @@ ul.cta-bullets li:before {
      }
      .wirkung-description{
        padding: 0 15px;
+       margin: 0;
      }
      
 }
