@@ -37,7 +37,7 @@
         "subheading": "",
         "title": "",
         "content": "",
-        "content_html": "<div style=\"display: flex; flex: 1;align-items: start;\">\n<div class=\"wirkung-icon\" style=\"font-size: 60px;margin-right: 25px;margin-top: -10px;\"><span class=\"icon-hug\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span><\/div>\n<p>Therapiedecken bewirken mit dem gefüllten Gewicht eine Schwere, die sich beim Auflegen auf den Körper durch Entspannung bemerkbar macht. Der Tiefendruck, der dabei entsteht, vermittelt dem Gehirn das gleiche Signal, das bei einer liebevollen Umarmung entsteht.<\/p>\n<\/div>",
+        "content_html": "<style>.text-simple-wrapper{display: flex; flex: 1;align-items: start;}.wirkung-icon{font-size: 60px;margin-right: 25px;margin-top: -10px;}@media(max-width: 567px){.text-simple-wrapper{display:block;text-align: center;}.wirkung-icon{margin-top:0;margin-right:0;}\n}<\/style>\n<div class=\"text-simple-wrapper\">\n<div class=\"wirkung-icon\"><span class=\"icon-hug\"><span class=\"path1\"><\/span><span class=\"path2\"><\/span><\/span><\/div>\n<p>Therapiedecken bewirken mit dem gefüllten Gewicht eine Schwere, die sich beim Auflegen auf den Körper durch Entspannung bemerkbar macht. Der Tiefendruck, der dabei entsteht, vermittelt dem Gehirn das gleiche Signal, das bei einer liebevollen Umarmung entsteht.<\/p>\n<\/div>",
         "link_text": "",
         "link_url": "",
         "content2": "",
