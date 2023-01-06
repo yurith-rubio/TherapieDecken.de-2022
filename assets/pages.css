@@ -183,7 +183,7 @@ ul.cta-bullets li:before {
 .wirkung-description{
   margin: 0 -30px;
 }
-@media (max-width: 1024){
+@media (max-width: 1024px){
   .wirkung-description{
        padding: 0 15px;
        margin: 0;
