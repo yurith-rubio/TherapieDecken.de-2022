@@ -57,7 +57,7 @@
         "icons_duotone": "europe",
         "subheading": "",
         "title": "",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/Effect-adult-img1.jpg",
         "image_position": "left",
         "content_html": "",
@@ -81,7 +81,7 @@
         "icons_duotone": "cotton",
         "subheading": "",
         "title": "",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/Effect-kinder-img2.jpg",
         "image_position": "right",
         "content_html": "",
@@ -113,7 +113,7 @@
         "icons_duotone": "our-engagement",
         "subheading": "",
         "title": "Die Menschen hinter dem Herstellungsprozess",
-        "text_color": "#3A3C3C",
+        "text_color": "#3a3c3c",
         "image": "shopify:\/\/shop_images\/people_of_production.jpg",
         "image_position": "right",
         "content_html": "",
@@ -125,39 +125,6 @@
         "link_text_extra": "Mehr Erfahren",
         "link_url_extra": ""
       }
-    },
-    "163612443839d8b984": {
-      "type": "button-block",
-      "disabled": true,
-      "settings": {
-        "bg-color": "#ffffff",
-        "button_text": "Zu den Therapiedecken",
-        "button_url": "https:\/\/therapiedecken.de\/pages\/therapiedecken",
-        "spacer_top": "0px",
-        "spacer_bottom": "50px"
-      }
-    },
-    "16383755904f18fa4a": {
-      "type": "featured-video",
-      "disabled": true,
-      "settings": {
-        "section_size": "normal",
-        "set_width": "1000",
-        "text_color": "#ffffff",
-        "subheading": "",
-        "title": "Ein Einblick in unsere Produktionsstätte",
-        "dark_image": false,
-        "image": "shopify:\/\/shop_images\/Herstellung_Gewichtsdecken_0927e3d6-0601-473e-8793-d815d68fc145.jpg",
-        "video_url": "https:\/\/player.vimeo.com\/video\/650467836?h=7b3ba8c31b"
-      }
-    },
-    "163837579799051a9f": {
-      "type": "spacer",
-      "disabled": true,
-      "settings": {
-        "spacer": 80,
-        "spacer_mobile": 0
-      }
     }
   },
   "order": [
@@ -167,9 +134,6 @@
     "1636117119614ccba3",
     "1636117136d575d1f5",
     "ec0eeaee-32ed-4af8-9f9a-c2c5a70ca2b4",
-    "16361171538caeee29",
-    "163612443839d8b984",
-    "16383755904f18fa4a",
-    "163837579799051a9f"
+    "16361171538caeee29"
   ]
 }
