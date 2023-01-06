@@ -180,6 +180,9 @@ ul.cta-bullets li:before {
  .wk21_wr {
      width: 180px;
 }
+.wirkung-description{
+  margin: 0 -30px;
+}
  @media (max-width:767px){
      .grid{
          padding: 50px 8px;
@@ -214,7 +217,11 @@ ul.cta-bullets li:before {
      }
      .wk_wr_all{
          grid-gap:0;
-    }
+     }
+     .wirkung-description{
+       padding: 0 15px;
+     }
+     
 }
  @media only screen and (max-width: 450px){
      .wk21_wr {
