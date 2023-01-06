@@ -209,8 +209,11 @@ ul.cta-bullets li:before {
     }
 }
  @media (max-width:567px){
+     .wirkung-grid{
+       padding: 50px 10px;
+     }
      .wk_wr_all{
-         grid-gap:10px;
+         grid-gap:0;
     }
 }
  @media only screen and (max-width: 450px){
