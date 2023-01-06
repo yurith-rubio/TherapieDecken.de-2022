@@ -11006,7 +11006,7 @@ a.Link-Button-General:hover {
 }
 
 .SidebarMenu .Text--subdued {
-  color: var(--navigation-text-color-light);
+  color: var(--navigation-text-color);
 }
 
 .SidebarMenu .Collapsible,

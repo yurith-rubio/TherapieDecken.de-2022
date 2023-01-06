@@ -15,7 +15,7 @@
             {%- for link in main_menu.links -%}
               <div class="Collapsible">
                 {%- if link.links != blank -%}
-                  <button class="Collapsible__Button Heading u-h6" data-action="toggle-collapsible" {% if link.links != blank %}aria-expanded="false"{% endif %}>
+                  <button class="Collapsible__Button Heading u-h5" data-action="toggle-collapsible" {% if link.links != blank %}aria-expanded="false"{% endif %}>
                     {{- link.title | escape -}} <span class="Collapsible__Plus"></span>
                   </button>
 
@@ -24,7 +24,7 @@
                       {%- for sub_link in link.links -%}
                         <div class="Collapsible">
                           {%- if sub_link.links != blank -%}
-                            <button class="Collapsible__Button Heading Text--subdued Link--primary u-h7" data-action="toggle-collapsible" {% if sub_link.links != blank %}aria-expanded="false"{% endif %}>
+                            <button class="Collapsible__Button Heading Text--subdued Link--primary u-h5" data-action="toggle-collapsible" {% if sub_link.links != blank %}aria-expanded="false"{% endif %}>
                               {{- sub_link.title | escape -}} <span class="Collapsible__Plus"></span>
                             </button>
 
@@ -40,14 +40,14 @@
                               </div>
                             </div>
                           {%- else -%}
-                            <a href="{{ sub_link.url }}" class="Collapsible__Button Heading Text--subdued Link Link--primary u-h7">{{ sub_link.title | escape }}</a>
+                            <a href="{{ sub_link.url }}" class="Collapsible__Button Heading Text--subdued Link Link--primary u-h5">{{ sub_link.title | escape }}</a>
                           {%- endif -%}
                         </div>
                       {%- endfor -%}
                     </div>
                   </div>
                 {%- else -%}
-                  <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">{{ link.title | escape }}</a>
+                  <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h5">{{ link.title | escape }}</a>
                 {%- endif -%}
               </div>
             {%- endfor -%}
