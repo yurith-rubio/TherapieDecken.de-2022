@@ -127,7 +127,7 @@
         "4e998e1c-c3c0-4e9c-9ccb-519ea24ce10a": {
           "type": "liquid",
           "settings": {
-            "liquid": "<p>Alle Therapeuten oder Entscheidungsträger bei medizinischen Einrichtungen, die an unserem Rabattprogramm teilnehmen wollen, müssen einen amtlichen Nachweis über Ihre Berufstätigkeit einreichen, um zugelassen zu werden. Den Nachweis schicken Sie bitte per E-Mail an <strong><a href=\"mailto:nachweis@therapiedecken.de\">nachweis@therapiedecken.de<\/a><\/strong><\/p>"
+            "liquid": "<p>Alle Therapeuten oder Entscheidungsträger bei medizinischen Einrichtungen, die an unserem Rabattprogramm teilnehmen wollen, müssen einen amtlichen Nachweis über Ihre Berufstätigkeit einreichen, um zugelassen zu werden. Den Nachweis schicken Sie bitte per E-Mail an <a href=\"mailto:nachweis@therapiedecken.de\" style=\"font-weight:bold;\">nachweis@therapiedecken.de<\/a><\/p>"
           }
         }
       },
