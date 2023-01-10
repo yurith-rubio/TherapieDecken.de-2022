@@ -140,8 +140,8 @@
         "section_margin": "0",
         "bg-color-text": "#ffffff",
         "text_align": "center",
-        "content_top_margin": "50px",
-        "content_bottom_margin": "50px"
+        "content_top_margin": "100px",
+        "content_bottom_margin": "100px"
       }
     },
     "1631197250ed5d793f": {
