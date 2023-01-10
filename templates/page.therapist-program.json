@@ -137,7 +137,7 @@
       ],
       "settings": {
         "bg-color": "#f8f8f8",
-        "section_margin": "50px",
+        "section_margin": "0",
         "bg-color-text": "#ffffff",
         "text_align": "center",
         "content_top_margin": "50px",
