@@ -75,7 +75,7 @@
     "enable_product_badge": true,
     "hide_discount_general_badge": false,
     "show_product_guarantee_exceptions": false,
-    "gift_product": "therapiedecken-basic-bezug-in-weiss",
+    "gift_product": "therapiedecken-baumwollbezug-in-weiss",
     "trigger_product": "therapiedecken",
     "checkout_logo_image": "shopify:\/\/shop_images\/Checkout-banner-2.jpg",
     "checkout_logo_position": "center",
